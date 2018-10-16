@@ -9,4 +9,4 @@ Mobile / PC 어플리케이션으로 시간과 장소에 구애 받지 않고 �
 * Toast Cloud의 보안 및 안정성 보장
 * 유연한 확장 및 실시간 서비스 적용
 
-![http://static.toastoven.net/prod_contact_center/MobileContact_intro.png]
+![](http://static.toastoven.net/prod_contact_center/MobileContact_intro.png)
