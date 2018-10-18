@@ -1,8 +1,8 @@
 ## Contact Center > Online Contact > 릴리스 노트
 
-## 2018.10.23
+### 2018.10.23
 
-## 신규 상품 Beta 출시
+신규 상품 출시
   * Online Contact Beta 출시
     * 헬프센터, 실시간 채팅 및 온라인 1:1 문의 처리 기능을 제공하는 상담 시스템
 
