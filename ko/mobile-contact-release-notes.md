@@ -1,6 +1,6 @@
 ## Contact Center > Mobile Contact > 릴리스 노트
 
-### 2018.10.23
+### 2018.11.01
 
 신규 상품 출시
 
