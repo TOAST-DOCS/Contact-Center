@@ -1,6 +1,6 @@
 ## Contact Center > Mobile Contact > Release Notes
 
-### 2018.10.23
+### 2018.11.01
 
 신규 상품 출시
 
