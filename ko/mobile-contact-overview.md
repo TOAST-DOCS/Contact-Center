@@ -1,5 +1,5 @@
 ## Contact Center > Mobile Contact > 개요
-Mobile Contact은 NHN 엔터테인먼트가 제공하는 고객센터 콜 상담 솔루션입니다. 
+Mobile Contact은 NHN 이 제공하는 고객센터 콜 상담 솔루션입니다. 
 Mobile / PC 어플리케이션으로 시간과 장소에 구애 받지 않고 고객 문의를 처리할 수 있습니다.
 
 ## 서비스 특징
