@@ -1,6 +1,6 @@
 ## Contact Center > Online Contact > 서비스 가이드 > 서비스 가입 및 기본 설정 
 
-#### TOAST 회원가입
+### TOAST 회원가입
 
 Online Contact는 TOAST 회원가입 후 이용하실 수 있습니다. 
 회원가입 시 결제수단 등록이 필수이므로 신용카드를 준비해주시고, 
@@ -20,7 +20,7 @@ Online Contact는 TOAST 회원가입 후 이용하실 수 있습니다.
 체크카드는 등록이 불가하니 유의해주세요.
 
 
-#### 서비스 선택, 조직 및 도메인 이름 설정
+### 서비스 선택, 조직 및 도메인 이름 설정
 
 [](http://static.toastoven.net/prod_contact_center/1.3.2-(1))
 ① 결제수단 등록 이후 TOAST 홈페이지 상단 CONSOLE 버튼을 누르시면 TOAST CONSOLE로 이동합니다. 
@@ -46,7 +46,7 @@ Online Contact를 선택하시면 바로 조직/도메인 이름 설정 단계�
 
 
 
-#### IAM 회원 등록
+### IAM 회원 등록
 
 [](http://static.toastoven.net/prod_contact_center/1.3.3-(1))
 
@@ -60,7 +60,7 @@ Online Contact의 회원 구분은 두 가지입니다.
 
 ① ID와 이름, 메일주소를 입력하신 후 등록하실 수 있으며, 여러 명의 멤버를 등록하실 수 있습니다. 등록하신 후 OWNER 계정으로 사용하실 IAM 회원을 OWNER로 체크해주세요.
 
-#### 가입 완료 후 최초 접속
+### 가입 완료 후 최초 접속
 
 [](http://static.toastoven.net/prod_contact_center/1.3.4-(1))
 
