@@ -19,6 +19,7 @@ Online Contact는 TOAST 회원가입 후 이용하실 수 있습니다.
 
 체크카드는 등록이 불가하니 유의해주세요.
 
+
 #### 서비스 선택, 조직 및 도메인 이름 설정
 
 [](http://static.toastoven.net/prod_contact_center/1.3.2-(1))
@@ -42,6 +43,8 @@ Online Contact를 선택하시면 바로 조직/도메인 이름 설정 단계�
 
 `https://example.OC.toast.com/` 의 형식으로 도메인이 생성되며, 도메인은 Online Contact을 접속하는 URL 주소로 사용됩니다.
 조직, 도메인 모두 중복 이름이 존재할 경우 사용이 불가하므로 수정해주세요. 작성 완료 후 우측 저장 버튼을 눌러주세요.
+
+
 
 #### IAM 회원 등록
 
