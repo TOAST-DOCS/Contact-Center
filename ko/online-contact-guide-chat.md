@@ -48,7 +48,7 @@
 ### 만족도 평가 및 대화 종료
 [](http://static.toastoven.net/prod_contact_center/5.3-(1))
 [](http://static.toastoven.net/prod_contact_center/5.3-(2))
-채팅이 완료된 후 고객이 채팅 상담에 대한 만족도 평가를 직접 진행하거나, 또는 상담원이 평가 요청을 전송해 만족도 평가를 안내할 수 있습니다. 고객이 직접 채팅 화면 상단 ① **평가** 버튼을 클릭하면 바로 만족도 평가 화면이 표시되며, 상담원이 채팅 화면 상단 **평가** 버튼을 누를 경우 만족도 안내 메시지가 ([서비스 관리 → 헬프센터 → 구성관리 → 기본설정](https://github.com/TOAST-DOCS/Contact-Center/blob/alpha/ko/online-contact-guide-service-management.md#%EA%B8%B0%EB%B3%B8-%EC%84%A4%EC%A0%95) 탭에서 설정) 전송됩니다.
+채팅이 완료된 후 고객이 채팅 상담에 대한 만족도 평가를 직접 진행하거나, 또는 상담원이 평가 요청을 전송해 만족도 평가를 안내할 수 있습니다. 고객이 직접 채팅 화면 상단 ① **평가** 버튼을 클릭하면 바로 만족도 평가 화면이 표시되며, 상담원이 채팅 화면 상단 **평가** 버튼을 누를 경우 만족도 안내 메시지가 ([서비스 관리 → 채팅 → 기본설정](https://github.com/TOAST-DOCS/Contact-Center/blob/alpha/ko/online-contact-guide-service-management.md#%EA%B8%B0%EB%B3%B8-%EC%84%A4%EC%A0%95) 탭에서 설정) 전송됩니다.
 
 채팅 상담이 종료되면 ② **대화 종료** 버튼을 통해 상담을 종료할 수 있습니다. 고객이 대화를 종료했을 경우 상담원이 대화 종료 버튼을 누르기 전까지 채팅 화면에서 고객정보 및 상담정보의 입력과 티켓 생성이 가능하지만, 상담원이 대화 종료 버튼을 눌렀을 경우 채팅 화면에서는 더이상 해당 채팅 상담을 확인하실 수 없으며, 대화 종료 이후의 정보 입력 및 수정, 티켓 생성은 [채팅 → 채팅기록](https://github.com/TOAST-DOCS/Contact-Center/blob/alpha/ko/online-contact-guide-chat.md#%EC%B1%84%ED%8C%85-%EA%B8%B0%EB%A1%9D) 메뉴에서만 가능하므로 대화를 종료하시기 전 유의해주세요. 
 
