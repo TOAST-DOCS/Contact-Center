@@ -98,7 +98,7 @@ FAQ 문서는 다음과 같이 구분됩니다.
 
 작성 시 입력이 필요한 부분은 다음과 같습니다.
 -	① 템플릿 선택: [헬프센터 → 공지사항 → 템플릿 관리](https://github.com/TOAST-DOCS/Contact-Center/blob/alpha/ko/online-contact-guide-help-center.md#%ED%85%9C%ED%94%8C%EB%A6%BF-%EA%B4%80%EB%A6%AC) 탭에서 등록하셨던 카테고리를 선택해주세요. 헬프센터 FAQ 내에서 해당 카테고리 아래로 배치됩니다.
--	② 말머리: [헬프센터 → 공지사항 → 말머리 관리](https://github.com/TOAST-DOCS/Contact-Center/blob/alpha/ko/online-contact-guide-help-center.md#%ED%85%9C%ED%94%8C%EB%A6%BF-%EA%B4%80%EB%A6%AC) 탭에서 등록하셨던 말머리를 선택해주세요. 헬프센터 공지사항 내에서 해당 카테고리 아래로 배치됩니다.
+-	② 말머리: [헬프센터 → 공지사항 → 말머리 관리](https://github.com/TOAST-DOCS/Contact-Center/blob/alpha/ko/online-contact-guide-help-center.md#%EB%A7%90%EB%A8%B8%EB%A6%AC-%EA%B4%80%EB%A6%AC) 탭에서 등록하셨던 말머리를 선택해주세요. 헬프센터 공지사항 내에서 해당 카테고리 아래로 배치됩니다.
 -	③ 태그: [헬프센터 → 공지사항 → 태그 관리](https://github.com/TOAST-DOCS/Contact-Center/blob/alpha/ko/online-contact-guide-help-center.md#%ED%83%9C%EA%B7%B8-%EA%B4%80%EB%A6%AC) 탭에서 등록하셨던 태그를 선택해주세요. 복수 선택 가능합니다.
 -	④ 공지기간: 공지사항이 게시되는 기간입니다. 시작일을 작성 당일 이후로 설정할 경우 해당 날짜로 예약 등록됩니다.
 -	⑤ 상단고정: 전체 FAQ 게시글이 모여 있는 ‘**전체**’ 분류의 상단과, 해당 FAQ 게시글이 속해 있는 **말머리 분류**의 상단에 고정됩니다. 가장 최신으로 등록된 게시글이 가장 상단에 고정됩니다.
