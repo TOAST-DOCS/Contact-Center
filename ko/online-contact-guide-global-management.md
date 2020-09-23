@@ -34,12 +34,12 @@
 ### SSO 로그인
 
 [](http://static.toastoven.net/prod_contact_center/2.1.3-(1))
-헬프센터 로그인 시 원하는 인증 방식을 설정할 수 있는 메뉴로, 해당 메뉴에서 SSO 로그인을 등록하신 후 서비스 관리 → 인증 메뉴에서 등록하신 로그인 방식을 설정하시면 헬프센터에 적용됩니다. 등록하신 후 수정도 가능합니다.
+헬프센터 로그인 시 원하는 인증 방식을 설정할 수 있는 메뉴로, 해당 메뉴에서 SSO 로그인을 등록하신 후 [서비스 관리 → 인증](https://github.com/TOAST-DOCS/Contact-Center/blob/alpha/ko/online-contact-guide-service-management.md#%EC%9D%B8%EC%A6%9D) 메뉴에서 등록하신 로그인 방식을 설정하시면 헬프센터에 적용됩니다. 등록하신 후 수정도 가능합니다.
 
 #### SSO 로그인 추가 절차
 -	① **+등록** 버튼 클릭 → SSO 로그인 명, 원격 로그인 URL, 로그인 상태 URL 입력 후 **확인** 버튼 클릭
 
-SSO 로그인 설정 시 인증 처리에 사용되는 API 인증 Key를 제공하며, ② API Key 변경 버튼을 통해 Key값 변경이 가능합니다.
+SSO 로그인 설정 시 인증 처리에 사용되는 **API 인증 Key**를 제공하며, ② **API Key 변경** 버튼을 통해 Key값 변경이 가능합니다.
 
 ### 권한 변경 로그 관리
 
