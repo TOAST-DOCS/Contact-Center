@@ -27,7 +27,7 @@ Help Center 문의하기 · 대표메일 · 외부채널을 통해 접수된 티
 
 티켓 클릭 시, 선택된 티켓에 대해서 **티켓정보**, **문의내역**, **이벤트** 탭을 활용하실 수 있습니다.
 
-[](http://static.toastoven.net/prod_contact_center/4.1.2-(2))
+[](http://static.toastoven.net/prod_contact_center/4.1.2-(2).png)
 -	① 티켓정보: 고객 문의 관련 정보 확인 및 처리 
   - ② 티켓 ID: 티켓 생성 시 자동으로 생성
   - ③ 담당자 소속 그룹
