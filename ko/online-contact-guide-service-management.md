@@ -170,7 +170,34 @@ Online Contact에서 도메인을 제공하는 ① **대표 계정 주소**를 �
 CSS 수정 시 활용하실 수 있는 주요한 요소들은 다음과 같습니다.
 
 ##### main.css
-![](http://static.toastoven.net/prod_contact_center/2.2.5-(2)a.png)
+| 요소 이름                          | 설명                                |
+| ------------------------------------------------| ---------------------------------- |
+| .main_banner                                    | 메인 상단 배너 영역                  |
+| .main_banner img                                | 메인 상단 배너 영역 이미지           |
+| .carousel-caption .title_txt                    | 메인 상단 배너 영역 제목             |
+| .carousel-caption .sub_txt                      | 메인 상단 배너 영역 소제목           |
+| .search-box                                     | 메인 상단 배너 영역 검색상자         |
+| .search-box .icon-ic-search                     | 메인 상단 배너 영역 검색아이콘       |
+| #supports .container-con                        | 메인 고객센터 구성요소 영역          |
+| #supports .support__item:nth-child(1):before    | 메인 공지사항 아이콘                 |
+| #supports .support__item:nth-child(2):before    | 메인 FAQ 아이콘                     |
+| #supports .support__item:nth-child(3):before    | 메인 문의하기 아이콘                 |
+| #supports .support__item:nth-child(4):before    | 메인 문의내역 아이콘                 |
+| #supports .support__item .card-title .btn       | 메인 구성요소 제목                   |
+| #supports .support__item .card-title .btn:hover | 메인 구성요소 제목 호버 시 색 변경    |
+| #supports .support__item .card-title .btn:after | 메인 구성요소 텍스트 우측 화살표 아이콘 |
+| #supports .support__item .card-text             | 메인 구성요소 설명 텍스트 |
+| #sec_contact-news .textArea                     | 메인 하단 배너 영역 |
+| #sec_contact-news .textArea .text-item h3       | 메인 하단 배너 영역 제목 |
+| #sec_contact-news .textArea .text-item .icon-more::after | 메인 하단 배너 영역 더보기 아이콘 |
+| #sec_contact-news .textArea .text-item li       | 메인 하단 배너 영역 게시글 리스트 |
+| #chat-offline                                   | 상담원 부재중 박스 |
+| #chat-offline .title                            | 상담원 부재중 박스 제목 |
+| #chat-offline .text                             | 상담원 부재중 박스 텍스트 |
+| #chat-offline .close                            | 상담원 부재중 박스 닫기 아이콘 |
+| #chat-offline .btn                              | 상담원 부재중 박스 문의하기 아이콘 |
+
+
 
 ##### faq.css
 ![](http://static.toastoven.net/prod_contact_center/2.2.5-(2)b.png)
