@@ -3,10 +3,10 @@
 
 ### 서비스
 
-[](http://static.toastoven.net/prod_contact_center/2.1.1-(1))
+![](http://static.toastoven.net/prod_contact_center/2.1.1-(1).png)
 ① 좌측 상단 **서비스 추가** 버튼을 통해 Online Contact를 이용해 헬프센터를 제공하고자 하는 서비스를 추가하실 수 있습니다. 서비스를 추가하시면 CS 관리 시스템 메뉴가 활성화되며, 추가하신 서비스를 수정하거나 상태를 변경하실 수도 있습니다.
 
-[](http://static.toastoven.net/prod_contact_center/2.1.1-(2))
+![](http://static.toastoven.net/prod_contact_center/2.1.1-(2).png)
 서비스 추가 시 입력 항목은 다음과 같습니다.
 -	① 서비스 명: 사용하시는 서비스의 이름 
 -	② 서비스 ID: 서비스 식별에 사용되는 ID (URL에 포함됨). 영문만 가능
@@ -18,7 +18,7 @@
 
 ### 슈퍼관리자
 
-[](http://static.toastoven.net/prod_contact_center/2.1.2-(1))
+![](http://static.toastoven.net/prod_contact_center/2.1.2-(1).png)
 슈퍼관리자는 Online Contact의 시스템을 설정, 관리할 수 있는 권한을 가지며, 상담원 중에서 슈퍼관리자를 추가하거나 삭제하실 수 있습니다. 
 슈퍼관리자 권한을 부여할 사용자는 IAM 회원으로 등록되어 있어야 합니다.
 
@@ -33,7 +33,7 @@
 
 ### SSO 로그인
 
-[](http://static.toastoven.net/prod_contact_center/2.1.3-(1))
+![](http://static.toastoven.net/prod_contact_center/2.1.3-(1).png)
 헬프센터 로그인 시 원하는 인증 방식을 설정할 수 있는 메뉴로, 해당 메뉴에서 SSO 로그인을 등록하신 후 [서비스 관리 → 인증](https://github.com/TOAST-DOCS/Contact-Center/blob/alpha/ko/online-contact-guide-service-management.md#%EC%9D%B8%EC%A6%9D) 메뉴에서 등록하신 로그인 방식을 설정하시면 헬프센터에 적용됩니다. 등록하신 후 수정도 가능합니다.
 
 #### SSO 로그인 추가 절차
@@ -43,12 +43,12 @@ SSO 로그인 설정 시 인증 처리에 사용되는 **API 인증 Key**를 제
 
 ### 권한 변경 로그 관리
 
-[](http://static.toastoven.net/prod_contact_center/2.1.4-(1))
+![](http://static.toastoven.net/prod_contact_center/2.1.4-(1).png)
 ① 헬프센터 조직 내부 상담원들의 권한을 변경할 시 로그가 저장됩니다. 슈퍼관리자가 권한 변경을 진행한 로그를 관리하는 메뉴로, ② 조작일시, 조작내용, 이름, IP, 서비스, ID 중 일부 정보 입력을 통해 검색할 수 있습니다.
 
 ### 사용자 설정
 
-[](http://static.toastoven.net/prod_contact_center/2.1.5-(1))
+![](http://static.toastoven.net/prod_contact_center/2.1.5-(1).png)
 Online Contact 화면 우측 상단에 표시된 ① 현재 접속되어 있는 **계정 이름**을 클릭하시면 ② 개인정보설정 메뉴로 접속하실 수 있습니다. 해당 메뉴에서 헬프센터에 접속하는 사용자의 개인정보 설정을 열람하고 변경할 수 있습니다. 
 
 #### 열람 가능한 정보
