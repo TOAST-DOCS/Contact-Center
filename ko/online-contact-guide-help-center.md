@@ -4,7 +4,7 @@
 헬프센터 구성 항목 중 **FAQ**를 활성화했을 경우 ([서비스 관리 → 헬프센터 → 구성관리](https://github.com/TOAST-DOCS/Contact-Center/blob/alpha/ko/online-contact-guide-service-management.md#%EA%B5%AC%EC%84%B1%EA%B4%80%EB%A6%AC)에서 활성화 가능), FAQ 메뉴의 기능들을 통해 헬프센터에 등록되는 FAQ (자주 묻는 질문) 문서를 관리할 수 있습니다. 
 
 #### 카테고리 관리
-[](http://static.toastoven.net/prod_contact_center/3.1-(1))
+![](http://static.toastoven.net/prod_contact_center/3.1-(1).png)
 FAQ를 등록하기 전 각 문서가 분류될 **카테고리**를 1~3 뎁스까지 추가할 수 있습니다. FAQ 문서 등록 시 **카테고리 선택이 필수**이므로, 문서 등록 전 카테고리 추가를 진행해주세요. ① 상위 뎁스를 먼저 추가하신 다음, 하위 뎁스에 카테고리를 추가하실 때는 상위 뎁스를 먼저 클릭하신 후 색 변화를 통해 선택된 것을 확인하고 추가해주세요.
 
 동일 뎁스 내에 카테고리 명 중복은 불가합니다. (뎁스가 다를 경우 가능)
@@ -12,7 +12,7 @@ FAQ를 등록하기 전 각 문서가 분류될 **카테고리**를 1~3 뎁스�
 카테고리의 ② **수정**과 ③ **삭제**가 가능하며, 상위 뎁스의 카테고리를 삭제할 경우 해당 카테고리에 종속된 하위 뎁스 카테고리까지 함께 삭제되므로 유의해주세요. 
 
 #### 배포문서/초안문서
-[](http://static.toastoven.net/prod_contact_center/3.1-(2))
+![](http://static.toastoven.net/prod_contact_center/3.1-(2).png)
 FAQ 문서는 다음과 같이 구분됩니다.
 -	초안문서: FAQ 문서를 사전에 저장해 두고 검증을 받기 위한 단계
 -	배포문서: 저장해 둔 초안문서를 검토한 후 배포하는 단계
@@ -31,7 +31,7 @@ FAQ 문서는 다음과 같이 구분됩니다.
 -	수정시간
 
 #### FAQ 등록
-[](http://static.toastoven.net/prod_contact_center/3.1-(3))
+![](http://static.toastoven.net/prod_contact_center/3.1-(3).png)
 배포문서 또는 초안문서 탭에서 **FAQ 등록** 버튼을 누르시면 FAQ에 등록될 문서를 작성하실 수 있습니다.
 
 작성 시 입력이 필요한 부분은 다음과 같습니다.
@@ -47,7 +47,7 @@ FAQ 문서는 다음과 같이 구분됩니다.
 헬프센터 구성 항목 중 **공지사항**을 활성화했을 경우 ([서비스 관리 → 헬프센터 → 구성관리](https://github.com/TOAST-DOCS/Contact-Center/blob/alpha/ko/online-contact-guide-service-management.md#%EA%B5%AC%EC%84%B1%EA%B4%80%EB%A6%AC)에서 활성화 가능), 공지사항 메뉴의 기능들을 통해 헬프센터에 등록되는 공지사항 문서를 관리할 수 있습니다. 
 
 #### 말머리 관리
-[](http://static.toastoven.net/prod_contact_center/3.2-(1))
+![](http://static.toastoven.net/prod_contact_center/3.2-(1).png)
 각 문서가 분류될 **말머리**를 추가할 수 있습니다. 공지사항 또는 템플릿 등록 시 **말머리 선택이 필수**이므로, 기존에 추가해두신 말머리가 없는 경우 미리 추가해주세요. 
 
 말머리 명을 입력하신 후 ① **등록** 버튼을 누르시면 말머리를 등록하실 수 있으며, ② **수정**, **삭제**, ③ **순서변경**이 가능합니다.
@@ -55,7 +55,7 @@ FAQ 문서는 다음과 같이 구분됩니다.
 말머리 관리 화면에서 표시되는 순서대로 공지사항 등록 → 말머리에 표시되므로, 표시되는 순서를 조정하고 싶으신 경우 이동하고자 하는 행을 원하는 위치로 드래그 해주세요.
 
 #### 배포문서/초안문서
-[](http://static.toastoven.net/prod_contact_center/3.2-(2))
+![](http://static.toastoven.net/prod_contact_center/3.2-(2).png)
 공지사항 문서는 다음과 같이 구분됩니다. (FAQ 문서와 동일)
 -	초안문서: 공지 문서를 사전에 저장해 두고 검증을 받기 위한 단계
 -	배포문서: 저장해 둔 초안문서를 검토한 후 배포하는 단계
@@ -73,10 +73,10 @@ FAQ 문서는 다음과 같이 구분됩니다.
 -	등록시간
 
 #### 템플릿 관리
-[](http://static.toastoven.net/prod_contact_center/3.2-(3))
+![](http://static.toastoven.net/prod_contact_center/3.2-(3).png)
 공지사항 작성 시 자주 사용하는 양식에 대해 **템플릿**으로 미리 등록하여 문서 작성 시간을 단축할 수 있습니다. 템플릿의 ① **등록**, ② **수정**, **삭제**가 가능하며, 등록된 **템플릿을 클릭**하시면 화면 우측에서 표시되는 창을 통해 템플릿의 정보를 확인하실 수 있습니다.
 
-[](http://static.toastoven.net/prod_contact_center/3.2-(4))
+![](http://static.toastoven.net/prod_contact_center/3.2-(4).png)
 **템플릿 등록** 버튼을 통해 템플릿을 작성하실 수 있으며, 입력이 필요한 부분은 다음과 같습니다.
 -	① 템플릿 제목
 -	② 템플릿 설명: 템플릿 관리 → 개별 템플릿 클릭 시 제목 하단에 표시되는 설명입니다. 
@@ -87,13 +87,13 @@ FAQ 문서는 다음과 같이 구분됩니다.
 -	⑦ 내용
 
 #### 태그 관리
-[](http://static.toastoven.net/prod_contact_center/3.2-(5))
+![](http://static.toastoven.net/prod_contact_center/3.2-(5).png)
 공지 내용의 주요 **태그**를 등록해 둔 다음, 공지사항 작성 시 알맞은 태그를 선택하여 등록하면 검색 시 활용할 수 있습니다.
 
 태그 명을 입력하신 뒤 ① **등록** 버튼을 누르시면 태그가 등록되며, 가장 최근에 등록한 태그부터 공지사항 등록 시 조회됩니다. 태그의 ② **수정** 및 **삭제**도 가능합니다.
 
 #### 공지사항 등록
-[](http://static.toastoven.net/prod_contact_center/3.2-(6))
+![](http://static.toastoven.net/prod_contact_center/3.2-(6).png)
 배포문서 또는 초안문서 탭에서 **공지사항 등록** 버튼을 누르시면 공지사항에 등록될 문서를 작성하실 수 있습니다.
 
 작성 시 입력이 필요한 부분은 다음과 같습니다.
