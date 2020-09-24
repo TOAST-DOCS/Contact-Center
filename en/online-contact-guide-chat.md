@@ -13,15 +13,19 @@
 ![](http://static.toastoven.net/prod_contact_center/5.2-(1).png)
 헬프센터 내에 채팅 기능이 활성화된 상태에서 (채팅 기능 활성화: [서비스 관리 → 헬프센터 → 구성관리](https://alpha-docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_26) 탭) 고객이 헬프센터에 접속하면, 홈페이지 우측 하단에 ① **채팅 아이콘**이 표시됩니다.
 
+
 ![](http://static.toastoven.net/prod_contact_center/5.2-(2).png)
 채팅 아이콘을 클릭했을 때 온라인 상태의 상담원이 없을 경우 **상담원 부재중** 팝업이 뜨며, ① **문의하기**로 이동하여 1:1문의를 남길 수 있도록 안내됩니다.
+
 
 ![](http://static.toastoven.net/prod_contact_center/5.2-(3).png)
 채팅 아이콘을 클릭했을 때 온라인 상태의 상담원이 있을 경우 채팅 대화창이 생성되며, ① **개인정보 수집 동의** 시 상담원과의 채팅을 시작할 수 있습니다. 상담원 상태 변경에 관련해서는 다음 단락인 채팅 처리에서 안내됩니다. 
 
+
 #### 채팅 처리
 ![](http://static.toastoven.net/prod_contact_center/5.2-(4).png)
 헬프센터 내에 채팅 기능이 활성화된 상태에서 (채팅 기능 활성화: [서비스 관리 → 헬프센터 → 구성관리](https://alpha-docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_26) 탭) 상담원이 Online Contact에 접속하면, 홈페이지 우측 하단에 ① **채팅 아이콘**이 표시되며, 해당 아이콘 클릭 시 채팅 상담을 진행할 수 있는 화면이 표시됩니다.
+
 
 ![](http://static.toastoven.net/prod_contact_center/5.2-(5).png)
 채팅 화면 좌측 상단의 ① **상태 창**에서는 고객의 채팅 문의를 처리하기 위한 상태 값을 변경하실 수 있습니다. 온라인, 휴식, 오프라인의 세 가지 값 중에서 하나를 선택하실 수 있으며, **온라인 상태일때만** 채팅 문의를 할당 받으실 수 있습니다.
@@ -42,8 +46,8 @@
 -	처리유형: 상담원이 해당 고객과의 채팅 상담에 대해 입력하는 **처리유형**으로, [서비스 관리 → 채팅 → 카테고리 관리](https://alpha-docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_7) 탭에서 설정 가능
 
 채팅 상담에 부가하여 고객의 요청 사항에 대해 처리되어야 할 내용이 있을 경우, ⑤ **티켓 만들기** 버튼을 통해 채팅에 대한 티켓을 생성하실 수 있습니다.
-
 고객정보와 상담정보 입력 및 수정 후 저장 버튼을 누르지 않은 채로 대화가 종료되면 정보가 저장되지 않으므로, 대화 종료 전 ⑥ **저장** 버튼을 반드시 눌러주세요.
+
 
 ### 만족도 평가 및 대화 종료
 ![](http://static.toastoven.net/prod_contact_center/5.3-(1).png)
@@ -51,6 +55,7 @@
 채팅이 완료된 후 고객이 채팅 상담에 대한 만족도 평가를 직접 진행하거나, 또는 상담원이 평가 요청을 전송해 만족도 평가를 안내할 수 있습니다. 고객이 직접 채팅 화면 상단 ① **평가** 버튼을 클릭하면 바로 만족도 평가 화면이 표시되며, 상담원이 채팅 화면 상단 **평가** 버튼을 누를 경우 만족도 안내 메시지가 ([서비스 관리 → 채팅 → 기본설정](https://alpha-docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_4) 탭에서 설정) 전송됩니다.
 
 채팅 상담이 종료되면 ② **대화 종료** 버튼을 통해 상담을 종료할 수 있습니다. 고객이 대화를 종료했을 경우 상담원이 대화 종료 버튼을 누르기 전까지 채팅 화면에서 고객정보 및 상담정보의 입력과 티켓 생성이 가능하지만, 상담원이 대화 종료 버튼을 눌렀을 경우 채팅 화면에서는 더이상 해당 채팅 상담을 확인하실 수 없으며, 대화 종료 이후의 정보 입력 및 수정, 티켓 생성은 [채팅 → 채팅기록](https://alpha-docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-chat/#_6) 메뉴에서만 가능하므로 대화를 종료하시기 전 유의해주세요. 
+
 
 ### 채팅 기록
 ![](http://static.toastoven.net/prod_contact_center/5.4-(1).png)
