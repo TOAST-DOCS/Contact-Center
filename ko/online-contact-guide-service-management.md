@@ -176,7 +176,30 @@ CSS 수정 시 활용하실 수 있는 주요한 요소들은 다음과 같습�
 ![](http://static.toastoven.net/prod_contact_center/2.2.5-(2)b.png)
 
 ##### notice.css
-![](http://static.toastoven.net/prod_contact_center/2.2.5-(2)c.png)
+| 요소 이름                          | 설명                                |
+| ---------------------------------- | ---------------------------------- |
+| .el-breadcrumb                     | 세부 페이지 우측 상단 텍스트 영역     |
+| .el-breadcrumb li                  | 세부 페이지 우측 상단 텍스트 영역 개별|
+| .noticeData                        | 공지사항 테이블                      |
+| .noticeData th:nth-child(1)        | 공지사항 테이블 번호                 |
+| .noticeData th:nth-child(2)        | 공지사항 테이블 제목                 |
+| .noticeData th:nth-child(3)        | 공지사항 테이블 말머리               |
+| .noticeData th:nth-child(4)        | 공지사항 테이블 등록일               |
+| .noticeData tr.hot-text            | 공지사항 테이블 개별 상단고정         |
+| .noticeData tr.hot-text td         | 공지사항 테이블 개별 상단고정 번호    |
+| .noticeData tr.hot-text td .title-info a | 공지사항 테이블 개별 상단고정 제목 |
+| .noticeData td .title-info sup     | 공지사항 테이블 개별 상단고정 HOT     |
+| .icon-leavel-1                     | 공지사항 테이블 개별 상단고정 말머리   |
+| .noticeData tr                     | 공지사항 테이블 개별                  |
+| .noticeData td .title-info a       | 공지사항 테이블 개별 제목             |
+| .upload-text-memo                  | 문의하기 첨부파일 필드 텍스트         |
+| .faqData_info-con .dataTime .noticeType | 공지사항 세부 문서 카테고리      |
+| .faqData_info-con .dataTime .noticeType .icon-leavel-1 | 공지사항 세부 문서 카테고리 아이콘 |
+
+
+
+
+
 
 ##### search.css
 ![](http://static.toastoven.net/prod_contact_center/2.2.5-(2)d.png)
