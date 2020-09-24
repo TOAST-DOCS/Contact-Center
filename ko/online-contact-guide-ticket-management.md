@@ -18,7 +18,7 @@ Help Center 문의하기 · 대표메일 · 외부채널을 통해 접수된 티
 
 ### 티켓 처리
 #### 가져오기
-[](http://static.toastoven.net/prod_contact_center/4.1.2-(1).png)
+![](http://static.toastoven.net/prod_contact_center/4.1.2-(1).png)
 접수된 티켓이 **미할당** 상태일 경우 ‘**가져오기**’ 기능을 통해서 티켓을 배분할 수 있습니다. 미할당 상태의 티켓에 표시된 ① **가져오기** 버튼을 누르고, 본인이 소속된 상담원 그룹이 복수일 경우 하나의 그룹을 선택하시면 됩니다.
 
 트리거를 통해서 티켓 할당이 설정된 경우에는 ‘가져오기’ 기능을 사용하지 않아도 티켓이 조건에 맞게 자동으로 배분됩니다. 이 경우 자동으로 할당된 처리자를 바꾸기 위해서는 관리자의 권한으로 티켓을 다른 상담원에게 **전달**할 수 있습니다. 티켓정보 탭의 최하단에 위치한 ② **전달** 버튼을 누르고, 티켓을 전달할 상담원의 그룹과 상담원을 선택해주세요.
@@ -28,7 +28,7 @@ Help Center 문의하기 · 대표메일 · 외부채널을 통해 접수된 티
 
 티켓 클릭 시, 선택된 티켓에 대해서 **티켓정보**, **문의내역**, **이벤트** 탭을 활용하실 수 있습니다.
 
-[](http://static.toastoven.net/prod_contact_center/4.1.2-(2).png)
+![](http://static.toastoven.net/prod_contact_center/4.1.2-(2).png)
 -	① 티켓정보: 고객 문의 관련 정보 확인 및 처리 
   - ② 티켓 ID: 티켓 생성 시 자동으로 생성
   - ③ 담당자 소속 그룹
@@ -38,13 +38,13 @@ Help Center 문의하기 · 대표메일 · 외부채널을 통해 접수된 티
   - ⑦ 문의 접수 시 고객이 입력한 정보
   - ⑧ 문의 내용
 
-[](http://static.toastoven.net/prod_contact_center/4.1.2-(3))
+![](http://static.toastoven.net/prod_contact_center/4.1.2-(3).png)
 -	① 문의내역: 해당 고객의 이전 문의내역 확인
 
-[](http://static.toastoven.net/prod_contact_center/4.1.2-(4))
+![](http://static.toastoven.net/prod_contact_center/4.1.2-(4).png)
 -	① 이벤트: 해당 문의에 관련하여 발생한 이벤트 (할당, 담당자 변경, 전달 등) 확인
 
-[](http://static.toastoven.net/prod_contact_center/4.1.2-(5))
+![](http://static.toastoven.net/prod_contact_center/4.1.2-(5).png)
 문의에 대해서 선택할 수 있는 **처리 상태**는 다음과 같습니다.
 -	① 해결: 고객에게 발송할 최종 메일 처리
 -	② 보류: 고객에게 최종 메일 전달 전 중간답변 시 선택
@@ -61,7 +61,7 @@ Help Center 문의하기 · 대표메일 · 외부채널을 통해 접수된 티
 문의 내용이 유사한 티켓들에 대해 답변을 일괄적으로 작성하고자 하거나, 티켓들의 처리자 또는 그룹을 일괄적으로 변경하고자 할 때 **티켓 일괄 처리** 기능을 사용할 수 있습니다. ⑤ **티켓 일괄 처리** 버튼은 티켓 리스트 상단에 위치해 있습니다.
 
 #### 티켓 생성
-[](http://static.toastoven.net/prod_contact_center/4.1.2-(6))
+![](http://static.toastoven.net/prod_contact_center/4.1.2-(6).png)
 ① **티켓 생성** 버튼을 통해 새로운 티켓을 생성할 수 있습니다. 고객 문의 처리 과정에서 추가 티켓을 생성할 필요가 있거나, 전화 문의에 대한 메일 답변이 필요한 경우 사용될 수 있습니다.
 
 티켓 생성 시 입력이 필요한 항목은 다음과 같습니다.
@@ -72,7 +72,7 @@ Help Center 문의하기 · 대표메일 · 외부채널을 통해 접수된 티
 -	⑥ 제목, ⑦ 내용
 
 ### 티켓 검색
-[](http://static.toastoven.net/prod_contact_center/4.1.3-(1))
+![](http://static.toastoven.net/prod_contact_center/4.1.3-(1).png)
 티켓 목록 상단에 위치한 ① **티켓검색** 버튼을 누르시면 티켓 검색에 활용할 수 있는 조건들이 표시됩니다. 조건들은 구체적으로 다음과 같습니다.
 -	생성시간: 티켓의 생성시간
 -	우선순위: 티켓 처리 시 처리자가 입력한 우선순위
