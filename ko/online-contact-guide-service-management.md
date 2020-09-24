@@ -14,33 +14,33 @@
 [전체 관리 → SSO 로그인](https://github.com/TOAST-DOCS/Contact-Center/blob/alpha/ko/online-contact-guide-global-management.md#sso-%EB%A1%9C%EA%B7%B8%EC%9D%B8) 메뉴에서 등록하셨던 **SSO 로그인**과, **OPEN API** 기능을 활성화/비활성화할 수 있습니다.
 
 #### SSO 로그인
-[](http://static.toastoven.net/prod_contact_center/2.2.1-(1))
+![](http://static.toastoven.net/prod_contact_center/2.2.1-(1).png)
 SSO 로그인을 활성화하실 경우 **활성화** 버튼을 클릭하신 후, [전체 관리 → SSO 로그인](https://github.com/TOAST-DOCS/Contact-Center/blob/alpha/ko/online-contact-guide-global-management.md#sso-%EB%A1%9C%EA%B7%B8%EC%9D%B8) 메뉴에서 등록하셨던 SSO 로그인을 선택하시고 저장하시면 됩니다.
 
 #### OPEN API
-[](http://static.toastoven.net/prod_contact_center/2.2.1-(2))
+![](http://static.toastoven.net/prod_contact_center/2.2.1-(2).png)
 OPEN API 탭에서는 외부에서 Online Contact의 데이터에 접근할 수 있도록 하는 ① **OPEN API 활성화**, ② **API Key 변경**, ③ **접속 IP 제한 설정**이 가능하며, 접속 IP 제한을 설정할 시 설정한 IP에서만 OPEN API를 호출하실 수 있습니다.
 
 ### 채팅
 채팅 기능에 관련된 항목들입니다. 채팅 기능은 [서비스 관리 → 헬프센터 → 구성관리](https://github.com/TOAST-DOCS/Contact-Center/blob/alpha/ko/online-contact-guide-service-management.md#%EA%B5%AC%EC%84%B1%EA%B4%80%EB%A6%AC)에서 활성화하실 수 있으며, 활성화된 이후에 노출되는 우측 하단 **채팅 아이콘**으로 접속 가능합니다. 
 
-[](http://static.toastoven.net/prod_contact_center/2.2.2-(1))
+![](http://static.toastoven.net/prod_contact_center/2.2.2-(1).png)
 **채팅 아이콘**을 통해 접속한 후 ① 좌측 상단 **상태 값**을 클릭하시면 (초기 기본값 ‘오프라인’) 온라인/휴식/오프라인 중 하나로 상태를 설정하실 수 있으며, 온라인 상태일 경우에만 고객의 채팅 요청에 답변할 수 있습니다.
 
 #### 기본 설정
-[](http://static.toastoven.net/prod_contact_center/2.2.2-(2))
+![](http://static.toastoven.net/prod_contact_center/2.2.2-(2).png)
 ① 채팅 연결 시 고객에게 자동으로 발송되는 **인사말**과, ② 고객에게 평가 요청 시 발송되는 **만족도 안내 메시지**를 설정할 수 있습니다. 평가 요청은 채팅 화면 상단 **평가** 버튼을 통해 고객에게 전송할 수 있습니다.
 
 #### 상담원 할당 설정
-[](http://static.toastoven.net/prod_contact_center/2.2.2-(3))
+![](http://static.toastoven.net/prod_contact_center/2.2.2-(3).png)
 ① 채팅을 요청한 고객과의 최근 채팅 기록이 있는 상담원에게 채팅을 우선 할당할 것인지, 또는 임의로 배분할 것인 지 선택이 가능합니다.
 
 #### 채팅화면 삽입 코드
-[](http://static.toastoven.net/prod_contact_center/2.2.2-(4))
+![](http://static.toastoven.net/prod_contact_center/2.2.2-(4).png)
 기존에 관리하시던 서비스 페이지에 Online Contact가 제공하는 채팅 서비스만 제공하고 싶은 경우 제공되는 코드입니다. ① 제공되는 인입 스크립트를 복사하여 웹사이트 HTML 소스 코드의 </body> 태그 앞에 삽입해주세요.
 
 #### 카테고리 관리
-[](http://static.toastoven.net/prod_contact_center/2.2.2-(5))
+![](http://static.toastoven.net/prod_contact_center/2.2.2-(5).png)
 채팅 상담 시 상담 고객에 대해 상담원이 직접 입력하는 상담정보 항목 중 **처리유형의 카테고리**를 관리할 수 있는 메뉴입니다. 처리유형을 1~3 뎁스까지 설정하실 수 있습니다.
 
 ① 상위 카테고리를 먼저 추가하신 후, 하위 뎁스에 카테고리를 추가할 시 상위 카테고리를 먼저 클릭하셔서 선택된 것을 확인하신 후 하위 카테고리를 추가해주세요. 색으로 강조된 카테고리 아래에 새로운 하위 카테고리가 생성됩니다.
@@ -51,7 +51,7 @@ OPEN API 탭에서는 외부에서 Online Contact의 데이터에 접근할 수 
 티켓 메뉴에서는 고객의 문의 접수 또는 문의 처리 시 선택하는 카테고리 관리, 업무 효율화를 높일 수 있는 트리거 기능, 고객센터 문의 접수 화면 구성 필드, 템플릿 관리, 이메일 설정 메뉴를 사용할 수 있습니다.
 
 #### 카테고리 관리
-[](http://static.toastoven.net/prod_contact_center/2.2.3-(1))
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(1).png)
 헬프센터에서 고객이 문의를 접수할 시 선택하는 유형인 **접수유형**과, 상담원이 티켓 처리 시 선택하는 **처리유형**을 1~5뎁스까지 설정할 수 있습니다.
 
 ① 상위 카테고리를 먼저 추가하신 후, 하위 뎁스에 카테고리를 추가할 시 상위 카테고리를 먼저 클릭하셔서 선택된 것을 확인한 후 추가해주세요. 색으로 강조된 카테고리 아래에 새로운 하위 카테고리가 생성됩니다.
@@ -69,7 +69,7 @@ OPEN API 탭에서는 외부에서 Online Contact의 데이터에 접근할 수 
 -	생성시간
 
 #### 트리거
-[](http://static.toastoven.net/prod_contact_center/2.2.3-(2))
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(2).png)
 트리거는 반복적인 업무를 **자동화**하여 업무 생산성을 높이기 위한 기능입니다. 특정 조건이 충족될 경우 조건에 따른 결과 행위를 자동으로 실행합니다. 또한 결과에 대한 알림 메일이 발송될 수 있도록 설정도 가능합니다.
 
 예시) `티켓의 접수유형` = `무통장입금`일 경우 `필수`적으로 `결제` 그룹의 `예시01` 상담원에게 `티켓을 할당`
@@ -77,34 +77,34 @@ OPEN API 탭에서는 외부에서 Online Contact의 데이터에 접근할 수 
 ① **트리거 추가** 버튼을 누르신 후 제목, 조건, 결과를 모두 입력하시고 **저장** 버튼을 누르시면 트리거가 자동으로 활성화됩니다. 활성화된 트리거는 ② **비활성화** 버튼을 통해 비활성화하실 수 있으며, ③ **수정** 버튼을 통해 조건 또는 결과를 수정하실 수 있습니다.
 
 ##### 트리거 조건 유형
-[](http://static.toastoven.net/prod_contact_center/2.2.3-(2)a)
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(2)a.png)
 
 ##### 트리거 조건 상세
-[](http://static.toastoven.net/prod_contact_center/2.2.3-(2)b)
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(2)b.png)
 
 ##### 트리거 결과유형
-[](http://static.toastoven.net/prod_contact_center/2.2.3-(2)c)
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(2)c.png)
 
 #### 필드
 필드 메뉴는 Help Center 내부 문의하기 기능을 사용할 시 기입하는 항목들의 유형을 설정할 수 있는 기능으로, **문의 접수/처리에 필요한 항목들**의 순서를 설정할 수 있습니다. 설정한 그대로 고객 문의하기 화면에 구현됩니다.
 
-[](http://static.toastoven.net/prod_contact_center/2.2.3-(3))
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(3).png)
 필드는 ① **고객 필드**와 ② **상담원 필드**로 구분됩니다. 필드 설정 또는 관리 탭을 선택하시기 전에 상담원 필드를 관리하실 것인지, 고객 필드를 관리하실 것인지 먼저 선택해주세요.
 
 -	상담원 필드: 티켓 상세 화면에 보이는 문의 항목
 -	고객 필드: 헬프센터 → 문의하기 기능에서 고객에게 보이는 문의 항목
 
 ##### 필드 설정
-[](http://static.toastoven.net/prod_contact_center/2.2.3-(4))
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(4).png)
 ① 앞서 [티켓 → 카테고리 관리](https://github.com/TOAST-DOCS/Contact-Center/blob/alpha/ko/online-contact-guide-service-management.md#%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC-%EA%B4%80%EB%A6%AC-1)에서 등록해두신 접수유형에 따라 문의내역에 필요한 필드를 다르게 설정하실 수 있습니다. **접수유형**을 클릭하시면 설정해두신 필드를 열람하실 수 있으며, 개인정보수집 항목을 제외한 필드들의 ② 순서를 변경하실 수 있습니다. (개인정보수집 항목의 경우 항상 맨 아래 노출되도록 고정됨)
 
 또한 필드 관리 탭에서 추가해두신 필드를 ③ 새롭게 **추가**하시거나, 이미 추가하신 필드를 ④ **제거**하실 수 있습니다.
 
 ##### 필드 관리
-[](http://static.toastoven.net/prod_contact_center/2.2.3-(5))
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(5).png)
 ① 필드 설정 탭에서 각 접수유형에 맞게 필드를 추가할 수 있도록 필드 관리 탭에서 개별 필드를 관리합니다. 기본 필드는 삭제 대신 **수정** 또는 필드 설정의 **초기화**만 가능하며, 직접 만드신 필드의 경우 **수정**과 **삭제** 모두 가능합니다.
 
-[](http://static.toastoven.net/prod_contact_center/2.2.3-(6))
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(6).png)
 필드를 추가하실 때 입력해야 하는 항목은 다음과 같습니다.
 
 -	① 항목 유형: 필드의 항목 유형입니다. 하단 상세 설정을 통해 값을 세팅하실 수 있으며, 해당 필드가 문의하기 화면에서 어떻게 보일지 미리보기를 통해 보실 수 있습니다.
@@ -116,13 +116,13 @@ OPEN API 탭에서는 외부에서 Online Contact의 데이터에 접근할 수 
 -	⑦ 개인정보 파기 여부
 
 #### 템플릿 관리
-[](http://static.toastoven.net/prod_contact_center/2.2.3-(7))
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(7).png)
 템플릿 관리 메뉴는 자주 접수되는 문의 유형에 대한 **답변 템플릿을 미리 추가**하여 티켓을 신속하게 처리할 수 있는 기능입니다. 티켓 관리 메뉴에서 티켓을 처리할 시 선택 가능하며, 템플릿을 제작할 시 설정된 접수유형과 티켓의 접수유형이 같을 경우 선택할 수 있습니다.
 
 ① 상단 좌측 **템플릿 추가** 버튼을 통해 템플릿을 추가하실 수 있으며, 템플릿 추가 시 선택하는 접수유형은 앞서 [티켓 → 카테고리 관리](https://github.com/TOAST-DOCS/Contact-Center/blob/alpha/ko/online-contact-guide-service-management.md#%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC-%EA%B4%80%EB%A6%AC-1)에서 등록해두신 접수 유형입니다. 내용 본문 부분에서 마우스 우 클릭 시 링크, 이미지, 테이블을 삽입하실 수 있습니다.
 
 #### 이메일 설정
-[](http://static.toastoven.net/prod_contact_center/2.2.3-(8))
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(8).png)
 Online Contact에서 도메인을 제공하는 ① **대표 계정 주소**를 생성하실 수 있으며, ② **외부 계정 등록**을 통해 서비스 도메인을 사용하는 서비스 대표 계정을 등록하실 수도 있습니다. 
 
 ③ Online Contact를 통해 발신되는 이메일의 **발신자 명**과 **발신자 주소**를 저장하실 수 있으며, ④ 모든 발송 메일에 대한 공통적인 **메일 레이아웃**을 설정하실 수 있습니다. 본문의 치환코드 (#{content})를 삭제할 경우 답변 메일에서 각 항목에 대한 내용이 보이지 않을 수 있으니 템플릿 작성 시 유의해주세요. 또한 앞서 티켓 → 템플릿 관리에서 작성하신 템플릿을 비롯하여 모든 발송 메일에 적용되는 공통적인 메일 레이아웃이므로, 템플릿 간 내용 충돌이 일어나지 않도록 유의해주세요.
@@ -131,7 +131,7 @@ Online Contact에서 도메인을 제공하는 ① **대표 계정 주소**를 �
 상담원 메뉴에서는 고객 문의 처리 (티켓 및 채팅 상담)을 위해 상담원과 그룹을 추가 및 수정하고, 상담원 별로 그룹과 권한을 설정할 수 있습니다.
 
 #### 상담원
-[](http://static.toastoven.net/prod_contact_center/2.2.4-(1))
+![](http://static.toastoven.net/prod_contact_center/2.2.4-(1).png)
 상담원으로 추가할 사용자는 **IAM 회원**으로 등록되어 있어야 합니다.
 
 ##### IAM 회원 등록
@@ -149,49 +149,49 @@ Online Contact에서 도메인을 제공하는 ① **대표 계정 주소**를 �
 -	티켓 상담원: 티켓 상담
 
 #### 그룹
-[](http://static.toastoven.net/prod_contact_center/2.2.4-(2))
+![](http://static.toastoven.net/prod_contact_center/2.2.4-(2).png)
 그룹 메뉴에서는 그룹의 ① **추가**, ② **수정**, ③ **삭제**가 가능합니다. 그룹별 상담원을 구성할 경우 티켓 → 트리거 상에서 해당 그룹에 유형별 문의를 할당하거나, 알림 메일이 전송되도록 설정할 수 있습니다. 
 
-[](http://static.toastoven.net/prod_contact_center/2.2.4-(3))
+![](http://static.toastoven.net/prod_contact_center/2.2.4-(3).png)
 상단 좌측 **그룹 추가** 버튼을 누르신 후, 그룹 명을 입력해주시고 할당될 상담원을 선택하신 뒤 ① ‘ **>** ‘ 버튼을 통해 할당된 상담원으로 이동해주세요. 반대로 상담원을 할당 해제하실 때는 ‘ **<** ‘ 버튼을 통해 미할당 상담원으로 이동하실 수 있습니다. 상담원 할당을 마친 후 ② **저장** 버튼을 눌러 주시면 그룹 설정이 적용됩니다.
 
 상담원을 할당하시지 않고도 그룹을 추가하실 수 있으므로, 그룹의 최초 추가 시에는 그룹 명만 입력하신 다음 **저장** 버튼을 눌러 주시면 상담원 추가를 진행하실 수 있습니다.
 
 ### 헬프센터
 #### 템플릿 관리
-[](http://static.toastoven.net/prod_contact_center/2.2.5-(1))
+![](http://static.toastoven.net/prod_contact_center/2.2.5-(1).png)
 헬프센터 페이지 **디자인 테마 관리** 메뉴로, 각 서비스별 세부 영역에 대한 디자인을 수정할 수 있는 편집 editor를 PC/모바일 템플릿 관리 메뉴에서 제공합니다.
 
 기본으로 두 가지의 템플릿이 제공되며, ① **템플릿 등록** 버튼을 통해 새로운 템플릿을 추가하실 수 있습니다. 추가하신 템플릿은 ② **수정** 또는 **삭제**하실 수 있으며, 활성화 중인 템플릿은 삭제가 불가하므로 다른 템플릿을 활성화하신 다음 삭제해주세요.
 
-[](http://static.toastoven.net/prod_contact_center/2.2.5-(2))
+![](http://static.toastoven.net/prod_contact_center/2.2.5-(2).png)
 템플릿 추가 및 수정 시 ① **CSS / HTML / JS 스크립트**를 주어진 편집기에 직접 작성하시거나 [서비스 관리 → 헬프센터 → 파일업로드 관리](https://github.com/TOAST-DOCS/Contact-Center/blob/alpha/ko/online-contact-guide-service-management.md#%ED%8C%8C%EC%9D%BC%EC%97%85%EB%A1%9C%EB%93%9C-%EA%B4%80%EB%A6%AC) 메뉴에서 필요하신 파일(스크립트, 폰트, 이미지 등)을 업로드하신 후 리소스의 경로를 입력하심을 통해 헬프센터의 구성을 변경하실 수 있습니다. 편집 후 **미리보기** 버튼을 통하여 편집 내용이 헬프센터에 적용된 모습을 바로 보실 수 있으며, **저장**하신 후 적용이 가능합니다.
 
 CSS 수정 시 활용하실 수 있는 주요한 요소들은 다음과 같습니다.
 
 ##### main.css
-[](http://static.toastoven.net/prod_contact_center/2.2.5-(2)a)
+![](http://static.toastoven.net/prod_contact_center/2.2.5-(2)a.png)
 
 ##### faq.css
-[](http://static.toastoven.net/prod_contact_center/2.2.5-(2)b)
+![](http://static.toastoven.net/prod_contact_center/2.2.5-(2)b.png)
 
 ##### notice.css
-[](http://static.toastoven.net/prod_contact_center/2.2.5-(2)c)
+![](http://static.toastoven.net/prod_contact_center/2.2.5-(2)c.png)
 
 ##### search.css
-[](http://static.toastoven.net/prod_contact_center/2.2.5-(2)d)
+![](http://static.toastoven.net/prod_contact_center/2.2.5-(2)d.png)
 
 ##### inquiry.css
-[](http://static.toastoven.net/prod_contact_center/2.2.5-(2)e)
+![](http://static.toastoven.net/prod_contact_center/2.2.5-(2)e.png)
 
 #### 파일업로드 관리
-[](http://static.toastoven.net/prod_contact_center/2.2.5-(3))
+![](http://static.toastoven.net/prod_contact_center/2.2.5-(3).png)
 답변 템플릿 및 레이아웃 작성에 사용될 파일을 관리하는 도구로, ① **파일 업로드** 버튼을 통해 사용할 파일을 직접 업로드하시면 매번 필요한 파일을 새롭게 업로드할 필요 없이 제공되는 해당 리소스의 ② **파일 경로**를 통해 사용하실 수 있습니다.
 
 기존에 동일 파일명으로 업로드된 내역이 있을 경우 업로드가 불가하니, 파일명이 중복되지 않도록 유의해주세요.
 
 #### 구성관리
-[](http://static.toastoven.net/prod_contact_center/2.2.5-(4))
+![](http://static.toastoven.net/prod_contact_center/2.2.5-(4).png)
 헬프센터의 구성 항목 중 사용하는 기능은 **활성화**, 사용하지 않는 기능은 **비활성화** 처리하실 수 있습니다. 비활성화 시 헬프센터 화면에서 숨김 처리됩니다.
 
 관리 가능한 기능은 다음과 같습니다.
@@ -204,19 +204,19 @@ CSS 수정 시 활용하실 수 있는 주요한 요소들은 다음과 같습�
 **외부 SNS로 인입되는 문의**를 Online Contact에서 티켓으로 전환하여 처리할 수 있습니다. 현재 **트위터**와 **카카오 상담톡**을 지원하고 있습니다.
 
 #### 트위터
-[](http://static.toastoven.net/prod_contact_center/2.2.6-(1))
+![](http://static.toastoven.net/prod_contact_center/2.2.6-(1).png)
 트위터 채널 연동을 ① **활성화** 또는 **비활성화**하실 수 있으며, 활성화 시 우측 ② **등록** 버튼을 통해 트위터 계정을 등록하실 수 있습니다. 
 
-[](http://static.toastoven.net/prod_contact_center/2.2.6-(2))
+![](http://static.toastoven.net/prod_contact_center/2.2.6-(2).png)
 계정 등록 시 ① **트윗**(멘션)과 ② **메시지**에 대한 티켓 전환 여부를 각각 설정하실 수 있으며, 만약 메시지를 티켓으로 전환하여 받아 보기를 희망하시는 경우 아래 절차를 확인해주세요.
 
 이용하고 계시는 트위터 계정 접속 → 더보기 → 설정 및 개인정보 → 개인정보 및 보안 → 쪽지 (Direct Messages) → 쪽지 요청 받기 항목이 체크되어 있어야 연결된 계정으로 오는 쪽지가 티켓으로 접수될 수 있습니다.
 
 #### 카카오 상담톡
-[](http://static.toastoven.net/prod_contact_center/2.2.6-(3))
+![](http://static.toastoven.net/prod_contact_center/2.2.6-(3).png)
 상담톡 연동을 ① **활성화** 또는 **비활성화**하실 수 있으며, 활성화 시 우측 ② **등록** 버튼을 통해 카카오 플러스친구 ID와 활성화 희망일을 입력해주세요. 연결은 영업일 기준 최대 1~2일 소요되며, 연결이 반려될 경우 반려 사유 메시지가 표시되므로 확인해주세요. 카카오톡채널 관리자센터에서 관리 → 상세설정 → 채널 홈 → 공개설정을 **ON**으로 변경해야 연결 가능합니다.
 
-[](http://static.toastoven.net/prod_contact_center/2.2.6-(4))
+![](http://static.toastoven.net/prod_contact_center/2.2.6-(4).png)
 연결이 완료된 **계정을 클릭**하시면 상담톡 기능의 세부 요소들을 설정할 수 있습니다.
 - ① 상담시간
 - ② 채팅가능 요일
