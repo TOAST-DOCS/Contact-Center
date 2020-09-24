@@ -197,8 +197,6 @@ CSS 수정 시 활용하실 수 있는 주요한 요소들은 다음과 같습�
 | #chat-offline .close                            | 상담원 부재중 박스 닫기 아이콘 |
 | #chat-offline .btn                              | 상담원 부재중 박스 문의하기 아이콘 |
 
-
-
 ##### faq.css
 | 요소 이름                          | 설명                                |
 | ---------------------------------- | ---------------------------------- |
@@ -230,14 +228,6 @@ CSS 수정 시 활용하실 수 있는 주요한 요소들은 다음과 같습�
 | .faqData_info-con .dataTime        | FAQ 세부 문서 등록일                 |
 | .faqData_info-con .dataTextBox     | FAQ 세부 문서 내용 텍스트            |
 
-
-
-
-
-
-
-
-
 ##### notice.css
 | 요소 이름                          | 설명                                |
 | ---------------------------------- | ---------------------------------- |
@@ -259,16 +249,46 @@ CSS 수정 시 활용하실 수 있는 주요한 요소들은 다음과 같습�
 | .faqData_info-con .dataTime .noticeType | 공지사항 세부 문서 카테고리      |
 | .faqData_info-con .dataTime .noticeType .icon-leavel-1 | 공지사항 세부 문서 카테고리 아이콘 |
 
-
-
-
-
-
 ##### search.css
-![](http://static.toastoven.net/prod_contact_center/2.2.5-(2)d.png)
+| 요소 이름                          | 설명                                |
+| ---------------------------------- | ---------------------------------- |
+| .paginate                          | 페이지네이션 영역                   |
+| .paginate li                       | 페이지네이션 개별                   |
+| .paginate li.firstPage a           | 페이지네이션 << 키                  |
+| .paginate li.firstPage a.img       | 페이지네이션 << 키 이미지            |
+| .paginate li.prev a.               | 페이지네이션 < 키                   |
+| .paginate li.prev a img            | 페이지네이션 < 키 이미지             |
+| .paginate li a                     | 페이지네이션 개별 페이지             |
+| .paginate li.number.active a       | 페이지네이션 현재 페이지             |
+| .paginate li.next a.               | 페이지네이션 > 키                   |
+| .paginate li.next a img            | 페이지네이션 > 키 이미지             |
+| .paginate li.lastPage a            | 페이지네이션 >> 키                  |
+| .paginate li.lastPage a.img        | 페이지네이션 >> 키 이미지            |
+| .search-title                      | 검색결과 제목                       |
+| .search-title strong               | 검색결과 제목 검색어 강조            |
+| .search-text                       | 검색결과                            |
+| .search-text .search-title_sub     | 검색결과 하위분류                    |
+| .search-text .search-text_lit      | 검색결과 개별                       |
+| .search-text .search-text_lit dt a | 검색결과 개별 제목                  |
+| .search-text .search-text_lit dd .search-text_con | 검색결과 개별 내용 미리보기 |
+| .search-text .search-text_lit dd .search-text_time | 검색결과 개별 작성일 |
 
 ##### inquiry.css
-![](http://static.toastoven.net/prod_contact_center/2.2.5-(2)e.png)
+| 요소 이름                          | 설명                                |
+| ---------------------------------- | ---------------------------------- |
+| .selectStyle                       | 검색 내부 옵션                      |
+| .inquiry-con                       | 문의하기 콘텐츠 영역                 |
+| .inquiry-con_table                 | 문의하기 테이블                      |
+| .inquiry-con_table th              | 문의하기 테이블 필드                 |
+| .bl_ess                            | 문의하기 테이블 필드 필수 *          |
+| .inquiry-con_table td              | 문의하기 테이블 입력                 |
+| .error_txt                         | 문의하기 테이블 입력 에러 텍스트      | 
+| .inquiry-btn                       | 문의하기 접수 버튼                   |
+| .layui-icon                        | 화살표 버튼                         |
+| .layui-icon-right                  | > (좌측 방향) 화살표 버튼            |
+| .layui-icon-up                     | V (아래 방향) 화살표 버튼            |
+| .check_area_wrap .td-radio .layui-form-checkbox\[lay-skin="primary"] span | 체크박스 텍스트 |
+| .error_txt                         | 에러 텍스트                          |
 
 #### 파일업로드 관리
 ![](http://static.toastoven.net/prod_contact_center/2.2.5-(3).png)
