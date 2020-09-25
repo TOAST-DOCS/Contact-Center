@@ -10,7 +10,7 @@ Online Contact는 TOAST 회원가입 후 이용하실 수 있습니다.
 
 
 #### 결제수단 등록
-![](http://static.toastoven.net/prod_contact_center/1.3.1–(2).png)
+![](http://static.toastoven.net/prod_contact_center/1.3.1-(2).png)
 ![](http://static.toastoven.net/prod_contact_center/1.3.1-(3).png)
 
 **①** 결제수단으로는 PAYCO에 등록되어 있는 신용카드 또는 소지하고 계신 신용카드를 **본인인증 → 카드 등록**의 과정으로 등록하실 수 있습니다.
