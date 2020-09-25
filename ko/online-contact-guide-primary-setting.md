@@ -5,6 +5,7 @@ Online Contact는 TOAST 회원가입 후 이용하실 수 있습니다.
 회원가입 시 결제수단 등록이 필수이므로 신용카드를 준비해주시고, (**체크카드는 등록이 불가합니다.**) 사업자 회원의 경우 **사업자등록증 사본**도 함께 준비해주세요.
 
 ![](http://static.toastoven.net/prod_contact_center/1.3.1-(1).png)
+
 ![](http://static.toastoven.net/prod_contact_center/1.3.1–(2).png)
 
 **①** 회원가입 절차: 약관 동의 → 회원 정보 입력 → 가입 완료
