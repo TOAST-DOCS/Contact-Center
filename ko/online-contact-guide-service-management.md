@@ -5,8 +5,8 @@
 
 
 #### 헬프센터 접속
-- Online Contact 우측 맨 하단 **헬프센터 바로가기** 
-- https:// `도메인명` .oc.toast.com/ `서비스ID` /hc
+- Online Contact 우측 맨 하단 **헬프센터 바로가기**
+- https:// **도메인명** .oc.toast.com/ **서비스ID** /hc
 
 도메인명은 Online Contact 조직 생성 시 작성하신 정보로, TOAST CONSOLE → 조직 설정 → 도메인 설정에서 수정하실 수 있습니다. 서비스ID는 [전체 관리 → 서비스](https://alpha-docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-global-management/#_1) 메뉴에서 서비스 추가 시 입력하셨던 정보로, 최초 생성 이후 수정이 불가합니다.
 
@@ -34,7 +34,7 @@ OPEN API 탭에서는 외부에서 Online Contact의 데이터에 접근할 수 
 
 #### 기본 설정
 ![](http://static.toastoven.net/prod_contact_center/2.2.2-(2).png)
-**①** 채팅 연결 시 고객에게 자동으로 발송되는 **인사말**과, ② 고객에게 평가 요청 시 발송되는 **만족도 안내 메시지**를 설정할 수 있습니다. 평가 요청은 채팅 화면 상단 **평가** 버튼을 통해 고객에게 전송할 수 있습니다.
+**①** 채팅 연결 시 고객에게 자동으로 발송되는 **인사말**과, **②** 고객에게 평가 요청 시 발송되는 **만족도 안내 메시지**를 설정할 수 있습니다. 평가 요청은 채팅 화면 상단 **평가** 버튼을 통해 고객에게 전송할 수 있습니다.
 
 
 #### 상담원 할당 설정
