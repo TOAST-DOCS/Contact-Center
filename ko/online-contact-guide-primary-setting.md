@@ -11,6 +11,7 @@ Online Contact는 TOAST 회원가입 후 이용하실 수 있습니다.
 ① 회원가입 절차: 약관 동의 → 회원 정보 입력 → 가입 완료
 ② 회원가입을 마치신 후, 마이페이지 → 결제수단으로 이동하셔서 결제수단 등록을 진행해주세요.
 
+
 #### 결제수단 등록
 ![](http://static.toastoven.net/prod_contact_center/1.3.1-(3).png)
 
