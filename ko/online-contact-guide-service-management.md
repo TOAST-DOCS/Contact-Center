@@ -93,7 +93,7 @@ OPEN API 탭에서는 외부에서 Online Contact의 데이터에 접근할 수 
 ##### 트리거 조건 상세
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(2)b.png)
 
-##### 트리거 결과유형
+##### 트리거 결과 유형
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(2)c.png)
 
 
