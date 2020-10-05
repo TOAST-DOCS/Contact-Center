@@ -55,6 +55,8 @@ SSO 로그인 설정 시 인증 처리에 사용되는 **API 인증 Key**를 제
 ![](http://static.toastoven.net/prod_contact_center/2.1.5-(1).png)
 Online Contact 화면 우측 상단에 표시된 ① 현재 접속되어 있는 **계정 이름**을 클릭하시면 **②** 개인정보설정 메뉴로 접속하실 수 있습니다. 해당 메뉴에서 헬프센터에 접속하는 사용자의 개인정보 설정을 열람하고 변경할 수 있습니다. 
 
+✔ \[FAQ 바로가기] [아이디, 이메일, 이름을 변경하거나 삭제하고 싶습니다.](https://nhn-contact.oc.toast.com/oc/hc/article/33/)
+✔ \[FAQ 바로가기] [비밀번호를 변경하고 싶습니다.](https://nhn-contact.oc.toast.com/oc/hc/article/35/)
 
 ### 열람 가능한 정보
 -	계정 
