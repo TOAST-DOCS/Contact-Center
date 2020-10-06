@@ -86,6 +86,8 @@ OPEN API 탭에서는 외부에서 Online Contact의 데이터에 접근할 수 
 
 **① 트리거 추가** 버튼을 누르신 후 제목, 조건, 결과를 모두 입력하시고 **저장** 버튼을 누르시면 트리거가 자동으로 활성화됩니다. 활성화된 트리거는 **② 비활성화** 버튼을 통해 비활성화하실 수 있으며, **③ 수정** 버튼을 통해 조건 또는 결과를 수정하실 수 있습니다.
 
+✔ \[FAQ 바로가기] [접수된 문의를 자동으로 외부 포워딩 하고 싶습니다.](https://nhn-contact.oc.toast.com/oc/hc/article/43/)
+✔ \[FAQ 바로가기] [특정 조건에서 알림 메일을 보내고 싶습니다.](https://nhn-contact.oc.toast.com/oc/hc/article/42/)
 
 #### 트리거 조건 유형
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(2)a.png)
@@ -138,6 +140,9 @@ OPEN API 탭에서는 외부에서 Online Contact의 데이터에 접근할 수 
 
 **①** 상단 좌측 **템플릿 추가** 버튼을 통해 템플릿을 추가하실 수 있으며, 템플릿 추가 시 선택하는 접수유형은 앞서 [티켓 → 카테고리 관리](https://alpha-docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_9)에서 등록해두신 접수 유형입니다. 내용 본문 부분에서 마우스 우 클릭 시 링크, 이미지, 테이블을 삽입하실 수 있습니다.
 
+✔ \[FAQ 바로가기] [답변 템플릿은 어떻게 사용하나요?](https://nhn-contact.oc.toast.com/oc/hc/article/39/)
+✔ \[FAQ 바로가기] [티켓 답변 템플릿을 등록했는데, 답변 작성 시 조회되지 않아요.](https://nhn-contact.oc.toast.com/oc/hc/article/62/)
+
 
 ### 이메일 설정
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(8).png)
@@ -145,6 +150,7 @@ Online Contact에서 도메인을 제공하는 ① **대표 계정 주소**를 �
 
 **③** Online Contact를 통해 발신되는 이메일의 **발신자 명**과 **발신자 주소**를 저장하실 수 있으며, **④** 모든 발송 메일에 대한 공통적인 **메일 레이아웃**을 설정하실 수 있습니다. 본문의 치환코드 (#{content})를 삭제할 경우 답변 메일에서 각 항목에 대한 내용이 보이지 않을 수 있으니 템플릿 작성 시 유의해주세요. 또한 앞서 티켓 → 템플릿 관리에서 작성하신 템플릿을 비롯하여 모든 발송 메일에 적용되는 공통적인 메일 레이아웃이므로, 템플릿 간 내용 충돌이 일어나지 않도록 유의해주세요.
 
+✔ \[FAQ 바로가기] [현재 사용하고 있는 외부 이메일을 연결하여 문의를 접수 받고 싶습니다.](https://nhn-contact.oc.toast.com/oc/hc/article/44/)
 
 ## 상담원
 상담원 메뉴에서는 고객 문의 처리 (티켓 및 채팅 상담)을 위해 상담원과 그룹을 추가 및 수정하고, 상담원 별로 그룹과 권한을 설정할 수 있습니다.
@@ -190,6 +196,8 @@ Online Contact에서 도메인을 제공하는 ① **대표 계정 주소**를 �
 
 ![](http://static.toastoven.net/prod_contact_center/2.2.5-(2).png)
 템플릿 추가 및 수정 시 **① CSS / HTML / JS 스크립트**를 주어진 편집기에 직접 작성하시거나 [서비스 관리 → 헬프센터 → 파일업로드 관리](https://alpha-docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_25) 메뉴에서 필요하신 파일(스크립트, 폰트, 이미지 등)을 업로드하신 후 리소스의 경로를 입력하심을 통해 헬프센터의 구성을 변경하실 수 있습니다. 편집 후 **미리보기** 버튼을 통하여 편집 내용이 헬프센터에 적용된 모습을 바로 보실 수 있으며, **저장**하신 후 적용이 가능합니다.
+
+✔ \[FAQ 바로가기] [헬프센터 PC/모바일 템플릿 관리 기능의 구체적인 예시가 궁금해요.](https://nhn-contact.oc.toast.com/oc/hc/article/60/)
 
 **CSS 수정 시** 활용하실 수 있는 주요한 요소들은 다음과 같습니다.
 
@@ -351,6 +359,7 @@ Online Contact에서 도메인을 제공하는 ① **대표 계정 주소**를 �
 
 이용하고 계시는 트위터 계정 접속 → 더보기 → 설정 및 개인정보 → 개인정보 및 보안 → 쪽지 (Direct Messages) → **쪽지 요청 받기** 항목이 체크되어 있어야 연결된 계정으로 오는 쪽지가 티켓으로 접수될 수 있습니다.
 
+✔ \[FAQ 바로가기] [외부채널 (트위터/카카오 상담톡) 연결을 활성화했을 때 문의의 인입/답변 과정은 어떻게 되나요?](https://nhn-contact.oc.toast.com/oc/hc/article/61/)
 
 ### 카카오 상담톡
 ![](http://static.toastoven.net/prod_contact_center/2.2.6-(3).png)
@@ -369,3 +378,6 @@ Online Contact에서 도메인을 제공하는 ① **대표 계정 주소**를 �
     - 상담종료 자동 멘트: **상담 종료** 시 자동으로 발송되는 멘트
 
 상담톡 서비스가 활성화되면 기존 플러스친구 1:1 채팅은 중단되며, 카카오톡을 통해 접수되는 문의는 Online Contact에서 제공하는 채팅 기능에 유입 채널 ‘**카카오**’로 표시되어 접수됩니다.
+
+✔ \[FAQ 바로가기] [외부채널 (트위터/카카오 상담톡) 연결을 활성화했을 때 문의의 인입/답변 과정은 어떻게 되나요?](https://nhn-contact.oc.toast.com/oc/hc/article/61/)
+
