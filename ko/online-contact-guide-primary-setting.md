@@ -1,6 +1,6 @@
 ## Contact Center > Online Contact > 서비스 가이드 > 서비스 가입 및 기본 설정
 
-✨ <a href="https://github.com/TOAST-DOCS/Contact-Center/blob/alpha/ko/OC_%EB%B9%A0%EB%A5%B8%EC%8B%9C%EC%9E%91%EA%B0%80%EC%9D%B4%EB%93%9C.pdf" target="_blank">빠른시작 가이드</a>
+✨ <a href="https://alpha-docs.toast.com/ko/Contact%20Center/ko/OC_%EB%B9%A0%EB%A5%B8%EC%8B%9C%EC%9E%91%EA%B0%80%EC%9D%B4%EB%93%9C.pdf" target="_blank">빠른시작 가이드</a>
 
 
 ## TOAST 회원가입
