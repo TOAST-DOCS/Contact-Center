@@ -1,7 +1,7 @@
 ## Contact Center > Online Contact > 서비스 가이드 > 헬프센터
 
 ## FAQ
-헬프센터 구성 항목 중 **FAQ**를 활성화했을 경우 ([서비스 관리 → 헬프센터 → 구성관리](https://alpha-docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_26)에서 활성화 가능), FAQ 메뉴의 기능들을 통해 헬프센터에 등록되는 FAQ (자주 묻는 질문) 문서를 관리할 수 있습니다. 
+헬프센터 구성 항목 중 **FAQ**를 활성화했을 경우 ([서비스 관리 → 헬프센터 → 구성관리](https://beta-docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_26)에서 활성화 가능), FAQ 메뉴의 기능들을 통해 헬프센터에 등록되는 FAQ (자주 묻는 질문) 문서를 관리할 수 있습니다. 
 
 
 ### 카테고리 관리
@@ -42,7 +42,7 @@ FAQ 문서의 **① 등록**, **② 수정 및 삭제** 권한은 다음과 같�
 배포문서 또는 초안문서 탭에서 **FAQ 등록** 버튼을 누르시면 FAQ에 등록될 문서를 작성하실 수 있습니다.
 
 작성 시 입력이 필요한 부분은 다음과 같습니다.
--	**①** 카테고리: [헬프센터 → FAQ → 카테고리 관리](https://alpha-docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-help-center/#_1) 탭에서 등록하셨던 카테고리를 선택해주세요. 헬프센터 FAQ 내에서 해당 카테고리 아래로 배치됩니다.
+-	**①** 카테고리: [헬프센터 → FAQ → 카테고리 관리](https://beta-docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-help-center/#_1) 탭에서 등록하셨던 카테고리를 선택해주세요. 헬프센터 FAQ 내에서 해당 카테고리 아래로 배치됩니다.
 -	**②** 메인화면 고정: 카테고리 상관없이 전체 FAQ 게시글이 모여 있는 ‘**전체**’ 분류의 상단에 고정됩니다. 가장 최신으로 등록된 게시글이 가장 상단에 고정됩니다.
 -	**③** 카테고리 별 고정: 해당 카테고리에 속한 FAQ 게시글이 모여 있는 **개별 카테고리** 분류의 상단에 고정됩니다. 가장 최신으로 등록된 게시글이 가장 상단에 
     고정됩니다.
@@ -53,7 +53,7 @@ FAQ 문서의 **① 등록**, **② 수정 및 삭제** 권한은 다음과 같�
 
 
 ## 공지사항
-헬프센터 구성 항목 중 **공지사항**을 활성화했을 경우 ([서비스 관리 → 헬프센터 → 구성관리](https://alpha-docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_26)에서 활성화 가능), 공지사항 메뉴의 기능들을 통해 헬프센터에 등록되는 공지사항 문서를 관리할 수 있습니다. 
+헬프센터 구성 항목 중 **공지사항**을 활성화했을 경우 ([서비스 관리 → 헬프센터 → 구성관리](https://beta-docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_26)에서 활성화 가능), 공지사항 메뉴의 기능들을 통해 헬프센터에 등록되는 공지사항 문서를 관리할 수 있습니다. 
 
 
 ### 말머리 관리
@@ -118,9 +118,9 @@ FAQ 문서의 **① 등록**, **② 수정 및 삭제** 권한은 다음과 같�
 배포문서 또는 초안문서 탭에서 **공지사항 등록** 버튼을 누르시면 공지사항에 등록될 문서를 작성하실 수 있습니다.
 
 작성 시 입력이 필요한 부분은 다음과 같습니다.
--	**①** 템플릿 선택: [헬프센터 → 공지사항 → 템플릿 관리](https://alpha-docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-help-center/#_6) 탭에서 등록하셨던 **카테고리**를 선택해주세요. 헬프센터 FAQ 내에서 해당 카테고리 아래로 배치됩니다.
--	**②** 말머리: [헬프센터 → 공지사항 → 말머리 관리](https://alpha-docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-help-center/#_4) 탭에서 등록하셨던 **말머리**를 선택해주세요. 헬프센터 공지사항 내에서 해당 카테고리 아래로 배치됩니다.
--	**③** 태그: [헬프센터 → 공지사항 → 태그 관리](https://alpha-docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-help-center/#_7) 탭에서 등록하셨던 **태그**를 선택해주세요. 복수 선택 가능합니다.
+-	**①** 템플릿 선택: [헬프센터 → 공지사항 → 템플릿 관리](https://beta-docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-help-center/#_6) 탭에서 등록하셨던 **카테고리**를 선택해주세요. 헬프센터 FAQ 내에서 해당 카테고리 아래로 배치됩니다.
+-	**②** 말머리: [헬프센터 → 공지사항 → 말머리 관리](https://beta-docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-help-center/#_4) 탭에서 등록하셨던 **말머리**를 선택해주세요. 헬프센터 공지사항 내에서 해당 카테고리 아래로 배치됩니다.
+-	**③** 태그: [헬프센터 → 공지사항 → 태그 관리](https://beta-docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-help-center/#_7) 탭에서 등록하셨던 **태그**를 선택해주세요. 복수 선택 가능합니다.
 -	**④** 공지기간: 공지사항이 게시되는 기간입니다. 시작일을 작성 당일 이후로 설정할 경우 해당 날짜로 **예약 등록**됩니다.
 -	**⑤** 상단고정: 전체 FAQ 게시글이 모여 있는 ‘**전체**’ 분류의 상단과, 해당 FAQ 게시글이 속해 있는 **말머리 분류**의 상단에 고정됩니다. 
     가장 최신으로 등록된 게시글이 가장 상단에 고정됩니다.
