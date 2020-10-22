@@ -30,13 +30,13 @@
 
 위 두 방법 중 한가지를 선택하셔서 IAM 회원을 등록하시고, ② 화면 좌측 상단 **슈퍼관리자 추가** 버튼 → **상담원 조회** 버튼 → 등록된 IAM 회원을 이름/계정/이메일 중 일부 정보 입력을 통해 조회하신 후 추가하실 수 있습니다. 
 
-이후 Online Contact의 [서비스 관리 → 상담원](https://alpha-docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_20) 메뉴에서 상담원으로 등록해주시면 해당 슈퍼관리자 권한을 가진 상담원이 정상적으로 서비스를 이용할 수 있습니다.
+이후 Online Contact의 [서비스 관리 → 상담원](https://beta-docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_20) 메뉴에서 상담원으로 등록해주시면 해당 슈퍼관리자 권한을 가진 상담원이 정상적으로 서비스를 이용할 수 있습니다.
 **회원 초대** 버튼 또는 TOAST CONSOLE을 통해 등록하신 IAM 회원의 경우 입력하신 이메일로 비밀번호 변경 이메일이 발송되며, 해당 이메일을 통해 비밀번호를 설정해주신 후에 로그인하실 수 있습니다.
 
 
 ## SSO 로그인
 ![](http://static.toastoven.net/prod_contact_center/2.1.3-(1).png)
-헬프센터 로그인 시 원하는 인증 방식을 설정할 수 있는 메뉴로, 해당 메뉴에서 SSO 로그인을 등록하신 후 [서비스 관리 → 인증](https://alpha-docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_2) 메뉴에서 등록하신 로그인 방식을 설정하시면 헬프센터에 적용됩니다. 등록하신 후 수정도 가능합니다.
+헬프센터 로그인 시 원하는 인증 방식을 설정할 수 있는 메뉴로, 해당 메뉴에서 SSO 로그인을 등록하신 후 [서비스 관리 → 인증](https://beta-docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_2) 메뉴에서 등록하신 로그인 방식을 설정하시면 헬프센터에 적용됩니다. 등록하신 후 수정도 가능합니다.
 
 
 ### SSO 로그인 추가 절차
