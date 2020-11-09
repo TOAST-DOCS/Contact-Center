@@ -3,7 +3,7 @@
 ### API 인증방법 설명
 #### Security Key
 조직 내 서비스는 유일한 Security Key를 가지고 있으며, Security Key를 통해 API로 전달하는 데이터가 암호화됩니다.
-Online Contact → 서비스 관리 → 인증 → OPEN API 탭에서 확인하실 수 있습니다. 
+사용하시는 서비스의 Security Key는 Online Contact → 서비스 관리 → 인증 → OPEN API 탭에서 확인하실 수 있습니다. 
 ![](http://static.toastoven.net/prod_contact_center/1.1-(1).png)
 
 #### 인증 Header
@@ -43,7 +43,7 @@ String authorization = new String(Base64.encodeBase64(rawHmac));
 ----------------------------------- | -------------------------------- | --------------------------|-------------------------|
 |프로토콜                            |HTTPS                             |담당자 이메일               |he.ronggang@nhn-st.com |
 |호출방향                            |POST                              |담당자 부서                 |OC TF                  |
-|인코딩                              |UTF-8                             |결과 형식                   |JSON        |          |
+|인코딩                              |UTF-8                             |결과 형식                   |JSON                   |
 |URL                                 |https://{domain}.oc.toast.com /{serviceId}/hc/openapi/v1/addition.json|  |             |
 |URL (개발)                           |https://{domain}.alpha-oc.toast.com /{serviceId}/hc/openapi/v1/addition.json||        |
 |인터페이스 설명                       |추가 필요한 고객정보를 DB에 저장|           |                                            |
@@ -52,5 +52,26 @@ String authorization = new String(Base64.encodeBase64(rawHmac));
 
 |명칭                   |변수                  |데이터 타입              |필수             | 설명                         |
 |-----------------------|---------------------|------------------------|-----------------|------------------------------|
-|서비스 ID               |serviceID            | Stirng                 | O               |URL PATH 내에 설정한 {serviceO}|
-|                       
+|서비스 ID               |serviceID            |String                 |O               |URL PATH 내에 설정한 {serviceId}|
+|                       |content              |String                  |O               |추가 고객정보                   |
+|노출 여부|visible|int|X|문의 내용 입력박스에 노출 여부 (1: 노출, 0: 숨김, 기본 값: 0)|
+
+#### 결과 데이터
+|명칭|변수|데이터 타입|필수|설명|
+|---|----|---------|---|------|
+|result.content|additionID|string|O|생성된 ID|
+
+#### Response Body
+
+````
+{
+  "header": {
+    "resultCode": 200,
+    "resultMessage": "",
+    "isSuccessful": true
+  },
+  "result": {
+    "content": ef1bd956
+  }
+}
+````
