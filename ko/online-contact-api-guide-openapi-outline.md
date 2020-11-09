@@ -102,27 +102,27 @@ String authorization = new String(Base64.encodeBase64(rawHmac));
 |레벨	|그룹	|명칭	|타입	|URL	|설명|
 |---------|--------|---------|---------|-------|---|
 |조직 레벨	|서비스	|서비스 추가	|POST	|/openapi/v1/admin/service/add.json	|신규 서비스 추가|
-|	   |	      |서비스 상세	|GET	|/openapi/v1/admin/service/{serviceId}.json	|서비스 아이디를 통해 서비스 정보 조회|
-|  	   |	      |서비스 수정	|PUT	|/openapi/v1/admin/service/{serviceId}.json 	|서비스 아이디를 통해 서비스 정보 수정|
-|	   |           |서비스 비활성화	|PUT	|/openapi/v1/admin/service/disable.json	       |서비스 아이디를 통해 서비스 비활성화|
-|	   |	      |서비스 활성화	|PUT	|/openapi/v1/admin/service/enable.json	       |서비스 아이디를 통해 서비스 활성화|
-|	   |	      |서비스 삭제	|DELETE	|/openapi/v1/admin/service/{serviceId}.json	|서비스 아이디를 통해 비활성화 된 서비스 삭제|
-|	   |	      |서비스 API Key 다시 발급	|PUT	|/openapi/v1/admin/service/apikey/refresh.json	|서비스 아이디를 통해 해당 서비스에 생성된 API Key 다시 발급|
+|	   |	      |서비스 상세	|GET	|/openapi/v1/admin/service/{serviceId}.json	|서비스 ID를 통해 서비스 정보 조회|
+|  	   |	      |서비스 수정	|PUT	|/openapi/v1/admin/service/{serviceId}.json 	|서비스 ID를 통해 서비스 정보 수정|
+|	   |           |서비스 비활성화	|PUT	|/openapi/v1/admin/service/disable.json	       |서비스 ID를 통해 서비스 비활성화|
+|	   |	      |서비스 활성화	|PUT	|/openapi/v1/admin/service/enable.json	       |서비스 ID를 통해 서비스 활성화|
+|	   |	      |서비스 삭제	|DELETE	|/openapi/v1/admin/service/{serviceId}.json	|서비스 ID를 통해 비활성화 된 서비스 삭제|
+|	   |	      |서비스 API Key 다시 발급	|PUT	|/openapi/v1/admin/service/apikey/refresh.json	|서비스 ID를 통해 해당 서비스에 생성된 API Key 다시 발급|
 |	   |	      |서비스 리스트	|GET	|/openapi/v1/admin/service/list.json	|조직내에 생성된 모든 서비스 조회|
 |서비스 레벨	|접수유형 관리	|접수유형 추가	|POST	|/{serviceId}/openapi/v1/ticket/category/add.json	|신규 접수유형 추가|
-|	    |                     |접수유형 상세	|GET	|/{serviceId}/openapi/v1/ticket/category/{categoryid}.json	|접수유형 아이디를 통해 접수유형 조회|
-|	    |	                 |접수유형 수정	|PUT	|/{serviceId}/openapi/v1/ticket/category/{categoryid}.json	|접수유형 아이디를 통해 접수유형 수정|
-|	    |	                 |접수유형 삭제	|DELETE	|/{serviceId}/openapi/v1/ticket/category/{categoryid}.json	|접수유형 아이디를 통해 접수유형 삭제|
+|	    |                     |접수유형 상세	|GET	|/{serviceId}/openapi/v1/ticket/category/{categoryid}.json	|접수유형 ID를 통해 접수유형 조회|
+|	    |	                 |접수유형 수정	|PUT	|/{serviceId}/openapi/v1/ticket/category/{categoryid}.json	|접수유형 ID를 통해 접수유형 수정|
+|	    |	                 |접수유형 삭제	|DELETE	|/{serviceId}/openapi/v1/ticket/category/{categoryid}.json	|접수유형 ID를 통해 접수유형 삭제|
 |  	    |	                 |접수유형 리스트	|GET	|/{serviceId}/openapi/v1/ticket/category/list.json	|서비스 내 접수유형 조회|
 |           |티켓 관리	|티켓 생성	|POST	|/{serviceId}/openapi/v1/ticket/add.json	|신규 티켓 생성|
-|	    |	           |티켓 처리	|POST	|/{serviceId}/openapi/v1/ticket/solve.json	|티켓 아이디를 통해 티켓 처리|
-|	    |	           |티켓 상세	|GET	|/{serviceId}/openapi/v1/ticket/{id}.json	|티켓 아이디를 통해 티켓 조회|
+|	    |	           |티켓 처리	|POST	|/{serviceId}/openapi/v1/ticket/solve.json	|티켓 ID를 통해 티켓 처리|
+|	    |	           |티켓 상세	|GET	|/{serviceId}/openapi/v1/ticket/{id}.json	|티켓 ID를 통해 티켓 조회|
 |	    |	           |티켓 리스트	|GET	|/{serviceId}/openapi/v1/ticket/list.json	|검색 조건을 통해 조건에 맞는 티켓 리스트 노출|
 |	    |	           |유저 티켓 리스트	|GET	|/{serviceId}/openapi/v1/ticket/{usercode}/list.json	|검색 조건을 통해 조건에 맞는 고객의 티켓 리스트 노출|
 |	    |	           |티켓 첨부파일 첨부	|POST	|/{serviceId}/openapi/v1/attachments/ticket/upload.json	|서버에 파일 업로드|
 |	    |	           |티켓 첨부파일 열기/다운	|GET	|/{serviceId}/openapi/v1/attachments/ticket/{id}	|서버에 업로드 된 파일 열기/다운|
-|	    |	           |티켓 첨부파일 삭제	|DELETE	|/{serviceId}/openapi/v1/attachments/ticket/{id}.json	|서버에 업로든 된 파일 삭제|
-|	    |공지사항	|공지사항 조회	|GET	|/{serviceId}/openapi/v1/multilanguage/notice.json	|공지사항의 내용 조회 , 검색 조건에 따라 공지사항 리스트를 리턴|
+|	    |	           |티켓 첨부파일 삭제	|DELETE	|/{serviceId}/openapi/v1/attachments/ticket/{id}.json	|서버에 업로드 된 파일 삭제|
+|	    |공지사항	|공지사항 조회	|GET	|/{serviceId}/openapi/v1/multilanguage/notice.json	|공지사항의 내용 조회, 검색 조건에 따라 공지사항 리스트를 리턴|
 |	    |	           |공지사항  상세	   |GET	|/{serviceId}/openapi/v1/multilanguage/notice/{id}.json	|공지사항 ID를 통해 공지사항 내용 취득|
 |	    |	           |공지사항  상세(여러개)	|GET	|/{serviceId}/openapi/v1/multilanguage/notices.json	|여러개의 공지사항 ID를 통해 내용 취득|
 |	    |	           |공지사항 등록	|POST	|/{serviceId}/openapi/v1/multilanguage/notice.json	|신규 공지사항 등록|
