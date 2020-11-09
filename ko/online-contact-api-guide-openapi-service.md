@@ -1,4 +1,4 @@
-## Contact Center > Online Contact > API 가이드 > 서비스 관련 Open API
+## Contact Center > Online Contact > API 가이드 > 서비스 
 ### 서비스 추가
 #### 인터페이스 설명
 - 인터페이스 명: 서비스 추가
@@ -53,7 +53,7 @@
 |               |securityKey	|String	|X	|Open API Key|
 
 #### Response Body
-```
+```Cabal Config
 {
     "header":{
         "resultCode":200,
