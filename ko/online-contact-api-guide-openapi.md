@@ -11,7 +11,7 @@ TOAST CONSOLE에서 생성하신 조직 별로 유일한 Security Key를 보유�
 ![](http://static.toastoven.net/prod_contact_center/dev2.png)
 
 ###### Response Body
-```JSON
+```
 {
     "header":{
         "resultCode":200,
