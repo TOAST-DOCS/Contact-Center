@@ -1,15 +1,12 @@
 ## Contact Center > Online Contact > API 가이드 > 서비스 
 ### 서비스 추가
 #### 인터페이스 설명
-- 인터페이스 명: 서비스 추가
-- 프로토콜: HTTPS
-- 호출방향: POST
-- 인코딩: UTF-8
-- 결과 형식: JSON
 - URL: https://{domain}.oc.toast.com/openapi/v1/admin/service/add.json
 - URL(개발): https://{domain}.alpha-oc.toast.com/openapi/v1/admin/service/add.json
-- 인터페이스 설명: 신규 서비스 추가
-- 접근제한 여부: 공통 인증
+
+|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|------------|-------|--------|-----|--------|--------------|------------|
+|서비스 추가  |HTTPS  |POST    |UTF-8|JSON    |신규 서비스 추가|공통 인증   |
 
 |담당자 이름	|담당자 이메일	|담당자 부서	|
 |-----------|--------------|-----------|
@@ -77,15 +74,12 @@
 
 ### 서비스 상세
 #### 인터페이스 설명
-- 인터페이스 명:	서비스 상세			
-- 프로토콜:	HTTPS		
-- 호출방향:	GET		
-- 인코딩:	UTF-8		
-- 결과 형식:	JSON
 - URL:	https://{domain}.oc.toast.com/openapi/v1/admin/service/{serviceId}.json			
 - URL (개발):	https://{domain}.alpha-oc.toast.com/openapi/v1/admin/service/{serviceId}.json			
-- 인터페이스 설명:	서비스 아이디를 통해 서비스 정보 조회			
-- 접근제한 여부:	공통 인증			
+
+|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|------------|-------|--------|-----|--------|--------------|------------|
+|서비스 상세  |HTTPS  |GET    |UTF-8|JSON    |서비스 아이디를 통해 서비스 정보 조회|공통 인증   |
 
 |담당자 이름|담당자 이메일|CS Development Part|
 |----------|------------|------------------
