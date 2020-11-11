@@ -70,10 +70,6 @@ private String getSHA256Token(String serviceId, String usercode, String username
 |------------|-------|--------|-----|--------|--------------|
 |SSO 원격로그인 API (Client Side)|HTTPS  |POST    |UTF-8|Redirect    |사용자 시스템에서 동적으로 form를 생성하여 브라우저에 반환하며, form은 자동으로 API에 form정보를 전달. API에서 전달된 form정보로 인증 후 성공시 로그인 Cookie 값 설정.|
 
-|담당자 이름	|담당자 이메일	|담당자 부서	|
-|-----------|--------------|-----------|
-|赫荣刚|he.ronggang@nhn-st.com|CS Development Part|
-
 - 사용자 시스템에서의 호출 방법은 아래 Class를 참고해주세요.
   - FormLoginController.java, Method: submitLogin
 
@@ -103,10 +99,6 @@ returnUrl 파라미터 존재시 지정된 returnUrl로 이동 , returnUrl 없�
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|
 |------------|-------|--------|-----|--------|--------------|
 |SSO 원격로그인 API (Server Side)|HTTPS  |POST    |UTF-8|String   |사용자가 서버에서 직접 API 호출. API 로그인 성공 후 로그인 Cookie 값 설정.|
-
-|담당자 이름	|담당자 이메일	|담당자 부서	|
-|-----------|--------------|-----------|
-|赫荣刚|he.ronggang@nhn-st.com|CS Development Part|
 
 - 사용자 시스템에서의 호출 방법은 아래 Class를 참고해주세요.
   - ApiLoginController.java, Method: submitLogin
