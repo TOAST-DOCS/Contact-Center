@@ -24,7 +24,7 @@
 - language=zh: timeZone=Asia/Shanghai
 
 #### Request Body
-```
+```Cabal Config
 {
     "serviceId":"GameBaseService",
     "name":"GameBaseServiceAPI",
@@ -95,7 +95,7 @@
 |             	|securityKey|String	|X	|Open API Key|
 
 #### Response Body
-```
+```Cabal Config
 {
     "header":{
         "resultCode":200,
@@ -142,7 +142,7 @@
 - language=zh: timeZone=Asia/Shanghai
 
 #### Request Body
-```
+```Cabal Config
 {
     "name":"GameBaseServiceAPI",
     "language":"ko",
@@ -162,7 +162,7 @@
 |	              |updatedDt	|Long	|X	|서비스 업데이트 시간|
 |	              |securityKey	|String	|X	|Open API Key|
 
-```
+```Cabal Config
 {
     "header":{
         "resultCode":200,
@@ -210,7 +210,7 @@
 |	              |updatedDt	|Long	|X	|서비스 업데이트 시간|
 |	              |securityKey	|String	|X	|Open API Key|
 
-```
+```Cabal Config
 {
     "header":{
         "resultCode":200,
@@ -260,7 +260,7 @@
 |	              |securityKey	|String	|X	|Open API Key|
 
 #### Response Body
-```
+```Cabal Config
 {
     "header":{
         "resultCode":200,
@@ -301,7 +301,7 @@
 |result.content		|String	|X	|"SUCCESS":삭제 성공, "ENABLE":활성화 상태로 삭제할 수 없음，비활성화 후 삭제 가능|
 
 #### Response Body
-```
+```Cabal Config
 {
     "header":{
         "resultCode":200,
@@ -334,7 +334,7 @@
 |result.content		|String	|X	|신규 API Key|
 
 #### Response Body
-```
+```Cabal Config
 {
     "header":{
         "resultCode":200,
@@ -379,7 +379,7 @@
 |result.pageSize	|pageSize	|int	|X	|1페이지 노출 건수|
 
 #### Response Body
-```
+```Cabal Config
 {
     "header":{
         "resultCode":200,
