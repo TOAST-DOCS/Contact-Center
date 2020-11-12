@@ -24,7 +24,6 @@ Please keep in mind that debit cards could not be registered as payment methods.
 
 ## Choose Service, Set Organization/Domain name
 ![](http://static.toastoven.net/prod_contact_center/1.3.2-(1).png)
-**①** 결제수단 등록 이후 TOAST 홈페이지 상단 **CONSOLE** 버튼을 누르시면 TOAST CONSOLE로 이동합니다. 
 **①** After registering payment methods, you can move to TOAST CONSOLE through clicking **CONSOLE** button which is in the upper side of TOAST homepage.  
 
 
@@ -68,7 +67,7 @@ Please check **① Online Contact Access URL**, and the **OWNER ID** which you c
 
 Access to Online Contact is able using the URL given on the register completion page, or click TOAST CONSOLE → Organization Service Usage → Online Contact to access the login page.
 Please login through using the OWNER ID given on the register completion page. Please  
-마찬가지로 가입완료 페이지에서 확인하신 OWNER ID로 로그인해주세요. Initially, the OWNER ID does not have a password set, login is available after proceeding **Password Finding** first.
+Initially, the OWNER ID does not have a password set, login is available after proceeding **Password Finding** first.
 
 
 ### Login through OWNER ID
