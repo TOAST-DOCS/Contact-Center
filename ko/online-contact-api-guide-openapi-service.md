@@ -11,11 +11,11 @@
 #### 요청 파라미터 정의
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |-----|----|-----------|-----|----|
-|서비스 정보	|request body	|String	|O	|서비스 정보（JSON)|
-|	          |serviceId	  |String	|O	|서비스 ID（유일한 값:예 ; 길이:min = 0, max = 45 ; 형식:영문)|
-|	          |name	        |String	|O	|서비스 명（유일한 값:예; 길이:min = 0, max = 100|
-|	          |language	    |String	|O	|서비스 언어（값:zh\|ja\|ko\|en, ko:한국어, ja:일본어, en:영어, zh:중국어）|
-|				    |timeZone	    |String	|X	|타임 존（값:Asia/Seoul\|Asia/Tokyo|...）|
+|서비스 정보	|request body	|String	|O	|서비스 정보 (JSON)|
+|	          |serviceId	  |String	|O	|서비스 ID (유일한 값:예 ; 길이:min = 0, max = 45 ; 형식:영문)|
+|	          |name	        |String	|O	|서비스 명 (유일한 값:예; 길이:min = 0, max = 100)|
+|	          |language	    |String	|O	|서비스 언어 (값:zh\|ja\|ko\|en, ko:한국어, ja:일본어, en:영어, zh:중국어)|
+|				    |timeZone	    |String	|X	|타임 존 (값:Asia/Seoul\|Asia/Tokyo|...)|
 
 변수 timeZone의 기본 값은 다음과 같습니다.
 - language=ko: timeZone=Asia/Seoul
@@ -39,8 +39,8 @@
 |result.content	|serviceId	|String	|O	|서비스 ID|
 |	              |name	      |String	|O	|서비스 명|
 |	              |active	    |Boolean	|X	|서비스 상태(true:활성화, false:비활성화)|
-|	              |language	  |String	  |O	|서비스 언어（값:zh\|ja\|ko\|en, ko:한국어, ja:일본어, en:영어, zh:중국어|
-|	              |timeZone 	|String	  |X	|타임 존（값:Asia/Seoul\|Asia/Tokyo|...）|
+|	              |language	  |String	  |O	|서비스 언어（값:zh\|ja\|ko\|en, ko:한국어, ja:일본어, en:영어, zh:중국어)|
+|	              |timeZone 	|String	  |X	|타임 존（값:Asia/Seoul\|Asia/Tokyo|...)|
 |               |createdDt	|Long	    |X	|서비스 생성 시간|
 |	              |updatedDt	|Long	    |X	|서비스 업데이트 시간|
 |               |securityKey	|String	|X	|Open API Key|
@@ -88,8 +88,8 @@
 |result.content	|serviceId	|String	|O	|서비스 ID|
 |	              |name	      |String	|O	|서비스 명|
 |	              |active	    |Boolean|		|서비스 상태(true:활성화, false:비활성화)|
-|               |language	  |String	|O	|서비스 언어（값:zh\|ja\|ko\|en, ko:한국어, ja:일본어, en:영어, zh:중국어|
-|	              |timeZone	  |String	|X	|타임 존（값:Asia/Seoul\|Asia/Tokyo|...）|
+|               |language	  |String	|O	|서비스 언어（값:zh\|ja\|ko\|en, ko:한국어, ja:일본어, en:영어, zh:중국어)|
+|	              |timeZone	  |String	|X	|타임 존（값:Asia/Seoul\|Asia/Tokyo|...)|
 |              	|createdDt	|Long	  |X	|서비스 생성 시간|
 |	              |updatedDt	|Long	  |X	|서비스 업데이트 시간|
 |             	|securityKey|String	|X	|Open API Key|
@@ -131,9 +131,9 @@
 |-----|----|------------|----|----|
 |서비스 ID	|serviceId	|String	|O	|서비스 ID，URL PATH 내에 설정한{serviceId}|
 |서비스 정보	|request body	|String	|O	|서비스 정보（JSON）|
-|	          |name	|String	|O	|서비스 명（유일한 값:예; 길이:min = 0, max = 100）|
-|	          |language	|String	|O	|서비스 언어(값:zh\|ja\|ko\|en）ko:한국어, ja:일본어, en:영어, zh:중국어|
-|	          |timeZone	|String	|X	|타임 존（값:Asia/Seoul\|Asia/Tokyo|...）|
+|	          |name	|String	|O	|서비스 명（유일한 값:예; 길이:min = 0, max = 100)|
+|	          |language	|String	|O	|서비스 언어(값:zh\|ja\|ko\|en）ko:한국어, ja:일본어, en:영어, zh:중국어)|
+|	          |timeZone	|String	|X	|타임 존（값:Asia/Seoul\|Asia/Tokyo|...)|
 
 변수 timeZone의 기본 값은 다음과 같습니다.
 - language=ko: timeZone=Asia/Seoul
@@ -156,8 +156,8 @@
 |result.content	|serviceId	|String	|O	|서비스 ID|
 |	              |name	|String	|O	|서비스 명|
 |	              |active	|Boolean	|X	|서비스 상태. true:활성화, false:비활성화|
-|	              |language	|String	|O	|서비스 언어（값:zh\|ja\|ko\|en）ko:한국어, ja:일본어, en:영어, zh:중국어|
-|	              |timeZone	|String	|X	|타임 존（값:Asia/Seoul\|Asia/Tokyo|...）|
+|	              |language	|String	|O	|서비스 언어（값:zh\|ja\|ko\|en）ko:한국어, ja:일본어, en:영어, zh:중국어)|
+|	              |timeZone	|String	|X	|타임 존（값:Asia/Seoul\|Asia/Tokyo|...)|
 |	              |createdDt	|Long	|X	|서비스 생성시간|
 |	              |updatedDt	|Long	|X	|서비스 업데이트 시간|
 |	              |securityKey	|String	|X	|Open API Key|
@@ -204,8 +204,8 @@
 |result.content	|serviceId	|String	|O	|서비스 ID|
 |	              |name	|String	|O	|서비스 명|
 |	              |active	|Boolean	|X	|서비스 상태. true:활성화, false:비활성화|
-|	              |language	|String	|O	|서비스 언어（값:zh\|ja\|ko\|en）ko:한국어, ja:일본어, en:영어, zh:중국어|
-|	              |timeZone	|String	|X	|타임 존（값:Asia/Seoul\|Asia/Tokyo|...）|
+|	              |language	|String	|O	|서비스 언어（값:zh\|ja\|ko\|en）ko:한국어, ja:일본어, en:영어, zh:중국어)|
+|	              |timeZone	|String	|X	|타임 존（값:Asia/Seoul\|Asia/Tokyo|...)|
 |	              |createdDt	|Long	|X	|서비스 생성시간|
 |	              |updatedDt	|Long	|X	|서비스 업데이트 시간|
 |	              |securityKey	|String	|X	|Open API Key|
@@ -253,8 +253,8 @@
 |result.content	|serviceId	|String	|O	|서비스 ID|
 |               |name	|String	|O	|서비스 명|
 |	              |active	|Boolean	|X	|서비스 상태. true:활성화, false:비활성화|
-|	              |language	|String	|O	|서비스 언어（값:zh\|ja\|ko\|en）ko:한국어, ja:일본어, en:영어, zh:중국어|
-|	              |timeZone	|String	|X	|타임 존（값:Asia/Seoul\|Asia/Tokyo|...）|
+|	              |language	|String	|O	|서비스 언어（값:zh\|ja\|ko\|en）ko:한국어, ja:일본어, en:영어, zh:중국어)|
+|	              |timeZone	|String	|X	|타임 존（값:Asia/Seoul\|Asia/Tokyo|...)|
 |	              |createdDt	|Long	|X	|서비스 생성시간|
 |	              |updatedDt	|Long	|X	|서비스 업데이트 시간|
 |	              |securityKey	|String	|X	|Open API Key|
