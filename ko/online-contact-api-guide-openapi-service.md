@@ -11,7 +11,7 @@
 #### 요청 파라미터 정의
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |-----|----|-----------|-----|----|
-|서비스 정보	|request body	|String	|O	|서비스 정보（JSON|
+|서비스 정보	|request body	|String	|O	|서비스 정보（JSON)|
 |	          |serviceId	  |String	|O	|서비스 ID（유일한 값:예 ; 길이:min = 0, max = 45 ; 형식:영문)|
 |	          |name	        |String	|O	|서비스 명（유일한 값:예; 길이:min = 0, max = 100|
 |	          |language	    |String	|O	|서비스 언어（값:zh\|ja\|ko\|en, ko:한국어, ja:일본어, en:영어, zh:중국어）|
