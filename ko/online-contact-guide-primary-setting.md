@@ -1,14 +1,14 @@
 ## Contact Center > Online Contact > Service Guide > Joining and Primary Settings
 
 ## Quick Start Guide
-For administrators whom are initially experiencing Online Contact, we provide a quick start guide for administrators to improve their understanding of the service through the overall experience of the functions provided by Online Contact. If more specific information is needed, inside the guide there is a 'View Manual' button which is directly linked to the service guide informing about each function.    
+For administrators whom are initially experiencing Online Contact, we provide a **Quick Start Guide** for administrators to improve their understanding of the service through the overall experience of the functions provided by Online Contact. If more specific information is needed, inside the guide there is a 'View Manual' button which is directly linked to the service guide informing about each function.    
 
 ✨ <a href="https://alpha-docs.toast.com/ko/Contact%20Center/ko/OC_%EB%B9%A0%EB%A5%B8%EC%8B%9C%EC%9E%91%EA%B0%80%EC%9D%B4%EB%93%9C.pdf" target="_blank"> Quick Start Guide for Administrators</a>
 
 
 ## Joining TOAST 
-To access Online Contact, joining TOAST is needed.  
-Please prepare your credit card since it is mandatory to register payment methods when joining. Business members(TOAST Korea) are also required to prepare a copy of Business Registration Certificate.  
+To access Online Contact, **joining TOAST** is needed.  
+Please prepare your credit card since it is **mandatory to register payment methods** when joining. Business members(TOAST Korea) are also required to prepare a copy of Business Registration Certificate.  
 ![](http://static.toastoven.net/prod_contact_center/1.3.1-(1).png)
 **①** Steps of Joining Toast: Select Country → Select Type of Membership (Individual/Business) → Consent to Terms of Use → Enter Member Inforamtion → Joining Completed
 **②** After joining TOAST, please register payment methods via My page → Payment Methods. 
@@ -18,8 +18,8 @@ Please prepare your credit card since it is mandatory to register payment method
 ![](http://static.toastoven.net/prod_contact_center/1.3.1-(2).png)
 ![](http://static.toastoven.net/prod_contact_center/1.3.1-(3).png)
 
-**①** Payco credit cards, credit cards, bank transfers(provieded only for business members) are able to be registered as payment methods. For particular credit cards and bank transfer service, authentication is need. 
-Please keep in mind that debit cards could not be registered as payment methods.
+**①** Payco credit cards, credit cards, bank transfers(provided only for business members) are able to be registered as payment methods. For particular credit cards and bank transfer service, authentication is need. 
+Please keep in mind that **debit cards could not be registered** as payment methods.
 
 
 ## Choose Service, Set Organization/Domain name
