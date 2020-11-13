@@ -8,7 +8,7 @@
 - Online Contact 우측 맨 하단 **헬프센터 바로가기**
 - https:// **도메인명** .oc.toast.com/ **서비스ID** /hc
 
-도메인명은 Online Contact 조직 생성 시 작성하신 정보로, TOAST CONSOLE → 조직 설정 → 도메인 설정에서 수정하실 수 있습니다. 서비스ID는 [전체 관리 → 서비스](https://alpha-docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-global-management/#_1) 메뉴에서 서비스 추가 시 입력하셨던 정보로, 최초 생성 이후 수정이 불가합니다.
+도메인명은 Online Contact 조직 생성 시 작성하신 정보로, TOAST CONSOLE → 조직 설정 → 도메인 설정에서 수정하실 수 있습니다. 서비스ID는 [전체 관리 → 서비스](https://beta-docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-global-management/#_1) 메뉴에서 서비스 추가 시 입력하셨던 정보로, 최초 생성 이후 수정이 불가합니다.
 
 
 ## 인증
@@ -17,7 +17,7 @@
 
 ### SSO 로그인
 ![](http://static.toastoven.net/prod_contact_center/2.2.1-(1).png)
-SSO 로그인을 활성화하실 경우 **활성화** 버튼을 클릭하신 후, [전체 관리 → SSO 로그인](https://alpha-docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-global-management/#sso) 메뉴에서 등록하셨던 SSO 로그인을 선택하시고 저장하시면 됩니다.
+SSO 로그인을 활성화하실 경우 **활성화** 버튼을 클릭하신 후, [전체 관리 → SSO 로그인](https://beta-docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-global-management/#sso) 메뉴에서 등록하셨던 SSO 로그인을 선택하시고 저장하시면 됩니다.
 
 
 ### OPEN API
@@ -26,7 +26,7 @@ OPEN API 탭에서는 외부에서 Online Contact의 데이터에 접근할 수 
 
 
 ## 채팅
-채팅 기능에 관련된 항목들입니다. 채팅 기능은 [서비스 관리 → 헬프센터 → 구성관리](https://alpha-docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_26)에서 활성화하실 수 있으며, 활성화된 이후에 노출되는 우측 하단 **채팅 아이콘**으로 접속 가능합니다. 
+채팅 기능에 관련된 항목들입니다. 채팅 기능은 [서비스 관리 → 헬프센터 → 구성관리](https://beta-docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_26)에서 활성화하실 수 있으며, 활성화된 이후에 노출되는 우측 하단 **채팅 아이콘**으로 접속 가능합니다. 
 
 ![](http://static.toastoven.net/prod_contact_center/2.2.2-(1).png)
 **채팅 아이콘**을 통해 접속한 후 **①** 좌측 상단 **상태 값**을 클릭하시면 (초기 기본값 ‘오프라인’) 온라인/휴식/오프라인 중 하나로 상태를 설정하실 수 있으며, 온라인 상태일 경우에만 고객의 채팅 요청에 답변할 수 있습니다.
@@ -130,7 +130,7 @@ OPEN API 탭에서는 외부에서 Online Contact의 데이터에 접근할 수 
 
 #### 필드 설정
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(4).png)
-**①** 앞서 [티켓 → 카테고리 관리](https://alpha-docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_9)에서 등록해두신 접수유형에 따라 문의내역에 필요한 필드를 다르게 설정하실 수 있습니다. **접수유형**을 클릭하시면 설정해두신 필드를 열람하실 수 있으며, 개인정보수집 항목을 제외한 필드들의 **②** 순서를 변경하실 수 있습니다. (개인정보수집 항목의 경우 항상 맨 아래 노출되도록 고정됨)
+**①** 앞서 [티켓 → 카테고리 관리](https://beta-docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_9)에서 등록해두신 접수유형에 따라 문의내역에 필요한 필드를 다르게 설정하실 수 있습니다. **접수유형**을 클릭하시면 설정해두신 필드를 열람하실 수 있으며, 개인정보수집 항목을 제외한 필드들의 **②** 순서를 변경하실 수 있습니다. (개인정보수집 항목의 경우 항상 맨 아래 노출되도록 고정됨)
 
 또한 필드 관리 탭에서 추가해두신 필드를 **③** 새롭게 **추가**하시거나, 이미 추가하신 필드를 **④ 제거**하실 수 있습니다.
 
@@ -157,7 +157,7 @@ OPEN API 탭에서는 외부에서 Online Contact의 데이터에 접근할 수 
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(7).png)
 템플릿 관리 메뉴는 자주 접수되는 문의 유형에 대한 **답변 템플릿을 미리 추가**하여 티켓을 신속하게 처리할 수 있는 기능입니다. 티켓 관리 메뉴에서 티켓을 처리할 시 선택 가능하며, 템플릿을 제작할 시 설정된 접수유형과 티켓의 접수유형이 같을 경우 선택할 수 있습니다.
 
-**①** 상단 좌측 **템플릿 추가** 버튼을 통해 템플릿을 추가하실 수 있으며, 템플릿 추가 시 선택하는 접수유형은 앞서 [티켓 → 카테고리 관리](https://alpha-docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_9)에서 등록해두신 접수 유형입니다. 내용 본문 부분에서 마우스 우 클릭 시 링크, 이미지, 테이블을 삽입하실 수 있습니다.
+**①** 상단 좌측 **템플릿 추가** 버튼을 통해 템플릿을 추가하실 수 있으며, 템플릿 추가 시 선택하는 접수유형은 앞서 [티켓 → 카테고리 관리](https://beta-docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_9)에서 등록해두신 접수 유형입니다. 내용 본문 부분에서 마우스 우 클릭 시 링크, 이미지, 테이블을 삽입하실 수 있습니다.
 
 ✔ **\[FAQ 바로가기]** [답변 템플릿은 어떻게 사용하나요?](https://nhn-contact.oc.toast.com/oc/hc/article/39/)
 ✔ **\[FAQ 바로가기]** [티켓 답변 템플릿을 등록했는데, 답변 작성 시 조회되지 않아요.](https://nhn-contact.oc.toast.com/oc/hc/article/62/)
@@ -214,7 +214,7 @@ Online Contact에서 도메인을 제공하는 **① 대표 계정 주소**를 �
 
 
 ![](http://static.toastoven.net/prod_contact_center/2.2.5-(2).png)
-템플릿 추가 및 수정 시 **① CSS / HTML / JS 스크립트**를 주어진 편집기에 직접 작성하시거나 [서비스 관리 → 헬프센터 → 파일업로드 관리](https://alpha-docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_25) 메뉴에서 필요하신 파일(스크립트, 폰트, 이미지 등)을 업로드하신 후 리소스의 경로를 입력하심을 통해 헬프센터의 구성을 변경하실 수 있습니다. 편집 후 **미리보기** 버튼을 통하여 편집 내용이 헬프센터에 적용된 모습을 바로 보실 수 있으며, **저장**하신 후 적용이 가능합니다.
+템플릿 추가 및 수정 시 **① CSS / HTML / JS 스크립트**를 주어진 편집기에 직접 작성하시거나 [서비스 관리 → 헬프센터 → 파일업로드 관리](https://beta-docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_25) 메뉴에서 필요하신 파일(스크립트, 폰트, 이미지 등)을 업로드하신 후 리소스의 경로를 입력하심을 통해 헬프센터의 구성을 변경하실 수 있습니다. 편집 후 **미리보기** 버튼을 통하여 편집 내용이 헬프센터에 적용된 모습을 바로 보실 수 있으며, **저장**하신 후 적용이 가능합니다.
 
 ✔ **\[FAQ 바로가기]** [헬프센터 PC/모바일 템플릿 관리 기능의 구체적인 예시가 궁금해요.](https://nhn-contact.oc.toast.com/oc/hc/article/60/)
 
