@@ -260,7 +260,7 @@
 |	              |securityKey	|String	|X	|Open API Key|
 
 #### Response Body
-```Cabal Config
+```
 {
     "header":{
         "resultCode":200,
