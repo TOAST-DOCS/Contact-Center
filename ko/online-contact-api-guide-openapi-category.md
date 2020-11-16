@@ -167,7 +167,7 @@
 }
 ```
 
-## 접수유형 삭제
+### 접수유형 삭제
 #### 인터페이스 설명
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/ticket/category/{categoryid}.json
 - URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/ticket/category/{categoryid}.json
@@ -199,7 +199,7 @@
 }
 ```
 
-## 접수유형 리스트
+### 접수유형 리스트
 #### 인터페이스 설명
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/ticket/category/list.json			
 - URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/ticket/category/list.json			
