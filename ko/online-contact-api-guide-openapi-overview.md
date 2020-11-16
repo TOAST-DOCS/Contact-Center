@@ -43,11 +43,11 @@ TOAST CONSOLE에서 생성하신 조직 별로 유일한 Security Key를 보유�
 HmacSHA256로 암호화하거나, (조직ID + request URI + 파라미터 값 + 현재 UTC시간 값）문자열에 대해 암호화하여 Authorization 문자열을 생성하실 수 있습니다.
 
 ##### Java 예시
-```Java
+```
 String URL = "http://nhn-cs.alpha-oc.toast.com/openapi/v1/admin/service/add.json";
 String organizationId = "WopqM8euoYw89B7i"; // 조직ID
 String securityKey = "0983e74b682b416684d2da59347aec82"; //조직 API Key
-String uri = /openapi/v1/admin/service/add.json"; // request uri
+String uri = "/openapi/v1/admin/service/add.json"; // request uri
 StringBuilder sb = new StringBuilder();
 sb.append(organizationId);
 sb.append(uri);
