@@ -780,12 +780,65 @@
 |	                |categoryId	|INT	|O	|말머리 ID|
 |	                |categoryName	|String	|O	|말머리 명|
 |	                |subject	|String	|O	|템플릿 제목|
-	memo	String	O	템플릿 설명
-	userId	INT	O	등록 유저 ID
-	userName	String	O	등록 유저 명
-result.contents.tags	tags[].tagId	INT	O	태그 ID
-	tags[].tag	String	O	태그 명
-	tags[].names	String	O	다국어 태그 명
-result.contents.category	names	String	O	다국어 말머리 명
-	createdDt	Long	O	템플릿 등록시간
-	updatedDt	Long	O	템플릿 수정시간
+|	                |memo	        |String	|O	|템플릿 설명|
+|	                |userId	        |INT	|O	|등록 유저 ID|
+|	                |userName	|String	|O	|등록 유저 명|
+|result.contents.tags	|tags[].tagId	|INT	|O	|태그 ID|
+|	                |tags[].tag	|String	|O	|태그 명|
+|	                |tags[].names	|String	|O	|다국어 태그 명|
+|result.contents.category	|names	|String	|O	|다국어 말머리 명|
+|	                        |createdDt	|Long	|O	|템플릿 등록시간|
+|	                        |updatedDt	|Long	|O	|템플릿 수정시간|
+
+#### Response Body
+```
+{
+  "header": {
+    "resultCode": 200,
+    "resultMessage": "",
+    "isSuccessful": true
+  },
+  "result": {
+    "contents": [
+      {
+        "noticeId": 256,
+        "serviceId": "multilanguage",
+        "language":"zh"
+        "status": "O",
+        "categoryId": 509,
+        "readCnt": 1,
+        "userId": 10063,
+        "createdDt": 1547950366000,
+        "updatedDt": 1547961164000,
+        "tags": [
+          {
+            "tagId": 94,
+            "tag": "중국어 태그1",
+            "names": {
+              "ko": "한국어 태그1",
+              "ja": "일본어 태그1",
+              "zh": "중국어 태그1"
+            }
+          }
+        ],
+        "userName": "김창홍",
+        "categoryName": "중국어 말머리",
+        "category": {
+          "categoryId": 509,
+          "names": {
+            "ko": "한국어 말머리",
+            "ja": "일본어 말머리",
+            "zh": "중국어 말머리"
+          }
+        },
+        "subject": "템플릿 제목1",
+        "memo": "템플릿 설명"
+      }
+    ],
+    "total": 1,
+    "pages": 1,
+    "pageNum": 1,
+    "pageSize": 10
+  }
+}
+```
