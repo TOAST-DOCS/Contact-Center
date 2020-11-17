@@ -1,8 +1,8 @@
 ## Contact Center > Online Contact > API 가이드 > 공지사항
 ### 공지사항 목록 조회
 #### 인터페이스 설명
-- URL: https://{domain}.oc.toast.com /{serviceId}/openapi/v1/multilanguage/notice.json			
-- URL (개발): https://{domain}.alpha-oc.toast.com /{serviceId}/openapi/v1/multilanguage/notice.json			
+- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/multilanguage/notice.json			
+- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/multilanguage/notice.json			
 		
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -105,8 +105,8 @@
 
 ### 공지사항 내용 취득
 #### 인터페이스 설명
-- URL: https://{domain}.oc.toast.com /{serviceId}/openapi/v1/multilanguage/notice/{id}.json			
-- URL (개발): https://{domain}.alpha-oc.toast.com /{serviceId}/openapi/v1/multilanguage/notice/{id}.json			
+- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/multilanguage/notice/{id}.json			
+- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/multilanguage/notice/{id}.json			
 		
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -232,8 +232,8 @@
 
 ### 공지사항 내용 취득 (여러 건)
 #### 인터페이스 설명
-- URL: https://{domain}.oc.toast.com /{serviceId}/openapi/v1/multilanguage/notices.json			 		
-- URL (개발): https://{domain}.alpha-oc.toast.com /{serviceId}/openapi/v1/multilanguage/notices.json			
+- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/multilanguage/notices.json			 		
+- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/multilanguage/notices.json			
 		
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -359,8 +359,8 @@
 
 ### 공지사항 등록
 #### 인터페이스 설명
-- URL: https://{domain}.oc.toast.com /{serviceId}/openapi/v1/multilanguage/notice.json			
-- URL (개발): https://{domain}.alpha-oc.toast.com /{serviceId}/openapi/v1/multilanguage/notice.json					
+- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/multilanguage/notice.json			
+- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/multilanguage/notice.json					
 		
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -544,8 +544,8 @@
 
 ### 공지사항 수정
 #### 인터페이스 설명
-- URL: https://{domain}.oc.toast.com /{serviceId}/openapi/v1/multilanguage/notice/{id}.json				
-- URL (개발): https://{domain}.alpha-oc.toast.com /{serviceId}/openapi/v1/multilanguage/notice/{id}.json			
+- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/multilanguage/notice/{id}.json				
+- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/multilanguage/notice/{id}.json			
 		
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -729,8 +729,8 @@
 
 ### 공지사항 삭제
 #### 인터페이스 설명
-- URL:	https://{domain}.oc.toast.com /{serviceId}/openapi/v1/multilanguage/notice/{id}.json						
-- URL (개발): https://{domain}.alpha-oc.toast.com /{serviceId}/openapi/v1/multilanguage/notice/{id}.json							
+- URL:	https://{domain}.oc.toast.com/{serviceId}/openapi/v1/multilanguage/notice/{id}.json						
+- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/multilanguage/notice/{id}.json							
 		
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -747,8 +747,8 @@
 
 ### 공지사항 템플릿 내용 조회
 #### 인터페이스 설명
-- URL: https://{domain}.oc.toast.com /{serviceId}/openapi/v1/multilanguage/notice/template.json						
-- URL (개발): https://{domain}.alpha-oc.toast.com /{serviceId}/openapi/v1/multilanguage/notice/template.json								
+- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/multilanguage/notice/template.json						
+- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/multilanguage/notice/template.json								
 		
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|
 |------------|-------|--------|-----|--------|--------------|
@@ -839,6 +839,351 @@
     "pages": 1,
     "pageNum": 1,
     "pageSize": 10
+  }
+}
+```
+
+### 공지사항 템플릿 내용 취득
+#### 인터페이스 설명
+- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/multilanguage/notice/template/{id}.json							
+- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/multilanguage/notice/template/{id}.json							
+		
+|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|------------|-------|--------|-----|--------|--------------|------------|
+|공지사항 템플릿 내용 취득 |HTTPS  |GET    |UTF-8|JSON    |템플릿 ID를 통해 템플릿 내용 취득|공통 인증|
+
+#### 요청 파라미터 정의
+|명칭	|변수	|데이터 타입	|필수	|설명|
+|----|-----|------------|-----|---|
+|서비스 ID	|serviceId	|VARCHAR(50)	|O	|URL PATH 내에 설정한{serviceId}|
+|템플릿 ID	|id	        |INT	        |O	|URL PATH 내에 설정한{id}|
+
+#### 결과 데이터
+|명칭	|변수	|데이터 타입	|필수	|설명|
+|----|-----|------------|-----|---|
+|result.contents	|noticeId	|INT	|O	|템플릿 ID|
+|	                |serviceId	|String	|O	|서비스 ID|
+|	                |status	        |String	|O	|O：사용, C：미사용|
+|	                |categoryId	|INT	|O	|말머리 ID|
+|	                |userId	        |INT	|O	|등록 유저 ID|
+|	                |subject	|String	|O	|템플릿 제목|
+|	                |memo	        |String	|O	|템플릿 설명|
+|result.content.contents	|{language}.title	|String	|O	|공지사항 제목|
+|	                        |{language}.content	|String	|O	|공지사항 내용|
+|result.content.tags	        |tags[].tagId	|INT	|O	|태그 ID|
+|	                        |tags[].names.{language}	|String	|O	|다국어 태그 명|
+|result.content.category	|categoryId	|INT	|O	|말머리 ID|
+|	                        |names	|String	|O	|다국어 말머리 명|
+|	                        |createdDt	|Long	|O	|템플릿 등록시간|
+|	                        |updatedDt	|Long	|O	|템플릿 수정시간|
+
+#### Response Body
+```
+{
+  "header": {
+    "resultCode": 200,
+    "resultMessage": "",
+    "isSuccessful": true
+  },
+  "result": {
+    "content": {
+      "noticeId": 256,
+      "serviceId": "multilanguage",
+      "status": "O",
+      "categoryId": 509,
+      "title": "중국어 제목1",
+      "content": "중국어 내용1",
+      "userId": 10063,
+      "createdDt": 1547950366000,
+      "updatedDt": 1547961165000,
+      "contents": {
+        "ko": {
+          "title": "한국어 제목1",
+          "content": "한국어 내용1",
+        },
+        "ja": {
+          "title": "일본어 제목1",
+          "content": "일본어 내용1",
+        },
+        "zh": {
+          "title": "중국어 제목1",
+          "content": "중국어 내용1",
+        }
+      },
+      "tags": [
+        {
+          "tagId": 94,
+          "names": {
+            "ko": "한국어 태그1",
+            "ja": "일본어 태그1",
+            "zh": "중국어 태그1"
+          }
+        }
+      ],
+      "category": {
+        "categoryId": 509,
+        "names": {
+          "ko": "한국어 말머리",
+          "ja": "일본어 말머리",
+          "zh": "중국어 말머리"
+        }
+      },
+      "subject": "템플릿 제목1",
+      "memo": "템플릿 설명1"
+    }
+  }
+}
+```
+
+### 공지사항 템플릿 등록
+#### 인터페이스 설명
+- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/multilanguage/notice/template.json			 						
+- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/multilanguage/notice/template.json			 				
+		
+|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|------------|-------|--------|-----|--------|--------------|------------|
+|공지사항 템플릿 등록 |HTTPS  |POST    |UTF-8|JSON    |신규 템플릿 등록|공통 인증|
+
+#### 요청 파라미터 정의
+|명칭	|변수	|데이터 타입	|필수	|설명|
+|----|-----|------------|-----|---|
+|서비스 ID	|serviceId	|String	|O	|URL PATH 내에 설정한{serviceId}|
+|템플릿 내용	|status	|String	|O	|O：사용, C：미사용|
+|	    |categoryId	|INT	|O	|말머리 ID|
+|	    |subject	|String	|O	|템플릿 제목|
+|	    |memo	|String	|O	|템플릿 설명|
+|	    |contents.{language}.title	|String	|O	|다국어 공지사항 제목|
+|	    |contents.{language}.content	|String	|O	|다국어 공지사항 내용|
+|	    |tags[].tagId	|INT	|O	|태그 ID|
+
+#### Request Body
+```
+    {
+      "status": "O",
+      "categoryId": 509,
+      "contents": {
+        "ko": {
+          "title": "한국어 제목1",
+          "content": "한국어 내용1",
+        },
+        "ja": {
+          "title": "일본어 제목1",
+          "content": "일본어 내용1",
+        },
+        "zh": {
+          "title": "중국어 제목1",
+          "content": "중국어 내용1",
+        }
+      },
+      "tags": [
+        {
+          "tagId": 94,
+        }
+      ],
+      "subject": "템플릿 제목1",
+      "memo": "템플릿 설명1"
+    }
+```
+
+#### 결과 데이터
+|명칭	|변수	|데이터 타입	|필수	|설명|
+|----|-----|------------|-----|---|
+|result.content	|noticeId	|INT	|O	|템플릿 ID|
+|	        |serviceId	|String	|O	|서비스 ID|
+|	        |status	        |String	|O	|O：사용, C：미사용|
+|	        |categoryId	|INT	|O	|말머리 ID|
+|	        |subject	|String	|O	|템플릿 제목|
+|	        |memo	        |String	|O	|템플릿 설명|
+|	        |userId	        |INT	|O	|등록 유저ID|
+|result.content.contents	|{language}.title	|String	|O	|공지사항 제목|
+|	                        |{language}.content	|String	|O	|공지사항 내용|
+|result.content.tags	        |tagId	                |INT	|O	|태그 ID|
+|	                        |names.{language}	|String	|O	|다국어 태그 명|
+|result.content.category	|categoryId	        |INT	|O	|말머리 ID|
+|	                        |names	                |String	|O	|다국어 말머리 명|
+|	                        |createdDt	        |Long	|O	|템플릿 등록 시간|
+|	                        |updatedDt	        |Long	|O	|템플릿 수정 시간|
+
+#### Response Body
+```
+{
+  "header": {
+    "resultCode": 200,
+    "resultMessage": "",
+    "isSuccessful": true
+  },
+  "result": {
+    "content": {
+      "noticeId": 256,
+      "serviceId": "multilanguage",
+      "status": "O",
+      "categoryId": 509,
+      "title": "중국어 제목1",
+      "content": "중국어 내용1",
+      "userId": 10063,
+      "createdDt": 1547950366000,
+      "updatedDt": 1547961165000,
+      "contents": {
+        "ko": {
+          "title": "한국어 제목1",
+          "content": "한국어 내용1",
+        },
+        "ja": {
+          "title": "일본어 제목1",
+          "content": "일본어 내용1",
+        },
+        "zh": {
+          "title": "중국어 제목1",
+          "content": "중국어 내용1",
+        }
+      },
+      "tags": [
+        {
+          "tagId": 94,
+          "names": {
+            "ko": "한국어 태그1",
+            "ja": "일본어 태그1",
+            "zh": "중국어 태그1"
+          }
+        }
+      ],
+      "category": {
+        "categoryId": 509,
+        "names": {
+          "ko": "한국어 말머리",
+          "ja": "일본어 말머리",
+          "zh": "중국어 말머리"
+        }
+      },
+      "subject": "템플릿 제목1",
+      "memo": "템플릿 설명1"
+    }
+  }
+}
+```
+
+### 공지사항 템플릿 수정
+#### 인터페이스 설명
+- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/multilanguage/notice/template/{id}.json								
+- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/multilanguage/notice/template/{id}.json			
+
+|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|
+|------------|-------|--------|-----|--------|--------------|
+|공지사항 템플릿 수정 |HTTPS  |PUT    |UTF-8|JSON    |ID를 통해 템플릿 수정|
+
+#### 요청 파라미터 정의
+|명칭	|변수	|데이터 타입	|필수	|설명|
+|----|-----|------------|-----|---|
+|서비스 ID	|serviceId	|String	|O	|URL PATH 내에 설정한{serviceId}|
+|템플릿 ID	|Id	|INT	|O	|URL PATH 내에 설정한{id}|
+|템플릿 내용	|status	|String	|O	|O：사용, C：미사용	
+|           |categoryId	|INT	|O	|말머리 ID|
+|	    |subject	|String	|O	|템플릿 제목|
+|	    |memo	|String	|O	|템플릿 설명|
+|	    |contents.{language}.title	|String	|O	|다국어 공지사항 제목|
+|	    |contents.{language}.content	|String	|O	|다국어 공지사항 내용|
+|	    |tags[].tagId	|INT	|O	|태그 ID|
+
+#### Request Body
+```
+    {
+      "status": "O",
+      "categoryId": 509,
+      "contents": {
+        "ko": {
+          "title": "한국어 제목1",
+          "content": "한국어 내용1",
+        },
+        "ja": {
+          "title": "일본어 제목1",
+          "content": "일본어 내용1",
+        },
+        "zh": {
+          "title": "중국어 제목1",
+          "content": "중국어 내용1",
+        }
+      },
+      "tags": [
+        {
+          "tagId": 94,
+        }
+      ],
+      "subject": "템플릿 제목1",
+      "memo": "템플릿 설명1"
+    }
+```
+
+#### 결과 데이터
+|명칭	|변수	|데이터 타입	|필수	|설명|
+|---------|--------|------------|--------|----|
+|result.content	|noticeId	|INT	|O	|템플릿 ID|
+|	        |status	        |String	|O	|템플릿 상태. O：사용, C：미사용|
+|	        |categoryId	|INT	|O	|말머리 ID|
+|	        |subject	|String	|O	|템플릿 제목|
+|	        |memo	        |String	|X	|템플릿 설명|
+|	        |title	        |String	|O	|공지사항 제목|
+|	        |content	|String	|O	|공지사항 내용|
+|	        |userId	        |INT	|O	|등록 유저 ID|
+|	        |tags	        |Array	|X	|태그 리스트|
+|	        |tags[].tagId	|INT	|O	|태그 ID|
+|	        |tags[].tag	|String	|O	|태그 명|
+|	        |createdDt	|Long	|O	|템플릿 등록시간|
+|	        |updatedDt	|Long	|O	|템플릿 수정시간|
+
+#### Response Body
+```
+{
+  "header": {
+    "resultCode": 200,
+    "resultMessage": "",
+    "isSuccessful": true
+  },
+  "result": {
+    "content": {
+      "noticeId": 256,
+      "serviceId": "multilanguage",
+      "status": "O",
+      "categoryId": 509,
+      "title": "중국어 제목1",
+      "content": "중국어 내용1",
+      "userId": 10063,
+      "createdDt": 1547950366000,
+      "updatedDt": 1547961165000,
+      "contents": {
+        "ko": {
+          "title": "한국어 제목1",
+          "content": "한국어 내용1",
+        },
+        "ja": {
+          "title": "일본어 제목1",
+          "content": "일본어 내용1",
+        },
+        "zh": {
+          "title": "중국어 제목1",
+          "content": "중국어 내용1",
+        }
+      },
+      "tags": [
+        {
+          "tagId": 94,
+          "names": {
+            "ko": "한국어 태그1",
+            "ja": "일본어 태그1",
+            "zh": "중국어 태그1"
+          }
+        }
+      ],
+      "category": {
+        "categoryId": 509,
+        "names": {
+          "ko": "한국어 말머리",
+          "ja": "일본어 말머리",
+          "zh": "중국어 말머리"
+        }
+      },
+      "subject": "템플릿 제목1",
+      "memo": "템플릿 내용1"
+    }
   }
 }
 ```
