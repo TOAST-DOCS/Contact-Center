@@ -1,10 +1,9 @@
 ## Contact Center > Online Contact > API 가이드 > FAQ
 ### FAQ 목록 조회
 #### 인터페이스 설명
-- URL:	https://{domain}.oc.toast.com /{serviceId}/openapi/v1/helpdoc.json			
-- URL (개발):	https://{domain}.alpha-oc.toast.com /{serviceId}/openapi/v1/helpdoc.json			
-
-		
+- URL: https://{domain}.oc.toast.com /{serviceId}/openapi/v1/helpdoc.json			
+- URL (개발): https://{domain}.alpha-oc.toast.com /{serviceId}/openapi/v1/helpdoc.json			
+	
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
 |------------|-------|--------|-----|--------|--------------|------------|
 |FAQ 목록 조회 |HTTPS  |GET    |UTF-8|JSON    |조회 조건 기준으로 FAQ 리스트를 리턴|공통 인증   |
@@ -12,31 +11,31 @@
 #### 요청 파라미터 정의
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |-----|----|-----------|-----|----|
-|서비스 ID	|serviceId	|VARCHAR(50)	|O	|서비스 ID, URL PATH내에 설정|
-|조회언어	|language	|VARCHAR(2)	|X	|ko：한국어, zh：중국어, ja：일본어, en：영어|
-|카테고리 ID	|categoryId	|INT	|X	|카테고리 ID|
+|서비스 ID	|serviceId	|Varchar(50)	|O	|서비스 ID, URL PATH내에 설정|
+|조회언어	|language	|Varchar(2)	|X	|ko：한국어, zh：중국어, ja：일본어, en：영어|
+|카테고리 ID	|categoryId	|Int	|X	|카테고리 ID|
 |추천	|recommend	|Boolean	|X	|true：추천，false：추천 아님|
 |상단고정	|top	|Boolean	|X	|true：상단고정，false：상단고정 아님|
-|상태	|status	|VARCHAR(1)	|X	|D：초안, O：공개, C：완료|
-|키워드	|query	|VARCHAR	|X	|검색문구|
-|조회 필드	|searchField	|VARCHAR	|X	|디폴트: 내용+제목으로 검색, title：제목만 검색, content：내용만 검색|
-|정렬 필드	|sort	|VARCHAR	|X	|isTop, isRecommend, createdDt, updatedDt 필드로 정렬기준 지정 가능. 여러개 일 경우 ','로 분리|
-|페이지	|page	|INT	|X	|페이지 번호，디폴트로 1페이지| 
-|페이지 당 건수	|pageSize	|INT	|X	|페이지 당 데이터 건수，디폴트로 10건|
+|상태	|status	|Varchar(1)	|X	|D：초안, O：공개, C：완료|
+|키워드	|query	|Varchar	|X	|검색문구|
+|조회 필드	|searchField	|Varchar	|X	|디폴트: 내용+제목으로 검색, title：제목만 검색, content：내용만 검색|
+|정렬 필드	|sort	|Varchar	|X	|isTop, isRecommend, createdDt, updatedDt 필드로 정렬기준 지정 가능. 여러개 일 경우 ','로 분리|
+|페이지	|page	|Int	|X	|페이지 번호，디폴트로 1페이지| 
+|페이지 당 건수	|pageSize	|Int	|X	|페이지 당 데이터 건수，디폴트로 10건|
 
 #### 결과 데이터
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |-----|----|-----------|------|---|
 |result.contents	|helpDocId	|Long	|O	|FAQ ID|
-|                 |serviceId	|String	|O	|서비스 ID|
+|                 |serviceId	        |String	|O	|서비스 ID|
 |	                |language	|String	|O	|ko：한국어, zh：중국어, ja：일본어, en：영어|
-| 	              |status	|String	|O	|FAQ 상태. D：초안, O：공개, C：완료|
-|	                |categoryId	|INT	|O	|카테고리 ID|
+| 	              |status	        |String	|O	|FAQ 상태. D：초안, O：공개, C：완료|
+|	                |categoryId	|Int	|O	|카테고리 ID|
 |	                |categoryName	|String	|O	|카테고리 명|
 |	                |isRecommend	|Boolean	|O	|추천|
-|	                |isTop	|Boolean	|O	|상단고정|
-|	                |title	|String	|O	|FAQ 제목|
-|	                |userId	|INT	|O	|등록 유저ID|
+|	                |isTop	        |Boolean	|O	|상단고정|
+|	                |title	        |String	|O	|FAQ 제목|
+|	                |userId	        |Int	|O	|등록 유저ID|
 |	                |userName	|String	|O	|등록 유저명|
 |	                |createdDt	|Long	|O	|FAQ 등록시간|
 |	                |updatedDt	|Long	|O	|FAQ 수정시간|
@@ -77,10 +76,9 @@
 
 ### FAQ 상세내용 취득
 #### 인터페이스 설명
-- URL:	https://{domain}.oc.toast.com /{serviceId}/openapi/v1/helpdoc/{id}.json			
-- URL (개발):	https://{domain}.alpha-oc.toast.com /{serviceId}/openapi/v1/helpdoc/{id}.json			
+- URL: https://{domain}.oc.toast.com /{serviceId}/openapi/v1/helpdoc/{id}.json			
+- URL (개발): https://{domain}.alpha-oc.toast.com /{serviceId}/openapi/v1/helpdoc/{id}.json			
 
-		
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
 |------------|-------|--------|-----|--------|--------------|------------|
 |FAQ 상세내용 취득 |HTTPS  |GET    |UTF-8|JSON    |FAQ ID를 통해 FAQ 내용 취득|공통 인증   |
@@ -101,13 +99,13 @@
 | 	            |isRecommend	|Boolean	|O	|추천|
 | 	            |isTop	|Boolean	|O	|상단고정|
 | 	            |status	|String	|O	|FAQ 상태, D：초안, O：공개, C：완료|
-|	              |readCnt	|INT	|O	|조회수|
-|	              |userId	|INT	|O	|등록 유저 ID|
+|	              |readCnt	|Int	|O	|조회수|
+|	              |userId	|Int	|O	|등록 유저 ID|
 |	              |username	|String	|O	|등록 유저 명|
 |	              |attachmentYn	|Boolean	|O	|첨부파일 포함 여부|
 |	              |createdDt	|Long	|O	|FAQ 등록시간|
 |	              |updatedDt	|Long	|O	|FAQ 수정시간|
-|	              |categories.categoryId	|INT	|O	|카테고리 ID|
+|	              |categories.categoryId	|Int	|O	|카테고리 ID|
 |	              |categories.parent	|String	|O	|상위 카테고리 ID|
 |	              |categories.name	|String	|O	|카테고리 명|
 |	              |categories.level	|String	|O	|카테고리 뎁스（1\|2\|3）|
@@ -115,7 +113,7 @@
 |	              |contents.{language}.content	|String	|O	|다국어 FAQ 내용|
 |	              |contents.{language}.attachments[].attachmentId	|String	|O	|다국어 첨부파일 ID|
 |	              |contents.{language}.attachments[].fileName	|String	|O	|다국어 첨부파일 명|
-|	              |contents.{language}.attachments[].size	Long	|O	|다국어 첨부파일 크기|
+|	              |contents.{language}.attachments[].size	|Long	|O	|다국어 첨부파일 크기|
 |	              |attachments[].attachmentId	|String	|O	|첨부파일 ID|
 |	              |attachments[].fileName	|String	|O	|첨부파일 명|
 |	              |attachments[].size	|Long	|O	|첨부파일 크기|
@@ -313,13 +311,13 @@
 |	        |isRecommend	|Boolean	|O	|추천 여부. true：추천, false：추천 아님|
 |	        |isTop	        |Boolean	|O	|상단고정 여부. true：상단고정, false：상단고정 아님|
 |	        |status	        |String	|O	|FAQ 상태. D：초안, O：공개, C：완료|
-|	        |readCnt	|INT	|O	|조회수|
-|	        |userId	        |INT	|O	|등록 유저 ID|
+|	        |readCnt	|Int	|O	|조회수|
+|	        |userId	        |Int	|O	|등록 유저 ID|
 |	        |username	|String	|O	|등록 유저 명|
 |	        |attachmentYn	|Boolean	|O	|첨부파일 포함 여부|
 |	        |createdDt	|Long	|O	|FAQ 등록시간|
 |	        |updatedDt	|Long	|O	|FAQ 수정시간|
-|	        |categories.categoryId	|INT	|O	|카테고리 ID|
+|	        |categories.categoryId	|Int	|O	|카테고리 ID|
 |	        |categories.parent	|String	|O	|상위 카테고리 ID|
 |	        |categories.name	|String	|O	|카테고리 명|
 |	        |categories.level	|String	|O	|카테고리 뎁스（1\|2\|3）|
@@ -526,13 +524,13 @@
 |	        |isRecommend	|Boolean	|O	|추천 여부. true：추천, false：추천 아님|
 |	        |isTop	        |Boolean	|O	|상단고정 여부. true：상단고정, false：상단고정 아님|
 |	        |status	        |String	|O	|FAQ 상태. D：초안, O：공개, C：완료|
-|	        |readCnt	|INT	|O	|조회수|
-|	        |userId	        |INT	|O	|등록 유저 ID|
+|	        |readCnt	|Int	|O	|조회수|
+|	        |userId	        |Int	|O	|등록 유저 ID|
 |	        |username	|String	|O	|등록 유저 명|
 |	        |attachmentYn	|Boolean	|O	|첨부파일 포함 여부|
 |	        |createdDt	|Long	|O	|FAQ 등록시간|
 |	        |updatedDt	|Long	|O	|FAQ 수정시간|
-|	        |categories.categoryId	|INT	|O	|카테고리 ID|
+|	        |categories.categoryId	|Int	|O	|카테고리 ID|
 |	        |categories.parent	|String	|O	|상위 카테고리 ID|
 |	        |categories.name	|String	|O	|카테고리 명|
 |	        |categories.level	|String	|O	|카테고리 뎁스（1\|2\|3）|
@@ -653,7 +651,7 @@
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |----|------|-----------|----|----|
 |서비스 ID	|serviceId	|String	|O	|URL PATH내에 설정한{serviceId}|
-|FAQ ID	|Id	|INT	|O	|URL PATH내에 설정한{id}|
+|FAQ ID	|Id	          |Int	|O	|URL PATH내에 설정한{id}|
 |추천	|recommend	|Boolean	|O	|추천 여부. true：추천, false：추천 아님|
 
 #### 결과 데이터
@@ -672,8 +670,443 @@
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |----|------|-----------|----|----|
 |서비스 ID	|serviceId	|String	|O	|URL PATH내에 설정한{serviceId}|
-|FAQ ID	   |Id	|INT	|O	|URL PATH내에 설정한{id}|
+|FAQ ID	   |Id	|Int	|O	|URL PATH내에 설정한{id}|
 |상단고정	|top	|Boolean	|O	|상단고정 여부. true：상단고정, false：상단고정 아님|
 
 #### 결과 데이터
 - 없음
+
+### FAQ 완료처리
+#### 인터페이스 설명
+- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/helpdoc/{id}/close.json				
+- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/helpdoc/{id}/close.json		
+
+|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|------------|-------|--------|-----|--------|--------------|------------|
+|FAQ 완료처리 |HTTPS  |PUT    |UTF-8|JSON    |FAQ 상태를 완료로 변경 (status = C)|공통 인증   |
+
+#### 요청 파라미터 정의
+|명칭	|변수	|데이터 타입	|필수	|설명|
+|----|------|-----------|----|----|
+|서비스 ID	|serviceId	|String	|O	|URL PATH내에 설정한{serviceId}|
+|FAQ ID	   |Id	           |Int	   |O	   |URL PATH내에 설정한{id}|
+
+#### 결과 데이터
+- 없음
+
+### FAQ 삭제
+#### 인터페이스 설명
+- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/helpdoc/{id}.json					
+- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/helpdoc/{id}.json			
+
+|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|------------|-------|--------|-----|--------|--------------|------------|
+|FAQ 삭제 |HTTPS  |DELETE    |UTF-8|JSON    |FAQ ID 기준으로 FAQ 삭제|공통 인증   |
+
+#### 요청 파라미터 정의
+|명칭	|변수	|데이터 타입	|필수	|설명|
+|----|------|-----------|----|----|
+|서비스 ID	|serviceId	|String	|O	|URL PATH내에 설정한{serviceId}|
+|FAQ ID	   |Id	           |Int	   |O	   |URL PATH내에 설정한{id}|
+
+#### 결과 데이터
+- 없음
+
+### FAQ 카테고리 리스트 취득
+#### 인터페이스 설명
+- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v2/helpdoc/categories.json				
+- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/helpdoc/categories.json			
+			
+|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|------------|-------|--------|-----|--------|--------------|------------|
+|FAQ 카테고리 리스트 취득 |HTTPS  |GET    |UTF-8|JSON    |FAQ 카테고리 리스트 취득|공통 인증   |
+
+#### 요청 파라미터 정의
+|명칭	|변수	|데이터 타입	|필수	|설명|
+|----|------|-----------|----|----|
+|서비스 ID	|serviceId	  |String	|O	|URL PATH내에 설정한{serviceId}|
+|하위 카테고리 ID	|child	|Int	|X	|상위 카테고리 취득 시, 전송하는 하위 카테고리 ID| 
+|상위 카테고리 ID	|parent	|Int	|X	|하위 카테고리 취득 시, 전송하는 상위 카테고리 ID|
+
+#### 결과 데이터
+|명칭	|변수	|데이터 타입	|필수	|설명|
+|---------|---------|-----------|---------|----|
+|result.contents	|categoryId	|Int	|O	|카테고리 ID|
+|	                |serviceId	|String	|O	|서비스 ID|
+|	                |categoryCode	|String	|X	|카테고리 Code|
+|	                |parent	        |Int	|X	|상위 카테고리 ID（기본 값:0）|
+|	                |name	        |String	|O	|카테고리 명|
+|	                |level	        |Int	|X	|뎁스（1\|2\|3）|
+|	                |path	        |String	|X	|뎁스 경로（\level1\level2\"）|
+|	                |orderNo	|Int	|X	|정렬 순서（기본 값:0）|
+|	                |createdDt	|Long	|X	|등록시간|
+|	                |updatedDt	|Long	|X	|수정시간|
+|	                |languages	|String	|X	|다국어|
+
+#### Response Body
+```
+{
+    "header":{
+        "resultCode":200,
+        "resultMessage":"",
+        "isSuccessful":true
+    },
+    "result":{
+        "contents":[
+            {
+                "categoryId":999,
+                "serviceId":"multilanguage",
+                "categoryCode":"game",
+                "parent":0,
+                "name":"한국어 카테고리2",
+                "level":1,
+                "path":"\\",
+                "orderNo":0,
+                "createdDt":1554949320000,
+                "updatedDt":1554949320000,
+                "languages":{
+                    "ko":"한국어 카테고리2"
+                }
+            },
+            {
+                "categoryId":509,
+                "serviceId":"multilanguage",
+                "categoryCode":"code1",
+                "parent":0,
+                "name":"중국어 카테고리1",
+                "level":1,
+                "path":"\\",
+                "orderNo":0,
+                "createdDt":1547949603000,
+                "updatedDt":1554887489000,
+                "languages":{
+                    "ko":"한국어 카테고리1",
+                    "ja":"일본어 카테고리1",
+                    "en":"영어 카테고리1",
+                    "zh":"중국어 카테고리1"
+                }
+            }
+        ]
+    }
+}
+```
+
+### FAQ 카테고리 내용 취득
+#### 인터페이스 설명
+- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v2/helpdoc/category/{id}.json				
+- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/helpdoc/category/{id}.json		
+						
+|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|------------|-------|--------|-----|--------|--------------|------------|
+|FAQ 카테고리 내용 취득 |HTTPS  |GET    |UTF-8|JSON    |카테고리 ID를 통해 FAQ 카테고리 내용 취득|공통 인증   |
+
+#### 요청 파라미터 정의
+|명칭	|변수	|데이터 타입	|필수	|설명|
+|----|------|-----------|----|----|
+|서비스 ID	|serviceId	|String	|O	|URL PATH내에 설정한{serviceId}|
+|카테고리 ID 혹은 카테고리 Code	|id	|String	|O	|URL PATH내에 설정한{id}|
+
+#### 결과 데이터
+|명칭	|변수	|데이터 타입	|필수	|설명|
+|---------|--------|------------|---------|----|
+|result.contents	|categoryId	|Int	|O	|카테고리 ID|
+|	                |serviceId	|String	|O	|서비스 ID|
+|	                |categoryCode	|String	|X	|카테고리 Code|
+|	                |parent	        |Int	|X	|상위 카테고리 ID（기본 값:0）|
+|	                |name	        |String	|O	|카테고리 명|
+|	                |level	        |Int	|X	|뎁스（1|2|3）|
+|	                |path	        |String	|X	|뎁스 경로（\level1\level2\"）|
+|	                |orderNo	|Int	|X	|정렬 순서（기본 값:0）|
+|	                |createdDt	|Long	|X	|등록시간|
+|	                |updatedDt	|Long	|X	|수정시간|
+|	                |languages	|String	|X	|다국어|
+
+#### Response Body
+```
+{
+    "header":{
+        "resultCode":200,
+        "resultMessage":"",
+        "isSuccessful":true
+    },
+    "result":{
+        "content":{
+            "categoryId":509,
+            "serviceId":"multilanguage",
+            "categoryCode":"code1",
+            "parent":0,
+            "name":"중국어 카테고리1",
+            "level":1,
+            "path":"\\",
+            "orderNo":0,
+            "createdDt":1547949603000,
+            "updatedDt":1554887489000,
+            "languages":{
+                "ko":"한국어 카테고리1",
+                "ja":"일본어 카테고리1",
+                "en":"영어 카테고리1",
+                "zh":"중국어 카테고리1"
+            }
+        }
+    }
+}
+```
+
+### FAQ 카테고리 추가
+#### 인터페이스 설명
+- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/helpdoc/category.json				
+- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/helpdoc/category.json			
+							
+|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|------------|-------|--------|-----|--------|--------------|------------|
+|FAQ 카테고리 추가 |HTTPS  |POST    |UTF-8|JSON    |신규 FAQ 카테고리 추가|공통 인증   |
+
+#### 요청 파라미터 정의
+|명칭	|변수	|데이터 타입	|필수	|설명|
+|----|------|-----------|----|----|
+|서비스 ID	|serviceId	|String	|O	|URL PATH내에 설정한{serviceId}|
+|카테고리 정보	|request body	|String	|O	|카테고리 정보（JSON）|
+|	             |name	     |String  |		|카테고리 명（유일한 값:예 ; 길이:min = 0, max = 50 ; 형식:^(\_\|-\|[^\\pP])+$）|
+|	              |categoryCode	|String		|카테고리 Code|
+|	              |languages	|String		|다국어|
+|	              |parent	        |Int		|상위 카테고리 ID（기본 값:0）|
+|	              |orderNo	        |Int		|정렬순서（기본 값:0）|
+
+#### Request Body
+```
+단일언어
+{
+    "name":"중국어 카테고리3",
+    "categoryCode":"game3",
+    "orderNo":1,
+    "parent":0
+}
+
+다국어
+{
+    "categoryCode":"game3",
+    "parent":0,
+    "orderNo":1,
+    "languages":{
+        "ko":"한국어 카테고리3",
+        "ja":"일본오 카테고리3",
+        "en":"영여 카테고리3",
+        "zh":"중국어 카테고리3"
+    }
+}
+```
+
+#### 결과 데이터
+|명칭	|변수	|데이터 타입	|필수	|설명|
+|----|------|-----------|----|----|
+|result.contents	|categoryId	|Int	|O	|카테고리 ID|
+|	                |serviceId	|String	|O	|서비스 ID|
+|	                |categoryCode	|String	|X	|카테고리 Code|
+|	                |parent	        |Int	|X	|상위 카테고리 ID（기본 값:0）|
+|	                |name	        |String	|O	|카테고리 명|
+|	                |level	        |Int	|X	|뎁스（1\|2\|3）|
+|	                |path	        |String	|X	|뎁스 경로（\level1\level2\"）|
+|	                |orderNo	|Int	|X	|정렬 순서（기본 값:0）|
+|	                |createdDt	|Long	|X	|등록시간|
+|	                |updatedDt	|Long	|X	|수정시간|
+|	                |languages	|String	|X	|다국어|
+
+#### Response Body
+```
+{
+    "header":{
+        "resultCode":200,
+        "resultMessage":"",
+        "isSuccessful":true
+    },
+    "result":{
+        "content":{
+            "categoryId":1577,
+            "serviceId":"multilanguage",
+            "categoryCode":"game3",
+            "parent":0,
+            "name":"중국어 카테고리3",
+            "level":1,
+            "path":"\\",
+            "orderNo":1,
+            "createdDt":1587360957961,
+            "updatedDt":1587360957961,
+            "languages":{
+                "ko":"한국어 카테고리3",
+                "ja":"일본어 카테고리3",
+                "en":"영어 카테고리3",
+                "zh":"중국어 카테고리3"
+            }
+        }
+    }
+}
+```
+
+### FAQ 카테고리 수정
+#### 인터페이스 설명
+- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/helpdoc/category/{id}.json	
+- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/helpdoc/category/{id}.json	
+									
+|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|------------|-------|--------|-----|--------|--------------|------------|
+|FAQ 카테고리 수정 |HTTPS  |PUT    |UTF-8|JSON    |ID 기준으로 카테고리 명 수정 |공통 인증   |
+
+#### 요청 파라미터 정의
+|명칭	|변수	|데이터 타입	|필수	|설명|
+|----|------|-----------|----|----|
+|서비스 ID	|serviceId	|String	|O	|URL PATH내에 설정한{serviceId}|
+|카테고리 ID 혹은 카테고리 Code	|Id	|String	|O	|URL PATH내에 설정한{id}|
+|카테고리 정보	            |request body	|String	|O	|카테고리 정보（JSON）|
+|	                         |name	             |String  |	     |카테고리 명（유일한 값:예 ; 길이:min = 0, max = 50 ; 형식:^(\_\|-\|[^\\pP])+$）|
+|	                         |categoryCode	     |String  |	     |카테고리 Code|
+|	                         |languages	     |String  |	     |다국어|
+|	                         |parent	     |Int     |	     |상위 카테고리 ID（기본 값:0）|
+|	                         |orderNo	     |Int     |	     |정렬순서（기본 값:0）|
+
+#### Request Body
+```
+단일언어
+{
+    "name":"중국어 카테고리2",
+    "categoryCode":"game0",
+    "orderNo":2,
+    "parent":509
+}
+
+다국어
+{
+    "categoryCode":"game0",
+    "parent":509,
+    "orderNo":2,
+    "languages":{
+        "ko":"한국어 카테고리2",
+        "ja":"일본어 카테고리2",
+        "en":"영어 카테고리2",
+        "zh":"중국어 카테고리2"
+    }
+}
+```
+
+#### 결과 데이터
+|명칭	|변수	|데이터 타입	|필수	|설명|
+|---------|---------|-----------|---------|----|
+|result.contents	|categoryId	|Int	|O	|카테고리 ID|
+|	                |serviceId	|String	|O	|서비스 ID|
+|	                |categoryCode	|String	|X	|카테고리 Code|
+|	                |parent	        |Int	|X	|상위 카테고리 ID（기본 값:0）|
+|	                |name	        |String	|O	|카테고리 명|
+|	                |level	        |Int	|X	|뎁스（1\|2\|3）|
+|	                |path	        |String	|X	|뎁스 경로（\level1\level2\"）|
+|	                |orderNo	|Int	|X	|정렬 순서（기본 값:0）|
+|	                |createdDt	|Long	|X	|등록시간|
+|	                |updatedDt	|Long	|X	|수정시간|
+|	                |languages	|String	|X	|다국어|
+
+#### Response Body
+```
+{
+    "header":{
+        "resultCode":200,
+        "resultMessage":"",
+        "isSuccessful":true
+    },
+    "result":{
+        "content":{
+            "categoryId":1576,
+            "serviceId":"GameBaseService",
+            "parent":0,
+            "name":"한국어 카테고리",
+            "level":1,
+            "path":"\",
+            "orderNo":1,
+            "createdDt":1587349288181,
+            "updatedDt":1587349288181,
+            "languages":{
+                "ko":"한국어 카테고리",
+                "ja":"일본어 카테고리",
+                "zh":"중국어 카테고리",
+                "en":"영어 카테고리"
+            }
+        }
+    }
+}
+```
+
+### FAQ 카테고리 삭제
+#### 인터페이스 설명
+- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/helpdoc/category/{id}.json				
+- URL (개발): https://{domain}.alpha-oc.toast.com /{serviceId}/openapi/v1/helpdoc/category/{id}.json	
+									
+|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|------------|-------|--------|-----|--------|--------------|------------|
+|FAQ 카테고리 삭제 |HTTPS/80  |DELETE    |UTF-8|JSON    |카테고리 ID를 통해 FAQ 카테고리 삭제|공통 인증   |
+
+#### 요청 파라미터 정의
+|명칭	|변수	|데이터 타입	|필수	|설명|
+|----|------|-----------|----|----|
+|서비스 ID	|serviceId	|String	|O	|URL PATH내에 설정한{serviceId}|
+|카테고리 ID 혹은 카테고리 Code	|id	|String	|O	|URL PATH내에 설정한{id}|
+
+#### 결과 데이터
+- 없음
+
+### FAQ 첨부파일 첨부
+#### 인터페이스 설명
+- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/attachments/help/upload.json			
+- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/attachments/help/upload.json	
+									
+|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|------------|-------|--------|-----|--------|--------------|------------|
+|FAQ 첨부파일 첨부 |HTTPS  |POST    |UTF-8|JSON    |서버에 파일 업로드|공통 인증   |
+
+#### 요청 파라미터 정의
+|명칭	|변수	|데이터 타입	|필수	|설명|
+|----|------|-----------|----|----|
+|서비스 ID	|serviceId	|String	|O	|URL PATH 내에 설정한 {serviceId}|
+|업로드한 파일	|file	|File	|O	|업로드한 파일을 form로 제출|
+
+#### 결과 데이터
+|명칭	|변수	|데이터 타입	|필수	|설명|
+|---------|--------|------------|--------|-----|
+|result.content	|attachmentId	|String	|O	|첨부파일 ID|
+|	        |fileName	|String	|O	|파일 명|
+|	        |contentType	|String	|O	|파일 유형|
+|	        |size 	        |Long	|O	|파일 크기|
+
+#### Response Body
+```
+{
+    "header":{
+        "resultCode":200,
+        "resultMessage":"",
+        "isSuccessful":true
+    },
+    "result":{
+        "content":{
+            "attachmentId":"b891809a58b94ce3a09c080b81d0d14c",
+            "fileName":"file2.jpg",
+            "contentType":"image/jpeg",
+            "size":13855
+        }
+    }
+}
+```
+
+### FAQ 첨부파일 삭제
+#### 인터페이스 설명
+- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/attachments/help/{id}.json				
+- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/ attachments/help/{id}.json	
+									
+|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|------------|-------|--------|-----|--------|--------------|------------|
+|FAQ 첨부파일 삭제 |HTTPS  |DELETE    |UTF-8|JSON    |서버에 업로드한 파일 삭제|공통 인증   |
+
+#### 요청 파라미터 정의
+|명칭	|변수	|데이터 타입	|필수	|설명|
+|----|------|-----------|----|----|
+|서비스 ID	|serviceId	|String	|O	|URL PATH 내에 설정한{serviceId}|
+|업로드한 파일 ID	|id	|String	|O	|업로드한 파일 ID|
+
+#### 결과 데이터
+- 없음
+
