@@ -24,7 +24,7 @@ SSO 로그인을 등록하신 후에 API Key를 복사해주세요. 원격로그
 
 ### 인증토큰 생성
 Token 생성 샘플은 아래와 같습니다. 파라미터 순서는 반드시 아래와 일치해야 하며, SSO 로그인 API Key를 확인해주세요.
-```JAVA
+```
 private String getSHA256Token(String serviceId, String usercode, String username, String email, String phone,
         String returnUrl, Long time, String apiKey) throws Exception {
     StringBuilder sb = new StringBuilder();
@@ -57,7 +57,6 @@ private String getSHA256Token(String serviceId, String usercode, String username
     byte[] rawHmac = mac.doFinal(sb.toString().getBytes("UTF-8"));
     return new String(Base64.encodeBase64(rawHmac));
 }
-
 ```
 
 ### SSO API
@@ -73,14 +72,14 @@ private String getSHA256Token(String serviceId, String usercode, String username
 ##### 요청 파라미터 정의
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |-----|----|------------|----|----|
-|서비스ID	|service	|VARCHAR(50)	|O	|서비스 ID|
-|유저ID	   |usercode	|VARCHAR(50)	|O	|유저ID，유일한 유저임을 표시|
-|유저 명	  |username	|VARCHAR(50)	|X	|유저 명|
-|유저 이메일 주소	|email	|VARCHAR(100)	|X	|유저 이메일|
-|전화번호	        |phone	|VARCHAR(20)	|X	|전화번호|
-|현재 시간의 timestamp	|time	|LONG	|O	|호출 시간이 3분 초과시, 타임아웃 얼럿 출력.|
-|인증 Token	           |token	|VARCHAR	|O	|아래 파라미터 값과 SSO API Key로 산출된 SHA256 (필수가 아닌 파라미터 값이 null 혹은 빈값일 경우 , 암호화 문자열에 추가 할 필요 없음.주의：문자열 중 각 값의 순서는 아래 예시에 지정된 순서와 일치해야 함.) SHA256Digest(service + usercode + username + email + phone + retunrnUrl + time)|
-|리턴 화면 URL	|returnUrl	|VARCHAR	|X	|설정 및 로그인 성공시 해당 주소로 이동|
+|서비스ID	|service	|Varchar(50)	|O	|서비스 ID|
+|유저ID	   |usercode	|Varchar(50)	|O	|유저ID，유일한 유저임을 표시|
+|유저 명	  |username	|Varchar(50)	|X	|유저 명|
+|유저 이메일 주소	|email	|Varchar(100)	|X	|유저 이메일|
+|전화번호	        |phone	|Varchar(20)	|X	|전화번호|
+|현재 시간의 timestamp	|time	|Long	|O	|호출 시간이 3분 초과시, 타임아웃 얼럿 출력.|
+|인증 Token	           |token	|Varchar	|O	|아래 파라미터 값과 SSO API Key로 산출된 SHA256 (필수가 아닌 파라미터 값이 null 혹은 빈값일 경우 , 암호화 문자열에 추가 할 필요 없음.주의：문자열 중 각 값의 순서는 아래 예시에 지정된 순서와 일치해야 함.) SHA256Digest(service + usercode + username + email + phone + retunrnUrl + time)|
+|리턴 화면 URL	|returnUrl	|Varchar	|X	|설정 및 로그인 성공시 해당 주소로 이동|
 
 ##### 결과 데이터
 returnUrl 파라미터 존재시 지정된 returnUrl로 이동 , returnUrl 없을 경우 문자열 : SUCCESS 반환
@@ -90,8 +89,8 @@ returnUrl 파라미터 존재시 지정된 returnUrl로 이동 , returnUrl 없�
 
 #### SSO 원격로그인 API (Server Side)
 ##### 인터페이스 설명
-- URL:	https://{domain}.oc.toast.com/api/v2/enduser/remote.json			
-- URL (개발):	https://{domain}.alpha-oc.toast.com/api/v2/enduser/remote.json			
+- URL: https://{domain}.oc.toast.com/api/v2/enduser/remote.json			
+- URL (개발): https://{domain}.alpha-oc.toast.com/api/v2/enduser/remote.json			
 
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|
 |------------|-------|--------|-----|--------|--------------|
@@ -100,13 +99,13 @@ returnUrl 파라미터 존재시 지정된 returnUrl로 이동 , returnUrl 없�
 ##### 요청 파라미터 정의
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |-----|----|-----------|-----|----|
-|서비스ID	|service	|VARCHAR(50)	|O	|서비스 ID|
-|유저ID	|usercode	|VARCHAR(50)	|O	|유저ID，유일한 유저임을 표시|
-|유저 명	|username	|VARCHAR(50)	|X	|유저 명|
-|유저 이메일 주소	|email	|VARCHAR(100)	|X	|유저 이메일|
-|전화번호	|phone	|VARCHAR(20)	|X	|전화번호|
-|현재 시간의 timestamp	|time	|LONG	|O	|호출 시간이 3분 초과시, 타임아웃 얼럿 출력.|
-|인증 Token	|token	|VARCHAR	|O	|아래 파라미터 값과 SSO API Key로 산출된 SHA256 (필수가 아닌 파라미터 값이 null 혹은 빈값일 경우 , 암호화 문자열에 추가 할 필요 없음.주의：문자열 중 각 값의 순서는 아래 예시에 지정된 순서와 일치해야 함.) SHA256Digest(service + usercode + username + email + phone + time)|
+|서비스ID	|service	|Varchar(50)	|O	|서비스 ID|
+|유저ID	|usercode	|Varchar(50)	|O	|유저ID，유일한 유저임을 표시|
+|유저 명	|username	|Varchar(50)	|X	|유저 명|
+|유저 이메일 주소	|email	|Varchar(100)	|X	|유저 이메일|
+|전화번호	|phone	|Varchar(20)	|X	|전화번호|
+|현재 시간의 timestamp	|time	|Long	|O	|호출 시간이 3분 초과시, 타임아웃 얼럿 출력.|
+|인증 Token	|token	|Varchar	|O	|아래 파라미터 값과 SSO API Key로 산출된 SHA256 (필수가 아닌 파라미터 값이 null 혹은 빈값일 경우 , 암호화 문자열에 추가 할 필요 없음.주의：문자열 중 각 값의 순서는 아래 예시에 지정된 순서와 일치해야 함.) SHA256Digest(service + usercode + username + email + phone + time)|
 
 ##### 결과 데이터
 SUCCESS
@@ -123,7 +122,7 @@ SUCCESS
 ##### 요청 파라미터 정의
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |---------|---------|-----------|---------|----|
-|리턴 URL	|returnUrl	|VARCHAR	|O	|로그인 성공후 이동되는 URL|
+|리턴 URL	|returnUrl	|Varchar	|O	|로그인 성공후 이동되는 URL|
 
 ##### SSO 로그인 기능 설명
 ###### 유저 미 로그인 상태
