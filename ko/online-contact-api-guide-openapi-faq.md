@@ -115,8 +115,8 @@
 |	              |contents.{language}.content	|String	|O	|다국어 FAQ 내용|
 |	              |contents.{language}.attachments[].attachmentId	|String	|O	|다국어 첨부파일 ID|
 |	              |contents.{language}.attachments[].fileName	|String	|O	|다국어 첨부파일 명|
-|	              |contents.{language}.attachments[].size	Long	|O	|다국어 첨부차일 크기|
-|	              |attachments[].attachmentId	|String	|O	|첨부차일 ID|
+|	              |contents.{language}.attachments[].size	Long	|O	|다국어 첨부파일 크기|
+|	              |attachments[].attachmentId	|String	|O	|첨부파일 ID|
 |	              |attachments[].fileName	|String	|O	|첨부파일 명|
 |	              |attachments[].size	|Long	|O	|첨부파일 크기|
 
@@ -213,5 +213,467 @@
         }
     }
 }
-
 ```
+
+### FAQ 등록
+#### 인터페이스 설명
+- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/helpdoc.json				
+- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/helpdoc.json			
+		
+|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|------------|-------|--------|-----|--------|--------------|------------|
+|FAQ 등록 |HTTPS  |POST    |UTF-8|JSON    |신규 FAQ 등록|공통 인증   |
+
+#### 요청 파라미터 정의
+|명칭	|변수	|데이터 타입	|필수	|설명|
+|----|------|-----------|----|----|
+|서비스 ID	|serviceId	|String	|O	|URL PATH 내에 설정한{serviceId}|
+|request body	|categoryId	|String	|O	|카테고리 ID|
+|	        |title	        |String	|O	|FAQ 제목（단일언어：서비스 언어）|
+|	        |content	|String	|O	|FAQ 내용（단일언어：서비스 언어）|
+|	        |status	        |String	|O	|FAQ 상태. D：초안, O：공개, C：완료|
+|	        |isRecommend	|Boolean	|O	|추천 여부. true：추천, false：추천 아님|
+|	        |isTop	        |Boolean	|O	|상단고정 여부. true：상단고정, false：상단고정 아님|
+|	        |contents.{language}.title	|String	|O	|FAQ 제목(다국어)|
+| 	        |contents.{language}.content	|String	|O	|FAQ 내용(다국어)|
+|	        |contents.{language}.attachments[].attachmentId	|Array	|	|첨부파일 ID（다국어）|
+|	        |attachments[].attachmentId	|String	|   	|첨부파일 ID（단일언어）|
+
+#### Request Body
+```
+단일 언어
+{
+    "title":"中文标题1",
+    "content":"中文内容1",
+    "status":"O",
+    "categoryId":1367,
+    "isTop":false,
+    "isRecommend":false,
+    "attachments":[
+        {
+            "attachmentId":"e981516df5da4b1cbf25af403b3a622a"
+         }
+    ]
+}
+
+다국어
+{
+    "status":"O",
+    "categoryId":1367,
+    "isTop":false,
+    "isRecommend":false,
+    "contents":{
+        "ko":{
+            "title":"한국어 제목1",
+            "content":"한국어 내용1",
+            "attachments":[
+                {
+                    "attachmentId":"e981516df5da4b1cbf25af403b3a622a"
+                }
+            ]
+        },
+        "ja":{
+            "title":"일본어 제목1",
+            "content":"일본어 내용1",
+            "attachments":[
+                {
+                    "attachmentId":"e981516df5da4b1cbf25af403b3a622a"
+                }
+            ]
+        },
+        "zh":{
+            "title":"중국어 제목1",
+            "content":"중국어 내용1",
+            "attachments":[
+                {
+                    "attachmentId":"e981516df5da4b1cbf25af403b3a622a"
+                }
+            ]
+        },
+        "en":{
+            "title":"영어 제목1",
+            "content":"영어 내용1",
+            "attachments":[
+                {
+                    "attachmentId":"e981516df5da4b1cbf25af403b3a622a"
+                }
+            ]
+        }
+    }
+}
+```
+
+#### 결과 데이터
+|명칭	|변수	|데이터 타입	|필수	|설명|
+|---------|---------|-----------|---------|----|
+|result.content	|helpDocId	|Long	|O	|FAQ ID|			
+|	        |serviceId	|String	|O	|서비스 ID|
+|	        |title	        |String	|O	|FAQ 제목|
+|	        |content	|String	|O	|FAQ 내용|
+|	        |isRecommend	|Boolean	|O	|추천 여부. true：추천, false：추천 아님|
+|	        |isTop	        |Boolean	|O	|상단고정 여부. true：상단고정, false：상단고정 아님|
+|	        |status	        |String	|O	|FAQ 상태. D：초안, O：공개, C：완료|
+|	        |readCnt	|INT	|O	|조회수|
+|	        |userId	        |INT	|O	|등록 유저 ID|
+|	        |username	|String	|O	|등록 유저 명|
+|	        |attachmentYn	|Boolean	|O	|첨부파일 포함 여부|
+|	        |createdDt	|Long	|O	|FAQ 등록시간|
+|	        |updatedDt	|Long	|O	|FAQ 수정시간|
+|	        |categories.categoryId	|INT	|O	|카테고리 ID|
+|	        |categories.parent	|String	|O	|상위 카테고리 ID|
+|	        |categories.name	|String	|O	|카테고리 명|
+|	        |categories.level	|String	|O	|카테고리 뎁스（1\|2\|3）|
+|	        |contents.{language}.title	|String	|O	|다국어 FAQ 제목|
+|	        |contents.{language}.content	|String	|O	|다국어 FAQ 내용|
+|	        |contents.{language}.attachments[].attachmentId	|String	|O	|다국어 첨부파일 ID|
+|	        |contents.{language}.attachments[].fileName	|String	|O	|다국어 첨부파일 명|
+|	        |contents.{language}.attachments[].size	        |Long	|O	|다국어 첨부파일 크기|
+|	        |attachments[].attachmentId	|String	|O	|첨부파일 ID|
+|	        |attachments[].fileName	        |String	|O	|첨부파일 명|
+|	        |attachments[].size	        |Long	|O	|첨부파일 크기|
+
+#### Response Body
+```
+{
+    "header":{
+        "resultCode":200,
+        "resultMessage":"",
+        "isSuccessful":true
+    },
+    "result":{
+        "content":{
+            "helpDocId":648,
+            "language":null,
+            "serviceId":"multilanguage",
+            "title":"중국어 제목1",
+            "content":"중국어 내용1",
+            "isRecommend":false,
+            "isTop":false,
+            "status":"O",
+            "readCnt":2,
+            "userId":10060,
+            "username":"test1",
+            "attachmentYn":"Y",
+            "createdDt":1584426136000,
+            "updatedDt":1584426136000,
+            "categories":[
+                {
+                    "categoryId":1367,
+                    "parent":799,
+                    "name":"123",
+                    "level":3
+                }
+            ],
+            "contents":{
+                "ko":{
+                    "title":"한국어 제목1",
+                    "content":"한국어 내용1",
+                    "attachments":[
+                        {
+                            "attachmentId":"e981516df5da4b1cbf25af403b3a622a",
+                            "fileName":"file.jpg",
+                            "contentType":"application/octet-stream",
+                            "size":10645
+                        }
+                    ]
+                },
+                "ja":{
+                    "title":"일번어 제목1",
+                    "content":"일본어 내용1",
+                    "attachments":[
+                        {
+                            "attachmentId":"e981516df5da4b1cbf25af403b3a622a",
+                            "fileName":"file.jpg",
+                            "contentType":"application/octet-stream",
+                            "size":10645
+                        }
+                    ]
+                },
+                "zh":{
+                    "title":"중국어 제목1",
+                    "content":"중국어 내용1",
+                    "attachments":[
+                        {
+                            "attachmentId":"e981516df5da4b1cbf25af403b3a622a",
+                            "fileName":"file.jpg",
+                            "contentType":"application/octet-stream",
+                            "size":10645
+                        }
+                    ]
+                },
+                "en":{
+                    "title":"영어 제목1",
+                    "content":"영어 내용1",
+                    "attachments":[
+                        {
+                            "attachmentId":"e981516df5da4b1cbf25af403b3a622a",
+                            "fileName":"file.jpg",
+                            "contentType":"application/octet-stream",
+                            "size":10645
+                        }
+                    ]
+                }
+            },
+            "attachments":[
+                {
+                    "attachmentId":"e981516df5da4b1cbf25af403b3a622a",
+                    "fileName":"file.jpg",
+                    "contentType":"application/octet-stream",
+                    "size":10645
+                }
+            ]
+        }
+    }
+}
+```
+
+### FAQ 수정
+#### 인터페이스 설명
+- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/helpdoc/{id}.json					
+- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/helpdoc/{id}.json			
+		
+|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|------------|-------|--------|-----|--------|--------------|------------|
+|FAQ 수정 |HTTPS  |PUT    |UTF-8|JSON    |FAQ ID 기준으로 내용 수정|공통 인증   |
+
+#### 요청 파라미터 정의
+|명칭	|변수	|데이터 타입	|필수	|설명|
+|----|------|-----------|----|----|
+|서비스 ID	|serviceId	|String	|O	|URL PATH내에 설정한{serviceId}|
+|FAQ ID	   |helpDocId	   |Long	|O	|URL PATH내에 설정한{id}|
+|request body	|categoryId	|String	|O	|카테고리 ID|
+|	        |title	        |String	|O	|FAQ 제목（단일언어：서비스 언어）|
+|	        |content	|String	|O	|FAQ 내용（단일언어：서비스 언어）|
+|	        |status	        |String	|O	|FAQ 상태. D：초안, O：공개, C：완료|
+|	        |isRecommend	|Boolean	|O	|추천 여부. true：추천, false：추천 아님|
+|	        |isTop	        |Boolean	|O	|상단고정 여부. true：상단고정, false：상단고정 아님|
+|	        |contents.{language}.title	|String	|O	|FAQ 제목(다국어)|
+|	        |contents.{language}.content	|String	|O	|FAQ 내용(다국어)|
+|	        |contents.{language}.attachments[].attachmentId	|Array		|첨부파일 ID（다국어）|
+|	        |attachments[].attachmentId	|String		|첨부파일 ID（단일언어）|
+
+#### Request Body
+```
+단일언어
+{
+    "title":"중국어 제목1",
+    "content":"중국어 내용1",
+    "status":"O",
+    "categoryId":1367,
+    "isTop":false,
+    "isRecommend":false,
+    "attachments":[
+        {
+            "attachmentId":"e981516df5da4b1cbf25af403b3a622a"
+         }
+    ]
+}
+
+다국어
+{
+    "status":"O",
+    "categoryId":1367,
+    "isTop":false,
+    "isRecommend":false,
+    "contents":{
+        "ko":{
+            "title":"한국어 제목1",
+            "content":"한국어 내용1",
+            "attachments":[
+                {
+                    "attachmentId":"e981516df5da4b1cbf25af403b3a622a"
+                }
+            ]
+        },
+        "ja":{
+            "title":"일본어 제목1",
+            "content":"일본어 내용1",
+            "attachments":[
+                {
+                    "attachmentId":"e981516df5da4b1cbf25af403b3a622a"
+                }
+            ]
+        },
+        "zh":{
+            "title":"중국어 제목1",
+            "content":"중국어 내용1",
+            "attachments":[
+                {
+                    "attachmentId":"e981516df5da4b1cbf25af403b3a622a"
+                }
+            ]
+        },
+        "en":{
+            "title":"영어 제목1",
+            "content":"영어 내용1",
+            "attachments":[
+                {
+                    "attachmentId":"e981516df5da4b1cbf25af403b3a622a"
+                }
+            ]
+        }
+    }
+}
+```
+
+#### 결과 데이터
+|명칭	|변수	|데이터 타입	|필수	|설명|
+|---------|--------|------------|---------|----|
+|result.content	|helpDocId	|Long	|O	|FAQ ID|				
+|	        |serviceId	|String	|O	|서비스 ID|
+|	        |title	        |String	|O	|FAQ 제목|
+|	        |content	|String	|O	|FAQ 내용|
+|	        |isRecommend	|Boolean	|O	|추천 여부. true：추천, false：추천 아님|
+|	        |isTop	        |Boolean	|O	|상단고정 여부. true：상단고정, false：상단고정 아님|
+|	        |status	        |String	|O	|FAQ 상태. D：초안, O：공개, C：완료|
+|	        |readCnt	|INT	|O	|조회수|
+|	        |userId	        |INT	|O	|등록 유저 ID|
+|	        |username	|String	|O	|등록 유저 명|
+|	        |attachmentYn	|Boolean	|O	|첨부파일 포함 여부|
+|	        |createdDt	|Long	|O	|FAQ 등록시간|
+|	        |updatedDt	|Long	|O	|FAQ 수정시간|
+|	        |categories.categoryId	|INT	|O	|카테고리 ID|
+|	        |categories.parent	|String	|O	|상위 카테고리 ID|
+|	        |categories.name	|String	|O	|카테고리 명|
+|	        |categories.level	|String	|O	|카테고리 뎁스（1\|2\|3）|
+|	        |contents.{language}.title	|String	|O	|다국어 FAQ 제목|
+|	        |contents.{language}.content	|String	|O	|다국어 FAQ 내용|
+|	        |contents.{language}.attachments[].attachmentId	|String	|O	|다국어 첨부파일 ID|
+|	        |contents.{language}.attachments[].fileName	|String	|O	|다국어 첨부파일 명|
+|	        |contents.{language}.attachments[].size	        |Long	|O	|다국어 첨부파일 크기|
+|	        |attachments[].attachmentId	|String	|O	|첨부파일 ID|
+|	        |attachments[].fileName	        |String	|O	|첨부파일 명|
+|	        |attachments[].size	        |Long	|O	|첨부파일 크기|
+
+#### Response Body
+```
+{
+    "header":{
+        "resultCode":200,
+        "resultMessage":"",
+        "isSuccessful":true
+    },
+    "result":{
+        "content":{
+            "helpDocId":648,
+            "language":null,
+            "serviceId":"multilanguage",
+            "title":"중국어 제목1",
+            "content":"중국어 내용1",
+            "isRecommend":false,
+            "isTop":false,
+            "status":"O",
+            "readCnt":2,
+            "userId":10060,
+            "username":"test1",
+            "attachmentYn":"Y",
+            "createdDt":1584426136000,
+            "updatedDt":1584426136000,
+            "categories":[
+                {
+                    "categoryId":1367,
+                    "parent":799,
+                    "name":"123",
+                    "level":3
+                }
+            ],
+            "contents":{
+                "ko":{
+                    "title":"한국어 제목1",
+                    "content":"한국어 내용1",
+                    "attachments":[
+                        {
+                            "attachmentId":"e981516df5da4b1cbf25af403b3a622a",
+                            "fileName":"file.jpg",
+                            "contentType":"application/octet-stream",
+                            "size":10645
+                        }
+                    ]
+                },
+                "ja":{
+                    "title":"일본어 제목1",
+                    "content":"일본어 내용1",
+                    "attachments":[
+                        {
+                            "attachmentId":"e981516df5da4b1cbf25af403b3a622a",
+                            "fileName":"file.jpg",
+                            "contentType":"application/octet-stream",
+                            "size":10645
+                        }
+                    ]
+                },
+                "zh":{
+                    "title":"중국어 제목1",
+                    "content":"중국어 내용1",
+                    "attachments":[
+                        {
+                            "attachmentId":"e981516df5da4b1cbf25af403b3a622a",
+                            "fileName":"file.jpg",
+                            "contentType":"application/octet-stream",
+                            "size":10645
+                        }
+                    ]
+                },
+                "en":{
+                    "title":"영어 제목1",
+                    "content":"영어 내용1",
+                    "attachments":[
+                        {
+                            "attachmentId":"e981516df5da4b1cbf25af403b3a622a",
+                            "fileName":"file.jpg",
+                            "contentType":"application/octet-stream",
+                            "size":10645
+                        }
+                    ]
+                }
+            },
+            "attachments":[
+                {
+                    "attachmentId":"e981516df5da4b1cbf25af403b3a622a",
+                    "fileName":"file.jpg",
+                    "contentType":"application/octet-stream",
+                    "size":10645
+                }
+            ]
+        }
+    }
+}
+```
+
+### 추천 FAQ 설정
+#### 인터페이스 설명
+- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/helpdoc/{id}/recommend.json			
+- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/helpdoc/{id}/recommend.json		
+
+|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|------------|-------|--------|-----|--------|--------------|------------|
+|추천 FAQ 설정 |HTTPS  |PUT    |UTF-8|JSON    |추천 FAQ 설정|공통 인증   |
+
+#### 요청 파라미터 정의
+|명칭	|변수	|데이터 타입	|필수	|설명|
+|----|------|-----------|----|----|
+|서비스 ID	|serviceId	|String	|O	|URL PATH내에 설정한{serviceId}|
+|FAQ ID	|Id	|INT	|O	|URL PATH내에 설정한{id}|
+|추천	|recommend	|Boolean	|O	|추천 여부. true：추천, false：추천 아님|
+
+#### 결과 데이터
+- 없음
+
+### 추천 FAQ 설정
+#### 인터페이스 설명
+- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/helpdoc/{id}/recommend.json			
+- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/helpdoc/{id}/recommend.json		
+
+|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|------------|-------|--------|-----|--------|--------------|------------|
+|추천 FAQ 설정 |HTTPS  |PUT    |UTF-8|JSON    |추천 FAQ 설정|공통 인증   |
+
+#### 요청 파라미터 정의
+|명칭	|변수	|데이터 타입	|필수	|설명|
+|----|------|-----------|----|----|
+|서비스 ID	|serviceId	|String	|O	|URL PATH내에 설정한{serviceId}|
+|FAQ ID	   |Id	|INT	|O	|URL PATH내에 설정한{id}|
+|상단고정	|top	|Boolean	|O	|상단고정 여부. true：상단고정, false：상단고정 아님|
+
+#### 결과 데이터
+- 없음
