@@ -20,7 +20,7 @@
 #### 결과 데이터
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |-----|-----|-----------|----|----|
-|result.contents	|userId	|INT	|O	|사용자 ID|
+|result.contents	|userId	|I	|O	|사용자 ID|
 |	                |usercode	|String	|O	|사용자 Code|
 |	                |uuid	|String	|O	|IAM |사용자 ID|
 |	                |username	|String	|O	|사용자 명|
@@ -62,12 +62,12 @@
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |-----|-----|----------|-----|----|
 |서비스 ID	|serviceId	|String	|O	|URL PATH 내에 설정한 {serviceId}|
-|사용자 ID	|id	|INT	|O	|URL PATH 내에 설정한 {id}|
+|사용자 ID	|id	        |Int	|O	|URL PATH 내에 설정한 {id}|
 
 #### 결과 데이터
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |-----|-----|----------|-----|----|
-|result.contents	|userId	|INT	|O	|사용자ID|
+|result.contents	|userId	|Int	|O	|사용자ID|
 |	                |usercode	|String	|O	|사용자 Code|
 |	                |uuid	|String	|O	|IAM 사용자 ID|
 |	                |username	|String	|O	|사용자 명|
@@ -113,7 +113,7 @@
 #### 결과 데이터
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |-----|-----|-----------|------|---|
-|result.contents	|userId	|INT	|O	|사용자 ID|
+|result.contents	|userId	|Int	|O	|사용자 ID|
 |	                |usercode	|String	|O	|사용자 Code|
 |	                |uuid	|String	|O	|IAM 사용자 ID|
 |	                |username	|String	|O	|사용자 명|
@@ -158,7 +158,7 @@
 #### 결과 데이터
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |-----|-----|-----------|-----|----|
-|result.content	|userId	|INT	|O	|사용자 ID|
+|result.content	|userId	|Int	|O	|사용자 ID|
 |	              |usercode	|String	|O	|사용자 Code|
 |	              |uuid	|String |O	|IAM |사용자 ID|
 |	              |username	|String	|O	|사용자 명|
