@@ -11,16 +11,16 @@
 #### 요청 파라미터 정의
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |-----|-----|----------|-----|----|
-|서비스 ID	|serviceId	|String	|O	|서비스 ID，URL PATH 내에 설정한 {serviceId}|
+|서비스 ID	|serviceId	     |String	|O	|서비스 ID，URL PATH 내에 설정한 {serviceId}|
 |티켓 정보 |request body	|String	|O	|티켓 정보（JSON)|
-|    	     |categoryId	|int	|X	|접수유형 ID，없을 경우 지정하지 않아도 됨|
-|   	     |subject	|String	|O	|티켓 제목（max=255）|
-|          |content	|String	|O	|티켓 내용|
+|    	     |categoryId	|Int	|X	|접수유형 ID，없을 경우 지정하지 않아도 됨|
+|   	     |subject	    |String	|O	|티켓 제목（max=255）|
+|          |content	        |String	|O	|티켓 내용|
 | 	       |endUser.usercode	|String	|O	|유저 코드（유일한 값）|
-|	         |endUser.email	|String	|X	|유저 이메일（티켓 처리 시 해당 이메일로 답변이 발송 됨. 없을 경우 메일이 발송되지 않음)|
+|	         |endUser.email	    |String	|X	|유저 이메일（티켓 처리 시 해당 이메일로 답변이 발송 됨. 없을 경우 메일이 발송되지 않음)|
 |	         |endUser.username	|String	|X	|유저 명|
-|          |endUser.phone	|String	|X	|유저 전화번호|
-|	         |addition	|String	|X	|기본 필드 외에 추가 된 필드 정보|
+|          |endUser.phone	    |String	|X	|유저 전화번호|
+|	         |addition	        |String	|X	|기본 필드 외에 추가 된 필드 정보|
 |	         |attachments[].attachmentId	|String	|X	|첨부파일 ID
 
 #### Request Body
@@ -50,12 +50,12 @@
 #### 결과 데이터
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |-----|----|-----------|-----|----|
-|result.content	|ticketId	|String	|O	|티켓 ID|
+|result.content	|ticketId	    |String	|O	|티켓 ID|
 |	              |serviceId	|String	|O	|서비스 ID|
-|	              |subject	|String	|O	|티켓 제목|
-|	              |categoryId	|int	|X	|접수유형 ID|
+|	              |subject	    |String	|O	|티켓 제목|
+|	              |categoryId	|Int	|X	|접수유형 ID|
 |               |categoryName	|String	|X	|접수유형 명|
-|	              |status	|String	|O	|티켓 상태（open:신규 티켓; closed:처리 완료）|
+|	              |status	    |String	|O	|티켓 상태（open:신규 티켓; closed:처리 완료）|
 |	              |endUser.usercode	|String	|O	|유저 코드（유일한 값）|
 |	              |endUser.email	|String	|X	|유저 이메일（티켓 처리 시 해당 이메일로 답변이 발송 됨. 없을 경우 메일이 발송되지 않음)|
 |	              |endUser.username	|String	|X	|유저 명|
@@ -139,7 +139,7 @@
 |result.content	|id	|String	|O	|티켓 ID|
 |	              |serviceId	|String	|O	|서비스 ID|
 |	              |subject	|String	|O	|티켓 제목|
-|	              |categoryId	|int	|X	|접수유형 ID|
+|	              |categoryId	|Int	|X	|접수유형 ID|
 |	              |categoryName	|String	|X	|접수유형 명|
 |	              |status	|String	|O	|티켓 상태（open:신규티켓; closed:처리완료）|
 |	              |endUser.usercode	|String	|O	|유저 코드（유일한 값）|
@@ -216,16 +216,16 @@
 |result.content	|ticketId	|String	|O	|티켓 ID|
 |	            |serviceId	|String	|O	|서비스 ID|
 |	            |subject	|String	|O	|티켓 제목|
-|	            |categoryId	|int	|X	|접수유형 ID|
+|	            |categoryId	|Int	|X	|접수유형 ID|
 |	            |categoryName	|String	|X	|접수유형 명|
-|	            |status	|String	|O	|티켓 상태（open:신규티켓; closed:처리완료）|
+|	            |status	        |String	|O	|티켓 상태（open:신규티켓; closed:처리완료）|
 |	            |endUser.usercode	|String	|O	|유저 코드（유일한 값）|
-|	            |endUser.email	|String	|X	|유저 이메일（티켓 처리 시 해당 이메일로 답변이 발송 됨. 없을 경우 메일이 발송되지 않음)|
+|	            |endUser.email	    |String	|X	|유저 이메일（티켓 처리 시 해당 이메일로 답변이 발송 됨. 없을 경우 메일이 발송되지 않음)|
 |	            |endUser.username	|String	|X	|유저 명|
-|	            |endUser.phone	|String	|X	|유저 전화번호|
-|	            |content	|String	|O	|티켓 문의 내용|
-|	            |createdDt	|Long	|O	|티켓 생성시간|
-|	            |updatedDt	|Long	|O	|티켓 업데이트 시간|
+|	            |endUser.phone	    |String	|X	|유저 전화번호|
+|	            |content	        |String	|O	|티켓 문의 내용|
+|	            |createdDt	        |Long	|O	|티켓 생성시간|
+|	            |updatedDt	        |Long	|O	|티켓 업데이트 시간|
 |	            |contents.content	|String	|X	|티켓 처리내용|
 |	            |contents.createdDt	|Long	|X	|티켓 처리시간|
 |	            |contents.attachments.attachmentId	|String	|X	|티켓 처리 첨부파일 ID|
@@ -333,13 +333,13 @@
 |티켓 ID	|ticketId	|String	|X	|티켓 ID|
 |제목	|subject	|String	|X	|제목|
 |티켓 상태	|status	|String	|X	|티켓 상태（open:신규티켓; closed:처리완료）|
-|접수유형	|categoryId	|int	|X	|접수유형 ID（ID가 여러개 일 경우 , 로 분리）|
+|접수유형	|categoryId	|Int	|X	|접수유형 ID（ID가 여러개 일 경우 , 로 분리）|
 |유저 코드	|usercode	|String	|X	|유저 코드（유일한 값）|
 |유저 명	|username	|String	|X	|유저 명|
-|유저 이메일	|email	|String	|X	|유저 이메일|
-|정렬 순서	|sort	|String	|X	|정렬 순서(기본값:updatedDt:desc; 형식 변수:정렬（오름차순:asc, 내림차순:desc))|
-|페이지	|page	|int	|X	|기본 값:1|
-|1페이지 노출 건수	|pageSize	|int	|X	|기본 값:10;max=200|
+|유저 이메일	|email	  |String	|X	|유저 이메일|
+|정렬 순서	|sort	   |String	|X	|정렬 순서(기본값:updatedDt:desc; 형식 변수:정렬（오름차순:asc, 내림차순:desc))|
+|페이지	|page	    |Int	|X	|기본 값:1|
+|1페이지 노출 건수	|pageSize	|Int	|X	|기본 값:10;max=200|
 
 #### 결과 데이터
 |명칭	|변수	|데이터 타입	|필수	|설명|
@@ -347,16 +347,16 @@
 |result.contents	|ticketId	|String	|O	|티켓 ID|
 |	                |serviceId	|String	|O	|서비스 ID|
 |	                |subject	|String	|O	|티켓 제목|
-|	                |categoryId	|int	|X	|접수유형 ID|
+|	                |categoryId	|Int	|X	|접수유형 ID|
 |	                |categoryName	|String	|X	|접수유형 명|
 |	                |status	|String	|O	|티켓 상태（open:신규티켓; closed:처리완료）|
 |	                |createdDt	|Long	|O	|티켓 생성시간|
 |	                |updatedDt	|Long	|O	|티켓 업데이트 시간|
 |	                |addition	|String	|X	|기본 필드 외에 추가 된 필드 정보|
-|result.total	|total	|Long	|O	|총 건수|
-|result.pages	|pages	|int	|O	|총 페이지수|
-|result.pageNum	|pageNum	|int	|O	|현재 페이지|
-|result.pageSize	|pageSize	|int	|O	|1페이지 노출 건수|
+|result.total	|total	        |Long	|O	|총 건수|
+|result.pages	|pages	        |Int	|O	|총 페이지수|
+|result.pageNum	|pageNum	    |Int	|O	|현재 페이지|
+|result.pageSize	|pageSize	|Int	|O	|1페이지 노출 건수|
 
 #### Response Body
 ```
@@ -455,17 +455,17 @@
 #### 요청 파라미터 정의
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |-----|-----|-----------|-----|---|
-|서비스 ID	|serviceId	|String	|O	|서비스 ID，URL PATH 내에 설정한 {serviceId}|
+|서비스 ID	|serviceId	 |String	|O	|서비스 ID，URL PATH 내에 설정한 {serviceId}|
 |유저 코드	|usercode	|String	|O	|유저 코드(유일한 값)，URL PATH 내에 설정한{usercode}|
 |시작시간	|startDt	|String	|X	|검색 범위 시작시간(티켓 생성시간)(형식:yyyyMMddHHmmss）|
-|종료시간	|endDt	|String	|X	|검색 범위 종료시간(티켓 생성시간)(형식:yyyyMMddHHmmss）|
-|티켓 ID	|ticketId	|String	|X	|티켓 ID|
-|제목	|subject	|String	|X	|제목|
-|티켓 상태	|status	|String	|X	|티켓 상태（open:신규티켓; closed:처리완료）|
-|접수유형	|categoryId	|int	|X	|접수유형 ID（ID가 여러개 일 경우 , 로 분리）|
-|정렬방식	|sort	|String	|X	|정렬 순서(기본값:updatedDt:desc; 형식 변수:정렬（오름차순:asc, 내림차순:desc))|
-|페이지	|page	|int	|X	|기본 값:1|
-|1페이지 노출 건수	|pageSize	|int	|X	|기본 값:10;max=200|
+|종료시간	|endDt	    |String	|X	|검색 범위 종료시간(티켓 생성시간)(형식:yyyyMMddHHmmss）|
+|티켓 ID	|ticketId	  |String	|X	|티켓 ID|
+|제목	|subject	      |String	|X	|제목|
+|티켓 상태	|status	    |String	|X	|티켓 상태（open:신규티켓; closed:처리완료）|
+|접수유형	|categoryId	|Int	|X	|접수유형 ID（ID가 여러개 일 경우 , 로 분리）|
+|정렬방식	|sort	    |String	|X	|정렬 순서(기본값:updatedDt:desc; 형식 변수:정렬（오름차순:asc, 내림차순:desc))|
+|페이지	|page	     |Int	|X	|기본 값:1|
+|1페이지 노출 건수	|pageSize	|Int	|X	|기본 값:10;max=200|
 
 #### 결과 데이터
 |명칭	|변수	|데이터 타입	|필수	|설명|
@@ -473,16 +473,16 @@
 |result.contents	|ticketId	|String	|O	|티켓 ID|
 |	                |serviceId	|String	|O	|서비스 ID|
 |	                |subject	|String	|O	|티켓 제목|
-|	                |categoryId	|int	|X	|접수유형 ID|
+|	                |categoryId	|Int	|X	|접수유형 ID|
 |	                |categoryName	|String	|X	|접수유형 명|
 |	                |status	|String	|O	|티켓 상태（open:신규티켓; closed:처리완료）|
 |                   |createdDt	|Long	|O	|티켓 생성시간|
 |	                |updatedDt	|Long	|O	|티켓 업데이트 시간|
 |	                |addition	|String	|X	|기본 필드 외에 추가 된 필드 정보|
 |result.total	    |total	|Long	|O	|총 건수|
-|result.pages	    |pages	|int	|O	|총 페이지수|
-|result.pageNum	    |pageNum	|int	|O	|현재 페이지|
-|result.pageSize	|pageSize	|int	|O	|1페이지 노출 건수|
+|result.pages	    |pages	|Int	|O	|총 페이지수|
+|result.pageNum	    |pageNum	|Int	|O	|현재 페이지|
+|result.pageSize	|pageSize	|Int	|O	|1페이지 노출 건수|
 
 #### Response Body
 ```
@@ -588,7 +588,7 @@
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |-----|-----|-----------|-----|---|
 |result.content	|attachmentId	|String	|O	|첨부한 파일 ID|
-|	            |fileName	|String	|O	|파일 명|
+|	            |fileName	    |String	|O	|파일 명|
 |	            |contentType	|String	|O	|파일 유형|
 |	            |disposition	|String	|O	|파일 처리방식（attachment:첨부파일）|
 |	            |size	|Long	|O	|파일 크기|
