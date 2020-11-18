@@ -110,7 +110,7 @@
 |	              |categories.categoryId	|INT	|O	|카테고리 ID|
 |	              |categories.parent	|String	|O	|상위 카테고리 ID|
 |	              |categories.name	|String	|O	|카테고리 명|
-|	              |categories.level	|String	|O	|카테고리 뎁스（1|2|3）|
+|	              |categories.level	|String	|O	|카테고리 뎁스（1\|2\|3）|
 |	              |contents.{language}.title	|String	|O	|다국어 FAQ 제목|
 |	              |contents.{language}.content	|String	|O	|다국어 FAQ 내용|
 |	              |contents.{language}.attachments[].attachmentId	|String	|O	|다국어 첨부파일 ID|
