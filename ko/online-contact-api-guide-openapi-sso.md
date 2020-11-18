@@ -63,15 +63,12 @@ private String getSHA256Token(String serviceId, String usercode, String username
 ### SSO API
 #### SSO 원격로그인 API (Client Side)
 ##### 인터페이스 설명
-- URL:	https://{domain}.oc.toast.com/v2/enduser/remote.json			
-- URL (개발):	https://{domain}.alpha-oc.toast.com/v2/enduser/remote.json		
+- URL: https://{domain}.oc.toast.com/v2/enduser/remote.json			
+- URL (개발): https://{domain}.alpha-oc.toast.com/v2/enduser/remote.json		
 
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|
 |------------|-------|--------|-----|--------|--------------|
 |SSO 원격로그인 API (Client Side)|HTTPS  |POST    |UTF-8|Redirect    |사용자 시스템에서 동적으로 form를 생성하여 브라우저에 반환하며, form은 자동으로 API에 form정보를 전달. API에서 전달된 form정보로 인증 후 성공시 로그인 Cookie 값 설정.|
-
-- 사용자 시스템에서의 호출 방법은 아래 Class를 참고해주세요.
-  - FormLoginController.java, Method: submitLogin
 
 ##### 요청 파라미터 정의
 |명칭	|변수	|데이터 타입	|필수	|설명|
@@ -89,7 +86,7 @@ private String getSHA256Token(String serviceId, String usercode, String username
 returnUrl 파라미터 존재시 지정된 returnUrl로 이동 , returnUrl 없을 경우 문자열 : SUCCESS 반환
 
 ##### 인증 Token 산출
- API 가이드 → SSO 로그인 → [인증토큰 생성]() 항목을 참조해주세요.
+ API 가이드 → SSO 로그인 → [인증토큰 생성](https://alpha-docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-sso/#_3) 항목을 참조해주세요.
 
 #### SSO 원격로그인 API (Server Side)
 ##### 인터페이스 설명
@@ -99,9 +96,6 @@ returnUrl 파라미터 존재시 지정된 returnUrl로 이동 , returnUrl 없�
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|
 |------------|-------|--------|-----|--------|--------------|
 |SSO 원격로그인 API (Server Side)|HTTPS  |POST    |UTF-8|String   |사용자가 서버에서 직접 API 호출. API 로그인 성공 후 로그인 Cookie 값 설정.|
-
-- 사용자 시스템에서의 호출 방법은 아래 Class를 참고해주세요.
-  - ApiLoginController.java, Method: submitLogin
   
 ##### 요청 파라미터 정의
 |명칭	|변수	|데이터 타입	|필수	|설명|
@@ -118,4 +112,73 @@ returnUrl 파라미터 존재시 지정된 returnUrl로 이동 , returnUrl 없�
 SUCCESS
 
 ##### 인증 Token 산출
- API 가이드 → SSO 로그인 → [인증토큰 생성]() 항목을 참조해주세요.
+ API 가이드 → SSO 로그인 → [인증토큰 생성](https://alpha-docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-sso/#_3) 항목을 참조해주세요.
+ 
+#### SSO 로그인 URL (사용자)
+##### 인터페이스 설명
+|인터페이스 명|프로토콜|호출방향|인코딩|URL|URL(개발)|결과 형식|
+|------------|--------|--------|------|--|----------|--------|
+|SSO 로그인 URL|HTTPS|GET|UTF-8|사용자 제공|사용자 제공|Redirect|
+
+##### 요청 파라미터 정의
+|명칭	|변수	|데이터 타입	|필수	|설명|
+|---------|---------|-----------|---------|----|
+|리턴 URL	|returnUrl	|VARCHAR	|O	|로그인 성공후 이동되는 URL|
+
+##### SSO 로그인 기능 설명
+###### 유저 미 로그인 상태
+- ① 로그인 화면으로 이동
+- ② 유저 로그인
+- ③ 서비스 측의 서버에서 유저 로그인 처리 및 로그인 유저 관련 쿠키 생성
+- ④ SSO 원격 로그인 API 호출
+
+###### 유저 로그인 상태
+- ① SSO 원격 로그인 API 호출
+
+##### SSO 원격 로그인 API 호출 방법 설명
+###### SSO 원격 로그인 (Client Side)
+- ① 유저 정보와 API Key 기준으로 로그인 token 생성
+- ② 유저 정보와 token을 브라우저로 리다이렉트
+- ③ 화면에서 Form 작성, 상세한 파라미터는 [SSO 원격 로그인 API-1]() 참조
+- ④ Form 제출
+- ⑤ SSO 원격 로그인 API를 통해 유저 정보와 token 전송
+- ⑥ 로그인 성공 후 {returnUrl}로 이동
+
+###### SSO 원격 로그인 (Server Side)
+- ① 유저 정보와 API Key 기준으로 로그인 token 생성
+- ② 서버에서 "SSO 원격 로그인 API (Server Side)" 호출
+- ③ API 호출 파라미터 (usercode와 time)을 returnUrl 뒤에 추가 
+  - 예시) https://nhn-cs.alpha-oc.toast.com/multilanguage/hc/ticket/list/?usercode=xxxxxx@163.com&time=1566531359635
+- ④ {returnUrl}로 이동
+
+##### 인증 Token 산출
+ API 가이드 → SSO 로그인 → [인증토큰 생성](https://alpha-docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-sso/#_3) 항목을 참조해주세요.
+ 
+#### SSO 로그인 상태 API (사용자)
+##### 인터페이스 설명
+|인터페이스 명|프로토콜|호출방향|인코딩|URL|URL(개발)|인터페이스 설명|결과 형식|
+|------------|--------|--------|------|--|----------|--------|
+|SSO 로그인 상태 API|HTTPS|GET|UTF-8|사용자 제공|사용자 제공|사용자가 쿠키 정보를 기준으로 로그인 여부를 확인 후 JSON 형식의 데이터를 리턴|JSON|
+
+##### 요청 파라미터 정의 
+- 없음
+
+##### 결과 데이터
+|명칭	|변수	|데이터 타입	|필수	|설명|
+|---------|---------|-----------|---------|----|
+|javascript function	|login	|Boolean	|O	|로그인 상태. 로그인 ：true, 미로그인 ：false|
+|유저 코드	|usercode	|Varchar(50)	|X	|유저 ID(유니크 값). 로그인 상태가 true 인 경우 유저코드는 필수|
+
+##### Response Body
+```
+{
+"login": "true",
+"usercode":"usercodeXXX"
+}
+
+{
+"login": "false",
+"usercode": null
+}
+```
+ 
