@@ -447,8 +447,8 @@
 |	        |isTop	        |Boolean	|O	|상단고정 여부. true：상단고정, false：상단고정 아님|
 |	        |contents.{language}.title	|String	|O	|FAQ 제목(다국어)|
 |	        |contents.{language}.content	|String	|O	|FAQ 내용(다국어)|
-|	        |contents.{language}.attachments[].attachmentId	|Array		|첨부파일 ID（다국어）|
-|	        |attachments[].attachmentId	|String		|첨부파일 ID（단일언어）|
+|	        |contents.{language}.attachments[].attachmentId	|Array	  |	|첨부파일 ID（다국어）|
+|	        |attachments[].attachmentId	|String	    |	|첨부파일 ID（단일언어）|
 
 #### Request Body
 ```
@@ -865,12 +865,12 @@
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |----|------|-----------|----|----|
 |서비스 ID	|serviceId	|String	|O	|URL PATH내에 설정한{serviceId}|
-|카테고리 정보	|request body	|String	|O	|카테고리 정보（JSON）|
-|	             |name	     |String  |		|카테고리 명（유일한 값:예 ; 길이:min = 0, max = 50 ; 형식:^(\_\|-\|[^\\pP])+$）|
-|	              |categoryCode	|String		|카테고리 Code|
-|	              |languages	|String		|다국어|
-|	              |parent	        |Int		|상위 카테고리 ID（기본 값:0）|
-|	              |orderNo	        |Int		|정렬순서（기본 값:0）|
+|카테고리 정보	|request body	|String	    |O	|카테고리 정보（JSON）|
+|	             |name	     |String     |		|카테고리 명（유일한 값:예 ; 길이:min = 0, max = 50 ; 형식:^(\_\|-\|[^\\pP])+$）|
+|	              |categoryCode	|String	 |	|카테고리 Code|
+|	              |languages	|String	 |	|다국어|
+|	              |parent	        |Int	 |	|상위 카테고리 ID（기본 값:0）|
+|	              |orderNo	        |Int	 |	|정렬순서（기본 값:0）|
 
 #### Request Body
 ```
