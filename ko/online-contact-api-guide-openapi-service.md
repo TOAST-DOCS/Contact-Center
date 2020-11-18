@@ -360,7 +360,7 @@
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |-----|----|------------|----|----|
 |페이지	|page	|int	|	|기본 값:1|
-|1페이지 노출 건수	|pageSize	|int	|	|기본 값:100|
+|1페이지 노출 건수	|pageSize	|Int	|	|기본 값:100|
 
 #### 결과 데이터
 |명칭	|변수	|데이터 타입	|필수	|설명|
@@ -374,9 +374,9 @@
 |	                |updatedDt	|Long	|X	|서비스 업데이트 시간|
 |	                |securityKey	|String	|X	|Open API Key|
 |result.total	|total	|Long	|X	|총 건수|
-|result.pages	|pages	|int	|X	|총 페이지 수|
-|result.pageNum	|pageNum	|int	|X	|현재 페이지|
-|result.pageSize	|pageSize	|int	|X	|1페이지 노출 건수|
+|result.pages	|pages	|Int	|X	|총 페이지 수|
+|result.pageNum	|pageNum	|Int	|X	|현재 페이지|
+|result.pageSize	|pageSize	|Int	|X	|1페이지 노출 건수|
 
 #### Response Body
 ```
