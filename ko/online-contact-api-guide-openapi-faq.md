@@ -17,7 +17,7 @@
 |카테고리 ID	|categoryId	|INT	|X	|카테고리 ID|
 |추천	|recommend	|Boolean	|X	|true：추천，false：추천 아님|
 |상단고정	|top	|Boolean	|X	|true：상단고정，false：상단고정 아님|
-|상태	|status	|VARCHAR(1)	|X	D：초안, O：공개, C：완료|
+|상태	|status	|VARCHAR(1)	|X	|D：초안, O：공개, C：완료|
 |키워드	|query	|VARCHAR	|X	|검색문구|
 |조회 필드	|searchField	|VARCHAR	|X	|디폴트: 내용+제목으로 검색, title：제목만 검색, content：내용만 검색|
 |정렬 필드	|sort	|VARCHAR	|X	|isTop, isRecommend, createdDt, updatedDt 필드로 정렬기준 지정 가능. 여러개 일 경우 ','로 분리|
