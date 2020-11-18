@@ -11,29 +11,29 @@
 #### 요청 파라미터 정의
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |-----|-----|----------|-----|----|
-|서비스 ID	|serviceId	|VARCHAR(50)	|O	|서비스 ID, URL PATH 내에 설정|
-|조회 언어	|language	|VARCHAR(2)	|X	|ko：한국어, zh：중국어, ja：일본어, en：영어|
-|날짜 조회 필드	|dateField	|VARCHAR(20)	|X	|startDt：공지기간 시작일 검색, endDt：공지기간 종료일 검색, startAndEnd：공지기간 시작일 &종료일 검색, createdDt：등록일 검색|
-|기간검색 시작시간	|termStart	|VARCHAR(14)	|X	|공지기간 시작일（yyyyMMddHHmmss）|
-|기간검색 종료시간	|termEnd	|VARCHAR(14)	|X	|공지기간 종료일|（yyyyMMddHHmmss）|
-|등록일 시작시간	|startDt	|VARCHAR(14)	|X	|등록일（yyyyMMddHHmmss）|
-|등록일 종료시간	|endDt	|VARCHAR(14)	|X	|등록일（yyyyMMddHHmmss）|
-|말머리 ID	|categoryId	|INT	|X	|말머리 ID|
-|태그	|tag	|INT	|X	|태그 ID，ID가 다수일 경우' , ' 로 분리|
-|유저 ID	|userId	|INT	|X	|유저ID|
+|서비스 ID	|serviceId	|Varchar(50)	|O	|서비스 ID, URL PATH 내에 설정|
+|조회 언어	|language	|Varchar(2)	|X	|ko：한국어, zh：중국어, ja：일본어, en：영어|
+|날짜 조회 필드	|dateField	|Varchar(20)	|X	|startDt：공지기간 시작일 검색, endDt：공지기간 종료일 검색, startAndEnd：공지기간 시작일 &종료일 검색, createdDt：등록일 검색|
+|기간검색 시작시간	|termStart	|Varchar(14)	|X	|공지기간 시작일（yyyyMMddHHmmss）|
+|기간검색 종료시간	|termEnd	|Varchar(14)	|X	|공지기간 종료일|（yyyyMMddHHmmss）|
+|등록일 시작시간	|startDt	|Varchar(14)	|X	|등록일（yyyyMMddHHmmss）|
+|등록일 종료시간	|endDt	        |Varchar(14)	|X	|등록일（yyyyMMddHHmmss）|
+|말머리 ID	|categoryId	            |Int	|X	|말머리 ID|
+|태그	|tag	                    |Int	|X	|태그 ID，ID가 다수일 경우' , ' 로 분리|
+|유저 ID	|userId	                    |Int	|X	|유저ID|
 |상단고정	|top	|Boolean	|X	|true：상단고정，false：상단고정 아님|
-|유효기간	|term	|VARCHAR(20)	|X	|reservation：예약중, open：진행중, close：완료|
-|상태	|status	|VARCHAR(1)	|X	|D：초안, O：공개, C：완료|
-|키워드	|keyword	|VARCHAR	|X	|검색문구|
-|조회 필드	|searchField	|VARCHAR	|X	|기본: 내용+제목으로 검색, title：제목만 검색, content：내용만 검색|
-|정렬 필드	|sort	|VARCHAR	|X	|우측 필드로 정렬기준 지정 가능. 여러개 일 경우 ' , '로 분리. isTop, createdDt, updatedDt, displayDt
-|페이지	|page	|INT	|X	|페이지 번호，디폴트로 1페이지| 
-|페이지 당 건수	|pageSize	|INT	|X	|페이지 당 데이터 건수，디폴트로 10건|
+|유효기간	|term	|Varchar(20)	|X	|reservation：예약중, open：진행중, close：완료|
+|상태	|status	|Varchar(1)	|X	|D：초안, O：공개, C：완료|
+|키워드	|keyword	|Varchar	|X	|검색문구|
+|조회 필드	|searchField	|Varchar	|X	|기본: 내용+제목으로 검색, title：제목만 검색, content：내용만 검색|
+|정렬 필드	|sort	|Varchar	|X	|우측 필드로 정렬기준 지정 가능. 여러개 일 경우 ' , '로 분리. isTop, createdDt, updatedDt, displayDt
+|페이지	|page	|Int	|X	|페이지 번호，디폴트로 1페이지| 
+|페이지 당 건수	|pageSize	|Int	|X	|페이지 당 데이터 건수，디폴트로 10건|
 
 #### 결과 데이터
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |----|-----|-----------|-----|---|
-|result.contents	|noticeId	|INT	|O	|공지사항 ID|
+|result.contents	|noticeId	|Int	|O	|공지사항 ID|
 |	                |serviceId	|String	|O	|서비스 ID|
 |	                |language	|String	|O	|ko：한국어, zh：중국어, ja：일본어, en：영어
 |	                |status	|String	|O	|공지사항 상태 D：초안, O：공개, C：완료}|
@@ -43,9 +43,9 @@
 |	                |startDt	|String	|O	|시작시간（yyyyMMddHHmmss)|
 |	                |endDt	|String	|O	|종료시간（yyyyMMddHHmmss)|
 | 	              |displayDt	|String	|X	|출력시간（yyyyMMddHHmmss）|
-|                 |userId	|INT	|O	|등록 유저ID|
+|                 |userId	|Int	|O	|등록 유저ID|
 |                 |userName	|String	|O	|등록 유저명|
-|result.contents.tags	|tags[].tagId	|INT	|O	|태그 ID|
+|result.contents.tags	|tags[].tagId	|Int	|O	|태그 ID|
 |	                    |tags[].tag	|String	|O	|태그 명|
 | 	                  |createdDt	|Long	|O	|공지사항 등록시간|
 |	                    |updatedDt	|Long	|O	|공지사항 수정시간|
@@ -115,30 +115,30 @@
 #### 요청 파라미터 정의
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |----|-----|------------|-----|---|
-|서비스 ID	|serviceId	|VARCHAR(50)	|O	|URL PATH 내에 설정한{serviceId}|
-|공지사항 ID	|id	|INT	|O	|URL PATH 내에 설정한{id}|
+|서비스 ID	|serviceId	|Varchar(50)	|O	|URL PATH 내에 설정한{serviceId}|
+|공지사항 ID	|id	|Int	|O	|URL PATH 내에 설정한{id}|
 
 #### 결과 데이터
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |-----|-----|-----------|----|----|
-|result.contents	|noticeId	|INT	|O	|공지사항 ID|
+|result.contents	|noticeId	|Int	|O	|공지사항 ID|
 |	                |serviceId	|String	|O	|서비스 ID|
 |	                |status	|String	|O	|공지사항 상태 D：초안, O：공개, C：완료|
-|	                |categoryId	|INT	|O	|말머리 ID|
+|	                |categoryId	|Int	|O	|말머리 ID|
 |	                |isTop	|Boolean	|O	|상단고정 표기|
 |	                |term	|String	|O	|reservation：예약중, open：진행중, close：완료|
 |	                |startDt	|String	|O	|시작시간（yyyyMMddHHmmss）|
 |	                |endDt	|String	|O	|종료시간（yyyyMMddHHmmss）|
 |	                |displayDt	|String	|X	|출력시간（yyyyMMddHHmmss）|
-|	                |userId	|INT	|O	|등록 유저 ID| 
+|	                |userId	|Int	|O	|등록 유저 ID| 
 |result.content.contents	|{language}.title	|String	|O	|공지사항 제목|
 |	                        |{language}.content	|String	|O	|공지사항 내용|
 |	                        |{language}.attachments[].attachmentId	|String	|O	|첨부파일 ID|
 |	                        |{language}.attachments[].fileName	|String	|O	|파일 명|
 |	                        |{language}.attachments[].size	|Long	|O	|파일 사이즈|
-|result.content.tags	|tags[].tagId	|INT	|O	|태그ID|
+|result.content.tags	|tags[].tagId	|Int	|O	|태그ID|
 |	                    |tags[].names.{language}	|String	|O	|태그|
-|result.content.category	|categoryId	|INT	|X	|말머리 ID|
+|result.content.category	|categoryId	|Int	|X	|말머리 ID|
 |	                        |names	|String	|O	|다국어 말머리 명|
 |	                        |createdDt	|Long	|O	|공지사항 등록시간|
 |	                        |updatedDt	|Long	|O	|공지사항 수정시간|
@@ -242,30 +242,30 @@
 #### 요청 파라미터 정의
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |----|-----|------------|-----|---|
-|서비스 ID	|serviceId	|VARCHAR(50)	|O	|URL PATH 내에 설정한{serviceId}|
+|서비스 ID	|serviceId	|Varchar(50)	|O	|URL PATH 내에 설정한{serviceId}|
 |공지사항 ID	|id	|String	|O	|공지사항 ID，여러개 일 경우 ','로 분리|
 
 #### 결과 데이터
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |----|-----|------------|-----|---|
-|result.contents	|noticeId	|INT	|O	|공지사항 ID|
+|result.contents	|noticeId	|Int	|O	|공지사항 ID|
 |	                |serviceId	|String	|O	|서비스 ID|
 |	                |status	        |String	|O	|공지사항 상태. D：초안, O：공개, C：완료|
-|	                |categoryId	|INT	|O	|말머리 ID|
+|	                |categoryId	|Int	|O	|말머리 ID|
 |	                |isTop	        |Boolean	|O	|상단고정 표기|
 |	                |term	        |String	|O	|reservation：예약중, open：진행중, close：완료|
 |	                |startDt	|String	|O	|시작시간（yyyyMMddHHmmss）|
 |                       |endDt	        |String	|O	|종료시간（yyyyMMddHHmmss）|
 |	                |displayDt	|String	|X	|출력시간（yyyyMMddHHmmss）|
-|                       |userId	        |INT	|O	|등록 유저 ID| 
+|                       |userId	        |Int	|O	|등록 유저 ID| 
 |result.contents.contents	|{language}.title	|String	|O	|공지사항 제목|
 |	                        |{language}.content	|String	|O	|공지사항 내용|
 |	                        |{language}.attachments[].attachmentId	|String	|O	|첨부파일 ID|
 |	                        |{language}.attachments[].fileName	|String	|O	|파일 명|
 |	                        |{language}.attachments[].size	|Long	|O	|파일 사이즈|
-|result.contents.tags	|tags[].tagId	|INT	|O	|태그ID|
+|result.contents.tags	|tags[].tagId	|Int	|O	|태그ID|
 |	                |tags[].names.{language}	|String	|O	|태그|
-|result.contents.category	|categoryId	|INT	|X	|말머리 ID|
+|result.contents.category	|categoryId	|Int	|X	|말머리 ID|
 |	                        |names	        |String	|O	|다국어 말머리 명|
 |	                        |createdDt	|Long	|O	|공지사항 등록시간|
 |	                        |updatedDt	|Long	|O	|공지사항 수정시간|
@@ -372,7 +372,7 @@
 |서비스 ID	|serviceId	|String	|O	|URL PATH 내에 설정한{serviceId}|
 |공지사항 내용	|request body	|String	|O	|공지사항 내용（JSON）|
 |	             |status	     |String	|O	|공지사항 상태. D：초안, O：공개, C：완료|
-|	             |categoryId	|INT	|O	|말머리 ID|
+|	             |categoryId	|Int	|O	|말머리 ID|
 |	             |isTop	|Boolean	|O	|상단고정 표기|
 |	             |contents.{language}.title	|String	|O	|공지사항 제목|
 |	             |contents.{language}.content	|String	|O	|공지사항 내용|
@@ -380,7 +380,7 @@
 |	             |endDt	|String	|O	|종료시간（yyyyMMddHHmmss）|
 |	             |displayDt	|String	|X	|출력시간（yyyyMMddHHmmss）|
 |	             |tags	|Array	|X	|태그 리스트|
-|	             |tags[].tagId	|INT	|O	|태그 ID|
+|	             |tags[].tagId	|Int	|O	|태그 ID|
 |	             |attachments	|Array	|X	|첨부파일|
 |	             |attachments[].attachmentId	|String	|O	|첨부파일 ID|
 
@@ -433,10 +433,10 @@
 #### 결과 데이터
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |----|-----|------------|-----|---|
-|result.content	|noticeId	|INT	|O	|공지사항 ID|
+|result.content	|noticeId	|Int	|O	|공지사항 ID|
 |	        |serviceId	|String	|O	|서비스 ID|
 |	        |status	        |String	|O	|공지사항 상태. D：초안, O：공개, C：완료|
-|	        |categoryId	|INT	|O	|말머리 ID|
+|	        |categoryId	|Int	|O	|말머리 ID|
 |	        |isTop	        |Boolean	|O	|상단고정 표기|
 |	        |title	        |String	|O	|공지사항 제목|
 |	        |content	|String	|O	|공지사항 내용|
@@ -444,9 +444,9 @@
 |	        |endDt	        |String	|O	|종료시간（yyyyMMddHHmmss）|
 |	        |displayDt	|String	|X	|출력시간（yyyyMMddHHmmss）|
 |	        |attachmentYn	|String	|O	|Y：첨부파일 포함，N：첨부파일 포함 되지 않음|
-|	        |userId	        |INT	|O	|등록 유저 ID|
+|	        |userId	        |Int	|O	|등록 유저 ID|
 |	        |tags	        |Array	|X	|태그 리스트|
-|	        |tags[].tagId	|INT	|O	|태그 ID|
+|	        |tags[].tagId	|Int	|O	|태그 ID|
 |	        |tags[].tag	|String	|O	|태그 명|
 |	        |attachments	|Array	|X	|첨부파일|
 |	        |attachments[].attachmentId	|String	|O	|첨부파일 ID|
@@ -555,10 +555,10 @@
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |----|-----|------------|-----|---|
 |서비스 ID	|serviceId	|String	|O	|URL PATH내에 설정한{serviceId}|
-|공지사항 ID	|id	|INT	|O	|URL PATH내에 설정한{id}|
+|공지사항 ID	|id	|Int	|O	|URL PATH내에 설정한{id}|
 |공지사항 내용	|request body	|String	|O	|공지사항 내용（JSON）|
 |	             |status	     |String	|O	|공지사항 상태. D：초안, O：공개, C：완료|
-|	             |categoryId	|INT	|O	|말머리 ID|
+|	             |categoryId	|Int	|O	|말머리 ID|
 |	             |isTop	|Boolean	|O	|상단고정 표기|
 |	             |contents.{language}.title	|String	|O	|공지사항 제목|
 |	             |contents.{language}.content	|String	|O	|공지사항 내용|
@@ -566,7 +566,7 @@
 |	             |endDt	|String	|O	|종료시간（yyyyMMddHHmmss）|
 |	             |displayDt	|String	|X	|출력시간（yyyyMMddHHmmss）|
 |	             |tags	|Array	|X	|태그 리스트|
-|	             |tags[].tagId	|INT	|O	|태그 ID|
+|	             |tags[].tagId	|Int	|O	|태그 ID|
 |	             |attachments	|Array	|X	|첨부파일|
 |	             |attachments[].attachmentId	|String	|O	|첨부파일 ID|
 
@@ -619,10 +619,10 @@
 ####  결과 데이터
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |---------|--------|-----------|---------|----|
-|result.content	|noticeId	|INT	|O	|공지사항 ID|
+|result.content	|noticeId	|Int	|O	|공지사항 ID|
 |	        |serviceId	|String	|O	|서비스 ID|
 |	        |status	|String	|O	|공지사항 상태. D：초안, O：공개, C：완료|
-|	        |categoryId	|INT	|O	|말머리 ID|
+|	        |categoryId	|Int	|O	|말머리 ID|
 |	        |isTop	|Boolean	|O	|상단고정 표기|
 |	        |title	|String	|O	|공지사항 제목|
 |	        |content	|String	|O	|공지사항 내용|
@@ -630,9 +630,9 @@
 |	        |endDt	|String	|O	|종료시간（yyyyMMddHHmmss）|
 |	        |displayDt	|String	|X	|출력시간（yyyyMMddHHmmss）|
 |               |attachmentYn	|String	|O	|Y：첨부파일 포함，N：첨부파일 포함되지 않음|
-|	        |userId	|INT	|O	|등록 유저ID|
+|	        |userId	|Int	|O	|등록 유저ID|
 |	        |tags	|Array	|X	|태그 리스트|
-|	        |tags[].tagId	|INT	|O	|태그 ID|
+|	        |tags[].tagId	|Int	|O	|태그 ID|
 |	        |tags[].tag	|String	|O	|태그 명|
 |               |attachments	|Array	|X	|첨부파일|
 |	        |attachments[].attachmentId	|String	|O	|첨부파일 ID|
@@ -740,7 +740,7 @@
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |----|-----|------------|-----|---|
 |서비스 ID	|serviceId	|String	|O	|URL PATH 내에 설정한{serviceId}|
-|공지사항 ID	|Id	|INT	|O	|URL PATH 내에  설정한{id}|
+|공지사항 ID	|Id	|Int	|O	|URL PATH 내에  설정한{id}|
 
 #### 결과 데이터
 - 없음
@@ -757,33 +757,33 @@
 #### 요청 파라미터 정의
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |----|-----|------------|-----|---|
-|서비스 ID	|serviceId	|VARCHAR(50)	|O	|서비스 ID，URL PATH 내에 설정|
-|조회언어	|language	|VARCHAR(2)	|X	|ko：한국어, zh：중국어, ja：일본어, en：영어|
-|시작시간	|startDt	|VARCHAR(14)	|X	|등록시간（yyyyMMddHHmmss）|
-|종료시간	|endDt	|VARCHAR(14)	|X	|등록시간（yyyyMMddHHmmss）|
-|말머리 ID	 |categoryId	|INT	|X	|말머리 ID|
-|태그	|tag	|INT	|X	|태그 ID，ID가 다수일 경우 ','로 분리|
-|유저 ID	|userId	|INT	|X	|유저 ID|
-|상태	|status	|VARCHAR(1)	|X	|O：사용, C：미사용|
-|키워드	|keyword	|VARCHAR	|X	|검색문구|
-|조회필드	|searchField	|VARCHAR	|X	|디폴트로 내용+제목 으로 검색, title：제목만 검색, content：내용만 검색|
-|페이지	|page	|INT	|X	|페이지 번호，디폴트로 1페이지| 
-|페이지 당 건수	|pageSize	|INT	|X	|페이지 당 데이터 건수，디폴트로 10건|
+|서비스 ID	|serviceId	|Varchar(50)	|O	|서비스 ID，URL PATH 내에 설정|
+|조회언어	|language	|Varchar(2)	|X	|ko：한국어, zh：중국어, ja：일본어, en：영어|
+|시작시간	|startDt	|Varchar(14)	|X	|등록시간（yyyyMMddHHmmss）|
+|종료시간	|endDt	|Varchar(14)	|X	|등록시간（yyyyMMddHHmmss）|
+|말머리 ID	 |categoryId	|Int	|X	|말머리 ID|
+|태그	|tag	|Int	|X	|태그 ID，ID가 다수일 경우 ','로 분리|
+|유저 ID	|userId	|Int	|X	|유저 ID|
+|상태	|status	|Varchar(1)	|X	|O：사용, C：미사용|
+|키워드	|keyword	|Varchar	|X	|검색문구|
+|조회필드	|searchField	|Varchar	|X	|디폴트로 내용+제목 으로 검색, title：제목만 검색, content：내용만 검색|
+|페이지	|page	|Int	|X	|페이지 번호，디폴트로 1페이지| 
+|페이지 당 건수	|pageSize	|Int	|X	|페이지 당 데이터 건수，디폴트로 10건|
 
 #### 결과 데이터
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |----|-----|------------|-----|---|
-|result.contents	|noticeId	|INT	|O	|템플릿 ID|
+|result.contents	|noticeId	|Int	|O	|템플릿 ID|
 |	                |serviceId	|String	|O	|서비스 ID|
-|	                |language	|VARCHAR(2)	|O	|ko：한국어, zh：중국어, ja：일본어, en：영어|
+|	                |language	|Varchar(2)	|O	|ko：한국어, zh：중국어, ja：일본어, en：영어|
 |	                |status	|String	|O	|O：사용 C：미사용|
-|	                |categoryId	|INT	|O	|말머리 ID|
+|	                |categoryId	|Int	|O	|말머리 ID|
 |	                |categoryName	|String	|O	|말머리 명|
 |	                |subject	|String	|O	|템플릿 제목|
 |	                |memo	        |String	|O	|템플릿 설명|
-|	                |userId	        |INT	|O	|등록 유저 ID|
+|	                |userId	        |Int	|O	|등록 유저 ID|
 |	                |userName	|String	|O	|등록 유저 명|
-|result.contents.tags	|tags[].tagId	|INT	|O	|태그 ID|
+|result.contents.tags	|tags[].tagId	|Int	|O	|태그 ID|
 |	                |tags[].tag	|String	|O	|태그 명|
 |	                |tags[].names	|String	|O	|다국어 태그 명|
 |result.contents.category	|names	|String	|O	|다국어 말머리 명|
@@ -855,24 +855,24 @@
 #### 요청 파라미터 정의
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |----|-----|------------|-----|---|
-|서비스 ID	|serviceId	|VARCHAR(50)	|O	|URL PATH 내에 설정한{serviceId}|
-|템플릿 ID	|id	        |INT	        |O	|URL PATH 내에 설정한{id}|
+|서비스 ID	|serviceId	|Varchar(50)	|O	|URL PATH 내에 설정한{serviceId}|
+|템플릿 ID	|id	        |Int        |O	|URL PATH 내에 설정한{id}|
 
 #### 결과 데이터
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |----|-----|------------|-----|---|
-|result.contents	|noticeId	|INT	|O	|템플릿 ID|
+|result.contents	|noticeId	|Int	|O	|템플릿 ID|
 |	                |serviceId	|String	|O	|서비스 ID|
 |	                |status	        |String	|O	|O：사용, C：미사용|
-|	                |categoryId	|INT	|O	|말머리 ID|
-|	                |userId	        |INT	|O	|등록 유저 ID|
+|	                |categoryId	|Int	|O	|말머리 ID|
+|	                |userId	        |Int	|O	|등록 유저 ID|
 |	                |subject	|String	|O	|템플릿 제목|
 |	                |memo	        |String	|O	|템플릿 설명|
 |result.content.contents	|{language}.title	|String	|O	|공지사항 제목|
 |	                        |{language}.content	|String	|O	|공지사항 내용|
-|result.content.tags	        |tags[].tagId	|INT	|O	|태그 ID|
+|result.content.tags	        |tags[].tagId	|Int	|O	|태그 ID|
 |	                        |tags[].names.{language}	|String	|O	|다국어 태그 명|
-|result.content.category	|categoryId	|INT	|O	|말머리 ID|
+|result.content.category	|categoryId	|Int	|O	|말머리 ID|
 |	                        |names	|String	|O	|다국어 말머리 명|
 |	                        |createdDt	|Long	|O	|템플릿 등록시간|
 |	                        |updatedDt	|Long	|O	|템플릿 수정시간|
@@ -949,12 +949,12 @@
 |----|-----|------------|-----|---|
 |서비스 ID	|serviceId	|String	|O	|URL PATH 내에 설정한{serviceId}|
 |템플릿 내용	|status	|String	|O	|O：사용, C：미사용|
-|	    |categoryId	|INT	|O	|말머리 ID|
+|	    |categoryId	|Int	|O	|말머리 ID|
 |	    |subject	|String	|O	|템플릿 제목|
 |	    |memo	|String	|O	|템플릿 설명|
 |	    |contents.{language}.title	|String	|O	|다국어 공지사항 제목|
 |	    |contents.{language}.content	|String	|O	|다국어 공지사항 내용|
-|	    |tags[].tagId	|INT	|O	|태그 ID|
+|	    |tags[].tagId	|Int	|O	|태그 ID|
 
 #### Request Body
 ```
@@ -988,18 +988,18 @@
 #### 결과 데이터
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |----|-----|------------|-----|---|
-|result.content	|noticeId	|INT	|O	|템플릿 ID|
+|result.content	|noticeId	|Int	|O	|템플릿 ID|
 |	        |serviceId	|String	|O	|서비스 ID|
 |	        |status	        |String	|O	|O：사용, C：미사용|
-|	        |categoryId	|INT	|O	|말머리 ID|
+|	        |categoryId	|Int	|O	|말머리 ID|
 |	        |subject	|String	|O	|템플릿 제목|
 |	        |memo	        |String	|O	|템플릿 설명|
-|	        |userId	        |INT	|O	|등록 유저ID|
+|	        |userId	        |Int	|O	|등록 유저ID|
 |result.content.contents	|{language}.title	|String	|O	|공지사항 제목|
 |	                        |{language}.content	|String	|O	|공지사항 내용|
-|result.content.tags	        |tagId	                |INT	|O	|태그 ID|
+|result.content.tags	        |tagId	                |Int	|O	|태그 ID|
 |	                        |names.{language}	|String	|O	|다국어 태그 명|
-|result.content.category	|categoryId	        |INT	|O	|말머리 ID|
+|result.content.category	|categoryId	        |Int	|O	|말머리 ID|
 |	                        |names	                |String	|O	|다국어 말머리 명|
 |	                        |createdDt	        |Long	|O	|템플릿 등록 시간|
 |	                        |updatedDt	        |Long	|O	|템플릿 수정 시간|
@@ -1075,14 +1075,14 @@
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |----|-----|------------|-----|---|
 |서비스 ID	|serviceId	|String	|O	|URL PATH 내에 설정한{serviceId}|
-|템플릿 ID	|Id	|INT	|O	|URL PATH 내에 설정한{id}|
+|템플릿 ID	|Id	|Int	|O	|URL PATH 내에 설정한{id}|
 |템플릿 내용	|status	|String	|O	|O：사용, C：미사용	
-|           |categoryId	|INT	|O	|말머리 ID|
+|           |categoryId	|Int	|O	|말머리 ID|
 |	    |subject	|String	|O	|템플릿 제목|
 |	    |memo	|String	|O	|템플릿 설명|
 |	    |contents.{language}.title	|String	|O	|다국어 공지사항 제목|
 |	    |contents.{language}.content	|String	|O	|다국어 공지사항 내용|
-|	    |tags[].tagId	|INT	|O	|태그 ID|
+|	    |tags[].tagId	|Int	|O	|태그 ID|
 
 #### Request Body
 ```
@@ -1116,16 +1116,16 @@
 #### 결과 데이터
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |---------|--------|------------|--------|----|
-|result.content	|noticeId	|INT	|O	|템플릿 ID|
+|result.content	|noticeId	|Int	|O	|템플릿 ID|
 |	        |status	        |String	|O	|템플릿 상태. O：사용, C：미사용|
-|	        |categoryId	|INT	|O	|말머리 ID|
+|	        |categoryId	|Int	|O	|말머리 ID|
 |	        |subject	|String	|O	|템플릿 제목|
 |	        |memo	        |String	|X	|템플릿 설명|
 |	        |title	        |String	|O	|공지사항 제목|
 |	        |content	|String	|O	|공지사항 내용|
-|	        |userId	        |INT	|O	|등록 유저 ID|
+|	        |userId	        |Int	|O	|등록 유저 ID|
 |	        |tags	        |Array	|X	|태그 리스트|
-|	        |tags[].tagId	|INT	|O	|태그 ID|
+|	        |tags[].tagId	|Int	|O	|태그 ID|
 |	        |tags[].tag	|String	|O	|태그 명|
 |	        |createdDt	|Long	|O	|템플릿 등록시간|
 |	        |updatedDt	|Long	|O	|템플릿 수정시간|
@@ -1201,7 +1201,7 @@
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |----|-----|------------|-----|---|
 |서비스 ID	|serviceId	|String	|O	|URL PATH 내에 설정한{serviceId}|
-|템플릿 ID	|Id	|INT	|O	|URL PATH 내에 설정한{id}|
+|템플릿 ID	|Id	        |Int	|O	|URL PATH 내에 설정한{id}|
 
 #### 결과 데이터
 - 없음
@@ -1285,7 +1285,7 @@
 #### 결과 데이터
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |--------|---------|------------|--------|----|
-|result.contents	|tagId	|INT	|O	|태그 ID|
+|result.contents	|tagId	        |INT	|O	|태그 ID|
 |	                |serviceId	|String	|O	|서비스 ID|
 |                       |tag		|	|        |태그 내용|
 |	                |createdDt	|Long	|O	|등록시간|
@@ -1563,14 +1563,14 @@
 #### 결과 데이터
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |---------|--------|-----------|---------|----|
-|result.contents	|categoryId	|int	|O	|말머리 ID|
+|result.contents	|categoryId	|Int	|O	|말머리 ID|
 |	                |serviceId	|String	|O	|서비스 ID|
 |	                |categoryCode	|String	|	|말머리 Code|
-|	                |parent	        |int	|	|상위 말머리 ID（고정 값:0）|
+|	                |parent	        |Int	|	|상위 말머리 ID（고정 값:0）|
 |	                |name	        |String	|O	|말머리 명|
-|	                |level	        |int	|	|뎁스（고정 값:1）|
+|	                |level	        |Int	|	|뎁스（고정 값:1）|
 |	                |path	        |String	|	|뎁스 경로（고정 값:"\\"）|
-|	                |orderNo	|int	|	|정렬순서（기본 값:0）|
+|	                |orderNo	|Int	|	|정렬순서（기본 값:0）|
 |	                |createdDt	|Long	|	|등록시간|
 |	                |updatedDt	|Long	|	|수정시간|
 |	                |languages	|String	|	|다국어|
@@ -1641,14 +1641,14 @@
 #### 결과 데이터
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |---------|--------|-----------|---------|----|
-|result.content	|categoryId	|int	|O	|말머리 ID|
+|result.content	|categoryId	|Int	|O	|말머리 ID|
 |	        |serviceId	|String	|O	|서비스 ID|
 |	        |categoryCode	|String	|	|말머리 Code|
-|	        |parent	        |int	|	|상위 말머리 ID（고정 값:0）|
+|	        |parent	        |Int	|	|상위 말머리 ID（고정 값:0）|
 |	        |name	        |String	|O	|말머리 명|
-|	        |level	        |int	|	|뎁스（고정 값:1）|
+|	        |level	        |Int	|	|뎁스（고정 값:1）|
 |	        |path	        |String	|	|뎁스 경로（고정 값:"\\\\"）|
-|	        |orderNo	|int	|	|정렬순서（기본 값:0）|
+|	        |orderNo	|Int	|	|정렬순서（기본 값:0）|
 |	        |createdDt	|Long	|	|등록시간|
 |	        |updatedDt	|Long	|	|수정시간|
 |	        |languages	|String	|	|다국어|
@@ -1701,7 +1701,7 @@
 |	    |name	    |String |		|말머리 명（유일한 값:예 ; 길이:min = 0, max = 50 ; 형식:^(\_\|-\|[^\\pP])+$）|
 |	    |categoryCode	|String	|	|말머리 Code|
 |	    |languages	        |String	|	|다국어|
-|	    |orderNo	|int	|	|정렬순서（고정 값:0）|
+|	    |orderNo	|Int	|	|정렬순서（고정 값:0）|
 
 #### Request Body
 ```
@@ -1729,14 +1729,14 @@
 #### 결과 데이터
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |---------|--------|-----------|---------|----|
-|result.content	|categoryId	|int	|O	|말머리 ID|
+|result.content	|categoryId	|Int	|O	|말머리 ID|
 |	        |serviceId	|String	|O	|서비스 ID|
 |	        |categoryCode	|String	|	|말머리 Code|
-|	        |parent	        |int	|	|상위 말머리 ID（고정 값:0）|
+|	        |parent	        |Int	|	|상위 말머리 ID（고정 값:0）|
 |	        |name	        |String	|O	|말머리 명|
-|	        |level	        |int	|	|뎁스（고정 값:1）|
+|	        |level	        |Int	|	|뎁스（고정 값:1）|
 |	        |path	        |String	|	|뎁스 경로（고정 값:"\\\\"）|
-|	        |orderNo	|int	|	|정렬순서（기본 값:0）|
+|	        |orderNo	|Int	|	|정렬순서（기본 값:0）|
 |	        |createdDt	|Long	|	|등록시간|
 |	        |updatedDt	|Long	|	|수정시간|
 |	        |languages	|String	|	|다국어|
@@ -1790,7 +1790,7 @@
 |	    |name	    |String |	    |말머리 명（유일한 값:예 ; 길이:min = 0, max = 50 ; 형식:^(\_\|-\|[^\\pP])+$）|
 |	    |categoryCode	|String	|	|말머리 Code|
 |	    |languages	|String	   |	|다국어|
-|	    |orderNo	|int	   |	|정렬순서（고정 값:0）|
+|	    |orderNo	|Int	   |	|정렬순서（고정 값:0）|
 
 #### Request Body
 ```
@@ -1817,14 +1817,14 @@
 #### 결과 데이터
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |---------|--------|-----------|---------|----|
-|result.content	|categoryId	|int	|O	|말머리 ID|
+|result.content	|categoryId	|Int	|O	|말머리 ID|
 |	        |serviceId	|String	|O	|서비스 ID|
 |	        |categoryCode	|String	|	|말머리 Code|
-|	        |parent	        |int	|	|상위 말머리 ID（고정 값:0）|
+|	        |parent	        |Int	|	|상위 말머리 ID（고정 값:0）|
 |	        |name	        |String	|O	|말머리 명|
-|	        |level	        |int	|	|뎁스（고정 값:1）|
+|	        |level	        |Int	|	|뎁스（고정 값:1）|
 |	        |path	        |String	|	|뎁스 경로（고정 값:"\\\\"）|
-|	        |orderNo	|int	|	|정렬순서（기본 값:0）|
+|	        |orderNo	|Int	|	|정렬순서（기본 값:0）|
 |	        |createdDt	|Long	|	|등록시간|
 |	        |updatedDt	|Long	|	|수정시간|
 |	        |languages	|String	|	|다국어|
