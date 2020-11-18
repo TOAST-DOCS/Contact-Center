@@ -659,14 +659,14 @@
 #### 결과 데이터
 - 없음
 
-### 추천 FAQ 설정
+### 상단고정 FAQ 설정
 #### 인터페이스 설명
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/helpdoc/{id}/recommend.json			
-- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/helpdoc/{id}/recommend.json		
-
+- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/helpdoc/{id}/top.json				
+- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/helpdoc/{id}/top.json			
+		
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
 |------------|-------|--------|-----|--------|--------------|------------|
-|추천 FAQ 설정 |HTTPS  |PUT    |UTF-8|JSON    |추천 FAQ 설정|공통 인증   |
+|상단고정 FAQ 설정 |HTTPS  |PUT    |UTF-8|JSON    |상단고정 FAQ 설정|공통 인증   |
 
 #### 요청 파라미터 정의
 |명칭	|변수	|데이터 타입	|필수	|설명|
