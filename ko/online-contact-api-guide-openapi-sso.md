@@ -172,3 +172,68 @@ SUCCESS
 "usercode": null
 }
 ```
+
+## 적용 예시
+### Sample Code
+✔ [Sample Code 다운로드](https://alpha-docs.toast.com/ko/Contact%20Center/ko/oc_sso_sample-20191115.zip)
+✔ <a href="https://alpha-docs.toast.com/ko/Contact%20Center/ko/oc_sso_sample-20191115.zip" target="_blank">Sample Code 다운로드</a>
+
+### iframe을 이용한 헬프센터 예시
+#### 1. iframe을 이용하여 Online Contact 헬프센터를 사용자 페이지에 삽입
+Sample Code 파일 중 'oc_sso_sample/src/main/resources/templates/help_frame.ftl'을 참조해주세요.
+iframe의 이름은 반드시 id = "ocPage"로 지정하셔야 합니다.
+```
+<iframe src="https://${domain}/hangame/hc/?iframe=true" id="ocPage" frameborder="0" scrolling="no" style="padding-top: 60px; box-sizing: unset; height: 100px; width: 100%">
+</iframe>
+```  
+ 
+페이지에 viewport를 설정할 시 mobile/web 브라우저 모두에서 헬프센터를 사용하실 수 있습니다.
+```
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0">
+```
+
+#### 2. Online Contact 헬프센터 페이지의 높이를 확인하여 iframe의 height 조정
+help_frame.ftl 파일 중 javascript 코드를 참조해주세요.
+```
+// Listener for OC content height change
+window.addEventListener('message',function(event){
+    // Set iframe height
+    if(event.data > 0) {
+    updateHeight(event.data);
+    }
+});
+
+var updateHeight = function(wrapHeight) {
+var iframe = window.document.getElementById('ocPage');
+if(iframe != null) {
+iframe.style.height = '0px'; 
+var setHeight = (document.body.clientHeight > document.body.scrollHeight) ? document.body.clientHeight : document.body.scrollHeight;
+var margin = 70;
+setHeight = setHeight > wrapHeight ? setHeight : wrapHeight;
+iframe.style.height = setHeight + margin + "px";
+}
+};
+```
+
+#### 3. 로그인 처리 후 설정해야 할 쿠키는 사용자 페이지에서 취득 가능
+help_frame.ftl 파일 중 javascript 코드를 참조해주세요.
+```
+// get cookie
+function getCookie(name) {
+    var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
+    if(arr=document.cookie.match(reg))
+        return unescape(arr[2]);
+    else
+        return null;
+}
+$.when( $.ready ).then(function() {
+    var ssotoken = getCookie("sso_test_login");
+    var usercode = getCookie("usercode");
+    if(ssotoken != null && usercode != null) {
+        var signout = $("#signout");
+        $("#signout").html("Welcome " + usercode + "! <a href='/logout.nhn'>Sign out</a>");
+        $("#signout").show();
+        $("#signin").hide();
+    }
+});
+```
