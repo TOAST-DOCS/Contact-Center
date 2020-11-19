@@ -638,7 +638,7 @@
 }
 ```
 
-### 추천 FAQ 설정
+### FAQ 카테고리 별 고정 설정
 #### 인터페이스 설명
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/helpdoc/{id}/recommend.json			
 - URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/helpdoc/{id}/recommend.json		
@@ -657,7 +657,7 @@
 #### 결과 데이터
 - 없음
 
-### 상단고정 FAQ 설정
+### FAQ 메인화면 고정 설정
 #### 인터페이스 설명
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/helpdoc/{id}/top.json				
 - URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/helpdoc/{id}/top.json			
