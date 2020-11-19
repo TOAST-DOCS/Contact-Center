@@ -463,7 +463,7 @@
 |이메일 설정 정보	 |request body	|String	 |O	 |이메일 설정 정보(JSON)|
 |	                 |name	        |String	 |	 |발신자 이름(길이:min = 0, max = 45)|
 |	                 |displayMail	  |String	 |	 |발신자 주소(예：noreply@oc.toast.com)|
-|	                 |template	    |String	 |	 |이메일 레이아웃. 예) <p>#{content}</p> 해당 이메일 레이아웃은 모든 이메일에 적용됩니다. #{content} 태그는 반드시 추가해야합니다.|
+|	                 |template	    |String	 |	 |이메일 레이아웃. 예) \<p\>\#\{content\}\<\/p\> 해당 이메일 레이아웃은 모든 이메일에 적용됩니다. #{content} 태그는 반드시 추가해야합니다.|
 
 #### Request Body
 ```
