@@ -99,72 +99,75 @@ String authorization = new String(Base64.encodeBase64(rawHmac));
 |서비스 레벨|	/{serviceId}/openapi/v1/\*|	
 
 #### API 목록
-|레벨	|그룹	|명칭	|타입	|URL	|설명|
-|---------|--------|---------|---------|-------|---|
-|조직 레벨	|서비스	|서비스 추가	|POST	|/openapi/v1/admin/service/add.json	|신규 서비스 추가|
-|	   |	      |서비스 상세	|GET	|/openapi/v1/admin/service/{serviceId}.json	|서비스 ID를 통해 서비스 정보 조회|
-|  	   |	      |서비스 수정	|PUT	|/openapi/v1/admin/service/{serviceId}.json 	|서비스 ID를 통해 서비스 정보 수정|
-|	   |           |서비스 비활성화	|PUT	|/openapi/v1/admin/service/disable.json	       |서비스 ID를 통해 서비스 비활성화|
-|	   |	      |서비스 활성화	|PUT	|/openapi/v1/admin/service/enable.json	       |서비스 ID를 통해 서비스 활성화|
-|	   |	      |서비스 삭제	|DELETE	|/openapi/v1/admin/service/{serviceId}.json	|서비스 ID를 통해 비활성화 된 서비스 삭제|
-|	   |	      |서비스 API Key 다시 발급	|PUT	|/openapi/v1/admin/service/apikey/refresh.json	|서비스 ID를 통해 해당 서비스에 생성된 API Key 다시 발급|
-|	   |	      |서비스 리스트	|GET	|/openapi/v1/admin/service/list.json	|조직내에 생성된 모든 서비스 조회|
-|서비스 레벨	|접수유형 관리	|접수유형 추가	|POST	|/{serviceId}/openapi/v1/ticket/category/add.json	|신규 접수유형 추가|
-|	    |                     |접수유형 상세	|GET	|/{serviceId}/openapi/v1/ticket/category/{categoryid}.json	|접수유형 ID를 통해 접수유형 조회|
-|	    |	                 |접수유형 수정	|PUT	|/{serviceId}/openapi/v1/ticket/category/{categoryid}.json	|접수유형 ID를 통해 접수유형 수정|
-|	    |	                 |접수유형 삭제	|DELETE	|/{serviceId}/openapi/v1/ticket/category/{categoryid}.json	|접수유형 ID를 통해 접수유형 삭제|
-|  	    |	                 |접수유형 리스트	|GET	|/{serviceId}/openapi/v1/ticket/category/list.json	|서비스 내 접수유형 조회|
-|           |티켓 관리	|티켓 생성	|POST	|/{serviceId}/openapi/v1/ticket/add.json	|신규 티켓 생성|
-|	    |	           |티켓 처리	|POST	|/{serviceId}/openapi/v1/ticket/solve.json	|티켓 ID를 통해 티켓 처리|
-|	    |	           |티켓 상세	|GET	|/{serviceId}/openapi/v1/ticket/{id}.json	|티켓 ID를 통해 티켓 조회|
-|	    |	           |티켓 리스트	|GET	|/{serviceId}/openapi/v1/ticket/list.json	|검색 조건을 통해 조건에 맞는 티켓 리스트 노출|
-|	    |	           |유저 티켓 리스트	|GET	|/{serviceId}/openapi/v1/ticket/{usercode}/list.json	|검색 조건을 통해 조건에 맞는 고객의 티켓 리스트 노출|
-|	    |	           |티켓 첨부파일 첨부	|POST	|/{serviceId}/openapi/v1/attachments/ticket/upload.json	|서버에 파일 업로드|
-|	    |	           |티켓 첨부파일 열기/다운	|GET	|/{serviceId}/openapi/v1/attachments/ticket/{id}	|서버에 업로드 된 파일 열기/다운|
-|	    |	           |티켓 첨부파일 삭제	|DELETE	|/{serviceId}/openapi/v1/attachments/ticket/{id}.json	|서버에 업로드 된 파일 삭제|
-|	    |공지사항	|공지사항 조회	|GET	|/{serviceId}/openapi/v1/multilanguage/notice.json	|공지사항의 내용 조회, 검색 조건에 따라 공지사항 리스트를 리턴|
-|	    |	           |공지사항  상세	   |GET	|/{serviceId}/openapi/v1/multilanguage/notice/{id}.json	|공지사항 ID를 통해 공지사항 내용 취득|
-|	    |	           |공지사항  상세(여러개)	|GET	|/{serviceId}/openapi/v1/multilanguage/notices.json	|여러개의 공지사항 ID를 통해 내용 취득|
-|	    |	           |공지사항 등록	|POST	|/{serviceId}/openapi/v1/multilanguage/notice.json	|신규 공지사항 등록|
-|	    |	           |공지사항 수정	|PUT	|/{serviceId}/openapi/v1/multilanguage/notice/{id}.json	|ID를 통해 공지사항 수정|
-|           |		   |공지사항 삭제	|DELETE	|/{serviceId}/openapi/v1/multilanguage/notice/{id}.json	|ID를 통해 공지사항 삭제|
-|	    |	           |템플릿 조회	 |GET	 |/{serviceId}/openapi/v1/multilanguage/notice/template.json	|템플릿 내용 조회，템플릿 리스트를 리턴|
-|	    |	           |템플릿 상세	|GET	|/{serviceId}/openapi/v1/multilanguage/notice/template/{id}.json	|템플릿 ID를 통해 템플릿 내용 취득|
-|	    |	           |템플릿 등록	|POST	|/{serviceId}/openapi/v1/multilanguage/notice/template.json	|신규 템플릿 등록|
-|	    |	           |템플릿 수정	|PUT	|/{serviceId}/openapi/v1/multilanguage/notice/template/{id}.json	|ID를 통해 템플릿 수정|
-|	    |	           |템플릿 삭제	|DELETE	|/{serviceId}/openapi/v1/multilanguage/notice/template/{id}.json	|ID를 통해 템플릿 삭제|
-|	    |	           |공지사항 첨부파일 첨부	|POST	|/{serviceId}/openapi/v1/attachments/notice/upload.json	|서버에 파일 업로드|
-|	    |	           |공지사항 첨부파일 삭제	|DELETE	|/{serviceId}/openapi/v1/attachments/notice/{id}.json	|서버에 업로드 한 파일 삭제|
-|	    |	           |태그 리스트	|GET	|/{serviceId}/openapi/v1/notice/tag.json	|공지사항 태그 리스트 취득|
-|	    |	           |태그 상세	|GET	|/{serviceId}/openapi/v1/notice/tag/{id}.json	|태그 ID를 통해 공지사항 태그내용 취득|
-|	    |	           |태그 등록	|POST	|/{serviceId}/openapi/v1/notice/tag.json	|신규 태그 등록|
-|	    |	           |태그 수정	|PUT	|/{serviceId}/openapi/v1/notice/tag/{id}.json	|태그 ID를 통해 공지사항 태그 수정|
-|	    |	           |태그 삭제	|DELETE	|/{serviceId}/openapi/v1/notice/tag/{id}.json	|태그 ID를 통해 공지사항 태그 삭제|
-|	    |	           |말머리 리스트	|GET	|/{serviceId}/openapi/v1/notice/categories.json	|공지사항 말머리 리스트 취득|
-|	    |	           |말머리 상세	|GET	|/{serviceId}/openapi/v1/notice/category/{id}.json	|말머리 ID를 통해 공지사항 말머리 내용 취득|
-|	    |	           |말머리 등록	|POST	|/{serviceId}/openapi/v1/notice/category.json	|신규 말머리 등록|
-|	    |	           |말머리 수정	|POST	|/{serviceId}/openapi/v1/notice/category/{id}.json	|말머리 ID를 통해 말머리 명 수정|
-|	    |	           |말머리 삭제	|DELETE	|/{serviceId}/openapi/v1/notice/category/{id}.json	|말머리 ID를 통해 공지사항 말머리 삭제|
-|	    |상담원 관리	|상담원 리스트	|GET	|/{serviceId}/openapi/v1/users.json	|상담원 리스트 취득|
-|           |		    |상담원 상세	|GET	|/{serviceId}/openapi/v1/users/{id}.json	|상담원 ID를 통해 상담원 정보 취득|
-|	    |	            |상담원 추가	|POST	|/{serviceId}/openapi/v1/adduser.json	|지정한 서비스에 상담원 추가 및 권한 부여|
-|           |		    |상담원 권한 변경	|PUT	|/{serviceId}/openapi/v1/users/{id}.json	|서비스 내 상담원 권한 변경|
-|	    |	            |상담원 삭제	|DELETE	|/{serviceId}/openapi/v1/users/{id}.json	|지정한 서비스에서 상담원 삭제|
-|	    |헬프센터	 |헬프센터 지정 데이터 추가	|POST	|/{serviceId}/hc/openapi/v1/addition.json	|추가 필요한 고객정보를 DB에 저장|
-|	    |FAQ	     |FAQ 조회	|GET	|/{serviceId}/openapi/v1/helpdoc.json	|조회 조건 기준으로 FAQ 리스트를 리턴|
-|           |		     |FAQ 상세	|GET	|/{serviceId}/openapi/v1/helpdoc/{id}.json	|FAQ ID를 통해 FAQ 내용 취득|
-|           |		     |FAQ 등록	|POST	|/{serviceId}/openapi/v1/helpdoc.json	|신규 FAQ 등록|
-|           |		     |FAQ 수정	|PUT	|/{serviceId}/openapi/v1/helpdoc/{id}.json	|FAQ ID 기준으로 내용 수정|
-|	    |	             |추천 FAQ 설정	|PUT	|/{serviceId}/openapi/v1/helpdoc/{id}/recommend.json	|추천 FAQ 설정|
-|	    |	             |상단고정 FAQ 설정	|PUT	|/{serviceId}/openapi/v1/helpdoc/{id}/top.json	|상단고정 FAQ 설정|
-|	    |	             |FAQ 완료처리	|PUT	|/{serviceId}/openapi/v1/helpdoc/{id}/close.json	|FAQ 상태를 완료상태로 변경（status=C）|
-|	    |	             |FAQ 삭제	|DELETE	/{serviceId}/openapi/v1/helpdoc/{id}.json	|FAQ ID 기준으로 FAQ 삭제|
-|	    |	             |카테고리 리스트	|GET	|/{serviceId}/openapi/v1/helpdoc/categories.json	|FAQ 카테고리 리스트 취득|
-|	    |	             |카테고리 상세	|GET	|/{serviceId}/openapi/v1/helpdoc/category/{id}.json	|카테고리 ID를 통해 FAQ 카테고리 내용 취득|
-|	    |	             |카테고리 추가	|POST	|/{serviceId}/openapi/v1/helpdoc/category.json	|신규 FAQ 카테고리 추가|
-|	    |	             |카테고리 수정	|PUT	|/{serviceId}/openapi/v1/helpdoc/category/{id}.json	|ID 기준으로 카테고리 명 수정|
-|	    |	             |카테고리 삭제	|DELETE	|/{serviceId}/openapi/v1/helpdoc/category/{id}.json	|카테고리 ID를 통해 FAQ 카테고리 삭제|
-|	    |	             |FAQ 첨부파일 첨부	|POST	|/{serviceId}/openapi/v1/attachments/help/upload.json	|서버에 파일 업로드|
-|	    |	             |FAQ 첨부파일 삭제	|DELETE	|/{serviceId}/openapi/v1/attachments/help/{id}.json	|서버에 업로드한 파일 삭제|
-
+|레벨	|그룹	|명칭	|설명|
+|---------|--------|---------|---|
+|조직 레벨	|서비스	     |서비스 추가	           |신규 서비스 추가|
+|	   |	           |서비스 상세	         |서비스 ID를 통해 서비스 정보 조회|
+|  	   |	           |서비스 수정	         |서비스 ID를 통해 서비스 정보 수정|
+|	   |               |서비스 비활성화	        |서비스 ID를 통해 서비스 비활성화|
+|	   |	           |서비스 활성화	         |서비스 ID를 통해 서비스 활성화|
+|	   |	           |서비스 삭제	          |서비스 ID를 통해 비활성화 된 서비스 삭제|
+|	   |	           |서비스 API Key 재발급	 |서비스 ID를 통해 해당 서비스에 생성된 API Key 다시 발급|
+|	   |	           |서비스 목록	          |조직내에 생성된 모든 서비스 조회|
+|서비스 레벨	|접수유형 관리  |접수유형 추가	         |신규 접수유형 추가|
+|	    |              |접수유형 상세	          |접수유형 ID를 통해 접수유형 조회|
+|	    |	           |접수유형 수정	          |접수유형 ID를 통해 접수유형 수정|
+|	    |	           |접수유형 삭제	          |접수유형 ID를 통해 접수유형 삭제|
+|  	    |	           |접수유형 목록	         |서비스 내 접수유형 조회|
+|           |티켓 관리	|티켓 생성	                |신규 티켓 생성|
+|	    |	           |티켓 처리	           |티켓 ID를 통해 티켓 처리|
+|	    |	           |티켓 상세	           |티켓 ID를 통해 티켓 조회|
+|	    |	           |티켓 목록	          |검색 조건을 통해 조건에 맞는 티켓 리스트 노출|
+|	    |	           |유저 티켓 목록         |검색 조건을 통해 조건에 맞는 고객의 티켓 리스트 노출|
+|	    |	           |티켓 첨부파일 첨부	        |서버에 파일 업로드|
+|	    |	           |티켓 첨부파일 열기/다운     |서버에 업로드 된 파일 열기/다운|
+|	    |	           |티켓 첨부파일 삭제          |서버에 업로드 된 파일 삭제|
+|	    |공지사항	|공지사항 목록 조회	      |공지사항의 내용 조회, 검색 조건에 따라 공지사항 리스트를 리턴|
+|	    |	           |공지사항 상세 조회	          |공지사항 ID를 통해 공지사항 내용 취득|
+|	    |	           |공지사항 상세 조회(여러 건)	|여러개의 공지사항 ID를 통해 내용 취득|
+|	    |	           |공지사항 등록	          |신규 공지사항 등록|
+|	    |	           |공지사항 수정	          |ID를 통해 공지사항 수정|
+|           |		   |공지사항 삭제	          |ID를 통해 공지사항 삭제|
+|	    |	           |공지사항 템플릿 목록 조회	           |템플릿 내용 조회，템플릿 리스트를 리턴|
+|	    |	           |공지사항 템플릿 상세 조회	           |템플릿 ID를 통해 템플릿 내용 취득|
+|	    |	           |공지사항 템플릿 등록	           |신규 템플릿 등록|
+|	    |	           |공지사항 템플릿 수정	           |ID를 통해 템플릿 수정|
+|	    |	           |공지사항 템플릿 삭제	           |ID를 통해 템플릿 삭제|
+|	    |	           |공지사항 첨부파일 첨부       |서버에 파일 업로드|
+|	    |	           |공지사항 첨부파일 삭제       |서버에 업로드 한 파일 삭제|
+|	    |	           |공지사항 태그 목록 조회	           |공지사항 태그 리스트 취득|
+|	    |	           |공지사항 태그 상세 조회	            |태그 ID를 통해 공지사항 태그내용 취득|
+|	    |	           |공지사항 태그 등록	            |신규 태그 등록|
+|	    |	           |공지사항 태그 수정	            |태그 ID를 통해 공지사항 태그 수정|
+|	    |	           |공지사항 태그 삭제	            |태그 ID를 통해 공지사항 태그 삭제|
+|	    |	           |공지사항 말머리 목록 조회	           |공지사항 말머리 리스트 취득|
+|	    |	           |공지사항 말머리 상세 조회	           |말머리 ID를 통해 공지사항 말머리 내용 취득|
+|	    |	           |공지사항 말머리 등록	           |신규 말머리 등록|
+|	    |	           |공지사항 말머리 수정	           |말머리 ID를 통해 말머리 명 수정|
+|	    |	           |공지사항 말머리 삭제	           |말머리 ID를 통해 공지사항 말머리 삭제|
+|	    |상담원 관리	|상담원 목록 조회	      |상담원 리스트 취득|
+|           |		    |상담원 상세 조회 	           |상담원 ID를 통해 상담원 정보 취득|
+|	    |	            |상담원 추가	           |지정한 서비스에 상담원 추가 및 권한 부여|
+|           |		    |상담원 권한 변경           |서비스 내 상담원 권한 변경|
+|	    |	            |상담원 삭제	           |지정한 서비스에서 상담원 삭제|
+|	    |헬프센터	 |헬프센터 지정 데이터 추가   |추가 필요한 고객정보를 DB에 저장|
+|	    |FAQ	     |FAQ 목록 조회	              |조회 조건 기준으로 FAQ 리스트를 리턴|
+|           |		     |FAQ 상세 조회	              |FAQ ID를 통해 FAQ 내용 취득|
+|           |		     |FAQ 등록	              |신규 FAQ 등록|
+|           |		     |FAQ 수정	              |FAQ ID 기준으로 내용 수정|
+|	    |	             |추천 FAQ 설정	             |추천 FAQ 설정|
+|	    |	             |상단고정 FAQ 설정	   |상단고정 FAQ 설정|
+|	    |	             |FAQ 완료처리	             |FAQ 상태를 완료상태로 변경（status=C）|
+|	    |	             |FAQ 삭제	               |FAQ ID 기준으로 FAQ 삭제|
+|	    |	             |FAQ 카테고리 목록 조회	           |FAQ 카테고리 리스트 취득|
+|	    |	             |FAQ 카테고리 상세 조회	           |카테고리 ID를 통해 FAQ 카테고리 내용 취득|
+|	    |	             |FAQ 카테고리 추가	           |신규 FAQ 카테고리 추가|
+|	    |	             |FAQ 카테고리 수정	           |ID 기준으로 카테고리 명 수정|
+|	    |	             |FAQ 카테고리 삭제	           |카테고리 ID를 통해 FAQ 카테고리 삭제|
+|	    |	             |FAQ 첨부파일 첨부	   |서버에 파일 업로드|
+|	    |	             |FAQ 첨부파일 삭제	   |서버에 업로드한 파일 삭제|
+|           |SSO             |SSO 원격로그인 API (Client Side)|사용자 시스템에서 동적으로 form을 생성하여 브라우저에 반환, form은 자동으로 API에 form 정보를 전달, 인증 후 성공 시 로그인 쿠키 값 설정|
+|           |                |SSO 원격로그인 API (Server Side)|사용자가 서버에서 직접 API 호출, API 로그인 성공 후 로그인 쿠키 값 설정|
+|           |                |SSO 로그인 상태 API             |사용자가 쿠키 정보를 기준으로 로그인 여부를 확인 후, JSON 형식의 데이터를 리턴|
+|           |고객정보 연동    |고객정보 연동                   |전화 문의 인입 시 매체번호를 통해 고객 데이터를 조회하여 화면에 표시|
 
