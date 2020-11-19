@@ -6,7 +6,7 @@
 	
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
 |------------|-------|--------|-----|--------|--------------|------------|
-|FAQ 목록 조회 |HTTPS  |GET    |UTF-8|JSON    |조회 조건 기준으로 FAQ 리스트를 리턴|공통 인증   |
+|FAQ 목록 조회 |HTTPS  |GET    |UTF-8|JSON    |조회 조건 기준으로 FAQ 목록을 리턴|공통 인증   |
 
 #### 요청 파라미터 정의
 |명칭	|변수	|데이터 타입	|필수	|설명|
@@ -74,14 +74,14 @@
 }
 ```
 
-### FAQ 상세내용 취득
+### FAQ 상세 조회
 #### 인터페이스 설명
 - URL: https://{domain}.oc.toast.com /{serviceId}/openapi/v1/helpdoc/{id}.json			
 - URL (개발): https://{domain}.alpha-oc.toast.com /{serviceId}/openapi/v1/helpdoc/{id}.json			
 
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
 |------------|-------|--------|-----|--------|--------------|------------|
-|FAQ 상세내용 취득 |HTTPS  |GET    |UTF-8|JSON    |FAQ ID를 통해 FAQ 내용 취득|공통 인증   |
+|FAQ 상세 조회 |HTTPS  |GET    |UTF-8|JSON    |FAQ ID를 통해 FAQ 상세 내용 조회|공통 인증   |
 
 #### 요청 파라미터 정의
 |명칭	|변수	|데이터 타입	|필수	|설명|
@@ -712,14 +712,14 @@
 #### 결과 데이터
 - 없음
 
-### FAQ 카테고리 리스트 취득
+### FAQ 카테고리 목록 조회
 #### 인터페이스 설명
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v2/helpdoc/categories.json				
 - URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/helpdoc/categories.json			
 			
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
 |------------|-------|--------|-----|--------|--------------|------------|
-|FAQ 카테고리 리스트 취득 |HTTPS  |GET    |UTF-8|JSON    |FAQ 카테고리 리스트 취득|공통 인증   |
+|FAQ 카테고리 목록 조회 |HTTPS  |GET    |UTF-8|JSON    |FAQ 카테고리 목록 조회|공통 인증   |
 
 #### 요청 파라미터 정의
 |명칭	|변수	|데이터 타입	|필수	|설명|
@@ -791,14 +791,14 @@
 }
 ```
 
-### FAQ 카테고리 내용 취득
+### FAQ 카테고리 상세 조회
 #### 인터페이스 설명
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v2/helpdoc/category/{id}.json				
 - URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/helpdoc/category/{id}.json		
 						
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
 |------------|-------|--------|-----|--------|--------------|------------|
-|FAQ 카테고리 내용 취득 |HTTPS  |GET    |UTF-8|JSON    |카테고리 ID를 통해 FAQ 카테고리 내용 취득|공통 인증   |
+|FAQ 카테고리 상세 조회 |HTTPS  |GET    |UTF-8|JSON    |카테고리 ID를 통해 FAQ 카테고리 상세 내용 조회|공통 인증   |
 
 #### 요청 파라미터 정의
 |명칭	|변수	|데이터 타입	|필수	|설명|
