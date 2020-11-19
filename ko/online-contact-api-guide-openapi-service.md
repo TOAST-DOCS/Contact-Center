@@ -347,14 +347,14 @@
 }
 ```
 
-### 서비스 리스트
+### 서비스 목록
 #### 인터페이스 설명
 - URL: https://{domain}.oc.toast.com/openapi/v1/admin/service/list.json			 			
 - URL (개발):	https://{domain}.alpha-oc.toast.com/openapi/v1/admin/service/list.json								 				
 
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
 |------------|-------|--------|-----|--------|--------------|------------|
-|서비스 리스트  |HTTPS  |GET    |UTF-8|JSON    |조직 내에 생성된 모든 서비스 조회|공통 인증|
+|서비스 목록 |HTTPS  |GET    |UTF-8|JSON    |조직 내에 생성된 모든 서비스 조회|공통 인증|
 
 #### 요청 파라미터 정의
 |명칭	|변수	|데이터 타입	|필수	|설명|
