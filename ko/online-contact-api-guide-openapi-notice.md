@@ -103,14 +103,14 @@
 }
 ```
 
-### 공지사항 내용 취득
+### 공지사항 상세 조회
 #### 인터페이스 설명
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/multilanguage/notice/{id}.json			
 - URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/multilanguage/notice/{id}.json			
 		
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
 |------------|-------|--------|-----|--------|--------------|------------|
-|공지사항 내용 취득 |HTTPS  |GET    |UTF-8|JSON    |공지사항 ID를 통해 공지사항 내용 취득|공통 인증   |
+|공지사항 상세 조회 |HTTPS  |GET    |UTF-8|JSON    |공지사항 ID를 통해 공지사항 상세 내용 조회|공통 인증   |
 
 #### 요청 파라미터 정의
 |명칭	|변수	|데이터 타입	|필수	|설명|
@@ -230,14 +230,14 @@
 }
 ```
 
-### 공지사항 내용 취득 (여러 건)
+### 공지사항 상세 조회 (여러 건)
 #### 인터페이스 설명
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/multilanguage/notices.json			 		
 - URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/multilanguage/notices.json			
 		
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
 |------------|-------|--------|-----|--------|--------------|------------|
-|공지사항 내용 취득 (여러 건) |HTTPS  |GET    |UTF-8|JSON    |여러 개의 공지사항 ID를 통해 공지사항 내용 취득|공통 인증   |
+|공지사항 상세 조회 (여러 건) |HTTPS  |GET    |UTF-8|JSON    |여러 개의 공지사항 ID를 통해 공지사항 상세 내용 조회|공통 인증   |
 
 #### 요청 파라미터 정의
 |명칭	|변수	|데이터 타입	|필수	|설명|
@@ -745,14 +745,14 @@
 #### 결과 데이터
 - 없음
 
-### 공지사항 템플릿 내용 조회
+### 공지사항 템플릿 목록 조회
 #### 인터페이스 설명
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/multilanguage/notice/template.json						
 - URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/multilanguage/notice/template.json								
 		
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|
 |------------|-------|--------|-----|--------|--------------|
-|공지사항 템플릿 내용 조회 |HTTPS  |IN(GET)    |UTF-8|JSON    |템플릿 내용 조회, 템플릿 리스트를 리턴|
+|공지사항 템플릿 목록  |HTTPS  |IN(GET)    |UTF-8|JSON    |템플릿 내용 조회, 템플릿 리스트를 리턴|
 
 #### 요청 파라미터 정의
 |명칭	|변수	|데이터 타입	|필수	|설명|
@@ -843,14 +843,14 @@
 }
 ```
 
-### 공지사항 템플릿 내용 취득
+### 공지사항 템플릿 상세 조회
 #### 인터페이스 설명
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/multilanguage/notice/template/{id}.json							
 - URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/multilanguage/notice/template/{id}.json							
 		
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
 |------------|-------|--------|-----|--------|--------------|------------|
-|공지사항 템플릿 내용 취득 |HTTPS  |GET    |UTF-8|JSON    |템플릿 ID를 통해 템플릿 내용 취득|공통 인증|
+|공지사항 템플릿 상세 조회 |HTTPS  |GET    |UTF-8|JSON    |템플릿 ID를 통해 템플릿 상세 내용 조회|공통 인증|
 
 #### 요청 파라미터 정의
 |명칭	|변수	|데이터 타입	|필수	|설명|
@@ -1267,14 +1267,14 @@
 #### 결과 데이터
 - 없음
 
-### 공지사항 태그 리스트 취득
+### 공지사항 태그 목록 조회
 #### 인터페이스 설명
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/notice/tag.json					 		
 - URL(개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/notice/tag.json					
 
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|
 |------------|-------|--------|-----|--------|--------------|
-|공지사항 태그 리스트 취득 |HTTPS  |GET    |UTF-8|JSON    |공지사항 태그 리스트 취득|
+|공지사항 태그 목록 조회 |HTTPS  |GET    |UTF-8|JSON    |공지사항 태그 목록 조회|
 
 #### 요청 파라미터 정의
 |명칭	|변수	|데이터 타입	|필수	|설명|
@@ -1333,14 +1333,14 @@
 }
 ```
 
-### 공지사항 태그 내용 취득
+### 공지사항 태그 상세 조회
 #### 인터페이스 설명
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/notice/tag/{id}.json						 		
 - URL(개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/notice/tag/{id}.json						
 
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|
 |------------|-------|--------|-----|--------|--------------|
-|공지사항 태그 내용 취득 |HTTPS  |GET    |UTF-8|JSON    |태그 ID를 통해 공지사항 태그 내용 취득|
+|공지사항 태그 상세 조회 |HTTPS  |GET    |UTF-8|JSON    |태그 ID를 통해 공지사항 태그 상세 내용 조회|
 
 #### 요청 파라미터 정의
 |명칭	|변수	|데이터 타입	|필수	|설명|
@@ -1546,14 +1546,14 @@
 #### 결과 데이터
 - 없음
 
-### 공지사항 말머리 리스트
+### 공지사항 말머리 목록 조회
 #### 인터페이스 설명
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v2/notice/categories.json												 
 - URL: https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v2/notice/categories.json											
 
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|
 |------------|-------|--------|-----|--------|--------------|
-|공지사항 말머리 리스트 취득 |HTTPS  |GET  |UTF-8|JSON    |공지사항 말머리 리스트 취득|
+|공지사항 말머리 목록 조회 |HTTPS  |GET  |UTF-8|JSON    |공지사항 말머리 목록  |
 
 #### 요청 파라미터 정의
 |명칭	|변수	|데이터 타입	|필수	|설명|
@@ -1623,14 +1623,14 @@
 }
 ```
 
-### 공지사항 말머리 내용 취득
+### 공지사항 말머리 상세 조회
 #### 인터페이스 설명
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v2/notice/category/{id}.json												 
 - URL: https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v2/notice/category/{id}.json										
 
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|
 |------------|-------|--------|-----|--------|--------------|
-|공지사항 말머리 내용 취득 |HTTPS  |GET  |UTF-8|JSON    |말머리 ID를 통해 공지사항 말머리 내용 취득|
+|공지사항 말머리 상세 조회 |HTTPS  |GET  |UTF-8|JSON    |말머리 ID를 통해 공지사항 상세 내용 조회|
 
 #### 요청 파라미터 정의
 |명칭	|변수	|데이터 타입	|필수	|설명|
