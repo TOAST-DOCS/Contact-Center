@@ -1092,14 +1092,14 @@
 }
 ```
 
-### FAQ 첨부파일 열기 및 다운로드
+### FAQ 첨부파일 열기/다운로드
 #### 인터페이스 설명
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v2/attachments/help/{id}					
 - URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v2/attachments/help/{id}			
 									
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
 |------------|-------|--------|-----|--------|--------------|------------|
-|FAQ 첨부파일 열기 및 다운로드 |HTTPS  |GET    |UTF-8|FILE    |서버에 업로드한 FAQ 첨부파일 열기 및 다운로드|공통 인증   |
+|FAQ 첨부파일 열기/다운로드 |HTTPS  |GET    |UTF-8|FILE    |서버에 업로드한 FAQ 첨부파일 열기/다운로드|공통 인증   |
 
 #### 요청 파라미터 정의
 |명칭	|변수	|데이터 타입	|필수	|설명|
