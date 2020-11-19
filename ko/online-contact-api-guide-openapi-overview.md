@@ -155,8 +155,8 @@ String authorization = new String(Base64.encodeBase64(rawHmac));
 |           |		     |FAQ 상세 조회	              |FAQ ID를 통해 FAQ 내용 취득|
 |           |		     |FAQ 등록	              |신규 FAQ 등록|
 |           |		     |FAQ 수정	              |FAQ ID 기준으로 내용 수정|
-|	    |	             |추천 FAQ 설정	             |추천 FAQ 설정|
-|	    |	             |상단고정 FAQ 설정	   |상단고정 FAQ 설정|
+|	    |	             |FAQ 카테고리별 고정 설정	             |FAQ 문서가 속한 카테고리 상단에 고정되도록 설정|
+|	    |	             |FAQ 메인화면 고정 설정	   |FAQ 문서가 메인화면 카테고리 상단에 고정되도록 설정|
 |	    |	             |FAQ 완료처리	             |FAQ 상태를 완료상태로 변경（status=C）|
 |	    |	             |FAQ 삭제	               |FAQ ID 기준으로 FAQ 삭제|
 |	    |	             |FAQ 카테고리 목록 조회	           |FAQ 카테고리 리스트 취득|
