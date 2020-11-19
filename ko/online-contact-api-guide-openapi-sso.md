@@ -176,7 +176,6 @@ SUCCESS
 ## 적용 예시
 ### Sample Code
 ✔ [Sample Code 다운로드](https://alpha-docs.toast.com/ko/Contact%20Center/ko/oc_sso_sample-20191115.zip)
-✔ <a href="https://alpha-docs.toast.com/ko/Contact%20Center/ko/oc_sso_sample-20191115.zip" target="_blank">Sample Code 다운로드</a>
 
 ### iframe을 이용한 헬프센터 예시
 #### 1. iframe을 이용하여 Online Contact 헬프센터를 사용자 페이지에 삽입
