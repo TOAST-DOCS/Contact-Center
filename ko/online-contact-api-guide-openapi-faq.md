@@ -13,7 +13,7 @@
 |-----|----|-----------|-----|----|
 |서비스 ID	|serviceId	|Varchar(50)	|O	|서비스 ID, URL PATH내에 설정|
 |조회언어	|language	|Varchar(2)	|X	|ko：한국어, zh：중국어, ja：일본어, en：영어|
-|카테고리 ID	|categoryId	|Int	|X	|카테고리 ID|
+|카테고리 ID	|category	|Int	|X	|카테고리 ID|
 |추천	|recommend	|Boolean	|X	|true：추천，false：추천 아님|
 |상단고정	|top	|Boolean	|X	|true：상단고정，false：상단고정 아님|
 |상태	|status	|Varchar(1)	|X	|D：초안, O：공개, C：완료|
