@@ -82,7 +82,7 @@
             "tag": "중국어 태그1"
           }
         ],
-        "userName": "김창홍",
+        "userName": "홍길동",
         "categoryName": "중국어 말머리",
         "category": {
           "categoryId": 509,
@@ -159,7 +159,7 @@
       "categoryId": 509,
       "isTop": false,
       "term": "open",
-      "title": "중국어 제먹1",
+      "title": "중국어 제1",
       "content": "중국어 내용1",
       "startDt": "20190101000000",
       "endDt": "",
@@ -339,7 +339,7 @@
           "tagId": 94,
           "names": {
             "ko": "한국어 태그1",
-            "ja": "일번어 태그1",
+            "ja": "일어 태그1",
             "zh": "중국어 태그1"
           }
         }
@@ -821,7 +821,7 @@
             }
           }
         ],
-        "userName": "김창홍",
+        "userName": "",
         "categoryName": "중국어 말머리",
         "category": {
           "categoryId": 509,
