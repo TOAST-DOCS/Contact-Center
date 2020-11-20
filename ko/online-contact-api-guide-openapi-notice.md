@@ -1263,7 +1263,7 @@
 |----|-----|------------|-----|---|
 |서비스 ID	           |serviceId	|String	|O	|URL PATH 내에 설정한{serviceId}|
 |업로드 파일 ID	 |id	      |String  |O	|업로드 파일id| 
-|열람방식	          |type	       |String	   |	|기본 값:열기（download:다운로드, open:열기）|
+|열람방식	          |type	       |String	   |X	|기본 값:열기（download:다운로드, open:열기）|
 
 ### 공지사항 첨부파일 삭제
 #### 인터페이스 설명
@@ -1306,9 +1306,9 @@
 |--------|---------|------------|--------|----|
 |result.contents	|tagId	        |INT	|O	|태그 ID|
 |	                |serviceId	|String	|O	|서비스 ID|
-|                       |tag		|	|        |태그 내용|
+|                       |tag		|	|X        |태그 내용|
 |	                |createdDt	|Long	|O	|등록시간|
-|	                |tagCode	|	|	|태그 Code|
+|	                |tagCode	|	|X	|태그 Code|
 |	                |languages.{language}	|String	|O	|태그 내용（다국어）|
 
 #### Response Body
@@ -1370,11 +1370,11 @@
 #### 결과 데이터
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |---------|--------|------------|--------|-----|
-|result.contents	|tagId	|INT	|O	|태그 ID|
+|result.contents	|tagId	|INT	        |O	|태그 ID|
 |	                |serviceId	|String	|O	|서비스 ID|
-|	                |tag	|	|	|태그 내용|
+|	                |tag	|	        |X	|태그 내용|
 |	                |createdDt	|Long	|O	|등록시간|
-|	                |tagCode	|	|	|태그 Code|
+|	                |tagCode	|	|X	|태그 Code|
 |	                |languages.{language}	|String	|O	|태그 내용（다국어）|
 
 #### Response Body
@@ -1443,11 +1443,11 @@
 #### 결과 데이터
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |--------|---------|-----------|---------|----|
-|result.contents	|tagId	|INT	|O	|태그 ID|
+|result.contents	|tagId	|INT	        |O	|태그 ID|
 |	                |serviceId	|String	|O	|서비스 ID|
-|	                |tag	|	|	|태그 내용|
+|	                |tag	|	        |X 	|태그 내용|
 |	                |createdDt	|Long	|O	|등록시간|
-|	                |tagCode	|	|	|태그 Code|
+|	                |tagCode	|	|X	|태그 Code|
 |	                |languages.{language}	|String	|O	|태그 내용（다국어）|
 
 #### Response Body
@@ -1516,9 +1516,9 @@
 |---------|--------|------------|--------|----|
 |result.contents	|tagId	|INT	|O	|태그 ID|
 |	                |serviceId	|String	|O	|서비스 ID|
-|	                |tag	|	|	|태그 내용|
+|	                |tag	|	        |X	|태그 내용|
 |	                |createdDt	|Long	|O	|등록시간|
-|	                |tagCode	|	|	|태그 Code|
+|	                |tagCode	|	|X	|태그 Code|
 |	                |languages.{language}	|String	|O	|태그 내용（다국어）|
 
 #### Response Body
@@ -1584,15 +1584,15 @@
 |---------|--------|-----------|---------|----|
 |result.contents	|categoryId	|Int	|O	|말머리 ID|
 |	                |serviceId	|String	|O	|서비스 ID|
-|	                |categoryCode	|String	|	|말머리 Code|
-|	                |parent	        |Int	|	|상위 말머리 ID（고정 값:0）|
+|	                |categoryCode	|String	|X	|말머리 Code|
+|	                |parent	        |Int	|X	|상위 말머리 ID（고정 값:0）|
 |	                |name	        |String	|O	|말머리 명|
-|	                |level	        |Int	|	|뎁스（고정 값:1）|
-|	                |path	        |String	|	|뎁스 경로（고정 값:"\\"）|
-|	                |orderNo	|Int	|	|정렬순서（기본 값:0）|
-|	                |createdDt	|Long	|	|등록시간|
-|	                |updatedDt	|Long	|	|수정시간|
-|	                |languages	|String	|	|다국어|
+|	                |level	        |Int	|X	|뎁스（고정 값:1）|
+|	                |path	        |String	|X	|뎁스 경로（고정 값:"\\"）|
+|	                |orderNo	|Int	|X	|정렬순서（기본 값:0）|
+|	                |createdDt	|Long	|X	|등록시간|
+|	                |updatedDt	|Long	|X	|수정시간|
+|	                |languages	|String	|X	|다국어|
 
 #### Response Body
 ```
@@ -1662,15 +1662,15 @@
 |---------|--------|-----------|---------|----|
 |result.content	|categoryId	|Int	|O	|말머리 ID|
 |	        |serviceId	|String	|O	|서비스 ID|
-|	        |categoryCode	|String	|	|말머리 Code|
-|	        |parent	        |Int	|	|상위 말머리 ID（고정 값:0）|
+|	        |categoryCode	|String	|X	|말머리 Code|
+|	        |parent	        |Int	|X	|상위 말머리 ID（고정 값:0）|
 |	        |name	        |String	|O	|말머리 명|
-|	        |level	        |Int	|	|뎁스（고정 값:1）|
-|	        |path	        |String	|	|뎁스 경로（고정 값:"\\\\"）|
-|	        |orderNo	|Int	|	|정렬순서（기본 값:0）|
-|	        |createdDt	|Long	|	|등록시간|
-|	        |updatedDt	|Long	|	|수정시간|
-|	        |languages	|String	|	|다국어|
+|	        |level	        |Int	|X	|뎁스（고정 값:1）|
+|	        |path	        |String	|X	|뎁스 경로（고정 값:"\\\\"）|
+|	        |orderNo	|Int	|X	|정렬순서（기본 값:0）|
+|	        |createdDt	|Long	|X	|등록시간|
+|	        |updatedDt	|Long	|X	|수정시간|
+|	        |languages	|String	|X	|다국어|
 
 #### Response Body
 ```
@@ -1717,10 +1717,10 @@
 |----|-----|------------|-----|---|
 |서비스 ID	|serviceId	|String	|O	|URL PATH 내에 설정한{serviceId}|
 |말머리 정보	|request body	|String	|O	|말머리 정보（JSON）|
-|	    |name	    |String |		|말머리 명（유일한 값:예 ; 길이:min = 0, max = 50 ; 형식:^(\_\|-\|[^\\pP])+$）|
-|	    |categoryCode	|String	|	|말머리 Code|
-|	    |languages	        |String	|	|다국어|
-|	    |orderNo	|Int	|	|정렬순서（고정 값:0）|
+|	    |name	    |String |X		|말머리 명（유일한 값:예 ; 길이:min = 0, max = 50 ; 형식:^(\_\|-\|[^\\pP])+$）|
+|	    |categoryCode	|String	|X	|말머리 Code|
+|	    |languages	        |String	|X	|다국어|
+|	    |orderNo	|Int	|X	|정렬순서（고정 값:0）|
 
 #### Request Body
 ```
@@ -1750,15 +1750,15 @@
 |---------|--------|-----------|---------|----|
 |result.content	|categoryId	|Int	|O	|말머리 ID|
 |	        |serviceId	|String	|O	|서비스 ID|
-|	        |categoryCode	|String	|	|말머리 Code|
-|	        |parent	        |Int	|	|상위 말머리 ID（고정 값:0）|
+|	        |categoryCode	|String	|X	|말머리 Code|
+|	        |parent	        |Int	|X	|상위 말머리 ID（고정 값:0）|
 |	        |name	        |String	|O	|말머리 명|
-|	        |level	        |Int	|	|뎁스（고정 값:1）|
-|	        |path	        |String	|	|뎁스 경로（고정 값:"\\\\"）|
-|	        |orderNo	|Int	|	|정렬순서（기본 값:0）|
-|	        |createdDt	|Long	|	|등록시간|
-|	        |updatedDt	|Long	|	|수정시간|
-|	        |languages	|String	|	|다국어|
+|	        |level	        |Int	|X	|뎁스（고정 값:1）|
+|	        |path	        |String	|X	|뎁스 경로（고정 값:"\\\\"）|
+|	        |orderNo	|Int	|X	|정렬순서（기본 값:0）|
+|	        |createdDt	|Long	|X	|등록시간|
+|	        |updatedDt	|Long	|X	|수정시간|
+|	        |languages	|String	|X	|다국어|
 
 #### Response Body
 ```
@@ -1806,10 +1806,10 @@
 |서비스 ID	|serviceId	|String	|O	|URL PATH 내에 설정한{serviceId}|
 |말머리 ID / 말머리 code	|id	|String	|O	|URL PATH 내에 설정한{id}|
 |말머리 정보	|request body	|String	|O	|말머리 정보（JSON）|
-|	    |name	    |String |	    |말머리 명（유일한 값:예 ; 길이:min = 0, max = 50 ; 형식:^(\_\|-\|[^\\pP])+$）|
-|	    |categoryCode	|String	|	|말머리 Code|
-|	    |languages	|String	   |	|다국어|
-|	    |orderNo	|Int	   |	|정렬순서（고정 값:0）|
+|	    |name	    |String |X	    |말머리 명（유일한 값:예 ; 길이:min = 0, max = 50 ; 형식:^(\_\|-\|[^\\pP])+$）|
+|	    |categoryCode	|String	|X	|말머리 Code|
+|	    |languages	|String	   |X	|다국어|
+|	    |orderNo	|Int	   |X	|정렬순서（고정 값:0）|
 
 #### Request Body
 ```
@@ -1838,15 +1838,15 @@
 |---------|--------|-----------|---------|----|
 |result.content	|categoryId	|Int	|O	|말머리 ID|
 |	        |serviceId	|String	|O	|서비스 ID|
-|	        |categoryCode	|String	|	|말머리 Code|
-|	        |parent	        |Int	|	|상위 말머리 ID（고정 값:0）|
+|	        |categoryCode	|String	|X	|말머리 Code|
+|	        |parent	        |Int	|X	|상위 말머리 ID（고정 값:0）|
 |	        |name	        |String	|O	|말머리 명|
-|	        |level	        |Int	|	|뎁스（고정 값:1）|
-|	        |path	        |String	|	|뎁스 경로（고정 값:"\\\\"）|
-|	        |orderNo	|Int	|	|정렬순서（기본 값:0）|
-|	        |createdDt	|Long	|	|등록시간|
-|	        |updatedDt	|Long	|	|수정시간|
-|	        |languages	|String	|	|다국어|
+|	        |level	        |Int	|X	|뎁스（고정 값:1）|
+|	        |path	        |String	|X	|뎁스 경로（고정 값:"\\\\"）|
+|	        |orderNo	|Int	|X	|정렬순서（기본 값:0）|
+|	        |createdDt	|Long	|X	|등록시간|
+|	        |updatedDt	|Long	|X	|수정시간|
+|	        |languages	|String	|X	|다국어|
 
 #### Response Body
 ```
