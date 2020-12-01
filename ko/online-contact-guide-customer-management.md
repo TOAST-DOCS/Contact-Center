@@ -1,4 +1,4 @@
-## Contact Center > Online Contact > 서비스 가이드 > 고객 관리
+## Contact Center > Online Contact > 서비스 가이드 > 고객정보관리
 
 ## 고객정보연동
 ![](http://static.toastoven.net/prod_contact_center/2.2.7-(1).png)
