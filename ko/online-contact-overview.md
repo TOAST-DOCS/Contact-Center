@@ -9,7 +9,7 @@ Online Contact은 최적의 프로세스로 고객문의를 처리할 수 있도
 ![](http://static.toastoven.net/prod_contact_center/OC_overview_2_modified.png)
 
 ### 상담 관리
-![](http://static.toastoven.net/prod_contact_center/OC_overview_3_modified.png)
+![](http://static.toastoven.net/prod_contact_center/OC_overview_3_modified_2.png)
 
 ### 이슈 관리
-![](http://static.toastoven.net/prod_contact_center/OC_overview_4_modified.png)
+![](http://static.toastoven.net/prod_contact_center/OC_overview_4_modified_2.png)
