@@ -3,7 +3,8 @@
 ## 빠른 시작 가이드
 관리자 분들의 Online Contact 초기 사용 시, Online Contact가 제공하고 있는 기능들의 전체적인 체험을 통한 서비스 이해도 향상을 목적으로 관리자용 빠른 시작 가이드를 제공하고 있습니다. 
 각 기능에 대한 세부적이고 구체적인 설명이 필요할 경우, 빠른시작 가이드 페이지 우측 하단 '매뉴얼 열람' 버튼을 누르시면 각 기능에 해당되는 서비스 가이드 페이지로 이동하실 수 있습니다.
-✔ <a href="https://docs.toast.com/ko/Contact%20Center/ko/OC_%EB%B9%A0%EB%A5%B8%EC%8B%9C%EC%9E%91%EA%B0%80%EC%9D%B4%EB%93%9C_%EA%B4%80%EB%A6%AC%EC%9E%90%EC%9A%A9_201201.pdf" target="_blank">(관리자용) 빠른시작 가이드</a>
+✔[(관리자용) 빠른 시작 가이드](http://static.toastoven.net/prod_contact_center/OC_빠른시작가이드_관리자용_201201.pdf)
+
 
 ## TOAST 회원가입
 Online Contact는 TOAST 회원가입 후 이용하실 수 있습니다. 
