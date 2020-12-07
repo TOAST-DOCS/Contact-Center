@@ -8,7 +8,7 @@
 - Online Contact 우측 맨 하단 **헬프센터 바로가기**
 - https:// **도메인명** .oc.toast.com/ **서비스ID** /hc
 
-도메인명은 Online Contact 조직 생성 시 작성하신 정보로, TOAST CONSOLE → 조직 설정 → 도메인 설정에서 수정하실 수 있습니다. 서비스ID는 [전체 관리 → 서비스](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-global-management/#_1) 메뉴에서 서비스 추가 시 입력하셨던 정보로, 최초 생성 이후 수정이 불가합니다.
+도메인명은 Online Contact 조직 생성 시 작성하신 정보로, TOAST CONSOLE → 조직 설정 → 도메인 설정에서 수정하실 수 있습니다. 서비스ID는 [전체 관리 → 계약 서비스 현황](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-global-management/#_1) 메뉴에서 서비스 추가 시 입력하셨던 정보로, 최초 생성 이후 수정이 불가합니다.
 
 
 ## 인증
@@ -60,7 +60,6 @@ OPEN API 탭에서는 외부에서 Online Contact의 데이터에 접근할 수 
 ## 티켓
 티켓 메뉴에서는 고객의 문의 접수 또는 문의 처리 시 선택하는 카테고리 관리, 업무 효율화를 높일 수 있는 트리거 기능, 고객센터 문의 접수 화면 구성 필드, 템플릿 관리, 이메일 설정 메뉴를 사용할 수 있습니다.
 
-
 ### 카테고리 관리
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(1).png)
 티켓의 카테고리는 서비스 유형에 따라 다음과 같이 사용됩니다.
@@ -72,7 +71,6 @@ OPEN API 탭에서는 외부에서 Online Contact의 데이터에 접근할 수 
 #### 이슈 관리
 -	접수유형: 상담 관리 유형 서비스의 상담원이 티켓을 이관할 시 선택
 -	처리유형: 이슈 관리 유형 서비스의 상담원이 이관 티켓 처리 시 선택
-
 
 **①** 상위 카테고리를 먼저 추가하신 후, 하위 뎁스에 카테고리를 추가할 시 상위 카테고리를 먼저 클릭하셔서 선택된 것을 확인한 후 추가해주세요. 색으로 강조된 카테고리 아래에 새로운 하위 카테고리가 생성됩니다. 동일 뎁스 내에서 카테고리명 **중복은 불가능**합니다. (뎁스가 다를 경우는 가능)
 
