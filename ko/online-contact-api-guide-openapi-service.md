@@ -7,7 +7,7 @@
 - endusermanagement: 고객정보관리
 - callback: 콜백
 - helpdoc: FAQ
-- knowledge: Knowledge Management
+- knowledge: 지식관리
 - issuetransferstatistics: 이슈이관 통계 (향후 추가 예정)
 - reinquiryrate: 재문의율 (향후 추가 예정)
 - smssend: SMS (향후 추가 예정)
