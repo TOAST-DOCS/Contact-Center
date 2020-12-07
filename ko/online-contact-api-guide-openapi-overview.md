@@ -109,6 +109,11 @@ String authorization = new String(Base64.encodeBase64(rawHmac));
 |	   |	           |서비스 삭제	          |서비스 ID를 통해 비활성화 된 서비스 삭제|
 |	   |	           |서비스 API Key 재발급	 |서비스 ID를 통해 해당 서비스에 생성된 API Key 다시 발급|
 |	   |	           |서비스 목록	          |조직내에 생성된 모든 서비스 조회|
+|          |               |서비스 계약 등록           |서비스 계약 등록|
+|          |               |서비스 계약 변경	        |계약 변경 (하루에 1번만 가능)|
+|          |               |서비스 계약 목록   	|조직 내 서비스 계약 목록|
+|          |               |서비스 계약 상세 - 서비스 ID  |서비스 ID로 계약 상세 정보 취득|
+|          |               |서비스 계약 상세 - 계약 ID	 |계약 ID로 서비스 계약 상세 정보 취득|
 |서비스 레벨|[이메일 설정](https://alpha-docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-email/)     |대표계정 생성              |서비스 대표계정 생성. (생성 후 수정 불가) 형식: \*\*@oc.toast.com|       	
 |          |               |이메일 정보 조회           |해당 서비스 모든 이메일 정보 조회|
 |          |               |외부계정 유효성 체크	      |외부계정 유효성 체크|
