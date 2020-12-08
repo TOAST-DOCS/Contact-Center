@@ -90,13 +90,13 @@
 ### サービス詳細
 #### インターフェース説明
 - URL:	https://{domain}.oc.toast.com/openapi/v1/admin/service/{serviceId}.json			
-- URL (開発):	https://{domain}.alpha-oc.toast.com/openapi/v1/admin/service/{serviceId}.json			
+- URL (開発):　https://{domain}.alpha-oc.toast.com/openapi/v1/admin/service/{serviceId}.json
 
 |インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
 |サービス詳細  |HTTPS  |GET    |UTF-8|JSON    |サービスIDを通じてサービス情報を照会|共通認証|
 
-####リクエストパラメータ定義
+#### リクエストパラメータ定義
 |名称|変数|データタイプ|必須|説明|
 |-----|----|------------|----|----|
 |サービスID	|serviceId	|String	|O	|サービスID，URL PATH内に設定した{serviceId}|
@@ -138,10 +138,10 @@
 
 ### サービス修正
 #### インターフェース説明
-- URL:	https://{domain}.oc.toast.com/openapi/v1/admin/service/{serviceId}.json 						
-- URL (開発):	https://{domain}.alpha-oc.toast.com/openapi/v1/admin/service/{serviceId}.json 				
+- URL:	https://{domain}.oc.toast.com/openapi/v1/admin/service/{serviceId}.json 				
+- URL (開発):　https://{domain}.alpha-oc.toast.com/openapi/v1/admin/service/{serviceId}.json 	
 
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
 |サービス修正  |HTTPS  |PUT    |UTF-8|JSON    |サービスIDを通じてサービス情報を修正|共通認証  |
 
@@ -203,31 +203,31 @@
 }
 ```
 
-### 서비스 비활성화
-#### 인터페이스 설명
-- URL: https://{domain}.oc.toast.com/openapi/v1/admin/service/disable.json							
-- URL (개발):	https://{domain}.alpha-oc.toast.com/openapi/v1/admin/service/disable.json			 				
+### サービス無効化
+#### インターフェース説明
+- URL: https://{domain}.oc.toast.com/openapi/v1/admin/service/disable.json					
+- URL (開発): https://{domain}.alpha-oc.toast.com/openapi/v1/admin/service/disable.json			 
 
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
-|서비스 비활성화  |HTTPS  |PUT    |UTF-8|JSON    |서비스 아이디를 통해 서비스 비활성화   |공통 인증|
+|サービス無効化  |HTTPS  |PUT    |UTF-8|JSON    |サービスIDを通じてサービスを無効化   |共通認証|
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### リクエストパラメータ定義
+|名称|変数|データタイプ|必須|説明|
 |-----|----|------------|----|----|
-|서비스 ID	|serviceId	|String	|O	|서비스 ID（query）|
+|サービスID	|serviceId	|String	|O	|サービスID（query）|
 
-#### 결과 데이터
-|명칭	|변수	|데이터 타입	|필수	|설명|
-|-----|----|-----------|-----|----|
-|result.content	|serviceId	|String	|O	|서비스 ID|
-|	              |name	|String	|O	|서비스 명|
-|	              |active	|Boolean	|X	|서비스 상태. true:활성화, false:비활성화|
-|	              |language	|String	|O	|서비스 언어（값:zh\|ja\|ko\|en）ko:한국어, ja:일본어, en:영어, zh:중국어)|
-|	              |timeZone	|String	|X	|타임 존（값:Asia/Seoul\|Asia/Tokyo\|...)|
-|	              |createdDt	|Long	|X	|서비스 생성시간|
-|	              |updatedDt	|Long	|X	|서비스 업데이트 시간|
-|	              |securityKey	|String	|X	|Open API Key|
+#### 結果データ
+|名称|変数|データタイプ|必須|説明|
+|-----|----|------------|----|----|
+|result.content	|serviceId	|String	|O	|サービス ID|
+|	              |name	      |String	|O	|サービス名|
+|	              |active	    |Boolean	|X	|サービスの状況(true:活性化, false:不活性化)|
+|	              |language	  |String	  |O	|サービス言語 (値:zh\|ja\|ko\|en, ko: 韓国語, ja:日本語, en:英語, zh:中国語)|
+|	              |timeZone 	|String	  |X	|タイム·ゾーン (값:Asia/Seoul\|Asia/Tokyo\|...)|
+|               |createdDt	|Long	    |X	|サービス作成時間|
+|	              |updatedDt	|Long	    |X	|サービスアップデート時間|
+|               |securityKey	|String	|X	|Open API Key|
 
 ```
 {
@@ -249,34 +249,33 @@
         }
     }
 }
-
 ```
 
-### 서비스 활성화
-#### 인터페이스 설명
+### サービス活性化
+#### インターフェース説明
 - URL: https://{domain}.oc.toast.com/openapi/v1/admin/service/enable.json					
-- URL (개발):	https://{domain}.alpha-oc.toast.com/openapi/v1/admin/service/enable.json					 				
+- URL (開発):　https://{domain}.alpha-oc.toast.com/openapi/v1/admin/service/enable.json		
 
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
-|서비스 활성화  |HTTPS  |PUT    |UTF-8|JSON    |서비스 아이디를 통해 서비스 활성화   |공통 인증|
+|サービス活性化  |HTTPS  |PUT    |UTF-8|JSON    |サービスIDを通じてサービス活性化|共通認証|
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### リクエストパラメータ定義
+|名称|変数|データタイプ|必須|説明|
 |-----|----|------------|----|----|
-|서비스 ID	|serviceId	|String	|O	|서비스 ID（query）|
+|サービスID	|serviceId	|String	|O	|サービスID（query）|
 
-#### 결과 데이터
-|명칭	|변수	|데이터 타입	|필수	|설명|
-|----|-----|------------|----|----|
-|result.content	|serviceId	|String	|O	|서비스 ID|
-|               |name	|String	|O	|서비스 명|
-|	              |active	|Boolean	|X	|서비스 상태. true:활성화, false:비활성화|
-|	              |language	|String	|O	|서비스 언어（값:zh\|ja\|ko\|en）ko:한국어, ja:일본어, en:영어, zh:중국어)|
-|	              |timeZone	|String	|X	|타임 존（값:Asia/Seoul\|Asia/Tokyo\|...)|
-|	              |createdDt	|Long	|X	|서비스 생성시간|
-|	              |updatedDt	|Long	|X	|서비스 업데이트 시간|
-|	              |securityKey	|String	|X	|Open API Key|
+#### 結果データ
+|名称|変数|データタイプ|必須|説明|
+|-----|----|------------|----|----|
+|result.content	|serviceId	|String	|O	|サービス ID|
+|	              |name	      |String	|O	|サービス名|
+|	              |active	    |Boolean	|X	|サービスの状況(true:活性化, false:不活性化)|
+|	              |language	  |String	  |O	|サービス言語 (値:zh\|ja\|ko\|en, ko: 韓国語, ja:日本語, en:英語, zh:中国語)|
+|	              |timeZone 	|String	  |X	|タイム·ゾーン (값:Asia/Seoul\|Asia/Tokyo\|...)|
+|               |createdDt	|Long	    |X	|サービス作成時間|
+|	              |updatedDt	|Long	    |X	|サービスアップデート時間|
+|               |securityKey	|String	|X	|Open API Key|
 
 #### Response Body
 ```
@@ -301,23 +300,22 @@
 }
 ```
 
-### 서비스 삭제
-#### 인터페이스 설명
+### サービス削除
+#### インターフェース説明
 - URL: https://{domain}.oc.toast.com/openapi/v1/admin/service/{serviceId}.json					
-- URL (개발):	https://{domain}.alpha-oc.toast.com/openapi/v1/admin/service/{serviceId}.json							 				
-
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+- URL (開発):　https://{domain}.alpha-oc.toast.com/openapi/v1/admin/service/{serviceId}.json							 				
+|インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
-|서비스 삭제  |HTTPS  |DELETE    |UTF-8|JSON    |서비스 아이디를 통해 비활성화된 서비스 삭제 |공통 인증|
+|サービス削除  |HTTPS  |DELETE    |UTF-8|JSON    |サービスIDを通じて無効化状況のサービス削除|共通認証|
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### リクエストパラメータ定義
+|名称|変数|データタイプ|必須|説明|
 |-----|----|------------|----|----|
-|서비스 ID	|serviceId	|String	|O	|서비스 ID，URL PATH 내에 설정한{serviceId}|
+|サービスID	|serviceId	|String	|O	|サービスID，URL PATH内に設定した{serviceId}|
 
-#### 결과 데이터
-|명칭	|변수	|데이터 타입	|필수	|설명|
-|result.content		|String	|X	|"SUCCESS":삭제 성공, "ENABLE":활성화 상태로 삭제할 수 없음，비활성화 후 삭제 가능|
+#### 結果データ
+|名称|変数|データタイプ|必須|説明|
+|result.content		|String	|X	|"SUCCESS":削除成功, "ENABLE":活性化状況で削除不可能，無効化の後削除可能|
 
 #### Response Body
 ```
@@ -333,24 +331,23 @@
 }
 ```
 
-### 서비스 API Key 재발급
-#### 인터페이스 설명
-- URL: https://{domain}.oc.toast.com/openapi/v1/admin/service/apikey/refresh.json						
-- URL (개발):	https://{domain}.alpha-oc.toast.com/openapi/v1/admin/service/apikey/refresh.json								 				
-
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+### サービスAPI Key再発行
+#### インターフェース説明
+- URL: https://{domain}.oc.toast.com/openapi/v1/admin/service/apikey/refresh.json				
+- URL (開発):　https://{domain}.alpha-oc.toast.com/openapi/v1/admin/service/apikey/refresh.json								 				
+|インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
-|서비스 API Key 재발급  |HTTPS  |PUT    |UTF-8|JSON    |서비스 아이디를 통해 해당 서비스에 생성된 API Key 다시 발급|공통 인증|
+|サービスAPI Key再発行  |HTTPS  |PUT    |UTF-8|JSON    |サービスIDを通じて当該サービスに生成されたAPI  Keyを再発行|共通認証|
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### リクエストパラメータ定義
+|名称|変数|データタイプ|必須|説明|
 |-----|----|------------|----|----|
-|서비스 ID	|serviceId	|String	|O	|서비스 ID（query）|
+|サービスID	|serviceId	|String	|O	|サービスID（query）|
 
-#### 결과 데이터
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### 結果データ
+|名称|変数|データタイプ|必須|説明|
 |-----|----|-----------|-----|----|
-|result.content		|String	|X	|신규 API Key|
+|result.content		|String	|X	|新規API Key|
 
 #### Response Body
 ```
@@ -366,32 +363,32 @@
 }
 ```
 
-### 서비스 목록
+### サービス一覧
 #### 인터페이스 설명
 - URL: https://{domain}.oc.toast.com/openapi/v1/admin/service/list.json			 			
-- URL (개발):	https://{domain}.alpha-oc.toast.com/openapi/v1/admin/service/list.json								 				
+- URL (改善):　https://{domain}.alpha-oc.toast.com/openapi/v1/admin/service/list.json								 			
 
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
-|서비스 목록 |HTTPS  |GET    |UTF-8|JSON    |조직 내에 생성된 모든 서비스 조회|공통 인증|
+|サービス一覧 |HTTPS  |GET    |UTF-8|JSON    |組織内に生成されたすべてのサービス照会|共通認証|
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### リクエストパラメータ定義
+|名称|変数|データタイプ|必須|説明|
 |-----|----|------------|----|----|
-|페이지	|page	|Int	|X	|기본 값:1|
-|1페이지 노출 건수	|pageSize	|Int	|X	|기본 값:100|
+|ページ	|page	|Int	|X	|基本値:1|
+|ページあたりの露出件数 |pageSize	|Int	|X	|基本値:100|
 
-#### 결과 데이터
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### 結果データ
+|名称|変数|データタイプ|必須|説明|
 |-----|----|------------|----|----|
-|result.contents	|serviceId	|String	|O	|서비스 ID|
-|	                |name	|String	|O	|서비스 명|
-|	                |active	|Boolean	|X	|서비스 상태. true:활성화, false:비활성화|
-|	                |language	|String	|O	|서비스 언어（값:zh\|ja\|ko\|en）ko:한국어, ja:일본어, en:영어, zh:중국어|
-|	                |timeZone	|String	|X	|타임 존（값:Asia/Seoul\|Asia/Tokyo\|...）|
-|	                |createdDt	|Long	|X	|서비스 생성시간|
-|	                |updatedDt	|Long	|X	|서비스 업데이트 시간|
-|	                |securityKey	|String	|X	|Open API Key|
+|result.content	|serviceId	|String	|O	|サービス ID|
+|	              |name	      |String	|O	|サービス名|
+|	              |active	    |Boolean	|X	|サービスの状況(true:活性化, false:不活性化)|
+|	              |language	  |String	  |O	|サービス言語 (値:zh\|ja\|ko\|en, ko: 韓国語, ja:日本語, en:英語, zh:中国語)|
+|	              |timeZone 	|String	  |X	|タイム·ゾーン (값:Asia/Seoul\|Asia/Tokyo\|...)|
+|               |createdDt	|Long	    |X	|サービス作成時間|
+|	              |updatedDt	|Long	    |X	|サービスアップデート時間|
+|               |securityKey	|String	|X	|Open API Key|
 |result.total	|total	|Long	|X	|총 건수|
 |result.pages	|pages	|Int	|X	|총 페이지 수|
 |result.pageNum	|pageNum	|Int	|X	|현재 페이지|
