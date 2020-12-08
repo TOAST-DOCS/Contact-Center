@@ -386,5 +386,5 @@ Click on the **Account which is connected** to set up the details of the KakaoTa
 
 When KakaoTalk is connected and activated in Online Contact, the existing plus friend 1:1 chat will be stopped, and inquiries received through KakaoTalk will be showed in the chat screen, with ‘channel’ of the ticket marked as ‘KakaoTalk’.
 
-✔ **\[FAQ 바로가기]** [How can I receive inquiries from external services, and how does the ticket processing work?]https://nhn-contact.oc.toast.com/oc/hc/article/61/)
+✔ **\[FAQ Shortcut]** [How can I receive inquiries from external services, and how does the ticket processing work?]https://nhn-contact.oc.toast.com/oc/hc/article/61/)
 
