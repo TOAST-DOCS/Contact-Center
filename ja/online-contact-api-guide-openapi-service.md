@@ -57,7 +57,7 @@
 |----|------|----------|-----|----|
 |result.content	|serviceId	|String	|O	|サービス ID|
 |	              |name	      |String	|O	|サービス名|
-|	              |active	    |Boolean	|X	|サービスの状況(true:活性化, false:不活性化)|
+|	              |active	    |Boolean	|X	|サービスの状況(true:有効化, false:無効化)|
 |	              |language	  |String	  |O	|サービス言語 (値:zh\|ja\|ko\|en, ko: 韓国語, ja:日本語, en:英語, zh:中国語)|
 |	              |timeZone 	|String	  |X	|タイム·ゾーン (값:Asia/Seoul\|Asia/Tokyo\|...)|
 |               |createdDt	|Long	    |X	|サービス作成時間|
@@ -106,7 +106,7 @@
 |-----|----|-----------|-----|----|
 |result.content	|serviceId	|String	|O	|サービス ID|
 |	              |name	      |String	|O	|サービス名|
-|	              |active	    |Boolean	|X	|サービスの状況(true:活性化, false:不活性化)|
+|	              |active	    |Boolean	|X	|サービスの状況(true:有効化, false:無効化)|
 |	              |language	  |String	  |O	|サービス言語 (値:zh\|ja\|ko\|en, ko: 韓国語, ja:日本語, en:英語, zh:中国語)|
 |	              |timeZone 	|String	  |X	|タイム·ゾーン (값:Asia/Seoul\|Asia/Tokyo\|...)|
 |               |createdDt	|Long	    |X	|サービス作成時間|
@@ -174,7 +174,7 @@
 |-----|----|------------|----|----|
 |result.content	|serviceId	|String	|O	|サービス ID|
 |	              |name	      |String	|O	|サービス名|
-|	              |active	    |Boolean	|X	|サービスの状況(true:活性化, false:不活性化)|
+|	              |active	    |Boolean	|X	|サービスの状況(true:有効化, false:無効化)|
 |	              |language	  |String	  |O	|サービス言語 (値:zh\|ja\|ko\|en, ko: 韓国語, ja:日本語, en:英語, zh:中国語)|
 |	              |timeZone 	|String	  |X	|タイム·ゾーン (값:Asia/Seoul\|Asia/Tokyo\|...)|
 |               |createdDt	|Long	    |X	|サービス作成時間|
@@ -222,7 +222,7 @@
 |-----|----|------------|----|----|
 |result.content	|serviceId	|String	|O	|サービス ID|
 |	              |name	      |String	|O	|サービス名|
-|	              |active	    |Boolean	|X	|サービスの状況(true:活性化, false:不活性化)|
+|	              |active	    |Boolean	|X	|サービスの状況(true:有効化, false:無効化)|
 |	              |language	  |String	  |O	|サービス言語 (値:zh\|ja\|ko\|en, ko: 韓国語, ja:日本語, en:英語, zh:中国語)|
 |	              |timeZone 	|String	  |X	|タイム·ゾーン (값:Asia/Seoul\|Asia/Tokyo\|...)|
 |               |createdDt	|Long	    |X	|サービス作成時間|
@@ -251,14 +251,14 @@
 }
 ```
 
-### サービス活性化
+### サービス有効化
 #### インターフェース説明
 - URL: https://{domain}.oc.toast.com/openapi/v1/admin/service/enable.json					
 - URL (開発):　https://{domain}.alpha-oc.toast.com/openapi/v1/admin/service/enable.json		
 
 |インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
-|サービス活性化  |HTTPS  |PUT    |UTF-8|JSON    |サービスIDを通じてサービス活性化|共通認証|
+|サービス活性化  |HTTPS  |PUT    |UTF-8|JSON    |サービスIDを通じてサービス有効化|共通認証|
 
 #### リクエストパラメータ定義
 |名称|変数|データタイプ|必須|説明|
@@ -270,7 +270,7 @@
 |-----|----|------------|----|----|
 |result.content	|serviceId	|String	|O	|サービス ID|
 |	              |name	      |String	|O	|サービス名|
-|	              |active	    |Boolean	|X	|サービスの状況(true:活性化, false:不活性化)|
+|	              |active	    |Boolean	|X	|サービスの状況(true:有効化, false:無効化)|
 |	              |language	  |String	  |O	|サービス言語 (値:zh\|ja\|ko\|en, ko: 韓国語, ja:日本語, en:英語, zh:中国語)|
 |	              |timeZone 	|String	  |X	|タイム·ゾーン (값:Asia/Seoul\|Asia/Tokyo\|...)|
 |               |createdDt	|Long	    |X	|サービス作成時間|
@@ -303,7 +303,8 @@
 ### サービス削除
 #### インターフェース説明
 - URL: https://{domain}.oc.toast.com/openapi/v1/admin/service/{serviceId}.json					
-- URL (開発):　https://{domain}.alpha-oc.toast.com/openapi/v1/admin/service/{serviceId}.json							 				
+- URL (開発):　https://{domain}.alpha-oc.toast.com/openapi/v1/admin/service/{serviceId}.json
+
 |インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
 |サービス削除  |HTTPS  |DELETE    |UTF-8|JSON    |サービスIDを通じて無効化状況のサービス削除|共通認証|
@@ -315,7 +316,8 @@
 
 #### 結果データ
 |名称|変数|データタイプ|必須|説明|
-|result.content		|String	|X	|"SUCCESS":削除成功, "ENABLE":活性化状況で削除不可能，無効化の後削除可能|
+|----|----|-----------|----|----|
+|result.content		|String	|X	|"SUCCESS":削除成功, "ENABLE":有効化状況で削除不可能，無効化の後削除可能|
 
 #### Response Body
 ```
@@ -334,7 +336,8 @@
 ### サービスAPI Key再発行
 #### インターフェース説明
 - URL: https://{domain}.oc.toast.com/openapi/v1/admin/service/apikey/refresh.json				
-- URL (開発):　https://{domain}.alpha-oc.toast.com/openapi/v1/admin/service/apikey/refresh.json								 				
+- URL (開発):　https://{domain}.alpha-oc.toast.com/openapi/v1/admin/service/apikey/refresh.json								 	
+
 |インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
 |サービスAPI Key再発行  |HTTPS  |PUT    |UTF-8|JSON    |サービスIDを通じて当該サービスに生成されたAPI  Keyを再発行|共通認証|
@@ -364,9 +367,9 @@
 ```
 
 ### サービス一覧
-#### 인터페이스 설명
+#### インターフェース説明
 - URL: https://{domain}.oc.toast.com/openapi/v1/admin/service/list.json			 			
-- URL (改善):　https://{domain}.alpha-oc.toast.com/openapi/v1/admin/service/list.json								 			
+- URL (改善):　https://{domain}.alpha-oc.toast.com/openapi/v1/admin/service/list.json
 
 |インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -383,16 +386,16 @@
 |-----|----|------------|----|----|
 |result.content	|serviceId	|String	|O	|サービス ID|
 |	              |name	      |String	|O	|サービス名|
-|	              |active	    |Boolean	|X	|サービスの状況(true:活性化, false:不活性化)|
+|	              |active	    |Boolean	|X	|サービスの状況(true:有効化, false:無効化)|
 |	              |language	  |String	  |O	|サービス言語 (値:zh\|ja\|ko\|en, ko: 韓国語, ja:日本語, en:英語, zh:中国語)|
 |	              |timeZone 	|String	  |X	|タイム·ゾーン (값:Asia/Seoul\|Asia/Tokyo\|...)|
 |               |createdDt	|Long	    |X	|サービス作成時間|
 |	              |updatedDt	|Long	    |X	|サービスアップデート時間|
 |               |securityKey	|String	|X	|Open API Key|
-|result.total	|total	|Long	|X	|총 건수|
-|result.pages	|pages	|Int	|X	|총 페이지 수|
-|result.pageNum	|pageNum	|Int	|X	|현재 페이지|
-|result.pageSize	|pageSize	|Int	|X	|1페이지 노출 건수|
+|result.total	|total	|Long	|X	|総件数|
+|result.pages	|pages	|Int	|X	|総ページ数|
+|result.pageNum	|pageNum	|Int	|X	|現在のページ|
+|result.pageSize	|pageSize	|Int	|X	|ページあたりの露出件数|
 
 #### Response Body
 ```
@@ -433,23 +436,23 @@
 }
 ```
 
-### 서비스 계약 등록
-#### 인터페이스 설명
+### サービス契約登録
+#### インターフェース説明
 - URL: https://{domain}.oc.toast.com/openapi/v1/admin/billing/reg.json			
-- URL (개발):	https://{domain}.alpha-oc.toast.com/openapi/v1/admin/billing/reg.json						 				
+- URL (開発):　https://{domain}.alpha-oc.toast.com/openapi/v1/admin/billing/reg.json			 
 
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
-|서비스 계약 등록 |HTTPS  |POST    |UTF-8|JSON    |서비스 신규 계약 등록|공통 인증|
+|サービス契約登録 |HTTPS  |POST    |UTF-8|JSON    |サービス新規契約登録|共通認証|
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### リクエストパラメータ定義
+|名称|変数|データタイプ|必須|説明|
 |-----|----|------------|----|----|
-|서비스 계약 정보	|request body	|String	|O	|서비스 정보(JSON)|
-|	                |serviceId	   |String	|O	|서비스 ID(유니크 값:예; 길이:min = 0, max = 45;형태:영문)|
-|	                |billingSettings	|List	|X	  |계약 항목 설정 리스트|
-|	                |    billingSettingCode	|String	|O	|항목 코드(계약 항목 코드 참조)|
-|	                |    active	            |Boolean	|X	|활성화:true  비활성화:false|
+|サービス契約情報	|request body	|String	|O	|サービス情報(JSON)|
+|	                |serviceId	   |String	|O	|サービスID（唯一の値：yes, 長さ:min = 0, max = 45; 形式:英文)|
+|	                |billingSettings	|List	|X	  |契約項目設定リスト|
+|	                |    billingSettingCode	|String	|O	|項目コード(契約項目コード参照)|
+|	                |    active	            |Boolean	|X	|有効化:true  無効化:false|
 
 #### Request Body
 ```
@@ -477,24 +480,24 @@
 }
 ```
 
-#### 결과 데이터
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### 結果データ
+|名称|変数|データタイプ|必須|説明|
 |-----|-----|-----------|----|-----|
-|result.content	|id	|Long	|O	|계약 ID|
-|	              |serviceId	|String	|O	|서비스 ID|
-|	              |organizationId	|String	|O	|조직 ID|
-|	              |type	          |Int	  |O	|서비스 타입(1:상담관리, 2:이슈관리), 기본 값:1|
-|	              |status	        |String	|O	|계약 상태(작성중:create, 이용중:inuse, 이용중지:pause, 삭제:stop)|
-|	              |startDt	      |String	|O	|서비스 이용 시작일(한국시간)：yyyyMMddHHmmss|
-|	              |discountRate	  |Int	  |O	|할인률(%)|
-|	              |freeExtension	|Int	  |O	|무료체험 기간 연장 날짜|
-|	              |active	        |Boolean	|O	|서비스 계약(활성화:true, 비활성화:false)|
-|	              |freeTrial	    |Boolean	|O	|무료체험 기간(예:true, 아니오:false)|
-|	              |billingSettings	|List	  |O	|계약항목 설정 리스트|
-|	              |    id	              |Long	  |O	|계약항목 설정 ID|
-|	              |    billingId	      |Long	  |O	|계약 ID|
-|	              |    billingSettingCode	|String	|O	|항목 코드(계약항목 코드 참조)|
-|	              |    active	            |Boolean	|O	|활성화:true, 비활성화:false|
+|result.content	|id	|Long	|O	|契約ID|
+|	              |serviceId	|String	|O	|サービスID|
+|	              |organizationId	|String	|O	|組織ID|
+|	              |type	          |Int	  |O	|サービスタイプ(1:お問合せ管理, 2:イシュー管理), 基本値:1|
+|	              |status	        |String	|O	|契約状況(作成中:create, 利用中:inuse, 利用停止:pause, 削除:stop)|
+|	              |startDt	      |String	|O	|サービス利用開始日(韓国時間)：yyyyMMddHHmmss|
+|	              |discountRate	  |Int	  |O	|割引率(%)|
+|	              |freeExtension	|Int	  |O	|無料体験期間延長日|
+|	              |active	        |Boolean	|O	|サービス契約(有効化:true, 無効化:false)|
+|	              |freeTrial	    |Boolean	|O	|無料体験期間(はい:true, いいえ:false)|
+|	              |billingSettings	|List	  |O	|契約項目設定リスト|
+|	              |    id	              |Long	  |O	|契約項目設定ID|
+|	              |    billingId	      |Long	  |O	|契約ID|
+|	              |    billingSettingCode	|String	|O	|項目コード(契約項目コード参照)|
+|	              |    active	            |Boolean	|O	|有効化:true  無効化:false|
 
 #### Response Body
 ```
@@ -563,26 +566,26 @@
 }
 ```
 
-### 서비스 계약 변경
-#### 인터페이스 설명
-- URL: https://{domain}.oc.toast.com/openapi/v1/admin/billing/update/{billingId}.json						
-- URL (개발): https://{domain}.alpha-oc.toast.com/openapi/v1/admin/billing/update/{billingId}.json						 				
+### サービス契約変更
+#### インターフェース説明
+- URL: https://{domain}.oc.toast.com/openapi/v1/admin/billing/update/{billingId}.json			
+- URL (開発): https://{domain}.alpha-oc.toast.com/openapi/v1/admin/billing/update/{billingId}.json	
 
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
-|서비스 계약 변경 (하루 1회만 가능) |HTTPS  |PUT    |UTF-8|JSON    |계약 변경|공통 인증|
+|サービス契約変更(1日1回のみ可能) |HTTPS  |PUT    |UTF-8|JSON    |契約変更|共通認証|
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### リクエストパラメータ定義
+|名称|変数|データタイプ|必須|説明|
 |-----|----|------------|----|----|
-|서비스 계약 정보	|request body	|String	|O	|서비스 정보(JSON)|
-|	                |id	          |Long	  |O	|계약 ID|
-|	                |serviceId	  |String	|O	|서비스 ID(유니크 값:예; 길이:min = 0, max = 45;형태:영문)|
-|	                |billingSettings	|List	|O	|계약 항목 설정 리스트|
-|	                |id	              |Long	|O	|계약 항목 설정 ID|
-|	                |billingId	      |Long	|X	|계약 ID|
-|	                |    billingSettingCode	|String	|O	|항목 Code(계약항목 코드 참조)|
-|	                |    active	            |Boolean	|X	|활성화:true  비활성화:false|
+|サービス契約情報	|request body	|String	|O	|サービス情報(JSON)|
+|	                |id	          |Long	  |O	|契約ID|
+|	                |serviceId	  |String	|O	|サービスID（唯一の値：yes, 長さ:min = 0, max = 45; 形式:英文)|
+|	                |billingSettings	|List	|O	|契約項目設定リスト|
+|	                |id	              |Long	|O	|契約項目設定ID|
+|	                |billingId	      |Long	|X	|契約ID|
+|	                |    billingSettingCode	|String	|O	|項目コード(契約項目コード参照)|
+|	                |    active	            |Boolean	|X	|有効化:true  無効化:false|
 
 #### Request Body
 ```
@@ -623,24 +626,24 @@
 }
 ```
 
-#### 결과 데이터
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### 結果データ
+|名称|変数|データタイプ|必須|説明|
 |-----|-----|-----------|-----|----|
-|result.content	|id	|Long	|O	|계약 ID|
-|	              |serviceId	|String	|O	|서비스 ID|
-|	              |organizationId	|String	|O	|조직 ID|
-|	              |type	          |Int	  |O	|서비스 타입(1:상담관리, 2:이슈관리), 기본 값:1|
-|	              |status	        |String	|O	|계약 상태(작성중:create, 이용중:inuse, 이용중지:pause, 삭제:stop)|
-|	              |startDt	      |String	|O	|서비스 이용 시작일(한국시간)：yyyyMMddHHmmss|
-|	              |discountRate	  |Int	  |O	|할인률(%)|
-| 	            |freeExtension	|Int	  |O	|무료체험 기간 연장 날짜|
-|               |active	        |Boolean	|O	|서비스 계약(활성화:true, 비활성화:false)|
-|	              |freeTrial	    |Boolean	|O	|무료체험 기간(예:true, 아니오:false)|
-|	              |billingSettings	|List	  |O	|계약항목 설정 리스트|
-|	              |    id	          |Long	  |O	|계약항목 설정 ID|
-|	              |    billingId	  |Long	  |O	|계약 ID|
-|	              |    billingSettingCode	|String	|O	|항목 코드(계약항목 코드 참조)|
-|	              |    active	            |Boolean	|O	|활성화:true, 비활성화:false|
+|result.content	|id	|Long	|O	|契約ID|
+|	              |serviceId	|String	|O	|サービスID|
+|	              |organizationId	|String	|O	|組織ID|
+|	              |type	          |Int	  |O	|サービスタイプ(1:お問合せ管理, 2:イシュー管理), 基本値:1|
+|	              |status	        |String	|O	|契約状況(作成中:create, 利用中:inuse, 利用停止:pause, 削除:stop)|
+|	              |startDt	      |String	|O	|サービス利用開始日(韓国時間)：yyyyMMddHHmmss|
+|	              |discountRate	  |Int	  |O	|割引率(%)|
+|	              |freeExtension	|Int	  |O	|無料体験期間延長日|
+|	              |active	        |Boolean	|O	|サービス契約(有効化:true, 無効化:false)|
+|	              |freeTrial	    |Boolean	|O	|無料体験期間(はい:true, いいえ:false)|
+|	              |billingSettings	|List	  |O	|契約項目設定リスト|
+|	              |    id	              |Long	  |O	|契約項目設定ID|
+|	              |    billingId	      |Long	  |O	|契約ID|
+|	              |    billingSettingCode	|String	|O	|項目コード(契約項目コード参照)|
+|	              |    active	            |Boolean	|O	|有効化:true  無効化:false|
 
 #### Response Body
 ```
@@ -703,7 +706,7 @@
     }
 }
 
-하루 1번이상 변경 시，Response：
+1日1回以上変更した場合，Response：
 {
     "header": {
         "resultCode": 9015,
@@ -719,20 +722,20 @@
 }
 ```
 
-### 서비스 계약 목록
-#### 인터페이스 설명
-- URL: https://{domain}.oc.toast.com/openapi/v1/admin/billing/list.json									
-- URL (개발): https://{domain}.alpha-oc.toast.com/openapi/v1/admin/billing/list.json									 				
+### サービス契約一覧
+#### インターフェース説明
+- URL: https://{domain}.oc.toast.com/openapi/v1/admin/billing/list.json		
+- URL (開発): https://{domain}.alpha-oc.toast.com/openapi/v1/admin/billing/list.json		
 
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
-|조직 내 서비스 계약 목록|HTTPS  |GET    |UTF-8|JSON    |조직 내 서비스 계약 목록 취득|공통 인증|
+|組織内サービス契約一覧|HTTPS  |GET    |UTF-8|JSON    |組織内のサービス契約リスト取得|共通認証|
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### リクエストパラメータ定義
+|名称|変数|データタイプ|必須|説明|
 |-----|----|------------|----|----|
-|조직 내 서비스 계약 리스트 취득	|page	|Int	|X	|페이지, 기본 값:1|
-|	                              |pageSize	|Int	|X	|1페이지 노출건수，기본 값:10|
+|組織内のサービス契約リスト取得	|page	|Int	|X	|ページ, 基本値:1|
+|	                              |pageSize	|Int	|X	|ページあたりの露出件数，基本値:10|
 |	                              |billingSettingCode	|		|   |   |
 |	                              |active			        |   |   |   |
 
@@ -741,19 +744,19 @@
 /openapi/v1/admin/billing/list.json?page=1&pageSize=10	
 ```
 
-#### 결과 데이터
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### 結果データ
+|名称|変数|データタイプ|必須|説明|
 |-----|-----|-----------|-----|----|
-|result.contents	|id	|Long	|O	|계약 ID|
-|	                |serviceId	|String	|O	|서비스 ID|
-|	                |organizationId	|String	|O	|조직 ID|
-|	                |type	          |Int	  |O	|서비스 타입(1:상담관리, 2:이슈관리), 기본 값:1|
-|	                |status	        |String	|O	|계약 상태(작성중:create, 이용중:inuse, 이용중지:pause, 삭제:stop)|
-|	                |startDt	      |String	|O	|서비스 이용 시작일(한국시간)：yyyyMMddHHmmss|
-|	                |discountRate	  |Int	  |O	|할인률(%)|
-|	                |freeExtension	|Int	  |O	|무료체험 기간 연장 날짜|
-|	                |active	        |Boolean	|O	|서비스 계약(활성화:true, 비활성화:false)|
-|	                |freeTrial	    |Boolean	|O	|활성화:true, 비활성화:false|
+|result.contents	|id	|Long	|O	|契約ID|
+|	              |serviceId	|String	|O	|サービスID|
+|	              |organizationId	|String	|O	|組織ID|
+|	              |type	          |Int	  |O	|サービスタイプ(1:お問合せ管理, 2:イシュー管理), 基本値:1|
+|	              |status	        |String	|O	|契約状況(作成中:create, 利用中:inuse, 利用停止:pause, 削除:stop)|
+|	              |startDt	      |String	|O	|サービス利用開始日(韓国時間)：yyyyMMddHHmmss|
+|	              |discountRate	  |Int	  |O	|割引率(%)|
+|	              |freeExtension	|Int	  |O	|無料体験期間延長日|
+|	              |active	        |Boolean	|O	|サービス契約(有効化:true, 無効化:false)|
+|	              |freeTrial	    |Boolean	|O	|無料体験期間(はい:true, いいえ:false)|
 
 #### Response Body
 ```
