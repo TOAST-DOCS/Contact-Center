@@ -15,33 +15,33 @@ Domain name is the information which was created when you added your organizatio
 You can enable or disable **SSO Login** and **Open API** features which you registered in [Global Management → SSO Login](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-global-management/#sso) menu.
 
 ### SSO Login
-![](http://static.toastoven.net/prod_contact_center/2.2.1-(1).png)
+![](http://static.toastoven.net/prod_contact_center/2.2.1-(1)_en.png)
 If you want to enable SSO Login, click **Enable** and select, save the login method which you registered from [Global Management → SSO Login] (https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-global-management/#sso) menu. Once SSO login is activated, **Inquiry History** icon will be displayed on the main page of the service’s Help Center so that the customer can view their previous inquiries after logging in.
 
 ### Open API
-![](http://static.toastoven.net/prod_contact_center/2.2.1-(2).png)
+![](http://static.toastoven.net/prod_contact_center/2.2.1-(2)_en.png)
 In the Open API tab, **① OPEN API Activation** which allows access to data inside of Online Contact from outside, **② Change API Key**, managing **③ Accessible IP List** is available. Through Accessible IP List, Open API can be called only from the IP which is registered in the list. 
 
 ## Chat
 Functions in this menu are related to chat consultation. Chat consultation could be enabled in [Service Management → Help Center → Default Settings](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_32), and could be accessed through **chat icon** which is displayed in the bottom right side after chat consultation is enabled.
 
-![](http://static.toastoven.net/prod_contact_center/2.2.2-(1).png)
+![](http://static.toastoven.net/prod_contact_center/2.2.2-(1)_en.png)
 After accessing through **chat icon**, click **status value** in the top left of the chat screen to set your status. (initially set to ‘offline’, can choose between online/break/offline). Responding to customer's chat request is only available when chat status is set to online.
 
 ### Default Settings
-![](http://static.toastoven.net/prod_contact_center/2.2.2-(2).png)
+![](http://static.toastoven.net/prod_contact_center/2.2.2-(2)_en.png)
 You can set **Greeting Message** which is sent automatically when chat consultation is connected, and **Satisfaction Guide Message** which is sent when requesting evaluation about the consultation to customer. Evaluation request could be sent through **Evaluation** button in the top of the chat screen.
 
 ### Agent Assignment Settings
-![](http://static.toastoven.net/prod_contact_center/2.2.2-(3).png)
+![](http://static.toastoven.net/prod_contact_center/2.2.2-(3)_en.png)
 **①** Could choose whether to **assign chat priority** to a counselor who has recent chat history with a customer who requested chat consultation, or to distribute **randomly**.
 
 ### Chat Screen Insertion Code
-![](http://static.toastoven.net/prod_contact_center/2.2.2-(4).png)
+![](http://static.toastoven.net/prod_contact_center/2.2.2-(4)_en.png)
 This code is provided if you want to provide Online Contact's chat service only on the service page you previously managed. **①** Please copy the script provided and insert it in front of the </body> tag of your website HTML source code.
 
 ### Manage Category
-![](http://static.toastoven.net/prod_contact_center/2.2.2-(5).png)
+![](http://static.toastoven.net/prod_contact_center/2.2.2-(5)_en.png)
 This menu allows you to manage the category of **Processing Type** among the consultation information which the agent inputs directly about the customer during chat consulting. You can set processing types 1 through 3 depth.
 
 **①** When adding category in the lower depth after adding the upper category, click the upper category first, and then add the subcategory after checking whether the right category has been selected. Under the color-highlighted category, a new subcategory would be added.
@@ -53,7 +53,7 @@ Category name **duplicate is not possible** within the same depth. (Possible if 
 From the Ticket menu, you can manage category which you select to receive or process inquiries, use trigger features that can improve your business efficiency, configure the Help Center Inquiry field, Manage Templates, and Set up Email.
 
 ### Manage Category
-![](http://static.toastoven.net/prod_contact_center/2.2.3-(1).png)
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(1)_en.png)
 Depending on the type of service, categories of ticket are used as follows.
 
 #### Consultation Management
@@ -80,7 +80,7 @@ In case of **Processing Type** categories, add **processing type** field (create
 -	Created Time
 
 ### Trigger
-![](http://static.toastoven.net/prod_contact_center/2.2.3-(2).png)
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(2)_en.png)
 Triggers are designed to increase task productivity by **automating** repetitive tasks. By using triggers, resulting behaviors are automatically executed when certain conditions are met. You can also set up notification mails to be sent for results.
 
 Example) If `Submission Type` of the ticket = `Billing`, `Assign` ticket to `test01` agent of `Billing` group `necessarily`
@@ -91,36 +91,36 @@ Click the **① Add Trigger** button, enter all the title, conditions, and resul
 ✔ **\[FAQ Shortcut]** [How do I send a notification email under certain conditions?](https://nhn-contact.oc.toast.com/oc/hc/article/42/)
 
 #### Trigger Condition Types
-![](http://static.toastoven.net/prod_contact_center/2.2.3-(2)a.png)
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(2)a_en.png)
 
 #### Trigger Condition Details
-![](http://static.toastoven.net/prod_contact_center/2.2.3-(2)b.png)
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(2)b_en.png)
 
 #### Trigger Condition Details
-![](http://static.toastoven.net/prod_contact_center/2.2.3-(2)c.png)
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(2)c_en.png)
 
 #### Trigger Result Details
 ##### Ticket : Assign
-![](http://static.toastoven.net/prod_contact_center/2.2.3-(2)d.png)
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(2)d_en.png)
 If you select and save the agent group and the ticket distribution method within the group (random allocation, linear allocation, select agent), the assignment will be executed according to the results you selected when the trigger conditions are met. **Random allocation** means that the group’s agents are assigned tickets at **random**, and **linear Allocation** means the ticket would be assigned in the order in which agents are **added to the group.** If you have multiple triggers that specify results with different agents under the same conditions, all triggers, not randomly assigned to one of these agents, will be triggered sequentially, and tickets will continue to be assigned only to the person set for the last trigger, so if you intend to randomly assign tickets within the group, make sure to select ** random allocation**. 
 
 ##### Notification
-![](http://static.toastoven.net/prod_contact_center/2.2.3-(2)e.png)
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(2)e_en.png)
 Notification is the type of result that **notification mail is sent** to the specified recipient when the trigger condition is met. If you select this result type, you can set the subject and content of the notification mail to be sent via the **① Notification Settings** button.
 
 ##### Forward
-![](http://static.toastoven.net/prod_contact_center/2.2.3-(2)f.png)
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(2)f_en.png)
 Forward is the type of result that **ticket information being emailed** to the specified recipient when the trigger condition is met. You can check the information and inquiries of the ticket through the e-mail. If you click the **① Online Contact Shortcut** link at the bottom of the inquiry, **ticket screen would be popped-up**, and you can process the ticket directly on the screen. If you chose to **complete the ticket after forwarding**, the inquiry will be emailed and your ticket will be automatically processed as**completed**.
 
 ##### Callback url
 Callback url is the type of result that the **entered callback address is called** when the trigger condition is met.
 
 ##### Dooray Notification
-![](http://static.toastoven.net/prod_contact_center/2.2.3-(2)g.png)
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(2)g_en.png)
 If the trigger conditions are met, information of the ticket is sent via Dooray notification based on the template set by the **① Template Settings** button. For the link URL, see [Dooray Messenger Service Guide](https://docs.toast.com/ko/Dooray/Messenger/ko/service-guide/#_19) for instructions.
 
 ### Field
-![](http://static.toastoven.net/prod_contact_center/2.2.3-(3).png)
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(3)_en.png)
 Fields are divided into **① Customer Field** and **① Agent Field**. Please select whether you want to manage before selecting field setting or field management.
 
 Depending on the type of service, customer and agent fields are used as follows:
@@ -134,16 +134,16 @@ Depending on the type of service, customer and agent fields are used as follows:
 -	Customer Field: fields entered and forwarded according to the specified category when a ticket is escalated
 
 #### Field Setting
-![](http://static.toastoven.net/prod_contact_center/2.2.3-(4).png)
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(4)_en.png)
 **①** Depending on the submission type you added earlier in [Ticket → Category Management]( https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_9), you can set the fields required for inquiry details differently. Click **Submission Type** to view the fields you have set up, and you can change the **②** order of fields except for personal information field. In the case of personal information field, it is always pinned to the bottom.
 
 You can also **③ add** and **④ remove** the fields you previously added on the Field Management menu.
 
 #### Field Management
-![](http://static.toastoven.net/prod_contact_center/2.2.3-(5).png)
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(5)_en.png)
 Manage individual fields on the Field Management menu so that you can add fields for each submission type in Field Settings menu. Default fields can only be modified or initialized instead of deletion, and both modification and deletion is available for the fields you created.
 
-![](http://static.toastoven.net/prod_contact_center/2.2.3-(6).png)
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(6)_en.png)
 For adding customer fields, items required to be filled are as follows:
 
 -	**①** Field type: The **type of field**. If you select the field type, **Detailed Settings** and **Preview** will be displayed at the bottom of Basic Settings. Detailed settings allow you to set the values to be displayed for the field, and you can use preview to see what the field will look like on the customer's screen. 
@@ -157,7 +157,7 @@ For adding customer fields, items required to be filled are as follows:
 For agent fields, **Permission** (Administrator, Agent) item is additionally required to be filled.
 
 ### Manage Template
-![](http://static.toastoven.net/prod_contact_center/2.2.3-(7).png)
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(7)_en.png)
 Template managing is a feature that allows you to quickly process tickets by **pre-adding answer templates** for frequently asked questions. You can choose templates when you process tickets in the Ticket Management menu, and it is only selectable when the submission type of the template is same as the submission type of the ticket.
 
 **① Add Template** button allows you to add a template. The submission type you need to select is which you previously added in [Service Management → Ticket → Manage Category]( https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_9). You can insert links, images, and tables when you right-click on the body of the content.
@@ -166,7 +166,7 @@ Template managing is a feature that allows you to quickly process tickets by **p
 ✔ **\[FAQ Shortcut]** [Added Templates are not displayed when processing tickets.](https://nhn-contact.oc.toast.com/oc/hc/article/62/)
 
 ### Email Settings
-![](http://static.toastoven.net/prod_contact_center/2.2.3-(8).png)
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(8)_en.png)
 You can create a **① representative account address** which domain is provided from Online Contact, or register a service representative account using one’s service domain by enrolling **② External account **.
 
 **③** You can save the **sender's name** and **address** of the email sent through Online Contact and can set common **Mail Layout** for every sent mail. If you delete the replacement code (#{content}) of the body, the contents in the answer mail may not be displayed, so please be aware to not delete the replacement code when creating layout. Also note that this is a common layout which applies to all outgoing mail, including the templates you created earlier in Ticket → Manage Template menu, so make sure there are no conflicts between layout and templates.
@@ -177,7 +177,7 @@ You can create a **① representative account address** which domain is provided
 In this menu, you can add and edit agents and groups for handling customer inquiries (ticket, chat, call consultations), and set up groups and permissions for each agent.
 
 ### Agent
-![](http://static.toastoven.net/prod_contact_center/2.2.4-(1).png)
+![](http://static.toastoven.net/prod_contact_center/2.2.4-(1)_en.png)
 User must be registered as **IAM Member** to be added as an agent.
 
 #### Register IAM Member
@@ -194,24 +194,24 @@ The **permissions** you can set when adding an agent is as follows, and settings
 -	Agent: Permission for **ticket, call, chat consultation**. (Ticket, chat permissions can be selected individually. When call is selected, ticket becomes automatically selected together.)
 
 ### Group
-![](http://static.toastoven.net/prod_contact_center/2.2.4-(2).png)
+![](http://static.toastoven.net/prod_contact_center/2.2.4-(2)_en.png)
 In Group menu, you can **① add**, **② edit**, **③ delete** groups. When configuring agents into groups, you can assign type-specific inquiries to the appropriate group, or set up notification mail to be sent by Ticket → Trigger.
 
 #### Add Group
-![](http://static.toastoven.net/prod_contact_center/2.2.4-(3).png)
+![](http://static.toastoven.net/prod_contact_center/2.2.4-(3)_en.png)
 Click **Add Group**, enter group name, choose agent to be assigned, and click **①** ‘**>** ‘button to move agent to ‘Assigned Agent’. Conversely, when you unassign a agent, click ‘**<**’ button to move agent to ‘Unassigned Agent’. After assigning agents, press **② Save** button to apply group settings. 
 
 You can add a group without assigning agents, so when you add a group initially, you can proceed adding agents by simply entering the group name and pressing the **Save** button.
 
 ## Help Center
 ### Template Management
-![](http://static.toastoven.net/prod_contact_center/2.2.5-(1).png)
+![](http://static.toastoven.net/prod_contact_center/2.2.5-(1)_en.png)
 In this menu, you can **manage design themes** for your Help Center. Using the provided editor, you can modify the design for each service-specific detail area.
 
 There are two basic templates available, and you can add new templates with the **① Add Template** button. The template you added can be **② edited** or **deleted**. The template in use cannot be deleted, so please enable another template to delete it.
 
 
-![](http://static.toastoven.net/prod_contact_center/2.2.5-(2).png)
+![](http://static.toastoven.net/prod_contact_center/2.2.5-(2)_en.png)
 When adding or editing templates, you can directly input **① CSS / HTML / JS scripts**, or upload appropriate file (script, font, image, etc.) and enter the path of the resource in the editor to change the configuration of the Help Center. Through **Preview** button you could see the edits being applied, and after **saving**, you could apply the template.  
 
 ✔ **\[FAQ Shortcut]** [I want to know about the detailed examples about Help Center template management.](https://nhn-contact.oc.toast.com/oc/hc/article/60/)
@@ -340,11 +340,11 @@ When adding or editing templates, you can directly input **① CSS / HTML / JS s
 | .error_txt                         | Error text                       |
 
 ### Manage File Uploads
-![](http://static.toastoven.net/prod_contact_center/2.2.5-(3).png)
+![](http://static.toastoven.net/prod_contact_center/2.2.5-(3)_en.png)
 As a tool for managing the files used to create templates and layouts, you can upload the files through the **① Upload File** button and use **② File Path** of the resource without having to upload files every time. File names could not be duplicated.
 
 ### Default Settings
-![](http://static.toastoven.net/prod_contact_center/2.2.5-(4).png)
+![](http://static.toastoven.net/prod_contact_center/2.2.5-(4)_en.png)
 You can **Enable** functions you use in the Help Center and **Disable** functions you don't use. When disabled, the function becomes hidden from the Help Center page.
 
 Functions you can manage are as follows:
@@ -358,10 +358,10 @@ Functions you can manage are as follows:
 Inquiries received by external services could be switched to tickets in Online Contact. Twitter and KakaoTalk are currently supported services.
 
 ### Twitter
-![](http://static.toastoven.net/prod_contact_center/2.2.6-(1).png)
+![](http://static.toastoven.net/prod_contact_center/2.2.6-(1)_en.png)
 You can **① Enable** 또는 **Disable** Twitter connection, and could register Twitter account by **② Register** button when Twitter connection is enabled.
 
-![](http://static.toastoven.net/prod_contact_center/2.2.6-(2).png)
+![](http://static.toastoven.net/prod_contact_center/2.2.6-(2)_en.png)
 When registering your account, you can set whether to switch tickets for **① Tweet(Mention)** and **② Direct message** respectively, and if you wish to convert direct messages to a ticket, please check the procedure below.
 
 Access your Twitter account and check More → Settings and Privacy → Privacy and Safety → Direct Messages → **Receive message requests** must be enabled before a message to the linked account can be received as a ticket.
@@ -369,10 +369,10 @@ Access your Twitter account and check More → Settings and Privacy → Privacy 
 ✔ **\[FAQ Shortcut]** [How can I receive inquiries from external services, and how does the ticket processing work?]https://nhn-contact.oc.toast.com/oc/hc/article/61/)
 
 ### Kakao Talk Plus Friend
-![](http://static.toastoven.net/prod_contact_center/2.2.6-(3).png)
+![](http://static.toastoven.net/prod_contact_center/2.2.6-(3)_en.png)
 You can **① Enable** 또는 **Disable** KakaoTalk connection, and could register KakaoTalk ID and date to activate by **② Register** button when KakaoTalk connection is enabled. The connection takes up to 1~2 business days, and if the connection is rejected, the reason for rejection will be displayed. You must change Management → Detailed Settings → Channel Home → Enable Public Search to **ON** in the KakaoTalk channel manager center to connect with Online Contact.
 
-![](http://static.toastoven.net/prod_contact_center/2.2.6-(4).png)
+![](http://static.toastoven.net/prod_contact_center/2.2.6-(4)_en.png)
 Click on the **Account which is connected** to set up the details of the KakaoTalk function.
 
 - **①** Consultation time
