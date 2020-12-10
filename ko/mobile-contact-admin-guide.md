@@ -29,7 +29,6 @@
 
 ### 상담이력
 ![](http://static.toastoven.net/prod_contact_center/MC_admin_9.png)
-![](http://static.toastoven.net/prod_contact_center/MC_admin_10.png)
 
 ### 콜백 처리이력
 ![](http://static.toastoven.net/prod_contact_center/MC_admin_11.png)
@@ -53,7 +52,5 @@
 
 ### 상담서비스
 ![](http://static.toastoven.net/prod_contact_center/MC_admin_20.png)
-![](http://static.toastoven.net/prod_contact_center/MC_admin_21.png)
-
-
+![](http://static.toastoven.net/prod_contact_center/MC_admin_22.png)
 
