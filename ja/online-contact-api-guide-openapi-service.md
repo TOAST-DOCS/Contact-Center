@@ -1,4 +1,4 @@
-## Contact Center > Online Contact > API ガイド > サービス 
+## Contact Center > Online Contact > プログラマーのためのAPIガイド > サービス 
 
 ### 契約項目コード
 - ticket: チケット (基本的に活性化、変更不可能)
