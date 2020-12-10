@@ -339,7 +339,7 @@
 |ユーザーコード	|usercode	|String	|X	|ユーザーコード（唯一の値）|
 |ユーザー名	|username	|String	|X	|ユーザー名|
 |ユーザーメール	|email	  |String	|X	|ユーザーメール|
-|並び順	|sort	   |String	|X	|並び順(基本値:updatedDt:desc; 形式変数:貞烈（昇順:asc, 降順:desc))|
+|並び順	|sort	   |String	|X	|並び順(基本値:updatedDt:desc; 形式変数:整列（昇順:asc, 降順:desc))|
 |ページ	|page	    |Int	|X	|基本値:1|
 |ページあたりの露出件数|pageSize	|Int	|X	|基本値:10;max=200|
 
@@ -445,46 +445,46 @@
 }
 ```
 
-### 유저 티켓 목록
-#### 인터페이스 설명
+### ユーザーチケットリスト
+#### インターフェース説明
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/ticket/{usercode}/list.json							
-- URL (개발):	https://{domain}.alpha-oc.toast.co/{serviceId}/openapi/v1/ticket/{usercode}/list.json						
+- URL (開発):	https://{domain}.alpha-oc.toast.co/{serviceId}/openapi/v1/ticket/{usercode}/list.json	
 
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
-|유저 티켓 목록 |HTTPS  |GET    |UTF-8|JSON    |검색 조건을 통해 조건에 맞는 사용자의 티켓 목록 조회|공통 인증   |
+|ユーザーチケットリスト|HTTPS  |GET    |UTF-8|JSON    |検索条件を通じて条件に合うユーザーのチケットリスト照会|共通認証   |
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### リクエストパラメータ定義
+|名称|変数|データタイプ|必須|説明|
 |-----|-----|-----------|-----|---|
-|서비스 ID	|serviceId	 |String	|O	|서비스 ID，URL PATH 내에 설정한 {serviceId}|
-|유저 코드	|usercode	|String	|O	|유저 코드(유일한 값)，URL PATH 내에 설정한{usercode}|
-|시작시간	|startDt	|String	|X	|검색 범위 시작시간(티켓 생성시간)(형식:yyyyMMddHHmmss）|
-|종료시간	|endDt	    |String	|X	|검색 범위 종료시간(티켓 생성시간)(형식:yyyyMMddHHmmss）|
-|티켓 ID	|ticketId	  |String	|X	|티켓 ID|
-|제목	|subject	      |String	|X	|제목|
-|티켓 상태	|status	    |String	|X	|티켓 상태（open:신규티켓; closed:처리완료）|
-|접수유형	|categoryId	|Int	|X	|접수유형 ID（ID가 여러개 일 경우 , 로 분리）|
-|정렬방식	|sort	    |String	|X	|정렬 순서(기본값:updatedDt:desc; 형식 변수:정렬（오름차순:asc, 내림차순:desc))|
-|페이지	|page	     |Int	|X	|기본 값:1|
-|1페이지 노출 건수	|pageSize	|Int	|X	|기본 값:10;max=200|
+|サービスID	|serviceId	 |String	|O	|サービスID，URL PATH内に設定した{serviceId}|
+|ユーザーコード|usercode	|String	|O	|ユーザーコード(唯一の値)，URL PATH内に設定した{usercode}|
+|開始時間	|startDt	|String	|X	|検索範囲の開始時間(チケット作成時間)(形式:yyyyMMddHHmmss）|
+|終了時間	|endDt	|String	|X	|検索範囲の終了時間(チケット作成時間)(形式:yyyyMMddHHmmss）|
+|チケットID	|ticketId	  |String	|X	|チケットID|
+|タイトル	|subject	      |String	|X	|タイトル|
+|チケット状態	|status	    |String	|X	|チケット状態（open:新規チケット; closed:処理完了）|
+|受付タイプ	|categoryId	|Int	|X	|受付タイプID（IDが複数ある場合 , で分離）|
+|整列方式	|sort	    |String	|X	|並び順(基本値:updatedDt:desc; 形式変数:整列（昇順:asc, 降順:desc))|
+|ページ	|page	    |Int	|X	|基本値:1|
+|ページあたりの露出件数|pageSize	|Int	|X	|基本値:10;max=200|
 
-#### 결과 데이터
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### 結果データ
+|名称|変数|データタイプ|必須|説明|
 |-----|-----|-----------|-----|---|
-|result.contents	|ticketId	|String	|O	|티켓 ID|
-|	                |serviceId	|String	|O	|서비스 ID|
-|	                |subject	|String	|O	|티켓 제목|
-|	                |categoryId	|Int	|X	|접수유형 ID|
-|	                |categoryName	|String	|X	|접수유형 명|
-|	                |status	|String	|O	|티켓 상태（open:신규티켓; closed:처리완료）|
-|                   |createdDt	|Long	|O	|티켓 생성시간|
-|	                |updatedDt	|Long	|O	|티켓 업데이트 시간|
-|	                |addition	|String	|X	|기본 필드 외에 추가 된 필드 정보|
-|result.total	    |total	|Long	|O	|총 건수|
-|result.pages	    |pages	|Int	|O	|총 페이지수|
-|result.pageNum	    |pageNum	|Int	|O	|현재 페이지|
-|result.pageSize	|pageSize	|Int	|O	|1페이지 노출 건수|
+|result.contents	|ticketId	|String	|O	|チケットID|
+|	                |serviceId	|String	|O	|サービスID|
+|	                |subject	|String	|O	|チケットタイトル|
+|	                |categoryId	|Int	|X	|受付タイプID|
+|	                |categoryName	|String	|X	|受付タイプ名|
+|	                |status	|String	|O	|チケット状態（open:新規チケット; closed:処理完了）|
+|                   |createdDt	|Long	|O	|チケット作成時間|
+|	                |updatedDt	|Long	|O	|チケットアップデート時間|
+|	                |addition	|String	|X	|基本フィールドの他に追加されたフィールド情報|
+|result.total	|total	        |Long	|O	|総件数|
+|result.pages	|pages	        |Int	|O	|総ページ数|
+|result.pageNum	|pageNum	    |Int	|O	|現在ページ|
+|result.pageSize	|pageSize	|Int	|O	|ページあたりの露出件数|
 
 #### Response Body
 ```
@@ -571,30 +571,30 @@
 }
 ```
 
-### 티켓 첨부파일 첨부
-#### 인터페이스 설명
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/attachments/ticket/upload.json			 							
-- URL (개발):	https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/attachments/ticket/upload.json									
+### チケットに添付ファイル添付
+#### インターフェース説明
+- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/attachments/ticket/upload.json			 			
+- URL (開発):	https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/attachments/ticket/upload.json			
 
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
-|첨부파일 첨부  |HTTPS  |GET    |UTF-8|JSON    |검색 조건을 통해 조건에 맞는 티켓 리스트 노출|공통 인증   |
+|添付ファイル添付|HTTPS  |GET    |UTF-8|JSON    |サーバーへのファイルアップロード|共通認証 |
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### リクエストパラメータ定義
+|名称|変数|データタイプ|必須|説明|
 |-----|-----|-----------|-----|---|
-|서비스 ID	|serviceId	|String	|O	|URL PATH 내에 설정한 {serviceId}|
-|첨부한 파일	|file	|File	|O	|첨부한 파일은 form 형태로 제출|
+|サービスID	|serviceId	|String	|O	|URL PATH内に設定した{serviceId}|
+|添付したファイル	|file	|File	|O	|添付したファイルはform形式で提出|
 
-#### 결과 데이터
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### 結果データ
+|名称|変数|データタイプ|必須|説明|
 |-----|-----|-----------|-----|---|
-|result.content	|attachmentId	|String	|O	|첨부한 파일 ID|
-|	            |fileName	    |String	|O	|파일 명|
-|	            |contentType	|String	|O	|파일 유형|
-|	            |disposition	|String	|O	|파일 처리방식（attachment:첨부파일）|
-|	            |size	|Long	|O	|파일 크기|
-|               |createdDt	|Long	|O	|파일 첨부 시간|
+|result.content	|attachmentId	|String	|O	|添付したファイルのID|
+|	            |fileName	    |String	|O	|ファイル名|
+|	            |contentType	|String	|O	|ファイルのタイプ|
+|	            |disposition	|String	|O	|ファイル処理方式（attachment:添付ファイル）|
+|	            |size	|Long	|O	|ファイルサイズ|
+|               |createdDt	|Long	|O	|ファイル添付時間|
 
 #### Response Body
 ```
@@ -617,50 +617,50 @@
 }
 ```
 
-### 티켓 첨부파일 열기/다운로드
-#### 인터페이스 설명
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/attachments/ticket/{id}					 							
-- URL (개발):	https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/attachments/ticket/{id}												
+### チケット添付ファイルを開く/ダウンロード
+#### インターフェース説明
+- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/attachments/ticket/{id}					 	
+- URL (開発):	https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/attachments/ticket/{id}		
 
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
-|첨부파일 열기/다운로드  |HTTPS  |GET    |UTF-8|JSON    |서버에 업로드된 파일 열기/다운로드|공통 인증   |
+|添付ファイルを開く/ダウンロード  |HTTPS  |GET    |UTF-8|JSON    |サーバーにアップロードされたファイルを開く/ダウンロード|共通認証|
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### リクエストパラメータ定義
+|名称|変数|データタイプ|必須|説明|
 |-----|-----|-----------|-----|---|
-|서비스 ID	|serviceId	|String	|O	|URL PATH 내에 설정한 {serviceId}|
-|첨부한 파일 ID	|id	|String	|O	|첨부한 파일 id| 
-|처리방식	|type	|String	|X	|기본 값은 브라우저로 열기（download:다운, open:브라우저로 열기）|
+|サービスID	|serviceId	|String	|O	|URL PATH内に設定した{serviceId}|
+|添付したファイルID	|id	|String	|O	|添付したファイルid| 
+|処理方式|type	|String	|X	|デフォルト値はブラウザで開く（download:ダウンロード, open:ブラウザで開く）|
 
-#### 결과 데이터
-- 없음
+#### 結果データ
+- なし
 
 #### Response Body
 - File
 
-### 티켓 첨부파일 삭제
-#### 인터페이스 설명
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/attachments/ticket/{id}.json						 							
-- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/attachments/ticket/{id}.json														
+### チケット添付ファイル削除
+#### インターフェース説明
+- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/attachments/ticket/{id}.json		
+- URL (開発): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/attachments/ticket/{id}.json	
 
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
-|첨부파일 삭제  |HTTPS  |DELETE    |UTF-8|JSON    |서버에 업로드된 파일 삭제|공통 인증   |
+|添付ファイル削除|HTTPS  |DELETE    |UTF-8|JSON    |サーバーにアップロードされたファイル削除|共通認証|
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### リクエストパラメータ定義
+|名称|変数|データタイプ|必須|説明|
 |-----|-----|-----------|-----|---|
-|서비스 ID	|serviceId	|String	|O	|URL PATH 내에 설정한 {serviceId}|
-|첨부한 파일 ID	 |id	|String	|O	|첨부한 파일 id|
+|サービスID	|serviceId	|String	|O	|URL PATH内に設定した{serviceId}|
+|添付したファイルID	 |id	|String	|O	|添付したファイルid|
 
-#### 결과 데이터
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### 結果データ
+|名称|変数|データタイプ|必須|説明|
 |-----|-----|-----------|-----|---|
-|result.content	|attachmentId	|String	|O	|첨부한 파일 id| 
-|	            |fileName	|String	|O	|파일 명|
-|	            |contentType	|String	|O	|파일 유형|
-|	            |size	|Long	|O	|파일 크기|
+|result.content	|attachmentId	|String	|O	|添付したファイルID| 
+|	            |fileName	|String	|O	|ファイル名|
+|	            |contentType	|String	|O	|ファイルタイプ|
+|	            |size	|Long	|O	|ファイルサイズ|
 
 #### Response Body
 ```
