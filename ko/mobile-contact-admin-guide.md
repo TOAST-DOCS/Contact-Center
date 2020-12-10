@@ -10,7 +10,7 @@
 ![](http://static.toastoven.net/prod_contact_center/MC_admin_3_mod.png)
 
 ### 기본메뉴
-![](http://static.toastoven.net/prod_contact_center/MC_admin_3.png)
+![](http://static.toastoven.net/prod_contact_center/MC_admin_3_(1).png)
 
 ### 상담큐 통계
 ![](http://static.toastoven.net/prod_contact_center/MC_admin_4.png)
