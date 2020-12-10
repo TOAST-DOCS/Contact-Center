@@ -38,7 +38,7 @@
 ## 고객대기/응대율
 ![](http://static.toastoven.net/prod_contact_center/MC_app_12.png)
 
-## 상담사 상태/개인
+## 상담사 상태/개인 통계
 ![](http://static.toastoven.net/prod_contact_center/MC_app_13.png)
 
 ## 상담이력/호처리 통계
