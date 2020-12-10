@@ -1,4 +1,4 @@
-## Contact Center > Mobile Contact > 서비스 가이드 > App 이용 가이드
+## Contact Center > Mobile Contact > 서비스 가이드 > App
 
 ## App 설치하기
 ![](http://static.toastoven.net/prod_contact_center/MC_app_1_(1).png)
