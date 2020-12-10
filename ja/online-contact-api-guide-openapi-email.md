@@ -1,31 +1,32 @@
-## Contact Center > Online Contact > API 가이드 > 이메일 설정
-### 대표계정 생성
-#### 인터페이스 설명
+## Contact Center > Online Contact > プログラマーのためのAPIガイド > メール設定
+
+### 代表アカウント作成
+#### インターフェース説明
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/mail/create.json			
-- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail/create.json				
+- URL (開発): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail/create.json				
 
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
-|대표계정 생성|HTTPS  |POST    |UTF-8|JSON    |서비스 대표계정 생성. (생성 후 수정 불가) 형식: **@oc.toast.com|공통 인증|
+|代表アカウント作成|HTTPS  |POST    |UTF-8|JSON    |サービス代表アカウント作成. (作成後は修正不可) 形式: \*\*@oc.toast.com|共通認証|
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### リクエストパラメータ定義
+|名称|変数|データタイプ|必須|説明|
 |-----|-----|----------|-----|----|
-|서비스 ID	|serviceId	|String	|O	|서비스 ID，URL PATH 내에 설정한{serviceId}|
-|이메일 정보	|mail	|String	|O	|이메일 정보(예:mail@oc.toast.com의 mail 부분)|
+|サービスID	|serviceId	|String	|O	|サービスID，URL PATH内に設定した{serviceId}|
+|メール情報	|mail	|String	|O	|メール情報(例:mail@oc.toast.comのmail部分)|
 
 #### Query String
 - mail=mail
 
-#### 결과 데이터
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### 結果データ
+|名称|変数|データタイプ|必須|説明|
 |-----|-----|----------|-----|----|
-|result.content	|displayMail	|String	|	  |발신자 주소|
-|	              |external	    |String	|	  |외부계정 목록|
-|	              |mail	        |String	|O	|대표계정 주소 : mail@oc.toast.com|
-|	              |name	        |String	|	  |발신자 이름|
-|	              |template	    |String	|	  |이메일 형식|
-|	              |updatedDt	  |Long	  |	  |업데이트 시간|
+|result.content	|displayMail	|String	|	  |発信者アドレス|
+|	              |external	    |String	|	  |外部アカウントリスト|
+|	              |mail	        |String	|O	|代表アカウントアドレス : mail@oc.toast.com|
+|	              |name	        |String	|	  |発信者名|
+|	              |template	    |String	|	  |メール形式|
+|	              |updatedDt	  |Long	  |	  |アップデート時間|
 
 #### Response Body
 ```
@@ -48,29 +49,29 @@
 }
 ```
 
-### 이메일 정보 조회
-#### 인터페이스 설명
+### メール情報照会
+#### インターフェース説明
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/mail.json			
-- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail.json			
+- URL (開発): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail.json			
 
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
-|이메일 정보 조회|HTTPS  |GET    |UTF-8|JSON    |해당 서비스 모든 이메일 정보 조회|공통 인증|
+|メール情報照会|HTTPS  |GET    |UTF-8|JSON    |該当サービスすべてのメール情報照会|共通認証|
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### リクエストパラメータ定義
+|名称|変数|データタイプ|必須|説明|
 |-----|-----|----------|-----|----|
-|서비스 ID	|serviceId	|String	|O	|서비스 ID，URL PATH 내에 설정한{serviceId}|
+|サービスID	|serviceId	|String	|O	|サービスID，URL PATH　内に設定した{serviceId}|
 
-#### 결과 데이터
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### 結果データ
+|名称|変数|データタイプ|必須|説明|
 |----|-----|-----------|-----|----|
-|result.content	|displayMail	|String	 |	|발신자 주소|
-|	              |external	    |String	 |	|외부계정 목록|
-|       	      |mail	        |String	 |O	|대표계정 주소 : mail@oc.toast.com|
-|	              |name	        |String	 |	|발신자 이름|
-|	              |template	    |String	 |	|이메일 레이아웃|
-|	              |updatedDt	  |Long		 |  |업데이트 시간|
+|result.content	|displayMail	|String	|	  |発信者アドレス|
+|	              |external	    |String	|	  |外部アカウントリスト|
+|	              |mail	        |String	|O	|代表アカウントアドレス : mail@oc.toast.com|
+|	              |name	        |String	|	  |発信者名|
+|	              |template	    |String	|	  |メール形式|
+|	              |updatedDt	  |Long	  |	  |アップデート時間|
 
 #### Response Body
 ```
@@ -93,29 +94,29 @@
 }
 ```
 
-### 외부계정 유효성 체크
-#### 인터페이스 설명
+### 外部アカウント有効性チェック
+#### インターフェース説明
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/mail/external/verify.json					
-- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail/external/verify.json			
+- URL (開発): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail/external/verify.json			
 
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
-|외부계정 유효성 체크|HTTPS  |POST    |UTF-8|JSON    |외부계정 유효성 체크|공통 인증|
+|外部アカウント有効性チェック|HTTPS  |POST    |UTF-8|JSON    |外部アカウント有効性チェック|共通認証|
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### リクエストパラメータ定義
+|名称|変数|データタイプ|必須|説明|
 |-----|-----|----------|-----|----|
-|서비스 ID	     |serviceId	   |String	|O	|서비스 ID，URL PATH 내에 설정한{serviceId}|
-|외부 계정 정보	|request body	|String	  |O	|외부계정 정보(JSON)|
-|	             |id	         |Integer	 |   |외부계정 ID (신규 생성시에는 필요 없고 수정 시에만 필요)|
-|	             |name	       |String	 |O	 |외부계정 구분 명칭(길이:min=1, max=20)|
-|	             |active	     |Boolean	 |O	 |외부계정 상태(true:활성화 ,false:비활성화), 수정 시에만 상태 전달 필요|
-|	             |host	       |String	 |O	 |메일 서버|
-|	             |port	       |Integer  |O	 |포트(예:993)|
-|	             |ssl	         |Boolean	 |O	 |ssl 사용여부(true:사용,false:미사용)|
-|	             |mail	       |String	 |O	 |외부계정 주소(정확한 이메일 주소)|
-|	             |password	   |String	 |O	 |외부계정 비밀번호(서비스를 이용하는 기간 동안 입력한 이메일 주소와 비밀번호가 보관됩니다.)|
-|	             |mailDel   	 |Boolean	 |O	 |원본 남기기 기능 사용 여부(true:삭제(이메일이 티켓으로 전환되면 해당 이메일이 자동으로 삭제 됨）,false:보류)|
+|サービスID	     |serviceId	   |String	|O	|サービスID，URL PATH　内に設定した{serviceId}|
+|外部アカウント情報　|request body	|String	  |O	|外部アカウント情報(JSON)|
+|	             |id	         |Integer	 |   |外部アカウントID (新規作成時には必要なく修正時のみ必要)|
+|	             |name	       |String	 |O	 |外部アカウント区分名称　(長さ:min=1, max=20)|
+|	             |active	     |Boolean	 |O	 |外部アカウント状態(true:有効化 ,false:無効化), 修正時のみ状況伝達が必要|
+|	             |host	       |String	 |O	 |メールサーバー|
+|	             |port	       |Integer  |O	 |ポート(例:993)|
+|	             |ssl	         |Boolean	 |O	 |ssl使用可否(true:使用,false:未使用)|
+|	             |mail	       |String	 |O	 |外部アカウントアドレス(正確なメールアドレス)|
+|	             |password	   |String	 |O	 |外部アカウントのパスワード(サービス利用期間中に入力したメールアドレスとパスワードが保管されます。)|
+|	             |mailDel   	 |Boolean	 |O	 |原本を残す機能の使用可否(true:削除(メールがチケットに切り替えられると、当該メールが自動的に削除される。）,false:保留)|
 
 #### Request Body
 ```
@@ -132,10 +133,10 @@
 }
 ```
 
-#### 결과 데이터
-|명칭	   |변수	   |데이터 타입	|필수	|설명|
+#### 結果データ
+|名称|変数|データタイプ|必須|説明|
 |-------|--------|-------------|-----|---|
-|result	|content	|String    	 |O	   |SUCCESS(성공)|
+|result	|content	|String    	 |O	   |SUCCESS(成功)|
 
 #### Response Body
 ```
@@ -151,27 +152,27 @@
 }
 ```
 
-### 외부계정 등록
-#### 인터페이스 설명
+### 外部アカウント登録
+#### インターフェース説明
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/mail/external.json			
-- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail/external.json			
+- URL (開発): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail/external.json			
 
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
-|외부계정 등록|HTTPS|POST|UTF-8|JSON|외부계정 등록(유효성 체크 후 등록 가능)|공통 인증|
+|外部アカウント登録|HTTPS|POST|UTF-8|JSON|外部アカウント登録(有効性チェック後に登録可能)|共通認証|
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### リクエストパラメータ定義
+|名称|変数|データタイプ|必須|説明|
 |-----|-----|----------|-----|---|
-|서비스 ID	     |serviceId	    |String	  |O	  |서비스 ID，URL PATH 내에 설정한{serviceId}|
-|외부 계정 정보	 |request body	|Stirng 	|O	  |외부계정 정보(JSON)|
-|	              |name	         |String	 |O	   |외부계정 구분 명칭(길이:min=1, max=20)|
-|	              |host	         |Stirng	 |O	   |메일 서버|
-|	              |port 	       |Integer	 |O	   |포트(예:993)|
-|	              |ssl	         |Boolean	 |O	   |ssl 사용여부(true:사용,false:미사용)|
-|       	      |mail	         |String	 |O	   |외부계정 주소(정확한 이메일 주소)|
-|	              |password	     |String	 |O	   |외부계정 비밀번호(서비스를 이용하는 기간 동안 입력한 이메일 주소와 비밀번호가 보관됩니다.)|
-|	              |mailDel	     |Boolean	 |O	   |원본 남기기 기능 사용 여부(true:삭제(이메일이 티켓으로 전환되면 해당 이메일이 자동으로 삭제 됨）,false:보류)|
+|サービスID	     |serviceId	   |String	|O	|サービスID，URL PATH　内に設定した{serviceId}|
+|外部アカウント情報　|request body	|String	  |O	|外部アカウント情報(JSON)|
+|	             |name	       |String	 |O	 |外部アカウント区分名称　(長さ:min=1, max=20)|
+|	             |host	       |String	 |O	 |メールサーバー|
+|	             |port	       |Integer  |O	 |ポート(例:993)|
+|	             |ssl	         |Boolean	 |O	 |ssl使用可否(true:使用,false:未使用)|
+|	             |mail	       |String	 |O	 |外部アカウントアドレス(正確なメールアドレス)|
+|	             |password	   |String	 |O	 |外部アカウントのパスワード(サービス利用期間中に入力したメールアドレスとパスワードが保管されます。)|
+|	             |mailDel   	 |Boolean	 |O	 |原本を残す機能の使用可否(true:削除(メールがチケットに切り替えられると、当該メールが自動的に削除される。）,false:保留)|
 
 #### Request Body
 ```
@@ -186,20 +187,20 @@
 }
 ```
 
-#### 결과 데이터
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### 結果データ
+|名称|変数|データタイプ|必須|説明|
 |-----|----|-----------|-----|----|
-|result.content	|id	      |Integer	|	  |외부계정 ID|
-|               |name	    |String	  |O	|외부계정 구분 명칭|
-|	              |active	  |Boolean	|O	|외부계정 상태(고정 값:true)|
-|	              |host	    |String	  |O	|메일 서버|
-|	              |port	    |Integer	|O	|포트(예:993)|
-|               |ssl	    |Boolean	|O	|ssl 사용여부(true:사용,false:미사용)|
-|	              |mail	    |String	  |O	|외부계정 주소|
-|	              |password	|String	  |O	|외부계정 비밀번호|
-|	              |mailDel	|Boolean	|O	|원본 남기기 기능 사용 여부(true:삭제,false:보류)|
-|	              |createdDt	|Long	  |	  |생성시간|
-|	              |updatedDt	|Long   |		|수정시간|
+|result.content	|id	      |Integer	|	  |外部アカウントID|
+|               |name	    |String	  |O	|外部アカウント区分名称|
+|	              |active	  |Boolean	|O	|外部アカウント状態(固定値:true)|
+|	              |host	    |String	  |O	|メールサーバー|
+|	              |port	    |Integer	|O	|ポート(例:993)|
+|               |ssl	    |Boolean	|O	|ssl使用可否(true:使用,false:未使用)|
+|	              |mail	    |String	  |O	|外部アカウントアドレス|
+|	              |password	|String	  |O	|外部アカウントパスワード|
+|	              |mailDel	|Boolean	|O	|原本を残す機能の使用可否(true:削除,　false:保留)|
+|	              |createdDt	|Long	  |	  |作成時間|
+|	              |updatedDt	|Long   |		|修正時間|
 
 #### Response Body
 ```
@@ -227,29 +228,29 @@
 }
 ```
 
-### 외부계정 수정
-#### 인터페이스 설명
+### 外部アカウント修正
+#### インターフェース説明
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/mail/external/{id}.json					
-- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail/external/{id}.json			
+- URL (開発): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail/external/{id}.json			
 
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
-|외부계정 수정|HTTPS|PUT|UTF-8|JSON|외부계정 수정(유효성 체크 후 수정 가능)|공통 인증|
+|外部アカウント修正|HTTPS|PUT|UTF-8|JSON|外部アカウント修正(有効性チェック後に修正可能)|共通認証|
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### リクエストパラメータ定義
+|名称|変数|データタイプ|必須|説明|
 |-----|-----|----------|-----|---|
-|서비스 ID	     |serviceId	    |String	  |O	  |서비스 ID，URL PATH 내에 설정한{serviceId}|
-|외부계정 ID	   |id	         |Integer   |O	 |외부계정 ID,URL PATH내에 설정된 {id}|
-|외부계정 정보	 |request body	|String	  |O	  |외부계정 정보(JSON)|
-|	              |name	         |String	 |O	   |외부계정 구분 명칭(길이:min=1, max=20)|
-|	              |active	       |Boolean	 |	   |외부계정 상태(true:활성화,false:비활성화)|
-|	              |host	         |String	 |O	   |메일 서버|
-|	              |port	         |Integer	 |O	   |포트(예:993)|
-|	              |ssl	         |Boolean	 |O	   |ssl 사용여부(true:사용,false:미사용)|
-|	              |mail	         |String	 |O	   |외부계정 주소(정확한 이메일 주소)|
-|	              |password	     |String	 |O	   |외부계정 비밀번호(서비스를 이용하는 기간 동안 입력한 이메일 주소와 비밀번호가 보관됩니다.)|
-|	              |mailDel	     |Boolean	 |O	   |원본 남기기 기능 사용 여부(true:삭제(이메일이 티켓으로 전환되면 해당 이메일이 자동으로 삭제 됨）,false:보류)|
+|サービスID	     |serviceId	    |String	  |O	  |サービスID，URL PATH内に設定した{serviceId}|
+|外部アカウントID	   |id	         |Integer   |O	 |外部アカウントID,URL PATH内に設定した{id}|
+|外部アカウント情報	 |request body	|String	  |O	  |外部アカウント情報(JSON)|
+|	             |name	       |String	 |O	 |外部アカウント区分名称　(長さ:min=1, max=20)|
+|	             |active	     |Boolean	 |	 |外部アカウント状態(true:有効化 ,false:無効化)|
+|	             |host	       |String	 |O	 |メールサーバー|
+|	             |port	       |Integer  |O	 |ポート(例:993)|
+|	             |ssl	         |Boolean	 |O	 |ssl使用可否(true:使用,false:未使用)|
+|	             |mail	       |String	 |O	 |外部アカウントアドレス(正確なメールアドレス)|
+|	             |password	   |String	 |O	 |外部アカウントのパスワード(サービス利用期間中に入力したメールアドレスとパスワードが保管されます。)|
+|	             |mailDel   	 |Boolean	 |O	 |原本を残す機能の使用可否(true:削除(メールがチケットに切り替えられると、当該メールが自動的に削除される。）,false:保留)|
 
 #### Request Body
 ```
@@ -264,20 +265,20 @@
 }
 ```
 
-#### 결과 데이터
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### 結果データ
+|名称|変数|データタイプ|必須|説明|
 |----|-----|------------|----|----|
-|result.content	|id	    |Integer	|	  |외부계정 ID|
-|               |name	  |String	  |O	|외부계정 구분 명칭|
-|	              |active	|Boolean	|O	|외부계정 상태(true:활성화,false:비활성화)|
-|	              |host	  |String	  |O	|메일 서버|
-|               |port	  |Integer	|O	|포트(예:993)|
-|               |ssl	  |Boolean	|O	|ssl 사용여부(true:사용,false:미사용)|
-|	              |mail	  |String	  |O	|외부계정 주소|
-|	              |password	|String	|O	|외부계정 비밀번호|
-|	              |mailDel	|Boolean	|O	|원본 남기기 기능 사용 여부(true:삭제,false:보류)|
-|	              |createdDt	|Long		|   |생성시간|
-|               |updatedDt	|Long		|   |수정시간|
+|result.content	|id	      |Integer	|	  |外部アカウントID|
+|               |name	    |String	  |O	|外部アカウント区分名称|
+|	              |active	|Boolean	|O	|外部アカウント状態(true:有効化,false:無効化)|
+|	              |host	    |String	  |O	|メールサーバー|
+|	              |port	    |Integer	|O	|ポート(例:993)|
+|               |ssl	    |Boolean	|O	|ssl使用可否(true:使用,false:未使用)|
+|	              |mail	    |String	  |O	|外部アカウントアドレス|
+|	              |password	|String	  |O	|外部アカウントパスワード|
+|	              |mailDel	|Boolean	|O	|原本を残す機能の使用可否(true:削除,　false:保留)|
+|	              |createdDt	|Long	  |	  |作成時間|
+|	              |updatedDt	|Long   |		|修正時間|
 
 #### Response Body
 ```
@@ -305,35 +306,35 @@
 }
 ```
 
-### 외부계정 활성화
-#### 인터페이스 설명
+### 外部アカウント有効化
+#### インターフェース説明
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/mail/external/{id}/enable.json			
-- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail/external/{id}/enable.json			
+- URL (開発): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail/external/{id}/enable.json			
 
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
-|외부계정 활성화|HTTPS|PUT|UTF-8|JSON|비활성화 상태 외부계정을 활성화|공통 인증|
+|外部アカウント有効化|HTTPS|PUT|UTF-8|JSON|無効化ステータス外部アカウントを有効化|共通認証|
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### リクエストパラメータ定義
+|名称|変数|データタイプ|必須|説明|
 |-----|-----|----------|-----|---|
-|서비스 ID	   |serviceId	|String	 |O	 |서비스 ID，URL PATH 내에 설정한{serviceId}|
-|외부계정 ID	|id	       |Integer	|O	|외부계정 ID,URL PATH내에 설정된 {id}|
+|サービスID	     |serviceId	    |String	  |O	  |サービスID，URL PATH内に設定した{serviceId}|
+|外部アカウントID	   |id	         |Integer   |O	 |外部アカウントID,URL PATH内に設定した{id}|
 
-#### 결과 데이터
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### 結果データ
+|名称|変数|データタイプ|必須|説明|
 |-----|-----|----------|-----|----|
-|result.content	|id	        |Integer  |		  |외부계정 ID|
-|	              |name	      |String	  |O	  |외부계정 구분 명칭|
-|	              |active	    |Boolean	|O	  |외부계정 상태(고정 값 : true)|
-|               |host	      |String	  |O	  |메일 서버|
-|	              |port	      |Integer	|O	  |포트(예:993)|
-|	              |ssl	      |Boolean	|O	  |ssl 사용여부(true:사용,false:미사용)|
-|	              |mail	      |String	  |O	  |외부계정 주소|
-|	              |password	  |String	  |O	  |외부계정 비밀번호|
-|	              |mailDel	  |Boolean	|O	  |원본 남기기 기능 사용 여부(true:삭제,false:보류)|
-|	              |createdDt	|Long		  |     |생성시간|
-|	              |updatedDt	|Long		  |     |수정시간|
+|result.content	|id	      |Integer	|	  |外部アカウントID|
+|               |name	    |String	  |O	|外部アカウント区分名称|
+|	              |active	  |Boolean	|O	|外部アカウント状態(固定値:true)|
+|	              |host	    |String	  |O	|メールサーバー|
+|	              |port	    |Integer	|O	|ポート(例:993)|
+|               |ssl	    |Boolean	|O	|ssl使用可否(true:使用,false:未使用)|
+|	              |mail	    |String	  |O	|外部アカウントアドレス|
+|	              |password	|String	  |O	|外部アカウントパスワード|
+|	              |mailDel	|Boolean	|O	|原本を残す機能の使用可否(true:削除,　false:保留)|
+|	              |createdDt	|Long	  |	  |作成時間|
+|	              |updatedDt	|Long   |		|修正時間|
 
 #### Response Body
 ```
@@ -359,35 +360,36 @@
     }
 ```
 
-### 외부계정 비활성화
-#### 인터페이스 설명
+### 外部アカウント無効化
+#### インターフェース説明
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/mail/external/{id}/disable.json			
-- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail/external/{id}/disable.json				
+- URL (開発): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail/external/{id}/disable.json				
 
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
-|외부계정 비활성화|HTTPS|PUT|UTF-8|JSON|활성화 상태 외부계정을 비활성화|공통 인증|
+|外部アカウント無効化|HTTPS|PUT|UTF-8|JSON|有効化状態の外部アカウントを無効化|共通認証|
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### リクエストパラメータ定義
+|名称|変数|データタイプ|必須|説明|
 |-----|-----|----------|-----|---|
-|서비스 ID	   |serviceId	|String	 |O	 |서비스 ID，URL PATH 내에 설정한{serviceId}|
-|외부계정 ID	|id	       |Integer	|O	|외부계정 ID,URL PATH내에 설정된 {id}|
+|サービスID	     |serviceId	    |String	  |O	  |サービスID，URL PATH内に設定した{serviceId}|
+|外部アカウントID	   |id	         |Integer   |O	 |外部アカウントID,URL PATH内に設定した{id}|
 
-#### 결과 데이터
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### 結果データ
+|名称|変数|データタイプ|必須|説明|
 |-----|----|-----------|-----|----|
-|result.content	|id	        |Integer	|	  |외부계정 ID|
-|	              |name	      |String	  |O	|외부계정 구분 명칭|
-|	              |active	    |Boolean	|O	|외부계정 상태(고정 값 : false)|
-|	              |host	      |String 	|O	|메일 서버|
-|	              |port	      |Integer	|O	|포트(예:993)|
-|	              |ssl	      |Boolean	|O	|ssl 사용여부(true:사용,false:미사용)|
-|	              |mail	      |String	  |O	|외부계정 주소|
-|	              |password	  |String	  |O	|외부계정 비밀번호|
-|	              |mailDel	  |Boolean	|O	|원본 남기기 기능 사용 여부(true:삭제,false:보류)|
-|               |createdDt	|Long		  |   |생성시간|
-|	              |updatedDt	|Long		  |   |수정시간|
+|result.content	|id	      |Integer	|	  |外部アカウントID|
+|               |name	    |String	  |O	|外部アカウント区分名称|
+|	              |active	  |Boolean	|O	|外部アカウント状態(固定値:false)|
+|	              |host	    |String	  |O	|メールサーバー|
+|	              |port	    |Integer	|O	|ポート(例:993)|
+|               |ssl	    |Boolean	|O	|ssl使用可否(true:使用,false:未使用)|
+|	              |mail	    |String	  |O	|外部アカウントアドレス|
+|	              |password	|String	  |O	|外部アカウントパスワード|
+|	              |mailDel	|Boolean	|O	|原本を残す機能の使用可否(true:削除,　false:保留)|
+|	              |createdDt	|Long	  |	  |作成時間|
+|	              |updatedDt	|Long   |		|修正時間|
+
 
 #### Response Body
 ```
@@ -413,25 +415,25 @@
     }
 ```
 
-### 외부계정 삭제
-#### 인터페이스 설명
+### 外部アカウント削除
+#### インターフェース説明
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/mail/external/{id}.json			
-- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail/external/{id}.json				
+- URL (開発): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail/external/{id}.json				
 
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
-|외부계정 삭제|HTTPS|DELETE|UTF-8|JSON|비활성화 상태 외부계정 삭제|공통 인증|
+|外部アカウント削除|HTTPS|DELETE|UTF-8|JSON|無効化状態の外部アカウントを削除|共通認証|
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### リクエストパラメータ定義
+|名称|変数|データタイプ|必須|説明|
 |-----|-----|----------|-----|---|
-|서비스 ID	   |serviceId	|String	 |O	 |서비스 ID，URL PATH 내에 설정한{serviceId}|
-|외부계정 ID	|id	       |Integer	|O	|외부계정 ID,URL PATH내에 설정된 {id}|
+|サービスID	     |serviceId	    |String	  |O	  |サービスID，URL PATH内に設定した{serviceId}|
+|外部アカウントID	   |id	         |Integer   |O	 |外部アカウントID,URL PATH内に設定した{id}|
 
-#### 결과 데이터
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### 結果データ
+|名称|変数|データタイプ|必須|説明|
 |-----|----|------------|-----|---|
-|result.content|		|String|		|"SUCCESS":삭제 성공|
+|result.content|		|String|		|"SUCCESS":削除成功|
 
 #### Response Body
 ```
@@ -447,23 +449,23 @@
 }
 ```
 
-### 이메일 정보 저장
-#### 인터페이스 설명
+### メール情報保存
+#### インターフェース説明
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/mail.json			
-- URL (개발):	https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail.json			
+- URL (開発):	https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail.json			
 
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
-|이메일 정보 저장|HTTPS|POST|UTF-8|JSON|이메일 정보 저장|공통 인증|
+|メール情報保存|HTTPS|POST|UTF-8|JSON|メール情報保存|共通認証|
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### リクエストパラメータ定義
+|名称|変数|データタイプ|必須|説明|
 |-----|-----|----------|-----|---|
-|서비스 ID	        |serviceId	   |String	|O	|서비스 ID|
-|이메일 설정 정보	 |request body	|String	 |O	 |이메일 설정 정보(JSON)|
-|	                 |name	        |String	 |	 |발신자 이름(길이:min = 0, max = 45)|
-|	                 |displayMail	  |String	 |	 |발신자 주소(예：noreply@oc.toast.com)|
-|	                 |template	    |String	 |	 |이메일 레이아웃. 예) \<p\>\#\{content\}\<\/p\> 해당 이메일 레이아웃은 모든 이메일에 적용됩니다. #{content} 태그는 반드시 추가해야합니다.|
+|サービスID	        |serviceId	   |String	|O	|サービスID|
+|メール設定情報	 |request body	|String	 |O	 |メール設定情報(JSON)|
+|	                 |name	        |String	 |	 |発信者名(길이:min = 0, max = 45)|
+|	                 |displayMail	  |String	 |	 |発信者アドレス(例：noreply@oc.toast.com)|
+|	                 |template	    |String	 |	 |メールレイアウト. 例) \<p\>\#\{content\}\<\/p\> このメールレイアウトは、すべてのメールに適用されます。 #{content}タグは必ず追加してください。|
 
 #### Request Body
 ```
@@ -474,8 +476,8 @@
 }
 ```
 
-#### 결과 데이터
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### 結果データ
+|名称|変数|データタイプ|必須|説明|
 |-----|----|-----------|-----|----|
 |result	|		|	        |      |    |
 
