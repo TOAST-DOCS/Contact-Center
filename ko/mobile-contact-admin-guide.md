@@ -1,4 +1,4 @@
-## Contact Center > Mobile Contact > 서비스 가이드 > Admin 가이드
+## Contact Center > Mobile Contact > 서비스 가이드 > Admin
 
 ## Admin 이용방법
 ![](http://static.toastoven.net/prod_contact_center/MC_admin_1.png)
