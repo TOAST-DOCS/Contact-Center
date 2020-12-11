@@ -743,7 +743,7 @@
 |お知らせID	|Id	|Int	|O	|URL PATH内に設定した{id}|
 
 #### 結果データ
-- 없음
+- なし
 
 ### お知らせテンプレートリスト照会
 #### インターフェース説明
@@ -1067,7 +1067,7 @@
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/multilanguage/notice/template/{id}.json
 - URL (開発): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/multilanguage/notice/template/{id}.json
 
-|インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
+|インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|
 |------------|-------|--------|-----|--------|--------------|
 |お知らせテンプレート修正|HTTPS  |PUT    |UTF-8|JSON    |IDを通じてテンプレート修正|
 
@@ -1077,12 +1077,12 @@
 |サービスID	|serviceId	|String	|O	|URL PATH内に設定した{serviceId}|
 |テンプレートID	|Id	|Int	|O	|URL PATH内に設定した{id}|
 |テンプレート内容	|status	|String	|O	|O：使用, C：未使用|
-|           |categoryId	|Int	|O	|말머리 ID|
-|	    |subject	|String	|O	|템플릿 제목|
-|	    |memo	|String	|O	|템플릿 설명|
-|	    |contents.{language}.title	|String	|O	|다국어 공지사항 제목|
-|	    |contents.{language}.content	|String	|O	|다국어 공지사항 내용|
-|	    |tags[].tagId	|Int	|O	|태그 ID|
+|           |categoryId	|Int	|O	|テーマID|
+|	    |subject	|String	|O	|テンプレートタイトル|
+|	    |memo	|String	|O	|テンプレート説明|
+|	    |contents.{language}.title	|String	|O	|多言語お知らせタイトル|
+|	    |contents.{language}.content	|String	|O	|多言語お知らせ内容|
+|	    |tags[].tagId	|Int	|O	|タグID|
 
 #### Request Body
 ```
@@ -1091,16 +1091,16 @@
       "categoryId": 509,
       "contents": {
         "ko": {
-          "title": "한국어 제목1",
-          "content": "한국어 내용1",
+          "title": "韓国語タイトル1",
+          "content": "韓国語内容1",
         },
         "ja": {
-          "title": "일본어 제목1",
-          "content": "일본어 내용1",
+          "title": "日本語タイトル1",
+          "content": "日本語内容1",
         },
         "zh": {
-          "title": "중국어 제목1",
-          "content": "중국어 내용1",
+          "title": "中国語タイトル1",
+          "content": "中国語内容1",
         }
       },
       "tags": [
@@ -1108,27 +1108,27 @@
           "tagId": 94,
         }
       ],
-      "subject": "템플릿 제목1",
-      "memo": "템플릿 설명1"
+      "subject": "テンプレートタイトル1",
+      "memo": "テンプレート説明1"
     }
 ```
 
-#### 결과 데이터
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### 結果データ
+|名称|変数|データタイプ|必須|説明|
 |---------|--------|------------|--------|----|
-|result.content	|noticeId	|Int	|O	|템플릿 ID|
-|	        |status	        |String	|O	|템플릿 상태. O：사용, C：미사용|
-|	        |categoryId	|Int	|O	|말머리 ID|
-|	        |subject	|String	|O	|템플릿 제목|
-|	        |memo	        |String	|X	|템플릿 설명|
-|	        |title	        |String	|O	|공지사항 제목|
-|	        |content	|String	|O	|공지사항 내용|
-|	        |userId	        |Int	|O	|등록 유저 ID|
-|	        |tags	        |Array	|X	|태그 리스트|
-|	        |tags[].tagId	|Int	|O	|태그 ID|
-|	        |tags[].tag	|String	|O	|태그 명|
-|	        |createdDt	|Long	|O	|템플릿 등록시간|
-|	        |updatedDt	|Long	|O	|템플릿 수정시간|
+|result.content	|noticeId	|Int	|O	|テンプレートID|
+|	        |status	        |String	|O	|テンプレート状態. O：使用, C：未使用|
+|	        |categoryId	|Int	|O	|テーマID|
+|	        |subject	|String	|O	|テンプレートタイトル|
+|	        |memo	        |String	|X	|テンプレート説明|
+|	        |title	        |String	|O	|お知らせタイトル|
+|	        |content	|String	|O	|お知らせ内容|
+|	        |userId	        |Int	|O	|登録ユーザーID|
+|	        |tags	        |Array	|X	|タグリスト|
+|	        |tags[].tagId	|Int	|O	|タグID|
+|	        |tags[].tag	|String	|O	|タグ名|
+|	        |createdDt	|Long	|O	|テンプレート登録時間|
+|	        |updatedDt	|Long	|O	|テンプレート修正時間|
 
 #### Response Body
 ```
@@ -1144,91 +1144,91 @@
       "serviceId": "multilanguage",
       "status": "O",
       "categoryId": 509,
-      "title": "중국어 제목1",
-      "content": "중국어 내용1",
+      "title": "中国語タイトル1",
+      "content": "中国語内容1",
       "userId": 10063,
       "createdDt": 1547950366000,
       "updatedDt": 1547961165000,
       "contents": {
         "ko": {
-          "title": "한국어 제목1",
-          "content": "한국어 내용1",
+          "title": "韓国語タイトル1",
+          "content": "韓国語内容1",
         },
         "ja": {
-          "title": "일본어 제목1",
-          "content": "일본어 내용1",
+          "title": "日本語タイトル1",
+          "content": "日本語内容1",
         },
         "zh": {
-          "title": "중국어 제목1",
-          "content": "중국어 내용1",
+          "title": "中国語タイトル1",
+          "content": "中国語内容1",
         }
       },
       "tags": [
         {
           "tagId": 94,
           "names": {
-            "ko": "한국어 태그1",
-            "ja": "일본어 태그1",
-            "zh": "중국어 태그1"
+            "ko": "韓国語タグ1",
+            "ja": "日本語タグ1",
+            "zh": "中国語タグ1"
           }
         }
       ],
       "category": {
         "categoryId": 509,
         "names": {
-          "ko": "한국어 말머리",
-          "ja": "일본어 말머리",
-          "zh": "중국어 말머리"
+          "ko": "韓国語テーマ",
+          "ja": "日本語テーマ",
+          "zh": "中国語テーマ"
         }
       },
-      "subject": "템플릿 제목1",
-      "memo": "템플릿 내용1"
+      "subject": "テンプレートタイトル1",
+      "memo": "テンプレート内容1"
     }
   }
 }
 ```
 
-### 공지사항 템플릿 삭제
-#### 인터페이스 설명
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/multilanguage/notice/template/{id}.json										
-- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/multilanguage/notice/template/{id}.json			
+### お知らせテンプレート削除
+#### インターフェース説明
+- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/multilanguage/notice/template/{id}.json
+- URL (開発): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/multilanguage/notice/template/{id}.json
 
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|
+|インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|
 |------------|-------|--------|-----|--------|--------------|
-|공지사항 템플릿 삭제 |HTTPS  |DELETE    |UTF-8|JSON    |ID를 통해 템플릿 삭제|
+|お知らせテンプレート削除|HTTPS  |DELETE    |UTF-8|JSON    |IDを通じてテンプレート削除|
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### リクエストパラメータ定義
+|名称|変数|データタイプ|必須|説明|
 |----|-----|------------|-----|---|
-|서비스 ID	|serviceId	|String	|O	|URL PATH 내에 설정한{serviceId}|
-|템플릿 ID	|Id	        |Int	|O	|URL PATH 내에 설정한{id}|
+|サービスID	|serviceId	|String	|O	|URL PATH内に設定した{serviceId}|
+|テンプレートID	|Id	        |Int	|O	|URL PATH内に設定した{id}|
 
-#### 결과 데이터
-- 없음
+#### 結果データ
+- なし
 
 
-### 공지사항 첨부파일 첨부
-#### 인터페이스 설명
+### お知らせ添付ファイル添付
+#### インターフェース説明
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/attachments/notice/upload.json			
-- URL(개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/ attachments/notice/upload.json			
+- URL(開発): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/ attachments/notice/upload.json
 
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|
+|インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|
 |------------|-------|--------|-----|--------|--------------|
-|공지사항 첨부파일 업로드 |HTTPS  |POST    |UTF-8|JSON    |서버에 파일 업로드|
+|お知らせ添付ファイルアップロード|HTTPS  |POST    |UTF-8|JSON    |サーバーにファイルアップロード|
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### リクエストパラメータ定義
+|名称|変数|データタイプ|必須|説明|
 |----|-----|------------|-----|---|
-|서비스 ID	|serviceId	|String	|O	|URL PATH 내에 설정한{serviceId}|
-|업로드 파일	|file	|File	|O	|업로드 파일을 form으로 통해 제출|
+|サービスID	|serviceId	|String	|O	|URL PATH内に設定した{serviceId}|
+|アップロードファイル|file	|File	|O	|アップロードファイルをformで提出|
 
-#### 결과 데이터
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### 結果データ
+|名称|変数|データタイプ|必須|説明|
 |---------|--------|------------|--------|----|
-|result.content	|attachmentId	|String	|O	|업로드 파일 ID|
-|	        |fileName	|String	|O	|파일 명|
-|	        |contentType	|String	|O	|파일 유형|
-|	        |size	        |Long	|O	|파일 byte|
+|result.content	|attachmentId	|String	|O	|アップロードファイルID|
+|	        |fileName	|String	|O	|ファイル名|
+|	        |contentType	|String	|O	|ファイルタイプ|
+|	        |size	        |Long	|O	|ファイルbyte|
 
 #### Request Body
 ```
@@ -1249,67 +1249,67 @@
 }
 ```
 
-### 공지사항 첨부파일 열기/다운로드
-#### 인터페이스 설명
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v2/attachments/notice/{id}						 		
-- URL(개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v2/attachments/notice/{id}						
+### お知らせ添付ファイルを開く/ダウンロード
+#### インターフェース説明
+- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v2/attachments/notice/{id}
+- URL(開発): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v2/attachments/notice/{id}
 
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|
+|インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|
-|공지사항 첨부파일 열기 및 다운로드 |HTTPS  |GET    |UTF-8|FILE   |서버에 업로드한 공지사항 첨부파일 열기 및 다운로드|
+|お知らせ添付ファイルを開く/ダウンロード|HTTPS  |GET    |UTF-8|FILE   |サーバーにアップロードしたお知らせ添付ファイルを開く/ダウンロード|
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### リクエストパラメータ定義
+|名称|変数|データタイプ|必須|説明|
 |----|-----|------------|-----|---|
-|서비스 ID	           |serviceId	|String	|O	|URL PATH 내에 설정한{serviceId}|
-|업로드 파일 ID	 |id	      |String  |O	|업로드 파일id| 
-|열람방식	          |type	       |String	   |	|기본 값:열기（download:다운로드, open:열기）|
+|サービスID	           |serviceId	|String	|O	|URL PATH内に設定した{serviceId}|
+|アップロードファイルID	 |id	      |String  |O	|アップロードファイルID| 
+|閲覧方式	          |type	       |String	   |	|基本:開く（download:ダウンロード, open:開く）|
 
-### 공지사항 첨부파일 삭제
-#### 인터페이스 설명
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/attachments/notice/{id}.json			 		
-- URL(개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/ attachments/notice/{id}.json				
+### お知らせ添付ファイル削除
+#### インターフェース説明
+- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/attachments/notice/{id}.json
+- URL(開発): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/ attachments/notice/{id}.json
 
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|
+|インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|
 |------------|-------|--------|-----|--------|--------------|
-|공지사항 첨부파일 삭제 |HTTPS  |DELETE    |UTF-8|JSON    |서버에 업로드한 파일 삭제|
+|お知らせ添付ファイル削除|HTTPS  |DELETE    |UTF-8|JSON    |サーバーにアップロードしたファイル削除|
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### リクエストパラメータ定義
+|名称|変数|データタイプ|必須|説明|
 |----|-----|------------|-----|---|
-|서비스 ID	|serviceId	|String |O	|URL PATH 내에 설정한{serviceId}|
-|업로드 파일 ID	|id	|String	|O	|업로드 파일id| 
+|サービスID	|serviceId	|String |O	|URL PATH内に設定した{serviceId}|
+|アップロードファイルID	|id	|String	|O	|アップロードファイルid| 
 
-#### 결과 데이터
-- 없음
+#### 結果データ
+- なし
 
 #### Response Body
 - File
 
-### 공지사항 태그 목록 조회
-#### 인터페이스 설명
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/notice/tag.json					 		
-- URL(개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/notice/tag.json					
+### お知らせタグリスト照会
+#### インターフェース説明
+- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/notice/tag.json
+- URL(開発): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/notice/tag.json
 
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|
+|インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|
 |------------|-------|--------|-----|--------|--------------|
-|공지사항 태그 목록 조회 |HTTPS  |GET    |UTF-8|JSON    |공지사항 태그 목록 조회|
+|お知らせタグリスト照会|HTTPS  |GET    |UTF-8|JSON    |お知らせタグリスト照会|
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### 요リクエストパラメータ定義
+|名称|変数|データタイプ|必須|説明|
 |----|-----|------------|-----|---|
-|서비스 ID	|serviceId	|String	|O	|URL PATH 내에 설정한{serviceId}|
-|태그 키워드	|tag	|String	|X	|태그 검색 문구|
+|サービスID	|serviceId	|String	|O	|URL PATH内に設定した{serviceId}|
+|タグキーワード|tag	|String	|X	|タグ検索フレーズ|
 
-#### 결과 데이터
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### 結果データ
+|名称|変数|データタイプ|必須|説明|
 |--------|---------|------------|--------|----|
-|result.contents	|tagId	        |INT	|O	|태그 ID|
-|	                |serviceId	|String	|O	|서비스 ID|
-|                       |tag		|	|        |태그 내용|
-|	                |createdDt	|Long	|O	|등록시간|
-|	                |tagCode	|	|	|태그 Code|
-|	                |languages.{language}	|String	|O	|태그 내용（다국어）|
+|result.contents	|tagId	        |Int	|O	|タグID|
+|	                |serviceId	|String	|O	|サービスID|
+|                       |tag		|	|        |タグ内容|
+|	                |createdDt	|Long	|O	|登録時間|
+|	                |tagCode	|	|	|タグCode|
+|	                |languages.{language}	|String	|O	|タグ内容（多言語）|
 
 #### Response Body
 ```
@@ -1323,28 +1323,28 @@
     "contents": [
       {
         "tagId": 94,
-        "tag": "한국어 태그1",
+        "tag": "韓国語タグ1",
         "tagCode": "code",
         "serviceId": "multilanguage",
         "createdDt": 1547960380000,
         "languages": {
-          "ko": "한국어 태그1",
-          "ja": "일본어 태그1",
-          "zh": "중국어 태그1",
-          "en": "영어 태그1"
+          "ko": "韓国語タグ1",
+          "ja": "日本語タグ1",
+          "zh": "中国語タグ1",
+          "en": "英語タグ1"
         }
       },
       {
         "tagId": 95,
-        "tag": "한국어 태그2",
+        "tag": "韓国語タグ2",
         "tagCode": "game",
         "serviceId": "multilanguage",
         "createdDt": 1547949797000,
         "names": {
-          "ko": "한국어 태그2",
-          "ja": "일본어 태그2",
-          "zh": "중국어 태그2",
-          "en": "영어 태그2"
+          "ko": "韓国語タグ2",
+          "ja": "日本語タグ2",
+          "zh": "中国語タグ2",
+          "en": "英語タグ2"
         }
       }
     ]
@@ -1352,30 +1352,30 @@
 }
 ```
 
-### 공지사항 태그 상세 조회
-#### 인터페이스 설명
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/notice/tag/{id}.json						 		
-- URL(개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/notice/tag/{id}.json						
+### お知らせタグの詳細照会
+#### インターフェース説明
+- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/notice/tag/{id}.json
+- URL(開発): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/notice/tag/{id}.json
 
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|
+|インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|
 |------------|-------|--------|-----|--------|--------------|
-|공지사항 태그 상세 조회 |HTTPS  |GET    |UTF-8|JSON    |태그 ID를 통해 공지사항 태그 상세 내용 조회|
+|お知らせタグの詳細照会|HTTPS  |GET    |UTF-8|JSON    |タグIDを通じてお知らせタグの詳細照会|
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### リクエストパラメータ定義
+|名称|変数|データタイプ|必須|説明|
 |----|-----|------------|-----|---|
-|서비스 ID	|serviceId	|String	|O	|URL PATH 내에 설정한{serviceId}|
-|태그 ID / 태그 code	|id	|String	|O	|URL PATH내에 설정한{id}|
+|サービスID	|serviceId	|String	|O	|URL PATH内に設定した{serviceId}|
+|タグID / タグcode	|id	|String	|O	|URL PATH内に設定した{id}|
 
-#### 결과 데이터
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### 結果データ
+|名称|変数|データタイプ|必須|説明|
 |---------|--------|------------|--------|-----|
-|result.contents	|tagId	|INT	|O	|태그 ID|
-|	                |serviceId	|String	|O	|서비스 ID|
-|	                |tag	|	|	|태그 내용|
-|	                |createdDt	|Long	|O	|등록시간|
-|	                |tagCode	|	|	|태그 Code|
-|	                |languages.{language}	|String	|O	|태그 내용（다국어）|
+|result.contents	|tagId	        |Int	|O	|タグID|
+|	                |serviceId	|String	|O	|サービスID|
+|                       |tag		|	|        |タグ内容|
+|	                |createdDt	|Long	|O	|登録時間|
+|	                |tagCode	|	|	|タグCode|
+|	                |languages.{language}	|String	|O	|タグ内容（多言語）|
 
 #### Response Body
 ```
@@ -1388,67 +1388,67 @@
   "result": {
     "content": {
       "tagId": 94,
-      "tag": "한국어 태그1",
+      "tag": "韓国語タグ1",
       "tagCode": "code",
       "serviceId": "multilanguage",
       "createdDt": 1547960380000,
       "languages": {
-        "ko": "한국어 태그1",
-        "ja": "일본어 태그1",
-        "zh": "중국어 태그1",
-        "en": "영어 태그1"
+        "ko": "韓国語タグ1",
+        "ja": "日本語タグ1",
+        "zh": "中国語タグ1",
+        "en": "英語タグ1"
       }
     }
   }
 }
 ```
 
-### 공지사항 태그 등록
-#### 인터페이스 설명
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/notice/tag.json								 		
-- URL(개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/notice/tag.json							
+### お知らせタグ登録
+#### インターフェース説明
+- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/notice/tag.json
+- URL(開発): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/notice/tag.json
 
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|
+|インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|
 |------------|-------|--------|-----|--------|--------------|
-|공지사항 태그 등록 |HTTPS  |POST    |UTF-8|JSON    |신규 태그 등록|
+|お知らせタグ登録|HTTPS  |POST    |UTF-8|JSON    |新規タグ登録|
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### リクエストパラメータ定義
+|名称|変数|データタイプ|必須|説明|
 |----|-----|------------|-----|---|
-|서비스 ID	|serviceId	|String	|O	|URL PATH 내에 설정한{serviceId}|
-|태그 Code	|tagCode	|String	|X	|태그 Code|
-|태그 내용	|names.{language}	|String	|O	|태그 내용|
-|태그 내용(다국어)	|languages.{language}	|String	|O	|태그 내용(다국어)|
+|サービスID	|serviceId	|String	|O	|URL PATH内に設定した{serviceId}|
+|タグCode	|tagCode	|String	|X	|タグCode|
+|タグ内容	|names.{language}	|String	|O	|タグ内容|
+|タグ内容(多言語)	|languages.{language}	|String	|O	|タグ内容(多言語)|
 
 #### Request Body
 ```
-단일언어
+単一言語
 {
    "tagCode": "code",
-   "tag": "한국어 태그1",
+   "tag": "韓国語タグ1",
 }
 
-다국어
+多言語
 {
   "tagCode": "code",
   "languages": {
-    "ko": "한국어 태그1",
-    "ja": "일본어 태그1",
-    "zh": "중국어 태그1",
-    "en": "영어 태그1",
+    "ko": "韓国語タグ1",
+    "ja": "日本語タグ1",
+    "zh": "中国語タグ1",
+    "en": "英語タグ1",
   }
 }
 ```
 
-#### 결과 데이터
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### 結果データ
+|名称|変数|データタイプ|必須|説明|
 |--------|---------|-----------|---------|----|
-|result.contents	|tagId	|INT	|O	|태그 ID|
-|	                |serviceId	|String	|O	|서비스 ID|
-|	                |tag	|	|	|태그 내용|
-|	                |createdDt	|Long	|O	|등록시간|
-|	                |tagCode	|	|	|태그 Code|
-|	                |languages.{language}	|String	|O	|태그 내용（다국어）|
+|result.contents	|tagId	        |Int	|O	|タグID|
+|	                |serviceId	|String	|O	|サービスID|
+|                       |tag		|	|        |タグ内容|
+|	                |createdDt	|Long	|O	|登録時間|
+|	                |tagCode	|	|	|タグCode|
+|	                |languages.{language}	|String	|O	|タグ内容（多言語）|
 
 #### Response Body
 ```
@@ -1461,65 +1461,65 @@
   "result": {
     "content": {
       "tagId": 94,
-      "tag": "한국어 태그1",
+      "tag": "韓国語タグ1",
       "tagCode": "code",
       "serviceId": "multilanguage",
       "createdDt": 1547960380000,
       "languages": {
-        "ko": "한국어 태그1",
-        "ja": "일본어 태그1",
-        "zh": "중국어 태그1",
-        "en": "영어 태그1"
+        "ko": "韓国語タグ1",
+        "ja": "日本語タグ1",
+        "zh": "中国語タグ1",
+        "en": "英語タグ1"
       }
     }
   }
 }
 ```
 
-### 공지사항 태그 수정
-#### 인터페이스 설명
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/notice/tag/{id}.json											 
-- URL: https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/notice/tag/{id}.json									
+### お知らせタグ修正
+#### インターフェース説明
+- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/notice/tag/{id}.json
+- URL(開発): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/notice/tag/{id}.json
 
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|
+|インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|
 |------------|-------|--------|-----|--------|--------------|
-|공지사항 태그 수정 |HTTPS  |PUT    |UTF-8|JSON    |태그 ID를 통해 공지사항 태그 수정|
+|お知らせタグ修正|HTTPS  |PUT    |UTF-8|JSON    |タグIDを通じてお知らせタグ修正|
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### リクエストパラメータ定義
+|名称|変数|データタイプ|必須|説明|
 |----|-----|------------|-----|---|
-|서비스 ID	|serviceId	|String	|O	|URL PATH 내에 설정한{serviceId}|
-|태그 ID / 태그 code	|id	|String	|O	|URL PATH 내에 설정한{id}|
-|태그 내용	|names.{language}	|String	|O	|태그 내용|
-|태그 내용(다국어)	|languages.{language}	|String	|O	|태그 내용(다국어)|
+|サービスID	|serviceId	|String	|O	|URL PATH内に設定した{serviceId}|
+|タグID / タグcode	|id	|String	|O	|URL PATH内に設定した{id}|
+|タグ内容	|names.{language}	|String	|O	|タグ内容|
+|タグ内容(多言語)	|languages.{language}	|String	|O	|タグ内容(多言語)|
 
 #### Request Body
 ```
-단일언어
+単一言語
 {
-   "tag": "한국어 태그1",
+   "tag": "韓国語タグ1",
 }
 
-다국어
+多言語
 {
   "languages": {
-    "ko": "한국어 태그1",
-    "ja": "일본어 태그1",
-    "zh": "중국어 태그1",
-    "en": "영어 태그1",
+    "ko": "韓国語タグ1",
+    "ja": "日本語タグ1",
+    "zh": "中国語タグ1",
+    "en": "英語タグ1",
   }
 }
 ```
 
-#### 결과 데이터
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### 結果データ
+|名称|変数|データタイプ|必須|説明|
 |---------|--------|------------|--------|----|
-|result.contents	|tagId	|INT	|O	|태그 ID|
-|	                |serviceId	|String	|O	|서비스 ID|
-|	                |tag	|	|	|태그 내용|
-|	                |createdDt	|Long	|O	|등록시간|
-|	                |tagCode	|	|	|태그 Code|
-|	                |languages.{language}	|String	|O	|태그 내용（다국어）|
+|result.contents	|tagId	        |Int	|O	|タグID|
+|	                |serviceId	|String	|O	|サービスID|
+|                       |tag		|	|        |タグ内容|
+|	                |createdDt	|Long	|O	|登録時間|
+|	                |tagCode	|	|	|タグCode|
+|	                |languages.{language}	|String	|O	|タグ内容（多言語）|
 
 #### Response Body
 ```
@@ -1532,67 +1532,67 @@
   "result": {
     "content": {
       "tagId": 94,
-      "tag": "한국어 태그1",
+      "tag": "韓国語タグ1",
       "tagCode": "code",
       "serviceId": "multilanguage",
       "createdDt": 1547960380000,
       "languages": {
-        "ko": "한국어 태그1",
-        "ja": "일본어 태그1",
-        "zh": "중국어 태그1",
-        "en": "영어 태그1"
+        "ko": "韓国語タグ1",
+        "ja": "日本語タグ1",
+        "zh": "中国語タグ1",
+        "en": "英語タグ1"
       }
     }
   }
 }
 ```
 
-### 공지사항 태그 삭제
-#### 인터페이스 설명
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/notice/tag/{id}.json												 
-- URL: https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/notice/tag/{id}.json											
+### お知らせタグ削除
+#### インターフェース説明
+- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/notice/tag/{id}.json		
+- URL（開発）: https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/notice/tag/{id}.json
 
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|
+|インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|
 |------------|-------|--------|-----|--------|--------------|
-|공지사항 태그 삭제 |HTTPS  |DELETE  |UTF-8|JSON    |태그 ID를 통해 공지사항 태그 삭제|
+|お知らせタグ削除|HTTPS  |DELETE  |UTF-8|JSON    |タグIDを通じてお知らせタグ削除|
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### リクエストパラメータ定義
+|名称|変数|データタイプ|必須|説明|
 |----|-----|------------|-----|---|
-|서비스 ID	|serviceId	|String	|O	|URL PATH 내에 설정한{serviceId}|
-|태그 ID / 태그 code	|id	|String	|O	|URL PATH 내에 설정한{id}|
+|サービスID	|serviceId	|String	|O	|URL PATH内に設定した{serviceId}|
+|タグID / タグcode	|id	|String	|O	|URL PATH内に設定した{id}|
 
-#### 결과 데이터
-- 없음
+#### 結果データ
+- なし
 
-### 공지사항 말머리 목록 조회
-#### 인터페이스 설명
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v2/notice/categories.json												 
-- URL: https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v2/notice/categories.json											
+### お知らせテーマリスト照会
+#### インターフェース説明
+- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v2/notice/categories.json	
+- URL（開発）: https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v2/notice/categories.json
 
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|
+|インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|
 |------------|-------|--------|-----|--------|--------------|
-|공지사항 말머리 목록 조회 |HTTPS  |GET  |UTF-8|JSON    |공지사항 말머리 목록  |
+|お知らせテーマリスト照会|HTTPS  |GET  |UTF-8|JSON    |お知らせテーマリスト |
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### リクエストパラメータ定義
+|名称|変数|データタイプ|必須|説明|
 |----|-----|------------|-----|---|
-|서비스 ID	|serviceId	|String	|O	|URL PATH 내에  설정한{serviceId}|
+|サービスID	|serviceId	|String	|O	|URL PATH内に設定した{serviceId}|
 
-#### 결과 데이터
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### 結果データ
+|名称|変数|データタイプ|必須|説明|
 |---------|--------|-----------|---------|----|
-|result.contents	|categoryId	|Int	|O	|말머리 ID|
-|	                |serviceId	|String	|O	|서비스 ID|
-|	                |categoryCode	|String	|	|말머리 Code|
-|	                |parent	        |Int	|	|상위 말머리 ID（고정 값:0）|
-|	                |name	        |String	|O	|말머리 명|
-|	                |level	        |Int	|	|뎁스（고정 값:1）|
-|	                |path	        |String	|	|뎁스 경로（고정 값:"\\"）|
-|	                |orderNo	|Int	|	|정렬순서（기본 값:0）|
-|	                |createdDt	|Long	|	|등록시간|
-|	                |updatedDt	|Long	|	|수정시간|
-|	                |languages	|String	|	|다국어|
+|result.contents	|categoryId	|Int	|O	|テーマID|
+|	                |serviceId	|String	|O	|サービスID|
+|	                |categoryCode	|String	|	|テーマCode|
+|	                |parent	        |Int	|	|上位テーマID（固定値:0）|
+|	                |name	        |String	|O	|テーマ名|
+|	                |level	        |Int	|	|段階（固定値:1）|
+|	                |path	        |String	|	|段階経路（固定値:"\\\\"）|
+|	                |orderNo	|Int	|	|整列順序（基本:0）|
+|	                |createdDt	|Long	|	|登録時間|
+|	                |updatedDt	|Long	|	|修正時間|
+|	                |languages	|String	|	|多言語|
 
 #### Response Body
 ```
@@ -1609,14 +1609,14 @@
                 "serviceId":"multilanguage",
                 "categoryCode":"game",
                 "parent":0,
-                "name":"한국어 말머리2",
+                "name":"韓国語テーマ2",
                 "level":1,
                 "path":"\\",
                 "orderNo":0,
                 "createdDt":1554949320000,
                 "updatedDt":1554949320000,
                 "languages":{
-                    "ko":"한국어 말머리2"
+                    "ko":"韓国語テーマ2"
                 }
             },
             {
@@ -1624,17 +1624,17 @@
                 "serviceId":"multilanguage",
                 "categoryCode":"code1",
                 "parent":0,
-                "name":"중국어 말머리1",
+                "name":"中国語テーマ1",
                 "level":1,
                 "path":"\\",
                 "orderNo":0,
                 "createdDt":1547949603000,
                 "updatedDt":1554887489000,
                 "languages":{
-                    "ko":"한국어 말머리1",
-                    "ja":"일본어 말머리1",
-                    "en":"영어 말머리1",
-                    "zh":"중국어 말머리1"
+                    "ko":"韓国語テーマ1",
+                    "ja":"日本語テーマ1",
+                    "en":"英語テーマ1",
+                    "zh":"中国語テーマ1"
                 }
             }
         ]
@@ -1642,35 +1642,35 @@
 }
 ```
 
-### 공지사항 말머리 상세 조회
-#### 인터페이스 설명
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v2/notice/category/{id}.json												 
-- URL: https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v2/notice/category/{id}.json										
+### お知らせテーマ詳細照会
+#### インターフェース説明
+- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v2/notice/category/{id}.json
+- URL（開発）: https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v2/notice/category/{id}.json	
 
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|
+|インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|
 |------------|-------|--------|-----|--------|--------------|
-|공지사항 말머리 상세 조회 |HTTPS  |GET  |UTF-8|JSON    |말머리 ID를 통해 공지사항 상세 내용 조회|
+|お知らせテーマ詳細照会|HTTPS  |GET  |UTF-8|JSON    |テーマIDを通じてお知らせテーマ詳細照会|
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### リクエストパラメータ定義
+|名称|変数|データタイプ|必須|説明|
 |----|-----|------------|-----|---|
-|서비스 ID	|serviceId	|String	|O	|URL PATH 내에 설정한{serviceId}|
-|말머리 ID / 말머리 code	|id	|String	|O	|URL PATH 내에 설정한{id}|
+|サービスID	|serviceId	|String	|O	|URL PATH内に設定した{serviceId}|
+|テーマID / テーマcode	|id	|String	|O	|URL PATH内に設定した{id}|
 
-#### 결과 데이터
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### 結果データ
+|名称|変数|データタイプ|必須|説明|
 |---------|--------|-----------|---------|----|
-|result.content	|categoryId	|Int	|O	|말머리 ID|
-|	        |serviceId	|String	|O	|서비스 ID|
-|	        |categoryCode	|String	|	|말머리 Code|
-|	        |parent	        |Int	|	|상위 말머리 ID（고정 값:0）|
-|	        |name	        |String	|O	|말머리 명|
-|	        |level	        |Int	|	|뎁스（고정 값:1）|
-|	        |path	        |String	|	|뎁스 경로（고정 값:"\\\\"）|
-|	        |orderNo	|Int	|	|정렬순서（기본 값:0）|
-|	        |createdDt	|Long	|	|등록시간|
-|	        |updatedDt	|Long	|	|수정시간|
-|	        |languages	|String	|	|다국어|
+|result.content	|categoryId	|Int	|O	|テーマID|
+|	                |serviceId	|String	|O	|サービスID|
+|	                |categoryCode	|String	|	|テーマCode|
+|	                |parent	        |Int	|	|上位テーマID（固定値:0）|
+|	                |name	        |String	|O	|テーマ名|
+|	                |level	        |Int	|	|段階（固定値:1）|
+|	                |path	        |String	|	|段階経路（固定値:"\\\\"）|
+|	                |orderNo	|Int	|	|整列順序（基本:0）|
+|	                |createdDt	|Long	|	|登録時間|
+|	                |updatedDt	|Long	|	|修正時間|
+|	                |languages	|String	|	|多言語|
 
 #### Response Body
 ```
@@ -1686,79 +1686,79 @@
             "serviceId":"multilanguage",
             "categoryCode":"code1",
             "parent":0,
-            "name":"중국어 말머리1",
+            "name":"中国語テーマ1",
             "level":1,
             "path":"\\",
             "orderNo":0,
             "createdDt":1547949603000,
             "updatedDt":1554887489000,
             "languages":{
-                "ko":"한국어 말머리1",
-                "ja":"일본어 말머리1",
-                "en":"영어 말머리1",
-                "zh":"중국어 말머리1"
+                "ko":"韓国語テーマ1",
+                "ja":"日本語テーマ1",
+                "en":"英語テーマ1",
+                "zh":"中国語テーマ1"
             }
         }
     }
 }
 ```
 
-### 공지사항 말머리 등록
-#### 인터페이스 설명
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/notice/category.json												 
-- URL: https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/notice/category.json												
+### お知らせテーマ登録
+#### インターフェース説明
+- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/notice/category.json
+- URL（開発）: https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/notice/category.json
 
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|
+|インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|
 |------------|-------|--------|-----|--------|--------------|
-|공지사항 말머리 등록 |HTTPS  |POST  |UTF-8|JSON    |신규 말머리 등록|
+|お知らせテーマ登録 |HTTPS  |POST  |UTF-8|JSON    |新規テーマ登録|
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### リクエストパラメータ定義
+|名称|変数|データタイプ|必須|説明|
 |----|-----|------------|-----|---|
-|서비스 ID	|serviceId	|String	|O	|URL PATH 내에 설정한{serviceId}|
-|말머리 정보	|request body	|String	|O	|말머리 정보（JSON）|
-|	    |name	    |String |		|말머리 명（유일한 값:예 ; 길이:min = 0, max = 50 ; 형식:^(\_\|-\|[^\\pP])+$）|
-|	    |categoryCode	|String	|	|말머리 Code|
-|	    |languages	        |String	|	|다국어|
-|	    |orderNo	|Int	|	|정렬순서（고정 값:0）|
+|サービスID	|serviceId	|String	|O	|URL PATH内に設定した{serviceId}|
+|テーマ情報	|request body	|String	|O	|テーマ情報（JSON）|
+|	    |name	    |String |		|テーマ名（唯一の値:はい ; 長さ:min = 0, max = 50 ; 形式:^(\_\|-\|[^\\pP])+$）|
+|	    |categoryCode	|String	|	|テーマCode|
+|	    |languages	        |String	|	|多言語|
+|	    |orderNo	|Int	|	|整列順序（固定値:0）|
 
 #### Request Body
 ```
-단일 언어
+単一言語
 {
-    "name":"중국어 말머리3",
+    "name":"中国語テーマ3",
     "categoryCode":"game3",
     "orderNo":1
 }
 
-다국어
+多言語
 {
     "categoryCode":"game3",
     "parent":0,
     "orderNo":1,
     "languages":{
-        "ko":"한국어 말머리3",
-        "ja":"일본어 말머리3",
-        "en":"영어 말머리3",
-        "zh":"중국어 말머리3"
+        "ko":"韓国語テーマ3",
+        "ja":"日本語テーマ3",
+        "en":"英語テーマ3",
+        "zh":"中国語テーマ3"
     }
 }
 ```
 
-#### 결과 데이터
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### 結果データ
+|名称|変数|データタイプ|必須|説明|
 |---------|--------|-----------|---------|----|
-|result.content	|categoryId	|Int	|O	|말머리 ID|
-|	        |serviceId	|String	|O	|서비스 ID|
-|	        |categoryCode	|String	|	|말머리 Code|
-|	        |parent	        |Int	|	|상위 말머리 ID（고정 값:0）|
-|	        |name	        |String	|O	|말머리 명|
-|	        |level	        |Int	|	|뎁스（고정 값:1）|
-|	        |path	        |String	|	|뎁스 경로（고정 값:"\\\\"）|
-|	        |orderNo	|Int	|	|정렬순서（기본 값:0）|
-|	        |createdDt	|Long	|	|등록시간|
-|	        |updatedDt	|Long	|	|수정시간|
-|	        |languages	|String	|	|다국어|
+|result.content	|categoryId	|Int	|O	|テーマID|
+|	                |serviceId	|String	|O	|サービスID|
+|	                |categoryCode	|String	|	|テーマCode|
+|	                |parent	        |Int	|	|上位テーマID（固定値:0）|
+|	                |name	        |String	|O	|テーマ名|
+|	                |level	        |Int	|	|段階（固定値:1）|
+|	                |path	        |String	|	|段階経路（固定値:"\\\\"）|
+|	                |orderNo	|Int	|	|整列順序（基本:0）|
+|	                |createdDt	|Long	|	|登録時間|
+|	                |updatedDt	|Long	|	|修正時間|
+|	                |languages	|String	|	|多言語|
 
 #### Response Body
 ```
@@ -1774,79 +1774,79 @@
             "serviceId":"multilanguage",
             "categoryCode":"game3",
             "parent":0,
-            "name":"중국어 말머리3",
+            "name":"中国語テーマ3",
             "level":1,
             "path":"\\",
             "orderNo":1,
             "createdDt":1587360957961,
             "updatedDt":1587360957961,
             "languages":{
-                "ko":"한국어 말머리3",
-                "ja":"일본어 말머리3",
-                "en":"영어 말머리3",
-                "zh":"중국어 말머리3"
+                "ko":"韓国語テーマ3",
+                "ja":"日本語テーマ3",
+                "en":"英語テーマ3",
+                "zh":"中国語テーマ3"
             }
         }
     }
 }
 ```
 
-### 공지사항 말머리 수정
-#### 인터페이스 설명
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/notice/category/{id}.json												 
-- URL: https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/notice/category/{id}.json			
+### お知らせテーマ修正
+#### インターフェース説明
+- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/notice/category/{id}.json
+- URL（開発）: https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/notice/category/{id}.json	
 											
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|
+|インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|
 |------------|-------|--------|-----|--------|--------------|
-|공지사항 말머리 수정 |HTTPS  |POST  |UTF-8|JSON    |말머리 ID를 통해 말머리 명 수정|
+|お知らせテーマ修正|HTTPS  |POST  |UTF-8|JSON    |テーマIDを通じてお知らせテーマ修正|
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### リクエストパラメータ定義
+|名称|変数|データタイプ|必須|説明|
 |----|-----|------------|-----|---|
-|서비스 ID	|serviceId	|String	|O	|URL PATH 내에 설정한{serviceId}|
-|말머리 ID / 말머리 code	|id	|String	|O	|URL PATH 내에 설정한{id}|
-|말머리 정보	|request body	|String	|O	|말머리 정보（JSON）|
-|	    |name	    |String |	    |말머리 명（유일한 값:예 ; 길이:min = 0, max = 50 ; 형식:^(\_\|-\|[^\\pP])+$）|
-|	    |categoryCode	|String	|	|말머리 Code|
-|	    |languages	|String	   |	|다국어|
-|	    |orderNo	|Int	   |	|정렬순서（고정 값:0）|
+|サービスID	|serviceId	|String	|O	|URL PATH内に設定した{serviceId}|
+|テーマID / テーマcode	|id	|String	|O	|URL PATH内に設定した{id}|
+|テーマ情報	|request body	|String	|O	|テーマ情報（JSON）|
+|	    |name	    |String |		|テーマ名（唯一の値:はい ; 長さ:min = 0, max = 50 ; 形式:^(\_\|-\|[^\\pP])+$）|
+|	    |categoryCode	|String	|	|テーマCode|
+|	    |languages	        |String	|	|多言語|
+|	    |orderNo	|Int	|	|整列順序（固定値:0）|
 
 #### Request Body
 ```
-단일 언어
+単一言語
 {
-    "name":"중국어 말머리3",
+    "name":"中国語テーマ3",
     "categoryCode":"game3",
     "orderNo":1
 }
 
-다국어
+多言語
 {
     "categoryCode":"game3",
     "orderNo":1,
     "languages":{
-        "ko":"한국어 말머리3",
-        "ja":"일본어 말머리3",
-        "en":"영어 말머리3",
-        "zh":"중국어 말머리3"
+        "ko":"韓国語テーマ3",
+        "ja":"日本語テーマ3",
+        "en":"英語テーマ3",
+        "zh":"中国語テーマ3"
     }
 }
 ```
 
-#### 결과 데이터
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### 結果データ
+|名称|変数|データタイプ|必須|説明|
 |---------|--------|-----------|---------|----|
-|result.content	|categoryId	|Int	|O	|말머리 ID|
-|	        |serviceId	|String	|O	|서비스 ID|
-|	        |categoryCode	|String	|	|말머리 Code|
-|	        |parent	        |Int	|	|상위 말머리 ID（고정 값:0）|
-|	        |name	        |String	|O	|말머리 명|
-|	        |level	        |Int	|	|뎁스（고정 값:1）|
-|	        |path	        |String	|	|뎁스 경로（고정 값:"\\\\"）|
-|	        |orderNo	|Int	|	|정렬순서（기본 값:0）|
-|	        |createdDt	|Long	|	|등록시간|
-|	        |updatedDt	|Long	|	|수정시간|
-|	        |languages	|String	|	|다국어|
+|result.content	|categoryId	|Int	|O	|テーマID|
+|	                |serviceId	|String	|O	|サービスID|
+|	                |categoryCode	|String	|	|テーマCode|
+|	                |parent	        |Int	|	|上位テーマID（固定値:0）|
+|	                |name	        |String	|O	|テーマ名|
+|	                |level	        |Int	|	|段階（固定値:1）|
+|	                |path	        |String	|	|段階経路（固定値:"\\\\"）|
+|	                |orderNo	|Int	|	|整列順序（基本:0）|
+|	                |createdDt	|Long	|	|登録時間|
+|	                |updatedDt	|Long	|	|修正時間|
+|	                |languages	|String	|	|多言語|
 
 #### Response Body
 ```
@@ -1862,38 +1862,38 @@
             "serviceId":"multilanguage",
             "categoryCode":"game3",
             "parent":0,
-            "name":"중국어 말머리3",
+            "name":"中国語テーマ3",
             "level":1,
             "path":"\\",
             "orderNo":1,
             "createdDt":1587360957961,
             "updatedDt":1587360957961,
             "languages":{
-                "ko":"한국어 말머리3",
-                "ja":"일본어 말머리3",
-                "en":"영어 말머리3",
-                "zh":"중국어 말머리3"
+                "ko":"韓国語テーマ3",
+                "ja":"日本語テーマ3",
+                "en":"英語テーマ3",
+                "zh":"中国語テーマ3"
             }
         }
     }
 }
 ```
 
-### 공지사항 말머리 삭제
-#### 인터페이스 설명
-- URL: https://{domain}.oc.toast.com /{serviceId}/openapi/v1/notice/category/{id}.json												 
-- URL: https://{domain}.alpha-oc.toast.com /{serviceId}/openapi/v1/notice/category/{id}.json					
+### お知らせテーマ削除
+#### インターフェース説明
+- URL: https://{domain}.oc.toast.com /{serviceId}/openapi/v1/notice/category/{id}.json
+- URL（開発）: https://{domain}.alpha-oc.toast.com /{serviceId}/openapi/v1/notice/category/{id}.json
 											
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|
+|インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|
 |------------|-------|--------|-----|--------|--------------|
-|공지사항 말머리 삭제|HTTPS  |DELETE  |UTF-8|JSON    |말머리 ID를 통해 말머리 명 삭제|
+|お知らせテーマ削除|HTTPS  |DELETE  |UTF-8|JSON    |テーマIDを通じてお知らせテーマ削除|
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### リクエストパラメータ定義
+|名称|変数|データタイプ|必須|説明|
 |----|-----|------------|-----|---|
-|서비스 ID	|serviceId	|String	|O	|URL PATH 내에 설정한{serviceId}|
-|말머리 ID / 말머리 code	|id	|String	|O	|URL PATH 내에 설정한{id}|
+|サービスID	|serviceId	|String	|O	|URL PATH内に設定した{serviceId}|
+|テーマID / テーマcode	|id	|String	|O	|URL PATH内に設定した{id}|
 
-#### 결과 데이터
-- 없음
+#### 結果データ
+- なし
 
