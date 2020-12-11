@@ -1,133 +1,125 @@
-## Contact Center > Online Contact > 서비스 가이드 > 헬프센터
+## Contact Center > Online Contact > Service Guide > Help Center
 
 ## FAQ
-헬프센터 구성 항목 중 **FAQ**를 활성화했을 경우 ([서비스 관리 → 헬프센터 → 구성관리](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_32)에서 활성화 가능), FAQ 메뉴의 기능들을 통해 헬프센터에 등록되는 FAQ (자주 묻는 질문) 문서를 관리할 수 있습니다. 
+If you have enabled **FAQ** among the help center configuration items, (Can enable at [Service Management → Help Center → Default Settings](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_32)), functions in FAQ menu allow you to manage FAQ(frequently asked questions) documents registered to the help center. 
 
 
-### 카테고리 관리
+### Category Management
 ![](http://static.toastoven.net/prod_contact_center/3.1-(1).png)
-FAQ를 등록하기 전 각 문서가 분류될 **카테고리**를 1~3 뎁스까지 추가할 수 있습니다. FAQ 문서 등록 시 **카테고리 선택이 필수**이므로, 문서 등록 전 카테고리 추가를 진행해주세요. **①** 상위 뎁스를 먼저 추가하신 다음, 하위 뎁스에 카테고리를 추가하실 때는 상위 뎁스를 먼저 클릭하신 후 색 변화를 통해 선택된 것을 확인하고 추가해주세요.
+Before registering FAQ documents, you could add **categories** which documents would be classified from 1 to 3 depth. Please proceed adding categories before registering FAQ documents since **selecting category is required** when registering FAQ documents. **①** When adding categories in the lower depth, please click the upper depth category first, and then add after checking if the right upper category is selected.
 
-동일 뎁스 내에 카테고리 명 중복은 불가합니다. (뎁스가 다를 경우 가능)
-카테고리의 **② 수정**과 **③ 삭제**가 가능하며, 상위 뎁스의 카테고리를 삭제할 경우 해당 카테고리에 종속된 하위 뎁스 카테고리까지 함께 삭제되므로 유의해주세요. 
+Duplication of category names is not allowed in the same depth.
+You can **② edit** and **③ delete** categories, and please keep in mind that if upper depth categories are deleted, the sub-depth categories which were dependent on that category will be deleted as well.
 
-✔ **\[FAQ 바로가기]** [기존에 존재하는 카테고리/말머리/태그를 삭제하면 어떻게 되나요?](https://nhn-contact.oc.toast.com/oc/hc/article/63/)
+✔ **\[FAQ Shortcut]** [What happens if existing categories/headings/tags are deleted?](https://nhn-contact.oc.toast.com/oc/hc/article/63/)
 
 
-### 배포문서/초안문서
+### Distribute Document / Draft Document
 ![](http://static.toastoven.net/prod_contact_center/3.1-(2).png)
-FAQ 문서는 다음과 같이 구분됩니다.
--	초안문서: FAQ 문서를 **사전에 저장**해 두고 검증을 받기 위한 단계
--	배포문서: 저장해 둔 초안문서를 검토한 후 **배포**하는 단계
+FAQ documents are divided as follows:
+- Draft Document: Step to **save FAQ documents in advance** and obtain validation
+- Distribute Document: Step to **deploy** after reviewing saved draft documents
 
-배포문서와 초안문서 탭을 통해 현재 Help Center 상에서 노출되어 있는 **배포문서**와, 사전에 작성되어 검증 단계에 있는 **초안문서**에 관련된 다음과 같은 정보를 확인하실 수 있습니다.
--	번호
--	제목
--	메인화면 고정 여부
--	카테고리 별 고정 여부
--	카테고리
--	등록자
--	조회수
--	등록시간
--	수정시간
+From Distribute Document / Draft Document menu, you could check following information about **Distribute Documents** which are displayed in Help Center currently, and **Draft Documents** which are in validation phase.
+-	Number
+-	Title
+-	Fix Main Screen
+-	Fix by Category
+-	Category
+-	Registrant
+-	Views
+-	Registered Time
+-	Modified Time
 
-FAQ 문서의 **① 등록**, **② 수정 및 삭제** 권한은 다음과 같이 구분됩니다.
+Authority for **① Register**, **② Edit and Delete** about FAQ documents is divided into:
 
 ![](http://static.toastoven.net/prod_contact_center/3.1-(2)a.png)
-**관리자**의 경우 배포문서/초안문서 관계없이 모든 문서의 등록/수정/삭제가 가능하며, **일반 상담원 및 티켓상담원**의 경우 초안문서를 등록할 수 있으며 등록된 초안문서를 본인 등록 여부 관계없이 수정할 수 있습니다. 
-배포문서 또는 초안문서를 수정하여 저장하게 되면 등록자는 마지막으로 수정한 사람으로 변경됩니다. 상담원의 경우 **글의 삭제**는 초안문서와 배포문서 모두 **불가능**하므로 작성된 글의 삭제가 필요할 경우 **관리자에게 요청**해주세요.
+**Administrators** could register/edit/delete every document regardless of draft or distributed, and **Agents** could register and edit draft documents. 
+If documents are edited and saved, registrant of the document would be changed to whom edited last. Agents are not able to **delete documents**, so if deletion of registered documents is needed, please ask to your service’s administrator.
 
-### FAQ 등록
+### Register FAQ
 ![](http://static.toastoven.net/prod_contact_center/3.1-(3).png)
-배포문서 또는 초안문서 탭에서 **FAQ 등록** 버튼을 누르시면 FAQ에 등록될 문서를 작성하실 수 있습니다.
+By clicking **Register FAQ** button in distribute document/draft document menu, you could write documents to be displayed in Help Center FAQ.
 
-작성 시 입력이 필요한 부분은 다음과 같습니다.
--	**①** 카테고리: [헬프센터 → FAQ → 카테고리 관리](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-help-center/#_1) 탭에서 등록하셨던 카테고리를 선택해주세요. 헬프센터 FAQ 내에서 해당 카테고리 아래로 배치됩니다.
--	**②** 메인화면 고정: 카테고리 상관없이 전체 FAQ 게시글이 모여 있는 ‘**전체**’ 분류의 상단에 고정됩니다. 가장 최신으로 등록된 게시글이 가장 상단에 고정됩니다.
--	**③** 카테고리 별 고정: 해당 카테고리에 속한 FAQ 게시글이 모여 있는 **개별 카테고리** 분류의 상단에 고정됩니다. 가장 최신으로 등록된 게시글이 가장 상단에 
-    고정됩니다.
--	**④** 제목
--	**⑤** 내용
+Items which need to be filled are as follows:
+- **①** Category: Please select the appropriate category which you added in [Help Center → FAQ → Manage Category](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-help-center/#_1). The document would be placed under the selected category.
+- **②** Fix Main Screen: If checked, the document would be fixed in the top of ‘All’ group which all FAQ documents are displayed regardless of each category. The most recent registered document is pinned to the top.
+- **③** Fix by Category: If checked, the document would be fixed in the top of the **document’s category** group. The most recent registered document is pinned to the top.
+- **④** Title
+- **⑤** Contents
 
-내용을 모두 작성하신 뒤 **⑥ 초안저장** 버튼을 누르시면 초안문서로 등록되며, **⑦ 등록** 버튼을 누르시면 배포문서로 등록되어 바로 헬프센터의 FAQ 상에서 확인하실 수 있습니다.
+After filling in all the contents, click **Save Draft** to register as draft document, and click **Register** to register as distribute document which is showed in Help Center FAQ directly.
 
+## Notice
+If you have enabled **Notice** among the help center configuration items, (Can enable at [Service Management → Help Center → Default Settings]( https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_32)), functions in Notice menu allow you to manage notice documents registered to the help center.  
 
-## 공지사항
-헬프센터 구성 항목 중 **공지사항**을 활성화했을 경우 ([서비스 관리 → 헬프센터 → 구성관리](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_32)에서 활성화 가능), 공지사항 메뉴의 기능들을 통해 헬프센터에 등록되는 공지사항 문서를 관리할 수 있습니다. 
-
-
-### 말머리 관리
+### Manage Heading
 ![](http://static.toastoven.net/prod_contact_center/3.2-(1).png)
-각 문서가 분류될 **말머리**를 추가할 수 있습니다. 공지사항 또는 템플릿 등록 시 **말머리 선택이 필수**이므로, 기존에 추가해두신 말머리가 없는 경우 미리 추가해주세요. 
-말머리 명을 입력하신 후 **① 등록** 버튼을 누르시면 말머리를 등록하실 수 있으며, **② 수정**, **삭제**, **③ 순서변경**이 가능합니다.
-말머리 관리 화면에서 표시되는 순서대로 공지사항 등록 → 말머리에 표시되므로, 표시되는 순서를 조정하고 싶으신 경우 이동하고자 하는 행을 원하는 위치로 드래그 해주세요.
+Before registering notice documents, you could add **headings** which documents would be classified. Please proceed adding headings before registering notice documents since **selecting heading is required** when registering notice documents.
+By clicking **① Register** button after naming, you could add headings. **② Edit**, **Delete**, **③ Change Order** is also possible.
+Headings are displayed when registering notice in the order shown on the Manage Heading menu, so if you want to adjust the order, drag the row you want to move to the desired location.
 
-✔ **\[FAQ 바로가기]** [공지사항은 카테고리 분류 기능이 없나요?](https://nhn-contact.oc.toast.com/oc/hc/article/47/)
-✔ **\[FAQ 바로가기]** [기존에 존재하는 카테고리/말머리/태그를 삭제하면 어떻게 되나요?](https://nhn-contact.oc.toast.com/oc/hc/article/63/)
+✔ **\[FAQ Shortcut]** [How can I classify notice documents?](https://nhn-contact.oc.toast.com/oc/hc/article/47/)
+✔ **\[FAQ Shortcut]** [What happens if existing categories/headings/tags are deleted?](https://nhn-contact.oc.toast.com/oc/hc/article/63/)
 
 
-### 배포문서/초안문서
+### Distribute Document / Draft Document
 ![](http://static.toastoven.net/prod_contact_center/3.2-(2).png)
-공지사항 문서는 다음과 같이 구분됩니다. (FAQ 문서와 동일)
--	초안문서: 공지 문서를 **사전에 저장**해 두고 검증을 받기 위한 단계
--	배포문서: 저장해 둔 초안문서를 검토한 후 **배포**하는 단계
+Notice documents are divided as follows (Same as FAQ documents)
+-	Draft Document: Step to **save notice documents in advance** and obtain validation
+-	Distribute Document: Step to **deploy** after reviewing saved draft documents
+From Distribute Document / Draft Document menu, you could check following information about **Distribute Documents** which are displayed in Help Center currently, and **Draft Documents** which are in validation phase.
+-	Number
+-	Status (In Progress / Done / Reserved)
+-	Heading
+-	Title
+-	Tag
+-	Registrant
+-	Views
+-	Registered Time
 
-배포문서와 초안문서 탭을 통해 현재 Help Center 상에서 노출되어 있는 **배포문서**와, 사전에 작성되어 검증 단계에 있는 **초안문서**에 관련된 다음과 같은 정보를 확인하실 수 있습니다.
--	번호
--	상태 (진행중/예약중/완료)
--	말머리
--	제목
--	태그
--	등록자
--	조회수
--	등록시간
-
-공지사항 문서의 **① 등록**, **② 수정 및 삭제** 권한은 다음과 같이 구분됩니다.
+Authority for **① Register**, **② Edit and Delete** about notice documents is divided into:
 
 ![](http://static.toastoven.net/prod_contact_center/3.1-(2)a.png)
-**관리자**의 경우 배포문서/초안문서 관계없이 모든 문서의 등록/수정/삭제가 가능하며, **일반 상담원 및 티켓상담원**의 경우 초안문서를 등록할 수 있으며 등록된 초안문서를 본인 등록 여부 관계없이 수정할 수 있습니다. 
-배포문서 또는 초안문서를 수정하여 저장하게 되면 등록자는 마지막으로 수정한 사람으로 변경됩니다. 상담원의 경우 **글의 삭제**는 초안문서와 배포문서 모두 **불가능**하므로 작성된 글의 삭제가 필요할 경우 **관리자에게 요청**해주세요.
+**Administrators** could register/edit/delete every document regardless of draft or distributed, and **Agents** could register and edit draft documents. 
+If documents are edited and saved, registrant of the document would be changed to whom edited last. Agents are not able to **delete documents**, so if deletion of registered documents is needed, please ask to your service’s administrator.
 
-
-### 템플릿 관리
+### Manage Template
 ![](http://static.toastoven.net/prod_contact_center/3.2-(3).png)
-공지사항 작성 시 자주 사용하는 양식에 대해 **템플릿**으로 미리 등록하여 문서 작성 시간을 단축할 수 있습니다. 템플릿의 **① 등록**, **② 수정**, **삭제**가 가능하며, 등록된 **템플릿을 클릭**
-하시면 화면 우측에서 표시되는 창을 통해 템플릿의 정보를 확인하실 수 있습니다.
+For frequently used forms when creating notices, you could add templates to shorten the time for creating documents. You could **① Register**, **② Edit**, **Delete** templates, and view information of the template through **clicking each template**. 
 
 ![](http://static.toastoven.net/prod_contact_center/3.2-(4).png)
-**템플릿 등록** 버튼을 통해 템플릿을 작성하실 수 있으며, 입력이 필요한 부분은 다음과 같습니다.
--	**①** 템플릿 제목
--	**②** 템플릿 설명: 템플릿 관리 → 개별 템플릿 클릭 시 제목 하단에 표시되는 설명입니다. 
--	**③** 말머리
--	**④** 태그
--	**⑤** 사용여부: **사용** 표시 → 공지사항 등록 시 **조회 가능**. **미사용** 표시 → **조회되지 않음**
--	**⑥** 제목
--	**⑦** 내용
+Through **Registration Template** button, templates could be created, and items which need to be filled are as follows:
+- **①** Template Title
+- **②** Template Description
+- **③** Heading
+- **④** Tag
+- **⑤** Status: **Able** → **Shown** when registering notice. **Disable** → **Not shown** when registering notice.
+- **⑥** Title
+- **⑦** Contents
 
-
-### 태그 관리
+### Manage Tag
 ![](http://static.toastoven.net/prod_contact_center/3.2-(5).png)
-공지 내용의 주요 **태그**를 등록해 둔 다음, 공지사항 작성 시 알맞은 태그를 선택하여 등록하면 검색 시 활용할 수 있습니다.
-태그 명을 입력하신 뒤 **① 등록** 버튼을 누르시면 태그가 등록되며, 가장 최근에 등록한 태그부터 공지사항 등록 시 조회됩니다. 태그의 **② 수정** 및 **삭제**도 가능합니다.
+**Tags** could be helpful for searching. Tags could be registered by **① Register** button, and **② Editing**, **Deleting** is also available. The most recent registered tag would be viewed first.
 
-✔ **\[FAQ 바로가기]** [기존에 존재하는 카테고리/말머리/태그를 삭제하면 어떻게 되나요?](https://nhn-contact.oc.toast.com/oc/hc/article/63/)
+✔ **\[FAQ Shortcut]** [What happens if existing categories/headings/tags are deleted?](https://nhn-contact.oc.toast.com/oc/hc/article/63/)
 
-
-### 공지사항 등록
+### Register Notice
 ![](http://static.toastoven.net/prod_contact_center/3.2-(6).png)
-배포문서 또는 초안문서 탭에서 **공지사항 등록** 버튼을 누르시면 공지사항에 등록될 문서를 작성하실 수 있습니다.
+By clicking **Registration Notice** button in distribute document/draft document menu, you could write documents to be displayed in Help Center Notice.
 
-작성 시 입력이 필요한 부분은 다음과 같습니다.
--	**①** 템플릿 선택: [헬프센터 → 공지사항 → 템플릿 관리](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-help-center/#_6) 탭에서 등록하셨던 **카테고리**를 선택해주세요. 헬프센터 FAQ 내에서 해당 카테고리 아래로 배치됩니다.
--	**②** 말머리: [헬프센터 → 공지사항 → 말머리 관리](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-help-center/#_4) 탭에서 등록하셨던 **말머리**를 선택해주세요. 헬프센터 공지사항 내에서 해당 카테고리 아래로 배치됩니다.
--	**③** 태그: [헬프센터 → 공지사항 → 태그 관리](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-help-center/#_7) 탭에서 등록하셨던 **태그**를 선택해주세요. 복수 선택 가능합니다.
--	**④** 공지기간: 공지사항이 게시되는 기간입니다. 시작일을 작성 당일 이후로 설정할 경우 해당 날짜로 **예약 등록**됩니다.
--	**⑤** 상단고정: 전체 FAQ 게시글이 모여 있는 ‘**전체**’ 분류의 상단과, 해당 FAQ 게시글이 속해 있는 **말머리 분류**의 상단에 고정됩니다. 
-    가장 최신으로 등록된 게시글이 가장 상단에 고정됩니다.
--	**⑥** 출력일: 헬프센터 공지사항 **게시물 화면에 표시**되는 공지사항 등록일입니다.
--	**⑦** 제목
--	**⑧** 내용
+Items which need to be filled are as follows:
 
-내용을 모두 작성하신 뒤 **⑨ 초안저장** 버튼을 누르시면 초안문서로 등록되며, **⑨ 등록** 버튼을 누르시면 배포문서로 등록되어 바로 헬프센터의 공지사항에서 확인하실 수 있습니다.
+- **①** Select Template: Please select the appropriate template which you registered in  [Help Center → Notice → Manage Template](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-help-center/#_6) menu. The template would be applied
+- **②** Heading:  Please select the appropriate heading which you registered in [Help Center → Notice → Manage Heading](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-help-center/#_4) menu. The document would be placed under the selected heading.
+- **③** Tag: Please select the appropriate tag which you registered in [Help Center → Notice → Manage Tag](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-help-center/#_7) menu. Multiple choices are available.
+- **④** Notice Period: The period which the announcement would be posted. If you set the start date after current creation date, it will be **reserved** with that date.
+- **⑤** Fixed Top: The document will be fixed in the top of **All**, and **document’s category** group. The most recent registered post is pinned to the top.
+- **⑥** Output Date: The date which would be displayed in Help Center as registration date.
+- **⑦** Title
+- **⑧** Contents
 
-✔ **\[FAQ 바로가기]** [공지사항 출력일은 어떤 기능을 하나요?](https://nhn-contact.oc.toast.com/oc/hc/article/46/)
+
+After filling in all the contents, click **Save Draft** to register as draft document, and click **Register** to register as distribute document which is showed in Help Center Notice directly.
+
+✔ **\[FAQ Shortcut]** [What function does the output date of notice document have?](https://nhn-contact.oc.toast.com/oc/hc/article/46/)
