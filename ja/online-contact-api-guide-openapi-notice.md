@@ -750,7 +750,7 @@
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/multilanguage/notice/template.json
 - URL (開発): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/multilanguage/notice/template.json
 		
-|インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
+|インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|
 |------------|-------|--------|-----|--------|--------------|
 |お知らせテンプレートリスト照会|HTTPS  |IN(GET)    |UTF-8|JSON    |テンプレート内容照会, テンプレートリストをリターン|
 
@@ -1254,7 +1254,7 @@
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v2/attachments/notice/{id}
 - URL(開発): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v2/attachments/notice/{id}
 
-|インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
+|インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|
 |------------|-------|--------|-----|--------|--------------|
 |お知らせ添付ファイルを開く/ダウンロード|HTTPS  |GET    |UTF-8|FILE   |サーバーにアップロードしたお知らせ添付ファイルを開く/ダウンロード|
 
