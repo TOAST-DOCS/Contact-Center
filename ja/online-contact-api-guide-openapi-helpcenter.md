@@ -1,23 +1,23 @@
-## Contact Center > Online Contact > API 가이드 > 헬프센터
-### 헬프센터 지정 데이터 추가
-#### 인터페이스 설명
-- URL:	https://{domain}.oc.toast.com /{serviceId}/hc/openapi/v1/addition.json			
-- URL (개발):	https://{domain}.alpha-oc.toast.com /{serviceId}/hc/openapi/v1/addition.json			
+## Contact Center > Online Contact > プログラマーのためのAPIガイド > ヘルプセンター
+### ヘルプセンター指定データ追加
+#### インターフェース説明
+- URL:	https://{domain}.oc.toast.com/{serviceId}/hc/openapi/v1/addition.json			
+- URL (開発):	https://{domain}.alpha-oc.toast.com/{serviceId}/hc/openapi/v1/addition.json			
 
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|
+|インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|
 |------------|-------|--------|-----|--------|--------------|
-|헬프센터에 지정 데이터 추가|HTTPS  |POST    |UTF-8|JSON    |추가로 필요한 고객정보를 DB에 저장|
+|ヘルプセンターに指定データ追加|HTTPS  |POST    |UTF-8|JSON    |追加的に必要な顧客情報をDBに保存|
 
-#### 요청 파라미터
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### リクエストパラメータ定義
+|名称|変数|データタイプ|必須|説明|
 |-----|----|-----------|-----|----|
-|서비스 ID	|serviceId	|String	|O	|URL PATH 내에 설정한{serviceId}|
-|	         |content	|String	|O	|추가 고객정보|
+|サービスID	|serviceId	|String	|O	|URL PATH内に設定した{serviceId}|
+|	         |content	|String	|O	|追加顧客情報|
 
-#### 결과 데이터
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### 結果データ
+|名称|変数|データタイプ|必須|説明|
 |-----|-----|-----------|----|----|
-|result.content	|additionId	|String	|O	|생성된 ID|
+|result.content	|additionId	|String	|O	|生成されたID|
 
 #### Response Body
 ```
