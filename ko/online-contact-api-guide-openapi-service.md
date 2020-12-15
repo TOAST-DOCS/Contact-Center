@@ -317,7 +317,8 @@
 
 #### 결과 데이터
 |명칭	|변수	|데이터 타입	|필수	|설명|
-|result.content		|String	|X	|"SUCCESS":삭제 성공, "ENABLE":활성화 상태로 삭제할 수 없음，비활성화 후 삭제 가능|
+|-----|----|------------|----|----|
+|result.content	|	|String	|X	|"SUCCESS":삭제 성공, "ENABLE":활성화 상태로 삭제할 수 없음，비활성화 후 삭제 가능|
 
 #### Response Body
 ```
