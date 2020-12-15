@@ -1,30 +1,29 @@
-## Contact Center > Online Contact > API 가이드 > SSO 로그인
-## 개요
-### SSO 로그인 개요
-SSO 로그인은 사용자 시스템과 상담 시스템을 연동하는 기능이며, 원격인증은 API Key를 통해 진행됩니다.
-API Key는 임의로 생성되는 유일한 문자열이며 원격로그인을 통해 상담시스템에 접속할 수 있도록 하는 안전한 인증방식입니다.
+## Contact Center > Online Contact > プログラマーのためのAPIガイド > シングルサインオン
 
-### SSO 로그인 프로세스
-1. 고객이 문의 접수, 채팅 상담 등을 위해 상담 시스템에 접속
-2. 고객이 상담 시스템에서 로그인 시도 시 상담 조직에서 설정해 둔 SSO 로그인 화면으로 이동
-3. Online Contact의 로그인 화면이 아닌, 제공 중인 시스템의 로그인 화면에서 로그인
-4. 로그인 성공후, 유저 정보와 API Key를 통해 토큰 생성
-5. 유저 정보와 토큰을 상담 시스템으로 전달
-6. 상담 시스템에서 토큰에 대해 인증, 성공후 고객 로그인 진행
-7. 로그인 전 화면으로 이동（returnUrl）
+## 概要
+### シングルサインオン概要
+シングルサインオンを使ったログインはユーザーシステムと相談システムを連動する機能で、遠隔認証はAPI  Keyを通じて行われます。API  Keyは、任意に生成される唯一の文字列で、遠隔ログインを通じて相談システムに接続できる安全な認証方式です。
 
-### SSO 로그인 설정
-#### SSO 로그인 등록
+### シングルサインオンプロセス
+1. お客様がお問い合わせ、チャット相談などのため、相談システムに接続
+2. お客様が相談システムでログインを試みる際、相談組織で設定しておいたSSOログイン画面に移動
+3. Online  Contactのログイン画面ではなく、提供中のシステムのログイン画面からログイン
+4. ログインに成功した後、ユーザー情報とAPIキーでトークンを作成
+5. ユーザー情報とトークンを相談システムに配信
+6. 相談システムでトークンに対して認証、成功後に顧客ログインを実施
+7. ログイン前の画面に移動（returnUrl）
+
+### シングルサインオン設定
+#### シングルサインオン登録
 ![](http://static.toastoven.net/prod_contact_center/dev3.png)
-Online Contact 접속 후, 전체 관리 → SSO 로그인 메뉴에서 SSO 로그인을 먼저 등록합니다. SSO 로그인 URL, 로그인 상태 URL을 입력해주세요.
-SSO 로그인을 등록하신 후에 API Key를 복사해주세요. 원격로그인 API 호출 시 인증 토큰으로 사용됩니다.
+Online  Contactに接続した後、全体管理→SSOログインメニューでSSOログインを先に登録します。 SSOログインURL、ログイン状態URLを入力してください。SSOログインを登録した後にAPI  Keyをコピーしてください。 リモートログイン  API  を呼び出す時、認証トークンとして使用されます。
 
-#### SSO 로그인 활성화 및 지정
+#### シングルサインオン活性化·指定
 ![](http://static.toastoven.net/prod_contact_center/dev4.png) 
-서비스 관리 → 인증 → SSO 로그인 탭에서 SSO 로그인의 활성화 및 비활성화가 가능하며, 활성화하셨을 경우 선택하신 서비스에 지정하실 SSO 로그인을 선택하실 수 있습니다.
+サービス管理  →  認証  →  SSOログインタブで、SSOログインの有効化および無効化が可能で、有効化した場合は、選択したサービスに指定するSSOログインを選択できます。
 
-#### 인증토큰 생성
-Token 생성 샘플은 아래와 같습니다. 파라미터 순서는 반드시 아래와 일치해야 하며, SSO 로그인 API Key를 확인해주세요.
+#### 認証トークン作成
+Token生成サンプルは以下の通りです。 パラメータ順序は必ず下記と一致している必要があり、SSOログインAPIキーを確認してください。
 ```
 private String getSHA256Token(String serviceId, String usercode, String username, String email, String phone,
         String returnUrl, Long time, String apiKey) throws Exception {
@@ -60,105 +59,105 @@ private String getSHA256Token(String serviceId, String usercode, String username
 }
 ```
 
-## SSO 로그인 API
-### SSO 원격로그인 API (Client Side)
-#### 인터페이스 설명
+## シングルサインオンAPI
+### SSO遠隔ログインAPI (Client Side)
+#### インターフェース説明
 - URL: https://{domain}.oc.toast.com/v2/enduser/remote.json			
-- URL (개발): https://{domain}.alpha-oc.toast.com/v2/enduser/remote.json		
+- URL (開発): https://{domain}.alpha-oc.toast.com/v2/enduser/remote.json		
 
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|
+|インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|
 |------------|-------|--------|-----|--------|--------------|
-|SSO 원격로그인 API (Client Side)|HTTPS  |POST    |UTF-8|Redirect    |사용자 시스템에서 동적으로 form를 생성하여 브라우저에 반환하며, form은 자동으로 API에 form정보를 전달. API에서 전달된 form정보로 인증 후 성공시 로그인 Cookie 값 설정.|
+|SSO遠隔ログインAPI (Client Side)|HTTPS  |POST    |UTF-8|Redirect    |ユーザーシステムで動的にformを生成してブラウザに返し、formは自動的にAPIにform情報を伝達。 APIで配信されたform情報で認証後、成功時のログインCookie値設定。|
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### リクエストパラメータ定義
+|名称|変数|データタイプ|必須|説明|
 |-----|----|------------|----|----|
-|서비스ID	|service	|Varchar(50)	|O	|서비스 ID|
-|유저ID	   |usercode	|Varchar(50)	|O	|유저ID，유일한 유저임을 표시|
-|유저 명	  |username	|Varchar(50)	|X	|유저 명|
-|유저 이메일 주소	|email	|Varchar(100)	|X	|유저 이메일|
-|전화번호	        |phone	|Varchar(20)	|X	|전화번호|
-|현재 시간의 timestamp	|time	|Long	|O	|호출 시간이 3분 초과시, 타임아웃 얼럿 출력.|
-|인증 Token	           |token	|Varchar	|O	|아래 파라미터 값과 SSO API Key로 산출된 SHA256 (필수가 아닌 파라미터 값이 null 혹은 빈값일 경우 , 암호화 문자열에 추가 할 필요 없음.주의：문자열 중 각 값의 순서는 아래 예시에 지정된 순서와 일치해야 함.) SHA256Digest(service + usercode + username + email + phone + retunrnUrl + time)|
-|리턴 화면 URL	|returnUrl	|Varchar	|X	|설정 및 로그인 성공시 해당 주소로 이동|
+|サービスID	|service	|Varchar(50)	|O	|サービスID|
+|ユーザーID	   |usercode	|Varchar(50)	|O	|ユーザーID，唯一のユーザーであることを表示|
+|ユーザー名	  |username	|Varchar(50)	|X	|ユーザー名|
+|ユーザーメールアドレス	|email	|Varchar(100)	|X	|ユーザーメールアドレス|
+|電話番号	        |phone	|Varchar(20)	|X	|電話番号|
+|現在時間のtimestamp	|time	|Long	|O	|呼び出し時間が3分を超える場合、タイムアウトアラート出力。|
+|認証Token	           |token	|Varchar	|O	|以下のパラメータ値とSSO  API  Keyにより算出された SHA256 (パラメータ値がnull、または空の値の場合、暗号化文字列に追加する必要はない。注意:文字列のうち、各値の順序は、以下の例に指定された順序と一致している必要がある。) SHA256Digest(service + usercode + username + email + phone + retunrnUrl + time)|
+|リターン画面URL	|returnUrl	|Varchar	|X	|設定およびログインに成功した場合、そのアドレスに移動|
 
-#### 결과 데이터
-returnUrl 파라미터 존재시 지정된 returnUrl로 이동 , returnUrl 없을 경우 문자열 : SUCCESS 반환
+#### 結果データ
+returnUrlパラメータが存在する場合、指定されたreturnUrlに移動、returnUrlがない場合は文字列:SUCCESSを返します。
 
-### SSO 원격로그인 API (Server Side)
-#### 인터페이스 설명
+### SSO遠隔ログインAPI (Server Side)
+#### インターフェース説明
 - URL: https://{domain}.oc.toast.com/api/v2/enduser/remote.json			
-- URL (개발): https://{domain}.alpha-oc.toast.com/api/v2/enduser/remote.json			
+- URL (開発): https://{domain}.alpha-oc.toast.com/api/v2/enduser/remote.json			
 
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|
+|インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|
 |------------|-------|--------|-----|--------|--------------|
-|SSO 원격로그인 API (Server Side)|HTTPS  |POST    |UTF-8|String   |사용자가 서버에서 직접 API 호출. API 로그인 성공 후 로그인 Cookie 값 설정.|
+|SSO遠隔ログインAPI(Server Side)|HTTPS  |POST    |UTF-8|String   |ユーザがサーバーから直接APIを呼び出し。 APIログイン成功後にログインCookie値を設定。|
   
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### リクエストパラメータ定義
+|名称|変数|データタイプ|必須|説明|
 |-----|----|-----------|-----|----|
-|서비스ID	|service	|Varchar(50)	|O	|서비스 ID|
-|유저ID	|usercode	|Varchar(50)	|O	|유저ID，유일한 유저임을 표시|
-|유저 명	|username	|Varchar(50)	|X	|유저 명|
-|유저 이메일 주소	|email	|Varchar(100)	|X	|유저 이메일|
-|전화번호	|phone	|Varchar(20)	|X	|전화번호|
-|현재 시간의 timestamp	|time	|Long	|O	|호출 시간이 3분 초과시, 타임아웃 얼럿 출력.|
-|인증 Token	|token	|Varchar	|O	|아래 파라미터 값과 SSO API Key로 산출된 SHA256 (필수가 아닌 파라미터 값이 null 혹은 빈값일 경우 , 암호화 문자열에 추가 할 필요 없음.주의：문자열 중 각 값의 순서는 아래 예시에 지정된 순서와 일치해야 함.) SHA256Digest(service + usercode + username + email + phone + time)|
+|サービスID	|service	|Varchar(50)	|O	|サービスID|
+|ユーザーID	   |usercode	|Varchar(50)	|O	|ユーザーID，唯一のユーザーであることを表示|
+|ユーザー名	  |username	|Varchar(50)	|X	|ユーザー名|
+|ユーザーメールアドレス	|email	|Varchar(100)	|X	|ユーザーメールアドレス|
+|電話番号	        |phone	|Varchar(20)	|X	|電話番号|
+|現在時間のtimestamp	|time	|Long	|O	|呼び出し時間が3分を超える場合、タイムアウトアラート出力。|
+|認証Token	           |token	|Varchar	|O	|以下のパラメータ値とSSO  API  Keyにより算出された SHA256 (パラメータ値がnull、または空の値の場合、暗号化文字列に追加する必要はない。注意:文字列のうち、各値の順序は、以下の例に指定された順序と一致している必要がある。) SHA256Digest(service + usercode + username + email + phone + time)|
 
-#### 결과 데이터
+#### 結果データ
 SUCCESS
  
-### SSO 로그인 URL (사용자)
-#### 인터페이스 설명
-|인터페이스 명|프로토콜|호출방향|인코딩|URL|URL(개발)|결과 형식|
+### SSOログインURL (ユーザー)
+#### インターフェース説明
+|インターフェース名|プロトコル|呼び出し方向|エンコード|URL|URL(開発)|結果形式|
 |------------|--------|--------|------|--|----------|--------|
-|SSO 로그인 URL|HTTPS|GET|UTF-8|사용자 제공|사용자 제공|Redirect|
+|SSOログインURL|HTTPS|GET|UTF-8|ユーザー提供|ユーザー提供|Redirect|
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### リクエストパラメータ定義
+|名称|変数|データタイプ|必須|説明|
 |---------|---------|-----------|---------|----|
-|리턴 URL	|returnUrl	|Varchar	|O	|로그인 성공후 이동되는 URL|
+|リターンURL	|returnUrl	|Varchar	|O	|ログイン成功後に移動するURL|
 
-#### SSO 로그인 기능 설명
-**유저 미 로그인 상태**
-- ① 로그인 화면으로 이동
-- ② 유저 로그인
-- ③ 서비스 측의 서버에서 유저 로그인 처리 및 로그인 유저 관련 쿠키 생성
-- ④ SSO 원격 로그인 API 호출
+#### SSOログイン機能の説明
+**ユーザー未ログイン状態**
+- ① ログイン画面に移動
+- ② ユーザーログイン
+- ③ サービス側のサーバーからユーザーのログイン処理およびログインユーザー関連クッキー作成
+- ④ SSO遠隔ログインAPI呼び出し
 
-**유저 로그인 상태**
-- ① SSO 원격 로그인 API 호출
+**ユーザーログイン状態**
+- ① SSO遠隔ログインAPI呼び出し
 
-#### SSO 원격 로그인 API 호출 방법 설명
-**SSO 원격 로그인 (Client Side)**
-- ① 유저 정보와 API Key 기준으로 로그인 token 생성
-- ② 유저 정보와 token을 브라우저로 리다이렉트
-- ③ 화면에서 Form 작성, 상세한 파라미터는 [SSO 원격 로그인 API-1]() 참조
-- ④ Form 제출
-- ⑤ SSO 원격 로그인 API를 통해 유저 정보와 token 전송
-- ⑥ 로그인 성공 후 {returnUrl}로 이동
+#### SSO遠隔ログインAPI呼び出し方法の説明
+**SSO遠隔ログイン(Client Side)**
+- ① ユーザー情報とAPI  Key基準でログインtoken作成
+- ② ユーザー情報とtokenをブラウザーにリダイレクト
+- ③ 画面でForm作成, 詳しいパラメーターは [SSO遠隔ログインAPI (Client Side)]() 参考
+- ④ Form提出
+- ⑤ SSO遠隔ログインAPIによりユーザー情報とtoken送信
+- ⑥ ログインに成功した後、{returnUrl}に移動
 
-**SSO 원격 로그인 (Server Side)**
-- ① 유저 정보와 API Key 기준으로 로그인 token 생성
-- ② 서버에서 "SSO 원격 로그인 API (Server Side)" 호출
-- ③ API 호출 파라미터 (usercode와 time)을 returnUrl 뒤에 추가 
-  - 예시) https://nhn-cs.alpha-oc.toast.com/multilanguage/hc/ticket/list/?usercode=xxxxxx@163.com&time=1566531359635
-- ④ {returnUrl}로 이동
+**SSO遠隔ログイン(Server Side)**
+- ① ユーザー情報とAPI  Key基準でログインtoken作成
+- ② サーバーから「SSO遠隔ログインAPI(Server  Side)」呼び出し
+- ③ API呼び出しパラメータ(usercodeとtime)をreturnUrlの後に追加 
+  - 例示) https://nhn-cs.alpha-oc.toast.com/multilanguage/hc/ticket/list/?usercode=xxxxxx@163.com&time=1566531359635
+- ④ {returnUrl}に移動
  
-### SSO 로그인 상태 API (사용자)
+### SSOログイン状態API(ユーザー)
 #### 인터페이스 설명
-|인터페이스 명|프로토콜|호출방향|인코딩|URL|URL(개발)|인터페이스 설명|결과 형식|
+|インターフェース名|プロトコル|呼び出し方向|エンコード|URL|URL(開発)|インターフェース説明|結果形式|
 |------------|--------|--------|------|--|----------|--------|--------------|
-|SSO 로그인 상태 API|HTTPS|GET|UTF-8|사용자 제공|사용자 제공|사용자가 쿠키 정보를 기준으로 로그인 여부를 확인 후 JSON 형식의 데이터를 리턴|JSON|
+|SSOログイン状態API|HTTPS|GET|UTF-8|ユーザー提供|ユーザー提供|ユーザーがクッキー情報を基準にログインを確認した後、JSON形式のデータをリターン|JSON|
 
-#### 요청 파라미터 정의 
-- 없음
+#### リクエストパラメータ定義
+- なし
 
-#### 결과 데이터
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### 結果データ
+|名称|変数|データタイプ|必須|説明|
 |---------|---------|-----------|---------|----|
-|javascript function	|login	|Boolean	|O	|로그인 상태. 로그인 ：true, 미로그인 ：false|
-|유저 코드	|usercode	|Varchar(50)	|X	|유저 ID(유니크 값). 로그인 상태가 true 인 경우 유저코드는 필수|
+|javascript function	|login	|Boolean	|O	|ログイン状態. ログイン ：true, 未ログイン ：false|
+|ユーザーコード	|usercode	|Varchar(50)	|X	|ユーザーID(ユニーク値). ログイン状態がtrueの場合、ユーザーコードは必須|
 
 #### Response Body
 ```
@@ -171,4 +170,68 @@ SUCCESS
 "login": "false",
 "usercode": null
 }
+```
+
+## 適用例
+### Sample Code
+✔ [Sample Code 다운로드](http://static.toastoven.net/prod_contact_center/oc_sso_sample.zip)
+
+### iframeを利用したヘルプセンターの例
+#### 1. iframeを利用してOnline  Contactヘルプセンターをユーザーページに挿入
+Sample  Codeファイルのうち「oc_sso_sample/src/main/resources/templates/help_frame.ftl」を参照してください。
+iframeの名前は必ずid="ocPage"と指定しなければなりません。
+```
+<iframe src="https://${domain}/hangame/hc/?iframe=true" id="ocPage" frameborder="0" scrolling="no" style="padding-top: 60px; box-sizing: unset; height: 100px; width: 100%">
+</iframe>
+```  
+ 
+ページにviewportを設定する際、mobile／webブラウザのどちらでもヘルプセンターを使用できます。
+```
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0">
+```
+
+#### 2. Online  Contactヘルプセンターページの高さを確認してiframeのheight調整
+help_frame.ftl  ファイルのうち、javascript  コードを参照してください。
+```
+// Listener for OC content height change
+window.addEventListener('message',function(event){
+    // Set iframe height
+    if(event.data > 0) {
+    updateHeight(event.data);
+    }
+});
+
+var updateHeight = function(wrapHeight) {
+var iframe = window.document.getElementById('ocPage');
+if(iframe != null) {
+iframe.style.height = '0px'; 
+var setHeight = (document.body.clientHeight > document.body.scrollHeight) ? document.body.clientHeight : document.body.scrollHeight;
+var margin = 70;
+setHeight = setHeight > wrapHeight ? setHeight : wrapHeight;
+iframe.style.height = setHeight + margin + "px";
+}
+};
+```
+
+#### 3. ログイン処理後に設定するクッキーは、ユーザーページから取得可能
+help_frame.ftl  ファイルのうち、javascript  コードを参照してください。
+```
+// get cookie
+function getCookie(name) {
+    var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
+    if(arr=document.cookie.match(reg))
+        return unescape(arr[2]);
+    else
+        return null;
+}
+$.when( $.ready ).then(function() {
+    var ssotoken = getCookie("sso_test_login");
+    var usercode = getCookie("usercode");
+    if(ssotoken != null && usercode != null) {
+        var signout = $("#signout");
+        $("#signout").html("Welcome " + usercode + "! <a href='/logout.nhn'>Sign out</a>");
+        $("#signout").show();
+        $("#signin").hide();
+    }
+});
 ```
