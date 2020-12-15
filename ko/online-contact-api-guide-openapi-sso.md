@@ -175,7 +175,7 @@ SUCCESS
 
 ## 적용 예시
 ### Sample Code
-✔ [Sample Code 다운로드](http://static.toastoven.net/prod_contact_center/oc_sso_sample-20191115.zip)
+✔ [Sample Code 다운로드](http://static.toastoven.net/prod_contact_center/oc_sso_sample.zip)
 
 ### iframe을 이용한 헬프센터 예시
 #### 1. iframe을 이용하여 Online Contact 헬프센터를 사용자 페이지에 삽입
