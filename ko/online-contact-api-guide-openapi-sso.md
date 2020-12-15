@@ -133,7 +133,7 @@ SUCCESS
 **SSO 원격 로그인 (Client Side)**
 - ① 유저 정보와 API Key 기준으로 로그인 token 생성
 - ② 유저 정보와 token을 브라우저로 리다이렉트
-- ③ 화면에서 Form 작성, 상세한 파라미터는 [SSO 원격 로그인 API-1]() 참조
+- ③ 화면에서 Form 작성, 상세한 파라미터는 [SSO 원격로그인 API (Client Side)](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-sso/#sso-api-client-side) 참조
 - ④ Form 제출
 - ⑤ SSO 원격 로그인 API를 통해 유저 정보와 token 전송
 - ⑥ 로그인 성공 후 {returnUrl}로 이동
