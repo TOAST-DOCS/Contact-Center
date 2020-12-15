@@ -1,143 +1,149 @@
-## Contact Center > Online Contact > 서비스 가이드 > 가이드
+## Contact Center > Online Contact > Service Guide > Guide
 
-### 내부공지
-조직 내부에서 공유되어야 하는 **공지사항**을 관리자의 권한으로 등록할 수 있는 메뉴입니다. 등록된 공지사항은 **해당 메뉴**와 **Online Contact 메인 화면**에서 확인하실 수 있습니다. 
+## Internal Notice
+In this menu, administrators could register **notice** which should be shared within the organization. Registered notice documents are viewed in the **relevant menu**, and **main page of Online Contact**. 
 
-#### 말머리 관리
-![](http://static.toastoven.net/prod_contact_center/7.1-(2).png)
-각 공지 문서가 분류될 **말머리**를 추가할 수 있습니다. 공지사항 또는 템플릿 등록 시 **말머리 선택**이 필수이므로, 기존에 추가해두신 말머리가 없는 경우 미리 추가해주세요. 등록, 수정 및 삭제의 권한은 **관리자에게만** 있습니다.
+### Manage Heading
+![](http://static.toastoven.net/prod_contact_center/7.1-(2)_en.png)
+Before registering notice documents, you could add **headings** which documents would be classified. Please proceed adding headings before registering notice documents or templates since **selecting heading is required** when registering. Only **administrators** could register, edit, delete headings.
 
-말머리는 다음과 같이 구분됩니다.
--	① 전용: 조직 내의 **해당 서비스에서만** 사용하는 말머리
--	② 공통: 조직 내의 **모든 서비스에서** 사용하는 말머리로, 등록하는 순간 해당 조직에 연결된 모든 서비스에 공통적으로 등록됨
+Headings of internal notice are divided as follows:
+-	**①** Private: Heading which is used **only in the relevant service**
+-	**②** Common: Heading which is used in **the entire service in the organization**. When registered, it is registered commonly to all services inside the organization.
 
-말머리 구분을 선택하신 후, 말머리 명을 입력하고 등록 버튼을 누르시면 말머리를 등록하실 수 있으며, 수정, 삭제가 가능합니다.
+You can register headings by selecting heading classification, entering name and pressing the registration button, and you can edit and delete headings.
 
-전용/공통 여부와 관계없이 말머리 명은 **중복이 불가**하므로 유의해주세요.
+Please note that heading names cannot be duplicated, regardless of whether they are private or common.
 
-#### 배포문서
-[](http://static.toastoven.net/prod_contact_center/7.1-(1))
-배포문서 탭을 통해 현재 조직에 속한 상담원들에게 노출되어 있는 공지 문서 관련 정보를 확인 및 검색하실 수 있으며, 공지사항 문서의 등록과 수정 및 삭제가 가능합니다. ① **등록**, ② **수정** 및 **삭제**의 권한은 **관리자에게만** 있습니다.
+✔ **\[FAQ Shortcut]** [What happens if existing categories/headings/tags are deleted?](https://nhn-contact.oc.toast.com/oc/hc/article/63/)
 
-확인하실 수 있는 정보는 다음과 같습니다.
--	번호
--	상태 (진행중/예약중/완료)
--	말머리
--	제목
--	태그
--	등록자
--	등록시간
 
-#### 템플릿 관리
-![](http://static.toastoven.net/prod_contact_center/7.1-(4).png)
-공지사항 작성 시 자주 사용하는 양식에 대해 **템플릿**으로 미리 등록하여 문서 작성 시간을 단축할 수 있습니다. 
+### Distribute Document
+![](http://static.toastoven.net/prod_contact_center/7.1-(1)_en.png)
+From distribute document menu, you could view or search information related to notice documents which are currently shown to agents in the organization. **① Registering**, **② editing**, **deleting** of notice documents are available to **only administrators.**
 
-템플릿 ⑧ **등록** 버튼을 통해 템플릿을 작성하실 수 있으며, 등록, 수정 및 삭제의 권한은 **관리자에게만** 있습니다.
+Viewable information is as follows:
+-	Number
+-	Status (In Progress/Reserved/Done)
+-	Heading
+-	Title
+-	Tag
+-	Registrant
+-	Registered Time
 
-입력이 필요한 부분은 다음과 같습니다.
--	① 템플릿 제목
--	② 템플릿 설명: 템플릿 관리 → 개별 템플릿 클릭 시 제목 하단에 표시되는 설명입니다. 
--	③ 말머리
--	④ 태그
--	⑤ 사용여부: 사용 표시 → 공지사항 등록 시 조회 가능. 미사용 표시 → 조회되지 않음
--	⑥ 제목
--	⑦ 내용
+### Manage Template
+![](http://static.toastoven.net/prod_contact_center/7.1-(4)_en.png)
+For frequently used forms when creating notices, you could add templates to shorten the time for creating documents. You could **① Register** templates, and only **administrators** could register, edit, delete templates.
 
-#### 태그 관리
-![](http://static.toastoven.net/prod_contact_center/7.1-(5).png)
-공지 내용의 주요 **태그**를 등록해 둔 다음, 공지사항 작성 시 알맞은 태그를 선택하여 등록하면 **검색 시 활용**할 수 있습니다. ③ **등록**, ④ **수정** 및 **삭제**의 권한은 **관리자에게만** 있습니다.
+Items which need to be filled are as follows:
+- **①** Template Title
+- **②** Template Description
+- **③** Heading
+- **④** Tag
+- **⑤** Status: **Able** → **Shown** when registering notice. **Disable** → **Not shown** when registering notice.
+- **⑥** Title
+- **⑦** Contents
 
-태그는 다음과 같이 구분됩니다.
--	① 전용: 조직 내의 **해당 서비스에서만** 사용하는 태그
--	② 공통: 조직 내의 **모든 서비스에서** 사용하는 태그로, 등록하는 순간 해당 조직에 연결된 모든 서비스에 공통적으로 등록됨
+### Manage Tag
+![](http://static.toastoven.net/prod_contact_center/7.1-(5)_en.png)
+**Tags** could be helpful for searching. Tags could be registered by **① Register** button, and **② Editing**, **Deleting** is also available. Only **administrators** could register, edit, delete tags. The most recent registered tag would be viewed first.
 
-태그 구분을 선택하신 후, 태그 명을 입력하시고 ③ **등록** 버튼을 누르시면 태그가 등록되며, 가장 최근에 등록한 태그부터 공지사항 등록 시 조회됩니다. 
+Tags are divided as follows:
+-	**①** Private: Tags which is used **only in the relevant service**
+-	**②** Common: Tags which is used in **the entire service in the organization**. When registered, it is registered commonly to all services inside the organization.
 
-전용/공통 여부와 관계없이 태그 명은 **중복이 불가**하므로 유의해주세요. 
+You can register tags by selecting classification, entering name and pressing the **③ registration** button.
+Please note that tag names cannot be duplicated, regardless of whether they are private or common.
 
-#### 공지사항 등록
-배포문서 탭에서 **공지사항 등록** 버튼을 누르시면 조직의 상담원들에게 공유될 공지사항 문서를 작성하실 수 있습니다.
+✔ **\[FAQ Shortcut]** [What happens if existing categories/headings/tags are deleted?](https://nhn-contact.oc.toast.com/oc/hc/article/63/)
 
-![](http://static.toastoven.net/prod_contact_center/7.1-(3).png)
-공지사항 등록 시 입력이 필요한 부분은 다음과 같습니다.
--	① 템플릿 선택
--	② 말머리
--	③ 태그
--	④ 공지기간: 공지 시작일을 미래로 설정하면 해당 날짜로 **예약 등록**됩니다.
--	⑤ 전체 공지사항: 해당 항목을 체크할 경우 해당 조직에 연결된 **모든 서비스에** 공지사항으로 등록됩니다. 따라서 조직 내의 개별 서비스에서만 사용하는 ‘**전용**’ 말머리를 사용하실 수 없습니다. 
--	⑥ 상단고정
--	⑦ 제목
--	⑧ 내용
+### Register Notice
+By clicking **Registration Notice** button in distribute document menu, you could create notice document to be shared to agents of the organization.
 
-내용을 모두 입력하신 뒤 하단 ⑨ **등록** 버튼을 누르시면 공지사항으로 등록됩니다.
+![](http://static.toastoven.net/prod_contact_center/7.1-(3)_en.png)
+Items which need to be filled are as follows:
+- **①** Select Template
+- **②** Heading
+- **③** Tag
+- **④** Notice Period: The period which the announcement would be posted. If you set the start date after current creation date, it will be **reserved** with that date.
+- **⑤** Global Notice: If you check this item, the document would be registered to **every service** in the organization. Thus **private** headings and tags would be unable to use.
+- **⑥** Fixed Top
+- **⑦** Title
+- **⑧** Contents
 
-### 지식관리
-조직 내부에서 공유되어야 하는 **상담 관련 지식**을 관리자의 권한으로 등록할 수 있는 메뉴입니다. 등록된 상담지식은 **해당 메뉴**와 **Online Contact 메인 화면**에서 확인하실 수 있습니다.
+After filling all the items, click **⑨ Register** button to register document.
 
-#### 말머리 관리
-![](http://static.toastoven.net/prod_contact_center/7.2-(2).png)
-각 상담지식이 분류될 **말머리**를 추가할 수 있습니다. 상담지식 또는 템플릿 등록 시 **말머리 선택이 필수**이므로, 기존에 추가해두신 말머리가 없는 경우 미리 추가해주세요. 등록, 수정 및 삭제의 권한은 **관리자에게만** 있습니다.
+## Knowledge Management
+In this menu, administrators could register **consultation knowledge** which should be shared within the organization. Registered knowledge documents are viewed in the **relevant menu**, and **main page of Online Contact**.
 
-말머리는 다음과 같이 구분됩니다.
--	① 전용: 조직 내의 **해당 서비스에서만** 사용하는 말머리
--	② 공통: 조직 내의 **모든 서비스에서** 사용하는 말머리로, 등록하는 순간 해당 조직에 연결된 모든 서비스에 공통적으로 등록됨
+### Manage Heading
+![](http://static.toastoven.net/prod_contact_center/7.2-(2)_en.png)
+Before registering knowledge documents, you could add **headings** which documents would be classified. Please proceed adding headings before registering documents or templates since **selecting heading is required** when registering. Only **administrators** could register, edit, delete headings.
 
-말머리 구분을 선택하신 후, 말머리 명을 입력하고 **등록** 버튼을 누르시면 말머리를 등록하실 수 있으며, 수정, 삭제가 가능합니다.
+Headings of internal notice are divided as follows:
+-	**①** Private: Heading which is used **only in the relevant service**
+-	**②** Common: Heading which is used in **the entire service in the organization**. When registered, it is registered commonly to all services inside the organization.
 
-전용/공통 여부와 관계없이 말머리 명은 **중복이 불가**하므로 유의해주세요.
+You can register headings by selecting heading classification, entering name and pressing the **registration** button, and you can edit and delete headings.
 
-#### 상담지식
-![](http://static.toastoven.net/prod_contact_center/7.2-(1).png)
-상담지식 탭을 통해 현재 조직에 속한 상담원들에게 노출되어 있는 상담지식 관련 정보를 확인 및 검색하실 수 있으며, 상담지식 문서의 등록과 수정 및 삭제가 가능합니다. ① **등록**, ② **수정** 및 **삭제**의 권한은 **관리자**에게만 있습니다.
+Please note that heading names **cannot be duplicated**, regardless of whether they are private or common.
 
-확인하실 수 있는 정보는 다음과 같습니다.
--	번호
--	상태 (진행중/예약중/완료)
--	말머리
--	제목
--	태그
--	등록자
--	등록시간
+✔ **\[FAQ Shortcut]** [What happens if existing categories/headings/tags are deleted?](https://nhn-contact.oc.toast.com/oc/hc/article/63/)
 
-#### 템플릿 관리
-![](http://static.toastoven.net/prod_contact_center/7.2-(4).png)
-상담지식 작성 시 자주 사용하는 양식에 대해 **템플릿**으로 미리 등록하여 문서 작성 시간을 단축할 수 있습니다. 
 
-템플릿 ⑧ **등록** 버튼을 통해 템플릿을 작성하실 수 있으며, 등록, 수정 및 삭제의 권한은 관리자에게만 있습니다.
+### Consultation knowledge
+![](http://static.toastoven.net/prod_contact_center/7.2-(1)_en.png)
+From consultation knowledge menu, you could view, or search information related to knowledge documents which are currently shown to agents in the organization. **① Registering**, **② editing**, **deleting** of knowledge documents are available to **only administrators.**
 
-입력이 필요한 부분은 다음과 같습니다.
--	① 템플릿 제목
--	② 템플릿 설명: 템플릿 관리 → 개별 템플릿 클릭 시 제목 하단에 표시되는 설명입니다. 
--	③ 말머리
--	④ 태그
--	⑤ 사용여부: 사용 표시 → 상담지식 등록 시 조회 가능. 미사용 표시 → 조회되지 않음
--	⑥ 제목
--	⑦ 내용
+Viewable information is as follows:
+-	Number
+-	Status (In Progress/Reserved/Done)
+-	Heading
+-	Title
+-	Tag
+-	Registrant
+-	Registered Time
 
-#### 태그 관리
-![](http://static.toastoven.net/prod_contact_center/7.2-(5).png)
-상담지식 내용의 주요 **태그**를 등록해 둔 다음, 상담지식 작성 시 알맞은 태그를 선택하여 등록하면 **검색 시 활용**할 수 있습니다. ③ **등록**, ④ **수정** 및 **삭제**의 권한은 **관리자**에게만 있습니다.
+### Manage Template
+![](http://static.toastoven.net/prod_contact_center/7.2-(4)_en.png)
+For frequently used forms when creating knowledge documents, you could add templates to shorten the time for creating documents. You could **① Register** templates, and only **administrators** could register, edit, delete templates.
 
-태그는 다음과 같이 구분됩니다.
--	① 전용: 조직 내의 **해당 서비스에서만** 사용하는 태그
--	② 공통: 조직 내의 **모든 서비스에서** 사용하는 태그로, 등록하는 순간 해당 조직에 연결된 모든 서비스에 공통적으로 등록됨
+Items which need to be filled are as follows:
+- **①** Template Title
+- **②** Template Description
+- **③** Heading
+- **④** Tag
+- **⑤** Status: **Able** → **Shown** when registering notice. **Disable** → **Not shown** when registering notice.
+- **⑥** Title
+- **⑦** Contents
 
-태그 구분을 선택하신 후, 태그 명을 입력하시고 ③ **등록** 버튼을 누르시면 태그가 등록되며, 가장 최근에 등록한 태그부터 상담지식 등록 시 조회됩니다. 
 
-전용/공통 여부와 관계없이 태그 명은 **중복이 불가**하므로 유의해주세요. 
+### Manage Tag
+![](http://static.toastoven.net/prod_contact_center/7.2-(5)_en.png)
+**Tags** could be helpful for searching. Tags could be registered by **① Register** button, and **② Editing**, **Deleting** is also available. Only **administrators** could register, edit, delete tags. The most recent registered tag would be viewed first.
 
-#### 상담지식 등록
-상담지식 탭에서 **상담지식 등록** 버튼을 누르시면 조직의 상담원들에게 공유될 상담지식 문서를 작성하실 수 있습니다.
+Tags are divided as follows:
+-	**①** Private: Tags which is used **only in the relevant service**
+-	**②** Common: Tags which is used in **the entire service in the organization**. When registered, it is registered commonly to all services inside the organization.
+
+You can register tags by selecting classification, entering name and pressing the **③ registration** button.
+Please note that tag names **cannot be duplicated**, regardless of whether they are private or common.
+
+✔ **\[FAQ Shortcut]** [What happens if existing categories/headings/tags are deleted?](https://nhn-contact.oc.toast.com/oc/hc/article/63/)
+
+### Register Knowledge
+By clicking **Registration** button in consultation knowledge menu, you could create knowledge document to be shared to agents of the organization.
 
 ![](http://static.toastoven.net/prod_contact_center/7.2-(3).png)
-상담지식 등록 시 입력이 필요한 부분은 다음과 같습니다.
--	① 템플릿 선택
--	② 말머리
--	③ 태그
--	④ 공개기간: 공개 시작일을 미래로 설정하면 해당 날짜로 **예약 등록**됩니다.
--	⑤ 전체 상담지식: 해당 항목을 체크할 경우 해당 조직에 연결된 **모든 서비스에** 상담지식으로 등록됩니다. 따라서 조직 내의 개별 서비스에서만 사용하는 ‘**전용**’ 말머리를 사용하실 수 없습니다. 
--	⑥ 상단고정
--	⑦ 제목
--	⑧ 내용
+Items which need to be filled are as follows:
 
-내용을 모두 입력하신 뒤 하단 ⑨ **등록** 버튼을 누르시면 상담지식으로 등록됩니다.
+- **①** Select Template
+- **②** Heading
+- **③** Tag
+- **④** Notice Period: The period which the announcement would be posted. If you set the start date after current creation date, it will be **reserved** with that date.
+- **⑤** All Counseling Knowledge: If you check this item, the document would be registered to **every service** in the organization. Thus **private** headings and tags would be unable to use.
+- **⑥** Fixed Top
+- **⑦** Title
+- **⑧** Contents
+
+After filling all the items, click **⑨ Register** button to register document.
