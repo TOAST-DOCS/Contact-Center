@@ -15,11 +15,11 @@
 
 ### シングルサインオン設定
 #### シングルサインオン登録
-![](http://static.toastoven.net/prod_contact_center/dev3.png)
+![](http://static.toastoven.net/prod_contact_center/dev3_ja.png)
 Online  Contactに接続した後、全体管理→SSOログインメニューでSSOログインを先に登録します。 SSOログインURL、ログイン状態URLを入力してください。SSOログインを登録した後にAPI  Keyをコピーしてください。 リモートログイン  API  を呼び出す時、認証トークンとして使用されます。
 
 #### シングルサインオン活性化·指定
-![](http://static.toastoven.net/prod_contact_center/dev4.png) 
+![](http://static.toastoven.net/prod_contact_center/dev4_ja.png) 
 サービス管理  →  認証  →  SSOログインタブで、SSOログインの有効化および無効化が可能で、有効化した場合は、選択したサービスに指定するSSOログインを選択できます。
 
 #### 認証トークン作成
