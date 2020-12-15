@@ -304,11 +304,11 @@ Default values for variable timeZone are as follows:
 ### Delete service
 #### Interface Description
 - URL: https://{domain}.oc.toast.com/openapi/v1/admin/service/{serviceId}.json					
-- URL (Dev):	https://{domain}.alpha-oc.toast.com/openapi/v1/admin/service/{serviceId}.json							 				
+- URL (Dev):	https://{domain}.alpha-oc.toast.com/openapi/v1/admin/service/{serviceId}.json							 			
 
 |Interface name | Protocol | Call direction | Encoding | Result format | Interface description | Access restricted|
 |------------|-------|--------|-----|--------|--------------|------------|
-|Delete service  |HTTPS  |DELETE    |UTF-8|JSON    |Delete disabled service by service ID |공통 인증|
+|Delete service  |HTTPS  |DELETE    |UTF-8|JSON    |Delete disabled service by service ID | Common Authentication|
 
 #### Request Parameters
 |Name |Variable |Data type |Required | Description|
@@ -318,7 +318,7 @@ Default values for variable timeZone are as follows:
 #### Result Data
 |Name |Variable |Data type |Required | Description|
 |-----|----|------------|----|----|
-|result.content		|String	|X	|"SUCCESS":Deleted, "ENABLE":Service enabled, cannot delete. Can delete after service is disabled.|
+|result.content	|	|String	|X	|"SUCCESS":Deleted, "ENABLE":Service enabled, cannot delete. Can delete after service is disabled.|
 
 #### Response Body
 ```
