@@ -15,9 +15,6 @@ You can register headings by selecting heading classification, entering name and
 
 Please note that heading names cannot be duplicated, regardless of whether they are private or common.
 
-✔ **\[FAQ Shortcut]** [What happens if existing categories/headings/tags are deleted?](https://nhn-contact.oc.toast.com/oc/hc/article/63/)
-
-
 ### Distribute Document
 ![](http://static.toastoven.net/prod_contact_center/7.1-(1)_en.png)
 From distribute document menu, you could view or search information related to notice documents which are currently shown to agents in the organization. **① Registering**, **② editing**, **deleting** of notice documents are available to **only administrators.**
@@ -55,8 +52,6 @@ Tags are divided as follows:
 You can register tags by selecting classification, entering name and pressing the **③ registration** button.
 Please note that tag names cannot be duplicated, regardless of whether they are private or common.
 
-✔ **\[FAQ Shortcut]** [What happens if existing categories/headings/tags are deleted?](https://nhn-contact.oc.toast.com/oc/hc/article/63/)
-
 ### Register Notice
 By clicking **Registration Notice** button in distribute document menu, you could create notice document to be shared to agents of the organization.
 
@@ -88,9 +83,6 @@ You can register headings by selecting heading classification, entering name and
 
 Please note that heading names **cannot be duplicated**, regardless of whether they are private or common.
 
-✔ **\[FAQ Shortcut]** [What happens if existing categories/headings/tags are deleted?](https://nhn-contact.oc.toast.com/oc/hc/article/63/)
-
-
 ### Consultation knowledge
 ![](http://static.toastoven.net/prod_contact_center/7.2-(1)_en.png)
 From consultation knowledge menu, you could view, or search information related to knowledge documents which are currently shown to agents in the organization. **① Registering**, **② editing**, **deleting** of knowledge documents are available to **only administrators.**
@@ -117,7 +109,6 @@ Items which need to be filled are as follows:
 - **⑥** Title
 - **⑦** Contents
 
-
 ### Manage Tag
 ![](http://static.toastoven.net/prod_contact_center/7.2-(5)_en.png)
 **Tags** could be helpful for searching. Tags could be registered by **① Register** button, and **② Editing**, **Deleting** is also available. Only **administrators** could register, edit, delete tags. The most recent registered tag would be viewed first.
@@ -128,8 +119,6 @@ Tags are divided as follows:
 
 You can register tags by selecting classification, entering name and pressing the **③ registration** button.
 Please note that tag names **cannot be duplicated**, regardless of whether they are private or common.
-
-✔ **\[FAQ Shortcut]** [What happens if existing categories/headings/tags are deleted?](https://nhn-contact.oc.toast.com/oc/hc/article/63/)
 
 ### Register Knowledge
 By clicking **Registration** button in consultation knowledge menu, you could create knowledge document to be shared to agents of the organization.
