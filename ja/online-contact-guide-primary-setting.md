@@ -1,4 +1,4 @@
-## Contact Center > Online Contact > サービスガイド > 会員登録と基本設定
+## Contact Center > Online Contact > サービスガイド > サービス有効化と基本設定
 
 ## クイックスタートガイド
 管理者の方がOnline Contactの初期セットアップガイドに従い、Online Contactのさまざまな機能を体験しながら、
