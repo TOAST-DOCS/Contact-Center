@@ -102,7 +102,7 @@ String authorization = new String(Base64.encodeBase64(rawHmac));
 #### API 目録
 |レベル	|グループ	|名称	|説明|
 |---------|--------|---------|---|
-|組織レベル	|[サービス](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-service/)	     |サービス追加	           |新規サービス追加|
+|組織レベル	|[サービス](https://docs.toast.com/ja/Contact%20Center/ja/online-contact-api-guide-openapi-service/)	     |サービス追加	           |新規サービス追加|
 |	   |	           |サービス詳細 	         |サービスIDを通じてサービス情報を照会 |
 |  	   |	           |サービス修正 	         |サービスIDを通じてサービス情報を修正 |
 |	   |               |サービス無効化 	        |サービスIDを通じてサービスを無効化 |
@@ -115,7 +115,7 @@ String authorization = new String(Base64.encodeBase64(rawHmac));
 |          |               |サービス契約一覧            |組織内サービス契約一覧 |
 |          |               |サービス契約詳細 - サービスID |サービスIDで契約詳細情報取得 |
 |          |               |サービス契約詳細 - 契約ID     |契約IDでサービス契約詳細情報を取得 |
-|サービスレベル|[メール設定]()     |代表アカウント作成               |サービス代表アカウント作成。(作成後は修正不可)形式: \*\*@oc.toast.com|       	
+|サービスレベル|[メール設定](https://docs.toast.com/ja/Contact%20Center/ja/online-contact-api-guide-openapi-email/)     |代表アカウント作成               |サービス代表アカウント作成。(作成後は修正不可)形式: \*\*@oc.toast.com|       	
 |          |               |メール情報照会            |該当サービスすべてのEメール情報照会|
 |          |               |外部アカウント有効性チェック 	      |外部アカウント有効性チェック |
 |          |               |外部アカウント登録              |外部アカウント登録(有効性チェック後登録可能) |
@@ -124,12 +124,12 @@ String authorization = new String(Base64.encodeBase64(rawHmac));
 |          |               |外部アカウントの無効化           |有効化状態外部アカウントを無効化 |
 |          |               |外部アカウント削除               |無効化状態外部アカウント削除 |
 |          |               |メール情報保存            |メール情報保存 |
-|           |[受付タイプ管理](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-category/)  |受付タイプ追加	         |新規受付タイプ追加|
+|           |[受付タイプ管理](https://docs.toast.com/ja/Contact%20Center/ja/online-contact-api-guide-openapi-category/)  |受付タイプ追加	         |新規受付タイプ追加|
 |	    |              |受付タイプの詳細 	          |受付タイプIDで受付タイプの照会 |
 |	    |	           |受付タイプ修正 	          |受付タイプIDから受付タイプ修正 |
 |	    |	           |受付タイプの削除 	          |受付タイプIDから受付タイプの削除 |
 |  	    |	           |受付タイプ一覧	         |サービス内受付タイプ一覧 |
-|           |[チケット管理](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-ticket/)	|チケット生成	                |新規チケット生成|
+|           |[チケット管理](https://docs.toast.com/ja/Contact%20Center/ja/online-contact-api-guide-openapi-ticket/)	|チケット生成	                |新規チケット生成|
 |	    |	           |チケット処理 	           |チケットIDでチケット処理 |
 |	    |	           |チケット詳細 	           |チケットIDを通じてチケット照会|
 |	    |	           |チケットリスト	          |検索条件を通じて条件に合ったチケットリストを露出 |
@@ -137,7 +137,7 @@ String authorization = new String(Base64.encodeBase64(rawHmac));
 |	    |	           |チケット添付ファイル添付	        |サーバーにファイルアップロード|
 |	    |	           |チケット添付ファイルを開く/ダウンロード      |サーバーにアップロードされたファイル開く/ダウンロード|
 |	    |	           |チケット添付ファイルの削除         |サーバーにアップロードされたファイルの削除 |
-|	    |[お知らせ](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-notice/)	|お知らせ目録照会 	      |お知らせ事項の内容照会、検索条件によりお知らせリストをリターン|
+|	    |[お知らせ](https://docs.toast.com/ja/Contact%20Center/ja/online-contact-api-guide-openapi-notice/)	|お知らせ目録照会 	      |お知らせ事項の内容照会、検索条件によりお知らせリストをリターン|
 |	    |	           |お知らせ詳細照会 	          |お知らせIDからお知らせ内容を取得|
 |	    |	           |お知らせ詳細照会(複数件) 	|複数のお知らせIDから内容を取得 |
 |	    |	           |お知らせ登録 	          |新規お知らせ登録 |
@@ -160,13 +160,13 @@ String authorization = new String(Base64.encodeBase64(rawHmac));
 |	    |	           |お知らせテーマ登録            |新規テーマ登録 |
 |	    |	           |お知らせテーマ修正 	           |テーマIDでテーマ名を修正 |
 |	    |	           |お知らせテーマ削除 	           |テーマIDを通じてお知らせテーマ削除 |
-|	    |[オペレーター管理](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-agent/)	|オペレーターリスト照会	      |オペレーターリスト 取得|
+|	    |[オペレーター管理](https://docs.toast.com/ja/Contact%20Center/ja/online-contact-api-guide-openapi-agent/)	|オペレーターリスト照会	      |オペレーターリスト 取得|
 |           |		    |オペレーター詳細照会  	           |オペレーターIDからオペレーター情報を取得 |
 |	    |	            |オペレーター追加 	           |指定したサービスにオペレーター追加、権限付与 |
 |           |		    |オペレーター権限の変更            |サービス内のオペレーター権限の変更 |
 |	    |	            |オペレーター削除 	           |指定したサービスからオペレーター削除 |
-|	    |[ヘルプセンター](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-helpcenter/)	 |ヘルプセンター指定データ追加    |追加必要な顧客情報をDBに保存|
-|	    |[FAQ](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-faq/)	     |FAQ リスト照会 	              |照会条件基準でFAQリストをリターン |
+|	    |[ヘルプセンター](https://docs.toast.com/ja/Contact%20Center/ja/online-contact-api-guide-openapi-helpcenter/)	 |ヘルプセンター指定データ追加    |追加必要な顧客情報をDBに保存|
+|	    |[FAQ](https://docs.toast.com/ja/Contact%20Center/ja/online-contact-api-guide-openapi-faq/)	     |FAQ リスト照会 	              |照会条件基準でFAQリストをリターン |
 |           |		     |FAQ詳細照会 	              |FAQ IDからFAQ内容取得 |
 |           |		     |FAQ登録 	              |新規FAQ登録 |
 |           |		     |FAQ修正 	              |FAQ ID基準で内容修正 |
@@ -181,8 +181,8 @@ String authorization = new String(Base64.encodeBase64(rawHmac));
 |	    |	             |FAQカテゴリー削除 	           |カテゴリーIDでFAQカテゴリー削除 |
 |	    |	             |FAQ添付ファイル添付 	   |サーバーにファイルアップロード |
 |	    |	             |FAQ添付ファイルの削除 	   |サーバーにアップロードしたファイルの削除 |
-|           |[シングルサインオン](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-sso/)             |シングルサインオン遠隔ログインAPI (Client Side)|ーザーシステムで動的にformを生成してブラウザに返却、formは自動的にAPIにform情報を伝達、認証後に成功した場合ログインクッキー値設定|
+|           |[シングルサインオン](https://docs.toast.com/ja/Contact%20Center/ja/online-contact-api-guide-openapi-sso/)             |シングルサインオン遠隔ログインAPI (Client Side)|ーザーシステムで動的にformを生成してブラウザに返却、formは自動的にAPIにform情報を伝達、認証後に成功した場合ログインクッキー値設定|
 |           |                |シングルサインオン遠隔ログインAPI (Server Side)|ユーザーがサーバーから直接APIを呼び出し、APIログイン成功後ログインクッキー値設定|
 |           |                |シングルサインオンログイン状態API              |ユーザーがクッキー情報を基準にログインしているかどうかを確認後、JSON形式のデータをリターン |
-|           |[顧客情報連動](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-customer-data/)    |顧客情報連動                   |電話問い合わせ引込時、媒体番号から顧客データを照会して画面に表示|
+|           |[顧客情報連動](https://docs.toast.com/ja/Contact%20Center/ja/online-contact-api-guide-openapi-customer-data/)    |顧客情報連動                   |電話問い合わせ引込時、媒体番号から顧客データを照会して画面に表示|
 
