@@ -101,7 +101,7 @@ String authorization = new String(Base64.encodeBase64(rawHmac));
 #### API List
 |Level	|Group	|Name	|Details|
 |---------|--------|---------|---|
-|Organization Level	|[Service](https://alpha-docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-service/)	     |Add service | Add new service|
+|Organization Level	|[Service](https://docs.toast.com/en/Contact%20Center/en/online-contact-api-guide-openapi-service/)	     |Add service | Add new service|
 |	   |	           |Service detail | Retrieve service information through service ID|
 |  	   |	           |Edit service | Edit service information through service ID|
 |	   |               |Disable service | Disable service through service ID|
@@ -114,7 +114,7 @@ String authorization = new String(Base64.encodeBase64(rawHmac));
 |          |               |Service contract list | Service contract list in the organization|
 |          |               |Service contract detail – service ID | Obtain contract information by service ID|
 |          |               |Service contract detail – contract ID | Obtain contract information by contract ID|
-|Service Level|[Email Settings]()     |Create representative account | Create service representative account. (Cannot be modified after creation) format: \*\*@oc.toast.com|       	
+|Service Level|[Email Settings](https://docs.toast.com/en/Contact%20Center/en/online-contact-api-guide-openapi-email/)     |Create representative account | Create service representative account. (Cannot be modified after creation) format: \*\*@oc.toast.com|       	
 |          |               |Email Info Lookup | Query all email information in the service|
 |          |               |External account validation | External account validation|
 |          |               |Add external account | Add external account (Can add after validation)|
@@ -123,12 +123,12 @@ String authorization = new String(Base64.encodeBase64(rawHmac));
 |          |               |Disable external account | Disable enabled external account|
 |          |               |Delete external account | Delete disabled external account|
 |          |               |Save email information | Save email information|
-|           |[Submission Category Management](https://alpha-docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-category/)  |Add submission category | Add new submission category|
+|           |[Submission Category Management](https://docs.toast.com/en/Contact%20Center/en/online-contact-api-guide-openapi-category/)  |Add submission category | Add new submission category|
 |	    |              |Submission category detail | Submission category inquiry through submission category ID|
 |	    |	           |Edit submission category | Edit submission category through submission category ID|
 |	    |	           |Delete submission category | Delete submission category through submission category ID|
 |  	    |	           |Submission category list | In-service submission type inquiry|
-|           |[Ticket Management](https://alpha-docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-ticket/)	|Create ticket | Create new ticket|
+|           |[Ticket Management](https://docs.toast.com/en/Contact%20Center/en/online-contact-api-guide-openapi-ticket/)	|Create ticket | Create new ticket|
 |	    |	           |Process ticket | Process ticket through ticket ID|
 |	    |	           |Ticket detail | Retrieve ticket detail through ticket ID|
 |	    |	           |Ticket list | Expose the list of tickets that meet the search criteria|
@@ -136,7 +136,7 @@ String authorization = new String(Base64.encodeBase64(rawHmac));
 |	    |	           |Attach file to ticket | Upload file to server|
 |	    |	           |Open/download ticket attachment | Open/download file uploaded to server|
 |	    |	           |Delete ticket attachment | Delete file uploaded to server|
-|	    |[Notice](https://alpha-docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-notice/)	|Notice list Inquiry | Return a list of announcements according to search conditions|
+|	    |[Notice](https://docs.toast.com/en/Contact%20Center/en/online-contact-api-guide-openapi-notice/)	|Notice list Inquiry | Return a list of announcements according to search conditions|
 |	    |	           |Notice detailed inquiry | Obtain the contents of notice through notice ID|
 |	    |	           |Notice detailed inquiry (multiple cases) | Obtain the contents of notices through multiple notice ID|
 |	    |	           |Register notice | Register new notice|
@@ -159,13 +159,13 @@ String authorization = new String(Base64.encodeBase64(rawHmac));
 |	    |	           |Register notice heading | Register new notice heading|
 |	    |	           |Edit notice heading | Edit notice heading through ID|
 |	    |	           |Delete notice heading | Delete notice heading through ID|
-|	    |[Agent Management](https://alpha-docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-agent/)	|Agent List Inquiry | Obtain a list of agents|
+|	    |[Agent Management](https://docs.toast.com/en/Contact%20Center/en/online-contact-api-guide-openapi-agent/)	|Agent List Inquiry | Obtain a list of agents|
 |           |		    |Agent detailed inquiry | Obtain agent information through agent ID|
 |	    |	            |Add agent | Add agent and give authority to selected service|
 |           |		    |Change agent authority | Change agent authority|
 |	    |	            |Delete agent | Delete agent in selected service|
-|	    |[Help Center](https://alpha-docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-helpcenter/)	 |Add specified data to help center | Save additionally required customer information to database|
-|	    |[FAQ](https://alpha-docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-faq/)	     |FAQ list inquiry | Return FAQ list according to search conditions|
+|	    |[Help Center](https://docs.toast.com/en/Contact%20Center/en/online-contact-api-guide-openapi-helpcenter/)	 |Add specified data to help center | Save additionally required customer information to database|
+|	    |[FAQ](https://docs.toast.com/en/Contact%20Center/en/online-contact-api-guide-openapi-faq/)	     |FAQ list inquiry | Return FAQ list according to search conditions|
 |           |		     |FAQ detailed inquiry | Obtain FAQ contents through FAQ ID|
 |           |		     |Add FAQ | Add new FAQ|
 |           |		     |Edit FAQ | Edit FAQ through FAQ ID|
@@ -180,8 +180,8 @@ String authorization = new String(Base64.encodeBase64(rawHmac));
 |	    |	             |Delete FAQ category | Delete FAQ category through FAQ category ID|
 |	    |	             |Attach file to FAQ | Upload file to server|
 |	    |	             |Delete attached file | Delete uploaded file|
-|           |[SSO](https://alpha-docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-sso/)             |SSO Remote Login API (Client Side) | The user system dynamically creates a form and returns it to the browser, and the form automatically informs the API of the form information and sets the login cookie value if successful after authentication.|
+|           |[SSO](https://docs.toast.com/en/Contact%20Center/en/online-contact-api-guide-openapi-sso/)             |SSO Remote Login API (Client Side) | The user system dynamically creates a form and returns it to the browser, and the form automatically informs the API of the form information and sets the login cookie value if successful after authentication.|
 |           |                |SSO Remote Login API (Server Side) | User calls API directly from server, sets login cookie value after successful API login|
 |           |                |SSO Login Status API | Returns data in JSON format after checking if the user is logged in based on cookie information|
-|           |[Customer Data Connection](https://alpha-docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-customer-data/)    |Customer data connection | When calling in, the customer data is queried by media number and displayed on the screen.|
+|           |[Customer Data Connection](https://docs.toast.com/en/Contact%20Center/en/online-contact-api-guide-openapi-customer-data/)    |Customer data connection | When calling in, the customer data is queried by media number and displayed on the screen.|
 
