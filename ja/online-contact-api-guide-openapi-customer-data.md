@@ -40,4 +40,4 @@ Response Type: JSON
 
 resultData変数内のデータは、顧客企業側が希望する通りに設定でき、**APIを通してリターンする全てのデータが画面に表示**されます。
 
-もし、resultData内の変数がOnlineContactチケットフィールドに追加されているなら、その変数の**変数名**と[フィールドの**項目コード値**](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management#_22)が**一致してこそ**、適切なマッピングが可能です。
+もし、resultData内の変数がOnlineContactチケットフィールドに追加されているなら、その変数の**変数名**とフィールドの**項目コード値**が**一致してこそ**、適切なマッピングが可能です。
