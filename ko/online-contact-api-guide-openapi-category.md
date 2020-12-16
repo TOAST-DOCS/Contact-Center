@@ -12,7 +12,7 @@
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |-----|----|------------|----|----|
 |서비스 ID	|serviceId	|String	|O	|서비스 ID，URL PATH 내에 설정한 {serviceId}|
-|접수유형 정보	|request body	|String	|O	|접수유형 정보（JSON|
+|접수유형 정보	|request body	|String	|O	|접수유형 정보（JSON)|
 |	             |name	|String	|O	|접수유형명（유일한 값:예; 길이:min = 0, max = 50; 형식:^(\_\|-\|[^\\pP])+$）|
 |	             |orderNo	|Int	|X	|접수유형 노출 순서（기본 값:0）|
 
@@ -32,7 +32,7 @@
 |	              |parent	|Int	|X	|상위 접수유형 ID（고정 값:0）|
 |	              |name	|String	|O	|접수유형 명|
 |	              |level	|Int	|X	|뎁스（고정 값:1）|
-|	              |path	|String	|X	|뎁스 경로（고정 값:"\\"）|
+|	              |path	|String	|X	|뎁스 경로（고정 값:"\\\\"）|
 |	              |orderNo	|Int	|X	|접수유형 노출 순서（기본 값:0）|
 |	              |createdDt	|Long	|X	|접수유형 생성시간|
 |	              |updatedDt	|Long	|X	|접수유형 업데이트 시간|
@@ -84,7 +84,7 @@
 |	              |parent	|Int	|X	|상위 접수유형 ID（고정 값:0）|
 |	              |name	|String	|O	|접수유형 명|
 |           	  |level	|Int	|X	|뎁스（고정 값:1）|
-|	              |path	|String	|X	|뎁스 경로（고정 값:"\\"）|
+|	              |path	|String	|X	|뎁스 경로（고정 값:"\\\\"）|
 |	              |orderNo	|Int	|X	|접수유형 노출 순서（기본 값:0）|
 |	              |createdDt	|Long	|X	|접수유형 생성시간|
 |	              |updatedDt	|Long	|X	|접수유형 업데이트 시간|
@@ -221,7 +221,7 @@
 |	                |parent	|Int	|X	|상위 접수유형 ID（고정 값:0）|
 |	                |name	|String	|O	|접수유형 명|
 |	                |level	|Int	|X	|뎁스（고정 값:1）|
-|	                |path	|String	|X	|뎁스 경로（고정 값:"\\"）|
+|	                |path	|String	|X	|뎁스 경로（고정 값:"\\\\"）|
 |	                |orderNo	|Int	|X	|접수유형 노출 순서（기본 값:0）|
 |	                |createdDt	|Long	|X	|접수유형 생성시간|
 |	                |updatedDt	|Long	|X	|접수유형 업데이트 시간|
