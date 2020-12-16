@@ -30,7 +30,7 @@ If you leave without going through all the steps of entering basic information a
 ## Organization Adminstrator
 ![](http://static.toastoven.net/prod_contact_center/2.1.2-(1)_en.png)
 **Organization Administrator** can manage the organization which uses Online Contact, can add and delete agents, and can add or delete organization administrators from among agents.
-Since consulting and service management functions are not available only by the organization administrator's authority, adding administrator or agent authority from [Service Management → Agent](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_25) menu is needed to consult customers, or set service initially.
+Since consulting and service management functions are not available only by the organization administrator's authority, adding administrator or agent authority from [Service Management → Agent](https://docs.toast.com/en/Contact%20Center/en/online-contact-guide-service-management/#agent_1) menu is needed to consult customers, or set service initially.
 The user whom you want to grant organization administrator permission must be registered as an IAM member.
 
 ### Register as an IAM Member
@@ -41,7 +41,7 @@ To newly registered IAM Members, password change mail will be sent by the regist
 
 ## SSO Login
 ![](http://static.toastoven.net/prod_contact_center/2.1.3-(1)_en.png)
-SSO Login menu allows you to set the authentication method for logging in to help center. After registering SSO Login, set the login method you registered from [Service Management → Authentication](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_2) menu. 
+SSO Login menu allows you to set the authentication method for logging in to help center. After registering SSO Login, set the login method you registered from [Service Management → Authentication](https://docs.toast.com/en/Contact%20Center/en/online-contact-guide-service-management/#authentication) menu. 
 
 ### SSO Login Adding Process
 -	Click **① +Register** button → Enter SSO Login Name, Remote Login URL, Login Status URL → Click **Confirm** button
@@ -54,8 +54,6 @@ SSO Login menu allows you to set the authentication method for logging in to hel
 ## Privacy Settings
 ![](http://static.toastoven.net/prod_contact_center/2.1.5-(1)_en.png)
 Through clicking **currently connected ① account name** displayed in the upper right corner of the screen, **② privacy settings** menu is showed. User’s personal settings could be accessed and edited through this menu. 
-✔ **\[FAQ Shortcut]** [I want to edit or delete my privacy settings. (ID, Email, Name)](https://nhn-contact.oc.toast.com/oc/hc/article/33/)
-✔ **\[FAQ Shortcut]** [I want to change my password.](https://nhn-contact.oc.toast.com/oc/hc/article/35/)
 
 ### Accessible Information
 -	Account
