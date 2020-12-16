@@ -1,10 +1,5 @@
 ## Contact Center > Online Contact > Service Guide > Joining and Primary Settings
 
-## Quick Start Guide
-For administrators whom are initially experiencing Online Contact, we provide a **Quick Start Guide** for administrators to improve their understanding of the service through the overall experience of the functions provided by Online Contact. If more specific information is needed, inside the guide there is a 'View Manual' button which is directly linked to the service guide informing about each function.    
-✔ [Quick Start Guide for Administrators](http://static.toastoven.net/prod_contact_center/OC_빠른시작가이드_관리자용_201201.pdf)
-
-
 ## Joining TOAST 
 To access Online Contact, **joining TOAST** is needed.  
 Please prepare your credit card since it is **mandatory to register payment methods** when joining. Business members(TOAST Korea) are also required to prepare a copy of Business Registration Certificate.  
