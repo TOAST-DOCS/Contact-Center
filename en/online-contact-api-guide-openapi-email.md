@@ -1,31 +1,32 @@
-## Contact Center > Online Contact > API 가이드 > 이메일 설정
-### 대표계정 생성
-#### 인터페이스 설명
+## Contact Center > Online Contact > API Guide for Developers > Email Set-up
+
+### Create representative account
+#### Interface Description
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/mail/create.json			
-- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail/create.json				
+- URL (Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail/create.json				
 
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|Interface name | Protocol | Call direction | Encoding | Result format | Interface description | Access restricted|
 |------------|-------|--------|-----|--------|--------------|------------|
-|대표계정 생성|HTTPS  |POST    |UTF-8|JSON    |서비스 대표계정 생성. (생성 후 수정 불가) 형식: **@oc.toast.com|공통 인증|
+|Create representative account|HTTPS  |POST    |UTF-8|JSON    |Create service representative account. (Cannot be modified after creation) Format: \*\*@oc.toast.com|Common authentication|
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### Request Parameters
+|Name |Variable |Data type |Required | Description|
 |-----|-----|----------|-----|----|
-|서비스 ID	|serviceId	|String	|O	|서비스 ID，URL PATH 내에 설정한{serviceId}|
-|이메일 정보	|mail	|String	|O	|이메일 정보(예:mail@oc.toast.com의 mail 부분)|
+|Service ID	|serviceId	|String	|O	|Service ID，{serviceId} which is set in URL path|
+|Email information	|mail	|String	|O	|Email information(Example:'mail' part of mail@oc.toast.com)|
 
 #### Query String
 - mail=mail
 
-#### 결과 데이터
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### Result Data
+|Name |Variable |Data type |Required | Description|
 |-----|-----|----------|-----|----|
-|result.content	|displayMail	|String	|	  |발신자 주소|
-|	              |external	    |String	|	  |외부계정 목록|
-|	              |mail	        |String	|O	|대표계정 주소 : mail@oc.toast.com|
-|	              |name	        |String	|	  |발신자 이름|
-|	              |template	    |String	|	  |이메일 형식|
-|	              |updatedDt	  |Long	  |	  |업데이트 시간|
+|result.content	|displayMail	|String	|	  |Sender address|
+|	              |external	    |String	|	  |List of external accounts|
+|	              |mail	        |String	|O	|Address of representative account : mail@oc.toast.com|
+|	              |name	        |String	|	  |Sender name|
+|	              |template	    |String	|	  |Email format|
+|	              |updatedDt	  |Long	  |	  |Updated time|
 
 #### Response Body
 ```
@@ -48,29 +49,29 @@
 }
 ```
 
-### 이메일 정보 조회
-#### 인터페이스 설명
+### Query email information
+#### Interface Description
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/mail.json			
-- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail.json			
+- URL (Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail.json			
 
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|Interface name | Protocol | Call direction | Encoding | Result format | Interface description | Access restricted|
 |------------|-------|--------|-----|--------|--------------|------------|
-|이메일 정보 조회|HTTPS  |GET    |UTF-8|JSON    |해당 서비스 모든 이메일 정보 조회|공통 인증|
+|Query email information|HTTPS  |GET    |UTF-8|JSON    |View all email information in the service|Common authentication|
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### Request Parameters
+|Name |Variable |Data type |Required | Description|
 |-----|-----|----------|-----|----|
-|서비스 ID	|serviceId	|String	|O	|서비스 ID，URL PATH 내에 설정한{serviceId}|
+|Service ID	|serviceId	|String	|O	|Service ID，{serviceId} which is set in URL path|
 
-#### 결과 데이터
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### Result Data
+|Name |Variable |Data type |Required | Description|
 |----|-----|-----------|-----|----|
-|result.content	|displayMail	|String	 |	|발신자 주소|
-|	              |external	    |String	 |	|외부계정 목록|
-|       	      |mail	        |String	 |O	|대표계정 주소 : mail@oc.toast.com|
-|	              |name	        |String	 |	|발신자 이름|
-|	              |template	    |String	 |	|이메일 레이아웃|
-|	              |updatedDt	  |Long		 |  |업데이트 시간|
+|result.content	|displayMail	|String	|	  |Sender address|
+|	              |external	    |String	|	  |List of external accounts|
+|	              |mail	        |String	|O	|Address of representative account : mail@oc.toast.com|
+|	              |name	        |String	|	  |Sender name|
+|	              |template	    |String	|	  |Email format|
+|	              |updatedDt	  |Long	  |	  |Updated time|
 
 #### Response Body
 ```
@@ -93,29 +94,29 @@
 }
 ```
 
-### 외부계정 유효성 체크
-#### 인터페이스 설명
+### Check Validation of External Account
+#### Interface Description
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/mail/external/verify.json					
-- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail/external/verify.json			
+- URL (Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail/external/verify.json			
 
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|Interface name | Protocol | Call direction | Encoding | Result format | Interface description | Access restricted|
 |------------|-------|--------|-----|--------|--------------|------------|
-|외부계정 유효성 체크|HTTPS  |POST    |UTF-8|JSON    |외부계정 유효성 체크|공통 인증|
+|Check validation of external account|HTTPS  |POST    |UTF-8|JSON    |Check validation of external account|Common authentication|
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### Request Parameters
+|Name |Variable |Data type |Required | Description|
 |-----|-----|----------|-----|----|
-|서비스 ID	     |serviceId	   |String	|O	|서비스 ID，URL PATH 내에 설정한{serviceId}|
-|외부 계정 정보	|request body	|String	  |O	|외부계정 정보(JSON)|
-|	             |id	         |Integer	 |   |외부계정 ID (신규 생성시에는 필요 없고 수정 시에만 필요)|
-|	             |name	       |String	 |O	 |외부계정 구분 명칭(길이:min=1, max=20)|
-|	             |active	     |Boolean	 |O	 |외부계정 상태(true:활성화 ,false:비활성화), 수정 시에만 상태 전달 필요|
-|	             |host	       |String	 |O	 |메일 서버|
-|	             |port	       |Integer  |O	 |포트(예:993)|
-|	             |ssl	         |Boolean	 |O	 |ssl 사용여부(true:사용,false:미사용)|
-|	             |mail	       |String	 |O	 |외부계정 주소(정확한 이메일 주소)|
-|	             |password	   |String	 |O	 |외부계정 비밀번호(서비스를 이용하는 기간 동안 입력한 이메일 주소와 비밀번호가 보관됩니다.)|
-|	             |mailDel   	 |Boolean	 |O	 |원본 남기기 기능 사용 여부(true:삭제(이메일이 티켓으로 전환되면 해당 이메일이 자동으로 삭제 됨）,false:보류)|
+|Service ID	|serviceId	|String	|O	|Service ID，{serviceId} which is set in URL path|
+|External Account Information	|request body	|String	  |O	|External account information(JSON)|
+|	             |id	         |Integer	 |   |External account ID (Not required when creating new account, only for modification)|
+|	             |name	       |String	 |O	 |External account name for differentiation(Length:min=1, max=20)|
+|	             |active	     |Boolean	 |O	 |External account status(true:Enable ,false:Disable), Only required for modification|
+|	             |host	       |String	 |O	 |Mail server|
+|	             |port	       |Integer  |O	 |Port(Example:993)|
+|	             |ssl	         |Boolean	 |O	 |SSL usage(true:use, false:do not use)|
+|	             |mail	       |String	 |O	 |External account address(Precise email address)|
+|	             |password	   |String	 |O	 |External account password(The email address and password you entered during your subscription will be retained.)|
+|	             |mailDel   	 |Boolean	 |O	 |Use Leave Source feature(true:Delete(Email will be automatically deleted when converted to ticket）,false:Hold)|
 
 #### Request Body
 ```
@@ -132,10 +133,10 @@
 }
 ```
 
-#### 결과 데이터
-|명칭	   |변수	   |데이터 타입	|필수	|설명|
+#### Result Data
+|Name |Variable |Data type |Required | Description|
 |-------|--------|-------------|-----|---|
-|result	|content	|String    	 |O	   |SUCCESS(성공)|
+|result	|content	|String    	 |O	   |SUCCESS(success)|
 
 #### Response Body
 ```
@@ -151,27 +152,27 @@
 }
 ```
 
-### 외부계정 등록
-#### 인터페이스 설명
+### Register External Account
+#### Interface Description
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/mail/external.json			
-- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail/external.json			
+- URL (Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail/external.json			
 
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|Interface name | Protocol | Call direction | Encoding | Result format | Interface description | Access restricted|
 |------------|-------|--------|-----|--------|--------------|------------|
-|외부계정 등록|HTTPS|POST|UTF-8|JSON|외부계정 등록(유효성 체크 후 등록 가능)|공통 인증|
+|Register External Account|HTTPS|POST|UTF-8|JSON|Register External Account(Can register after validation checked)|Common authentication|
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### Request Parameters
+|Name |Variable |Data type |Required | Description|
 |-----|-----|----------|-----|---|
-|서비스 ID	     |serviceId	    |String	  |O	  |서비스 ID，URL PATH 내에 설정한{serviceId}|
-|외부 계정 정보	 |request body	|Stirng 	|O	  |외부계정 정보(JSON)|
-|	              |name	         |String	 |O	   |외부계정 구분 명칭(길이:min=1, max=20)|
-|	              |host	         |Stirng	 |O	   |메일 서버|
-|	              |port 	       |Integer	 |O	   |포트(예:993)|
-|	              |ssl	         |Boolean	 |O	   |ssl 사용여부(true:사용,false:미사용)|
-|       	      |mail	         |String	 |O	   |외부계정 주소(정확한 이메일 주소)|
-|	              |password	     |String	 |O	   |외부계정 비밀번호(서비스를 이용하는 기간 동안 입력한 이메일 주소와 비밀번호가 보관됩니다.)|
-|	              |mailDel	     |Boolean	 |O	   |원본 남기기 기능 사용 여부(true:삭제(이메일이 티켓으로 전환되면 해당 이메일이 자동으로 삭제 됨）,false:보류)|
+|Service ID	|serviceId	|String	|O	|Service ID，{serviceId} which is set in URL path|
+|External Account Information	|request body	|String	  |O	|External account information(JSON)|
+|	             |name	       |String	 |O	 |External account name for differentiation(Length:min=1, max=20)|
+|	             |host	       |String	 |O	 |Mail server|
+|	             |port	       |Integer  |O	 |Port(Example:993)|
+|	             |ssl	         |Boolean	 |O	 |SSL usage(true:use, false:do not use)|
+|	             |mail	       |String	 |O	 |External account address(Precise email address)|
+|	             |password	   |String	 |O	 |External account password(The email address and password you entered during your subscription will be retained.)|
+|	             |mailDel   	 |Boolean	 |O	 |Use Leave Source feature(true:Delete(Email will be automatically deleted when converted to ticket）,false:Hold)|
 
 #### Request Body
 ```
@@ -186,8 +187,8 @@
 }
 ```
 
-#### 결과 데이터
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### Result Data
+|Name |Variable |Data type |Required | Description|
 |-----|----|-----------|-----|----|
 |result.content	|id	      |Integer	|	  |외부계정 ID|
 |               |name	    |String	  |O	|외부계정 구분 명칭|
