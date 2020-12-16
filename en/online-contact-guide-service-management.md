@@ -9,21 +9,21 @@ You can check the detailed functions or configuration of the help center you set
 -	**Help Center Link** in the bottom right of Online Contact web page
 -	https:// **Domain Name**.oc.toast.com/ **Service ID** /hc
 
-Domain name is the information which was created when you added your organization. Modifying is available in TOAST Console → Set Organization → Set Domain. Service ID is the information which was entered when adding service from [Global Management → Contract Service Status](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-global-management/#_1) menu, and it cannot be modified after initial creation.
+Domain name is the information which was created when you added your organization. Modifying is available in TOAST Console → Set Organization → Set Domain. Service ID is the information which was entered when adding service from [Global Management → Contract Service Status](https://docs.toast.com/en/Contact%20Center/en/online-contact-guide-global-management/#contract-service-status) menu, and it cannot be modified after initial creation.
 
 ## Authentication
-You can enable or disable **SSO Login** and **Open API** features which you registered in [Global Management → SSO Login](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-global-management/#sso) menu.
+You can enable or disable **SSO Login** and **Open API** features which you registered in [Global Management → SSO Login](https://docs.toast.com/en/Contact%20Center/en/online-contact-guide-global-management/#sso-login) menu.
 
 ### SSO Login
 ![](http://static.toastoven.net/prod_contact_center/2.2.1-(1)_en.png)
-If you want to enable SSO Login, click **Enable** and select, save the login method which you registered from [Global Management → SSO Login] (https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-global-management/#sso) menu. Once SSO login is activated, **Inquiry History** icon will be displayed on the main page of the service’s Help Center so that the customer can view their previous inquiries after logging in.
+If you want to enable SSO Login, click **Enable** and select, save the login method which you registered from [Global Management → SSO Login](https://docs.toast.com/en/Contact%20Center/en/online-contact-guide-global-management/#sso-login) menu. Once SSO login is activated, **Inquiry History** icon will be displayed on the main page of the service’s Help Center so that the customer can view their previous inquiries after logging in.
 
 ### Open API
 ![](http://static.toastoven.net/prod_contact_center/2.2.1-(2)_en.png)
 In the Open API tab, **① OPEN API Activation** which allows access to data inside of Online Contact from outside, **② Change API Key**, managing **③ Accessible IP List** is available. Through Accessible IP List, Open API can be called only from the IP which is registered in the list. 
 
 ## Chat
-Functions in this menu are related to chat consultation. Chat consultation could be enabled in [Service Management → Help Center → Default Settings](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_32), and could be accessed through **chat icon** which is displayed in the bottom right side after chat consultation is enabled.
+Functions in this menu are related to chat consultation. Chat consultation could be enabled in [Service Management → Help Center → Default Settings](https://docs.toast.com/en/Contact%20Center/en/online-contact-guide-service-management/#default-settings_1), and could be accessed through **chat icon** which is displayed in the bottom right side after chat consultation is enabled.
 
 ![](http://static.toastoven.net/prod_contact_center/2.2.2-(1)_en.png)
 After accessing through **chat icon**, click **status value** in the top left of the chat screen to set your status. (initially set to ‘offline’, can choose between online/break/offline). Responding to customer's chat request is only available when chat status is set to online.
@@ -87,9 +87,6 @@ Example) If `Submission Type` of the ticket = `Billing`, `Assign` ticket to `tes
 
 Click the **① Add Trigger** button, enter all the title, conditions, and results, and click the **Save** button to save and activate the trigger. Enabled triggers can be disabled via the **② Disable** button, and conditions or results can be modified via the **③ Edit** button.
 
-✔ **\[FAQ Shortcut]** [How do I automatically forward the received inquiry?](https://nhn-contact.oc.toast.com/oc/hc/article/43/)
-✔ **\[FAQ Shortcut]** [How do I send a notification email under certain conditions?](https://nhn-contact.oc.toast.com/oc/hc/article/42/)
-
 #### Trigger Condition Types
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(2)a_en.png)
 
@@ -117,7 +114,7 @@ Callback url is the type of result that the **entered callback address is called
 
 ##### Dooray Notification
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(2)g_en.png)
-If the trigger conditions are met, information of the ticket is sent via Dooray notification based on the template set by the **① Template Settings** button. For the link URL, see [Dooray Messenger Service Guide](https://docs.toast.com/ko/Dooray/Messenger/ko/service-guide/#_19) for instructions.
+If the trigger conditions are met, information of the ticket is sent via Dooray notification based on the template set by the **① Template Settings** button. For the link URL, see [Dooray Messenger Service Guide](https://docs.toast.com/en/Dooray/Messenger/en/service-guide/#receive-web-hookproject-notification) for instructions.
 
 ### Field
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(3)_en.png)
@@ -135,7 +132,7 @@ Depending on the type of service, customer and agent fields are used as follows:
 
 #### Field Setting
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(4)_en.png)
-**①** Depending on the submission type you added earlier in [Ticket → Category Management]( https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_9), you can set the fields required for inquiry details differently. Click **Submission Type** to view the fields you have set up, and you can change the **②** order of fields except for personal information field. In the case of personal information field, it is always pinned to the bottom.
+**①** Depending on the submission type you added earlier in [Service Management → Ticket → Manage Category](https://docs.toast.com/en/Contact%20Center/en/online-contact-guide-service-management/#manage-category_1), you can set the fields required for inquiry details differently. Click **Submission Type** to view the fields you have set up, and you can change the **②** order of fields except for personal information field. In the case of personal information field, it is always pinned to the bottom.
 
 You can also **③ add** and **④ remove** the fields you previously added on the Field Management menu.
 
@@ -160,18 +157,13 @@ For agent fields, **Permission** (Administrator, Agent) item is additionally req
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(7)_en.png)
 Template managing is a feature that allows you to quickly process tickets by **pre-adding answer templates** for frequently asked questions. You can choose templates when you process tickets in the Ticket Management menu, and it is only selectable when the submission type of the template is same as the submission type of the ticket.
 
-**① Add Template** button allows you to add a template. The submission type you need to select is which you previously added in [Service Management → Ticket → Manage Category]( https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_9). You can insert links, images, and tables when you right-click on the body of the content.
-
-✔ **\[FAQ Shortcut]** How can I use templates?](https://nhn-contact.oc.toast.com/oc/hc/article/39/)
-✔ **\[FAQ Shortcut]** [Added Templates are not displayed when processing tickets.](https://nhn-contact.oc.toast.com/oc/hc/article/62/)
+**① Add Template** button allows you to add a template. The submission type you need to select is which you previously added in [Service Management → Ticket → Manage Category]( https://docs.toast.com/en/Contact%20Center/en/online-contact-guide-service-management/#manage-category_1). You can insert links, images, and tables when you right-click on the body of the content.
 
 ### Email Settings
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(8)_en.png)
 You can create a **① representative account address** which domain is provided from Online Contact, or register a service representative account using one’s service domain by enrolling **② External account **.
 
 **③** You can save the **sender's name** and **address** of the email sent through Online Contact and can set common **Mail Layout** for every sent mail. If you delete the replacement code (#{content}) of the body, the contents in the answer mail may not be displayed, so please be aware to not delete the replacement code when creating layout. Also note that this is a common layout which applies to all outgoing mail, including the templates you created earlier in Ticket → Manage Template menu, so make sure there are no conflicts between layout and templates.
-
-✔ **\[FAQ Shortcut]** [How can I receive inquiries in Online Contact using external email address in use?](https://nhn-contact.oc.toast.com/oc/hc/article/44/)
 
 ## Agent
 In this menu, you can add and edit agents and groups for handling customer inquiries (ticket, chat, call consultations), and set up groups and permissions for each agent.
@@ -188,7 +180,7 @@ Select one of the above two methods to register IAM member., and click **② Add
 
 Group assigning is mandatory when adding a counselor, so please add **group** first and proceed with adding a counselor.
 
-The **permissions** you can set when adding an agent is as follows, and settings about organization administrator are available from [Global Management → Organization Administrator]( https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-global-management/#_4) menu.
+The **permissions** you can set when adding an agent is as follows, and settings about organization administrator are available from [Global Management → Organization Administrator](https://docs.toast.com/en/Contact%20Center/en/online-contact-guide-global-management/#organization-adminstrator) menu.
 
 -	Administrator: Permission which features related to **service settings** added to the permission of **agents**. (Ticket, chat permissions can be selected individually. When call is selected, ticket becomes automatically selected together.)
 -	Agent: Permission for **ticket, call, chat consultation**. (Ticket, chat permissions can be selected individually. When call is selected, ticket becomes automatically selected together.)
@@ -210,11 +202,8 @@ In this menu, you can **manage design themes** for your Help Center. Using the p
 
 There are two basic templates available, and you can add new templates with the **① Add Template** button. The template you added can be **② edited** or **deleted**. The template in use cannot be deleted, so please enable another template to delete it.
 
-
 ![](http://static.toastoven.net/prod_contact_center/2.2.5-(2)_en.png)
 When adding or editing templates, you can directly input **① CSS / HTML / JS scripts**, or upload appropriate file (script, font, image, etc.) and enter the path of the resource in the editor to change the configuration of the Help Center. Through **Preview** button you could see the edits being applied, and after **saving**, you could apply the template.  
-
-✔ **\[FAQ Shortcut]** [I want to know about the detailed examples about Help Center template management.](https://nhn-contact.oc.toast.com/oc/hc/article/60/)
 
 **When modifying CSS**, the key elements you can refer are as follows:
 
@@ -359,18 +348,16 @@ Inquiries received by external services could be switched to tickets in Online C
 
 ### Twitter
 ![](http://static.toastoven.net/prod_contact_center/2.2.6-(1)_en.png)
-You can **① Enable** 또는 **Disable** Twitter connection, and could register Twitter account by **② Register** button when Twitter connection is enabled.
+You can **① Enable** or **Disable** Twitter connection, and could register Twitter account by **② Register** button when Twitter connection is enabled.
 
 ![](http://static.toastoven.net/prod_contact_center/2.2.6-(2)_en.png)
 When registering your account, you can set whether to switch tickets for **① Tweet(Mention)** and **② Direct message** respectively, and if you wish to convert direct messages to a ticket, please check the procedure below.
 
 Access your Twitter account and check More → Settings and Privacy → Privacy and Safety → Direct Messages → **Receive message requests** must be enabled before a message to the linked account can be received as a ticket.
 
-✔ **\[FAQ Shortcut]** [How can I receive inquiries from external services, and how does the ticket processing work?]https://nhn-contact.oc.toast.com/oc/hc/article/61/)
-
 ### Kakao Talk Plus Friend
 ![](http://static.toastoven.net/prod_contact_center/2.2.6-(3)_en.png)
-You can **① Enable** 또는 **Disable** KakaoTalk connection, and could register KakaoTalk ID and date to activate by **② Register** button when KakaoTalk connection is enabled. The connection takes up to 1~2 business days, and if the connection is rejected, the reason for rejection will be displayed. You must change Management → Detailed Settings → Channel Home → Enable Public Search to **ON** in the KakaoTalk channel manager center to connect with Online Contact.
+You can **① Enable** or **Disable** KakaoTalk connection, and could register KakaoTalk ID and date to activate by **② Register** button when KakaoTalk connection is enabled. The connection takes up to 1~2 business days, and if the connection is rejected, the reason for rejection will be displayed. You must change Management → Detailed Settings → Channel Home → Enable Public Search to **ON** in the KakaoTalk channel manager center to connect with Online Contact.
 
 ![](http://static.toastoven.net/prod_contact_center/2.2.6-(4)_en.png)
 Click on the **Account which is connected** to set up the details of the KakaoTalk function.
@@ -385,6 +372,4 @@ Click on the **Account which is connected** to set up the details of the KakaoTa
     - End of consultation: Comment sent when consultation **ended**
 
 When KakaoTalk is connected and activated in Online Contact, the existing plus friend 1:1 chat will be stopped, and inquiries received through KakaoTalk will be showed in the chat screen, with ‘channel’ of the ticket marked as ‘KakaoTalk’.
-
-✔ **\[FAQ Shortcut]** [How can I receive inquiries from external services, and how does the ticket processing work?]https://nhn-contact.oc.toast.com/oc/hc/article/61/)
 
