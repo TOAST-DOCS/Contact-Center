@@ -238,12 +238,12 @@ Online Contactでドメインを提供する **① 代表アカウント**を生
 ##### faq.css
 || 要素名                              | 説明                                |
 | ------------------------------------- | ----------------------------------- |
-| .lnb--fixed .lnb--fixed__nav          | 詳細ページ左LNB              |
-| .help-center-title                    | 詳細ページ左LNBタイトル            |
-| .lnb__nav                             | 詳細ページ左LNBリスト          |
-| .lnb__nav li a                        | 詳細ページ左LNBリスト個別     |
-| .lnb__nav li.on a                     | 詳細ページ左LNBリスト選択     |
-| .lnb--fixed__side-divider             | 詳細ページ左LNB/コンテンツ区分線     |
+| .lnb--fixed .lnb--fixed__nav          | 詳細ページ左ナビゲーションバー              |
+| .help-center-title                    | 詳細ページ左ナビゲーションバータイトル            |
+| .lnb__nav                             | 詳細ページ左ナビゲーションバーリスト          |
+| .lnb__nav li a                        | 詳細ページ左ナビゲーションバーリスト個別     |
+| .lnb__nav li.on a                     | 詳細ページ左ナビゲーションバーリスト選択     |
+| .lnb--fixed__side-divider             | 詳細ページ左ナビゲーションバーコンテンツ区分線     |
 | .lnb--fixed__content                  | 詳細ページコンテンツ領域         |
 | .tit_txt                              | 詳細ページコンテンツ領域タイトル          |
 | .data_info-box                        | 詳細ページコンテンツ領域ボックス          |
