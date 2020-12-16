@@ -63,8 +63,6 @@ If you click tickets, you could utilize **Ticket Information**, **Ticket History
   
 You could use **Ticket Batching** to make a batch of answers to tickets with similar inquiries, or to change the agent or group of tickets collectively. **⑤ Ticket Batching** button is in the upper side of ticket list.
 
-✔ **\[FAQ Shortcut]** [How can I use ticket templates?](https://nhn-contact.oc.toast.com/oc/hc/article/39/)
-
 ### Create Tickets
 ![](http://static.toastoven.net/prod_contact_center/4.1.2-(6)_en.png)
 You could create new tickets through **① Create Ticket** button. This can be used if you need to create additional tickets in the process of handling customer inquiries, or if you need an email response to a telephone inquiry.
@@ -92,16 +90,16 @@ After escalated, ticket status will be changed to **⑤ Escalation in Progress**
 ![](http://static.toastoven.net/prod_contact_center/4.1.3-(1)_en.png)
 If you click **① Search Ticket** button in top of the ticket list, search conditions would be displayed. The conditions are specific as follows.
 
--	Created Time: the ticket’s created time
--	Priority: Priority which the processor entered when processing the ticket
--	Ticket ID: Ticket ID which was automatically created when the ticket was created
--	Title: Title which the customer entered when submitting ticket
--	Group: Select all or each group
--	Agent: Agent which processed the ticket
--	Status: Current status of the ticket
--	Channel: Channel which the ticket was submitted
--	Submission Type: Type which customer selected when submitting ticket
--	Processing Type: Type which agent selected when processing ticket
--	Email (Account): Email address of the ticket
--	Name: Name of enquirer
+-	**Created Time**: he ticket’s created time
+-	**Priority**: Priority which the processor entered when processing the ticket
+-	**Ticket ID**: Ticket ID which was automatically created when the ticket was created
+-	**Title**: Title which the customer entered when submitting ticket
+-	**Group**: Select all or each group
+-	**Agent**: Agent which processed the ticket
+-	**Status**: Current status of the ticket
+-	**Channel**: Channel which the ticket was submitted
+-	**Submission Type**: Type which customer selected when submitting ticket
+-	**Processing Type**: Type which agent selected when processing ticket
+-	**Email (Account)**: Email address of the ticket
+-	**Name**: Name of enquirer
 
