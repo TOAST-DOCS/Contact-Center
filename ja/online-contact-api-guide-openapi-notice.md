@@ -1283,9 +1283,6 @@
 #### 結果データ
 - なし
 
-#### Response Body
-- File
-
 ### お知らせタグリスト照会
 #### インターフェース説明
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/notice/tag.json
