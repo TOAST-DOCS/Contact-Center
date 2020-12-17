@@ -814,26 +814,26 @@
         "tags": [
           {
             "tagId": 94,
-            "tag": "중국어 태그1",
+            "tag": "Chinese tag1",
             "names": {
-              "ko": "한국어 태그1",
-              "ja": "일본어 태그1",
-              "zh": "중국어 태그1"
+              "ko": "Korean tag1",
+              "ja": "Japanese tag1",
+              "zh": "Chinese tag1"
             }
           }
         ],
-        "userName": "김창홍",
-        "categoryName": "중국어 말머리",
+        "userName": "example",
+        "categoryName": "Chinese heading",
         "category": {
           "categoryId": 509,
           "names": {
-            "ko": "한국어 말머리",
-            "ja": "일본어 말머리",
-            "zh": "중국어 말머리"
+            "ko": "Korean heading",
+            "ja": "Japanese heading",
+            "zh": "Chinese heading"
           }
         },
-        "subject": "템플릿 제목1",
-        "memo": "템플릿 설명"
+        "subject": "Template title1",
+        "memo": "Template description"
       }
     ],
     "total": 1,
