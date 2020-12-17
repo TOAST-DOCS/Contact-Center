@@ -1,54 +1,55 @@
-## Contact Center > Online Contact > API 가이드 > 공지사항
-### 공지사항 목록 조회
-#### 인터페이스 설명
+## Contact Center > Online Contact > API Guide for Developers > Notice
+
+### View Notice List
+#### Interface Description
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/multilanguage/notice.json			
-- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/multilanguage/notice.json			
+- URL (Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/multilanguage/notice.json			
 		
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|Interface name | Protocol | Call direction | Encoding | Result format | Interface description | Access restricted|
 |------------|-------|--------|-----|--------|--------------|------------|
-|공지사항 목록 조회  |HTTPS  |GET    |UTF-8|JSON    |공지사항의 내용 조회, 검색 조건에 따라 공지사항 리스트를 리턴|공통 인증   |
+|View notice list  |HTTPS  |GET    |UTF-8|JSON    |View notice list, return notice list by search conditions|Common authentication   |
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### Request Parameters
+|Name |Variable |Data type |Required | Description|
 |-----|-----|----------|-----|----|
-|서비스 ID	|serviceId	|Varchar(50)	|O	|서비스 ID, URL PATH 내에 설정|
-|조회 언어	|language	|Varchar(2)	|X	|ko：한국어, zh：중국어, ja：일본어, en：영어|
-|날짜 조회 필드	|dateField	|Varchar(20)	|X	|startDt：공지기간 시작일 검색, endDt：공지기간 종료일 검색, startAndEnd：공지기간 시작일 &종료일 검색, createdDt：등록일 검색|
-|기간검색 시작시간	|termStart	|Varchar(14)	|X	|공지기간 시작일（yyyyMMddHHmmss）|
-|기간검색 종료시간	|termEnd	|Varchar(14)	|X	|공지기간 종료일|（yyyyMMddHHmmss）|
-|등록일 시작시간	|startDt	|Varchar(14)	|X	|등록일（yyyyMMddHHmmss）|
-|등록일 종료시간	|endDt	        |Varchar(14)	|X	|등록일（yyyyMMddHHmmss）|
-|말머리 ID	|categoryId	            |Int	|X	|말머리 ID|
-|태그	|tag	                    |Int	|X	|태그 ID，ID가 다수일 경우' , ' 로 분리|
-|유저 ID	|userId	                    |Int	|X	|유저ID|
-|상단고정	|top	|Boolean	|X	|true：상단고정，false：상단고정 아님|
-|유효기간	|term	|Varchar(20)	|X	|reservation：예약중, open：진행중, close：완료|
-|상태	|status	|Varchar(1)	|X	|D：초안, O：공개, C：완료|
-|키워드	|keyword	|Varchar	|X	|검색문구|
-|조회 필드	|searchField	|Varchar	|X	|기본: 내용+제목으로 검색, title：제목만 검색, content：내용만 검색|
-|정렬 필드	|sort	|Varchar	|X	|우측 필드로 정렬기준 지정 가능. 여러개 일 경우 ' , '로 분리. isTop, createdDt, updatedDt, displayDt
-|페이지	|page	|Int	|X	|페이지 번호，디폴트로 1페이지| 
-|페이지 당 건수	|pageSize	|Int	|X	|페이지 당 데이터 건수，디폴트로 10건|
+|Service ID	|serviceId	|Varchar(50)	|O	|Service ID, set in URL path|
+|Query language	|language	|Varchar(2)	|X	|ko：Korean, zh：Chinese, ja：Japanese, en：English|
+|Date lookup field	|dateField	|Varchar(20)	|X	|startDt：Search start date, endDt：Search finish date, startAndEnd：Search start&finish date, createdDt：Search registered date|
+|Start time of period search	|termStart	|Varchar(14)	|X	|Start date of notice period（yyyyMMddHHmmss）|
+|Finish time of period search	|termEnd	|Varchar(14)	|X	|Finish date of notice period（yyyyMMddHHmmss）|
+|Start time of register	|startDt	|Varchar(14)	|X	|Registered date（yyyyMMddHHmmss）|
+|Finish time of register	|endDt	        |Varchar(14)	|X	|Registered date（yyyyMMddHHmmss）|
+|Heading ID	|categoryId	            |Int	|X	|Heading ID|
+|Tag	|tag	                    |Int	|X	|Tag ID，If multiple IDs, separate with comma|
+|User ID	|userId	                    |Int	|X	|User ID|
+|Fix Top	|top	|Boolean	|X	|true：Fixed on top，false：Not fixed on top|
+|Validity	|term	|Varchar(20)	|X	|reservation：Reserved, open：In progress, close：Done|
+|Status	|status	|Varchar(1)	|X	|D：Draft, O：Distributed, C：Done|
+|Keyword	|keyword	|Varchar	|X	|Search term|
+|Query field	|searchField	|Varchar	|X	|Default: Search by contents+title, title：Search by title, content：Search by contents|
+|Sort field	|sort	|Varchar	|X	|Sort criteria can be specified following fields. If fields are multiple, separate by comma. isTop, createdDt, updatedDt, displayDt|
+|Page	|page	|Int	|X	|Page number，Default is 1 page| 
+|Items per page	|pageSize	|Int	|X	|Data items per page，default : 10|
 
-#### 결과 데이터
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### Result Data
+|Name |Variable |Data type |Required | Description|
 |----|-----|-----------|-----|---|
-|result.contents	|noticeId	|Int	|O	|공지사항 ID|
-|	                |serviceId	|String	|O	|서비스 ID|
-|	                |language	|String	|O	|ko：한국어, zh：중국어, ja：일본어, en：영어
-|	                |status	|String	|O	|공지사항 상태 D：초안, O：공개, C：완료}|
-|	                |isTop	|Boolean	|O	|상단고정 표기|
-|	                |term	|String	|O	|reservation：예약중, open：진행중, close：완료|
-|	                |title	|String	|O	|공지사항 제목|
-|	                |startDt	|String	|O	|시작시간（yyyyMMddHHmmss)|
-|	                |endDt	|String	|O	|종료시간（yyyyMMddHHmmss)|
-| 	              |displayDt	|String	|X	|출력시간（yyyyMMddHHmmss）|
-|                 |userId	|Int	|O	|등록 유저ID|
-|                 |userName	|String	|O	|등록 유저명|
-|result.contents.tags	|tags[].tagId	|Int	|O	|태그 ID|
-|	                    |tags[].tag	|String	|O	|태그 명|
-| 	                  |createdDt	|Long	|O	|공지사항 등록시간|
-|	                    |updatedDt	|Long	|O	|공지사항 수정시간|
+|result.contents	|noticeId	|Int	|O	|Notice ID|
+|	                |serviceId	|String	|O	|Service ID|
+|	                |language	|String	|O	|ko：Korean, zh：Chinese, ja：Japanese, en：English|
+|	                |status	|String	|O	|Notice status. D：Draft, O：In progress, C：Done|
+|	                |isTop	|Boolean	|O	|If the document is fixed on top|
+|	                |term	|String	|O	|reservation：Reserved, open：In progress, close：Done|
+|	                |title	|String	|O	|Title|
+|	                |startDt	|String	|O	|Start time（yyyyMMddHHmmss)|
+|	                |endDt	|String	|O	|Finish time（yyyyMMddHHmmss)|
+| 	              |displayDt	|String	|X	|Displayed time（yyyyMMddHHmmss）|
+|                 |userId	|Int	|O	|Registered user ID|
+|                 |userName	|String	|O	|Registered user name|
+|result.contents.tags	|tags[].tagId	|Int	|O	|Tag ID|
+|	                    |tags[].tag	|String	|O	|Tag name|
+| 	                  |createdDt	|Long	|O	|Notice registered time|
+|	                    |updatedDt	|Long	|O	|Notice edited time|
 
 #### Response Body
 ```
@@ -68,7 +69,7 @@
         "categoryId": 509,
         "isTop": false,
         "term": "open",
-        "title": "중국어 제목1",
+        "title": "Chinese title1",
         "startDt": "20190101000000",
         "endDt": "20990101000000",
         "displayDt": "20190120000000",
@@ -79,18 +80,18 @@
         "tags": [
           {
             "tagId": 94,
-            "tag": "중국어 태그1"
+            "tag": "Chinese tag1"
           }
         ],
-        "userName": "김창홍",
-        "categoryName": "중국어 말머리",
+        "userName": "Example",
+        "categoryName": "Chinese heading",
         "category": {
           "categoryId": 509,
-          "name": "중국어 말머리",
+          "name": "Chinese heading",
           "names": {
-            "ko": "한국어 말머리",
-            "ja": "일본어 말머리",
-            "zh": "중국어 말머리"
+            "ko": "Korean heading",
+            "ja": "Japanese heading",
+            "zh": "Chinese heading"
           }
         }
       }
@@ -103,45 +104,45 @@
 }
 ```
 
-### 공지사항 상세 조회
-#### 인터페이스 설명
+### View Notice Details
+#### Interface Description
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/multilanguage/notice/{id}.json			
-- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/multilanguage/notice/{id}.json			
+- URL (Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/multilanguage/notice/{id}.json			
 		
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|Interface name | Protocol | Call direction | Encoding | Result format | Interface description | Access restricted|
 |------------|-------|--------|-----|--------|--------------|------------|
-|공지사항 상세 조회 |HTTPS  |GET    |UTF-8|JSON    |공지사항 ID를 통해 공지사항 상세 내용 조회|공통 인증   |
+|View Notice Details |HTTPS  |GET    |UTF-8|JSON    |View notice details through notice ID|Common authentication   |
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### Request Parameters
+|Name |Variable |Data type |Required | Description|
 |----|-----|------------|-----|---|
-|서비스 ID	|serviceId	|Varchar(50)	|O	|URL PATH 내에 설정한{serviceId}|
-|공지사항 ID	|id	|Int	|O	|URL PATH 내에 설정한{id}|
+|Service ID	|serviceId	|Varchar(50)	|O	|{serviceId} set in URL path|
+|Notice ID	|id	|Int	|O	|{id} set in URL path|
 
-#### 결과 데이터
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### Result Data
+|Name |Variable |Data type |Required | Description|
 |-----|-----|-----------|----|----|
-|result.contents	|noticeId	|Int	|O	|공지사항 ID|
-|	                |serviceId	|String	|O	|서비스 ID|
-|	                |status	|String	|O	|공지사항 상태 D：초안, O：공개, C：완료|
-|	                |categoryId	|Int	|O	|말머리 ID|
-|	                |isTop	|Boolean	|O	|상단고정 표기|
-|	                |term	|String	|O	|reservation：예약중, open：진행중, close：완료|
-|	                |startDt	|String	|O	|시작시간（yyyyMMddHHmmss）|
-|	                |endDt	|String	|O	|종료시간（yyyyMMddHHmmss）|
-|	                |displayDt	|String	|X	|출력시간（yyyyMMddHHmmss）|
-|	                |userId	|Int	|O	|등록 유저 ID| 
-|result.content.contents	|{language}.title	|String	|O	|공지사항 제목|
-|	                        |{language}.content	|String	|O	|공지사항 내용|
-|	                        |{language}.attachments[].attachmentId	|String	|O	|첨부파일 ID|
-|	                        |{language}.attachments[].fileName	|String	|O	|파일 명|
-|	                        |{language}.attachments[].size	|Long	|O	|파일 사이즈|
-|result.content.tags	|tags[].tagId	|Int	|O	|태그ID|
-|	                    |tags[].names.{language}	|String	|O	|태그|
-|result.content.category	|categoryId	|Int	|X	|말머리 ID|
-|	                        |names	|String	|O	|다국어 말머리 명|
-|	                        |createdDt	|Long	|O	|공지사항 등록시간|
-|	                        |updatedDt	|Long	|O	|공지사항 수정시간|
+|result.contents	|noticeId	|Int	|O	|Notice ID|
+|	                |serviceId	|String	|O	|Service ID|
+|	                |status	|String	|O	|Notice status. D：Draft, O：In progress, C：Done|
+|	                |categoryId	|Int	|O	|Heading ID|
+|	                |isTop	|Boolean	|O	|If the document is fixed on top|
+|	                |term	|String	|O	|reservation：Reserved, open：In progress, close：Done|
+|	                |startDt	|String	|O	|Start time（yyyyMMddHHmmss）|
+|	                |endDt	|String	|O	|Finish time（yyyyMMddHHmmss）|
+|	                |displayDt	|String	|X	|Displayed time（yyyyMMddHHmmss）|
+|	                |userId	|Int	|O	|Registered user ID| 
+|result.content.contents	|{language}.title	|String	|O	|Title|
+|	                        |{language}.content	|String	|O	|Contents|
+|	                        |{language}.attachments[].attachmentId	|String	|O	|Attachment ID|
+|	                        |{language}.attachments[].fileName	|String	|O	|Attachment name|
+|	                        |{language}.attachments[].size	|Long	|O	|Attachment size|
+|result.content.tags	|tags[].tagId	|Int	|O	|Tag ID|
+|	                    |tags[].names.{language}	|String	|O	|Tag|
+|result.content.category	|categoryId	|Int	|X	|Heading ID|
+|	                        |names	|String	|O	|Multilingual heading names|
+|	                        |createdDt	|Long	|O	|Registered time|
+|	                        |updatedDt	|Long	|O	|Edited time|
 
 #### Response Body
 ```
@@ -159,8 +160,8 @@
       "categoryId": 509,
       "isTop": false,
       "term": "open",
-      "title": "중국어 제먹1",
-      "content": "중국어 내용1",
+      "title": "Chinese title1",
+      "content": "Chinese contents1",
       "startDt": "20190101000000",
       "endDt": "",
       "displayDt": "20190120000000",
@@ -171,8 +172,8 @@
       "updatedDt": 1548054677000,
       "contents": {
         "ko": {
-          "title": "한국어 제목1",
-          "content": "한국어 내용1",
+          "title": "Korean title1",
+          "content": "Korean contents1",
           "attachments": [
             {
               "attachmentId": "e981516df5da4b1cbf25af403b3a622a",
@@ -183,8 +184,8 @@
           ]
         },
         "ja": {
-          "title": "일본어 제목1",
-          "content": "일본어 내용1",
+          "title": "Japanese title1",
+          "content": "Japanese contents1",
           "attachments": [
             {
               "attachmentId": "e981516df5da4b1cbf25af403b3a622a",
@@ -195,8 +196,8 @@
           ]
         },
         "zh": {
-          "title": "중국어 제목1",
-          "content": "중국어 내용1",
+          "title": "Chinese title1",
+          "content": "Chinese contents1",
           "attachments": [
             {
               "attachmentId": "e981516df5da4b1cbf25af403b3a622a",
@@ -211,18 +212,18 @@
         {
           "tagId": 94,
           "names": {
-            "ko": "한국어 태그1",
-            "ja": "일본어 태그1",
-            "zh": "중국어 태그1"
+            "ko": "Korean tag1",
+            "ja": "Japanese tag1",
+            "zh": "Chinese tag1"
           }
         }
       ],
       "category": {
         "categoryId": 509,
         "names": {
-          "ko": "한국어 말머리",
-          "ja": "일본어 말머리",
-          "zh": "중국어 말머리"
+          "ko": "Korean heading",
+          "ja": "Japanese heading",
+          "zh": "Chinese heading"
         }
       }
     }
@@ -230,45 +231,45 @@
 }
 ```
 
-### 공지사항 상세 조회 (여러 건)
-#### 인터페이스 설명
+### View Notice Details (Multiple)
+#### Interface Description
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/multilanguage/notices.json			 		
-- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/multilanguage/notices.json			
+- URL (Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/multilanguage/notices.json			
 		
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|Interface name | Protocol | Call direction | Encoding | Result format | Interface description | Access restricted|
 |------------|-------|--------|-----|--------|--------------|------------|
-|공지사항 상세 조회 (여러 건) |HTTPS  |GET    |UTF-8|JSON    |여러 개의 공지사항 ID를 통해 공지사항 상세 내용 조회|공통 인증   |
+|View Notice Details (Multiple) |HTTPS  |GET    |UTF-8|JSON    |View notice details through multiple notice IDs|Common authentication   |
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### Request Parameters
+|Name |Variable |Data type |Required | Description|
 |----|-----|------------|-----|---|
-|서비스 ID	|serviceId	|Varchar(50)	|O	|URL PATH 내에 설정한{serviceId}|
-|공지사항 ID	|id	|String	|O	|공지사항 ID，여러개 일 경우 ','로 분리|
+|Service ID	|serviceId	|Varchar(50)	|O	|{serviceId} set in URL path|
+|Notice ID	|id	|String	|O	|{id} set in URL path, separate by comma if multiple IDs are being input|
 
-#### 결과 데이터
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### Result Data
+|Name |Variable |Data type |Required | Description|
 |----|-----|------------|-----|---|
-|result.contents	|noticeId	|Int	|O	|공지사항 ID|
-|	                |serviceId	|String	|O	|서비스 ID|
-|	                |status	        |String	|O	|공지사항 상태. D：초안, O：공개, C：완료|
-|	                |categoryId	|Int	|O	|말머리 ID|
-|	                |isTop	        |Boolean	|O	|상단고정 표기|
-|	                |term	        |String	|O	|reservation：예약중, open：진행중, close：완료|
-|	                |startDt	|String	|O	|시작시간（yyyyMMddHHmmss）|
-|                       |endDt	        |String	|O	|종료시간（yyyyMMddHHmmss）|
-|	                |displayDt	|String	|X	|출력시간（yyyyMMddHHmmss）|
-|                       |userId	        |Int	|O	|등록 유저 ID| 
-|result.contents.contents	|{language}.title	|String	|O	|공지사항 제목|
-|	                        |{language}.content	|String	|O	|공지사항 내용|
-|	                        |{language}.attachments[].attachmentId	|String	|O	|첨부파일 ID|
-|	                        |{language}.attachments[].fileName	|String	|O	|파일 명|
-|	                        |{language}.attachments[].size	|Long	|O	|파일 사이즈|
-|result.contents.tags	|tags[].tagId	|Int	|O	|태그ID|
-|	                |tags[].names.{language}	|String	|O	|태그|
-|result.contents.category	|categoryId	|Int	|X	|말머리 ID|
-|	                        |names	        |String	|O	|다국어 말머리 명|
-|	                        |createdDt	|Long	|O	|공지사항 등록시간|
-|	                        |updatedDt	|Long	|O	|공지사항 수정시간|
+|result.contents	|noticeId	|Int	|O	|Notice ID|
+|	                |serviceId	|String	|O	|Service ID|
+|	                |status	|String	|O	|Notice status. D：Draft, O：In progress, C：Done|
+|	                |categoryId	|Int	|O	|Heading ID|
+|	                |isTop	|Boolean	|O	|If the document is fixed on top|
+|	                |term	|String	|O	|reservation：Reserved, open：In progress, close：Done|
+|	                |startDt	|String	|O	|Start time（yyyyMMddHHmmss）|
+|	                |endDt	|String	|O	|Finish time（yyyyMMddHHmmss）|
+|	                |displayDt	|String	|X	|Displayed time（yyyyMMddHHmmss）|
+|	                |userId	|Int	|O	|Registered user ID| 
+|result.contents.contents	|{language}.title	|String	|O	|Title|
+|	                        |{language}.content	|String	|O	|Contents|
+|	                        |{language}.attachments[].attachmentId	|String	|O	|Attachment ID|
+|	                        |{language}.attachments[].fileName	|String	|O	|Attachment name|
+|	                        |{language}.attachments[].size	|Long	|O	|Attachment size|
+|result.contents.tags	|tags[].tagId	|Int	|O	|Tag ID|
+|	                    |tags[].names.{language}	|String	|O	|Tag|
+|result.contents.category	|categoryId	|Int	|X	|Heading ID|
+|	                        |names	|String	|O	|Multilingual heading names|
+|	                        |createdDt	|Long	|O	|Registered time|
+|	                        |updatedDt	|Long	|O	|Edited time|
 
 #### Response Body
 ```
@@ -286,8 +287,8 @@
       "categoryId": 509,
       "isTop": false,
       "term": "open",
-      "title": "중국어 제목1",
-      "content": "중국어 내용1",
+      "title": "Chinese title1",
+      "content": "Chinese contents1",
       "startDt": "20190101000000",
       "endDt": "",
       "displayDt": "20190120000000",
@@ -298,8 +299,8 @@
       "updatedDt": 1548054677000,
       "contents": {
         "ko": {
-          "title": "한국어 제목1",
-          "content": "한국어 내용1",
+          "title": "Korean title1",
+          "content": "Korean contents1",
           "attachments": [
             {
               "attachmentId": "e981516df5da4b1cbf25af403b3a622a",
@@ -310,8 +311,8 @@
           ]
         },
         "ja": {
-          "title": "일본어 제목1",
-          "content": "일본어 내용1",
+          "title": "Japanese title1",
+          "content": "Japanese contents1",
           "attachments": [
             {
               "attachmentId": "e981516df5da4b1cbf25af403b3a622a",
@@ -322,8 +323,8 @@
           ]
         },
         "zh": {
-          "title": "중국어 제목1",
-          "content": "중국어 내용1",
+          "title": "Chinese title1",
+          "content": "Chinese contents1",
           "attachments": [
             {
               "attachmentId": "e981516df5da4b1cbf25af403b3a622a",
@@ -338,18 +339,18 @@
         {
           "tagId": 94,
           "names": {
-            "ko": "한국어 태그1",
-            "ja": "일번어 태그1",
-            "zh": "중국어 태그1"
+            "ko": "Korean tag1",
+            "ja": "Japanese tag1",
+            "zh": "Chinese tag1"
           }
         }
       ],
       "category": {
         "categoryId": 509,
         "names": {
-          "ko": "한국어 말머리",
-          "ja": "일본어 말머리",
-          "zh": "중국어 말머리"
+          "ko": "Korean heading",
+          "ja": "Japanese heading",
+          "zh": "Chinese heading"
         }
       }
     }
@@ -357,32 +358,32 @@
 }
 ```
 
-### 공지사항 등록
-#### 인터페이스 설명
+### Register Notice
+#### Interface Description
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/multilanguage/notice.json			
-- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/multilanguage/notice.json					
+- URL (Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/multilanguage/notice.json					
 		
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|Interface name | Protocol | Call direction | Encoding | Result format | Interface description | Access restricted|
 |------------|-------|--------|-----|--------|--------------|------------|
-|공지사항 등록 |HTTPS  |POST    |UTF-8|JSON    |신규 공지사항 등록|공통 인증   |
+|Register notice |HTTPS  |POST    |UTF-8|JSON    |Register new notice document|Common authentication   |
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### Request Parameters
+|Name |Variable |Data type |Required | Description|
 |----|-----|------------|-----|---|
-|서비스 ID	|serviceId	|String	|O	|URL PATH 내에 설정한{serviceId}|
-|공지사항 내용	|request body	|String	|O	|공지사항 내용（JSON）|
-|	             |status	     |String	|O	|공지사항 상태. D：초안, O：공개, C：완료|
-|	             |categoryId	|Int	|O	|말머리 ID|
-|	             |isTop	|Boolean	|O	|상단고정 표기|
-|	             |contents.{language}.title	|String	|O	|공지사항 제목|
-|	             |contents.{language}.content	|String	|O	|공지사항 내용|
-|	             |startDt	|String	|O	|시작시간（yyyyMMddHHmmss）|
-|	             |endDt	|String	|O	|종료시간（yyyyMMddHHmmss）|
-|	             |displayDt	|String	|X	|출력시간（yyyyMMddHHmmss）|
-|	             |tags	|Array	|X	|태그 리스트|
-|	             |tags[].tagId	|Int	|O	|태그 ID|
-|	             |attachments	|Array	|X	|첨부파일|
-|	             |attachments[].attachmentId	|String	|O	|첨부파일 ID|
+|Service ID	|serviceId	|String	|O	|{serviceId} set in URL path|
+|Notice contents	|request body	|String	|O	|Notice contents（JSON）|
+|	             |status	     |String	|O	|Notice status. D：Draft, O：In progress, C：Done|
+|	             |categoryId	|Int	|O	|Heading ID|
+|	             |isTop	|Boolean	|O	|If the document is fixed on top|
+|	             |contents.{language}.title	|String	|O	|Title|
+|	             |contents.{language}.content	|String	|O	|Contents|
+|	             |startDt	|String	|O	|Start time（yyyyMMddHHmmss）|
+|	             |endDt	|String	|O	|Finish timne（yyyyMMddHHmmss）|
+|	             |displayDt	|String	|X	|Displayed time（yyyyMMddHHmmss）|
+|	             |tags	|Array	|X	|Tag list|
+|	             |tags[].tagId	|Int	|O	|Tag ID|
+|	             |attachments	|Array	|X	|Attachment|
+|	             |attachments[].attachmentId	|String	|O	|Attachment ID|
 
 #### Request Body
 ```
@@ -395,8 +396,8 @@
       "displayDt": "20190120000000",
       "contents": {
         "ko": {
-          "title": "한국어 제목1",
-          "content": "한국어 내용1",
+          "title": "Korean title1",
+          "content": "Korean contents1",
           "attachments": [
             {
               "attachmentId": "e981516df5da4b1cbf25af403b3a622a"
@@ -404,8 +405,8 @@
           ]
         },
         "ja": {
-          "title": "일본어 제목1",
-          "content": "일본어 내용1",
+          "title": "Japanese title1",
+          "content": "Japanese contents1",
           "attachments": [
             {
               "attachmentId": "e981516df5da4b1cbf25af403b3a622a"
@@ -413,8 +414,8 @@
           ]
         },
         "zh": {
-          "title": "중국어 제목1",
-          "content": "중국어 내용1",
+          "title": "Chinese title1",
+          "content": "Chinese contents1",
           "attachments": [
             {
               "attachmentId": "e981516df5da4b1cbf25af403b3a622a"
@@ -430,30 +431,30 @@
     }
 ```
 
-#### 결과 데이터
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### Result Data
+|Name |Variable |Data type |Required | Description|
 |----|-----|------------|-----|---|
-|result.content	|noticeId	|Int	|O	|공지사항 ID|
-|	        |serviceId	|String	|O	|서비스 ID|
-|	        |status	        |String	|O	|공지사항 상태. D：초안, O：공개, C：완료|
-|	        |categoryId	|Int	|O	|말머리 ID|
-|	        |isTop	        |Boolean	|O	|상단고정 표기|
-|	        |title	        |String	|O	|공지사항 제목|
-|	        |content	|String	|O	|공지사항 내용|
-|	        |startDt	|String	|O	|시작시간（yyyyMMddHHmmss）|
-|	        |endDt	        |String	|O	|종료시간（yyyyMMddHHmmss）|
-|	        |displayDt	|String	|X	|출력시간（yyyyMMddHHmmss）|
-|	        |attachmentYn	|String	|O	|Y：첨부파일 포함，N：첨부파일 포함 되지 않음|
-|	        |userId	        |Int	|O	|등록 유저 ID|
-|	        |tags	        |Array	|X	|태그 리스트|
-|	        |tags[].tagId	|Int	|O	|태그 ID|
-|	        |tags[].tag	|String	|O	|태그 명|
-|	        |attachments	|Array	|X	|첨부파일|
-|	        |attachments[].attachmentId	|String	|O	|첨부파일 ID|
-|	        |attachments[].fileName	        |String	|O	|파일 명|
-|	        |attachments[].size	|Long	|O	|파일 사이즈|
-|	        |createdDt	        |Long	|O	|공지사항 등록시간|
-|	        |updatedDt	        |Long	|O	|공지사항  수정시간|
+|result.content	|noticeId	|Int	|O	|Notice ID|
+|	        |serviceId	|String	|O	|Service ID|
+|	        |status	        |String	|O	|Notice status. D：Draft, O：In progress, C：Done|
+|	        |categoryId	|Int	|O	|Heading ID|
+|	        |isTop	        |Boolean	|O	|If the document is fixed on top|
+|	        |title	        |String	|O	|Title|
+|	        |content	|String	|O	|Contents|
+|	        |startDt	|String	|O	|Start time（yyyyMMddHHmmss）|
+|	        |endDt	        |String	|O	|Finish time（yyyyMMddHHmmss）|
+|	        |displayDt	|String	|X	|Displayed time（yyyyMMddHHmmss）|
+|	        |attachmentYn	|String	|O	|Y：Attachment included，N：Attachment not included|
+|	        |userId	        |Int	|O	|Registered User ID|
+|	        |tags	        |Array	|X	|Tag list|
+|	        |tags[].tagId	|Int	|O	|Tag ID|
+|	        |tags[].tag	|String	|O	|Tag name|
+|	        |attachments	|Array	|X	|Attachment|
+|	        |attachments[].attachmentId	|String	|O	|Attachment ID|
+|	        |attachments[].fileName	        |String	|O	|Attachment name|
+|	        |attachments[].size	|Long	|O	|Attachment size|
+|	        |createdDt	        |Long	|O	|Registered time|
+|	        |updatedDt	        |Long	|O	|Edited time|
 
 #### Response Body
 ```
@@ -471,8 +472,8 @@
       "categoryId": 509,
       "isTop": false,
       "term": "open",
-      "title": "중국어 제목1",
-      "content": "중국어 내용1",
+      "title": "Chinese title1",
+      "content": "Chinese contents1",
       "startDt": "20190101000000",
       "endDt": "",
       "displayDt": "20190120000000",
@@ -483,8 +484,8 @@
       "updatedDt": 1548054677000,
       "contents": {
         "ko": {
-          "title": "한국어 제목1",
-          "content": "한국어 내용1",
+          "title": "Korean title1",
+          "content": "Korean contents1",
           "attachments": [
             {
               "attachmentId": "e981516df5da4b1cbf25af403b3a622a",
@@ -495,8 +496,8 @@
           ]
         },
         "ja": {
-          "title": "일본어 제목1",
-          "content": "일본어 내용1",
+          "title": "Japanese title1",
+          "content": "Japanese contents1",
           "attachments": [
             {
               "attachmentId": "e981516df5da4b1cbf25af403b3a622a",
@@ -507,8 +508,8 @@
           ]
         },
         "zh": {
-          "title": "중국어 제목1",
-          "content": "중국어 내용1",
+          "title": "Chinese title1",
+          "content": "Chinese contents1",
           "attachments": [
             {
               "attachmentId": "e981516df5da4b1cbf25af403b3a622a",
@@ -523,18 +524,18 @@
         {
           "tagId": 94,
           "names": {
-            "ko": "한국어 태그1",
-            "ja": "일본어 태그1",
-            "zh": "중국어 태그1"
+            "ko": "Korean tag1",
+            "ja": "Japanese tag1",
+            "zh": "Chinese tag1"
           }
         }
       ],
       "category": {
         "categoryId": 509,
         "names": {
-          "ko": "한국어 말머리",
-          "ja": "일본어 말머리",
-          "zh": "중국어 말머리"
+          "ko": "Korean heading",
+          "ja": "Japanese heading",
+          "zh": "Chinese heading"
         }
       }
     }
@@ -542,33 +543,33 @@
 }
 ```
 
-### 공지사항 수정
-#### 인터페이스 설명
+### Edit Notice
+#### Interface Description
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/multilanguage/notice/{id}.json				
-- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/multilanguage/notice/{id}.json			
+- URL (Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/multilanguage/notice/{id}.json			
 		
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|Interface name | Protocol | Call direction | Encoding | Result format | Interface description | Access restricted|
 |------------|-------|--------|-----|--------|--------------|------------|
-|공지사항 수정 |HTTPS  |PUT    |UTF-8|JSON    |ID를 통해 공지사항 수정|공통 인증   |
+|Edit notice|HTTPS  |PUT    |UTF-8|JSON    |Edit notice through ID|Common authentication   |
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### Request Parameters
+|Name |Variable |Data type |Required | Description|
 |----|-----|------------|-----|---|
-|서비스 ID	|serviceId	|String	|O	|URL PATH내에 설정한{serviceId}|
-|공지사항 ID	|id	|Int	|O	|URL PATH내에 설정한{id}|
-|공지사항 내용	|request body	|String	|O	|공지사항 내용（JSON）|
-|	             |status	     |String	|O	|공지사항 상태. D：초안, O：공개, C：완료|
-|	             |categoryId	|Int	|O	|말머리 ID|
-|	             |isTop	|Boolean	|O	|상단고정 표기|
-|	             |contents.{language}.title	|String	|O	|공지사항 제목|
-|	             |contents.{language}.content	|String	|O	|공지사항 내용|
-|	             |startDt	|String	|O	|시작시간（yyyyMMddHHmmss）|
-|	             |endDt	|String	|O	|종료시간（yyyyMMddHHmmss）|
-|	             |displayDt	|String	|X	|출력시간（yyyyMMddHHmmss）|
-|	             |tags	|Array	|X	|태그 리스트|
-|	             |tags[].tagId	|Int	|O	|태그 ID|
-|	             |attachments	|Array	|X	|첨부파일|
-|	             |attachments[].attachmentId	|String	|O	|첨부파일 ID|
+|Service ID	|serviceId	|String	|O	|{serviceId} set in URL path|
+|Notice ID	|id	|Int	|O	|{id} set in URL path|
+|Notice Contents	|request body	|String	|O	|Notice contents（JSON）|
+|	             |status	     |String	|O	|Notice status. D：Draft, O：In progress, C：Done|
+|	             |categoryId	|Int	|O	|Heading ID|
+|	             |isTop	|Boolean	|O	|If the document is fixed on top|
+|	             |contents.{language}.title	|String	|O	|Title|
+|	             |contents.{language}.content	|String	|O	|Contents|
+|	             |startDt	|String	|O	|Start time（yyyyMMddHHmmss）|
+|	             |endDt	|String	|O	|Finish time（yyyyMMddHHmmss）|
+|	             |displayDt	|String	|X	|Displayed time（yyyyMMddHHmmss）|
+|	             |tags	|Array	|X	|Tag list|
+|	             |tags[].tagId	|Int	|O	|Tag ID|
+|	             |attachments	|Array	|X	|Attachment|
+|	             |attachments[].attachmentId	|String	|O	|Attachment ID|
 
 #### Request Body
 ```
@@ -581,8 +582,8 @@
       "displayDt": "20190120000000",
       "contents": {
         "ko": {
-          "title": "한국어 제목1",
-          "content": "한국어 내용1",
+          "title": "Korean title1",
+          "content": "Korean contents1",
           "attachments": [
             {
               "attachmentId": "e981516df5da4b1cbf25af403b3a622a"
@@ -590,8 +591,8 @@
           ]
         },
         "ja": {
-          "title": "일본어 제목1",
-          "content": "일본어 내용1",
+          "title": "Japanese title1",
+          "content": "Japanese contents1",
           "attachments": [
             {
               "attachmentId": "e981516df5da4b1cbf25af403b3a622a"
@@ -599,8 +600,8 @@
           ]
         },
         "zh": {
-          "title": "중국어 제목1",
-          "content": "중국어 내용1",
+          "title": "Chinese title1",
+          "content": "Chinese contents1",
           "attachments": [
             {
               "attachmentId": "e981516df5da4b1cbf25af403b3a622a"
@@ -616,30 +617,30 @@
     }
 ```
 
-####  결과 데이터
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### Result Data
+|Name |Variable |Data type |Required | Description|
 |---------|--------|-----------|---------|----|
-|result.content	|noticeId	|Int	|O	|공지사항 ID|
-|	        |serviceId	|String	|O	|서비스 ID|
-|	        |status	|String	|O	|공지사항 상태. D：초안, O：공개, C：완료|
-|	        |categoryId	|Int	|O	|말머리 ID|
-|	        |isTop	|Boolean	|O	|상단고정 표기|
-|	        |title	|String	|O	|공지사항 제목|
-|	        |content	|String	|O	|공지사항 내용|
-|	        |startDt	|String	|O	|시작시간（yyyyMMddHHmmss）|
-|	        |endDt	|String	|O	|종료시간（yyyyMMddHHmmss）|
-|	        |displayDt	|String	|X	|출력시간（yyyyMMddHHmmss）|
-|               |attachmentYn	|String	|O	|Y：첨부파일 포함，N：첨부파일 포함되지 않음|
-|	        |userId	|Int	|O	|등록 유저ID|
-|	        |tags	|Array	|X	|태그 리스트|
-|	        |tags[].tagId	|Int	|O	|태그 ID|
-|	        |tags[].tag	|String	|O	|태그 명|
-|               |attachments	|Array	|X	|첨부파일|
-|	        |attachments[].attachmentId	|String	|O	|첨부파일 ID|
-|               |attachments[].fileName	|String	|O	|파일 명|
-|	        |attachments[].size	|Long	|O	|파일 사이즈|
-|	        |createdDt	|Long	|O	|공지사항 등록시간|
-|	        |updatedDt	|Long	|O	|공지사항 수정시간|
+|result.content	|noticeId	|Int	|O	|Notice ID|
+|	        |serviceId	|String	|O	|Service ID|
+|	        |status	        |String	|O	|Notice status. D：Draft, O：In progress, C：Done|
+|	        |categoryId	|Int	|O	|Heading ID|
+|	        |isTop	        |Boolean	|O	|If the document is fixed on top|
+|	        |title	        |String	|O	|Title|
+|	        |content	|String	|O	|Contents|
+|	        |startDt	|String	|O	|Start time（yyyyMMddHHmmss）|
+|	        |endDt	        |String	|O	|Finish time（yyyyMMddHHmmss）|
+|	        |displayDt	|String	|X	|Displayed time（yyyyMMddHHmmss）|
+|	        |attachmentYn	|String	|O	|Y：Attachment included，N：Attachment not included|
+|	        |userId	        |Int	|O	|Registered User ID|
+|	        |tags	        |Array	|X	|Tag list|
+|	        |tags[].tagId	|Int	|O	|Tag ID|
+|	        |tags[].tag	|String	|O	|Tag name|
+|	        |attachments	|Array	|X	|Attachment|
+|	        |attachments[].attachmentId	|String	|O	|Attachment ID|
+|	        |attachments[].fileName	        |String	|O	|Attachment name|
+|	        |attachments[].size	|Long	|O	|Attachment size|
+|	        |createdDt	        |Long	|O	|Registered time|
+|	        |updatedDt	        |Long	|O	|Edited time|
 
 ```
 {
@@ -656,8 +657,8 @@
       "categoryId": 509,
       "isTop": false,
       "term": "open",
-      "title": "중국어 제목1",
-      "content": "중국어 내용1",
+      "title": "Chinese title1",
+      "content": "Chinese contents1",
       "startDt": "20190101000000",
       "endDt": "",
       "displayDt": "20190120000000",
@@ -668,8 +669,8 @@
       "updatedDt": 1548054677000,
       "contents": {
         "ko": {
-          "title": "한국어 제목1",
-          "content": "한국어 내용1",
+          "title": "Korean title1",
+          "content": "Korean contents1",
           "attachments": [
             {
               "attachmentId": "e981516df5da4b1cbf25af403b3a622a",
@@ -680,8 +681,8 @@
           ]
         },
         "ja": {
-          "title": "일본어 제목1",
-          "content": "일본어 내용1",
+          "title": "Japanese title1",
+          "content": "Japanese contents1",
           "attachments": [
             {
               "attachmentId": "e981516df5da4b1cbf25af403b3a622a",
@@ -692,8 +693,8 @@
           ]
         },
         "zh": {
-          "title": "중국어 제목1",
-          "content": "중국어 내용1",
+          "title": "Chinese title1",
+          "content": "Chinese contents1",
           "attachments": [
             {
               "attachmentId": "e981516df5da4b1cbf25af403b3a622a",
@@ -708,18 +709,18 @@
         {
           "tagId": 94,
           "names": {
-            "ko": "한국어 태그1",
-            "ja": "일본어 태그1",
-            "zh": "중국어 태그1"
+            "ko": "Korean tag1",
+            "ja": "Japanese tag1",
+            "zh": "Chinese tag1"
           }
         }
       ],
       "category": {
         "categoryId": 509,
         "names": {
-          "ko": "한국어 말머리",
-          "ja": "일본어 말머리",
-          "zh": "중국어 말머리"
+          "ko": "Korean heading",
+          "ja": "Japanese heading",
+          "zh": "Chinese heading"
         }
       }
     }
@@ -727,68 +728,68 @@
 }
 ```
 
-### 공지사항 삭제
-#### 인터페이스 설명
+### Delete Notice
+#### Interface Description
 - URL:	https://{domain}.oc.toast.com/{serviceId}/openapi/v1/multilanguage/notice/{id}.json						
-- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/multilanguage/notice/{id}.json							
+- URL (Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/multilanguage/notice/{id}.json							
 		
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|Interface name | Protocol | Call direction | Encoding | Result format | Interface description | Access restricted|
 |------------|-------|--------|-----|--------|--------------|------------|
-|공지사항 삭제 |HTTPS  |DELETE    |UTF-8|JSON    |ID를 통해 공지사항 삭제|공통 인증   |
+|Delete notice |HTTPS  |DELETE    |UTF-8|JSON    |Delete notice through ID|Common authentication   |
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### Request Parameters
+|Name |Variable |Data type |Required | Description|
 |----|-----|------------|-----|---|
-|서비스 ID	|serviceId	|String	|O	|URL PATH 내에 설정한{serviceId}|
-|공지사항 ID	|Id	|Int	|O	|URL PATH 내에  설정한{id}|
+|Service ID	|serviceId	|String	|O	|{serviceId} set in URl path|
+|Notice ID	|Id	|Int	|O	|{id} set in URL path|
 
-#### 결과 데이터
-- 없음
+#### Result Data
+- None
 
-### 공지사항 템플릿 목록 조회
-#### 인터페이스 설명
+### View Notice Template List
+#### Interface Description
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/multilanguage/notice/template.json						
-- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/multilanguage/notice/template.json								
+- URL (Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/multilanguage/notice/template.json								
 		
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|
+|Interface name | Protocol | Call direction | Encoding | Result format | Interface description |
 |------------|-------|--------|-----|--------|--------------|
-|공지사항 템플릿 목록  |HTTPS  |IN(GET)    |UTF-8|JSON    |템플릿 내용 조회, 템플릿 리스트를 리턴|
+|View notice template list |HTTPS  |IN(GET)    |UTF-8|JSON    |View template, return template list|
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### Request Parameters
+|Name |Variable |Data type |Required | Description|
 |----|-----|------------|-----|---|
-|서비스 ID	|serviceId	|Varchar(50)	|O	|서비스 ID，URL PATH 내에 설정|
-|조회언어	|language	|Varchar(2)	|X	|ko：한국어, zh：중국어, ja：일본어, en：영어|
-|시작시간	|startDt	|Varchar(14)	|X	|등록시간（yyyyMMddHHmmss）|
-|종료시간	|endDt	|Varchar(14)	|X	|등록시간（yyyyMMddHHmmss）|
-|말머리 ID	 |categoryId	|Int	|X	|말머리 ID|
-|태그	|tag	|Int	|X	|태그 ID，ID가 다수일 경우 ','로 분리|
-|유저 ID	|userId	|Int	|X	|유저 ID|
-|상태	|status	|Varchar(1)	|X	|O：사용, C：미사용|
-|키워드	|keyword	|Varchar	|X	|검색문구|
-|조회필드	|searchField	|Varchar	|X	|디폴트로 내용+제목 으로 검색, title：제목만 검색, content：내용만 검색|
-|페이지	|page	|Int	|X	|페이지 번호，디폴트로 1페이지| 
-|페이지 당 건수	|pageSize	|Int	|X	|페이지 당 데이터 건수，디폴트로 10건|
+|Service ID	|serviceId	|Varchar(50)	|O	|Service ID，set in URL path|
+|Query Language	|language	|Varchar(2)	|X	|ko：Korean, zh：Chinese, ja：Japanese, en：English|
+|Start Time	|startDt	|Varchar(14)	|X	|Registered time（yyyyMMddHHmmss）|
+|Finish Time	|endDt	|Varchar(14)	|X	|Registered Time（yyyyMMddHHmmss）|
+|Heading ID	 |categoryId	|Int	|X	|Heading ID|
+|Tag	|tag	|Int	|X	|Tag ID，Separate by comma if multiple tags|
+|User ID	|userId	|Int	|X	|User ID|
+|Status	|status	|Varchar(1)	|X	|O：In use, C：Not in use|
+|Keyword	|keyword	|Varchar	|X	|Search term|
+|Query Field	|searchField	|Varchar	|X	|Default: Search by contents+title, title：Search by title, content：Search by contents|
+|Page	|page	|Int	|X	|Page number，Default : 1 page| 
+|Items by page	|pageSize	|Int	|X	|Item data by page，Default: 10 items|
 
-#### 결과 데이터
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### Result Data
+|Name |Variable |Data type |Required | Description|
 |----|-----|------------|-----|---|
-|result.contents	|noticeId	|Int	|O	|템플릿 ID|
-|	                |serviceId	|String	|O	|서비스 ID|
-|	                |language	|Varchar(2)	|O	|ko：한국어, zh：중국어, ja：일본어, en：영어|
-|	                |status	|String	|O	|O：사용 C：미사용|
-|	                |categoryId	|Int	|O	|말머리 ID|
-|	                |categoryName	|String	|O	|말머리 명|
-|	                |subject	|String	|O	|템플릿 제목|
-|	                |memo	        |String	|O	|템플릿 설명|
-|	                |userId	        |Int	|O	|등록 유저 ID|
-|	                |userName	|String	|O	|등록 유저 명|
-|result.contents.tags	|tags[].tagId	|Int	|O	|태그 ID|
-|	                |tags[].tag	|String	|O	|태그 명|
-|	                |tags[].names	|String	|O	|다국어 태그 명|
-|result.contents.category	|names	|String	|O	|다국어 말머리 명|
-|	                        |createdDt	|Long	|O	|템플릿 등록시간|
-|	                        |updatedDt	|Long	|O	|템플릿 수정시간|
+|result.contents	|noticeId	|Int	|O	|Tempate ID|
+|	                |serviceId	|String	|O	|Service ID|
+|	                |language	|Varchar(2)	|O	|ko：Korean, zh：Chinese, ja：Japanese, en：English|
+|	                |status	|String	|O	|O：In use C：Not in use|
+|	                |categoryId	|Int	|O	|Heading ID|
+|	                |categoryName	|String	|O	|Heading name|
+|	                |subject	|String	|O	|Template title|
+|	                |memo	        |String	|O	|Template description|
+|	                |userId	        |Int	|O	|Registered user ID|
+|	                |userName	|String	|O	|Registered user name|
+|result.contents.tags	|tags[].tagId	|Int	|O	|Tag ID|
+|	                |tags[].tag	|String	|O	|Tag name|
+|	                |tags[].names	|String	|O	|Multilingual tag names|
+|result.contents.category	|names	|String	|O	|Multilingual heading names|
+|	                        |createdDt	|Long	|O	|Template registered time|
+|	                        |updatedDt	|Long	|O	|Template edited time|
 
 #### Response Body
 ```
