@@ -1283,9 +1283,6 @@
 #### 결과 데이터
 - 없음
 
-#### Response Body
-- File
-
 ### 공지사항 태그 목록 조회
 #### 인터페이스 설명
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/notice/tag.json					 		
