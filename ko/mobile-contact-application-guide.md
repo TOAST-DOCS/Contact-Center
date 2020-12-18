@@ -1,4 +1,4 @@
-## Contact Center > Mobile Contact > 신청 가이드
+## Contact Center > Mobile Contact > 가입 및 고객센터 구성
 
 Mobile Contact 신청/구성은 [https://mobile-contact.toast.com](https://mobile-contact.toast.com) 에서 손쉽게 진행하실 수 있습니다.
 
