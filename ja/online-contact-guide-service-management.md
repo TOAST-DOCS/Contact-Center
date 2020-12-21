@@ -305,11 +305,11 @@ Online Contactでドメインを提供する **① 代表アカウント**を生
 | .paginate li.lastPage a                            | ページネーション >> キー                  |
 | .paginate li.lastPage a.img                        | ページネーション >> キーイメージ            |
 | .search-title                                      | 検索結果タイトル                       |
-| .search-title strong                               | 検索結果 제목 검색어 강조             |
+| .search-title strong                               | 検索結果タイトル検索語強調             |
 | .search-text                                       | 検索結果                             |
-| .search-text .search-title_sub                     | 検索結果 하위분류                     |
+| .search-text .search-title_sub                     | 検索結果下位分類                    |
 | .search-text .search-text_lit                      | 検索結果個別                        | 
-| .search-text .search-text_lit dt a                 | 検索結果個別タイトル제목                    |
+| .search-text .search-text_lit dt a                 | 検索結果個別タイトル                    |
 | .search-text .search-text_lit dd .search-text_con  | 検索結果個別内容プレビュー            |
 | .search-text .search-text_lit dd .search-text_time | 検索結果個別作成日                  |
 
