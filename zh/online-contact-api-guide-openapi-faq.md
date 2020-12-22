@@ -14,14 +14,14 @@
 |서비스 ID	|serviceId	|Varchar(50)	|O	|서비스 ID, URL PATH내에 설정|
 |조회언어	|language	|Varchar(2)	|X	|ko：한국어, zh：중국어, ja：일본어, en：영어|
 |카테고리 ID	|category	|Int	|X	|카테고리 ID|
-|추천	|recommend	|Boolean	 |X	|true：추천，false：추천 아님|
-|상단고정	|top	|Boolean	       |X	|true：상단고정，false：상단고정 아님|
-|상태	|status	|Varchar(1)	         |X	|D：초안, O：공개, C：완료|
-|키워드	|query	|Varchar	         |X	|검색문구|
+|추천	|recommend	|Boolean	|X	|true：추천，false：추천 아님|
+|상단고정	|top	|Boolean	|X	|true：상단고정，false：상단고정 아님|
+|상태	|status	|Varchar(1)	|X	|D：초안, O：공개, C：완료|
+|키워드	|query	|Varchar	|X	|검색문구|
 |조회 필드	|searchField	|Varchar	|X	|디폴트: 내용+제목으로 검색, title：제목만 검색, content：내용만 검색|
-|정렬 필드	|sort	|Varchar	        |X	|isTop, isRecommend, createdDt, updatedDt 필드로 정렬기준 지정 가능. 여러개 일 경우 ','로 분리|
-|페이지	|page	|Int	                 |X	|페이지 번호，디폴트로 1페이지| 
-|페이지 당 건수	|pageSize	|Int   |X	|페이지 당 데이터 건수，디폴트로 10건|
+|정렬 필드	|sort	|Varchar	|X	|isTop, isRecommend, createdDt, updatedDt 필드로 정렬기준 지정 가능. 여러개 일 경우 ','로 분리|
+|페이지	|page	|Int	|X	|페이지 번호，디폴트로 1페이지| 
+|페이지 당 건수	|pageSize	|Int	|X	|페이지 당 데이터 건수，디폴트로 10건|
 
 #### 결과 데이터
 |명칭	|변수	|데이터 타입	|필수	|설명|
@@ -62,7 +62,7 @@
         "userId": 10063,
         "createdDt": 1547962599000,
         "updatedDt": 1548054677000,
-        "userName": "홍",
+        "userName": "김창홍",
         "categoryName": "중국어 카테고리",
       }
     ],
@@ -92,16 +92,16 @@
 #### 결과 데이터
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |-----|-----|----------|-----|----|
-|result.content	|helpDocId	|Long	        |O	|FAQ ID|
+|result.content	|helpDocId	|Long	|O	|FAQ ID|
 |	              |serviceId	|String	|O	|서비스 ID|
-|	              |title	|String	        |O	|FAQ 제목|
-|	              |content	|String	        |O	|FAQ 내용|
+|	              |title	|String	|O	|FAQ 제목|
+|	              |content	|String	|O	|FAQ 내용|
 | 	            |isRecommend	|Boolean	|O	|추천|
 | 	            |isTop	|Boolean	|O	|상단고정|
-| 	            |status	|String	        |O	|FAQ 상태, D：초안, O：공개, C：완료|
-|	              |readCnt	|Int	        |O	|조회수|
-|	              |userId	|Int	        |O	|등록 유저 ID|
-|	              |username	|String	        |O	|등록 유저 명|
+| 	            |status	|String	|O	|FAQ 상태, D：초안, O：공개, C：완료|
+|	              |readCnt	|Int	|O	|조회수|
+|	              |userId	|Int	|O	|등록 유저 ID|
+|	              |username	|String	|O	|등록 유저 명|
 |	              |attachmentYn	|Boolean	|O	|첨부파일 포함 여부|
 |	              |createdDt	|Long	|O	|FAQ 등록시간|
 |	              |updatedDt	|Long	|O	|FAQ 수정시간|
@@ -234,8 +234,8 @@
 |	        |isTop	        |Boolean	|O	|상단고정 여부. true：상단고정, false：상단고정 아님|
 |	        |contents.{language}.title	|String	|O	|FAQ 제목(다국어)|
 | 	        |contents.{language}.content	|String	|O	|FAQ 내용(다국어)|
-|	        |contents.{language}.attachments[].attachmentId	|Array	|X	|첨부파일 ID（다국어）|
-|	        |attachments[].attachmentId	|String	|X   	|첨부파일 ID（단일언어）|
+|	        |contents.{language}.attachments[].attachmentId	|Array	|	|첨부파일 ID（다국어）|
+|	        |attachments[].attachmentId	|String	|   	|첨부파일 ID（단일언어）|
 
 #### Request Body
 ```
@@ -447,8 +447,8 @@
 |	        |isTop	        |Boolean	|O	|상단고정 여부. true：상단고정, false：상단고정 아님|
 |	        |contents.{language}.title	|String	|O	|FAQ 제목(다국어)|
 |	        |contents.{language}.content	|String	|O	|FAQ 내용(다국어)|
-|	        |contents.{language}.attachments[].attachmentId	|Array	  |X	|첨부파일 ID（다국어）|
-|	        |attachments[].attachmentId	|String	    |X	|첨부파일 ID（단일언어）|
+|	        |contents.{language}.attachments[].attachmentId	|Array	  |	|첨부파일 ID（다국어）|
+|	        |attachments[].attachmentId	|String	    |	|첨부파일 ID（단일언어）|
 
 #### Request Body
 ```
@@ -866,11 +866,11 @@
 |----|------|-----------|----|----|
 |서비스 ID	|serviceId	|String	|O	|URL PATH내에 설정한{serviceId}|
 |카테고리 정보	|request body	|String	    |O	|카테고리 정보（JSON）|
-|	             |name	     |String     |X		|카테고리 명（유일한 값:예 ; 길이:min = 0, max = 50 ; 형식:^(\_\|-\|[^\\pP])+$）|
-|	              |categoryCode	|String	 |X	|카테고리 Code|
-|	              |languages	|String	 |X	|다국어|
-|	              |parent	        |Int	 |X	|상위 카테고리 ID（기본 값:0）|
-|	              |orderNo	        |Int	 |X	|정렬순서（기본 값:0）|
+|	             |name	     |String     |		|카테고리 명（유일한 값:예 ; 길이:min = 0, max = 50 ; 형식:^(\_\|-\|[^\\pP])+$）|
+|	              |categoryCode	|String	 |	|카테고리 Code|
+|	              |languages	|String	 |	|다국어|
+|	              |parent	        |Int	 |	|상위 카테고리 ID（기본 값:0）|
+|	              |orderNo	        |Int	 |	|정렬순서（기본 값:0）|
 
 #### Request Body
 ```
@@ -889,8 +889,8 @@
     "orderNo":1,
     "languages":{
         "ko":"한국어 카테고리3",
-        "ja":"일본어 카테고리3",
-        "en":"영어 카테고리3",
+        "ja":"일본오 카테고리3",
+        "en":"영여 카테고리3",
         "zh":"중국어 카테고리3"
     }
 }
@@ -957,11 +957,11 @@
 |서비스 ID	|serviceId	|String	|O	|URL PATH내에 설정한{serviceId}|
 |카테고리 ID 혹은 카테고리 Code	|Id	|String	|O	|URL PATH내에 설정한{id}|
 |카테고리 정보	            |request body	|String	|O	|카테고리 정보（JSON）|
-|	                         |name	             |String  |X	     |카테고리 명（유일한 값:예 ; 길이:min = 0, max = 50 ; 형식:^(\_\|-\|[^\\pP])+$）|
-|	                         |categoryCode	     |String  |X	     |카테고리 Code|
-|	                         |languages	     |String  |X	     |다국어|
-|	                         |parent	     |Int     |X	     |상위 카테고리 ID（기본 값:0）|
-|	                         |orderNo	     |Int     |X	     |정렬순서（기본 값:0）|
+|	                         |name	             |String  |	     |카테고리 명（유일한 값:예 ; 길이:min = 0, max = 50 ; 형식:^(\_\|-\|[^\\pP])+$）|
+|	                         |categoryCode	     |String  |	     |카테고리 Code|
+|	                         |languages	     |String  |	     |다국어|
+|	                         |parent	     |Int     |	     |상위 카테고리 ID（기본 값:0）|
+|	                         |orderNo	     |Int     |	     |정렬순서（기본 값:0）|
 
 #### Request Body
 ```
@@ -1106,7 +1106,7 @@
 |----|------|-----------|----|----|
 |서비스 ID	          |serviceId	|String	|O	|URL PATH 내에 설정한{serviceId}|
 |업로드 파일 ID	|id	      |String  |O     |업로드 파일id| 
-|열람방식	         |type	       |String	|X       |기본 값: 열기（download:다운로드,open:열기）|
+|열람방식	         |type	       |String	       |기본 값: 열기（download:다운로드,open:열기）|
 
 #### 결과 데이터
 - 없음

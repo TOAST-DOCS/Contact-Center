@@ -1,79 +1,65 @@
-## Contact Center > Online Contact > 서비스 가이드 > 전체 관리
-전체 관리 메뉴는 Online Contact에서 관리하는 서비스를 추가할 수 있는 기능과 슈퍼관리자 관리, SSO 로그인 등록, 권한 변경 로그 관리 메뉴로 구성되어 있습니다. 
+## Contact Center > Online Contact > Service Guide > Global Management
+Global Management menu consists of the ability to add services managed by Online Contact and Organization Administrator, SSO Login, and Authority Log Management menu.
 
-## 계약 서비스 현황
-### 계약 현황
+## Contract service status
+### Contract status
+![](http://static.toastoven.net/prod_contact_center/2.1.1-(1)_en.png)
+Through **Contract status** tab, **①** add service to organization using Online Contact, **②** edit basic information/contents of contract, **③** set service usage state, **④** terminate service is available.
 
-![](http://static.toastoven.net/prod_contact_center/2.1.1-(1).png)
-**계약 현황** 탭을 통해 Online Contact를 사용하고 계신 조직에 **①**서비스를 추가, **②**서비스 기본정보/계약내용 수정, **③**서비스 사용여부 설정, **④**서비스 해지와 같은 기능들을 이용하실 수 있습니다. 
+Online Contact offers two service types, **Consultation Management**, **Issue Management**.
+-	**Consultation Management**: Consultation management service type allows you to talk directly to customers through channels such as chat, phone, and help center provided by Online Contact.
+-	**Issue Management**: Issue management service type allows agent of service which type is consultation management to transfer and process inquiries that are difficult to resolve by oneself.
 
-Online Contact에서는 **상담 관리**, **이슈 관리**의 2가지 서비스 유형을 제공하고 있습니다. 
--	**상담 관리**: Online Contact에서 제공하는 채팅, 전화, 헬프센터 등의 채널들을 통해 고객과 직접적으로 상담할 수 있는 서비스 유형입니다.
--	**이슈관리**: 상담 관리 서비스의 상담원이 직접 해결하기 어려운 문의를 이관 받아 처리할 수 있는 서비스 유형입니다.  
+![](http://static.toastoven.net/prod_contact_center/2.1.1-(2)_en.png)
+Click **① Add Service** button to view **② add service screen** for entering basic information for the service. The following items require input:
+- Type: Type of service to use (Consultation management, Issue management)
+- Service Name: Name of service to be used
+- Service ID: ID used to identify the service (becomes included in URL of the service’s Online Contact, and help center). English only
+- Time zone: Time zone set in the help center (selected accordingly when help center language becomes selected. Can be modified separately)
+- Service Banner: Can attach and preview image. When uploaded, it becomes applied as the image of the service tab in Online Contact GNB and as a profile photo of the agent when chat consulting.
 
-![](http://static.toastoven.net/prod_contact_center/2.1.1-(2).png)
-**서비스 추가** 버튼을 클릭하시면 서비스 추가 화면이 표시되며, 서비스의 기본 정보를 입력하실 수 있습니다. 입력이 필요한 항목은 다음과 같습니다.
-- 유형: 사용하실 서비스의 유형 (상담 관리, 이슈 관리)
-- 서비스 명: 사용하실 서비스의 이름 
-- 서비스 ID: 서비스 식별에 사용되는 ID (URL에 포함됨). 영문만 가능
-- 타임 존: 헬프센터에 설정되는 시간대 (헬프센터 언어 선택 시 이에 맞춰 선택되며, 별도 수정 가능)
-- 프로필 사진: 파일 첨부 후 미리보기 가능하며, 업로드하셨을 시 Online Contact GNB에서의 서비스 탭 이미지와 채팅 시 상담원의 프로필 사진으로 적용됩니다.
+After entering all the basic information, press the next button to go to **③ Contract Details**. On the Contract Details screen, you can **activate functions** from the consultation functions provided by Online Contact for your service and calculate **Estimated Cost** that reflect your choice. After completing the contract details, press **Contract** button to complete the contract.
 
-기본정보를 모두 입력하신 후 다음 버튼을 누르시면 **계약 상세 내역**으로 넘어갑니다. 계약 상세 내역 화면에서는 Online Contact에서 제공하는 상담 기능들에 대해 해당 서비스에서의 **사용 여부**를 선택하실 수 있으며, 해당 선택 여부가 반영된 **예상 비용**을 산출해 보실 수 있습니다. 계약 상세 내역 입력을 완료하신 후 **계약 버튼**을 누르시면 계약이 완료됩니다.
+![](http://static.toastoven.net/prod_contact_center/2.1.1-(3)_en.png)
+If you leave without going through all the steps of entering basic information and contract details when adding service, the status of service will be displayed inactivated, and the steps that were not progressed will be indicated by the button **Enrollment**. For services which contract steps are completed, you can edit basic and contract information through the **① Edit** button, activate or inactivate service through **② State** button, and terminate service through **③ Terminate** button. Please note that terminate button becomes active only when the status of the service is **inactivated**.
 
-![](http://static.toastoven.net/prod_contact_center/2.1.1-(3).png)
-서비스 추가 시 진행되는 서비스 기본정보 입력, 계약 상세 내역 입력 단계를 모두 진행하지 않고 이탈하시게 되면 서비스 사용 상태는 **미사용** 상태로, 진행하시지 않은 단계는 **등록** 버튼으로 표시되게 됩니다. 서비스 추가 단계를 모두 진행하신 서비스의 경우 **① 수정** 버튼을 통해 기본정보와 계약정보를 수정하실 수 있으며, **② 상태** 버튼을 통해 서비스 사용여부 선택을, **③ 해지** 버튼을 통해 서비스 해지를 진행하실 수 있습니다. 서비스 해지의 경우 상태가 **이용정지**로 설정되어 있어야 해지 버튼이 활성화되므로 참고해주세요.
+### Rate status
+![](http://static.toastoven.net/prod_contact_center/2.1.1-(4)_en.png)
+**Rate status** tab allows you to view monthly charges by type, individual service, and total through **①** Search button. **②** Service status will be displayed together if charges are set to be viewed based on individual services.
 
-### 요금 현황
-![](http://static.toastoven.net/prod_contact_center/2.1.1-(4).png)
-**요금 현황** 탭에서는 전체, 서비스 유형별, 개별 서비스별 월별 청구 요금을 **①** 검색하여 조회하실 수 있습니다. 개별 서비스를 기준으로 조회하셨을 경우 **②** 서비스 상태가 함께 표시됩니다. 
+## Organization Adminstrator
+![](http://static.toastoven.net/prod_contact_center/2.1.2-(1)_en.png)
+**Organization Administrator** can manage the organization which uses Online Contact, can add and delete agents, and can add or delete organization administrators from among agents.
+Since consulting and service management functions are not available only by the organization administrator's authority, adding administrator or agent authority from [Service Management → Agent](https://docs.toast.com/en/Contact%20Center/en/online-contact-guide-service-management/#agent_1) menu is needed to consult customers, or set service initially.
+The user whom you want to grant organization administrator permission must be registered as an IAM member.
 
+### Register as an IAM Member
+-	Click **① Invite Members** button → Enter name, ID, email
+-	TOAST CONSOLE → Manage Member → IAM Member tab → Click **Register IAM Member** button → Enter ID, name, mail, and mobile phone number
+Select one of the above two methods to register IAM member. After registering, click **Add Organization Administrator** button → click **View Agent** button → Search registered IAM Member by entering name/account/email, and add IAM Member as organization administrator.
+To newly registered IAM Members, password change mail will be sent by the registered email information. Logging in Online Contact becomes available after setting password through email.
 
-## 조직관리자
-![](http://static.toastoven.net/prod_contact_center/2.1.2-(1).png)
-**조직관리자**는 Online Contact를 사용하는 조직을 관리할 수 있는 권한을 가지며, 상담원의 추가 및 삭제가 가능하고, 상담원 중에서 조직관리자를 추가하거나 삭제하실 수 있습니다. 
-조직관리자 권한만으로는 상담 기능과 서비스 관리 기능을 이용할 수 없으므로, 상담을 진행하고자 하거나 서비스를 초기에 구성하고자 하는 경우 [서비스 관리 → 상담원](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_25) 메뉴에서 관리자 또는 상담원 권한을 추가해주세요. 
-조직관리자 권한을 부여할 사용자는 IAM 회원으로 등록되어 있어야 합니다.
+## SSO Login
+![](http://static.toastoven.net/prod_contact_center/2.1.3-(1)_en.png)
+SSO Login menu allows you to set the authentication method for logging in to help center. After registering SSO Login, set the login method you registered from [Service Management → Authentication](https://docs.toast.com/en/Contact%20Center/en/online-contact-guide-service-management/#authentication) menu. 
 
-### IAM 회원 등록
--	화면 우측 상단 **① 회원 초대** 버튼 → 이름, ID, 이메일 입력
--	TOAST CONSOLE → 멤버 관리 → IAM 회원 탭 → **IAM 회원 등록** 버튼 → ID, 이름, 메일, 휴대폰 번호 입력
+### SSO Login Adding Process
+-	Click **① +Register** button → Enter SSO Login Name, Remote Login URL, Login Status URL → Click **Confirm** button
+**API Key** is provided for authentication processing when SSO login is set up. The value of API Key can be changed through the **② Change API Key** button.
 
-위 두 방법 중 한가지를 선택하셔서 IAM 회원을 등록하시고, ② 화면 좌측 상단 **조직관리자 추가** 버튼 → **상담원 조회** 버튼 → 등록된 IAM 회원을 이름/계정/이메일 중 일부 정보 입력을 통해 조회하신 후 추가하실 수 있습니다. 
+## Authority Log Management
+![](http://static.toastoven.net/prod_contact_center/2.1.4-(1)_en.png)
+**①** Logs are recorded when you change the permissions of agents inside the organization. This menu manages logs about change of permission by the organization administrator or administrator. You can **② search** by entering some of the information, including the date and time of operation, operated contents, name, IP, service, or ID.
 
-**회원 초대** 버튼 또는 TOAST CONSOLE을 통해 등록하신 IAM 회원의 경우 입력하신 이메일로 비밀번호 변경 이메일이 발송되며, 해당 이메일을 통해 비밀번호를 설정해주신 후에 로그인하실 수 있습니다.
+## Privacy Settings
+![](http://static.toastoven.net/prod_contact_center/2.1.5-(1)_en.png)
+Through clicking **currently connected ① account name** displayed in the upper right corner of the screen, **② privacy settings** menu is showed. User’s personal settings could be accessed and edited through this menu. 
 
-
-## SSO 로그인
-![](http://static.toastoven.net/prod_contact_center/2.1.3-(1).png)
-헬프센터 로그인 시 원하는 인증 방식을 설정할 수 있는 메뉴로, 해당 메뉴에서 SSO 로그인을 등록하신 후 [서비스 관리 → 인증](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_2) 메뉴에서 등록하신 로그인 방식을 설정하시면 헬프센터에 적용됩니다. 등록하신 후 수정도 가능합니다.
-
-
-### SSO 로그인 추가 절차
--	**① +등록** 버튼 클릭 → SSO 로그인 명, 원격 로그인 URL, 로그인 상태 URL 입력 후 **확인** 버튼 클릭
-
-SSO 로그인 설정 시 인증 처리에 사용되는 **API 인증 Key**를 제공하며, **② API Key 변경** 버튼을 통해 Key값 변경이 가능합니다.
-
-
-## 권한 변경 로그 관리
-
-![](http://static.toastoven.net/prod_contact_center/2.1.4-(1).png)
-**①** 헬프센터 조직 내부 상담원들의 권한을 변경할 시 로그가 저장됩니다. 조직관리자 또는 관리자가 권한 변경을 진행한 로그를 관리하는 메뉴로, **②** 조작일시, 조작내용, 이름, IP, 서비스, ID 중 일부 정보 입력을 통해 검색할 수 있습니다.
-
-
-## 사용자 설정
-
-![](http://static.toastoven.net/prod_contact_center/2.1.5-(1).png)
-Online Contact 화면 우측 상단에 표시된 **①** 현재 접속되어 있는 **계정 이름**을 클릭하시면 **②** 개인정보설정 메뉴로 접속하실 수 있습니다. 해당 메뉴에서 헬프센터에 접속하는 사용자의 개인정보 설정을 열람하고 변경할 수 있습니다. 
-
-✔ **\[FAQ 바로가기]** [아이디, 이메일, 이름을 변경하거나 삭제하고 싶습니다.](https://nhn-contact.oc.toast.com/oc/hc/article/33/)
-✔ **\[FAQ 바로가기]** [비밀번호를 변경하고 싶습니다.](https://nhn-contact.oc.toast.com/oc/hc/article/35/)
-
-### 열람 가능한 정보
--	계정 
--	이름
--	닉네임 (변경 가능): 채팅 또는 메일처리시 보여지는 항목
--	전화번호
--	이메일
--	언어선택 (변경 가능): 서비스 언어 선택과는 별개로 사용자 환경에서의 언어 선택
--	티켓할당 (변경 가능): 휴가 등으로 티켓 배분을 받지 못하는 경우 티켓 할당여부 설정 가능
+### Accessible Information
+-	Account
+-	Name
+-	Nickname (Editable) : Displayed when communicating through chat, mail
+-	Phone number
+-	Email
+-	Language (Editable) : Language in your environment, apart from service’s language setting
+-	Assign ticket(Editable) : If consulting is not available due to vacation, etc., can set ticket allocation status

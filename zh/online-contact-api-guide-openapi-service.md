@@ -87,7 +87,7 @@
 |-----|----|-----------|-----|----|
 |result.content	|serviceId	|String	|O	|서비스 ID|
 |	              |name	      |String	|O	|서비스 명|
-|	              |active	    |Boolean|X		|서비스 상태(true:활성화, false:비활성화)|
+|	              |active	    |Boolean|		|서비스 상태(true:활성화, false:비활성화)|
 |               |language	  |String	|O	|서비스 언어（값:zh\|ja\|ko\|en, ko:한국어, ja:일본어, en:영어, zh:중국어)|
 |	              |timeZone	  |String	|X	|타임 존（값:Asia/Seoul\|Asia/Tokyo\|...)|
 |              	|createdDt	|Long	  |X	|서비스 생성 시간|
@@ -359,8 +359,8 @@
 #### 요청 파라미터 정의
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |-----|----|------------|----|----|
-|페이지	|page	|Int	|X	|기본 값:1|
-|1페이지 노출 건수	|pageSize	|Int	|X	|기본 값:100|
+|페이지	|page	|Int	|	|기본 값:1|
+|1페이지 노출 건수	|pageSize	|Int	|	|기본 값:100|
 
 #### 결과 데이터
 |명칭	|변수	|데이터 타입	|필수	|설명|

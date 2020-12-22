@@ -1,30 +1,31 @@
-## Contact Center > Online Contact > API 가이드 > SSO 로그인
-## 개요
-### SSO 로그인 개요
-SSO 로그인은 사용자 시스템과 상담 시스템을 연동하는 기능이며, 원격인증은 API Key를 통해 진행됩니다.
-API Key는 임의로 생성되는 유일한 문자열이며 원격로그인을 통해 상담시스템에 접속할 수 있도록 하는 안전한 인증방식입니다.
+## Contact Center > Online Contact > API Guide for Developers > Single Sign-On
 
-### SSO 로그인 프로세스
-1. 고객이 문의 접수, 채팅 상담 등을 위해 상담 시스템에 접속
-2. 고객이 상담 시스템에서 로그인 시도 시 상담 조직에서 설정해 둔 SSO 로그인 화면으로 이동
-3. Online Contact의 로그인 화면이 아닌, 제공 중인 시스템의 로그인 화면에서 로그인
-4. 로그인 성공후, 유저 정보와 API Key를 통해 토큰 생성
-5. 유저 정보와 토큰을 상담 시스템으로 전달
-6. 상담 시스템에서 토큰에 대해 인증, 성공후 고객 로그인 진행
-7. 로그인 전 화면으로 이동（returnUrl）
+## Overview
+### SSO Login Overview
+SSO login is a feature that links the user system with the consultation system, and remote authentication is done with API Key. 
+The API Key is the only optional string that can be generated and is a secure authentication method that allows remote login to connect to the consultation system.
 
-### SSO 로그인 설정
-#### SSO 로그인 등록
-![](http://static.toastoven.net/prod_contact_center/dev3.png)
-Online Contact 접속 후, 전체 관리 → SSO 로그인 메뉴에서 SSO 로그인을 먼저 등록합니다. SSO 로그인 URL, 로그인 상태 URL을 입력해주세요.
-SSO 로그인을 등록하신 후에 API Key를 복사해주세요. 원격로그인 API 호출 시 인증 토큰으로 사용됩니다.
+### Process of SSO Login
+1. Customer accesses consultation system for inquiries, chat consultation, etc.
+2. When a customer attempts to login from the consulting system, they are directed to the SSO login screen which is set up in the consulting organization.
+3. Login from the provided system login screen, not from Online Contact login screen.
+4. Create token through user information, API key after login has succeeded.
+5. Transfer user information, token to consultation system.
+6. Authenticate token in the consultation system and proceed login after success.
+7. Go to the pre-login screen.（returnUrl）
 
-#### SSO 로그인 활성화 및 지정
-![](http://static.toastoven.net/prod_contact_center/dev4.png) 
-서비스 관리 → 인증 → SSO 로그인 탭에서 SSO 로그인의 활성화 및 비활성화가 가능하며, 활성화하셨을 경우 선택하신 서비스에 지정하실 SSO 로그인을 선택하실 수 있습니다.
+### Set SSO Login
+#### Register SSO Login
+![](http://static.toastoven.net/prod_contact_center/dev3_en.png)
+After connecting to Online Contact, register SSO login first from the Global Management → SSO Login menu. Please enter the SSO login URL and login status URL.
+Please copy API key after registering SSO Login. It is used as authentication token when calling remote login API.
 
-#### 인증토큰 생성
-Token 생성 샘플은 아래와 같습니다. 파라미터 순서는 반드시 아래와 일치해야 하며, SSO 로그인 API Key를 확인해주세요.
+#### Enable and Select SSO Login
+![](http://static.toastoven.net/prod_contact_center/dev4_en.png) 
+You can enable or disable SSO Login in Service Management → Authentication → SSO Login menu, and when enabled, you can select SSO login you want to assign to the service you selected.
+
+#### Create Authentication Token
+Sample of creating token is as follows. The order of parameters must be consistent with the given example, and please check the SSO Login API key.
 ```
 private String getSHA256Token(String serviceId, String usercode, String username, String email, String phone,
         String returnUrl, Long time, String apiKey) throws Exception {
@@ -60,105 +61,105 @@ private String getSHA256Token(String serviceId, String usercode, String username
 }
 ```
 
-## SSO 로그인 API
-### SSO 원격로그인 API (Client Side)
-#### 인터페이스 설명
+## SSO Login API
+### SSO Remote Login API (Client Side)
+#### Interface Description
 - URL: https://{domain}.oc.toast.com/v2/enduser/remote.json			
-- URL (개발): https://{domain}.alpha-oc.toast.com/v2/enduser/remote.json		
+- URL (Dev): https://{domain}.alpha-oc.toast.com/v2/enduser/remote.json		
 
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|
+|Interface name | Protocol | Call direction | Encoding | Result format | Interface description |
 |------------|-------|--------|-----|--------|--------------|
-|SSO 원격로그인 API (Client Side)|HTTPS  |POST    |UTF-8|Redirect    |사용자 시스템에서 동적으로 form를 생성하여 브라우저에 반환하며, form은 자동으로 API에 form정보를 전달. API에서 전달된 form정보로 인증 후 성공시 로그인 Cookie 값 설정.|
+|SSO Remote Login API (Client Side)|HTTPS  |POST    |UTF-8|Redirect    |The user system dynamically generates a form and returns it to the browser, which automatically passes form information to the API. Set login cookie value  with form information passed from API after authentication is successful.|
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### Request Parameters
+|Name |Variable |Data type |Required | Description|
 |-----|----|------------|----|----|
-|서비스ID	|service	|Varchar(50)	|O	|서비스 ID|
-|유저ID	   |usercode	|Varchar(50)	|O	|유저ID，유일한 유저임을 표시|
-|유저 명	  |username	|Varchar(50)	|X	|유저 명|
-|유저 이메일 주소	|email	|Varchar(100)	|X	|유저 이메일|
-|전화번호	        |phone	|Varchar(20)	|X	|전화번호|
-|현재 시간의 timestamp	|time	|Long	|O	|호출 시간이 3분 초과시, 타임아웃 얼럿 출력.|
-|인증 Token	           |token	|Varchar	|O	|아래 파라미터 값과 SSO API Key로 산출된 SHA256 (필수가 아닌 파라미터 값이 null 혹은 빈값일 경우 , 암호화 문자열에 추가 할 필요 없음.주의：문자열 중 각 값의 순서는 아래 예시에 지정된 순서와 일치해야 함.) SHA256Digest(service + usercode + username + email + phone + retunrnUrl + time)|
-|리턴 화면 URL	|returnUrl	|Varchar	|X	|설정 및 로그인 성공시 해당 주소로 이동|
+|Service ID	|service	|Varchar(50)	|O	|Service ID|
+|User ID 	   |usercode	|Varchar(50)	|O	|User ID, indicates that the user is unique|
+|Username	  |username	|Varchar(50)	|X	|Username|
+|User Email Address 	|email	|Varchar(100)	|X	|User Email|
+|Phone Number 	        |phone	|Varchar(20)	|X	|Phone number |
+|Timestamp of Current Time 	|time	|Long	|O	|Timeout alert is displayed when call time exceeded by 3 minutes|
+|Authentication Token	           |token	|Varchar	|O	|SHA256 calculated by following parameter values and SSO API key (If non-required parameter values are null or empty, you do not need to add them to the encryption string. Caution: The order of each value in the string must be consistent with the following example.) SHA256Digest(service + usercode + username + email + phone + retunrnUrl + time)|
+|Return Screen URL	|returnUrl	|Varchar	|X	|Go to the address upon successful configuration and login|
 
-#### 결과 데이터
-returnUrl 파라미터 존재시 지정된 returnUrl로 이동 , returnUrl 없을 경우 문자열 : SUCCESS 반환
+#### Result Data
+If returnUrl parameter exists, move to the specified returnUrl, return SUCCESS string if parameter doesn't exist.
 
-### SSO 원격로그인 API (Server Side)
-#### 인터페이스 설명
+### SSO Remote Login API (Server Side)
+#### Interface Description
 - URL: https://{domain}.oc.toast.com/api/v2/enduser/remote.json			
-- URL (개발): https://{domain}.alpha-oc.toast.com/api/v2/enduser/remote.json			
+- URL (Dev): https://{domain}.alpha-oc.toast.com/api/v2/enduser/remote.json			
 
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|
+|Interface name | Protocol | Call direction | Encoding | Result format | Interface description |
 |------------|-------|--------|-----|--------|--------------|
-|SSO 원격로그인 API (Server Side)|HTTPS  |POST    |UTF-8|String   |사용자가 서버에서 직접 API 호출. API 로그인 성공 후 로그인 Cookie 값 설정.|
+|SSO Remote Login API (Server Side)|HTTPS  |POST    |UTF-8|String   |User directly calls API from server. Set login cookie value after API Login has succeeded.|
   
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### Request Parameters
+|Name |Variable |Data type |Required | Description|
 |-----|----|-----------|-----|----|
-|서비스ID	|service	|Varchar(50)	|O	|서비스 ID|
-|유저ID	|usercode	|Varchar(50)	|O	|유저ID，유일한 유저임을 표시|
-|유저 명	|username	|Varchar(50)	|X	|유저 명|
-|유저 이메일 주소	|email	|Varchar(100)	|X	|유저 이메일|
-|전화번호	|phone	|Varchar(20)	|X	|전화번호|
-|현재 시간의 timestamp	|time	|Long	|O	|호출 시간이 3분 초과시, 타임아웃 얼럿 출력.|
-|인증 Token	|token	|Varchar	|O	|아래 파라미터 값과 SSO API Key로 산출된 SHA256 (필수가 아닌 파라미터 값이 null 혹은 빈값일 경우 , 암호화 문자열에 추가 할 필요 없음.주의：문자열 중 각 값의 순서는 아래 예시에 지정된 순서와 일치해야 함.) SHA256Digest(service + usercode + username + email + phone + time)|
+|Service ID	|service	|Varchar(50)	|O	|Service ID|
+|User ID	|usercode	|Varchar(50)	|O	|User ID, indicates that the user is unique|
+|User Name 	|username	|Varchar(50)	|X	|User name|
+|User Email Address	|email	|Varchar(100)	|X	|User email|
+|Phone Number	|phone	|Varchar(20)	|X	|Phone number|
+|Timestamp of Current Time	|time	|Long	|O	|Timeout alert is displayed when call time exceeded by 3 minutes.|
+|Authentication Token 	|token	|Varchar	|O	|SHA256 calculated by following parameter values and SSO API key (If non-required parameter values are null or empty, you do not need to add them to the encryption string. Caution: The order of each value in the string must be consistent with the following example.) SHA256Digest(service + usercode + username + email + phone + time)|
 
-#### 결과 데이터
+#### Result Data
 SUCCESS
  
-### SSO 로그인 URL (사용자)
-#### 인터페이스 설명
-|인터페이스 명|프로토콜|호출방향|인코딩|URL|URL(개발)|결과 형식|
+### SSO Login URL (User)
+#### Interface Description
+|Interface name|Protocol|Call direction|Encoding|URL|URL(Dev)|Result format|
 |------------|--------|--------|------|--|----------|--------|
-|SSO 로그인 URL|HTTPS|GET|UTF-8|사용자 제공|사용자 제공|Redirect|
+|SSO Login URL|HTTPS|GET|UTF-8|Provided by user|Provided by user|Redirect|
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### Request Parameters
+|Name |Variable |Data type |Required | Description|
 |---------|---------|-----------|---------|----|
-|리턴 URL	|returnUrl	|Varchar	|O	|로그인 성공후 이동되는 URL|
+|Return URL	|returnUrl	|Varchar	|O	|URL to be moved after successfully logged-in|
 
-#### SSO 로그인 기능 설명
-**유저 미 로그인 상태**
-- ① 로그인 화면으로 이동
-- ② 유저 로그인
-- ③ 서비스 측의 서버에서 유저 로그인 처리 및 로그인 유저 관련 쿠키 생성
-- ④ SSO 원격 로그인 API 호출
+#### SSO Login Function Description
+**User Not Logged In**
+- ① Move to login screen
+- ② User logs in
+- ③ Service-side server processes user to be logged in, and create logged-in user-related cookies
+- ④ Call SSO remote login API
 
-**유저 로그인 상태**
-- ① SSO 원격 로그인 API 호출
+**User Logged In**
+- ① Call SSO remote login API
 
-#### SSO 원격 로그인 API 호출 방법 설명
-**SSO 원격 로그인 (Client Side)**
-- ① 유저 정보와 API Key 기준으로 로그인 token 생성
-- ② 유저 정보와 token을 브라우저로 리다이렉트
-- ③ 화면에서 Form 작성, 상세한 파라미터는 [SSO 원격 로그인 API-1]() 참조
-- ④ Form 제출
-- ⑤ SSO 원격 로그인 API를 통해 유저 정보와 token 전송
-- ⑥ 로그인 성공 후 {returnUrl}로 이동
+#### How to Call SSO Remote Login API
+**SSO Remote Login (Client Side)**
+- ① Create login token based on user information, API key
+- ② Redirect user information, token to browser
+- ③ Input Form in screen, Refer SSO Remote Login API (Client Side) about parameter details.
+- ④ Submit form
+- ⑤ Send user information, token through SSO Remote Login API
+- ⑥ Move to {returnUrl} after log-in succeeded
 
-**SSO 원격 로그인 (Server Side)**
-- ① 유저 정보와 API Key 기준으로 로그인 token 생성
-- ② 서버에서 "SSO 원격 로그인 API (Server Side)" 호출
-- ③ API 호출 파라미터 (usercode와 time)을 returnUrl 뒤에 추가 
-  - 예시) https://nhn-cs.alpha-oc.toast.com/multilanguage/hc/ticket/list/?usercode=xxxxxx@163.com&time=1566531359635
-- ④ {returnUrl}로 이동
+**SSO Remote Login (Server Side)**
+- ① Create login token based on user information, API Key
+- ② Call “SSO Remote Login API (Server Side)” in server
+- ③ Append API call parameters (usercode, time) in the end of returnUrl
+  - Example) https://nhn-cs.alpha-oc.toast.com/multilanguage/hc/ticket/list/?usercode=xxxxxx@163.com&time=1566531359635
+- ④ Move to {returnUrl}
  
-### SSO 로그인 상태 API (사용자)
-#### 인터페이스 설명
-|인터페이스 명|프로토콜|호출방향|인코딩|URL|URL(개발)|인터페이스 설명|결과 형식|
+### SSO Login Status API (User)
+#### Interface Description
+|Interface name|Protocol|Call direction|Encoding|URL|URL(Dev)|Interface Description|Result format|
 |------------|--------|--------|------|--|----------|--------|--------------|
-|SSO 로그인 상태 API|HTTPS|GET|UTF-8|사용자 제공|사용자 제공|사용자가 쿠키 정보를 기준으로 로그인 여부를 확인 후 JSON 형식의 데이터를 리턴|JSON|
+|SSO Login status API |HTTPS|GET|UTF-8|Provided by user|Provided by user|User returns JSON data after confirming login based on cookie information|JSON|
 
-#### 요청 파라미터 정의 
-- 없음
+#### Request Parameters
+- None
 
-#### 결과 데이터
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### Result Data
+|Name |Variable |Data type |Required | Description|
 |---------|---------|-----------|---------|----|
-|javascript function	|login	|Boolean	|O	|로그인 상태. 로그인 ：true, 미로그인 ：false|
-|유저 코드	|usercode	|Varchar(50)	|X	|유저 ID(유니크 값). 로그인 상태가 true 인 경우 유저코드는 필수|
+|Javascript Function	|login	|Boolean	|O	|Login status. Logged-in：true, Logged-out：false|
+|User Code	|usercode	|Varchar(50)	|X	|User ID (Unique). Required if login status is true|
 
 #### Response Body
 ```
@@ -173,26 +174,26 @@ SUCCESS
 }
 ```
 
-## 적용 예시
+## Examples of applications
 ### Sample Code
-✔ [Sample Code 다운로드](http://static.toastoven.net/prod_contact_center/oc_sso_sample-20191115.zip)
+✔ [Download Sample Code](http://static.toastoven.net/prod_contact_center/oc_sso_sample.zip)
 
-### iframe을 이용한 헬프센터 예시
-#### 1. iframe을 이용하여 Online Contact 헬프센터를 사용자 페이지에 삽입
-Sample Code 파일 중 'oc_sso_sample/src/main/resources/templates/help_frame.ftl'을 참조해주세요.
-iframe의 이름은 반드시 id = "ocPage"로 지정하셔야 합니다.
+### Help center example by using iframe
+#### 1. Insert Online Contact Help center into user page by ifrmae
+Please refer'oc_sso_sample/src/main/resources/templates/help_frame.ftl' in attached Sample Code file.
+The name of iframe must be specified into id = "ocPage".
 ```
 <iframe src="https://${domain}/hangame/hc/?iframe=true" id="ocPage" frameborder="0" scrolling="no" style="padding-top: 60px; box-sizing: unset; height: 100px; width: 100%">
 </iframe>
 ```  
  
-페이지에 viewport를 설정할 시 mobile/web 브라우저 모두에서 헬프센터를 사용하실 수 있습니다.
+If you set viewport into page, you could use help center in both mobile/web browsers.
 ```
 <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0">
 ```
 
-#### 2. Online Contact 헬프센터 페이지의 높이를 확인하여 iframe의 height 조정
-help_frame.ftl 파일 중 javascript 코드를 참조해주세요.
+#### 2. Check height of Online Contact Help center page, and adjust height of iframe
+Please refer javascript code in help_frame.ftl.
 ```
 // Listener for OC content height change
 window.addEventListener('message',function(event){
@@ -214,8 +215,8 @@ iframe.style.height = setHeight + margin + "px";
 };
 ```
 
-#### 3. 로그인 처리 후 설정해야 할 쿠키는 사용자 페이지에서 취득 가능
-help_frame.ftl 파일 중 javascript 코드를 참조해주세요.
+#### 3. Cookies that need to be set after login process could be acquired on user page
+Please refer javascript code in help_frame.ftl.
 ```
 // get cookie
 function getCookie(name) {

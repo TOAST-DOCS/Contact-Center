@@ -38,8 +38,8 @@
     "contents": [
       {
         "userId": 10058,
-        "usercode": "honggildong",
-        "username": "홍길동",
+        "usercode": "he.ronggang",
+        "username": "赫荣刚",
         "uuid": "ef1bd956-6c13-4391-8256-1eb0d840355a",
 
         "role": "ROLE_FRONT_ADMIN",
@@ -84,8 +84,8 @@
   "result": {
     "content": {
         "userId": 10058,
-        "usercode": "honggildong",
-        "username": "홍길동",
+        "usercode": "he.ronggang",
+        "username": "赫荣刚",
         ""uuid"": ""ef1bd956-6c13-4391-8256-1eb0d840355a"",
         "role": "ROLE_FRONT_ADMIN",
       }
@@ -130,8 +130,8 @@
   "result": {
     "content": {
         "userId": 10058,
-        "usercode": "honggildong",
-        "username": "홍길동",
+        "usercode": "he.ronggang",
+        "username": "赫荣刚",
         "uuid": "ef1bd956-6c13-4391-8256-1eb0d840355a",
         "role": "ROLE_FRONT_ADMIN",
     }
@@ -175,8 +175,8 @@
   "result": {
     "content": {
         "userId": 10058,
-        "usercode": "honggildong",
-        "username": "홍길동",
+        "usercode": "he.ronggang",
+        "username": "赫荣刚",
         "uuid": "ef1bd956-6c13-4391-8256-1eb0d840355a",
         "role": "ROLE_FRONT_ADMIN",
     }

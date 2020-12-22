@@ -20,12 +20,12 @@
 #### 결과 데이터
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |-----|-----|----------|-----|----|
-|result.content	|displayMail	|String	|X	  |발신자 주소|
-|	              |external	    |String	|X	  |외부계정 목록|
+|result.content	|displayMail	|String	|	  |발신자 주소|
+|	              |external	    |String	|	  |외부계정 목록|
 |	              |mail	        |String	|O	|대표계정 주소 : mail@oc.toast.com|
-|	              |name	        |String	|X	  |발신자 이름|
-|	              |template	    |String	|X	  |이메일 형식|
-|	              |updatedDt	  |Long	  |X	  |업데이트 시간|
+|	              |name	        |String	|	  |발신자 이름|
+|	              |template	    |String	|	  |이메일 형식|
+|	              |updatedDt	  |Long	  |	  |업데이트 시간|
 
 #### Response Body
 ```
@@ -65,12 +65,12 @@
 #### 결과 데이터
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |----|-----|-----------|-----|----|
-|result.content	|displayMail	|String	 |X	|발신자 주소|
-|	              |external	    |String	 |X	|외부계정 목록|
+|result.content	|displayMail	|String	 |	|발신자 주소|
+|	              |external	    |String	 |	|외부계정 목록|
 |       	      |mail	        |String	 |O	|대표계정 주소 : mail@oc.toast.com|
-|	              |name	        |String	 |X	|발신자 이름|
-|	              |template	    |String	 |X	|이메일 레이아웃|
-|	              |updatedDt	  |Long		 |X  |업데이트 시간|
+|	              |name	        |String	 |	|발신자 이름|
+|	              |template	    |String	 |	|이메일 레이아웃|
+|	              |updatedDt	  |Long		 |  |업데이트 시간|
 
 #### Response Body
 ```
@@ -107,7 +107,7 @@
 |-----|-----|----------|-----|----|
 |서비스 ID	     |serviceId	   |String	|O	|서비스 ID，URL PATH 내에 설정한{serviceId}|
 |외부 계정 정보	|request body	|String	  |O	|외부계정 정보(JSON)|
-|	             |id	         |Integer	 |X   |외부계정 ID (신규 생성시에는 필요 없고 수정 시에만 필요)|
+|	             |id	         |Integer	 |   |외부계정 ID (신규 생성시에는 필요 없고 수정 시에만 필요)|
 |	             |name	       |String	 |O	 |외부계정 구분 명칭(길이:min=1, max=20)|
 |	             |active	     |Boolean	 |O	 |외부계정 상태(true:활성화 ,false:비활성화), 수정 시에만 상태 전달 필요|
 |	             |host	       |String	 |O	 |메일 서버|
@@ -189,7 +189,7 @@
 #### 결과 데이터
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |-----|----|-----------|-----|----|
-|result.content	|id	      |Integer	|X	  |외부계정 ID|
+|result.content	|id	      |Integer	|	  |외부계정 ID|
 |               |name	    |String	  |O	|외부계정 구분 명칭|
 |	              |active	  |Boolean	|O	|외부계정 상태(고정 값:true)|
 |	              |host	    |String	  |O	|메일 서버|
@@ -198,8 +198,8 @@
 |	              |mail	    |String	  |O	|외부계정 주소|
 |	              |password	|String	  |O	|외부계정 비밀번호|
 |	              |mailDel	|Boolean	|O	|원본 남기기 기능 사용 여부(true:삭제,false:보류)|
-|	              |createdDt	|Long	  |X	  |생성시간|
-|	              |updatedDt	|Long   |X		|수정시간|
+|	              |createdDt	|Long	  |	  |생성시간|
+|	              |updatedDt	|Long   |		|수정시간|
 
 #### Response Body
 ```
@@ -243,7 +243,7 @@
 |외부계정 ID	   |id	         |Integer   |O	 |외부계정 ID,URL PATH내에 설정된 {id}|
 |외부계정 정보	 |request body	|String	  |O	  |외부계정 정보(JSON)|
 |	              |name	         |String	 |O	   |외부계정 구분 명칭(길이:min=1, max=20)|
-|	              |active	       |Boolean	 |X	   |외부계정 상태(true:활성화,false:비활성화)|
+|	              |active	       |Boolean	 |	   |외부계정 상태(true:활성화,false:비활성화)|
 |	              |host	         |String	 |O	   |메일 서버|
 |	              |port	         |Integer	 |O	   |포트(예:993)|
 |	              |ssl	         |Boolean	 |O	   |ssl 사용여부(true:사용,false:미사용)|
@@ -267,7 +267,7 @@
 #### 결과 데이터
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |----|-----|------------|----|----|
-|result.content	|id	    |Integer	|X	  |외부계정 ID|
+|result.content	|id	    |Integer	|	  |외부계정 ID|
 |               |name	  |String	  |O	|외부계정 구분 명칭|
 |	              |active	|Boolean	|O	|외부계정 상태(true:활성화,false:비활성화)|
 |	              |host	  |String	  |O	|메일 서버|
@@ -276,8 +276,8 @@
 |	              |mail	  |String	  |O	|외부계정 주소|
 |	              |password	|String	|O	|외부계정 비밀번호|
 |	              |mailDel	|Boolean	|O	|원본 남기기 기능 사용 여부(true:삭제,false:보류)|
-|	              |createdDt	|Long		|X   |생성시간|
-|               |updatedDt	|Long		|X  |수정시간|
+|	              |createdDt	|Long		|   |생성시간|
+|               |updatedDt	|Long		|   |수정시간|
 
 #### Response Body
 ```
@@ -323,7 +323,7 @@
 #### 결과 데이터
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |-----|-----|----------|-----|----|
-|result.content	|id	        |Integer  |X		  |외부계정 ID|
+|result.content	|id	        |Integer  |		  |외부계정 ID|
 |	              |name	      |String	  |O	  |외부계정 구분 명칭|
 |	              |active	    |Boolean	|O	  |외부계정 상태(고정 값 : true)|
 |               |host	      |String	  |O	  |메일 서버|
@@ -332,8 +332,8 @@
 |	              |mail	      |String	  |O	  |외부계정 주소|
 |	              |password	  |String	  |O	  |외부계정 비밀번호|
 |	              |mailDel	  |Boolean	|O	  |원본 남기기 기능 사용 여부(true:삭제,false:보류)|
-|	              |createdDt	|Long		  |X     |생성시간|
-|	              |updatedDt	|Long		  |X     |수정시간|
+|	              |createdDt	|Long		  |     |생성시간|
+|	              |updatedDt	|Long		  |     |수정시간|
 
 #### Response Body
 ```
@@ -377,7 +377,7 @@
 #### 결과 데이터
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |-----|----|-----------|-----|----|
-|result.content	|id	        |Integer	|X	  |외부계정 ID|
+|result.content	|id	        |Integer	|	  |외부계정 ID|
 |	              |name	      |String	  |O	|외부계정 구분 명칭|
 |	              |active	    |Boolean	|O	|외부계정 상태(고정 값 : false)|
 |	              |host	      |String 	|O	|메일 서버|
@@ -386,8 +386,8 @@
 |	              |mail	      |String	  |O	|외부계정 주소|
 |	              |password	  |String	  |O	|외부계정 비밀번호|
 |	              |mailDel	  |Boolean	|O	|원본 남기기 기능 사용 여부(true:삭제,false:보류)|
-|               |createdDt	|Long		  |X   |생성시간|
-|	              |updatedDt	|Long		  |X   |수정시간|
+|               |createdDt	|Long		  |   |생성시간|
+|	              |updatedDt	|Long		  |   |수정시간|
 
 #### Response Body
 ```
@@ -431,7 +431,7 @@
 #### 결과 데이터
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |-----|----|------------|-----|---|
-|result.content|		|String|X		|"SUCCESS":삭제 성공|
+|result.content|		|String|		|"SUCCESS":삭제 성공|
 
 #### Response Body
 ```
@@ -461,9 +461,9 @@
 |-----|-----|----------|-----|---|
 |서비스 ID	        |serviceId	   |String	|O	|서비스 ID|
 |이메일 설정 정보	 |request body	|String	 |O	 |이메일 설정 정보(JSON)|
-|	                 |name	        |String	 |X	 |발신자 이름(길이:min = 0, max = 45)|
-|	                 |displayMail	  |String	 |X	 |발신자 주소(예：noreply@oc.toast.com)|
-|	                 |template	    |String	 |X	 |이메일 레이아웃. 예) \<p\>\#\{content\}\<\/p\> 해당 이메일 레이아웃은 모든 이메일에 적용됩니다. #{content} 태그는 반드시 추가해야합니다.|
+|	                 |name	        |String	 |	 |발신자 이름(길이:min = 0, max = 45)|
+|	                 |displayMail	  |String	 |	 |발신자 주소(예：noreply@oc.toast.com)|
+|	                 |template	    |String	 |	 |이메일 레이아웃. 예) \<p\>\#\{content\}\<\/p\> 해당 이메일 레이아웃은 모든 이메일에 적용됩니다. #{content} 태그는 반드시 추가해야합니다.|
 
 #### Request Body
 ```

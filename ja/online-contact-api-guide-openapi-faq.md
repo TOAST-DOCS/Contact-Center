@@ -1,44 +1,45 @@
-## Contact Center > Online Contact > API 가이드 > FAQ
-### FAQ 목록 조회
-#### 인터페이스 설명
-- URL: https://{domain}.oc.toast.com /{serviceId}/openapi/v1/helpdoc.json			
-- URL (개발): https://{domain}.alpha-oc.toast.com /{serviceId}/openapi/v1/helpdoc.json			
+## Contact Center > Online Contact > プログラマーのためのAPIガイド > FAQ
+
+### FAQ目録照会
+#### インターフェース説明
+- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/helpdoc.json			
+- URL (開発): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/helpdoc.json			
 	
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
-|FAQ 목록 조회 |HTTPS  |GET    |UTF-8|JSON    |조회 조건 기준으로 FAQ 목록을 리턴|공통 인증   |
+|FAQ目録照会 |HTTPS  |GET    |UTF-8|JSON    |照会条件を基準にFAQリストをリターン|共通認証|
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### リクエストパラメータ定義
+|名称|変数|データタイプ|必須|説明|
 |-----|----|-----------|-----|----|
-|서비스 ID	|serviceId	|Varchar(50)	|O	|서비스 ID, URL PATH내에 설정|
-|조회언어	|language	|Varchar(2)	|X	|ko：한국어, zh：중국어, ja：일본어, en：영어|
-|카테고리 ID	|category	|Int	|X	|카테고리 ID|
-|추천	|recommend	|Boolean	 |X	|true：추천，false：추천 아님|
-|상단고정	|top	|Boolean	       |X	|true：상단고정，false：상단고정 아님|
-|상태	|status	|Varchar(1)	         |X	|D：초안, O：공개, C：완료|
-|키워드	|query	|Varchar	         |X	|검색문구|
-|조회 필드	|searchField	|Varchar	|X	|디폴트: 내용+제목으로 검색, title：제목만 검색, content：내용만 검색|
-|정렬 필드	|sort	|Varchar	        |X	|isTop, isRecommend, createdDt, updatedDt 필드로 정렬기준 지정 가능. 여러개 일 경우 ','로 분리|
-|페이지	|page	|Int	                 |X	|페이지 번호，디폴트로 1페이지| 
-|페이지 당 건수	|pageSize	|Int   |X	|페이지 당 데이터 건수，디폴트로 10건|
+|サービスID	|serviceId	|Varchar(50)	|O	|サービスID, URL PATH内に設定|
+|照会言語	|language	|Varchar(2)	|X	|ko：韓国語, zh：中国語, ja：日本語, en：英語|
+|カテゴリーID	|category	|Int	|X	|カテゴリーID|
+|推薦	|recommend	|Boolean	|X	|true：推薦，false：推薦ではない|
+|上段固定	|top	|Boolean	|X	|true：上段固定，false：上段固定ではない|
+|状態	|status	|Varchar(1)	|X	|D：草案, O：公開, C：完了|
+|キーワード	|query	|Varchar	|X	|検索文句|
+|照会フィールド	|searchField	|Varchar	|X	|基本: 内容+タイトルで検索, title：タイトルだけ検索, content：内容だけ検索|
+|整列フィールド	|sort	|Varchar	|X	|isTop, isRecommend, createdDt, updatedDt フィールドを使って 整列基準指定可能. 複数の場合 ','で分離|
+|ページ	|page	|Int	|X	|ページ番号，基本は1ページ| 
+|ページあたりの件数	|pageSize	|Int	|X	|ページあたりのデータ件数，基本は10件|
 
-#### 결과 데이터
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### 結果データ
+|名称|変数|データタイプ|必須|説明|
 |-----|----|-----------|------|---|
 |result.contents	|helpDocId	|Long	|O	|FAQ ID|
-|                 |serviceId	        |String	|O	|서비스 ID|
-|	                |language	|String	|O	|ko：한국어, zh：중국어, ja：일본어, en：영어|
-| 	              |status	        |String	|O	|FAQ 상태. D：초안, O：공개, C：완료|
-|	                |categoryId	|Int	|O	|카테고리 ID|
-|	                |categoryName	|String	|O	|카테고리 명|
-|	                |isRecommend	|Boolean	|O	|추천|
-|	                |isTop	        |Boolean	|O	|상단고정|
-|	                |title	        |String	|O	|FAQ 제목|
-|	                |userId	        |Int	|O	|등록 유저ID|
-|	                |userName	|String	|O	|등록 유저명|
-|	                |createdDt	|Long	|O	|FAQ 등록시간|
-|	                |updatedDt	|Long	|O	|FAQ 수정시간|
+|                 |serviceId	        |String	|O	|サービスID|
+|	                |language	|String	|O	|ko：韓国語, zh：中国語, ja：日本語, en：英語어|
+| 	              |status	        |String	|O	|FAQ状態. D：草案, O：公開, C：完了|
+|	                |categoryId	|Int	|O	|カテゴリーID|
+|	                |categoryName	|String	|O	|カテゴリー名|
+|	                |isRecommend	|Boolean	|O	|推薦|
+|	                |isTop	        |Boolean	|O	|上段固定|
+|	                |title	        |String	|O	|FAQタイトル|
+|	                |userId	        |Int	|O	|登録ユーザーID|
+|	                |userName	|String	|O	|登録ユーザー名|
+|	                |createdDt	|Long	|O	|FAQ登録時間|
+|	                |updatedDt	|Long	|O	|FAQ修正時間|
 
 #### Response Body
 ```
@@ -58,12 +59,12 @@
         "categoryId": 509,
         "isRecommend": true,
         "isTop": false,
-        "title": "중국어 제목1",
+        "title": "中国語タイトル1",
         "userId": 10063,
         "createdDt": 1547962599000,
         "updatedDt": 1548054677000,
-        "userName": "홍",
-        "categoryName": "중국어 카테고리",
+        "userName": "example",
+        "categoryName": "中国語カテゴリー１",
       }
     ],
     "total": 1,
@@ -74,49 +75,49 @@
 }
 ```
 
-### FAQ 상세 조회
-#### 인터페이스 설명
-- URL: https://{domain}.oc.toast.com /{serviceId}/openapi/v1/helpdoc/{id}.json			
-- URL (개발): https://{domain}.alpha-oc.toast.com /{serviceId}/openapi/v1/helpdoc/{id}.json			
+### FAQ詳細照会
+#### インターフェース説明
+- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/helpdoc/{id}.json			
+- URL (開発): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/helpdoc/{id}.json
 
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
-|FAQ 상세 조회 |HTTPS  |GET    |UTF-8|JSON    |FAQ ID를 통해 FAQ 상세 내용 조회|공통 인증   |
+|FAQ詳細照会|HTTPS  |GET    |UTF-8|JSON    |FAQのIDでFAQの詳細を照会|共通認証|
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### リクエストパラメータ定義
+|名称|変数|データタイプ|必須|説明|
 |----|------|-----------|----|----|
-|서비스 ID	|serviceId	|String	|O	|URL PATH 내에 설정한{serviceId}|
-|FAQ ID	|id	|Long	|O	|URL PATH 내에 설정한{id}|
+|サービスID	|serviceId	|String	|O	|URL PATH内に設定した{serviceId}|
+|FAQ ID	|id	|Long	|O	|URL PATH内に設定した{id}|
 
-#### 결과 데이터
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### 結果データ
+|名称|変数|データタイプ|必須|説明|
 |-----|-----|----------|-----|----|
-|result.content	|helpDocId	|Long	        |O	|FAQ ID|
-|	              |serviceId	|String	|O	|서비스 ID|
-|	              |title	|String	        |O	|FAQ 제목|
-|	              |content	|String	        |O	|FAQ 내용|
-| 	            |isRecommend	|Boolean	|O	|추천|
-| 	            |isTop	|Boolean	|O	|상단고정|
-| 	            |status	|String	        |O	|FAQ 상태, D：초안, O：공개, C：완료|
-|	              |readCnt	|Int	        |O	|조회수|
-|	              |userId	|Int	        |O	|등록 유저 ID|
-|	              |username	|String	        |O	|등록 유저 명|
-|	              |attachmentYn	|Boolean	|O	|첨부파일 포함 여부|
-|	              |createdDt	|Long	|O	|FAQ 등록시간|
-|	              |updatedDt	|Long	|O	|FAQ 수정시간|
-|	              |categories.categoryId	|Int	|O	|카테고리 ID|
-|	              |categories.parent	|String	|O	|상위 카테고리 ID|
-|	              |categories.name	|String	|O	|카테고리 명|
-|	              |categories.level	|String	|O	|카테고리 뎁스（1\|2\|3）|
-|	              |contents.{language}.title	|String	|O	|다국어 FAQ 제목|
-|	              |contents.{language}.content	|String	|O	|다국어 FAQ 내용|
-|	              |contents.{language}.attachments[].attachmentId	|String	|O	|다국어 첨부파일 ID|
-|	              |contents.{language}.attachments[].fileName	|String	|O	|다국어 첨부파일 명|
-|	              |contents.{language}.attachments[].size	|Long	|O	|다국어 첨부파일 크기|
-|	              |attachments[].attachmentId	|String	|O	|첨부파일 ID|
-|	              |attachments[].fileName	|String	|O	|첨부파일 명|
-|	              |attachments[].size	|Long	|O	|첨부파일 크기|
+|result.content	|helpDocId	|Long	|O	|FAQ ID|
+|	              |serviceId	|String	|O	|サービスID|
+|	              |title	|String	|O	|FAQタイトル|
+|	              |content	|String	|O	|FAQ内容|
+| 	            |isRecommend	|Boolean	|O	|推薦|
+| 	            |isTop	|Boolean	|O	|上段固定|
+| 	            |status	|String	|O	|FAQの状況, D：草案, O：公開, C：完了|
+|	              |readCnt	|Int	|O	|閲覧数|
+|	              |userId	|Int	|O	|登録ユーザーID|
+|	              |username	|String	|O	|登録ユーザー名|
+|	              |attachmentYn	|Boolean	|O	|添付ファイルが含まれているかどうか|
+|	              |createdDt	|Long	|O	|FAQ登録時間|
+|	              |updatedDt	|Long	|O	|FAQ修正時間|
+|	              |categories.categoryId	|Int	|O	|カテゴリーID|
+|	              |categories.parent	|String	|O	|上位カテゴリーID|
+|	              |categories.name	|String	|O	|カテゴリー名|
+|	              |categories.level	|String	|O	|カテゴリーの段階（1\|2\|3）|
+|	              |contents.{language}.title	|String	|O	|多言語FAQタイトル|
+|	              |contents.{language}.content	|String	|O	|多言語FAQ内容|
+|	              |contents.{language}.attachments[].attachmentId	|String	|O	|多言語添付ファイルID|
+|	              |contents.{language}.attachments[].fileName	|String	|O	|多言語添付ファイル名|
+|	              |contents.{language}.attachments[].size	|Long	|O	|多言語添付ファイルサイズ|
+|	              |attachments[].attachmentId	|String	|O	|添付ファイルID|
+|	              |attachments[].fileName	|String	|O	|添付ファイル名|
+|	              |attachments[].size	|Long	|O	|添付ファイルサイズ|
 
 #### Response Body
 ```
@@ -131,8 +132,8 @@
             "helpDocId":648,
             "language":null,
             "serviceId":"multilanguage",
-            "title":"중국어 제목1",
-            "content":"중국어 내용1",
+            "title":"中国語タイトル1",
+            "content":"中国語内容1",
             "isRecommend":false,
             "isTop":false,
             "status":"O",
@@ -152,8 +153,8 @@
             ],
             "contents":{
                 "ko":{
-                    "title":"한국어 제목1",
-                    "content":"한국어 내용1",
+                    "title":"韓国語タイトル1",
+                    "content":"韓国語内容1",
                     "attachments":[
                         {
                             "attachmentId":"e981516df5da4b1cbf25af403b3a622a",
@@ -164,8 +165,8 @@
                     ]
                 },
                 "ja":{
-                    "title":"일본어 제목1",
-                    "content":"일본어 내용1",
+                    "title":"日本語タイトル1",
+                    "content":"日本語内容1",
                     "attachments":[
                         {
                             "attachmentId":"e981516df5da4b1cbf25af403b3a622a",
@@ -176,8 +177,8 @@
                     ]
                 },
                 "zh":{
-                    "title":"중국어 제목1",
-                    "content":"중국어 내용1",
+                    "title":"中国語タイトル1",
+                    "content":"中国語内容1",
                     "attachments":[
                         {
                             "attachmentId":"e981516df5da4b1cbf25af403b3a622a",
@@ -188,8 +189,8 @@
                     ]
                 },
                 "en":{
-                    "title":"영어 제목1",
-                    "content":"영어 내용1",
+                    "title":"英語タイトル1",
+                    "content":"英語内容1",
                     "attachments":[
                         {
                             "attachmentId":"e981516df5da4b1cbf25af403b3a622a",
@@ -213,33 +214,33 @@
 }
 ```
 
-### FAQ 등록
+### FAQ登録
 #### 인터페이스 설명
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/helpdoc.json				
-- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/helpdoc.json			
+- URL (開発): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/helpdoc.json			
 		
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
-|FAQ 등록 |HTTPS  |POST    |UTF-8|JSON    |신규 FAQ 등록|공통 인증   |
+|FAQ登録 |HTTPS  |POST    |UTF-8|JSON    |新規FAQ登録|共通認証|
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### リクエストパラメータ定義
+|名称|変数|データタイプ|必須|説明|
 |----|------|-----------|----|----|
-|서비스 ID	|serviceId	|String	|O	|URL PATH 내에 설정한{serviceId}|
-|request body	|categoryId	|String	|O	|카테고리 ID|
-|	        |title	        |String	|O	|FAQ 제목（단일언어：서비스 언어）|
-|	        |content	|String	|O	|FAQ 내용（단일언어：서비스 언어）|
-|	        |status	        |String	|O	|FAQ 상태. D：초안, O：공개, C：완료|
-|	        |isRecommend	|Boolean	|O	|추천 여부. true：추천, false：추천 아님|
-|	        |isTop	        |Boolean	|O	|상단고정 여부. true：상단고정, false：상단고정 아님|
-|	        |contents.{language}.title	|String	|O	|FAQ 제목(다국어)|
-| 	        |contents.{language}.content	|String	|O	|FAQ 내용(다국어)|
-|	        |contents.{language}.attachments[].attachmentId	|Array	|X	|첨부파일 ID（다국어）|
-|	        |attachments[].attachmentId	|String	|X   	|첨부파일 ID（단일언어）|
+|サービスID	|serviceId	|String	|O	|URL PATH内に設定した{serviceId}|
+|request body	|categoryId	|String	|O	|カテゴリーID|
+|	        |title	        |String	|O	|FAQタイトル（単一言語：サービス言語）|
+|	        |content	|String	|O	|FAQ内容（単一言語：サービス言語）|
+|	        |status	        |String	|O	|FAQの状況, D：草案, O：公開, C：完了|
+|	        |isRecommend	|Boolean	|O	|推薦の可否. true：推薦, false：推薦ではない|
+|	        |isTop	        |Boolean	|O	|上段固定の可否. true：上段固定, false：上段固定ではない|
+|	        |contents.{language}.title	|String	|O	|FAQタイトル(多言語)|
+| 	        |contents.{language}.content	|String	|O	|FAQ内容(多言語)|
+|	        |contents.{language}.attachments[].attachmentId	|Array	|	|添付ファイルID（多言語）|
+|	        |attachments[].attachmentId	|String	|   	|添付ファイルID（単一言語）|
 
 #### Request Body
 ```
-단일 언어
+単一言語
 {
     "title":"中文标题1",
     "content":"中文内容1",
@@ -254,7 +255,7 @@
     ]
 }
 
-다국어
+多言語
 {
     "status":"O",
     "categoryId":1367,
@@ -262,8 +263,8 @@
     "isRecommend":false,
     "contents":{
         "ko":{
-            "title":"한국어 제목1",
-            "content":"한국어 내용1",
+            "title":"韓国語タイトル1",
+            "content":"韓国語内容1",
             "attachments":[
                 {
                     "attachmentId":"e981516df5da4b1cbf25af403b3a622a"
@@ -271,8 +272,8 @@
             ]
         },
         "ja":{
-            "title":"일본어 제목1",
-            "content":"일본어 내용1",
+            "title":"日本語タイトル1",
+            "content":"日本語内容1",
             "attachments":[
                 {
                     "attachmentId":"e981516df5da4b1cbf25af403b3a622a"
@@ -280,8 +281,8 @@
             ]
         },
         "zh":{
-            "title":"중국어 제목1",
-            "content":"중국어 내용1",
+            "title":"中国語タイトル1",
+            "content":"中国語内容1",
             "attachments":[
                 {
                     "attachmentId":"e981516df5da4b1cbf25af403b3a622a"
@@ -289,8 +290,8 @@
             ]
         },
         "en":{
-            "title":"영어 제목1",
-            "content":"영어 내용1",
+            "title":"英語タイトル1",
+            "content":"英語内容1",
             "attachments":[
                 {
                     "attachmentId":"e981516df5da4b1cbf25af403b3a622a"
@@ -301,34 +302,34 @@
 }
 ```
 
-#### 결과 데이터
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### 結果データ
+|名称|変数|データタイプ|必須|説明|
 |---------|---------|-----------|---------|----|
-|result.content	|helpDocId	|Long	|O	|FAQ ID|			
-|	        |serviceId	|String	|O	|서비스 ID|
-|	        |title	        |String	|O	|FAQ 제목|
-|	        |content	|String	|O	|FAQ 내용|
-|	        |isRecommend	|Boolean	|O	|추천 여부. true：추천, false：추천 아님|
-|	        |isTop	        |Boolean	|O	|상단고정 여부. true：상단고정, false：상단고정 아님|
-|	        |status	        |String	|O	|FAQ 상태. D：초안, O：공개, C：완료|
-|	        |readCnt	|Int	|O	|조회수|
-|	        |userId	        |Int	|O	|등록 유저 ID|
-|	        |username	|String	|O	|등록 유저 명|
-|	        |attachmentYn	|Boolean	|O	|첨부파일 포함 여부|
-|	        |createdDt	|Long	|O	|FAQ 등록시간|
-|	        |updatedDt	|Long	|O	|FAQ 수정시간|
-|	        |categories.categoryId	|Int	|O	|카테고리 ID|
-|	        |categories.parent	|String	|O	|상위 카테고리 ID|
-|	        |categories.name	|String	|O	|카테고리 명|
-|	        |categories.level	|String	|O	|카테고리 뎁스（1\|2\|3）|
-|	        |contents.{language}.title	|String	|O	|다국어 FAQ 제목|
-|	        |contents.{language}.content	|String	|O	|다국어 FAQ 내용|
-|	        |contents.{language}.attachments[].attachmentId	|String	|O	|다국어 첨부파일 ID|
-|	        |contents.{language}.attachments[].fileName	|String	|O	|다국어 첨부파일 명|
-|	        |contents.{language}.attachments[].size	        |Long	|O	|다국어 첨부파일 크기|
-|	        |attachments[].attachmentId	|String	|O	|첨부파일 ID|
-|	        |attachments[].fileName	        |String	|O	|첨부파일 명|
-|	        |attachments[].size	        |Long	|O	|첨부파일 크기|
+|result.content	|helpDocId	|Long	|O	|FAQ ID|
+|	              |serviceId	|String	|O	|サービスID|
+|	              |title	|String	|O	|FAQタイトル|
+|	              |content	|String	|O	|FAQ内容|
+| 	            |isRecommend	|Boolean	|O	|推薦の可否. true：推薦, false：推薦ではない|
+| 	            |isTop	|Boolean	|O	|上段固定の可否. true：上段固定, false：上段固定ではない|
+| 	            |status	|String	|O	|FAQの状況, D：草案, O：公開, C：完了|
+|	              |readCnt	|Int	|O	|閲覧数|
+|	              |userId	|Int	|O	|登録ユーザーID|
+|	              |username	|String	|O	|登録ユーザー名|
+|	              |attachmentYn	|Boolean	|O	|添付ファイルが含まれているかどうか|
+|	              |createdDt	|Long	|O	|FAQ登録時間|
+|	              |updatedDt	|Long	|O	|FAQ修正時間|
+|	              |categories.categoryId	|Int	|O	|カテゴリーID|
+|	              |categories.parent	|String	|O	|上位カテゴリーID|
+|	              |categories.name	|String	|O	|カテゴリー名|
+|	              |categories.level	|String	|O	|カテゴリーの段階（1\|2\|3）|
+|	              |contents.{language}.title	|String	|O	|多言語FAQタイトル|
+|	              |contents.{language}.content	|String	|O	|多言語FAQ内容|
+|	              |contents.{language}.attachments[].attachmentId	|String	|O	|多言語添付ファイルID|
+|	              |contents.{language}.attachments[].fileName	|String	|O	|多言語添付ファイル名|
+|	              |contents.{language}.attachments[].size	|Long	|O	|多言語添付ファイルサイズ|
+|	              |attachments[].attachmentId	|String	|O	|添付ファイルID|
+|	              |attachments[].fileName	|String	|O	|添付ファイル名|
+|	              |attachments[].size	|Long	|O	|添付ファイルサイズ|
 
 #### Response Body
 ```
@@ -343,8 +344,8 @@
             "helpDocId":648,
             "language":null,
             "serviceId":"multilanguage",
-            "title":"중국어 제목1",
-            "content":"중국어 내용1",
+            "title":"中国語タイトル1",
+            "content":"中国語内容1",
             "isRecommend":false,
             "isTop":false,
             "status":"O",
@@ -364,8 +365,8 @@
             ],
             "contents":{
                 "ko":{
-                    "title":"한국어 제목1",
-                    "content":"한국어 내용1",
+                    "title":"韓国語タイトル1",
+                    "content":"韓国語内容1",
                     "attachments":[
                         {
                             "attachmentId":"e981516df5da4b1cbf25af403b3a622a",
@@ -376,8 +377,8 @@
                     ]
                 },
                 "ja":{
-                    "title":"일번어 제목1",
-                    "content":"일본어 내용1",
+                    "title":"日本語タイトル1",
+                    "content":"日本語内容1",
                     "attachments":[
                         {
                             "attachmentId":"e981516df5da4b1cbf25af403b3a622a",
@@ -388,8 +389,8 @@
                     ]
                 },
                 "zh":{
-                    "title":"중국어 제목1",
-                    "content":"중국어 내용1",
+                    "title":"中国語タイトル1",
+                    "content":"中国語内容1",
                     "attachments":[
                         {
                             "attachmentId":"e981516df5da4b1cbf25af403b3a622a",
@@ -400,8 +401,8 @@
                     ]
                 },
                 "en":{
-                    "title":"영어 제목1",
-                    "content":"영어 내용1",
+                    "title":"英語タイトル1",
+                    "content":"英語内容1",
                     "attachments":[
                         {
                             "attachmentId":"e981516df5da4b1cbf25af403b3a622a",
@@ -425,37 +426,38 @@
 }
 ```
 
-### FAQ 수정
-#### 인터페이스 설명
+### FAQ修正
+#### インターフェース説明
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/helpdoc/{id}.json					
-- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/helpdoc/{id}.json			
+- URL (開発): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/helpdoc/{id}.json
 		
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
-|FAQ 수정 |HTTPS  |PUT    |UTF-8|JSON    |FAQ ID 기준으로 내용 수정|공통 인증   |
+|FAQ修正|HTTPS  |PUT    |UTF-8|JSON    |FAQ ID基準に内容修正|共通認証|
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### リクエストパラメータ定義
+|名称|変数|データタイプ|必須|説明|
 |----|------|-----------|----|----|
-|서비스 ID	|serviceId	|String	|O	|URL PATH내에 설정한{serviceId}|
-|FAQ ID	   |helpDocId	   |Long	|O	|URL PATH내에 설정한{id}|
-|request body	|categoryId	|String	|O	|카테고리 ID|
-|	        |title	        |String	|O	|FAQ 제목（단일언어：서비스 언어）|
-|	        |content	|String	|O	|FAQ 내용（단일언어：서비스 언어）|
-|	        |status	        |String	|O	|FAQ 상태. D：초안, O：공개, C：완료|
-|	        |isRecommend	|Boolean	|O	|추천 여부. true：추천, false：추천 아님|
-|	        |isTop	        |Boolean	|O	|상단고정 여부. true：상단고정, false：상단고정 아님|
-|	        |contents.{language}.title	|String	|O	|FAQ 제목(다국어)|
-|	        |contents.{language}.content	|String	|O	|FAQ 내용(다국어)|
-|	        |contents.{language}.attachments[].attachmentId	|Array	  |X	|첨부파일 ID（다국어）|
-|	        |attachments[].attachmentId	|String	    |X	|첨부파일 ID（단일언어）|
+|サービスID	|serviceId	|String	|O	|URL PATH内に設定した{serviceId}|
+|FAQ ID	   |helpDocId	   |Long	|O	|URL PATH内に設定した{id}|
+|request body	|categoryId	|String	|O	|カテゴリーID|
+|	        |title	        |String	|O	|FAQタイトル（単一言語：サービス言語）|
+|	        |content	|String	|O	|FAQ内容（単一言語：サービス言語）|
+|	        |status	        |String	|O	|FAQの状況, D：草案, O：公開, C：完了|
+|	        |isRecommend	|Boolean	|O	|推薦の可否. true：推薦, false：推薦ではない|
+|	        |isTop	        |Boolean	|O	|上段固定の可否. true：上段固定, false：上段固定ではない|
+|	        |contents.{language}.title	|String	|O	|FAQタイトル(多言語)|
+| 	        |contents.{language}.content	|String	|O	|FAQ内容(多言語)|
+|	        |contents.{language}.attachments[].attachmentId	|Array	|	|添付ファイルID（多言語）|
+|	        |attachments[].attachmentId	|String	|   	|添付ファイルID（単一言語）|
+
 
 #### Request Body
 ```
-단일언어
+単一言語
 {
-    "title":"중국어 제목1",
-    "content":"중국어 내용1",
+    "title":"中文标题1",
+    "content":"中文内容1",
     "status":"O",
     "categoryId":1367,
     "isTop":false,
@@ -467,7 +469,7 @@
     ]
 }
 
-다국어
+多言語
 {
     "status":"O",
     "categoryId":1367,
@@ -475,8 +477,8 @@
     "isRecommend":false,
     "contents":{
         "ko":{
-            "title":"한국어 제목1",
-            "content":"한국어 내용1",
+            "title":"韓国語タイトル1",
+            "content":"韓国語内容1",
             "attachments":[
                 {
                     "attachmentId":"e981516df5da4b1cbf25af403b3a622a"
@@ -484,8 +486,8 @@
             ]
         },
         "ja":{
-            "title":"일본어 제목1",
-            "content":"일본어 내용1",
+            "title":"日本語タイトル1",
+            "content":"日本語内容1",
             "attachments":[
                 {
                     "attachmentId":"e981516df5da4b1cbf25af403b3a622a"
@@ -493,8 +495,8 @@
             ]
         },
         "zh":{
-            "title":"중국어 제목1",
-            "content":"중국어 내용1",
+            "title":"中国語タイトル1",
+            "content":"中国語内容1",
             "attachments":[
                 {
                     "attachmentId":"e981516df5da4b1cbf25af403b3a622a"
@@ -502,8 +504,8 @@
             ]
         },
         "en":{
-            "title":"영어 제목1",
-            "content":"영어 내용1",
+            "title":"英語タイトル1",
+            "content":"英語内容1",
             "attachments":[
                 {
                     "attachmentId":"e981516df5da4b1cbf25af403b3a622a"
@@ -514,34 +516,34 @@
 }
 ```
 
-#### 결과 데이터
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### 結果データ
+|名称|変数|データタイプ|必須|説明|
 |---------|--------|------------|---------|----|
-|result.content	|helpDocId	|Long	|O	|FAQ ID|				
-|	        |serviceId	|String	|O	|서비스 ID|
-|	        |title	        |String	|O	|FAQ 제목|
-|	        |content	|String	|O	|FAQ 내용|
-|	        |isRecommend	|Boolean	|O	|추천 여부. true：추천, false：추천 아님|
-|	        |isTop	        |Boolean	|O	|상단고정 여부. true：상단고정, false：상단고정 아님|
-|	        |status	        |String	|O	|FAQ 상태. D：초안, O：공개, C：완료|
-|	        |readCnt	|Int	|O	|조회수|
-|	        |userId	        |Int	|O	|등록 유저 ID|
-|	        |username	|String	|O	|등록 유저 명|
-|	        |attachmentYn	|Boolean	|O	|첨부파일 포함 여부|
-|	        |createdDt	|Long	|O	|FAQ 등록시간|
-|	        |updatedDt	|Long	|O	|FAQ 수정시간|
-|	        |categories.categoryId	|Int	|O	|카테고리 ID|
-|	        |categories.parent	|String	|O	|상위 카테고리 ID|
-|	        |categories.name	|String	|O	|카테고리 명|
-|	        |categories.level	|String	|O	|카테고리 뎁스（1\|2\|3）|
-|	        |contents.{language}.title	|String	|O	|다국어 FAQ 제목|
-|	        |contents.{language}.content	|String	|O	|다국어 FAQ 내용|
-|	        |contents.{language}.attachments[].attachmentId	|String	|O	|다국어 첨부파일 ID|
-|	        |contents.{language}.attachments[].fileName	|String	|O	|다국어 첨부파일 명|
-|	        |contents.{language}.attachments[].size	        |Long	|O	|다국어 첨부파일 크기|
-|	        |attachments[].attachmentId	|String	|O	|첨부파일 ID|
-|	        |attachments[].fileName	        |String	|O	|첨부파일 명|
-|	        |attachments[].size	        |Long	|O	|첨부파일 크기|
+|result.content	|helpDocId	|Long	|O	|FAQ ID|
+|	              |serviceId	|String	|O	|サービスID|
+|	              |title	|String	|O	|FAQタイトル|
+|	              |content	|String	|O	|FAQ内容|
+| 	            |isRecommend	|Boolean	|O	|推薦の可否. true：推薦, false：推薦ではない|
+| 	            |isTop	|Boolean	|O	|上段固定の可否. true：上段固定, false：上段固定ではない|
+| 	            |status	|String	|O	|FAQの状況, D：草案, O：公開, C：完了|
+|	              |readCnt	|Int	|O	|閲覧数|
+|	              |userId	|Int	|O	|登録ユーザーID|
+|	              |username	|String	|O	|登録ユーザー名|
+|	              |attachmentYn	|Boolean	|O	|添付ファイルが含まれているかどうか|
+|	              |createdDt	|Long	|O	|FAQ登録時間|
+|	              |updatedDt	|Long	|O	|FAQ修正時間|
+|	              |categories.categoryId	|Int	|O	|カテゴリーID|
+|	              |categories.parent	|String	|O	|上位カテゴリーID|
+|	              |categories.name	|String	|O	|カテゴリー名|
+|	              |categories.level	|String	|O	|カテゴリーの段階（1\|2\|3）|
+|	              |contents.{language}.title	|String	|O	|多言語FAQタイトル|
+|	              |contents.{language}.content	|String	|O	|多言語FAQ内容|
+|	              |contents.{language}.attachments[].attachmentId	|String	|O	|多言語添付ファイルID|
+|	              |contents.{language}.attachments[].fileName	|String	|O	|多言語添付ファイル名|
+|	              |contents.{language}.attachments[].size	|Long	|O	|多言語添付ファイルサイズ|
+|	              |attachments[].attachmentId	|String	|O	|添付ファイルID|
+|	              |attachments[].fileName	|String	|O	|添付ファイル名|
+|	              |attachments[].size	|Long	|O	|添付ファイルサイズ|
 
 #### Response Body
 ```
@@ -556,8 +558,8 @@
             "helpDocId":648,
             "language":null,
             "serviceId":"multilanguage",
-            "title":"중국어 제목1",
-            "content":"중국어 내용1",
+            "title":"中国語タイトル1",
+            "content":"中国語内容1",
             "isRecommend":false,
             "isTop":false,
             "status":"O",
@@ -577,8 +579,8 @@
             ],
             "contents":{
                 "ko":{
-                    "title":"한국어 제목1",
-                    "content":"한국어 내용1",
+                    "title":"韓国語タイトル1",
+                    "content":"韓国語内容1",
                     "attachments":[
                         {
                             "attachmentId":"e981516df5da4b1cbf25af403b3a622a",
@@ -589,8 +591,8 @@
                     ]
                 },
                 "ja":{
-                    "title":"일본어 제목1",
-                    "content":"일본어 내용1",
+                    "title":"日本語タイトル1",
+                    "content":"日本語内容1",
                     "attachments":[
                         {
                             "attachmentId":"e981516df5da4b1cbf25af403b3a622a",
@@ -601,8 +603,8 @@
                     ]
                 },
                 "zh":{
-                    "title":"중국어 제목1",
-                    "content":"중국어 내용1",
+                    "title":"中国語タイトル1",
+                    "content":"中国語内容1",
                     "attachments":[
                         {
                             "attachmentId":"e981516df5da4b1cbf25af403b3a622a",
@@ -613,8 +615,8 @@
                     ]
                 },
                 "en":{
-                    "title":"영어 제목1",
-                    "content":"영어 내용1",
+                    "title":"英語タイトル1",
+                    "content":"英語内容1",
                     "attachments":[
                         {
                             "attachmentId":"e981516df5da4b1cbf25af403b3a622a",
@@ -638,110 +640,111 @@
 }
 ```
 
-### FAQ 카테고리 별 고정 설정
-#### 인터페이스 설명
+### FAQカテゴリー別固定設定
+#### インターフェース説明
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/helpdoc/{id}/recommend.json			
-- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/helpdoc/{id}/recommend.json		
+- URL (開発): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/helpdoc/{id}/recommend.json	
 
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
-|FAQ 카테고리 별 고정 설정 |HTTPS  |PUT    |UTF-8|JSON    |FAQ 문서가 속한 카테고리 상단에 고정되도록 설정|공통 인증   |
+|FAQカテゴリー別固定設定|HTTPS  |PUT    |UTF-8|JSON    |FAQ文書が属するカテゴリーの上段に固定されるように設定|共通認証|
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### リクエストパラメータ定義
+|名称|変数|データタイプ|必須|説明|
 |----|------|-----------|----|----|
-|서비스 ID	|serviceId	|String	|O	|URL PATH내에 설정한{serviceId}|
-|FAQ ID	|Id	          |Int	|O	|URL PATH내에 설정한{id}|
-|추천	|recommend	|Boolean	|O	|추천 여부. true：추천, false：추천 아님|
+|サービスID	|serviceId	|String	|O	|URL PATH内に設定した{serviceId}|
+|FAQ ID	|Id	          |Int	|O	|URL PATH内に設定した{id}|
+|推薦	|recommend	|Boolean	|O	|推薦の可否. true：推薦, false：推薦ではない|
 
-#### 결과 데이터
-- 없음
+#### 結果データ
+-　なし
 
-### FAQ 메인화면 고정 설정
-#### 인터페이스 설명
+### FAQメイン画面固定設定
+#### インターフェース説明
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/helpdoc/{id}/top.json				
-- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/helpdoc/{id}/top.json			
+- URL (開発): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/helpdoc/{id}/top.json
 		
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
-|FAQ 메인화면 고정 설정 |HTTPS  |PUT    |UTF-8|JSON    |FAQ 문서가 메인화면 상단에 고정되도록 설정|공통 인증   |
+|FAQメイン画面固定設定|HTTPS  |PUT    |UTF-8|JSON    |FAQ文書がメイン画面上段に固定されるように設定|共通認証|
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### リクエストパラメータ定義
+|名称|変数|データタイプ|必須|説明|
 |----|------|-----------|----|----|
-|서비스 ID	|serviceId	|String	|O	|URL PATH내에 설정한{serviceId}|
-|FAQ ID	   |Id	|Int	|O	|URL PATH내에 설정한{id}|
-|상단고정	|top	|Boolean	|O	|상단고정 여부. true：상단고정, false：상단고정 아님|
+|サービスID	|serviceId	|String	|O	|URL PATH内に設定した{serviceId}|
+|FAQ ID	   |Id	|Int	|O	|URL PATH内に設定した{id}|
+|上段固定	|top	|Boolean	|O	|上段固定の可否. true：上段固定, false：上段固定ではない|
 
-#### 결과 데이터
-- 없음
+#### 結果データ
+-　なし
 
-### FAQ 완료처리
-#### 인터페이스 설명
+### FAQ完了処理
+#### インターフェース説明
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/helpdoc/{id}/close.json				
-- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/helpdoc/{id}/close.json		
+- URL (開発): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/helpdoc/{id}/close.json		
 
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
-|FAQ 완료처리 |HTTPS  |PUT    |UTF-8|JSON    |FAQ 상태를 완료로 변경 (status = C)|공통 인증   |
+|FAQ完了処理 |HTTPS  |PUT    |UTF-8|JSON    |FAQステータスを完了に変更 (status = C)|共通認証   |
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### リクエストパラメータ定義
+|名称|変数|データタイプ|必須|説明|
 |----|------|-----------|----|----|
-|서비스 ID	|serviceId	|String	|O	|URL PATH내에 설정한{serviceId}|
-|FAQ ID	   |Id	           |Int	   |O	   |URL PATH내에 설정한{id}|
+|サービスID	|serviceId	|String	|O	|URL PATH内に設定した{serviceId}|
+|FAQ ID	   |Id	           |Int	   |O	   |URL PATH内に設定した{id}|
 
-#### 결과 데이터
-- 없음
+#### 結果データ
+-　なし
 
-### FAQ 삭제
-#### 인터페이스 설명
+### FAQ削除
+#### インターフェース説明
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/helpdoc/{id}.json					
-- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/helpdoc/{id}.json			
+- URL (開発): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/helpdoc/{id}.json
 
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
-|FAQ 삭제 |HTTPS  |DELETE    |UTF-8|JSON    |FAQ ID 기준으로 FAQ 삭제|공통 인증   |
+|FAQ削除 |HTTPS  |DELETE    |UTF-8|JSON    |FAQ　ID基準でFAQ削除|共通認証|
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### リクエストパラメータ定義
+|名称|変数|データタイプ|必須|説明|
 |----|------|-----------|----|----|
-|서비스 ID	|serviceId	|String	|O	|URL PATH내에 설정한{serviceId}|
-|FAQ ID	   |Id	           |Int	   |O	   |URL PATH내에 설정한{id}|
+|サービスID	|serviceId	|String	|O	|URL PATH内に設定した{serviceId}|
+|FAQ ID	   |Id	           |Int	   |O	   |URL PATH内に設定した{id}|
 
-#### 결과 데이터
-- 없음
 
-### FAQ 카테고리 목록 조회
-#### 인터페이스 설명
+#### 結果データ
+-　なし
+
+### FAQカテゴリーリスト照会
+#### インターフェース説明
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v2/helpdoc/categories.json				
-- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/helpdoc/categories.json			
+- URL (開発): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/helpdoc/categories.json	
 			
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
-|FAQ 카테고리 목록 조회 |HTTPS  |GET    |UTF-8|JSON    |FAQ 카테고리 목록 조회|공통 인증   |
+|FAQカテゴリーリスト照会 |HTTPS  |GET    |UTF-8|JSON    |FAQカテゴリーリスト照会|共通認証   |
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### リクエストパラメータ定義
+|名称|変数|データタイプ|必須|説明|
 |----|------|-----------|----|----|
-|서비스 ID	|serviceId	  |String	|O	|URL PATH내에 설정한{serviceId}|
-|하위 카테고리 ID	|child	|Int	|X	|상위 카테고리 취득 시, 전송하는 하위 카테고리 ID| 
-|상위 카테고리 ID	|parent	|Int	|X	|하위 카테고리 취득 시, 전송하는 상위 카테고리 ID|
+|サービスID	|serviceId	  |String	|O	|URL PATH내에 설정한{serviceId}|
+|下位カテゴリーID	|child	|Int	|X	|上位カテゴリー取得時、伝送する下位カテゴリーID| 
+|上位カテゴリーID	|parent	|Int	|X	|下位カテゴリー取得時、伝送する上位カテゴリーID|
 
-#### 결과 데이터
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### 結果データ
+|名称|変数|データタイプ|必須|説明|
 |---------|---------|-----------|---------|----|
-|result.contents	|categoryId	|Int	|O	|카테고리 ID|
-|	                |serviceId	|String	|O	|서비스 ID|
-|	                |categoryCode	|String	|X	|카테고리 Code|
-|	                |parent	        |Int	|X	|상위 카테고리 ID（기본 값:0）|
-|	                |name	        |String	|O	|카테고리 명|
-|	                |level	        |Int	|X	|뎁스（1\|2\|3）|
-|	                |path	        |String	|X	|뎁스 경로（\level1\level2\"）|
-|	                |orderNo	|Int	|X	|정렬 순서（기본 값:0）|
-|	                |createdDt	|Long	|X	|등록시간|
-|	                |updatedDt	|Long	|X	|수정시간|
-|	                |languages	|String	|X	|다국어|
+|result.contents	|categoryId	|Int	|O	|カテゴリーID|
+|	                |serviceId	|String	|O	|サービスID|
+|	                |categoryCode	|String	|X	|カテゴリーCode|
+|	                |parent	        |Int	|X	|上位カテゴリーID（基本値:0）|
+|	                |name	        |String	|O	|カテゴリー名|
+|	                |level	        |Int	|X	|段階（1\|2\|3）|
+|	                |path	        |String	|X	|段階経路（\level1\level2\"）|
+|	                |orderNo	|Int	|X	|整列順序（기본 값:0）|
+|	                |createdDt	|Long	|X	|登録時間|
+|	                |updatedDt	|Long	|X	|修正時間|
+|	                |languages	|String	|X	|多言語|
 
 #### Response Body
 ```
@@ -758,14 +761,14 @@
                 "serviceId":"multilanguage",
                 "categoryCode":"game",
                 "parent":0,
-                "name":"한국어 카테고리2",
+                "name":"韓国語カテゴリー2",
                 "level":1,
                 "path":"\\",
                 "orderNo":0,
                 "createdDt":1554949320000,
                 "updatedDt":1554949320000,
                 "languages":{
-                    "ko":"한국어 카테고리2"
+                    "ko":"韓国語カテゴリー2"
                 }
             },
             {
@@ -773,17 +776,17 @@
                 "serviceId":"multilanguage",
                 "categoryCode":"code1",
                 "parent":0,
-                "name":"중국어 카테고리1",
+                "name":"中国語カテゴリー1",
                 "level":1,
                 "path":"\\",
                 "orderNo":0,
                 "createdDt":1547949603000,
                 "updatedDt":1554887489000,
                 "languages":{
-                    "ko":"한국어 카테고리1",
-                    "ja":"일본어 카테고리1",
-                    "en":"영어 카테고리1",
-                    "zh":"중국어 카테고리1"
+                    "ko":"韓国語カテゴリー1",
+                    "ja":"日本語カテゴリー1",
+                    "en":"英語カテゴリー1",
+                    "zh":"中国語カテゴリー1"
                 }
             }
         ]
@@ -791,35 +794,35 @@
 }
 ```
 
-### FAQ 카테고리 상세 조회
-#### 인터페이스 설명
+### FAQカテゴリー詳細照会
+#### インターフェース説明
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v2/helpdoc/category/{id}.json				
-- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/helpdoc/category/{id}.json		
+- URL (開発): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/helpdoc/category/{id}.json
 						
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
-|FAQ 카테고리 상세 조회 |HTTPS  |GET    |UTF-8|JSON    |카테고리 ID를 통해 FAQ 카테고리 상세 내용 조회|공통 인증   |
+|FAQカテゴリー詳細照会 |HTTPS  |GET    |UTF-8|JSON    |カテゴリーIDでFAQカテゴリーの詳細を照会|共通認証  |
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### リクエストパラメータ定義
+|名称|変数|データタイプ|必須|説明|
 |----|------|-----------|----|----|
-|서비스 ID	|serviceId	|String	|O	|URL PATH내에 설정한{serviceId}|
-|카테고리 ID 혹은 카테고리 Code	|id	|String	|O	|URL PATH내에 설정한{id}|
+|サービスID	|serviceId	|String	|O	|URL PATH内に設定した{serviceId}|
+|カテゴリーIDあるいはカテゴリーコード	|id	|String	|O	|URL PATH内に設定した{id}|
 
-#### 결과 데이터
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### 結果データ
+|名称|変数|データタイプ|必須|説明|
 |---------|--------|------------|---------|----|
-|result.contents	|categoryId	|Int	|O	|카테고리 ID|
-|	                |serviceId	|String	|O	|서비스 ID|
-|	                |categoryCode	|String	|X	|카테고리 Code|
-|	                |parent	        |Int	|X	|상위 카테고리 ID（기본 값:0）|
-|	                |name	        |String	|O	|카테고리 명|
-|	                |level	        |Int	|X	|뎁스（1|2|3）|
-|	                |path	        |String	|X	|뎁스 경로（\level1\level2\"）|
-|	                |orderNo	|Int	|X	|정렬 순서（기본 값:0）|
-|	                |createdDt	|Long	|X	|등록시간|
-|	                |updatedDt	|Long	|X	|수정시간|
-|	                |languages	|String	|X	|다국어|
+|result.contents	|categoryId	|Int	|O	|カテゴリーID|
+|	                |serviceId	|String	|O	|サービスID|
+|	                |categoryCode	|String	|X	|カテゴリーCode|
+|	                |parent	        |Int	|X	|上位カテゴリーID（基本値:0）|
+|	                |name	        |String	|O	|カテゴリー名|
+|	                |level	        |Int	|X	|段階（1\|2\|3）|
+|	                |path	        |String	|X	|段階経路（\level1\level2\"）|
+|	                |orderNo	|Int	|X	|整列順序（기본 값:0）|
+|	                |createdDt	|Long	|X	|登録時間|
+|	                |updatedDt	|Long	|X	|修正時間|
+|	                |languages	|String	|X	|多言語|
 
 #### Response Body
 ```
@@ -835,81 +838,81 @@
             "serviceId":"multilanguage",
             "categoryCode":"code1",
             "parent":0,
-            "name":"중국어 카테고리1",
+            "name":"中国語カテゴリー1",
             "level":1,
             "path":"\\",
             "orderNo":0,
             "createdDt":1547949603000,
             "updatedDt":1554887489000,
             "languages":{
-                "ko":"한국어 카테고리1",
-                "ja":"일본어 카테고리1",
-                "en":"영어 카테고리1",
-                "zh":"중국어 카테고리1"
+                "ko":"韓国語カテゴリー1",
+                "ja":"日本語カテゴリー1",
+                "en":"英語カテゴリー1",
+                "zh":"中国語カテゴリー1"
             }
         }
     }
 }
 ```
 
-### FAQ 카테고리 추가
-#### 인터페이스 설명
+### FAQカテゴリー追加
+#### インターフェース説明
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/helpdoc/category.json				
-- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/helpdoc/category.json			
+- URL (開発): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/helpdoc/category.json
 							
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
-|FAQ 카테고리 추가 |HTTPS  |POST    |UTF-8|JSON    |신규 FAQ 카테고리 추가|공통 인증   |
+|FAQカテゴリー追加 |HTTPS  |POST    |UTF-8|JSON    |新規FAQカテゴリー追加|共通認証|
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### リクエストパラメータ定義
+|名称|変数|データタイプ|必須|説明|
 |----|------|-----------|----|----|
-|서비스 ID	|serviceId	|String	|O	|URL PATH내에 설정한{serviceId}|
-|카테고리 정보	|request body	|String	    |O	|카테고리 정보（JSON）|
-|	             |name	     |String     |X		|카테고리 명（유일한 값:예 ; 길이:min = 0, max = 50 ; 형식:^(\_\|-\|[^\\pP])+$）|
-|	              |categoryCode	|String	 |X	|카테고리 Code|
-|	              |languages	|String	 |X	|다국어|
-|	              |parent	        |Int	 |X	|상위 카테고리 ID（기본 값:0）|
-|	              |orderNo	        |Int	 |X	|정렬순서（기본 값:0）|
+|サービスID	|serviceId	|String	|O	|URL PATH内に設定した{serviceId}|
+|カテゴリー情報	|request body	|String	    |O	|カテゴリー情報（JSON）|
+|	             |name	     |String     |		|カテゴリー名（唯一の値:はい ; 長さ:min = 0, max = 50 ; 形式:^(\_\|-\|[^\\pP])+$）|
+|	              |categoryCode	|String	 |	|カテゴリーCode|
+|	              |languages	|String	 |	|多言語|
+|	              |parent	        |Int	 |	|上位カテゴリーID（基本値:0）|
+|	              |orderNo	        |Int	 |	|整列順序（基本値:0）|
 
 #### Request Body
 ```
-단일언어
+単一言語
 {
-    "name":"중국어 카테고리3",
+    "name":"中国語カテゴリー3",
     "categoryCode":"game3",
     "orderNo":1,
     "parent":0
 }
 
-다국어
+多言語
 {
     "categoryCode":"game3",
     "parent":0,
     "orderNo":1,
     "languages":{
-        "ko":"한국어 카테고리3",
-        "ja":"일본어 카테고리3",
-        "en":"영어 카테고리3",
-        "zh":"중국어 카테고리3"
+        "ko":"韓国語カテゴリー3",
+        "ja":"日本語カテゴリー3",
+        "en":"英語カテゴリー3",
+        "zh":"中国語カテゴリー3"
     }
 }
 ```
 
-#### 결과 데이터
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### 結果データ
+|名称|変数|データタイプ|必須|説明|
 |----|------|-----------|----|----|
-|result.contents	|categoryId	|Int	|O	|카테고리 ID|
-|	                |serviceId	|String	|O	|서비스 ID|
-|	                |categoryCode	|String	|X	|카테고리 Code|
-|	                |parent	        |Int	|X	|상위 카테고리 ID（기본 값:0）|
-|	                |name	        |String	|O	|카테고리 명|
-|	                |level	        |Int	|X	|뎁스（1\|2\|3）|
-|	                |path	        |String	|X	|뎁스 경로（\level1\level2\"）|
-|	                |orderNo	|Int	|X	|정렬 순서（기본 값:0）|
-|	                |createdDt	|Long	|X	|등록시간|
-|	                |updatedDt	|Long	|X	|수정시간|
-|	                |languages	|String	|X	|다국어|
+|result.contents	|categoryId	|Int	|O	|カテゴリーID|
+|	                |serviceId	|String	|O	|サービスID|
+|	                |categoryCode	|String	|X	|カテゴリーCode|
+|	                |parent	        |Int	|X	|上位カテゴリーID（基本値:0）|
+|	                |name	        |String	|O	|カテゴリー名|
+|	                |level	        |Int	|X	|段階（1\|2\|3）|
+|	                |path	        |String	|X	|段階経路（\level1\level2\"）|
+|	                |orderNo	|Int	|X	|整列順序（기본 값:0）|
+|	                |createdDt	|Long	|X	|登録時間|
+|	                |updatedDt	|Long	|X	|修正時間|
+|	                |languages	|String	|X	|多言語|
 
 #### Response Body
 ```
@@ -921,86 +924,86 @@
     },
     "result":{
         "content":{
-            "categoryId":1577,
+            "categoryId":509,
             "serviceId":"multilanguage",
-            "categoryCode":"game3",
+            "categoryCode":"code1",
             "parent":0,
-            "name":"중국어 카테고리3",
+            "name":"中国語カテゴリー1",
             "level":1,
             "path":"\\",
-            "orderNo":1,
-            "createdDt":1587360957961,
-            "updatedDt":1587360957961,
+            "orderNo":0,
+            "createdDt":1547949603000,
+            "updatedDt":1554887489000,
             "languages":{
-                "ko":"한국어 카테고리3",
-                "ja":"일본어 카테고리3",
-                "en":"영어 카테고리3",
-                "zh":"중국어 카테고리3"
+                "ko":"韓国語カテゴリー1",
+                "ja":"日本語カテゴリー1",
+                "en":"英語カテゴリー1",
+                "zh":"中国語カテゴリー1"
             }
         }
     }
 }
 ```
 
-### FAQ 카테고리 수정
-#### 인터페이스 설명
+### FAQカテゴリー修正
+#### インターフェース説明
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/helpdoc/category/{id}.json	
-- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/helpdoc/category/{id}.json	
+- URL (開発): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/helpdoc/category/{id}.json	
 									
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
-|FAQ 카테고리 수정 |HTTPS  |PUT    |UTF-8|JSON    |ID 기준으로 카테고리 명 수정 |공통 인증   |
+|FAQカテゴリー修正 |HTTPS  |PUT    |UTF-8|JSON    |ID基準でカテゴリー名を修正|共通認証 |
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### リクエストパラメータ定義
+|名称|変数|データタイプ|必須|説明|
 |----|------|-----------|----|----|
-|서비스 ID	|serviceId	|String	|O	|URL PATH내에 설정한{serviceId}|
-|카테고리 ID 혹은 카테고리 Code	|Id	|String	|O	|URL PATH내에 설정한{id}|
-|카테고리 정보	            |request body	|String	|O	|카테고리 정보（JSON）|
-|	                         |name	             |String  |X	     |카테고리 명（유일한 값:예 ; 길이:min = 0, max = 50 ; 형식:^(\_\|-\|[^\\pP])+$）|
-|	                         |categoryCode	     |String  |X	     |카테고리 Code|
-|	                         |languages	     |String  |X	     |다국어|
-|	                         |parent	     |Int     |X	     |상위 카테고리 ID（기본 값:0）|
-|	                         |orderNo	     |Int     |X	     |정렬순서（기본 값:0）|
+|サービスID	|serviceId	|String	|O	|URL PATH内に設定した{serviceId}|
+|カテゴリーIDあるいはカテゴリーコード	|Id	|String	|O	|URL PATH内に設定した{id}|
+|カテゴリー情報	|request body	|String	    |O	|カテゴリー情報（JSON）|
+|	             |name	     |String     |		|カテゴリー名（唯一の値:はい ; 長さ:min = 0, max = 50 ; 形式:^(\_\|-\|[^\\pP])+$）|
+|	              |categoryCode	|String	 |	|カテゴリーCode|
+|	              |languages	|String	 |	|多言語|
+|	              |parent	        |Int	 |	|上位カテゴリーID（基本値:0）|
+|	              |orderNo	        |Int	 |	|整列順序（基本値:0）|
 
 #### Request Body
 ```
-단일언어
+単一言語
 {
-    "name":"중국어 카테고리2",
-    "categoryCode":"game0",
-    "orderNo":2,
-    "parent":509
+    "name":"中国語カテゴリー3",
+    "categoryCode":"game3",
+    "orderNo":1,
+    "parent":0
 }
 
-다국어
+多言語
 {
-    "categoryCode":"game0",
-    "parent":509,
-    "orderNo":2,
+    "categoryCode":"game3",
+    "parent":0,
+    "orderNo":1,
     "languages":{
-        "ko":"한국어 카테고리2",
-        "ja":"일본어 카테고리2",
-        "en":"영어 카테고리2",
-        "zh":"중국어 카테고리2"
+        "ko":"韓国語カテゴリー3",
+        "ja":"日本語カテゴリー3",
+        "en":"英語カテゴリー3",
+        "zh":"中国語カテゴリー3"
     }
 }
 ```
 
-#### 결과 데이터
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### 結果データ
+|名称|変数|データタイプ|必須|説明|
 |---------|---------|-----------|---------|----|
-|result.contents	|categoryId	|Int	|O	|카테고리 ID|
-|	                |serviceId	|String	|O	|서비스 ID|
-|	                |categoryCode	|String	|X	|카테고리 Code|
-|	                |parent	        |Int	|X	|상위 카테고리 ID（기본 값:0）|
-|	                |name	        |String	|O	|카테고리 명|
-|	                |level	        |Int	|X	|뎁스（1\|2\|3）|
-|	                |path	        |String	|X	|뎁스 경로（\level1\level2\"）|
-|	                |orderNo	|Int	|X	|정렬 순서（기본 값:0）|
-|	                |createdDt	|Long	|X	|등록시간|
-|	                |updatedDt	|Long	|X	|수정시간|
-|	                |languages	|String	|X	|다국어|
+|result.contents	|categoryId	|Int	|O	|カテゴリーID|
+|	                |serviceId	|String	|O	|サービスID|
+|	                |categoryCode	|String	|X	|カテゴリーCode|
+|	                |parent	        |Int	|X	|上位カテゴリーID（基本値:0）|
+|	                |name	        |String	|O	|カテゴリー名|
+|	                |level	        |Int	|X	|段階（1\|2\|3）|
+|	                |path	        |String	|X	|段階経路（\level1\level2\"）|
+|	                |orderNo	|Int	|X	|整列順序（기본 값:0）|
+|	                |createdDt	|Long	|X	|登録時間|
+|	                |updatedDt	|Long	|X	|修正時間|
+|	                |languages	|String	|X	|多言語|
 
 #### Response Body
 ```
@@ -1015,63 +1018,63 @@
             "categoryId":1576,
             "serviceId":"GameBaseService",
             "parent":0,
-            "name":"한국어 카테고리",
+            "name":"韓国語カテゴリー",
             "level":1,
             "path":"\",
             "orderNo":1,
             "createdDt":1587349288181,
             "updatedDt":1587349288181,
             "languages":{
-                "ko":"한국어 카테고리",
-                "ja":"일본어 카테고리",
-                "zh":"중국어 카테고리",
-                "en":"영어 카테고리"
+                "ko":"韓国語カテゴリー",
+                "ja":"日本語カテゴリー",
+                "zh":"中国語カテゴリー",
+                "en":"英語カテゴリー"
             }
         }
     }
 }
 ```
 
-### FAQ 카테고리 삭제
-#### 인터페이스 설명
+### FAQカテゴリー削除
+#### インターフェース説明
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/helpdoc/category/{id}.json				
-- URL (개발): https://{domain}.alpha-oc.toast.com /{serviceId}/openapi/v1/helpdoc/category/{id}.json	
+- URL (開発): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/helpdoc/category/{id}.json	
 									
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
-|FAQ 카테고리 삭제 |HTTPS/80  |DELETE    |UTF-8|JSON    |카테고리 ID를 통해 FAQ 카테고리 삭제|공통 인증   |
+|FAQカテゴリー削除 |HTTPS/80  |DELETE    |UTF-8|JSON    |カテゴリーIDでFAQカテゴリーを削除|共通認証  |
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### リクエストパラメータ定義
+|名称|変数|データタイプ|必須|説明|
 |----|------|-----------|----|----|
-|서비스 ID	|serviceId	|String	|O	|URL PATH내에 설정한{serviceId}|
-|카테고리 ID 혹은 카테고리 Code	|id	|String	|O	|URL PATH내에 설정한{id}|
+|サービスID	|serviceId	|String	|O	|URL PATH内に設定した{serviceId}|
+|カテゴリーIDあるいはカテゴリーコード	|id	|String	|O	|URL PATH内に設定した{id}|
 
-#### 결과 데이터
-- 없음
+#### 結果データ
+- なし
 
-### FAQ 첨부파일 첨부
-#### 인터페이스 설명
+### FAQ添付ファイル添付
+#### インターフェース説明
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/attachments/help/upload.json			
-- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/attachments/help/upload.json	
+- URL (開発): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/attachments/help/upload.json	
 									
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
-|FAQ 첨부파일 첨부 |HTTPS  |POST    |UTF-8|JSON    |서버에 파일 업로드|공통 인증   |
+|FAQ添付ファイル添付|HTTPS  |POST    |UTF-8|JSON    |サーバーへのファイルアップロード|共通認証  |
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### リクエストパラメータ定義
+|名称|変数|データタイプ|必須|説明|
 |----|------|-----------|----|----|
-|서비스 ID	|serviceId	|String	|O	|URL PATH 내에 설정한 {serviceId}|
-|업로드한 파일	|file	|File	|O	|업로드한 파일을 form로 제출|
+|サービスID	|serviceId	|String	|O	|URL PATH内に設定した{serviceId}|
+|アップロードしたファイル	|file	|File	|O	|アップロードしたファイルをformで提出|
 
-#### 결과 데이터
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### 結果データ
+|名称|変数|データタイプ|必須|説明|
 |---------|--------|------------|--------|-----|
-|result.content	|attachmentId	|String	|O	|첨부파일 ID|
-|	        |fileName	|String	|O	|파일 명|
-|	        |contentType	|String	|O	|파일 유형|
-|	        |size 	        |Long	|O	|파일 크기|
+|result.content	|attachmentId	|String	|O	|添付ファイルID|
+|	        |fileName	|String	|O	|ファイル名|
+|	        |contentType	|String	|O	|ファイルタイプ|
+|	        |size 	        |Long	|O	|ファイルサイズ|
 
 #### Response Body
 ```
@@ -1092,43 +1095,44 @@
 }
 ```
 
-### FAQ 첨부파일 열기/다운로드
-#### 인터페이스 설명
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v2/attachments/help/{id}					
-- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v2/attachments/help/{id}			
+### FAQ添付ファイルを開く／ダウンロード
+#### インターフェース説明
+- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v2/attachments/help/{id}	
+- URL (開発): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v2/attachments/help/{id}
 									
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
-|FAQ 첨부파일 열기/다운로드 |HTTPS  |GET    |UTF-8|FILE    |서버에 업로드한 FAQ 첨부파일 열기/다운로드|공통 인증   |
+|FAQ添付ファイルを開く／ダウンロード |HTTPS  |GET    |UTF-8|FILE    |サーバーにアップロードしたFAQ添付ファイルを開く／ダウンロード|
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### リクエストパラメータ定義
+|名称|変数|データタイプ|必須|説明|
 |----|------|-----------|----|----|
-|서비스 ID	          |serviceId	|String	|O	|URL PATH 내에 설정한{serviceId}|
-|업로드 파일 ID	|id	      |String  |O     |업로드 파일id| 
-|열람방식	         |type	       |String	|X       |기본 값: 열기（download:다운로드,open:열기）|
+|サービスID	          |serviceId	|String	|O	|URL PATH内に設定した{serviceId}|
+|ファイルID	|id	      |String  |O     |アップロードしたファイルid| 
+|閲覧方式	         |type	       |String	       |基本: 開く（download:ダウンロード,　open:開く）|
 
-#### 결과 데이터
-- 없음
+#### 結果データ
+- なし
 
 #### Response Body
 - File
 
-### FAQ 첨부파일 삭제
-#### 인터페이스 설명
+### FAQ添付ファイル削除
+#### インターフェース説明
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/attachments/help/{id}.json				
-- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/ attachments/help/{id}.json	
+- URL (開発): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/attachments/help/{id}.json	
 									
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
-|FAQ 첨부파일 삭제 |HTTPS  |DELETE    |UTF-8|JSON    |서버에 업로드한 파일 삭제|공통 인증   |
+|FAQ添付ファイル削除 |HTTPS  |DELETE    |UTF-8|JSON    |サーバーにアップロードしたファイル削除|共通認証 |
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### リクエストパラメータ定義
+|名称|変数|データタイプ|必須|説明|
 |----|------|-----------|----|----|
-|서비스 ID	|serviceId	|String	|O	|URL PATH 내에 설정한{serviceId}|
-|업로드한 파일 ID	|id	|String	|O	|업로드한 파일 ID|
+|サービスID	          |serviceId	|String	|O	|URL PATH内に設定した{serviceId}|
+|ファイルID	|id	      |String  |O     |アップロードしたファイルid| 
 
-#### 결과 데이터
-- 없음
+#### 結果データ
+- なし
+
 

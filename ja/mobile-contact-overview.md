@@ -1,12 +1,17 @@
-## Contact Center > Mobile Contact > 개요
+## Contact Center > Mobile Contact > 概要
 
-시간/장소 제약없이 고객으로부터 걸려온 문의 전화를 모바일/PC 어플리케이션을 통해 상담하실 수 있습니다. 또한 필요에 따라 상담 라이센스를 자유롭게 생성/삭제할 수 있습니다. 초기 구축비용 없으며 쉽고 간편하게 서비스 고객센터를 설정하여 제공하실 수 있습니다.
+時間や場所の制約なく、お客様からのお問い合わせの電話について、モバイル・PCアプリケーションを通じてご相談いただけます。 また、必要に応じて相談ライセンスを自由に作成・削除することができます。初期構築費用はなく、容易くサービス顧客センターを設定し、提供することができます。
 
-## 서비스 소개
-![](http://static.toastoven.net/prod_contact_center/MC_overview_1_modified.png)
-![](http://static.toastoven.net/prod_contact_center/MC_overview_2_modified.png)
+## サービスの紹介
+![](http://static.toastoven.net/prod_contact_center/MC_overview_1_ja.png)
+![](http://static.toastoven.net/prod_contact_center/MC_overview_2_ja.png)
 
+## 主要機能
+![](http://static.toastoven.net/prod_contact_center/MC_overview_3_ja.png)
+![](http://static.toastoven.net/prod_contact_center/MC_overview_4_ja.png)
 
-## 주요 기능
-![](http://static.toastoven.net/prod_contact_center/MC_overview_3_modified.png)
-![](http://static.toastoven.net/prod_contact_center/MC_overview_4_modified.png)
+## 活用事例
+![](http://static.toastoven.net/prod_contact_center/MC_overview_5_ja.png)
+
+## 料金制度
+![](http://static.toastoven.net/prod_contact_center/MC_overview_6_ja.png)
