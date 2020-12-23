@@ -7,7 +7,7 @@
 - endusermanagement: 고객정보관리
 - callback: 콜백
 - helpdoc: FAQ
-- knowledge: Knowledge Management
+- knowledge: 지식관리
 - issuetransferstatistics: 이슈이관 통계 (향후 추가 예정)
 - reinquiryrate: 재문의율 (향후 추가 예정)
 - smssend: SMS (향후 추가 예정)
@@ -317,7 +317,8 @@
 
 #### 결과 데이터
 |명칭	|변수	|데이터 타입	|필수	|설명|
-|result.content		|String	|X	|"SUCCESS":삭제 성공, "ENABLE":활성화 상태로 삭제할 수 없음，비활성화 후 삭제 가능|
+|-----|----|------------|----|----|
+|result.content	|	|String	|X	|"SUCCESS":삭제 성공, "ENABLE":활성화 상태로 삭제할 수 없음，비활성화 후 삭제 가능|
 
 #### Response Body
 ```

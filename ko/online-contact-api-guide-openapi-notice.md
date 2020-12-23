@@ -15,7 +15,7 @@
 |조회 언어	|language	|Varchar(2)	|X	|ko：한국어, zh：중국어, ja：일본어, en：영어|
 |날짜 조회 필드	|dateField	|Varchar(20)	|X	|startDt：공지기간 시작일 검색, endDt：공지기간 종료일 검색, startAndEnd：공지기간 시작일 &종료일 검색, createdDt：등록일 검색|
 |기간검색 시작시간	|termStart	|Varchar(14)	|X	|공지기간 시작일（yyyyMMddHHmmss）|
-|기간검색 종료시간	|termEnd	|Varchar(14)	|X	|공지기간 종료일|（yyyyMMddHHmmss）|
+|기간검색 종료시간	|termEnd	|Varchar(14)	|X	|공지기간 종료일（yyyyMMddHHmmss）|
 |등록일 시작시간	|startDt	|Varchar(14)	|X	|등록일（yyyyMMddHHmmss）|
 |등록일 종료시간	|endDt	        |Varchar(14)	|X	|등록일（yyyyMMddHHmmss）|
 |말머리 ID	|categoryId	            |Int	|X	|말머리 ID|
@@ -35,7 +35,7 @@
 |----|-----|-----------|-----|---|
 |result.contents	|noticeId	|Int	|O	|공지사항 ID|
 |	                |serviceId	|String	|O	|서비스 ID|
-|	                |language	|String	|O	|ko：한국어, zh：중국어, ja：일본어, en：영어
+|	                |language	|String	|O	|ko：한국어, zh：중국어, ja：일본어, en：영어|
 |	                |status	|String	|O	|공지사항 상태 D：초안, O：공개, C：완료}|
 |	                |isTop	|Boolean	|O	|상단고정 표기|
 |	                |term	|String	|O	|reservation：예약중, open：진행중, close：완료|
@@ -159,7 +159,7 @@
       "categoryId": 509,
       "isTop": false,
       "term": "open",
-      "title": "중국어 제1",
+      "title": "중국어 제목1",
       "content": "중국어 내용1",
       "startDt": "20190101000000",
       "endDt": "",
@@ -1283,9 +1283,6 @@
 #### 결과 데이터
 - 없음
 
-#### Response Body
-- File
-
 ### 공지사항 태그 목록 조회
 #### 인터페이스 설명
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/notice/tag.json					 		
@@ -1304,7 +1301,7 @@
 #### 결과 데이터
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |--------|---------|------------|--------|----|
-|result.contents	|tagId	        |INT	|O	|태그 ID|
+|result.contents	|tagId	        |Int	|O	|태그 ID|
 |	                |serviceId	|String	|O	|서비스 ID|
 |                       |tag		|	|X        |태그 내용|
 |	                |createdDt	|Long	|O	|등록시간|
@@ -1370,7 +1367,7 @@
 #### 결과 데이터
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |---------|--------|------------|--------|-----|
-|result.contents	|tagId	|INT	        |O	|태그 ID|
+|result.contents	|tagId	|Int	        |O	|태그 ID|
 |	                |serviceId	|String	|O	|서비스 ID|
 |	                |tag	|	        |X	|태그 내용|
 |	                |createdDt	|Long	|O	|등록시간|
@@ -1443,7 +1440,7 @@
 #### 결과 데이터
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |--------|---------|-----------|---------|----|
-|result.contents	|tagId	|INT	        |O	|태그 ID|
+|result.contents	|tagId	|Int	        |O	|태그 ID|
 |	                |serviceId	|String	|O	|서비스 ID|
 |	                |tag	|	        |X 	|태그 내용|
 |	                |createdDt	|Long	|O	|등록시간|
@@ -1479,7 +1476,7 @@
 ### 공지사항 태그 수정
 #### 인터페이스 설명
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/notice/tag/{id}.json											 
-- URL: https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/notice/tag/{id}.json									
+- URL(개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/notice/tag/{id}.json									
 
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|
 |------------|-------|--------|-----|--------|--------------|
@@ -1549,8 +1546,8 @@
 
 ### 공지사항 태그 삭제
 #### 인터페이스 설명
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/notice/tag/{id}.json												 
-- URL: https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/notice/tag/{id}.json											
+- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/notice/tag/{id}.json										
+- URL(개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/notice/tag/{id}.json										
 
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|
 |------------|-------|--------|-----|--------|--------------|
@@ -1588,7 +1585,7 @@
 |	                |parent	        |Int	|X	|상위 말머리 ID（고정 값:0）|
 |	                |name	        |String	|O	|말머리 명|
 |	                |level	        |Int	|X	|뎁스（고정 값:1）|
-|	                |path	        |String	|X	|뎁스 경로（고정 값:"\\"）|
+|	                |path	        |String	|X	|뎁스 경로（고정 값:"\\\\"）|
 |	                |orderNo	|Int	|X	|정렬순서（기본 값:0）|
 |	                |createdDt	|Long	|X	|등록시간|
 |	                |updatedDt	|Long	|X	|수정시간|
@@ -1645,7 +1642,7 @@
 ### 공지사항 말머리 상세 조회
 #### 인터페이스 설명
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v2/notice/category/{id}.json												 
-- URL: https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v2/notice/category/{id}.json										
+- URL(개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v2/notice/category/{id}.json										
 
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|
 |------------|-------|--------|-----|--------|--------------|
@@ -1706,7 +1703,7 @@
 ### 공지사항 말머리 등록
 #### 인터페이스 설명
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/notice/category.json												 
-- URL: https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/notice/category.json												
+- URL(개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/notice/category.json												
 
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|
 |------------|-------|--------|-----|--------|--------------|
@@ -1794,7 +1791,7 @@
 ### 공지사항 말머리 수정
 #### 인터페이스 설명
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/notice/category/{id}.json												 
-- URL: https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/notice/category/{id}.json			
+- URL(개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/notice/category/{id}.json			
 											
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|
 |------------|-------|--------|-----|--------|--------------|
@@ -1882,7 +1879,7 @@
 ### 공지사항 말머리 삭제
 #### 인터페이스 설명
 - URL: https://{domain}.oc.toast.com /{serviceId}/openapi/v1/notice/category/{id}.json												 
-- URL: https://{domain}.alpha-oc.toast.com /{serviceId}/openapi/v1/notice/category/{id}.json					
+- URL(개발): https://{domain}.alpha-oc.toast.com /{serviceId}/openapi/v1/notice/category/{id}.json					
 											
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|
 |------------|-------|--------|-----|--------|--------------|

@@ -548,7 +548,6 @@
 #### Response Body
 ```
 {
-
     "header":{
         "resultCode":200,
         "resultMessage":"",
