@@ -43,6 +43,19 @@ Online Contact에서는 **상담 관리**, **이슈 관리**의 2가지 서비�
 
 **회원 초대** 버튼 또는 TOAST CONSOLE을 통해 등록하신 IAM 회원의 경우 입력하신 이메일로 비밀번호 변경 이메일이 발송되며, 해당 이메일을 통해 비밀번호를 설정해주신 후에 로그인하실 수 있습니다.
 
+## CTI 관리
+CTI 관리 메뉴에서는 Online Contact과 연결할 CTI 정보를 설정하고, 전화 상담을 진행할 각 상담원의 CTI ID와 CTI 번호를 입력 및 수정하실 수 있습니다.  
+
+### CTI 설정
+![](http://static.toastoven.net/prod_contact_center/2.1.2-(2).png)
+CTI 설정 메뉴를 통해 Online Contact과 연결할 CTI를 설정하실 수 있습니다.
+
+선택하실 수 있는 CTI 버전은 다음과 같습니다.
+- IPCC (Private): Private 서비스로, 이용을 원하실 시 Online Contact 고객센터를 통해 사전 협의 부탁드립니다. (
+- 모바일 컨택 (Mobile Contact): 
+
+### CTI 상담원 관리
+![](http://static.toastoven.net/prod_contact_center/2.1.2-(3).png)
 
 ## SSO 로그인
 ![](http://static.toastoven.net/prod_contact_center/2.1.3-(1).png)
