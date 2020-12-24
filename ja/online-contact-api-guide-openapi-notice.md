@@ -1285,8 +1285,8 @@
 
 ### お知らせタグリスト照会
 #### インターフェース説明
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/notice/tag.json
-- URL(開発): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/notice/tag.json
+- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/notice/tags.json
+- URL(開発): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/notice/tags.json
 
 |インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|
 |------------|-------|--------|-----|--------|--------------|
