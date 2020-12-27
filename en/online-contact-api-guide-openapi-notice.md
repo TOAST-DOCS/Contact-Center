@@ -1286,8 +1286,8 @@
 
 ### View Notice Tag List
 #### Interface Description
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/notice/tag.json					 		
-- URL(Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/notice/tag.json					
+- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/notice/tags.json					 
+- URL(Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/notice/tags.json				
 
 |Interface name | Protocol | Call direction | Encoding | Result format | Interface description | 
 |------------|-------|--------|-----|--------|--------------|
