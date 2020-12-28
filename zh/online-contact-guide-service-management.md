@@ -1,336 +1,438 @@
-## Contact Center > Online Contact > 서비스 가이드 > 서비스 관리
+## Contact Center > Online Contact > Service Guide > Service Management
 
-서비스 관리 메뉴에는 SSO 로그인 설정, 티켓 설정, 상담원 관리, 헬프센터 템플릿 관리 등 **문의의 접수와 처리를 위한 상세 설정 기능**이 포함되어 있습니다.
+Service Management menu includes **detailed setting functions for accepting and processing inquiries** including SSO login settings, ticket settings, agent management, and help center template management.
 
-해당 메뉴에서 설정하시는 헬프센터의 구성 또는 세부 기능들은, 아래와 같은 경로로 접근하실 수 있는 각 서비스별 헬프센터에서 적용과 동시에 바로 확인하실 수 있습니다.
+You can check the detailed functions or configuration of the help center you set up at the help center for each service which is accessible in the following path.
 
-#### 헬프센터 접속
-- Online Contact 우측 맨 하단 헬프센터 바로가기 
-- https://`도메인명`.oc.toast.com/`서비스ID`/hc
 
-도메인명은 Online Contact 조직 생성 시 작성하신 정보로, TOAST CONSOLE → 조직 설정 → 도메인 설정에서 수정하실 수 있습니다. 서비스ID는 [전체 관리 → 서비스](https://github.com/TOAST-DOCS/Contact-Center/blob/alpha/ko/online-contact-guide-global-management.md#%EC%84%9C%EB%B9%84%EC%8A%A4) 메뉴에서 서비스 추가 시 입력하셨던 정보로, 최초 생성 이후 수정이 불가합니다.
+### Help Center Access
+-	**Help Center Link** in the bottom right of Online Contact web page
+-	https:// **Domain Name**.oc.toast.com/ **Service ID** /hc
 
-### 인증
-[전체 관리 → SSO 로그인](https://github.com/TOAST-DOCS/Contact-Center/blob/alpha/ko/online-contact-guide-global-management.md#sso-%EB%A1%9C%EA%B7%B8%EC%9D%B8) 메뉴에서 등록하셨던 **SSO 로그인**과, **OPEN API** 기능을 활성화/비활성화할 수 있습니다.
+Domain name is the information which was created when you added your organization. Modifying is available in TOAST Console → Set Organization → Set Domain. Service ID is the information which was entered when adding service from [Global Management → Contract Service Status](https://docs.toast.com/en/Contact%20Center/en/online-contact-guide-global-management/#contract-service-status) menu, and it cannot be modified after initial creation.
 
-#### SSO 로그인
-![](http://static.toastoven.net/prod_contact_center/2.2.1-(1).png)
-SSO 로그인을 활성화하실 경우 **활성화** 버튼을 클릭하신 후, [전체 관리 → SSO 로그인](https://github.com/TOAST-DOCS/Contact-Center/blob/alpha/ko/online-contact-guide-global-management.md#sso-%EB%A1%9C%EA%B7%B8%EC%9D%B8) 메뉴에서 등록하셨던 SSO 로그인을 선택하시고 저장하시면 됩니다.
+## Authentication
+You can enable or disable **SSO Login** and **Open API** features which you registered in [Global Management → SSO Login](https://docs.toast.com/en/Contact%20Center/en/online-contact-guide-global-management/#sso-login) menu.
 
-#### OPEN API
-![](http://static.toastoven.net/prod_contact_center/2.2.1-(2).png)
-OPEN API 탭에서는 외부에서 Online Contact의 데이터에 접근할 수 있도록 하는 ① **OPEN API 활성화**, ② **API Key 변경**, ③ **접속 IP 제한 설정**이 가능하며, 접속 IP 제한을 설정할 시 설정한 IP에서만 OPEN API를 호출하실 수 있습니다.
+### SSO Login
+![](http://static.toastoven.net/prod_contact_center/2.2.1-(1)_en.png)
+If you want to enable SSO Login, click **Enable** and select, save the login method which you registered from [Global Management → SSO Login](https://docs.toast.com/en/Contact%20Center/en/online-contact-guide-global-management/#sso-login) menu. Once SSO login is activated, **Inquiry History** icon will be displayed on the main page of the service’s Help Center so that the customer can view their previous inquiries after logging in.
 
-### 채팅
-채팅 기능에 관련된 항목들입니다. 채팅 기능은 [서비스 관리 → 헬프센터 → 구성관리](https://github.com/TOAST-DOCS/Contact-Center/blob/alpha/ko/online-contact-guide-service-management.md#%EA%B5%AC%EC%84%B1%EA%B4%80%EB%A6%AC)에서 활성화하실 수 있으며, 활성화된 이후에 노출되는 우측 하단 **채팅 아이콘**으로 접속 가능합니다. 
+### Open API
+![](http://static.toastoven.net/prod_contact_center/2.2.1-(2)_en.png)
+In the Open API tab, **① OPEN API Activation** which allows access to data inside of Online Contact from outside, **② Change API Key**, managing **③ Accessible IP List** is available. Through Accessible IP List, Open API can be called only from the IP which is registered in the list. 
 
-![](http://static.toastoven.net/prod_contact_center/2.2.2-(1).png)
-**채팅 아이콘**을 통해 접속한 후 ① 좌측 상단 **상태 값**을 클릭하시면 (초기 기본값 ‘오프라인’) 온라인/휴식/오프라인 중 하나로 상태를 설정하실 수 있으며, 온라인 상태일 경우에만 고객의 채팅 요청에 답변할 수 있습니다.
+## Chat
+Functions in this menu are related to chat consultation. Chat consultation could be enabled in [Service Management → Help Center → Default Settings](https://docs.toast.com/en/Contact%20Center/en/online-contact-guide-service-management/#default-settings_1), and could be accessed through **chat icon** which is displayed in the bottom right side after chat consultation is enabled.
 
-#### 기본 설정
-![](http://static.toastoven.net/prod_contact_center/2.2.2-(2).png)
-① 채팅 연결 시 고객에게 자동으로 발송되는 **인사말**과, ② 고객에게 평가 요청 시 발송되는 **만족도 안내 메시지**를 설정할 수 있습니다. 평가 요청은 채팅 화면 상단 **평가** 버튼을 통해 고객에게 전송할 수 있습니다.
+![](http://static.toastoven.net/prod_contact_center/2.2.2-(1)_en.png)
+After accessing through **chat icon**, click **status value** in the top left of the chat screen to set your status. (initially set to ‘offline’, can choose between online/break/offline). Responding to customer's chat request is only available when chat status is set to online.
 
-#### 상담원 할당 설정
-![](http://static.toastoven.net/prod_contact_center/2.2.2-(3).png)
-① 채팅을 요청한 고객과의 최근 채팅 기록이 있는 상담원에게 채팅을 우선 할당할 것인지, 또는 임의로 배분할 것인 지 선택이 가능합니다.
+### Default Settings
+![](http://static.toastoven.net/prod_contact_center/2.2.2-(2)_en.png)
+You can set **Greeting Message** which is sent automatically when chat consultation is connected, and **Satisfaction Guide Message** which is sent when requesting evaluation about the consultation to customer. Evaluation request could be sent through **Evaluation** button in the top of the chat screen.
 
-#### 채팅화면 삽입 코드
-![](http://static.toastoven.net/prod_contact_center/2.2.2-(4).png)
-기존에 관리하시던 서비스 페이지에 Online Contact가 제공하는 채팅 서비스만 제공하고 싶은 경우 제공되는 코드입니다. ① 제공되는 인입 스크립트를 복사하여 웹사이트 HTML 소스 코드의 </body> 태그 앞에 삽입해주세요.
+### Agent Assignment Settings
+![](http://static.toastoven.net/prod_contact_center/2.2.2-(3)_en.png)
+**①** Could choose whether to **assign chat priority** to a counselor who has recent chat history with a customer who requested chat consultation, or to distribute **randomly**.
 
-#### 카테고리 관리
-![](http://static.toastoven.net/prod_contact_center/2.2.2-(5).png)
-채팅 상담 시 상담 고객에 대해 상담원이 직접 입력하는 상담정보 항목 중 **처리유형의 카테고리**를 관리할 수 있는 메뉴입니다. 처리유형을 1~3 뎁스까지 설정하실 수 있습니다.
+### Chat Screen Insertion Code
+![](http://static.toastoven.net/prod_contact_center/2.2.2-(4)_en.png)
+This code is provided if you want to provide Online Contact's chat service only on the service page you previously managed. **①** Please copy the script provided and insert it in front of the </body> tag of your website HTML source code.
 
-① 상위 카테고리를 먼저 추가하신 후, 하위 뎁스에 카테고리를 추가할 시 상위 카테고리를 먼저 클릭하셔서 선택된 것을 확인하신 후 하위 카테고리를 추가해주세요. 색으로 강조된 카테고리 아래에 새로운 하위 카테고리가 생성됩니다.
+### Manage Category
+![](http://static.toastoven.net/prod_contact_center/2.2.2-(5)_en.png)
+This menu allows you to manage the category of **Processing Type** among the consultation information which the agent inputs directly about the customer during chat consulting. You can set processing types 1 through 3 depth.
 
-동일 뎁스 내에서 카테고리명 **중복은 불가능**합니다. (뎁스가 다를 경우는 가능)
+**①** When adding category in the lower depth after adding the upper category, click the upper category first, and then add the subcategory after checking whether the right category has been selected. Under the color-highlighted category, a new subcategory would be added.
 
-### 티켓
-티켓 메뉴에서는 고객의 문의 접수 또는 문의 처리 시 선택하는 카테고리 관리, 업무 효율화를 높일 수 있는 트리거 기능, 고객센터 문의 접수 화면 구성 필드, 템플릿 관리, 이메일 설정 메뉴를 사용할 수 있습니다.
+Category name **duplicate is not possible** within the same depth. (Possible if the depth is different)
 
-#### 카테고리 관리
-![](http://static.toastoven.net/prod_contact_center/2.2.3-(1).png)
-헬프센터에서 고객이 문의를 접수할 시 선택하는 유형인 **접수유형**과, 상담원이 티켓 처리 시 선택하는 **처리유형**을 1~5뎁스까지 설정할 수 있습니다.
 
-① 상위 카테고리를 먼저 추가하신 후, 하위 뎁스에 카테고리를 추가할 시 상위 카테고리를 먼저 클릭하셔서 선택된 것을 확인한 후 추가해주세요. 색으로 강조된 카테고리 아래에 새로운 하위 카테고리가 생성됩니다.
+## Ticket
+From the Ticket menu, you can manage category which you select to receive or process inquiries, use trigger features that can improve your business efficiency, configure the Help Center Inquiry field, Manage Templates, and Set up Email.
 
-동일 뎁스 내에서 카테고리명 **중복은 불가능**합니다. (뎁스가 다를 경우는 가능)
+### Manage Category
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(1)_en.png)
+Depending on the type of service, categories of ticket are used as follows.
 
-② 좌측 상단 **복사** 버튼을 통해 추가된 카테고리에 자동으로 부여되는 **카테고리 ID**를 복사할 수 있으며, ③ **데이터 추출** 버튼을 통해 전체 카테고리 정보를 **엑셀 파일로 추출**할 수 있습니다. 추출되는 정보는 다음과 같습니다.
+#### Consultation Management
+-	Submission Type: Selected by customer when making inquiries
+-	Processing Type: Selected by agent when processing tickets
 
-##### 데이터 추출 시 추출되는 정보
--	카테고리 ID
--	카테고리 명
--	뎁스
--	상위 카테고리 ID
--	수정시간
--	생성시간
+#### Issue Management
+-	Submission Type: Selected by agents of Consultation Management service when escalating tickets
+-	Processing Type: Selected by agents of Issue Management service when processing escalated tickets
 
-#### 트리거
-![](http://static.toastoven.net/prod_contact_center/2.2.3-(2).png)
-트리거는 반복적인 업무를 **자동화**하여 업무 생산성을 높이기 위한 기능입니다. 특정 조건이 충족될 경우 조건에 따른 결과 행위를 자동으로 실행합니다. 또한 결과에 대한 알림 메일이 발송될 수 있도록 설정도 가능합니다.
+**①** When adding category in the lower depth after adding the upper category, click the upper category first, and then add the subcategory after checking whether the right category has been selected. Under the color-highlighted category, a new subcategory would be added.
 
-예시) `티켓의 접수유형` = `무통장입금`일 경우 `필수`적으로 `결제` 그룹의 `예시01` 상담원에게 `티켓을 할당`
+Category name **duplicate is not possible** within the same depth. (Possible if the depth is different)
+In case of **Processing Type** categories, add **processing type** field (created by default) through Service Management → Ticket → Field → Agent Field → Add button to view processing type categories you set when ticket processing.
 
-① **트리거 추가** 버튼을 누르신 후 제목, 조건, 결과를 모두 입력하시고 **저장** 버튼을 누르시면 트리거가 자동으로 활성화됩니다. 활성화된 트리거는 ② **비활성화** 버튼을 통해 비활성화하실 수 있으며, ③ **수정** 버튼을 통해 조건 또는 결과를 수정하실 수 있습니다.
+**② Copy** button in the top right allows you to copy the **Category ID** automatically assigned to each category, and **③ Download** button allows you to extract the entire category information into an **Excel file**. The following information is extracted:
 
-##### 트리거 조건 유형
-![](http://static.toastoven.net/prod_contact_center/2.2.3-(2)a.png)
+#### Information extracted by Download button
+-	Category ID
+-	Category name
+-	Depth 
+-	Upper category ID
+-	Modified Time
+-	Created Time
 
-##### 트리거 조건 상세
-![](http://static.toastoven.net/prod_contact_center/2.2.3-(2)b.png)
+### Trigger
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(2)_en.png)
+Triggers are designed to increase task productivity by **automating** repetitive tasks. By using triggers, resulting behaviors are automatically executed when certain conditions are met. You can also set up notification mails to be sent for results.
 
-##### 트리거 결과유형
-![](http://static.toastoven.net/prod_contact_center/2.2.3-(2)c.png)
+Example) If `Submission Type` of the ticket = `Billing`, `Assign` ticket to `test01` agent of `Billing` group `necessarily`
 
-#### 필드
-필드 메뉴는 Help Center 내부 문의하기 기능을 사용할 시 기입하는 항목들의 유형을 설정할 수 있는 기능으로, **문의 접수/처리에 필요한 항목들**의 순서를 설정할 수 있습니다. 설정한 그대로 고객 문의하기 화면에 구현됩니다.
+Click the **① Add Trigger** button, enter all the title, conditions, and results, and click the **Save** button to save and activate the trigger. Enabled triggers can be disabled via the **② Disable** button, and conditions or results can be modified via the **③ Edit** button.
 
-![](http://static.toastoven.net/prod_contact_center/2.2.3-(3).png)
-필드는 ① **고객 필드**와 ② **상담원 필드**로 구분됩니다. 필드 설정 또는 관리 탭을 선택하시기 전에 상담원 필드를 관리하실 것인지, 고객 필드를 관리하실 것인지 먼저 선택해주세요.
+#### Trigger Condition Types
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(2)a_en.png)
 
--	상담원 필드: 티켓 상세 화면에 보이는 문의 항목
--	고객 필드: 헬프센터 → 문의하기 기능에서 고객에게 보이는 문의 항목
+#### Trigger Condition Details
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(2)b_en.png)
 
-##### 필드 설정
-![](http://static.toastoven.net/prod_contact_center/2.2.3-(4).png)
-① 앞서 [티켓 → 카테고리 관리](https://github.com/TOAST-DOCS/Contact-Center/blob/alpha/ko/online-contact-guide-service-management.md#%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC-%EA%B4%80%EB%A6%AC-1)에서 등록해두신 접수유형에 따라 문의내역에 필요한 필드를 다르게 설정하실 수 있습니다. **접수유형**을 클릭하시면 설정해두신 필드를 열람하실 수 있으며, 개인정보수집 항목을 제외한 필드들의 ② 순서를 변경하실 수 있습니다. (개인정보수집 항목의 경우 항상 맨 아래 노출되도록 고정됨)
+#### Trigger Condition Details
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(2)c_en.png)
 
-또한 필드 관리 탭에서 추가해두신 필드를 ③ 새롭게 **추가**하시거나, 이미 추가하신 필드를 ④ **제거**하실 수 있습니다.
+#### Trigger Result Details
+##### Ticket : Assign
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(2)d_en.png)
+If you select and save the agent group and the ticket distribution method within the group (random allocation, linear allocation, select agent), the assignment will be executed according to the results you selected when the trigger conditions are met. **Random allocation** means that the group’s agents are assigned tickets at **random**, and **linear Allocation** means the ticket would be assigned in the order in which agents are **added to the group.** If you have multiple triggers that specify results with different agents under the same conditions, all triggers, not randomly assigned to one of these agents, will be triggered sequentially, and tickets will continue to be assigned only to the person set for the last trigger, so if you intend to randomly assign tickets within the group, make sure to select ** random allocation**. 
 
-##### 필드 관리
-![](http://static.toastoven.net/prod_contact_center/2.2.3-(5).png)
-① 필드 설정 탭에서 각 접수유형에 맞게 필드를 추가할 수 있도록 필드 관리 탭에서 개별 필드를 관리합니다. 기본 필드는 삭제 대신 **수정** 또는 필드 설정의 **초기화**만 가능하며, 직접 만드신 필드의 경우 **수정**과 **삭제** 모두 가능합니다.
+##### Notification
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(2)e_en.png)
+Notification is the type of result that **notification mail is sent** to the specified recipient when the trigger condition is met. If you select this result type, you can set the subject and content of the notification mail to be sent via the **① Notification Settings** button.
 
-![](http://static.toastoven.net/prod_contact_center/2.2.3-(6).png)
-필드를 추가하실 때 입력해야 하는 항목은 다음과 같습니다.
+##### Forward
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(2)f_en.png)
+Forward is the type of result that **ticket information being emailed** to the specified recipient when the trigger condition is met. You can check the information and inquiries of the ticket through the e-mail. If you click the **① Online Contact Shortcut** link at the bottom of the inquiry, **ticket screen would be popped-up**, and you can process the ticket directly on the screen. If you chose to **complete the ticket after forwarding**, the inquiry will be emailed and your ticket will be automatically processed as**completed**.
 
--	① 항목 유형: 필드의 항목 유형입니다. 하단 상세 설정을 통해 값을 세팅하실 수 있으며, 해당 필드가 문의하기 화면에서 어떻게 보일지 미리보기를 통해 보실 수 있습니다.
--	② 항목 코드: Open API로 문의하기 기능을 개발할 시 해당 필드를 나타내는 고유한 값으로 사용됩니다.
--	③ 항목 명
--	④ 안내 문구: 필드에 대한 안내 문구로, 문의하기 화면에 필드와 함께 보여집니다.
--	⑤ 필수 여부: 설정 시 항목 명 오른쪽에 \*(별표)로 표시되며, 반드시 입력되어야 다음 단계로 넘어갈 수 있습니다. 기본 필드 중 제목, 이메일, 유형, 내용, 개인정보수집 필드는 필수입력 항목에 대해 ‘아니오’ 설정이 불가합니다.
--	⑥ 개인정보 (암호화 여부)
--	⑦ 개인정보 파기 여부
+##### Callback url
+Callback url is the type of result that the **entered callback address is called** when the trigger condition is met.
 
-#### 템플릿 관리
-![](http://static.toastoven.net/prod_contact_center/2.2.3-(7).png)
-템플릿 관리 메뉴는 자주 접수되는 문의 유형에 대한 **답변 템플릿을 미리 추가**하여 티켓을 신속하게 처리할 수 있는 기능입니다. 티켓 관리 메뉴에서 티켓을 처리할 시 선택 가능하며, 템플릿을 제작할 시 설정된 접수유형과 티켓의 접수유형이 같을 경우 선택할 수 있습니다.
+##### Dooray Notification
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(2)g_en.png)
+If the trigger conditions are met, information of the ticket is sent via Dooray notification based on the template set by the **① Template Settings** button. For the link URL, see [Dooray Messenger Service Guide](https://docs.toast.com/en/Dooray/Messenger/en/service-guide/#receive-web-hookproject-notification) for instructions.
 
-① 상단 좌측 **템플릿 추가** 버튼을 통해 템플릿을 추가하실 수 있으며, 템플릿 추가 시 선택하는 접수유형은 앞서 [티켓 → 카테고리 관리](https://github.com/TOAST-DOCS/Contact-Center/blob/alpha/ko/online-contact-guide-service-management.md#%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC-%EA%B4%80%EB%A6%AC-1)에서 등록해두신 접수 유형입니다. 내용 본문 부분에서 마우스 우 클릭 시 링크, 이미지, 테이블을 삽입하실 수 있습니다.
+### Field
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(3)_en.png)
+Fields are divided into **① Customer Field** and **① Agent Field**. Please select whether you want to manage before selecting field setting or field management.
 
-#### 이메일 설정
-![](http://static.toastoven.net/prod_contact_center/2.2.3-(8).png)
-Online Contact에서 도메인을 제공하는 ① **대표 계정 주소**를 생성하실 수 있으며, ② **외부 계정 등록**을 통해 서비스 도메인을 사용하는 서비스 대표 계정을 등록하실 수도 있습니다. 
+Depending on the type of service, customer and agent fields are used as follows:
 
-③ Online Contact를 통해 발신되는 이메일의 **발신자 명**과 **발신자 주소**를 저장하실 수 있으며, ④ 모든 발송 메일에 대한 공통적인 **메일 레이아웃**을 설정하실 수 있습니다. 본문의 치환코드 (#{content})를 삭제할 경우 답변 메일에서 각 항목에 대한 내용이 보이지 않을 수 있으니 템플릿 작성 시 유의해주세요. 또한 앞서 티켓 → 템플릿 관리에서 작성하신 템플릿을 비롯하여 모든 발송 메일에 적용되는 공통적인 메일 레이아웃이므로, 템플릿 간 내용 충돌이 일어나지 않도록 유의해주세요.
+#### Consultation Management
+-	Agent Field: fields that the agent enters directly about the ticket when processing ticket
+-	Customer Field: fields shown to the customer in Help Center → Inquiry screen. Implemented on Help Center Inquiry screen as set in field setting menu.
 
-### 상담원
-상담원 메뉴에서는 고객 문의 처리 (티켓 및 채팅 상담)을 위해 상담원과 그룹을 추가 및 수정하고, 상담원 별로 그룹과 권한을 설정할 수 있습니다.
+#### Issue Management
+-	Agent Field: fields entered directly by the agent of the Issue Management Type service for the ticket when processing the escalated ticket
+-	Customer Field: fields entered and forwarded according to the specified category when a ticket is escalated
 
-#### 상담원
-![](http://static.toastoven.net/prod_contact_center/2.2.4-(1).png)
-상담원으로 추가할 사용자는 **IAM 회원**으로 등록되어 있어야 합니다.
+#### Field Setting
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(4)_en.png)
+**①** Depending on the submission type you added earlier in [Service Management → Ticket → Manage Category](https://docs.toast.com/en/Contact%20Center/en/online-contact-guide-service-management/#manage-category_1), you can set the fields required for inquiry details differently. Click **Submission Type** to view the fields you have set up, and you can change the **②** order of fields except for personal information field. In the case of personal information field, it is always pinned to the bottom.
 
-##### IAM 회원 등록
--	화면 우측 상단 ① **회원 초대** 버튼 → 이름, ID, 이메일 입력
--	TOAST CONSOLE → 멤버 관리 → IAM 회원 탭 → IAM 회원 등록 버튼 → ID, 이름, 메일, 휴대폰 번호 입력
+You can also **③ add** and **④ remove** the fields you previously added on the Field Management menu.
 
-위 두 방법 중 한가지를 선택하셔서 IAM 회원을 등록하시고, ② **상담원 추가** 버튼 → **상담원 조회** 버튼 → 등록된 IAM 회원을 이름/계정/이메일 중 일부 정보 입력을 통해 조회하신 후 추가하실 수 있습니다.
+#### Field Management
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(5)_en.png)
+Manage individual fields on the Field Management menu so that you can add fields for each submission type in Field Settings menu. Default fields can only be modified or initialized instead of deletion, and both modification and deletion is available for the fields you created.
 
-상담원을 추가하실 때에는 반드시 그룹을 배정해야 하므로, 추가된 그룹이 없을 경우 **그룹을 먼저 추가**하신 후 상담원 추가를 진행해주세요.
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(6)_en.png)
+For adding customer fields, items required to be filled are as follows:
 
-상담원 추가 시 설정할 수 있는 권한은 다음과 같습니다.
--	슈퍼관리자: 관리자 권한 + 전체 관리 메뉴 기능
--	관리자: 일반 상담원 + 서비스 관리 메뉴 기능
--	일반 상담원: 채팅 및 티켓 상담
--	티켓 상담원: 티켓 상담
+-	**①** Field type: The **type of field**. If you select the field type, **Detailed Settings** and **Preview** will be displayed at the bottom of Basic Settings. Detailed settings allow you to set the values to be displayed for the field, and you can use preview to see what the field will look like on the customer's screen. 
+-	**②** Field code: When developing inquiry feature with Open API, field code is used as a unique value to represent the field.
+-	**③** Field Name: The name of the field, which appears with the field on the Inquiry screen.
+-	**④** Notice: A guide phrase for the field, which appears with the field on the Inquiry screen.
+-	**⑤** Required: When set, it is marked with a \*(star) to the right of the field name and must be filled before you move on to the next field. Among the default fields, type, email, title, contents, personal information must be set to ‘required’.
+-	**⑥** Personal information (Encrypt or not)
+-	**⑦** Destroy personal information
 
-#### 그룹
-![](http://static.toastoven.net/prod_contact_center/2.2.4-(2).png)
-그룹 메뉴에서는 그룹의 ① **추가**, ② **수정**, ③ **삭제**가 가능합니다. 그룹별 상담원을 구성할 경우 티켓 → 트리거 상에서 해당 그룹에 유형별 문의를 할당하거나, 알림 메일이 전송되도록 설정할 수 있습니다. 
+For agent fields, **Permission** (Administrator, Agent) item is additionally required to be filled.
 
-![](http://static.toastoven.net/prod_contact_center/2.2.4-(3).png)
-상단 좌측 **그룹 추가** 버튼을 누르신 후, 그룹 명을 입력해주시고 할당될 상담원을 선택하신 뒤 ① ‘ **>** ‘ 버튼을 통해 할당된 상담원으로 이동해주세요. 반대로 상담원을 할당 해제하실 때는 ‘ **<** ‘ 버튼을 통해 미할당 상담원으로 이동하실 수 있습니다. 상담원 할당을 마친 후 ② **저장** 버튼을 눌러 주시면 그룹 설정이 적용됩니다.
+### Manage Template
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(7)_en.png)
+Template managing is a feature that allows you to quickly process tickets by **pre-adding answer templates** for frequently asked questions. You can choose templates when you process tickets in the Ticket Management menu, and it is only selectable when the submission type of the template is same as the submission type of the ticket.
 
-상담원을 할당하시지 않고도 그룹을 추가하실 수 있으므로, 그룹의 최초 추가 시에는 그룹 명만 입력하신 다음 **저장** 버튼을 눌러 주시면 상담원 추가를 진행하실 수 있습니다.
+**① Add Template** button allows you to add a template. The submission type you need to select is which you previously added in [Service Management → Ticket → Manage Category]( https://docs.toast.com/en/Contact%20Center/en/online-contact-guide-service-management/#manage-category_1). You can insert links, images, and tables when you right-click on the body of the content.
 
-### 헬프센터
-#### 템플릿 관리
-![](http://static.toastoven.net/prod_contact_center/2.2.5-(1).png)
-헬프센터 페이지 **디자인 테마 관리** 메뉴로, 각 서비스별 세부 영역에 대한 디자인을 수정할 수 있는 편집 editor를 PC/모바일 템플릿 관리 메뉴에서 제공합니다.
+### Email Settings
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(8)_en.png)
+You can create a **① representative account address** which domain is provided from Online Contact, or register a service representative account using one’s service domain by enrolling **② External account **.
 
-기본으로 두 가지의 템플릿이 제공되며, ① **템플릿 등록** 버튼을 통해 새로운 템플릿을 추가하실 수 있습니다. 추가하신 템플릿은 ② **수정** 또는 **삭제**하실 수 있으며, 활성화 중인 템플릿은 삭제가 불가하므로 다른 템플릿을 활성화하신 다음 삭제해주세요.
+**③** You can save the **sender's name** and **address** of the email sent through Online Contact and can set common **Mail Layout** for every sent mail. If you delete the replacement code (#{content}) of the body, the contents in the answer mail may not be displayed, so please be aware to not delete the replacement code when creating layout. Also note that this is a common layout which applies to all outgoing mail, including the templates you created earlier in Ticket → Manage Template menu, so make sure there are no conflicts between layout and templates.
 
-![](http://static.toastoven.net/prod_contact_center/2.2.5-(2).png)
-템플릿 추가 및 수정 시 ① **CSS / HTML / JS 스크립트**를 주어진 편집기에 직접 작성하시거나 [서비스 관리 → 헬프센터 → 파일업로드 관리](https://github.com/TOAST-DOCS/Contact-Center/blob/alpha/ko/online-contact-guide-service-management.md#%ED%8C%8C%EC%9D%BC%EC%97%85%EB%A1%9C%EB%93%9C-%EA%B4%80%EB%A6%AC) 메뉴에서 필요하신 파일(스크립트, 폰트, 이미지 등)을 업로드하신 후 리소스의 경로를 입력하심을 통해 헬프센터의 구성을 변경하실 수 있습니다. 편집 후 **미리보기** 버튼을 통하여 편집 내용이 헬프센터에 적용된 모습을 바로 보실 수 있으며, **저장**하신 후 적용이 가능합니다.
+## Call
+In Call menu, you could register **IVR Route Code, Name** for managing callback, and register **Calling Number** which is displayed to the customer when making a outbound call. This menu is only viewable in services which **Ticket Management →  Include call(using CTI)** function is **activated** in contract details. 
 
-CSS 수정 시 활용하실 수 있는 주요한 요소들은 다음과 같습니다.
+When call function is activated, to call authorized agents **call widget** will be shown, which allows agents to access call consultation related features.
+
+### IVR Route Management
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(8)-1_en.png)
+In IVR Route Management menu, you could manage **IVR Route Code**, **IVR Route Name** for managing callback.
+
+By clicking **① Add** button, screen for adding IVR route will be shown. Please input IVR route code and route name received by CTI administrator, and save the IVR information. If callback request is received through the added IVR route, you could **check the IVR route for the received callback request** in Additional Business Management → Callback Management → Callback List menu (To view this menu, additional work → callback function should be activated in contract details).
+
+You could **② modify, delete** added IVR routes.
+
+### Send No Management
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(9)_en.png)
+In this menu, you could manage **calling number** which is displayed to the customer when making a outbound call.
+It can be used by agents within an organization who conduct call consultations about multiple services when trying outbound calls by selecting the calling number appropriately for the purpose of the outbound call.
+
+By clicking **① Add** button, screen for adding calling number would be shown. After entering name, number, and attaching certificate of use of communication service, click save, and the added calling number would be added to the calling number list as **New** status. **② Modifying** is only able when the status is **new**, and **③ deleting** is able regardless of the current status.
+
+Once the verification with the certificate of use of communication service for the added calling number is completed, the status will be changed to **Confirm** or **Reject**. You can check the reason for the change of status.
+
+**Confirmed** calling numbers are viewed in the calling number dropbox when the agent with the call authority of the service clicks **Dial Up** in the call widget.
+
+### Call Consultation
+When call function is activated, **call icon** is displayed to the call authorized agent. CTI screen will be displayed in the upper right side of Online Contact if call icon is clicked.
+
+#### CTI Login, Base Status
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(10)_en.png)
+Agent which CTI information is registered in Global Management → CTI Management → CTI Agent Management menu could login to the CTI through **① Login** button. After login is completed, the CTI screen is changed to **② default screen**, and the following functions are able to use.
+
+- Logout
+- Rest : Set agent status to rest, call request not allocated in this status.
+- Ready : Set Agent status to ready, call request allocated when inbound call exists.
+- Business : Can choose between Education, Report, Meeting, Ticket, Chat, Monitor. Call request not allocated in this status.
+- Dial up: Can make outbound call after setting customer number, calling number. (Can set in Service Management → Call → Send No Management menu)
+
+#### Inbound Call
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(11)_en.png)
+If call is requested when agent status is set to ready, **① alert about inbound call** which notifies if call consultation is connected, current screen will be changed to the ticket processing screen of the service which call is requested is displayed.
+
+Call would be connected by clicking **② Confirm** button, and ticket would be automatically created to the service which call is requested. When cancel button is clicked, the call goes back to the scenario to navigate agents in ready status, and if the agent status is changed to 'ready' again, the agent would be able to receive call again.
+
+#### Outbound Call
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(12)_en.png)
+When clicking **① Dial up** button in the CTI screen, screen for **② dial up** will be displayed.
+After entering **customer number**, and selecting **sending number**, click **③ confirm** to make outbound call.
+When calling is proceeded, the agent status would be changed to **Dialing**, and when call is connected, ticket would be automatically created to the service which call is made.
+
+#### Process Call
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(13)_en.png)
+In **Talking** status, you can use the following functions through the CTI screen.
+- Transfer : You can **transfer** the currently connected call to other agent. After entering agent number or searching agent, you can discuss with the other agent through **transfer try** button, and can transfer the call through **transfer connect** button. 
+- Disconnect: In the case of a situation where **normal consultation is difficult to take place due to the customer's strong attitude**, click disconnect to finish call with an ARS announcement.
+- Hold: If you need a moment of confirmation or inquiry while consulting, select Hold. **Music will be transmissed** to the customer, and agent status will be changed to **holding**. Click **retrieve** to reconnect call.
+- Hang up: Call will be finished.
+
+#### Finish Call
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(14)_en.png)
+When call is finished, **alert about change of agent status** will be displayed, and if **① Confirm** button is clicked, agent status will be changed to **ready**.
+
+If **② Cancel** is selected, status will be changed to **Ticket**, and you could process ticket created for the proceeded call consultation. For call tickets, you could process through selecting the following items: **Resolved**, **Pending**, **Add a Comment**.
+
+## Agent
+In this menu, you can add and edit agents and groups for handling customer inquiries (ticket, chat, call consultations), and set up groups and permissions for each agent.
+
+### Agent
+![](http://static.toastoven.net/prod_contact_center/2.2.4-(1)_en.png)
+User must be registered as **IAM Member** to be added as an agent.
+
+#### Register IAM Member
+-	Click ① Invite Members button → Enter name, ID, email
+-	TOAST CONSOLE → Manage Member → IAM Member tab → Click Register IAM Member button → Enter ID, name, mail, and mobile phone number 
+
+Select one of the above two methods to register IAM member., and click **② Add Agent** → **View Agent** → search registered IAM Member by entering name/account/email, and add the IAM Member as your service’s agent.
+
+Group assigning is mandatory when adding a counselor, so please add **group** first and proceed with adding a counselor.
+
+The **permissions** you can set when adding an agent is as follows, and settings about organization administrator are available from [Global Management → Organization Administrator](https://docs.toast.com/en/Contact%20Center/en/online-contact-guide-global-management/#organization-adminstrator) menu.
+
+-	Administrator: Permission which features related to **service settings** added to the permission of **agents**. (Ticket, chat permissions can be selected individually. When call is selected, ticket becomes automatically selected together.)
+-	Agent: Permission for **ticket, call, chat consultation**. (Ticket, chat permissions can be selected individually. When call is selected, ticket becomes automatically selected together.)
+
+### Group
+![](http://static.toastoven.net/prod_contact_center/2.2.4-(2)_en.png)
+In Group menu, you can **① add**, **② edit**, **③ delete** groups. When configuring agents into groups, you can assign type-specific inquiries to the appropriate group, or set up notification mail to be sent by Ticket → Trigger.
+
+#### Add Group
+![](http://static.toastoven.net/prod_contact_center/2.2.4-(3)_en.png)
+Click **Add Group**, enter group name, choose agent to be assigned, and click **①** ‘**>** ‘button to move agent to ‘Assigned Agent’. Conversely, when you unassign a agent, click ‘**<**’ button to move agent to ‘Unassigned Agent’. After assigning agents, press **② Save** button to apply group settings. 
+
+You can add a group without assigning agents, so when you add a group initially, you can proceed adding agents by simply entering the group name and pressing the **Save** button.
+
+## Help Center
+### Template Management
+![](http://static.toastoven.net/prod_contact_center/2.2.5-(1)_en.png)
+In this menu, you can **manage design themes** for your Help Center. Using the provided editor, you can modify the design for each service-specific detail area.
+
+There are two basic templates available, and you can add new templates with the **① Add Template** button. The template you added can be **② edited** or **deleted**. The template in use cannot be deleted, so please enable another template to delete it.
+
+![](http://static.toastoven.net/prod_contact_center/2.2.5-(2)_en.png)
+When adding or editing templates, you can directly input **① CSS / HTML / JS scripts**, or upload appropriate file (script, font, image, etc.) and enter the path of the resource in the editor to change the configuration of the Help Center. Through **Preview** button you could see the edits being applied, and after **saving**, you could apply the template.  
+
+**When modifying CSS**, the key elements you can refer are as follows:
 
 ##### main.css
-| 요소 이름                                        | 설명                                |
+| Element Name                                        | Details                                |
 | --------------------------------------------------- | ---------------------------------- |
-| .main_banner                                    | 메인 상단 배너 영역                  |
-| .main_banner img                                | 메인 상단 배너 영역 이미지           |
-| .carousel-caption .title_txt                    | 메인 상단 배너 영역 제목             |
-| .carousel-caption .sub_txt                      | 메인 상단 배너 영역 소제목           |
-| .search-box                                     | 메인 상단 배너 영역 검색상자         |
-| .search-box .icon-ic-search                     | 메인 상단 배너 영역 검색아이콘       |
-| #supports .container-con                        | 메인 고객센터 구성요소 영역          |
-| #supports .support__item:nth-child(1):before    | 메인 공지사항 아이콘                 |
-| #supports .support__item:nth-child(2):before    | 메인 FAQ 아이콘                     |
-| #supports .support__item:nth-child(3):before    | 메인 문의하기 아이콘                 |
-| #supports .support__item:nth-child(4):before    | 메인 문의내역 아이콘                 |
-| #supports .support__item .card-title .btn       | 메인 구성요소 제목                   |
-| #supports .support__item .card-title .btn:hover | 메인 구성요소 제목 호버 시 색 변경    |
-| #supports .support__item .card-title .btn:after | 메인 구성요소 텍스트 우측 화살표 아이콘 |
-| #supports .support__item .card-text             | 메인 구성요소 설명 텍스트 |
-| #sec_contact-news .textArea                     | 메인 하단 배너 영역 |
-| #sec_contact-news .textArea .text-item h3       | 메인 하단 배너 영역 제목 |
-| #sec_contact-news .textArea .text-item .icon-more::after | 메인 하단 배너 영역 더보기 아이콘 |
-| #sec_contact-news .textArea .text-item li       | 메인 하단 배너 영역 게시글 리스트 |
-| #chat-offline                                   | 상담원 부재중 박스 |
-| #chat-offline .title                            | 상담원 부재중 박스 제목 |
-| #chat-offline .text                             | 상담원 부재중 박스 텍스트 |
-| #chat-offline .close                            | 상담원 부재중 박스 닫기 아이콘 |
-| #chat-offline .btn                              | 상담원 부재중 박스 문의하기 아이콘 |
+| .main_banner                                    | Upper banner area / main page                  |
+| .main_banner img                                | Image of upper banner area / main page           |
+| .carousel-caption .title_txt                    | Title of upper banner area / main page             |
+| .carousel-caption .sub_txt                      | Subtitle of upper banner area / main page           |
+| .search-box                                     | Search box of upper banner area / main page         |
+| .search-box .icon-ic-search                     | Search icon of upper banner area / main page       |
+| #supports .container-con                        | Contents area / main page          |
+| #supports .support__item:nth-child(1):before    | Notice icon / main page                 |
+| #supports .support__item:nth-child(2):before    | FAQ icon / main page                     |
+| #supports .support__item:nth-child(3):before    | Inquiry icon / main page                 |
+| #supports .support__item:nth-child(4):before    | Inquiry History icon / main page                 |
+| #supports .support__item .card-title .btn       | Title of contents area / main page                   |
+| #supports .support__item .card-title .btn:hover | Title of contents area / main page (Color changed when hovered)    |
+| #supports .support__item .card-title .btn:after | Right arrow icon of contents area / main page |
+| #supports .support__item .card-text             | Information text of contents area / main page |
+| #sec_contact-news .textArea                     | Bottom banner area / main page |
+| #sec_contact-news .textArea .text-item h3       | Title of bottom banner area / main page |
+| #sec_contact-news .textArea .text-item .icon-more::after | See more icon of bottom banner area / main page |
+| #sec_contact-news .textArea .text-item li       | Document list of bottom banner area / main page |
+| #chat-offline                                   | Agent offline box |
+| #chat-offline .title                            | Title of agent offline box |
+| #chat-offline .text                             | Text of agent offline box |
+| #chat-offline .close                            | Close icon of agent offline box |
+| #chat-offline .btn                              | Contact us icon of agent offline box |
 
 ##### faq.css
-| 요소 이름                          | 설명                                |
+| Element Name                          | Information                                |
 | ---------------------------------- | ---------------------------------- |
-| .lnb--fixed .lnb--fixed__nav       | 세부 페이지 좌측 LNB                |
-| .help-center-title                 | 세부 페이지 좌측 LNB 제목            |
-| .lnb__nav                          | 세부 페이지 좌측 LNB 리스트          |
-| .lnb__nav li a                     | 세부 페이지 좌측 LNB 리스트 개별     |
-| .lnb__nav li.on a                  | 세부 페이지 좌측 LNB 리스트 선택     |
-| .lnb--fixed__side-divider          | 세부 페이지 LNB/contents 구분선     |
-| .lnb--fixed__content               | 세부 페이지 콘텐츠 영역              |
-| .tit_txt                           | 세부 페이지 콘텐츠 영역 제목         |
-| .data_info-box                     | 세부 페이지 콘텐츠 영역 박스         |
-| .tab_category                      | 세부 페이지 콘텐츠 영역 카테고리 탭   |
-| .tab_category>li.on                | 세부 페이지 콘텐츠 영역 카테고리 선택 |
-| .tab_category>li                   | 세부 페이지 콘텐츠 영역 카테고리 개별 |
-| .tbl_wrap                          | 세부 페이지 콘텐츠 영역 리스트        |
-| .faqData th:nth-child(1)           | FAQ 테이블 카테고리                  |
-| .faqData th:nth-child(2)           | FAQ 테이블 제목                     |
-| .faqData th:nth-child(3)           | FAQ 테이블 등록일                    |
-| .faqData tr.hot-text td            | FAQ 테이블 개별 상단고정 카테고리     |
-| .faqData tr.hot-text td .title-info a | FAQ 테이블 개별 상단고정 제목     |
-| .faqData td .title-info sup        | FAQ 테이블 개별 상단고정 HOT         |
-| .gocont .search                    | FAQ 검색                           |
-| .sel                               | FAQ 검색 말머리                     |
-| .search .inp                       | FAQ 검색어 입력                     |
-| .search .btnArea                   | FAQ 검색 버튼                       |
-| .faqData_info-con                  | FAQ 세부 문서 콘텐츠                 |
-| .faqData_info-con .dataTit         | FAQ 세부 문서 제목                   |
-| .faqData_info-con .dataTime        | FAQ 세부 문서 등록일                 |
-| .faqData_info-con .dataTextBox     | FAQ 세부 문서 내용 텍스트            |
+| .lnb--fixed .lnb--fixed__nav       | Left LNB / details page                |
+| .help-center-title                 | Title of left LNB / details page            |
+| .lnb__nav                          | List of left LNB / details page          |
+| .lnb__nav li a                     | Item of list of left LNB / details page     |
+| .lnb__nav li.on a                  | Selected item of list of left LNB / details page     |
+| .lnb--fixed__side-divider          | Dividing line of left LNB and contents     |
+| .lnb--fixed__content               | Contents area / details page              |
+| .tit_txt                           | Title of contents area / details page         |
+| .data_info-box                     | Box of contents area / details page         |
+| .tab_category                      | Category tab of contents area / details page   |
+| .tab_category>li.on                | Selected category of contents area / details page |
+| .tab_category>li                   | Category of contents area / details page |
+| .tbl_wrap                          | List of contents area / details page        |
+| .faqData th:nth-child(1)           | Category of FAQ table                  |
+| .faqData th:nth-child(2)           | Title of FAQ table                     |
+| .faqData th:nth-child(3)           | Registered date of FAQ table                    |
+| .faqData tr.hot-text td            | Category of main-fixed document of FAQ table     |
+| .faqData tr.hot-text td .title-info a | Title of main-fixed document of FAQ table     |
+| .faqData td .title-info sup        | HOT icon of main-fixed document of FAQ table         |
+| .gocont .search                    | FAQ search                           |
+| .sel                               | Category in FAQ search                  |
+| .search .inp                       | Search input in FAQ search                   |
+| .search .btnArea                   | Search button in FAQ search                    |
+| .faqData_info-con                  | Contents of FAQ document                |
+| .faqData_info-con .dataTit         | Title of FAQ document              |
+| .faqData_info-con .dataTime        | Registered date of FAQ document              |
+| .faqData_info-con .dataTextBox     | Text of contents of FAQ document           |
 
 ##### notice.css
-| 요소 이름                          | 설명                                |
+| Element Name                         | Details                                |
 | ---------------------------------- | ---------------------------------- |
-| .el-breadcrumb                     | 세부 페이지 우측 상단 텍스트 영역     |
-| .el-breadcrumb li                  | 세부 페이지 우측 상단 텍스트 영역 개별|
-| .noticeData                        | 공지사항 테이블                      |
-| .noticeData th:nth-child(1)        | 공지사항 테이블 번호                 |
-| .noticeData th:nth-child(2)        | 공지사항 테이블 제목                 |
-| .noticeData th:nth-child(3)        | 공지사항 테이블 말머리               |
-| .noticeData th:nth-child(4)        | 공지사항 테이블 등록일               |
-| .noticeData tr.hot-text            | 공지사항 테이블 개별 상단고정         |
-| .noticeData tr.hot-text td         | 공지사항 테이블 개별 상단고정 번호    |
-| .noticeData tr.hot-text td .title-info a | 공지사항 테이블 개별 상단고정 제목 |
-| .noticeData td .title-info sup     | 공지사항 테이블 개별 상단고정 HOT     |
-| .icon-leavel-1                     | 공지사항 테이블 개별 상단고정 말머리   |
-| .noticeData tr                     | 공지사항 테이블 개별                  |
-| .noticeData td .title-info a       | 공지사항 테이블 개별 제목             |
-| .upload-text-memo                  | 문의하기 첨부파일 필드 텍스트         |
-| .faqData_info-con .dataTime .noticeType | 공지사항 세부 문서 카테고리      |
-| .faqData_info-con .dataTime .noticeType .icon-leavel-1 | 공지사항 세부 문서 카테고리 아이콘 |
+| .el-breadcrumb                     | Right-upper text area / details page   |
+| .el-breadcrumb li                  | Item of right-upper text area / details page|
+| .noticeData                        | Notice table                   |
+| .noticeData th:nth-child(1)        | Number of notice table                |
+| .noticeData th:nth-child(2)        | Title of notice table             |
+| .noticeData th:nth-child(3)        | Heading of notice table               |
+| .noticeData th:nth-child(4)        | Registered date of notice table               |
+| .noticeData tr.hot-text            | Main-fixed document of notice table      |
+| .noticeData tr.hot-text td         | Number of main-fixed document of notice table |
+| .noticeData tr.hot-text td .title-info a | Title of main-fixed document of notice table |
+| .noticeData td .title-info sup     | HOT icon of main-fixed document of notice table    |
+| .icon-leavel-1                     | Heading of main-fixed document of notice table   |
+| .noticeData tr                     | Item of notice table               |
+| .noticeData td .title-info a       | Title of item of notice table             |
+| .upload-text-memo                  | Text of attachments field of inquiry         |
+| .faqData_info-con .dataTime .noticeType | Heading of item of notice table      |
+| .faqData_info-con .dataTime .noticeType .icon-leavel-1 | Heading icon of item of notice table |
 
 ##### search.css
-| 요소 이름                          | 설명                                |
+| Element Name                          | Details                                |
 | ---------------------------------- | ---------------------------------- |
-| .paginate                          | 페이지네이션 영역                   |
-| .paginate li                       | 페이지네이션 개별                   |
-| .paginate li.firstPage a           | 페이지네이션 << 키                  |
-| .paginate li.firstPage a.img       | 페이지네이션 << 키 이미지            |
-| .paginate li.prev a.               | 페이지네이션 < 키                   |
-| .paginate li.prev a img            | 페이지네이션 < 키 이미지             |
-| .paginate li a                     | 페이지네이션 개별 페이지             |
-| .paginate li.number.active a       | 페이지네이션 현재 페이지             |
-| .paginate li.next a.               | 페이지네이션 > 키                   |
-| .paginate li.next a img            | 페이지네이션 > 키 이미지             |
-| .paginate li.lastPage a            | 페이지네이션 >> 키                  |
-| .paginate li.lastPage a.img        | 페이지네이션 >> 키 이미지            |
-| .search-title                      | 검색결과 제목                       |
-| .search-title strong               | 검색결과 제목 검색어 강조            |
-| .search-text                       | 검색결과                            |
-| .search-text .search-title_sub     | 검색결과 하위분류                    |
-| .search-text .search-text_lit      | 검색결과 개별                       |
-| .search-text .search-text_lit dt a | 검색결과 개별 제목                  |
-| .search-text .search-text_lit dd .search-text_con | 검색결과 개별 내용 미리보기 |
-| .search-text .search-text_lit dd .search-text_time | 검색결과 개별 작성일 |
+| .paginate                          | Pagination area                   |
+| .paginate li                       | Item of pagination area                 |
+| .paginate li.firstPage a           | << key of pagination area                |
+| .paginate li.firstPage a.img       | Image of << key of pagination area            |
+| .paginate li.prev a.               | < key of pagination area                   |
+| .paginate li.prev a img            | Image of < key of pagination area      |
+| .paginate li a                     | Each page of pagination area             |
+| .paginate li.number.active a       | Current page of pagination area        |
+| .paginate li.next a.               | > key of pagination area               |
+| .paginate li.next a img            | Image of > key of pagination area           |
+| .paginate li.lastPage a            | >> key of pagination area                  |
+| .paginate li.lastPage a.img        | Image of >> key of pagination area            |
+| .search-title                      | Title of search result                   |
+| .search-title strong               | Search term (emphasized) of search result         |
+| .search-text                       | Search result                        |
+| .search-text .search-title_sub     | Subclass of search result                  |
+| .search-text .search-text_lit      | Item of search result               |
+| .search-text .search-text_lit dt a | Title of item of search result               |
+| .search-text .search-text_lit dd .search-text_con | Preview of contents of item of search result |
+| .search-text .search-text_lit dd .search-text_time | Registered date of contents of item of search result |
 
 ##### inquiry.css
-| 요소 이름                          | 설명                                |
+| Element Name                   | Details                                |
 | ---------------------------------- | ---------------------------------- |
-| .selectStyle                       | 검색 내부 옵션                      |
-| .inquiry-con                       | 문의하기 콘텐츠 영역                 |
-| .inquiry-con_table                 | 문의하기 테이블                      |
-| .inquiry-con_table th              | 문의하기 테이블 필드                 |
-| .bl_ess                            | 문의하기 테이블 필드 필수 *          |
-| .inquiry-con_table td              | 문의하기 테이블 입력                 |
-| .error_txt                         | 문의하기 테이블 입력 에러 텍스트      | 
-| .inquiry-btn                       | 문의하기 접수 버튼                   |
-| .layui-icon                        | 화살표 버튼                         |
-| .layui-icon-right                  | > (좌측 방향) 화살표 버튼            |
-| .layui-icon-up                     | V (아래 방향) 화살표 버튼            |
-| .check_area_wrap .td-radio .layui-form-checkbox\[lay-skin="primary"] span | 체크박스 텍스트 |
-| .error_txt                         | 에러 텍스트                          |
+| .selectStyle                       | Option of search                    |
+| .inquiry-con                       | Contents area of inquiry                |
+| .inquiry-con_table                 | Inquiry table                      |
+| .inquiry-con_table th              | Field of inquiry table                 |
+| .bl_ess                            | Required field of inquiry table         |
+| .inquiry-con_table td              | Input of inquiry table                |
+| .error_txt                         | Input of inquiry table (Error)     | 
+| .inquiry-btn                       | Submit button of inquiry table                  |
+| .layui-icon                        | Arrow button                        |
+| .layui-icon-right                  | Left arrow button            |
+| .layui-icon-up                     | Down arrow button            |
+| .check_area_wrap .td-radio .layui-form-checkbox\[lay-skin="primary"] span | Checkbox text|
+| .error_txt                         | Error text                       |
 
-#### 파일업로드 관리
-![](http://static.toastoven.net/prod_contact_center/2.2.5-(3).png)
-답변 템플릿 및 레이아웃 작성에 사용될 파일을 관리하는 도구로, ① **파일 업로드** 버튼을 통해 사용할 파일을 직접 업로드하시면 매번 필요한 파일을 새롭게 업로드할 필요 없이 제공되는 해당 리소스의 ② **파일 경로**를 통해 사용하실 수 있습니다.
+### Manage File Uploads
+![](http://static.toastoven.net/prod_contact_center/2.2.5-(3)_en.png)
+As a tool for managing the files used to create templates and layouts, you can upload the files through the **① Upload File** button and use **② File Path** of the resource without having to upload files every time. File names could not be duplicated.
 
-기존에 동일 파일명으로 업로드된 내역이 있을 경우 업로드가 불가하니, 파일명이 중복되지 않도록 유의해주세요.
+### Default Settings
+![](http://static.toastoven.net/prod_contact_center/2.2.5-(4)_en.png)
+You can **Enable** functions you use in the Help Center and **Disable** functions you don't use. When disabled, the function becomes hidden from the Help Center page.
 
-#### 구성관리
-![](http://static.toastoven.net/prod_contact_center/2.2.5-(4).png)
-헬프센터의 구성 항목 중 사용하는 기능은 **활성화**, 사용하지 않는 기능은 **비활성화** 처리하실 수 있습니다. 비활성화 시 헬프센터 화면에서 숨김 처리됩니다.
+Functions you can manage are as follows:
+-	Notice
+-	FAQ
+-	1:1 Inquiry & My Inquiries
+-	Chat
+-	Help center navigation
 
-관리 가능한 기능은 다음과 같습니다.
--	공지사항
--	FAQ (자주 묻는 질문)
--	1:1 문의 & 문의 내역 (문의하기)
--	채팅
+## External Channel
+Inquiries received by external services could be switched to tickets in Online Contact. Twitter and KakaoTalk are currently supported services.
 
-### 외부채널
-**외부 SNS로 인입되는 문의**를 Online Contact에서 티켓으로 전환하여 처리할 수 있습니다. 현재 **트위터**와 **카카오 상담톡**을 지원하고 있습니다.
+### Twitter
+![](http://static.toastoven.net/prod_contact_center/2.2.6-(1)_en.png)
+You can **① Enable** or **Disable** Twitter connection, and could register Twitter account by **② Register** button when Twitter connection is enabled.
 
-#### 트위터
-![](http://static.toastoven.net/prod_contact_center/2.2.6-(1).png)
-트위터 채널 연동을 ① **활성화** 또는 **비활성화**하실 수 있으며, 활성화 시 우측 ② **등록** 버튼을 통해 트위터 계정을 등록하실 수 있습니다. 
+![](http://static.toastoven.net/prod_contact_center/2.2.6-(2)_en.png)
+When registering your account, you can set whether to switch tickets for **① Tweet(Mention)** and **② Direct message** respectively, and if you wish to convert direct messages to a ticket, please check the procedure below.
 
-![](http://static.toastoven.net/prod_contact_center/2.2.6-(2).png)
-계정 등록 시 ① **트윗**(멘션)과 ② **메시지**에 대한 티켓 전환 여부를 각각 설정하실 수 있으며, 만약 메시지를 티켓으로 전환하여 받아 보기를 희망하시는 경우 아래 절차를 확인해주세요.
+Access your Twitter account and check More → Settings and Privacy → Privacy and Safety → Direct Messages → **Receive message requests** must be enabled before a message to the linked account can be received as a ticket.
 
-이용하고 계시는 트위터 계정 접속 → 더보기 → 설정 및 개인정보 → 개인정보 및 보안 → 쪽지 (Direct Messages) → 쪽지 요청 받기 항목이 체크되어 있어야 연결된 계정으로 오는 쪽지가 티켓으로 접수될 수 있습니다.
+### Kakao Talk Plus Friend
+![](http://static.toastoven.net/prod_contact_center/2.2.6-(3)_en.png)
+You can **① Enable** or **Disable** KakaoTalk connection, and could register KakaoTalk ID and date to activate by **② Register** button when KakaoTalk connection is enabled. The connection takes up to 1~2 business days, and if the connection is rejected, the reason for rejection will be displayed. You must change Management → Detailed Settings → Channel Home → Enable Public Search to **ON** in the KakaoTalk channel manager center to connect with Online Contact.
 
-#### 카카오 상담톡
-![](http://static.toastoven.net/prod_contact_center/2.2.6-(3).png)
-상담톡 연동을 ① **활성화** 또는 **비활성화**하실 수 있으며, 활성화 시 우측 ② **등록** 버튼을 통해 카카오 플러스친구 ID와 활성화 희망일을 입력해주세요. 연결은 영업일 기준 최대 1~2일 소요되며, 연결이 반려될 경우 반려 사유 메시지가 표시되므로 확인해주세요. 카카오톡채널 관리자센터에서 관리 → 상세설정 → 채널 홈 → 공개설정을 **ON**으로 변경해야 연결 가능합니다.
+![](http://static.toastoven.net/prod_contact_center/2.2.6-(4)_en.png)
+Click on the **Account which is connected** to set up the details of the KakaoTalk function.
 
-![](http://static.toastoven.net/prod_contact_center/2.2.6-(4).png)
-연결이 완료된 **계정을 클릭**하시면 상담톡 기능의 세부 요소들을 설정할 수 있습니다.
-- ① 상담시간
-- ② 채팅가능 요일
-- ③ 자동 멘트
-  - 업무시간 외 자동 멘트: 설정한 상담시간 외에 채팅이 접수되었을 경우 자동으로 발송되는 멘트
-  - 첫 인사 자동 멘트: 채팅이 연결되었을 시 자동으로 발송되는 멘트
-  - 상담원 부재 자동 멘트: 온라인 상태의 상담원이 없을 시 자동으로 발송되는 멘트
-  - 평가 요청 자동 멘트: 상담원이 평가 요청을 전송했을 시 함께 발송되는 멘트
-  - 상담종료 자동 멘트: 상담 종료 시 자동으로 발송되는 멘트
+- **①** Consultation time
+- **②** Days available for consultation
+- **③** Auto comment
+    - Out of business hours: Comment sent when chat request received **besides the consultation time**
+    - First greeting: Comment sent when **chat consultation connected**
+    - No agent: Comment sent when **all agents are offline**
+    - Request for evaluation: Comment sent with the **evaluation request** from the agent
+    - End of consultation: Comment sent when consultation **ended**
 
-상담톡 서비스가 활성화되면 기존 플러스친구 1:1 채팅은 중단되며, 카카오톡을 통해 접수되는 문의는 Online Contact에서 제공하는 채팅 기능에 **유입 채널 ‘카카오’**로 표시되어 접수됩니다.
+When KakaoTalk is connected and activated in Online Contact, the existing plus friend 1:1 chat will be stopped, and inquiries received through KakaoTalk will be showed in the chat screen, with ‘channel’ of the ticket marked as ‘KakaoTalk’.
+
