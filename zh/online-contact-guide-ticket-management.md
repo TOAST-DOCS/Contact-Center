@@ -1,88 +1,105 @@
-## Contact Center > Online Contact > 서비스 가이드 > 티켓 관리
+## Contact Center > Online Contact > Service Guide > Ticket Management
 
-### 티켓
-Help Center 문의하기 · 대표메일 · 외부채널을 통해 접수된 티켓들 중 트리거 조건 (서비스 관리 → 티켓 → 트리거 메뉴에서 추가 가능)에 맞춰 그룹 · 상담원에게 자동으로 할당된 티켓을 처리하거나, 미할당 티켓을 수동으로 할당하여 처리할 수 있습니다.
+## Ticket
+Tickets which were submitted/created by help center · mail · external channel · call · chat (**Consultation Management**), or escalated from consultation management type (**Issue Management**) could be assigned and processed by trigger conditions (can set in Service Management → Ticket → Trigger) or could be manually assigned if unassigned.
 
-![](http://static.toastoven.net/prod_contact_center/4.1.1-(1).png)
+![](http://static.toastoven.net/prod_contact_center/4.1.1-(1)_en.png)
+From **① All Tickets** Menu, you could check overall current situation of tickets regardless of ticket’s status and assigned agent. And from other **detailed menus**, you could check current situation of tickets displayed by **detailed conditions** such as group, ticket status. The color of each ticket is **given by each inflow channel**, so it could be used to classify tickets. Please refer to the image below for the type of inflow channel represented by each color.
 
-① **전체 티켓** 메뉴를 통해 할당/처리/완료 여부, 당자와 관계없이 **전체적인 티켓 현황**을 확인하실 수 있으며, **세부 메뉴**들을 통해 할당 여부, 그룹, 티켓 상태 등 **세부 조건**에 맞게 표시된 티켓 현황을 확인하실 수 있습니다.
+![](http://static.toastoven.net/prod_contact_center/4.1.1-(1)a_en.png)
+ 
+Information which you could check by each **detailed menu** is as follows:
+-	**②** All Unassigned Tickets: You can view all **unassigned tickets**. 
+-	**③** All Tickets in Group: You can view the **entire ticket within the group** you belong to.
+-	**④** My Tickets in Progress: Assigned tickets’ status will be changed to **processing**. In this menu, you can view tickets assigned to you.
+-	**⑤** My Tickets in Pending: If additional checking is needed when processing, you could set the ticket status to **pending**. In this menu, you can view tickets which you processed as ‘pending’. Pended tickets could be reprocessed to be resolved. 
+-	**⑥** My Resolved Tickets: If you process assigned tickets as ‘**resolved**’, the ticket status would be changed to ‘resolved’ and could be viewed at this menu. If the customer resubmits inquiries through the answer mail, it can be processed again.
+-	**⑦** My Completed Tickets: Ticket status will be changed to ‘**completed**’ if the administrator processed the ticket to be ‘**completed**’, or if **two weeks past** after the ticket was processed as ‘resolved’. Completed tickets can be viewed in this menu, and ‘completed’ tickets could not be processed again.
+-	**⑧** Spam Box: Tickets would be moved to spam box if processed **'Resolve Internally → Spam’. Spam tickets could be restored or deleted, and could not be answered or forwarded before they are restored.
 
-각 세부 메뉴를 통해 확인할 수 있는 정보는 다음과 같습니다.
--	② 전체 미할당 티켓: 전체 티켓 중 담당자에게 할당되지 않은 티켓을 확인할 수 있습니다.
--	③ 그룹내 전체 티켓: 조회 중인 본인이 소속된 그룹 내 전체 티켓을 확인할 수 있습니다.
--	④ 내가 처리중인 티켓: 담당자에게 할당된 티켓은 ‘**처리중**’ 상태로 변경되며, 이 메뉴에서 본인에게 할당된 티켓을 확인할 수 있습니다.
--	⑤ 내가 보류중인 티켓: 처리 중 확인이 필요한 경우 ‘**보류**’ 처리를 할 수 있으며, 이 메뉴에서 본인이 ‘보류’ 처리한 티켓을 확인할 수 있습니다. 보류건은 다시 처리하여 해결할 수 있습니다.
--	⑥ 내가 해결한 티켓: 할당된 티켓을 ‘**해결**’ 처리하면 티켓 상태가 ‘해결’로 변경되어 이 메뉴에서 확인할 수 있습니다. 답변 메일로 다시 재문의 시 처리 가능합니다.
--	⑦ 내가 완료한 티켓: 할당된 티켓의 처리가 종료되어 관리자가 ‘**완료**’ 처리를 했거나, ‘해결’ 처리 이후 **2주가 경과**하면 티켓 상태가 ‘완료’로 변경되어 이 메뉴에서 확인할 수 있습니다. ‘완료’ 처리된 티켓에 대해 재문의는 가능하지 않습니다.
--	⑧ 스팸함: 처리 시 ‘**내부해결**’ 상태 중 ‘**스팸**’ 항목으로 처리했을 시 스팸함으로 이동합니다. 삭제 또는 복구가 가능하며, 복구 전까지 답변, 전달 등의 처리는 불가합니다.
+## Ticket Processing
+### Keep Tickets
+![](http://static.toastoven.net/prod_contact_center/4.1.2-(1)_en.png)
+If submitted tickets are **unassigned**, tickets could be distributed through ‘**keep**’ function. Click **① Keep** button, which is displayed in unassigned tickets, and select group if groups which you belong is plural. The ticket would be processed as ‘kept’, and you would be able to process the ticket.
 
-### 티켓 처리
-#### 가져오기
-![](http://static.toastoven.net/prod_contact_center/4.1.2-(1).png)
-접수된 티켓이 **미할당** 상태일 경우 ‘**가져오기**’ 기능을 통해서 티켓을 배분할 수 있습니다. 미할당 상태의 티켓에 표시된 ① **가져오기** 버튼을 누르고, 본인이 소속된 상담원 그룹이 복수일 경우 하나의 그룹을 선택하시면 됩니다.
+If ticket assigning is set through trigger, tickets would be assigned according to the conditions without using ‘keep’ function. In this case, to replace automatically assigned agents, tickets could be **forwarded** by **administrator**’s authority. Click **② Forward** button, and select group, agent.
 
-트리거를 통해서 티켓 할당이 설정된 경우에는 ‘가져오기’ 기능을 사용하지 않아도 티켓이 조건에 맞게 자동으로 배분됩니다. 이 경우 자동으로 할당된 처리자를 바꾸기 위해서는 관리자의 권한으로 티켓을 다른 상담원에게 **전달**할 수 있습니다. 티켓정보 탭의 최하단에 위치한 ② **전달** 버튼을 누르고, 티켓을 전달할 상담원의 그룹과 상담원을 선택해주세요.
 
-#### 처리하기
-티켓이 트리거를 통해 자동으로 할당되었거나, 가져오기/전달 기능을 통해 수동으로 할당된 경우 티켓의 상태가 ‘**처리중**’으로 변경되며 해당 상태에서 고객 문의를 처리할 수 있습니다. 
+### Process Tickets
+If submitted (Consultation Management) or escalated (Issue Management) tickets were assigned, ticket status will be changed to ‘**processing**’, and you can handle customer inquiries in that state.
 
-티켓 클릭 시, 선택된 티켓에 대해서 **티켓정보**, **문의내역**, **이벤트** 탭을 활용하실 수 있습니다.
+If you click tickets, you could utilize **Ticket Information**, **Ticket History**, **Event** tabs. (If the ticket was created through chat function, you could utilize chat consultation history when processing tickets through displayed **Chat History** tab.)
 
-![](http://static.toastoven.net/prod_contact_center/4.1.2-(2).png)
--	① 티켓정보: 고객 문의 관련 정보 확인 및 처리 
-  - ② 티켓 ID: 티켓 생성 시 자동으로 생성
-  - ③ 담당자 소속 그룹
-  - ④ 담당자
-  - ⑤ 티켓상태
-  - ⑥ 채널: 문의가 인입된 채널
-  - ⑦ 문의 접수 시 고객이 입력한 정보
-  - ⑧ 문의 내용
+![](http://static.toastoven.net/prod_contact_center/4.1.2-(2)_en.png)
+-	**① Ticket Information**: View information related to customer inquiry 
+    - **②** Ticket ID: Automatically created when ticket created
+    - **③** Group (the group which the assigned agent belongs to)
+    - **④** Agent
+    - **⑤** Status
+    - **⑥** Channel: Channel which the inquiry was submitted
+    - **⑦** Information which the customer entered when submitting inquriy
+    - **⑧** Inquiry Contents
 
-![](http://static.toastoven.net/prod_contact_center/4.1.2-(3).png)
--	① 문의내역: 해당 고객의 이전 문의내역 확인
+![](http://static.toastoven.net/prod_contact_center/4.1.2-(3)_en.png)
+-	**① Ticket History**: Check previous inquiry history of the customer
 
-![](http://static.toastoven.net/prod_contact_center/4.1.2-(4).png)
--	① 이벤트: 해당 문의에 관련하여 발생한 이벤트 (할당, 담당자 변경, 전달 등) 확인
+![](http://static.toastoven.net/prod_contact_center/4.1.2-(4)_en.png)
+-	**① Event**: Check events occurred related to the ticket (Assign, Change of agent, forward, etc.)
 
-![](http://static.toastoven.net/prod_contact_center/4.1.2-(5).png)
-문의에 대해서 선택할 수 있는 **처리 상태**는 다음과 같습니다.
--	① 해결: 고객에게 발송할 최종 메일 처리
--	② 보류: 고객에게 최종 메일 전달 전 중간답변 시 선택
--	③ 코멘트 추가: 메모를 추가하는 것. 타 상담원에게 전달 시 활용됨
--	④ 내부해결: 고객에게 최종메일을 발송하지 않아도 되는 상황. 세부 구성 요소는 다음과 같습니다.
-  - 스팸
-  - 욕설
-  - 테스트
-  - 중복
-  - 채팅해결: 채팅을 통해 문의가 해결되어 메일로 답변을 드리지 않아도 됨
-  - 전화해결: 전화를 통해 문의가 해결되어 메일로 답변을 드리지 않아도 됨
-  - 기타
+![](http://static.toastoven.net/prod_contact_center/4.1.2-(5)_en.png)
+**Processing status** which you can select for each ticket is as follows:
+- **①** Resolved: Select to send **final mail** to customer
+- **②** Pending: Select to send **intermediate answer mail** before sending final mail
+- **③** Add a Comment: Add **memo** to ticket. Used when forwarding ticket to another agent.
+- **④** Resolve Internally: Situation when **you don’t need to send final mail** to customer. Detailed components are as follows:
+    - Spam
+    - Abuse
+    - Test
+    - Duplicate
+    - Resolved via Chat: Mail replying unneeded because inquiry was resolved by chat
+    - Resolved via Call: Mail replying unneeded because inquiry was resolved by call
+    - Others
 
-문의 내용이 유사한 티켓들에 대해 답변을 일괄적으로 작성하고자 하거나, 티켓들의 처리자 또는 그룹을 일괄적으로 변경하고자 할 때 **티켓 일괄 처리** 기능을 사용할 수 있습니다. ⑤ **티켓 일괄 처리** 버튼은 티켓 리스트 상단에 위치해 있습니다.
+  
+You could use **Ticket Batching** to make a batch of answers to tickets with similar inquiries, or to change the agent or group of tickets collectively. **⑤ Ticket Batching** button is in the upper side of ticket list.
 
-#### 티켓 생성
-![](http://static.toastoven.net/prod_contact_center/4.1.2-(6).png)
-① **티켓 생성** 버튼을 통해 새로운 티켓을 생성할 수 있습니다. 고객 문의 처리 과정에서 추가 티켓을 생성할 필요가 있거나, 전화 문의에 대한 메일 답변이 필요한 경우 사용될 수 있습니다.
+### Create Tickets
+![](http://static.toastoven.net/prod_contact_center/4.1.2-(6)_en.png)
+You could create new tickets through **① Create Ticket** button. This can be used if you need to create additional tickets in the process of handling customer inquiries, or if you need an email response to a telephone inquiry.
 
-티켓 생성 시 입력이 필요한 항목은 다음과 같습니다.
--	② 담당그룹
--	③ 담당자
--	④ 접수유형
--	⑤ 템플릿
--	⑥ 제목, ⑦ 내용
+The following items are required to enter when creating a ticket:
+-	**②** Group
+-	**③** Agent
+-	**④** Submission Type
+-	**⑤** Template
+-	**⑥** Title, **⑦** Contents
 
-### 티켓 검색
-![](http://static.toastoven.net/prod_contact_center/4.1.3-(1).png)
-티켓 목록 상단에 위치한 ① **티켓검색** 버튼을 누르시면 티켓 검색에 활용할 수 있는 조건들이 표시됩니다. 조건들은 구체적으로 다음과 같습니다.
--	생성시간: 티켓의 생성시간
--	우선순위: 티켓 처리 시 처리자가 입력한 우선순위
--	티켓ID: 티켓 생성 시 자동으로 발급되는 티켓 ID
--	제목: 고객이 문의 시 기재한 제목
--	담당그룹: 전체 또는 개별 그룹 선택
--	담당자: 문의를 처리한 처리자
--	티켓상태: 티켓의 현재 상태
--	채널: 티켓 유입 채널
--	접수유형: 문의 시 고객이 입력
--	처리유형: 처리 시 담당자가 입력
--	계정: 문의가 접수된 이메일 계정
--	이름: 문의자 성명
+### Escalate Tickets
+Inquiries **difficult to resolve** in **consultation management** service could be **escalated** to **issue management** service created in organization. 
+
+![](http://static.toastoven.net/prod_contact_center/4.1.2-(7)_en.png)
+![](http://static.toastoven.net/prod_contact_center/4.1.2-(8)_en.png)
+
+If you click **① Escalation** button, screen which you could select service to escalate would be displayed. Only services which type is issue management will be displayed in the drop box. After **② selecting service**, click **confirm**, and escalation screen would be displayed in the bottom of the ticket. 
+
+If you select submission type, **③ Customer Fields** which were set in Service Management → Ticket → Field menu of issue management service would be displayed according to the selected submission type. Fill in the customer fields, title, contents, and click **④ Escalation** button to process escalation.
+
+After escalated, ticket status will be changed to **⑤ Escalation in Progress**, and if the ticket was processed as **resolved**, **pending**, **resolve internally** in issue management service, the status will be changed into **Escalation resolved**.
+
+## Search Tickets
+![](http://static.toastoven.net/prod_contact_center/4.1.3-(1)_en.png)
+If you click **① Search Ticket** button in top of the ticket list, search conditions would be displayed. The conditions are specific as follows.
+
+-	**Created Time**: he ticket’s created time
+-	**Priority**: Priority which the processor entered when processing the ticket
+-	**Ticket ID**: Ticket ID which was automatically created when the ticket was created
+-	**Title**: Title which the customer entered when submitting ticket
+-	**Group**: Select all or each group
+-	**Agent**: Agent which processed the ticket
+-	**Status**: Current status of the ticket
+-	**Channel**: Channel which the ticket was submitted
+-	**Submission Type**: Type which customer selected when submitting ticket
+-	**Processing Type**: Type which agent selected when processing ticket
+-	**Email (Account)**: Email address of the ticket
+-	**Name**: Name of enquirer
+

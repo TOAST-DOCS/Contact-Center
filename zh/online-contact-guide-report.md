@@ -1,74 +1,73 @@
-## Contact Center > Online Contact > 서비스 가이드 > 통계
+## Contact Center > Online Contact > Service Guide > Report
 
-### 기간 통계
-![](http://static.toastoven.net/prod_contact_center/6.1-(1).png)
-![](http://static.toastoven.net/prod_contact_center/6.1-(2).png)
-티켓과 채팅에 대한 **기간별 실적 현황**입니다. 1일/1주/3주/1개월/3개월 단위로 기간별 접수 및 처리건 그래프, 기간별 평균 처리시간 그래프, 기간별 실적 통계 종합에 대한 표를 조회하실 수 있습니다. 
+### Period Statistics
+![](http://static.toastoven.net/prod_contact_center/6.1-(1)_en.png)
+![](http://static.toastoven.net/prod_contact_center/6.1-(2)_en.png)
+Statistics in this menu shows **period performance status** for tickets and chats. You can view the graph of receipt and processing by period, average processing time by period, and table of comprehensive performance statistics by period on a daily/week/monthly basis.
 
-**티켓**의 경우 인입경로에 따라 일/주/월별 접수일/처리일 기준으로, **채팅**의 경우 인입경로에 따라 시간/일/주/월별로 ① **검색**하실 수 있습니다.
+You could **① search** on a daily/weekly/monthly received date/processed date basis for **ticket** and **chat** on an hourly/week/monthly basis depending on the entry path.
 
-티켓에서의 **보류**, **해결**, **완료**는 다음과 같이 구분됩니다.
--	보류: 고객에게 최종 메일 전달 전 **중간답변 작성** 시 선택하는 티켓 처리유형
--	해결: 고객에게 **최종 메일을 발송**할 시 선택하는 티켓 처리유형
--	완료: 티켓의 처리가 종료되어 관리자가 ‘**완료**’ 처리를 했거나, ‘해결’ 처리 이후 **2주가 경과**한 티켓
+**Pending**, **Resolved**, **Complete** on ticket are divided as follows:
+-	Pending: Type of ticket processing to choose when creating an **interim response** before delivering final mail to the customer 
+-	Resolved: Type of ticket processing to choose when **delivering final mail** to the customer.
+-	Complete: Tickets that have been processed **completed** by the administrator or tickets that have been **two weeks** since they were resolved.
 
-**접수일**과 **처리일**은 다음과 같이 구분됩니다.
--	접수일: 해당 기간 동안 **접수된 문의건수 중 처리된 건**을 통계로 산출
--	처리일: 해당 기간 내 **처리된 모든 건**을 통계로 산출
+**Received Date**, **Processed Date** are divided as follows:
+-	Received Date: Statistic of the number of inquiries **received and processed** during the period
+-	Processed Date: Statistic of the number of inquiries **processed** during the period
 
-채팅에서의 **포기**와 **처리**는 다음과 같이 구분됩니다.
--	포기: 상담원이 대기 목록에서 고객의 **상담 요청을 클릭하지 않았거나**, 메시지에 대한 **답변을 전송하지 않은 경우**
--	처리: 상담원이 대기 목록에서 고객의 상담 요청을 클릭한 후 **답변을 전송**했을 경우
+**Give up**, **Processing** in chat are divided as follows:
+-	Give up: The case which the agent **did not click the customer’s chat request**, or **did not replied** to the customer
+-	Processing: The case which the agent clicked the customer’s chat request, and **have replied** to the customer
 
-② **데이터 추출** 버튼을 통해서, 적용한 조건에 따라 산출된 표 형태의 데이터를 엑셀로 다운로드 받을 수 있습니다.
+You could download tabular data based on the conditions applied to Excel, by **② Download** button.
 
-### 유형 통계
-![](http://static.toastoven.net/prod_contact_center/6.2-(1).png)
-![](http://static.toastoven.net/prod_contact_center/6.2-(2).png)
-티켓과 채팅에 대한 **접수유형별 실적 현황**입니다. 1일/1주/3주/1개월/3개월 단위로 접수유형별 접수 및 처리건 그래프, 접수유형별 처리시간 그래프, 접수유형별 상세 처리 현황 표, 접수유형별 시간 구간내 처리 현황 표를 조회하실 수 있습니다. 
+### Type Statistics
+![](http://static.toastoven.net/prod_contact_center/6.2-(1)_en.png)
+![](http://static.toastoven.net/prod_contact_center/6.2-(2)_en.png)
+Statistics in this menu shows **performance status by submission type** for tickets and chats. You can view the graph of receipt and processing by submission type, average processing time by submission type, table of detailed processing status statistics by submission type, and processing status in time interval by submission type on a daily/week/monthly basis. 
 
-**티켓**의 경우 인입경로에 따라 합계/평균, 처리유형/접수유형, 접수일/처리일 기준으로, **채팅**의 경우 인입경로에 따라 처리유형을 기준으로 ① **검색**하실 수 있습니다.
+You could **① search** based on the total/average, processing type/submission type, and received date/processed date according to the entry path for **ticket** and **chat** based on the processing type depending on the entry path.
 
-티켓에서의 **보류**, **해결**, **완료**는 다음과 같이 구분됩니다.
--	보류: 고객에게 최종 메일 전달 전 **중간답변 작성** 시 선택하는 티켓 처리유형
--	해결: 고객에게 **최종 메일을 발송**할 시 선택하는 티켓 처리유형
--	완료: 티켓의 처리가 종료되어 관리자가 ‘**완료**’ 처리를 했거나, ‘해결’ 처리 이후 **2주가 경과**한 티켓
+**Pending**, **Resolved**, **Complete** on ticket are divided as follows:
+-	Pending: Type of ticket processing to choose when creating an **interim response** before delivering final mail to the customer 
+-	Resolved: Type of ticket processing to choose when **delivering final mail** to the customer.
+-	Complete: Tickets that have been processed **completed** by the administrator or tickets that have been **two weeks** since they were resolved.
 
-**접수일**과 **처리일**은 다음과 같이 구분됩니다.
--	접수일: 해당 기간 동안 **접수된 문의건수 중 처리된 건**을 통계로 산출
--	처리일: 해당 기간 내 **처리된 모든 건**을 통계로 산출
+**Received Date**, **Processed Date** are divided as follows:
+-	Received Date: Statistic of the number of inquiries **received and processed** during the period
+-	Processed Date: Statistic of the number of inquiries **processed** during the period
 
-채팅에서의 **포기**와 **처리**는 다음과 같이 구분됩니다.
--	포기: 상담원이 대기 목록에서 고객의 **상담 요청을 클릭하지 않았거나**, 메시지에 대한 **답변을 전송하지 않은 경우**
--	처리: 상담원이 대기 목록에서 고객의 상담 요청을 클릭한 후 **답변을 전송**했을 경우
+**Give up**, **Processing** in chat are divided as follows:
+-	Give up: The case which the agent **did not click the customer’s chat request**, or **did not replied** to the customer
+-	Processing: The case which the agent clicked the customer’s chat request, and **have replied** to the customer
 
-② **데이터 추출** 버튼을 통해서, 적용한 조건에 따라 산출된 표 형태의 데이터를 엑셀로 다운로드 받을 수 있습니다.
+You could download tabular data based on the conditions applied to Excel, by **② Download** button.
 
-### 실적 통계
-![](http://static.toastoven.net/prod_contact_center/6.3-(1).png)
-![](http://static.toastoven.net/prod_contact_center/6.3-(2).png)
-티켓과 채팅에 대한 **상담원별 실적 현황**입니다. 1일/1주/3주/1개월/3개월 단위로 상담원별 접수 및 처리건 그래프, 상담원별 처리시간 그래프, 상담원별 상세 처리 현황 표, 상담원별 시간 구간내 처리 현황 표를 조회하실 수 있습니다. 
+### Performance Statistics
+![](http://static.toastoven.net/prod_contact_center/6.3-(1)_en.png)
+![](http://static.toastoven.net/prod_contact_center/6.3-(2)_en.png)
+Statistics in this menu shows **performance status by agent** for tickets and chats. You can view the graph of receipt and processing by agent, average processing time by agent, table of detailed processing status statistics by agent, and processing status in time interval by agent on a daily/week/monthly basis.
 
-**티켓**의 경우 인입경로에 따라 합계/평균, 상담원 그룹, 접수일/처리일 기준으로, **채팅**의 경우 인입경로에 따라 개별 상담원, 일/월 기준으로 ① **검색**하실 수 있습니다.
+You could **① search** based on the total/average, agent group, and received date/processed date according to the entry path for **ticket** and **chat** based on the agent, day/month depending on the entry path.
 
-티켓에서의 **보류**, **해결**, **완료**는 다음과 같이 구분됩니다.
--	보류: 고객에게 최종 메일 전달 전 **중간답변 작성** 시 선택하는 티켓 처리유형
--	해결: 고객에게 **최종 메일을 발송**할 시 선택하는 티켓 처리유형
--	완료: 티켓의 처리가 종료되어 관리자가 ‘**완료**’ 처리를 했거나, ‘해결’ 처리 이후 **2주가 경과**한 티켓
+**Pending**, **Resolved**, **Complete** on ticket are divided as follows:
+-	Pending: Type of ticket processing to choose when creating an **interim response** before delivering final mail to the customer 
+-	Resolved: Type of ticket processing to choose when **delivering final mail** to the customer.
+-	Complete: Tickets that have been processed **completed** by the administrator or tickets that have been **two weeks** since they were resolved.
 
-**접수일**과 **처리일**은 다음과 같이 구분됩니다.
--	접수일: 해당 기간 동안 **접수된 문의건수 중 처리된 건**을 통계로 산출
--	처리일: 해당 기간 내 **처리된 모든 건**을 통계로 산출
+**Received Date**, **Processed Date** are divided as follows:
+-	Received Date: Statistic of the number of inquiries **received and processed** during the period
+-	Processed Date: Statistic of the number of inquiries **processed** during the period
 
-채팅에서의 **포기**와 **처리**는 다음과 같이 구분됩니다.
--	포기: 상담원이 대기 목록에서 고객의 **상담 요청을 클릭하지 않았거나**, 메시지에 대한 **답변을 전송하지 않은 경우**
--	처리: 상담원이 대기 목록에서 고객의 상담 요청을 클릭한 후 **답변을 전송**했을 경우
+**Give up**, **Processing** in chat are divided as follows:
+-	Give up: The case which the agent **did not click the customer’s chat request**, or **did not replied** to the customer
+-	Processing: The case which the agent clicked the customer’s chat request, and **have replied** to the customer
 
-② **데이터 추출** 버튼을 통해서, 적용한 조건에 따라 산출된 표 형태의 데이터를 엑셀로 다운로드 받을 수 있습니다.
+You could download tabular data based on the conditions applied to Excel, by **② Download** button.
 
-### 만족도 통계
-![](http://static.toastoven.net/prod_contact_center/6.4-(1).png)
-채팅에 대한 **만족도 현황**입니다. 1일/1주/3주/1개월/3개월 단위로 만족/불만족 건수 그래프, 상담 만족도 그래프, 채팅 상담 만족도 상세 현황 표를 ① **검색**하실 수 있습니다.
+### Satisfaction Statistics
+![](http://static.toastoven.net/prod_contact_center/6.4-(1)_en.png)
+Statistics in this menu shows **satisfaction status ** for chats. You could **① search** the graph of satisfaction & dissatisfaction cases, satisfaction of counseling, and the table of chat satisfaction details depending on a daily/week/monthly basis.
 
-② **데이터 추출** 버튼을 통해서, 적용한 조건에 따라 산출된 표 형태의 데이터를 엑셀로 다운로드 받을 수 있습니다.
-
+You could download tabular data based on the conditions applied to Excel, by **② Download** button.

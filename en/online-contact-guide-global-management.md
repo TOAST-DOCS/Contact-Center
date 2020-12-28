@@ -39,6 +39,33 @@ The user whom you want to grant organization administrator permission must be re
 Select one of the above two methods to register IAM member. After registering, click **Add Organization Administrator** button → click **View Agent** button → Search registered IAM Member by entering name/account/email, and add IAM Member as organization administrator.
 To newly registered IAM Members, password change mail will be sent by the registered email information. Logging in Online Contact becomes available after setting password through email.
 
+## CTI Management
+In CTI Management menu, you could set CTI information to connect with Online Contact, and manage CTI ID, CTI NO of each call consultation agent. 
+This menu is only viewable in services which **Ticket Management →  Include call(using CTI)** function is **activated** in contract details.  
+
+### CTI Setting
+![](http://static.toastoven.net/prod_contact_center/2.1.2-(2)_en.png)
+From CTI Setting menu, you could set CTI to connect with call consultation function of Online Contact.
+
+The **① Versions of CTI** which is able to choose are as follows:
+- IPCC (Private): Private service. Please **consult with us beforehand** from Online Contact help center if use is wanted.([Online Contact Help Center Shortcut](https://nhn-contact.oc.toast.com/oc/hc/))
+- Mobile Contact: Can choose after **Mobile Contact is activated** in Toast Console.
+
+After choosing the version of CTI, please input **service name** which you received from IPCC or Mobile Contact administrator in the **② Tenant Name** input box.
+
+CTI information would be saved by clicking **③ Save** button.
+
+### CTI Agent Management
+![](http://static.toastoven.net/prod_contact_center/2.1.2-(3)_en.png)
+You can assign CTI information to agents who will be conducting call consultation among the agents registered with your organization.
+
+If you click **① Search** button without input in the name input box, the list of all agents registered in the organization would be viewed. If you click **① Search** button with input, the list of agents satisfying the search result would be viewed.
+
+Agent ID, name, email address, CTI ID, CTI NO, service (which the agent is registered) of agents are shown in the list, and you could input or edit CTI ID, CTI NO through **② Modify** button.
+Please input **CTI ID**, **CTI NO** received from IPCC or Mobile Contact administrator, and then click **③ Save** to save information.
+
+After CTI information is correctly entered and saved, agent with call authority could proceed **CTI Login** in the call widget.
+
 ## SSO Login
 ![](http://static.toastoven.net/prod_contact_center/2.1.3-(1)_en.png)
 SSO Login menu allows you to set the authentication method for logging in to help center. After registering SSO Login, set the login method you registered from [Service Management → Authentication](https://docs.toast.com/en/Contact%20Center/en/online-contact-guide-service-management/#authentication) menu. 
@@ -50,6 +77,38 @@ SSO Login menu allows you to set the authentication method for logging in to hel
 ## Authority Log Management
 ![](http://static.toastoven.net/prod_contact_center/2.1.4-(1)_en.png)
 **①** Logs are recorded when you change the permissions of agents inside the organization. This menu manages logs about change of permission by the organization administrator or administrator. You can **② search** by entering some of the information, including the date and time of operation, operated contents, name, IP, service, or ID.
+
+## My Performance
+![](http://static.toastoven.net/prod_contact_center/2.1.4-(2)_en.png)
+Through clicking **currently connected ① account name** displayed in the upper right corner of the screen, you could access to **② My Performance** menu.
+In this menu, detailed **real-time cumulative data** about ticket, call, chat consultation in **currently accessed service** is shown.
+
+Detailed performance classifications for different types of consultations are as follows:
+
+**③ Ticket Achievements**
+- New 
+- Open 
+- Solved
+- Closed
+
+**④ Call Achievements**
+- IB Call (number of calls/minute)
+- OB Call (number of calls/minute)
+- Ready
+- Transfer
+- Ticket Treatment
+- Chat Treatment
+- Rest
+- Eat
+- Education
+- Report
+- Meeting
+- Monitor
+
+**⑤ Chat Achievements**
+- Ready
+- Online
+- Rest
 
 ## Privacy Settings
 ![](http://static.toastoven.net/prod_contact_center/2.1.5-(1)_en.png)
