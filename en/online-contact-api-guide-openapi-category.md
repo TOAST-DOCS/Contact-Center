@@ -1,20 +1,21 @@
-## Contact Center > Online Contact > API 가이드 > 접수유형 관리
-### 접수유형 추가
-#### 인터페이스 설명
+## Contact Center > Online Contact > API Guide for Developers > Category Management
+
+### Add Submission Category
+#### Interface Description
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/ticket/category/add.json			
-- URL(개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/ticket/category/add.json			
+- URL(Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/ticket/category/add.json			
 
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|Interface name | Protocol | Call direction | Encoding | Result format | Interface description | Access restricted|
 |------------|-------|--------|-----|--------|--------------|------------|
-|접수유형 추가  |HTTPS  |POST    |UTF-8|JSON    |신규 접수유형 추가|공통 인증   |
+|Add submission category |HTTPS  |POST    |UTF-8|JSON    |Add new submission category|Common authentication  |
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### Request Parameters
+|Name |Variable |Data type |Required | Description|
 |-----|----|------------|----|----|
-|서비스 ID	|serviceId	|String	|O	|서비스 ID，URL PATH 내에 설정한 {serviceId}|
-|접수유형 정보	|request body	|String	|O	|접수유형 정보（JSON|
-|	             |name	|String	|O	|접수유형명（유일한 값:예; 길이:min = 0, max = 50; 형식:^(\_\|-\|[^\\pP])+$）|
-|	             |orderNo	|Int	|X	|접수유형 노출 순서（기본 값:0）|
+|Service ID	|serviceId	|String	|O	|Service ID，{serviceId} which is set in URL path|
+|Submission Category Information	|request body	|String	|O	|Submission category information（JSON)|
+|	             |name	|String	|O	|Submission category name（Unique value:yes; Length:min = 0, max = 50; Format:^(\_\|-\|\[^\\pP])+$）|
+|	             |orderNo	|Int	|X	|Submission category order（Default value:0）|
 
 #### Request Body
 ```
@@ -24,18 +25,18 @@
 }
 ```
 
-#### 결과 데이터
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### Result Data
+|Name |Variable |Data type |Required | Description|
 |-----|----|------------|----|---|
-|result.content	|categoryId	|Int	|O	|접수유형 ID|
-|             	|serviceId	|String	|O	|서비스 ID|
-|	              |parent	|Int	|X	|상위 접수유형 ID（고정 값:0）|
-|	              |name	|String	|O	|접수유형 명|
-|	              |level	|Int	|X	|뎁스（고정 값:1）|
-|	              |path	|String	|X	|뎁스 경로（고정 값:"\\"）|
-|	              |orderNo	|Int	|X	|접수유형 노출 순서（기본 값:0）|
-|	              |createdDt	|Long	|X	|접수유형 생성시간|
-|	              |updatedDt	|Long	|X	|접수유형 업데이트 시간|
+|result.content	|categoryId	|Int	|O	|Submission category ID|
+|             	|serviceId	|String	|O	|Service ID|
+|	              |parent	|Int	|X	|Upper submission category ID（Fixed value:0）|
+|	              |name	|String	|O	|Submission category name|
+|	              |level	|Int	|X	|Depth（Fixed value:1）|
+|	              |path	|String	|X	|Depth path（Fixed value:"\\\\"）|
+|	              |orderNo	|Int	|X	|Submission category order（Default value:0）|
+|	              |createdDt	|Long	|X	|Submission category created time|
+|	              |updatedDt	|Long	|X	|Submission category updated time|
 
 #### Response Body
 ```
@@ -61,33 +62,33 @@
 }
 ```
 
-### 접수유형 상세
-#### 인터페이스 설명
+### Submission Category Detail
+#### Interface Description
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/ticket/category/{categoryid}.json			
-- URL (개발):	https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/ticket/category/{categoryid}.json			
+- URL (Dev):	https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/ticket/category/{categoryid}.json			
 
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|Interface name | Protocol | Call direction | Encoding | Result format | Interface description | Access restricted|
 |------------|-------|--------|-----|--------|--------------|------------|
-|접수유형 상세  |HTTPS  |GET    |UTF-8|JSON    |접수유형 아이디를 통해 접수유형 조회|공통 인증   |
+|Submission category detail  |HTTPS  |GET    |UTF-8|JSON    |Query submission category by category ID|Common authentication   |
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### Request Parameters
+|Name |Variable |Data type |Required | Description|
 |-----|-----|----------|-----|----|
-|서비스 ID	|serviceId	|String	|O	|서비스 ID，URL PATH 내에 설정한 {serviceId}|
-|접수유형 ID	|categoryid	|Int	|O	|접수유형 ID，URL PATH 내에 설정한 {categoryid}|
+|Service ID	|serviceId	|String	|O	|Service ID，{serviceId} which is set in URL path|
+|Submission Category ID	|categoryid	|Int	|O	|Submission category ID，{categoryid} which is set in URL path|
 
-#### 결과 데이터
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### Result Data
+|Name |Variable |Data type |Required | Description|
 |-----|-----|----------|-----|----|
-|result.content	|categoryId	|Int	|O	|접수유형 ID|
-|	              |serviceId	|String	|O	|서비스 ID|
-|	              |parent	|Int	|X	|상위 접수유형 ID（고정 값:0）|
-|	              |name	|String	|O	|접수유형 명|
-|           	  |level	|Int	|X	|뎁스（고정 값:1）|
-|	              |path	|String	|X	|뎁스 경로（고정 값:"\\"）|
-|	              |orderNo	|Int	|X	|접수유형 노출 순서（기본 값:0）|
-|	              |createdDt	|Long	|X	|접수유형 생성시간|
-|	              |updatedDt	|Long	|X	|접수유형 업데이트 시간|
+|result.content	|categoryId	|Int	|O	|Submission category ID|
+|             	|serviceId	|String	|O	|Service ID|
+|	              |parent	|Int	|X	|Upper submission category ID（Fixed value:0）|
+|	              |name	|String	|O	|Submission category name|
+|	              |level	|Int	|X	|Depth（Fixed value:1）|
+|	              |path	|String	|X	|Depth path（Fixed value:"\\\\"）|
+|	              |orderNo	|Int	|X	|Submission category order（Default value:0）|
+|	              |createdDt	|Long	|X	|Submission category created time|
+|	              |updatedDt	|Long	|X	|Submission category updated time|
 
 #### Response Body
 ```
@@ -114,23 +115,23 @@
 
 ```
 
-### 접수유형 수정
-#### 인터페이스 설명
+### Edit Submission Category
+#### Interface Description
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/ticket/category/{categoryid}.json
-- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/ticket/category/{categoryid}.json
+- URL (Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/ticket/category/{categoryid}.json
 
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|Interface name | Protocol | Call direction | Encoding | Result format | Interface description | Access restricted|
 |------------|-------|--------|-----|--------|--------------|------------|
-|접수유형 수정  |HTTPS  |PUT    |UTF-8|JSON    |접수유형 아이디를 통해 접수유형 수정|공통 인증   |
+|Edit submission category  |HTTPS  |PUT    |UTF-8|JSON    |Edit submission category through category ID|Common authentication   |
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### Request Parameters
+|Name |Variable |Data type |Required | Description|
 |-----|-----|----------|-----|----|
-|서비스 ID	|serviceId	|String	|O	|서비스 ID，URL PATH 내에 설정한 {serviceId}|
-|접수유형 ID	|categoryid	|Int	|O	|접수유형 ID，URL PATH 내에 설정한 {categoryid}|
-|접수유형 정보	|request body	|String	|O	|접수유형 정보（JSON）|
-|	             |name	|String	|O	|접수유형 명（유일한 값:예; 길이:min = 0, max = 50; 형식:^(\_\|-\|[^\\pP])+$|
-|              |orderNo	|Int	|X	|접수유형 노출 순서（기본 값:0）|
+|Service ID	|serviceId	|String	|O	|Service ID，{serviceId} which is set in URL path|
+|Submission Category ID	|categoryid	|Int	|O	|Submission category ID，{categoryid} which is set in URL path|
+|Submission Category Information	|request body	|String	|O	|Submission category information（JSON）|
+|	             |name	|String	|O	|Category name（Unique value:yes; Length:min = 0, max = 50; Format:^(\_\|-\|[^\\pP])+$|
+|              |orderNo	|Int	|X	|Category order（Default value:0）|
 
 #### Request Body
 ```
@@ -140,13 +141,13 @@
 }
 ```
 
-#### 결과 데이터
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### Result Data
+|Name |Variable |Data type |Required | Description|
 |-----|-----|----------|-----|----|
-|result.content	|categoryId	|Int	|O	|접수유형 ID|
-|	              |serviceId	|String	|O	|서비스 ID|
-|	              |name	|String	|O	|접수유형 명|
-|	              |orderNo	|Int	|X	|접수유형 노출 순서（기본 값:0）|
+|result.content	|categoryId	|Int	|O	|Category ID|
+|	              |serviceId	|String	|O	|Service ID|
+|	              |name	|String	|O	|Category name|
+|	              |orderNo	|Int	|X	|Category order（Default value:0）|
 
 #### Response Body
 ```
@@ -167,25 +168,25 @@
 }
 ```
 
-### 접수유형 삭제
-#### 인터페이스 설명
+### Delete Submission Category
+#### Interface Description
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/ticket/category/{categoryid}.json
-- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/ticket/category/{categoryid}.json
+- URL (Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/ticket/category/{categoryid}.json
 
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|Interface name | Protocol | Call direction | Encoding | Result format | Interface description | Access restricted|
 |------------|-------|--------|-----|--------|--------------|------------|
-|접수유형 삭제  |HTTPS  |DELETE    |UTF-8|JSON    |접수유형 아이디를 통해 접수유형 삭제|공통 인증   |
+|Delete submission category  |HTTPS  |DELETE    |UTF-8|JSON    |Delete submission category by category ID|Common authentication   |
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### Request Parameters
+|Name |Variable |Data type |Required | Description|
 |-----|-----|----------|-----|----|
-|서비스 ID	|serviceId	|String	|O	|서비스 ID，URL PATH 내에 설정한 {serviceId}|
-|접수유형 ID	|categoryid	|Int	|O	|접수유형 ID，URL PATH 내에 설정한 {categoryid}|
+|Service ID	|serviceId	|String	|O	|Service ID，{serviceId} which is set in URL path|
+|Submission Category ID	|categoryid	|Int	|O	|Submission category ID，{categoryid} which is set in URL path|
 
-#### 결과 데이터
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### Result Data
+|Name |Variable |Data type |Required | Description|
 |-----|-----|----------|-----|----|
-|result|		|	|X	|null:삭제 성공|
+|result|		|	|X	|null:Delete success|
 
 #### Response Body
 ```
@@ -199,34 +200,34 @@
 }
 ```
 
-### 접수유형 목록
-#### 인터페이스 설명
+### Submission category list
+#### Interface Description
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/ticket/category/list.json			
-- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/ticket/category/list.json			
+- URL (Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/ticket/category/list.json			
 
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|Interface name | Protocol | Call direction | Encoding | Result format | Interface description | Access restricted|
 |------------|-------|--------|-----|--------|--------------|------------|
-|접수유형 목록 |HTTPS  |GET    |UTF-8|JSON    |서비스 내 접수유형 목록 조회|공통 인증   |
+|Submission category list |HTTPS  |GET    |UTF-8|JSON    |Query submission category list in service|Common authentication   |
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### Request Parameters
+|Name |Variable |Data type |Required | Description|
 |-----|-----|----------|-----|----|
-|서비스 ID	|serviceId	|String	|O	|서비스 ID，URL PATH 내에 설정한 {serviceId}|
+|Service ID	|serviceId	|String	|O	|Service ID，{serviceId} which is set in URL path|
 
-#### 결과 데이터
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### Result Data
+|Name |Variable |Data type |Required | Description|
 |-----|-----|----------|-----|----|
-|result.contents	|categoryId	|Int	|O	|접수유형 ID|
-|                 |serviceId	|String	|O	|서비스 ID|
-|	                |parent	|Int	|X	|상위 접수유형 ID（고정 값:0）|
-|	                |name	|String	|O	|접수유형 명|
-|	                |level	|Int	|X	|뎁스（고정 값:1）|
-|	                |path	|String	|X	|뎁스 경로（고정 값:"\\"）|
-|	                |orderNo	|Int	|X	|접수유형 노출 순서（기본 값:0）|
-|	                |createdDt	|Long	|X	|접수유형 생성시간|
-|	                |updatedDt	|Long	|X	|접수유형 업데이트 시간|
+|result.contents	|categoryId	|Int	|O	|Submission category ID|
+|             	|serviceId	|String	|O	|Service ID|
+|	              |parent	|Int	|X	|Upper submission category ID（Fixed value:0）|
+|	              |name	|String	|O	|Submission category name|
+|	              |level	|Int	|X	|Depth（Fixed value:1）|
+|	              |path	|String	|X	|Depth path（Fixed value:"\\\\"）|
+|	              |orderNo	|Int	|X	|Submission category order（Default value:0）|
+|	              |createdDt	|Long	|X	|Submission category created time|
+|	              |updatedDt	|Long	|X	|Submission category updated time|
 
-- 리스트 순서는 order by orderNo, name asc
+- The order of list is order by orderNo, name asc
 
 #### Response Body
 ```

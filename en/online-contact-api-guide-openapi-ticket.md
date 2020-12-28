@@ -1,27 +1,28 @@
-## Contact Center > Online Contact > API 가이드 > 티켓 관리
-### 티켓 생성
-#### 인터페이스 설명
+## Contact Center > Online Contact > API Guide for Developers > Ticket Management
+
+### Create Ticket
+#### Interface Description
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/ticket/add.json			
-- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/ticket/add.json			
+- URL (Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/ticket/add.json			
 
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|Interface name | Protocol | Call direction | Encoding | Result format | Interface description | Access restricted|
 |------------|-------|--------|-----|--------|--------------|------------|
-|티켓 생성  |HTTPS  |POST    |UTF-8|JSON    |신규 티켓 생성|공통 인증   |
+|Create ticket  |HTTPS  |POST    |UTF-8|JSON    |Create new ticket|Common authentication  |
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### Request Parameters
+|Name |Variable |Data type |Required | Description|
 |-----|-----|----------|-----|----|
-|서비스 ID	|serviceId	     |String	|O	|서비스 ID，URL PATH 내에 설정한 {serviceId}|
-|티켓 정보 |request body	|String	|O	|티켓 정보（JSON)|
-|    	     |categoryId	|Int	|X	|접수유형 ID，없을 경우 지정하지 않아도 됨|
-|   	     |subject	    |String	|O	|티켓 제목（max=255）|
-|          |content	        |String	|O	|티켓 내용|
-| 	       |endUser.usercode	|String	|O	|유저 코드（유일한 값）|
-|	         |endUser.email	    |String	|X	|유저 이메일（티켓 처리 시 해당 이메일로 답변이 발송 됨. 없을 경우 메일이 발송되지 않음)|
-|	         |endUser.username	|String	|X	|유저 명|
-|          |endUser.phone	    |String	|X	|유저 전화번호|
-|	         |addition	        |String	|X	|기본 필드 외에 추가 된 필드 정보|
-|	         |attachments[].attachmentId	|String	|X	|첨부파일 ID
+|Service ID	|serviceId	|String	|O	|Service ID，{serviceId} which is set in URL path|
+|Ticket Information |request body	|String	|O	|Ticket information（JSON)|
+|    	     |categoryId	|Int	|X	|Category ID，If none, no need to specify|
+|   	     |subject	    |String	|O	|Ticket title（max=255）|
+|          |content	        |String	|O	|Ticket contents|
+| 	       |endUser.usercode	|String	|O	|User code（Unique value）|
+|	         |endUser.email	    |String	|X	|User email（When ticket is processed, answer mail would be sent to the email. If none, mail would not be sent.)|
+|	         |endUser.username	|String	|X	|User name|
+|          |endUser.phone	    |String	|X	|User phone number|
+|	         |addition	        |String	|X	|Information about fields added in addition to default fields|
+|	         |attachments[].attachmentId	|String	|X	|Attachment ID|
 
 #### Request Body
 ```
@@ -47,25 +48,25 @@
 }
 ```
 
-#### 결과 데이터
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### Result Data
+|Name |Variable |Data type |Required | Description|
 |-----|----|-----------|-----|----|
-|result.content	|ticketId	    |String	|O	|티켓 ID|
-|	              |serviceId	|String	|O	|서비스 ID|
-|	              |subject	    |String	|O	|티켓 제목|
-|	              |categoryId	|Int	|X	|접수유형 ID|
-|               |categoryName	|String	|X	|접수유형 명|
-|	              |status	    |String	|O	|티켓 상태（open:신규 티켓; closed:처리 완료）|
-|	              |endUser.usercode	|String	|O	|유저 코드（유일한 값）|
-|	              |endUser.email	|String	|X	|유저 이메일（티켓 처리 시 해당 이메일로 답변이 발송 됨. 없을 경우 메일이 발송되지 않음)|
-|	              |endUser.username	|String	|X	|유저 명|
-|	              |endUser.phone	|String	|X	|유저 전화번호|
-| 	            |content	|String	|O	|티켓 문의 내용|
-|	              |createdDt	|Long	|O	|티켓 생성시간|
-|	              |updatedDt	|Long	|O	|티켓 업데이트 시간|
-|               |contents	|String	|X	|티켓 처리 정보|
-|	              |attachments[].attachmentId	|String	|X	|첨부파일 ID|
-|	              |addition	|String	|X	|기본 필드 외에 추가 된 필드 정보|
+|result.content	|ticketId	    |String	|O	|Ticket ID|
+|	              |serviceId	|String	|O	|Service ID|
+|	              |subject	    |String	|O	|Ticket title|
+|	              |categoryId	|Int	|X	|Submission category ID|
+|               |categoryName	|String	|X	|Submission category name|
+|	              |status	    |String	|O	|Ticket status（open:new ticket; closed:processed）|
+|	              |endUser.usercode	|String	|O	|User code（Unique value）|
+|	              |endUser.email	|String	|X	|User email（When ticket is processed, answer mail would be sent to the email. If none, mail would not be sent.)|
+|	              |endUser.username	|String	|X	|User name|
+|	              |endUser.phone	|String	|X	|User phone number|
+| 	            |content	|String	|O	|Ticket inquiry contents|
+|	              |createdDt	|Long	|O	|Ticket created time|
+|	              |updatedDt	|Long	|O	|Ticket updated time|
+|               |contents	|String	|X	|Ticket processing information|
+|	              |attachments[].attachmentId	|String	|X	|Attachment ID|
+|	              |addition	|String	|X	|Information about fields added in addition to default fields|
 
 #### Response Body
 ```
@@ -117,43 +118,43 @@
 }
 ```
 
-### 티켓 처리
-#### 인터페이스 설명
+### Process Ticket
+#### Interface Description
 - URL:	https://{domain}.oc.toast.com/{serviceId}/openapi/v1/ticket/solve.json			
-- URL (개발):	https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/ticket/solve.json			
+- URL (Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/ticket/solve.json			
 
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|Interface name | Protocol | Call direction | Encoding | Result format | Interface description | Access restricted|
 |------------|-------|--------|-----|--------|--------------|------------|
-|티켓 처리  |HTTPS  |POST    |UTF-8|JSON    |티켓 아이디를 통해 티켓 처리|공통 인증   |
+|Process ticket  |HTTPS  |POST    |UTF-8|JSON    |Process ticket by ticket ID|Common authentication  |
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### Request Parameters
+|Name |Variable |Data type |Required | Description|
 |-----|-----|-----------|-----|---|
-|서비스 ID	|serviceId	|String	|O	|서비스 ID，URL PATH 내에 설정한 {serviceId}|
-|티켓 ID	|id	|String	|O	|티켓 ID|
-|첨부파일	|attachments	|String	|X	|첨부파일 ID（형식（파일 ID는 ,로 분리）：파일ID1,파일ID2,…,파일IDn）|
+|Service ID	|serviceId	|String	|O	|Service ID，{serviceId} which is set in URL path|
+|Ticket ID	|id	|String	|O	|Ticket ID|
+|Attachment	|attachments	|String	|X	|Attachment ID（Format（File ID seperated by comma）：FileID1, FileID2, …, FileIDn）|
 
-#### 결과 데이터
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### Result Data
+|Name |Variable |Data type |Required | Description|
 |-----|----|-----------|-----|----|
-|result.content	|id	|String	|O	|티켓 ID|
-|	              |serviceId	|String	|O	|서비스 ID|
-|	              |subject	|String	|O	|티켓 제목|
-|	              |categoryId	|Int	|X	|접수유형 ID|
-|	              |categoryName	|String	|X	|접수유형 명|
-|	              |status	|String	|O	|티켓 상태（open:신규티켓; closed:처리완료）|
-|	              |endUser.usercode	|String	|O	|유저 코드（유일한 값）|
-|	              |endUser.email	|String	|X	|유저 이메일（티켓 처리 시 해당 이메일로 답변이 발송 됨. 없을 경우 메일이 발송되지 않음)|
-|	              |endUser.username	|String	|X	|유저 명|
-|	              |endUser.phone	|String	|X	|유저 전화번호|
-|	              |content	|String	|O	|티켓 문의 내용|
-|               |createdDt	|Long	|O	|티켓 생성시간|
-|	              |updatedDt	|Long	|O	|티켓 업데이트 시간|
-|	              |contents.content	|String	|X	|티켓 처리 내용|
-|	              |contents.createdDt	|Long	|X	|티켓 처리 시간|
-|	              |contents.attachments	|String	|X	|티켓 처리 첨부파일 ID|
-|	              |attachments[].attachmentId	|String	|X	|첨부파일 ID|
-|               |addition	|String	|X	|기본 필드 외에 추가 된 필드 정보|
+|result.content	|id	|String	|O	|Ticket ID|
+|	              |serviceId	|String	|O	|Service ID|
+|	              |subject	|String	|O	|Ticket title|
+|	              |categoryId	|Int	|X	|Submission category ID|
+|	              |categoryName	|String	|X	|Submission category name|
+|	              |status	|String	|O	|Ticket status（open:new ticket; closed:processed）|
+|	              |endUser.usercode	|String	|O	|User code（unique value）|
+|	              |endUser.email	|String	|X	|User email（When ticket is processed, answer mail would be sent to the email. If none, mail would not be sent.)|
+|	              |endUser.username	|String	|X	|User name|
+|	              |endUser.phone	|String	|X	|User phone number|
+|	              |content	|String	|O	|Ticket inquiry contents|
+|               |createdDt	|Long	|O	|Ticket created time|
+|	              |updatedDt	|Long	|O	|Ticket updated time|
+|	              |contents.content	|String	|X	|Ticket processing contents|
+|	              |contents.createdDt	|Long	|X	|Processed time|
+|	              |contents.attachments	|String	|X	|Ticket processing attachment ID|
+|	              |attachments[].attachmentId	|String	|X	|Attachment ID|
+|               |addition	|String	|X	|Information about fields added in addition to default fields|
 
 #### Request Body
 - 형식: application/json;charset=UTF-8
@@ -195,52 +196,52 @@
 }
 ```
 
-### 티켓 상세
-#### 인터페이스 설명
+### Ticket Detail
+#### Interface Description
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/ticket/{id}.json			
-- URL (개발):	https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/ticket/{id}.json			
+- URL (Dev):	https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/ticket/{id}.json			
 
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|Interface name | Protocol | Call direction | Encoding | Result format | Interface description | Access restricted|
 |------------|-------|--------|-----|--------|--------------|------------|
-|티켓 상세  |HTTPS  |GET    |UTF-8|JSON    |티켓 아이디를 통해 티켓 조회|공통 인증   |
+|Ticket detail |HTTPS  |GET    |UTF-8|JSON    |Query ticket through ticket ID|Common authentication  |
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### Request Parameters
+|Name |Variable |Data type |Required | Description|
 |-----|-----|-----------|-----|---|
-|서비스 ID	|serviceId	|String	|O	|서비스 ID，URL PATH 내에 설정한 {serviceId}|
-|티켓 ID	|id	|String	|O	|티켓 ID，URL PATH 내에 설정한 {id}|
+|Service ID	|serviceId	|String	|O	|Service ID，{serviceId} which is set in URL path|
+|Ticket ID	|id	|String	|O	|Ticket ID，{id} which is set in URL path|
 
-#### 결과 데이터
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### Result Data
+|Name |Variable |Data type |Required | Description|
 |-----|-----|-----------|-----|---|
-|result.content	|ticketId	|String	|O	|티켓 ID|
-|	            |serviceId	|String	|O	|서비스 ID|
-|	            |subject	|String	|O	|티켓 제목|
-|	            |categoryId	|Int	|X	|접수유형 ID|
-|	            |categoryName	|String	|X	|접수유형 명|
-|	            |status	        |String	|O	|티켓 상태（open:신규티켓; closed:처리완료）|
-|	            |endUser.usercode	|String	|O	|유저 코드（유일한 값）|
-|	            |endUser.email	    |String	|X	|유저 이메일（티켓 처리 시 해당 이메일로 답변이 발송 됨. 없을 경우 메일이 발송되지 않음)|
-|	            |endUser.username	|String	|X	|유저 명|
-|	            |endUser.phone	    |String	|X	|유저 전화번호|
-|	            |content	        |String	|O	|티켓 문의 내용|
-|	            |createdDt	        |Long	|O	|티켓 생성시간|
-|	            |updatedDt	        |Long	|O	|티켓 업데이트 시간|
-|	            |contents.content	|String	|X	|티켓 처리내용|
-|	            |contents.createdDt	|Long	|X	|티켓 처리시간|
-|	            |contents.attachments.attachmentId	|String	|X	|티켓 처리 첨부파일 ID|
-|	            |contents.attachments.fileName	|String	|X	|티켓 처리 첨부파일 명|
-|	            |contents.attachments.contentType	|String	|X	|티켓 처리 첨부파일 유형|
-|	            |contents.attachments.disposition	|String	|X	|티켓 처리 첨부파일 처리방식（attachment:첨부파일）|
-|	            |contents.attachments.size	|Long	|X	|티켓 처리 첨부파일 크기|
-|	            |contents.attachments.createdDt	|Long	|X	|티켓 처리 첨부파일 업로드 시간|
-|	            |attachments.attachmentId	|String	|X	|티켓 문의 첨부파일 ID|
-|	            |attachments.fileName	|String	|X	|티켓 문의 첨부파일 명|
-|	            |attachments.contentType	|String	|X	|티켓 문의 첨부파일 유형|
-|	            |attachments.disposition	|String	|X	|티켓 문의 첨부파일 처리방식（attachment:첨부파일）|
-|	            |attachments.size	|Long	|X	|티켓 문의 첨부파일 크기|
-|	            |attachments.createdDt	|Long	|X	|티켓 문의 첨부파일 업로드 시간|
-|	            |addition	|String	|X	|기본 필드 외에 추가 된 필드 정보|
+|result.content	|ticketId	|String	|O	|Ticket ID|
+|	            |serviceId	|String	|O	|Service ID|
+|	            |subject	|String	|O	|Ticket title|
+|	            |categoryId	|Int	|X	|Submission category ID|
+|	            |categoryName	|String	|X	|Submission category name|
+|	            |status	        |String	|O	|Ticket status（open:new ticket; closed:processed）|
+|	            |endUser.usercode	|String	|O	|User code（unique value)|
+|	            |endUser.email	    |String	|X	|User email（When ticket is processed, answer mail would be sent to the email. If none, mail would not be sent.)|
+|	            |endUser.username	|String	|X	|User name|
+|	            |endUser.phone	    |String	|X	|User phone number|
+|	            |content	        |String	|O	|Ticket query contents|
+|	            |createdDt	        |Long	|O	|Ticket created time|
+|	            |updatedDt	        |Long	|O	|Ticket updated time|
+|	            |contents.content	|String	|X	|Ticket processing contents|
+|	            |contents.createdDt	|Long	|X	|Ticket processed time|
+|	            |contents.attachments.attachmentId	|String	|X	|Ticket processing attachment ID|
+|	            |contents.attachments.fileName	|String	|X	|Ticket processing attachment name|
+|	            |contents.attachments.contentType	|String	|X	|Ticket processing attachment type|
+|	            |contents.attachments.disposition	|String	|X	|Ticket processing attachment process method（attachment:attached file）|
+|	            |contents.attachments.size	|Long	|X	|Ticket processing attachment size|
+|	            |contents.attachments.createdDt	|Long	|X	|Ticket processing attachment uploaded time|
+|	            |attachments.attachmentId	|String	|X	|Ticket inquiry attachment ID|
+|	            |attachments.fileName	|String	|X	|Ticket inquiry attachment name|
+|	            |attachments.contentType	|String	|X	|Ticket inquiry attachment type|
+|	            |attachments.disposition	|String	|X	|Ticket inquiry attachment process method（attachment:attached file）|
+|	            |attachments.size	|Long	|X	|Ticket inquiry attachment size|
+|	            |attachments.createdDt	|Long	|X	|Ticket inquiry attachment attached time|
+|	            |addition	|String	|X	|Information about fields added in addition to default fields|
 
 #### Response Body
 ```
@@ -315,48 +316,48 @@
 }
 ```
 
-### 티켓 목록
-#### 인터페이스 설명
+### Ticket List
+#### Interface Description
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/ticket/list.json						
-- URL (개발):	https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/ticket/list.json				
+- URL (Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/ticket/list.json				
 
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|Interface name | Protocol | Call direction | Encoding | Result format | Interface description | Access restricted|
 |------------|-------|--------|-----|--------|--------------|------------|
-|티켓 목록  |HTTPS  |GET    |UTF-8|JSON    |검색 조건을 통해 조건에 맞는 티켓 목록 조회|공통 인증   |
+|Ticket list  |HTTPS  |GET    |UTF-8|JSON    |View list of tickets which meet search condition|Common authentication   |
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### Request Parameters
+|Name |Variable |Data type |Required | Description|
 |-----|-----|-----------|-----|---|
-|서비스 ID	|serviceId	|String	|O	|서비스 ID，URL PATH 내에 설정한 {serviceId}|
-|시작시간	|startDt	|String	|X	|검색 범위 시작시간(티켓 생성시간)(형식:yyyyMMddHHmmss）|
-|종료시간	|endDt	|String	|X	|검색 범위 종료시간(티켓 생성시간)(형식:yyyyMMddHHmmss）|
-|티켓 ID	|ticketId	|String	|X	|티켓 ID|
-|제목	|subject	|String	|X	|제목|
-|티켓 상태	|status	|String	|X	|티켓 상태（open:신규티켓; closed:처리완료）|
-|접수유형	|categoryId	|Int	|X	|접수유형 ID（ID가 여러개 일 경우 , 로 분리）|
-|유저 코드	|usercode	|String	|X	|유저 코드（유일한 값）|
-|유저 명	|username	|String	|X	|유저 명|
-|유저 이메일	|email	  |String	|X	|유저 이메일|
-|정렬 순서	|sort	   |String	|X	|정렬 순서(기본값:updatedDt:desc; 형식 변수:정렬（오름차순:asc, 내림차순:desc))|
-|페이지	|page	    |Int	|X	|기본 값:1|
-|1페이지 노출 건수	|pageSize	|Int	|X	|기본 값:10;max=200|
+|Service ID	|serviceId	|String	|O	|Service ID，{serviceId} which is set in URL path|
+|Start Time	|startDt	|String	|X	|Search scope start time(Ticket created time)(Format:yyyyMMddHHmmss）|
+|Finish Time	|endDt	|String	|X	|Search scope finish time(Ticket created time)(Format:yyyyMMddHHmmss）|
+|Ticket ID	|ticketId	|String	|X	|Ticket ID|
+|Title	|subject	|String	|X	|Title|
+|Ticket Status	|status	|String	|X	|Ticket status（open:New ticket; closed:Processed）|
+|Submission Type	|categoryId	|Int	|X	|Submission type ID（If ID is multiple, separate by comma）|
+|User Code	|usercode	|String	|X	|User code（Unique value）|
+|User Name	|username	|String	|X	|User name|
+|User Email	|email	  |String	|X	|User email|
+|Sort Order	|sort	   |String	|X	|Sort order(Default:updatedDt:desc; Format variable:Sort（ascending order:asc, descending order:desc))|
+|Page	|page	    |Int	|X	|Default value:1|
+|Exposure by Page|pageSize	|Int	|X	|Default value:10; max=200|
 
-#### 결과 데이터
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### Result Data
+|Name |Variable |Data type |Required | Description|
 |-----|-----|-----------|-----|---|
-|result.contents	|ticketId	|String	|O	|티켓 ID|
-|	                |serviceId	|String	|O	|서비스 ID|
-|	                |subject	|String	|O	|티켓 제목|
-|	                |categoryId	|Int	|X	|접수유형 ID|
-|	                |categoryName	|String	|X	|접수유형 명|
-|	                |status	|String	|O	|티켓 상태（open:신규티켓; closed:처리완료）|
-|	                |createdDt	|Long	|O	|티켓 생성시간|
-|	                |updatedDt	|Long	|O	|티켓 업데이트 시간|
-|	                |addition	|String	|X	|기본 필드 외에 추가 된 필드 정보|
-|result.total	|total	        |Long	|O	|총 건수|
-|result.pages	|pages	        |Int	|O	|총 페이지수|
-|result.pageNum	|pageNum	    |Int	|O	|현재 페이지|
-|result.pageSize	|pageSize	|Int	|O	|1페이지 노출 건수|
+|result.contents	|ticketId	|String	|O	|Ticket ID|
+|	                |serviceId	|String	|O	|Service ID|
+|	                |subject	|String	|O	|Ticket title|
+|	                |categoryId	|Int	|X	|Submission category ID|
+|	                |categoryName	|String	|X	|Submission category name|
+|	                |status	|String	|O	|Ticket status（open:New ticket; closed:Processed）|
+|	                |createdDt	|Long	|O	|Ticket created time|
+|	                |updatedDt	|Long	|O	|Ticket updated time|
+|	                |addition	|String	|X	|Information about fields added in addition to default fields|
+|result.total	|total	        |Long	|O	|Total items|
+|result.pages	|pages	        |Int	|O	|Total pages|
+|result.pageNum	|pageNum	    |Int	|O	|Current page|
+|result.pageSize	|pageSize	|Int	|O	|Exposure by page|
 
 #### Response Body
 ```
@@ -443,46 +444,47 @@
 }
 ```
 
-### 유저 티켓 목록
-#### 인터페이스 설명
+### User Ticket List
+#### Interface Description
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/ticket/{usercode}/list.json							
-- URL (개발):	https://{domain}.alpha-oc.toast.co/{serviceId}/openapi/v1/ticket/{usercode}/list.json						
+- URL (Dev): https://{domain}.alpha-oc.toast.co/{serviceId}/openapi/v1/ticket/{usercode}/list.json	
 
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|Interface name | Protocol | Call direction | Encoding | Result format | Interface description | Access restricted|
 |------------|-------|--------|-----|--------|--------------|------------|
-|유저 티켓 목록 |HTTPS  |GET    |UTF-8|JSON    |검색 조건을 통해 조건에 맞는 사용자의 티켓 목록 조회|공통 인증   |
+|User ticket list |HTTPS  |GET    |UTF-8|JSON    |View user ticket list which meet search condition|Common authentication   |
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### Request Parameters
+|Name |Variable |Data type |Required | Description|
 |-----|-----|-----------|-----|---|
-|서비스 ID	|serviceId	 |String	|O	|서비스 ID，URL PATH 내에 설정한 {serviceId}|
-|유저 코드	|usercode	|String	|O	|유저 코드(유일한 값)，URL PATH 내에 설정한{usercode}|
-|시작시간	|startDt	|String	|X	|검색 범위 시작시간(티켓 생성시간)(형식:yyyyMMddHHmmss）|
-|종료시간	|endDt	    |String	|X	|검색 범위 종료시간(티켓 생성시간)(형식:yyyyMMddHHmmss）|
-|티켓 ID	|ticketId	  |String	|X	|티켓 ID|
-|제목	|subject	      |String	|X	|제목|
-|티켓 상태	|status	    |String	|X	|티켓 상태（open:신규티켓; closed:처리완료）|
-|접수유형	|categoryId	|Int	|X	|접수유형 ID（ID가 여러개 일 경우 , 로 분리）|
-|정렬방식	|sort	    |String	|X	|정렬 순서(기본값:updatedDt:desc; 형식 변수:정렬（오름차순:asc, 내림차순:desc))|
-|페이지	|page	     |Int	|X	|기본 값:1|
-|1페이지 노출 건수	|pageSize	|Int	|X	|기본 값:10;max=200|
+|Service ID	|serviceId	|String	|O	|Service ID，{serviceId} which is set in URL path|
+|User Code	|usercode	|String	|O	|User code(Unique value)，{usercode} set in URL path|
+|Start Time	|startDt	|String	|X	|Search scope start time(Ticket created time)(Format:yyyyMMddHHmmss）|
+|Finish Time	|endDt	|String	|X	|Search scope finish time(Ticket created time)(Format:yyyyMMddHHmmss）|
+|Ticket ID	|ticketId	|String	|X	|Ticket ID|
+|Title	|subject	|String	|X	|Title|
+|Ticket Status	|status	|String	|X	|Ticket status（open:New ticket; closed:Processed）|
+|Submission Type	|categoryId	|Int	|X	|Submission type ID（If ID is multiple, separate by comma）|
+|Sort Order	|sort	   |String	|X	|Sort order(Default:updatedDt:desc; Format variable:Sort（ascending order:asc, descending order:desc))|
+|Page	|page	    |Int	|X	|Default value:1|
+|Exposure by Page|pageSize	|Int	|X	|Default value:10; max=200|
 
-#### 결과 데이터
-|명칭	|변수	|데이터 타입	|필수	|설명|
+
+#### Result Data
+|Name |Variable |Data type |Required | Description|
 |-----|-----|-----------|-----|---|
-|result.contents	|ticketId	|String	|O	|티켓 ID|
-|	                |serviceId	|String	|O	|서비스 ID|
-|	                |subject	|String	|O	|티켓 제목|
-|	                |categoryId	|Int	|X	|접수유형 ID|
-|	                |categoryName	|String	|X	|접수유형 명|
-|	                |status	|String	|O	|티켓 상태（open:신규티켓; closed:처리완료）|
-|                   |createdDt	|Long	|O	|티켓 생성시간|
-|	                |updatedDt	|Long	|O	|티켓 업데이트 시간|
-|	                |addition	|String	|X	|기본 필드 외에 추가 된 필드 정보|
-|result.total	    |total	|Long	|O	|총 건수|
-|result.pages	    |pages	|Int	|O	|총 페이지수|
-|result.pageNum	    |pageNum	|Int	|O	|현재 페이지|
-|result.pageSize	|pageSize	|Int	|O	|1페이지 노출 건수|
+|result.contents	|ticketId	|String	|O	|Ticket ID|
+|	                |serviceId	|String	|O	|Service ID|
+|	                |subject	|String	|O	|Ticket title|
+|	                |categoryId	|Int	|X	|Submission category ID|
+|	                |categoryName	|String	|X	|Submission category name|
+|	                |status	|String	|O	|Ticket status（open:New ticket; closed:Processed）|
+|	                |createdDt	|Long	|O	|Ticket created time|
+|	                |updatedDt	|Long	|O	|Ticket updated time|
+|	                |addition	|String	|X	|Information about fields added in addition to default fields|
+|result.total	|total	        |Long	|O	|Total items|
+|result.pages	|pages	        |Int	|O	|Total pages|
+|result.pageNum	|pageNum	    |Int	|O	|Current page|
+|result.pageSize	|pageSize	|Int	|O	|Exposure by page|
 
 #### Response Body
 ```
@@ -569,30 +571,30 @@
 }
 ```
 
-### 티켓 첨부파일 첨부
-#### 인터페이스 설명
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/attachments/ticket/upload.json			 							
-- URL (개발):	https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/attachments/ticket/upload.json									
+### Attach File to Ticket
+#### Interface Description
+- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/attachments/ticket/upload.json			 		
+- URL (Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/attachments/ticket/upload.json	
 
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|Interface name | Protocol | Call direction | Encoding | Result format | Interface description | Access restricted|
 |------------|-------|--------|-----|--------|--------------|------------|
-|첨부파일 첨부  |HTTPS  |GET    |UTF-8|JSON    |검색 조건을 통해 조건에 맞는 티켓 리스트 노출|공통 인증   |
+|Attach file to ticket  |HTTPS  |GET    |UTF-8|JSON    |Upload file to server|Common authentication   |
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### Request Parameters
+|Name |Variable |Data type |Required | Description|
 |-----|-----|-----------|-----|---|
-|서비스 ID	|serviceId	|String	|O	|URL PATH 내에 설정한 {serviceId}|
-|첨부한 파일	|file	|File	|O	|첨부한 파일은 form 형태로 제출|
+|Service ID	|serviceId	|String	|O	|Service ID，{serviceId} which is set in URL path|
+|File	|file	|File	|O	|Submit file in form format|
 
-#### 결과 데이터
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### Result Data
+|Name |Variable |Data type |Required | Description|
 |-----|-----|-----------|-----|---|
-|result.content	|attachmentId	|String	|O	|첨부한 파일 ID|
-|	            |fileName	    |String	|O	|파일 명|
-|	            |contentType	|String	|O	|파일 유형|
-|	            |disposition	|String	|O	|파일 처리방식（attachment:첨부파일）|
-|	            |size	|Long	|O	|파일 크기|
-|               |createdDt	|Long	|O	|파일 첨부 시간|
+|result.content	|attachmentId	|String	|O	|Attachment ID|
+|	            |fileName	    |String	|O	|Attachment name|
+|	            |contentType	|String	|O	|Attachment type|
+|	            |disposition	|String	|O	|Attachment process method（attachment:Attachment）|
+|	            |size	|Long	|O	|File size|
+|               |createdDt	|Long	|O	|Attached time|
 
 #### Response Body
 ```
@@ -615,50 +617,50 @@
 }
 ```
 
-### 티켓 첨부파일 열기/다운로드
-#### 인터페이스 설명
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/attachments/ticket/{id}					 							
-- URL (개발):	https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/attachments/ticket/{id}												
+### Open/Download Ticket Attachment
+#### Interface Description
+- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/attachments/ticket/{id}			
+- URL (Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/attachments/ticket/{id}		
 
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|Interface name | Protocol | Call direction | Encoding | Result format | Interface description | Access restricted|
 |------------|-------|--------|-----|--------|--------------|------------|
-|첨부파일 열기/다운로드  |HTTPS  |GET    |UTF-8|JSON    |서버에 업로드된 파일 열기/다운로드|공통 인증   |
+|Open/Download Ticket Attachment  |HTTPS  |GET    |UTF-8|JSON    |Open/download file uploaded in server|Common authentication   |
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### Request Parameters
+|Name |Variable |Data type |Required | Description|
 |-----|-----|-----------|-----|---|
-|서비스 ID	|serviceId	|String	|O	|URL PATH 내에 설정한 {serviceId}|
-|첨부한 파일 ID	|id	|String	|O	|첨부한 파일 id| 
-|처리방식	|type	|String	|X	|기본 값은 브라우저로 열기（download:다운, open:브라우저로 열기）|
+|Service ID	|serviceId	|String	|O	|Service ID，{serviceId} which is set in URL path|
+|Attachment ID	|id	|String	|O	|Attachment id| 
+|Process Method	|type	|String	|X	|Default is open by browser（download:Download file, open:Open file by browser）|
 
-#### 결과 데이터
-- 없음
+#### Result Data
+- None
 
 #### Response Body
 - File
 
-### 티켓 첨부파일 삭제
-#### 인터페이스 설명
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/attachments/ticket/{id}.json						 							
-- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/attachments/ticket/{id}.json														
+### Delete Attached File from Ticket 
+#### Interface Description
+- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/attachments/ticket/{id}.json		
+- URL (Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/attachments/ticket/{id}.json
 
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|Interface name | Protocol | Call direction | Encoding | Result format | Interface description | Access restricted|
 |------------|-------|--------|-----|--------|--------------|------------|
-|첨부파일 삭제  |HTTPS  |DELETE    |UTF-8|JSON    |서버에 업로드된 파일 삭제|공통 인증   |
+|Delete Attached File from Ticket  |HTTPS  |DELETE    |UTF-8|JSON    |Delete file uploaded in server|Common authentication   |
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### Request Parameters
+|Name |Variable |Data type |Required | Description|
 |-----|-----|-----------|-----|---|
-|서비스 ID	|serviceId	|String	|O	|URL PATH 내에 설정한 {serviceId}|
-|첨부한 파일 ID	 |id	|String	|O	|첨부한 파일 id|
+|Service ID	|serviceId	|String	|O	|Service ID，{serviceId} which is set in URL path|
+|Attachment ID	|id	|String	|O	|Attachment id| 
 
-#### 결과 데이터
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### Result Data
+|Name |Variable |Data type |Required | Description|
 |-----|-----|-----------|-----|---|
-|result.content	|attachmentId	|String	|O	|첨부한 파일 id| 
-|	            |fileName	|String	|O	|파일 명|
-|	            |contentType	|String	|O	|파일 유형|
-|	            |size	|Long	|O	|파일 크기|
+|result.content	|attachmentId	|String	|O	|Attachement id| 
+|	            |fileName	|String	|O	|File name|
+|	            |contentType	|String	|O	|File type|
+|	            |size	|Long	|O	|File size|
 
 #### Response Body
 ```

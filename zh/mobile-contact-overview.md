@@ -1,14 +1,18 @@
 ## Contact Center > Mobile Contact > Overview
-Mobile Contact은 NHN 이 제공하는 고객센터 콜 상담 솔루션입니다. 
-Mobile / PC 어플리케이션으로 시간과 장소에 구애 받지 않고 고객 문의를 처리할 수 있습니다.
 
-## 서비스 특징
+The mobile/PC application of Mobile Contact provides anytime, anywhere access to customer phone calls. You can also freely create and delete consultation licenses if necessary. It is easy and convenient to set up and provide a service customer center at no initial cost.
 
-* 모바일/PC App만으로 콜센터 구성
-* 원하는 석수 만큼 자유롭게 구성
-* 초기 구축비용 및 운영 유지 비용 없음
-* 시간/공간 제약 없이 App 설치하면 어디서나 가능
-* Toast Cloud의 보안 및 안정성 보장
-* 유연한 확장 및 실시간 서비스 적용
+## Service Introduction
+![](http://static.toastoven.net/prod_contact_center/MC_overview_1_en.png)
+![](http://static.toastoven.net/prod_contact_center/MC_overview_2_en.png)
 
-![](http://static.toastoven.net/prod_contact_center/MobileContact_intro.png)
+## Key Features
+![](http://static.toastoven.net/prod_contact_center/MC_overview_3_en.png)
+![](http://static.toastoven.net/prod_contact_center/MC_overview_4_en.png)
+
+## Usage Cases
+![](http://static.toastoven.net/prod_contact_center/MC_overview_5_en.png)
+
+## Rate System
+![](http://static.toastoven.net/prod_contact_center/MC_overview_6_en.png)
+

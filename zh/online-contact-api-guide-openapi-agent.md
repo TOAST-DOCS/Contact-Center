@@ -1,30 +1,31 @@
-## Contact Center > Online Contact > API 가이드 > 상담원 관리
-### 상담원 목록 조회
-#### 인터페이스 설명
+## Contact Center > Online Contact > API Guide for Developers > Agent Management
+
+### View Agent List
+#### Interface Descripiton
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/users.json			
-- URL (개발):	https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/users.json			
+- URL (Dev):	https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/users.json			
 
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|
+|Interface name | Protocol | Call direction | Encoding | Result format | Interface description | 
 |------------|-------|--------|-----|--------|--------------|
-|상담원 목록 조회|HTTPS  |GET    |UTF-8|JSON    |상담원 목록 조회|
+|View agent list|HTTPS  |GET    |UTF-8|JSON    |View agent list|
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### Request Parameters
+|Name |Variable |Data type |Required | Description|
 |-----|-----|----------|-----|----|
-|서비스 ID	|serviceId	|String	|O	|URL PATH 내에  설정한 {serviceId}|
-|사용자 권한	|role	|String	|X	|ROLE_FRONT_ADMIN : 관리자, ROLE_FRONT_AGENT : 일반 상담원|
-|사용자 명	|name	|String	|X	|사용자 명칭|
-|페이지 수	|page	|Int	|X	|디폴트 값 = 1|
-|페이지 노출 건수	|pageSize	|Int	|X	|디폴트 값 = 10|
+|Service ID	|serviceId	|String	|O	|{serviceId} set in URL path|
+|User Authority	|role	|String	|X	|ROLE_FRONT_ADMIN : Administrator, ROLE_FRONT_AGENT : Agent|
+|User Name	|name	|String	|X	|User name|
+|Number of Pages	|page	|Int	|X	|Default = 1|
+|Items by Page	|pageSize	|Int	|X	|Default = 10|
 
-#### 결과 데이터
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### Result Data
+|Name |Variable |Data type |Required | Description|
 |-----|-----|-----------|----|----|
-|result.contents	|userId	|I	|O	|사용자 ID|
-|	                |usercode	|String	|O	|사용자 Code|
-|	                |uuid	|String	|O	|IAM |사용자 ID|
-|	                |username	|String	|O	|사용자 명|
-|	                |role	|String	|O	|사용자 권한. ROLE_FRONT_ADMIN : 관리자, ROLE_FRONT_AGENT : 일반 상담원|
+|result.contents	|userId	|I	|O	|User ID|
+|	                |usercode	|String	|O	|User Code|
+|	                |uuid	|String	|O	|IAM |User ID|
+|	                |username	|String	|O	|User name|
+|	                |role	|String	|O	|User authority. ROLE_FRONT_ADMIN : Administrator, ROLE_FRONT_AGENT : Agent|
 
 #### Response Body
 ```
@@ -38,8 +39,8 @@
     "contents": [
       {
         "userId": 10058,
-        "usercode": "honggildong",
-        "username": "홍길동",
+        "usercode": "example",
+        "username": "Example",
         "uuid": "ef1bd956-6c13-4391-8256-1eb0d840355a",
 
         "role": "ROLE_FRONT_ADMIN",
@@ -49,29 +50,29 @@
 }
 ```
 
-### 상담원 정보 취득
-#### 인터페이스 설명
+### Obtain Agent Information
+#### Interface Description
 - URL:	https://{domain}.oc.toast.com/{serviceId}/openapi/v1/users/{id}.json			
-- URL (개발):	https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/users/{id}.json			
+- URL (Dev):	https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/users/{id}.json			
 
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|
+|Interface name | Protocol | Call direction | Encoding | Result format | Interface description | 
 |------------|-------|--------|-----|--------|--------------|
-|상담원 상세 조회|HTTPS  |GET    |UTF-8|JSON    |상담원 ID를 통해 상담원 상세 정보 조회|
+|Detailed query of agents|HTTPS  |GET    |UTF-8|JSON    |Obtain detailed agent information through agent ID|
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### Request Parameters
+|Name |Variable |Data type |Required | Description|
 |-----|-----|----------|-----|----|
-|서비스 ID	|serviceId	|String	|O	|URL PATH 내에 설정한 {serviceId}|
-|사용자 ID	|id	        |Int	|O	|URL PATH 내에 설정한 {id}|
+|Service ID	|serviceId	|String	|O	|{serviceId} set in URL path|
+|User ID	|id	        |Int	|O	|{id} set in URL path|
 
-#### 결과 데이터
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### Result Data
+|Name |Variable |Data type |Required | Description|
 |-----|-----|----------|-----|----|
-|result.contents	|userId	|Int	|O	|사용자ID|
-|	                |usercode	|String	|O	|사용자 Code|
-|	                |uuid	|String	|O	|IAM 사용자 ID|
-|	                |username	|String	|O	|사용자 명|
-|	                |role	|String	|O	|사용자 권한. ROLE_FRONT_ADMIN : 관리자, ROLE_FRONT_AGENT : 일반 상담원|
+|result.contents	|userId	|Int	|O	|User ID|
+|	                |usercode	|String	|O	|User Code|
+|	                |uuid	|String	|O	|IAM user ID|
+|	                |username	|String	|O	|User name|
+|	                |role	|String	|O	|User authority. ROLE_FRONT_ADMIN : Administrator, ROLE_FRONT_AGENT : Agent|
 
 #### Response Body
 ```
@@ -84,8 +85,8 @@
   "result": {
     "content": {
         "userId": 10058,
-        "usercode": "honggildong",
-        "username": "홍길동",
+        "usercode": "example",
+        "username": "Example",
         ""uuid"": ""ef1bd956-6c13-4391-8256-1eb0d840355a"",
         "role": "ROLE_FRONT_ADMIN",
       }
@@ -94,30 +95,30 @@
 }
 ```
 
-### 상담원 추가
-#### 인터페이스 설명
+### Add Agent
+#### Interface Description
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/adduser.json				
-- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/adduser.json					
+- URL (Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/adduser.json					
 
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|
+|Interface name | Protocol | Call direction | Encoding | Result format | Interface description | 
 |------------|-------|--------|-----|--------|--------------|
-|상담원 추가|HTTPS  |POST    |UTF-8|JSON    |지정한 서비스에 상담원 추가 및 권한 부여|
+|Add agent|HTTPS  |POST    |UTF-8|JSON    |Add and give authority to agent in selected service|
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### Request Parameters
+|Name |Variable |Data type |Required | Description|
 |-----|-----|----------|-----|----|
-|서비스 ID	|serviceId	|String	|O	|URL PATH 내에 설정한 {serviceId}|
-|	         |id	       |String	|O	|IAM 사용자 UUID|
-|	         |role	     |String	|O	|사용자 권한. ROLE_FRONT_ADMIN : 관리자, ROLE_FRONT_AGENT：일반 상담원|
+|Service ID	|serviceId	|String	|O	|{serviceId} set in URL path|
+|	         |id	       |String	|O	|IAM user UUID|
+|	         |role	     |String	|O	|User authority. ROLE_FRONT_ADMIN : Administrator, ROLE_FRONT_AGENT：Agent|
 
-#### 결과 데이터
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### Result Data
+|Name |Variable |Data type |Required | Description|
 |-----|-----|-----------|------|---|
-|result.contents	|userId	|Int	|O	|사용자 ID|
-|	                |usercode	|String	|O	|사용자 Code|
-|	                |uuid	|String	|O	|IAM 사용자 ID|
-|	                |username	|String	|O	|사용자 명|
-|	                |role	|String |O	|사용자 권한. ROLE_FRONT_ADMIN : 관리자, ROLE_FRONT_AGENT：일반 상담원|
+|result.contents	|userId	|Int	|O	|User ID|
+|	                |usercode	|String	|O	|User Code|
+|	                |uuid	|String	|O	|IAM user ID|
+|	                |username	|String	|O	|User name|
+|	                |role	|String	|O	|User authority. ROLE_FRONT_ADMIN : Administrator, ROLE_FRONT_AGENT : Agent|
 
 #### Response Body
 ```
@@ -130,8 +131,8 @@
   "result": {
     "content": {
         "userId": 10058,
-        "usercode": "honggildong",
-        "username": "홍길동",
+        "usercode": "example",
+        "username": "Example",
         "uuid": "ef1bd956-6c13-4391-8256-1eb0d840355a",
         "role": "ROLE_FRONT_ADMIN",
     }
@@ -139,30 +140,30 @@
 }
 ```
 
-### 상담원 권한 변경
-#### 인터페이스 설명
+### Change Agent Authority
+#### Interface Description
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/users/{id}.json						
-- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/users/{id}.json			
+- URL (Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/users/{id}.json			
 
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|
+|Interface name | Protocol | Call direction | Encoding | Result format | Interface description | 
 |------------|-------|--------|-----|--------|--------------|
-|상담원 권한 변경|HTTPS  |PUT    |UTF-8|JSON    |서비스 내 상담원 권한 변경|
+|Change agent authority|HTTPS  |PUT    |UTF-8|JSON    |Change agent authority in service|
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### Request Parameters
+|Name |Variable |Data type |Required | Description|
 |-----|-----|----------|-----|----|
-|서비스 ID	|serviceId	|String	|O	|URL PATH 내에 설정한 {serviceId}|
-|사용자ID	|id	|String	|O	|URL PATH 내에 설정한 {id}|
-|사용자 권한	|role	|String	|O	|ROLE_FRONT_ADMIN : 관리자, ROLE_FRONT_AGENT：일반 상담원|
+|Service ID	|serviceId	|String	|O	|{serviceId} set in URL path|
+|User ID	|id	|String	|O	|{id} set in URL path|
+|User Authority	|role	|String	|O	|ROLE_FRONT_ADMIN : Administrator, ROLE_FRONT_AGENT : Agent|
 
-#### 결과 데이터
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### Result Data
+|Name |Variable |Data type |Required | Description|
 |-----|-----|-----------|-----|----|
-|result.content	|userId	|Int	|O	|사용자 ID|
-|	              |usercode	|String	|O	|사용자 Code|
-|	              |uuid	|String |O	|IAM |사용자 ID|
-|	              |username	|String	|O	|사용자 명|
-|	              |role	|String	|O	|사용자 권한. ROLE_FRONT_ADMIN : 관리자, ROLE_FRONT_AGENT：일반 상담원|
+|result.content	|userId	|Int	|O	|User ID|
+|	                |usercode	|String	|O	|User Code|
+|	                |uuid	|String	|O	|IAM user ID|
+|	                |username	|String	|O	|User name|
+|	                |role	|String	|O	|User authority. ROLE_FRONT_ADMIN : Administrator, ROLE_FRONT_AGENT : Agent|
 
 #### Response Body
 ```
@@ -175,8 +176,8 @@
   "result": {
     "content": {
         "userId": 10058,
-        "usercode": "honggildong",
-        "username": "홍길동",
+        "usercode": "example",
+        "username": "Example",
         "uuid": "ef1bd956-6c13-4391-8256-1eb0d840355a",
         "role": "ROLE_FRONT_ADMIN",
     }
@@ -184,21 +185,21 @@
 }
 ```
 
-### 상담원 삭제
-#### 인터페이스 설명
+### Delete Agent
+#### Interface Description
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/users/{id}.json						
-- URL (개발): https://{domain}.alpha-oc.toast.com /{serviceId}/openapi/v1/users/{id}.json			
+- URL (Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/users/{id}.json			
 
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|
+|Interface name | Protocol | Call direction | Encoding | Result format | Interface description | 
 |------------|-------|--------|-----|--------|--------------|
-|상담원 삭제|HTTPS/80  |IN(DELETE)    |UTF-8|JSON    |지정한 서비스에서 상담원 삭제|
+|Delete agent|HTTPS/80  |IN(DELETE)    |UTF-8|JSON    |Delete agent in selected service|
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### Request Parameters
+|Name |Variable |Data type |Required | Description|
 |-----|-----|----------|-----|----|
-|서비스 ID	|serviceId	|String	|O	|URL PATH 내에 설정한 {serviceId}|
-|사용자 ID	|id	|Int	|O	|URL PATH 내에 설정한 {id}|
+|Service ID	|serviceId	|String	|O	|{serviceId} set in URL path|
+|User ID	|id	|Int	|O	|{id} set in URL path|
 
-#### 결과 데이터
-- 없음
+#### Result Data
+- None
 

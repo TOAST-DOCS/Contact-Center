@@ -1,14 +1,15 @@
-## Contact Center > Online Contact > API 가이드 > Open API 개요
+## Contact Center > Online Contact > プログラマーのためのAPIガイド ＞ オープンAPI 概要
 
-### API 인증방법 설명
+### API認証方法の説明
 #### Security Key
-##### 조직 레벨
-TOAST CONSOLE에서 생성하신 조직 별로 유일한 Security Key를 보유하고 있습니다. Security Key를 통해 API로 전송되는 데이터를 암호화 처리할 수 있으며, 조직 관리와 관련된 Open API를 호출할 수 있습니다. (서비스 등록, 수정, 삭제 등) 사용하고 계시는 조직의 Online Contact에 접속하신 후 전체 관리 → SSO 로그인 → API Key에서 조직 레벨의 Security key를 확인하실 수 있습니다.
-![](http://static.toastoven.net/prod_contact_center/dev1.png)
+##### 組織レベル
+TOAST CONSOLEで生成された組織ごとに唯一のSecurity Keyを有しています。 Security Keyを介してAPIに送信されるデータを暗号化処理でき、組織管理に関連するOpen APIを呼び出すことができます。(サービスの登録、修正、削除等) 
+使用している組織のOnline Contactにアクセスし、全体管理→SSOログイン→API Keyで組織レベルのSecurity Keyを確認することができます。
+![](http://static.toastoven.net/prod_contact_center/dev1_ja.png)
 
-##### 서비스 레벨
-하나의 조직에서 여러 개의 서비스를 생성하실 수 있으며, 생성하신 각 서비스 별로 유일한 Security Key를 보유하고 있습니다. Security Key를 통해 API로 전송되는 데이터를 암호화 처리할 수 있으며, 서비스 관리와 관련된 Open API를 호출할 수 있습니다. (티켓 관리, FAQ 등) 서비스 추가 API(/openapi/v1/admin/service/add.json)를 통해 서비스 추가가 가능하며, 서비스 추가 후 리턴 결과 값에서 서비스 레벨의 Security Key를 취득할 수 있습니다. 또한 사용하고 계시는 조직의 Online Contact에 접속하신 후 security key를 확인하고자 하는 서비스를 선택, 서비스 관리 → 인증 → OPEN API → API Key에서도 서비스 레벨의 Security Key 취득이 가능합니다.
-![](http://static.toastoven.net/prod_contact_center/dev2.png)
+##### サービスレベル
+1つの組織で複数のサービスを作成でき、作成した各サービスごとに唯一のSecurity Keyを保有しています。 Security Keyを通じてAPIに送信されるデータを暗号化処理でき、サービス管理に関連するOpen APIを呼び出すことができます。(チケット管理、FAQなど) サービス追加API(/openapi/v1/admin/service/add.json)を通じてサービス追加が可能で、サービス追加後にリターン結果値からサービスレベルのSecurity Keyを取得できます。 また、使用している組織のOnline Contactにアクセスして、Security Keyを確認しようとするサービスを選択し、サービス管理→認証→OPEN API→API KeyからもサービスレベルのSecurity Keyの取得が可能です。
+![](http://static.toastoven.net/prod_contact_center/dev2_ja.png)
 
 ##### Response Body
 ```
@@ -33,14 +34,14 @@ TOAST CONSOLE에서 생성하신 조직 별로 유일한 Security Key를 보유�
 }
 ```
 
-#### 인증 Header
-각 Request Header에 아래의 값들을 반드시 설정해야 합니다.
-- Authorization：Security Key를 통해 생성된 인증 문자열
-- X-TC-Timestamp：현재 UTC 시간 값{new Date().getTime()}
-- OUCODE：유저 code（필수 아님，설정하지 않을 경우 기본 값은 Owner）
+#### 認証Header
+各リクエストヘッダーに下記の値を必ず設定しなければなりません。
+- Authorization：Security Keyで生成された認証文字列
+- X-TC-Timestamp：現在のUTC時間値{newDate().getTime()}
+- OUCODE：ユーザcode（必須ではない. 設定しない場合、基本値はOwner）
 
-#### Authorization 문자열 생성 방법
-HmacSHA256로 암호화하거나, (조직ID + request URI + 파라미터 값 + 현재 UTC시간 값）문자열에 대해 암호화하여 Authorization 문자열을 생성하실 수 있습니다.
+#### Authorization文字列の生成方法
+HmacSHA256で暗号化するか、(組織ID + request URI + パラメータ値 + 現在のUTC時間値)　文字列に対して暗号化してAuthorization文字列を生成することができます。
 
 ##### Java 예시
 ```
@@ -61,122 +62,127 @@ byte[] rawHmac = mac.doFinal(sb.toString().getBytes("UTF-8"));
 String authorization = new String(Base64.encodeBase64(rawHmac));
 ```
 
-- request body가 있을 경우 파라미터 뒤에 body 문자열 추가
-- 파일 첨부 시, 파일의 MD5는 파라미터 값으로 인증 문자열에 추가
+- request bodyがある場合、パラメータの後ろにbody文字列を追加
+- ファイル添付時、ファイルのMD5はパラメータ値で認証文字列に追加
 - Security Key
-	- /openapi/v1/admin/* 형태의 API 호출 시 조직 레벨 Security Key 사용
-	- {serviceId}/openapi/v1/* 형태의 API 호출 시 ，서비스 레벨 Security Key 사용
-
-### 공통 리턴 결과
-|명칭	|변수|	데이터 타입	|필수|	설명|
+	- /openapi/v1/admin/* 形態のAPIを呼び出す際に組織レベルSecurity Keyを使用
+	- {serviceId}/openapi/v1/* 形態のAPI呼び出し時、サービスレベルSecurity Key使用
+	
+### 共通リターン結果
+|名称	|変数|	データタイプ	|必須|	説明|
 |-----|---|--------------|----|------|
-|Header	|resultCode	|VARCHAR(2)	|O	|리턴 결과 Code , 정상은 200|
-|	|resultMessage|	VARCHAR(50)|	O|	리턴 오류 메시지|
-|	|isSuccessful|	Boolean|	O|	실행 결과(성공：true ，실패：false)|
-|Result|	contents|	JSON|	X|	목록 결과 내용|
-|	|content|	JSON|	X|	상세 결과 내용
+|Header	|resultCode	|VARCHAR(2)	|O	|リターン結果コード、頂上は２００|
+|	|resultMessage|	VARCHAR(50)|	O|	リターン エラーメッセージ|
+|	|isSuccessful|	Boolean|	O|	実行結果(成功:true、失敗:false)|
+|Result|	contents|	JSON|	X|	目録結果内容|
+|	|content|	JSON|	X|	詳細結果内容|
 
-#### 리턴 Code 정보	
+#### リターンコード情報
 - 200 :SUCCESS	
 - 400 :Bad Request	
 - 403 : Forbidden	
 - 404 : Not Data Found	
 - 500 : Server Error	
-- 9007 : 관련된 데이터가 이미 존재	
-- 9005 : 관련된 데이터가 없음	
+- 9007 : 関連データが既に存在	
+- 9005 : 関連データなし
 
-### API 관련 목록
-#### 개발 환경 URL
-|환경|	BaseUrl|	
+### API関連目録
+#### 開発環境URL
+|環境|	BaseUrl|	
 |---|------------|
-|알파|	https://{domain}.alpha-oc.toast.com|	
-|리얼|	https://{domain}.oc.toast.com	|
+|alpha|	https://{domain}.alpha-oc.toast.com|	
+|real|	https://{domain}.oc.toast.com	|
 
 #### Security Key URL
 |Security Key|	URL|	
 |------------|-----|
-|조직 레벨|	/openapi/v1/admin/\*|	
-|서비스 레벨|	/{serviceId}/openapi/v1/\*|	
+|組織レベル|	/openapi/v1/admin/\*|	
+|サービスレベル|	/{serviceId}/openapi/v1/\*|	
 
-#### API 목록
-|레벨	|그룹	|명칭	|설명|
+#### API 目録
+|レベル	|グループ	|名称	|説明|
 |---------|--------|---------|---|
-|조직 레벨	|[서비스](https://alpha-docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-service/)	     |서비스 추가	           |신규 서비스 추가|
-|	   |	           |서비스 상세	         |서비스 ID를 통해 서비스 정보 조회|
-|  	   |	           |서비스 수정	         |서비스 ID를 통해 서비스 정보 수정|
-|	   |               |서비스 비활성화	        |서비스 ID를 통해 서비스 비활성화|
-|	   |	           |서비스 활성화	         |서비스 ID를 통해 서비스 활성화|
-|	   |	           |서비스 삭제	          |서비스 ID를 통해 비활성화 된 서비스 삭제|
-|	   |	           |서비스 API Key 재발급	 |서비스 ID를 통해 해당 서비스에 생성된 API Key 다시 발급|
-|	   |	           |서비스 목록	          |조직내에 생성된 모든 서비스 조회|
-|서비스 레벨|[이메일 설정](https://alpha-docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-email/)     |대표계정 생성              |서비스 대표계정 생성. (생성 후 수정 불가) 형식: \*\*@oc.toast.com|       	
-|          |               |이메일 정보 조회           |해당 서비스 모든 이메일 정보 조회|
-|          |               |외부계정 유효성 체크	      |외부계정 유효성 체크|
-|          |               |외부계정 등록              |외부계정 등록(유효성 체크 후 등록 가능)|
-|          |               |외부계정 수정              |외부계정 수정(유효성 체크 후 수정 가능)|
-|          |               |외부계정 활성화            |비활성화 상태 외부계정을 활성화|
-|          |               |외부계정 비활성화          |활성화 상태 외부계정을 비활성화|
-|          |               |외부계정 삭제              |비활성화 상태 외부계정 삭제|
-|          |               |이메일 정보 저장           |이메일 정보 저장|
-|           |[접수유형 관리](https://alpha-docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-category/)  |접수유형 추가	         |신규 접수유형 추가|
-|	    |              |접수유형 상세	          |접수유형 ID를 통해 접수유형 조회|
-|	    |	           |접수유형 수정	          |접수유형 ID를 통해 접수유형 수정|
-|	    |	           |접수유형 삭제	          |접수유형 ID를 통해 접수유형 삭제|
-|  	    |	           |접수유형 목록	         |서비스 내 접수유형 조회|
-|           |[티켓 관리](https://alpha-docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-ticket/)	|티켓 생성	                |신규 티켓 생성|
-|	    |	           |티켓 처리	           |티켓 ID를 통해 티켓 처리|
-|	    |	           |티켓 상세	           |티켓 ID를 통해 티켓 조회|
-|	    |	           |티켓 목록	          |검색 조건을 통해 조건에 맞는 티켓 리스트 노출|
-|	    |	           |유저 티켓 목록         |검색 조건을 통해 조건에 맞는 고객의 티켓 리스트 노출|
-|	    |	           |티켓 첨부파일 첨부	        |서버에 파일 업로드|
-|	    |	           |티켓 첨부파일 열기/다운     |서버에 업로드 된 파일 열기/다운|
-|	    |	           |티켓 첨부파일 삭제          |서버에 업로드 된 파일 삭제|
-|	    |[공지사항](https://alpha-docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-notice/)	|공지사항 목록 조회	      |공지사항의 내용 조회, 검색 조건에 따라 공지사항 리스트를 리턴|
-|	    |	           |공지사항 상세 조회	          |공지사항 ID를 통해 공지사항 내용 취득|
-|	    |	           |공지사항 상세 조회(여러 건)	|여러개의 공지사항 ID를 통해 내용 취득|
-|	    |	           |공지사항 등록	          |신규 공지사항 등록|
-|	    |	           |공지사항 수정	          |ID를 통해 공지사항 수정|
-|           |		   |공지사항 삭제	          |ID를 통해 공지사항 삭제|
-|	    |	           |공지사항 템플릿 목록 조회	           |템플릿 내용 조회，템플릿 리스트를 리턴|
-|	    |	           |공지사항 템플릿 상세 조회	           |템플릿 ID를 통해 템플릿 내용 취득|
-|	    |	           |공지사항 템플릿 등록	           |신규 템플릿 등록|
-|	    |	           |공지사항 템플릿 수정	           |ID를 통해 템플릿 수정|
-|	    |	           |공지사항 템플릿 삭제	           |ID를 통해 템플릿 삭제|
-|	    |	           |공지사항 첨부파일 첨부       |서버에 파일 업로드|
-|	    |	           |공지사항 첨부파일 삭제       |서버에 업로드 한 파일 삭제|
-|	    |	           |공지사항 태그 목록 조회	           |공지사항 태그 리스트 취득|
-|	    |	           |공지사항 태그 상세 조회	            |태그 ID를 통해 공지사항 태그내용 취득|
-|	    |	           |공지사항 태그 등록	            |신규 태그 등록|
-|	    |	           |공지사항 태그 수정	            |태그 ID를 통해 공지사항 태그 수정|
-|	    |	           |공지사항 태그 삭제	            |태그 ID를 통해 공지사항 태그 삭제|
-|	    |	           |공지사항 말머리 목록 조회	           |공지사항 말머리 리스트 취득|
-|	    |	           |공지사항 말머리 상세 조회	           |말머리 ID를 통해 공지사항 말머리 내용 취득|
-|	    |	           |공지사항 말머리 등록	           |신규 말머리 등록|
-|	    |	           |공지사항 말머리 수정	           |말머리 ID를 통해 말머리 명 수정|
-|	    |	           |공지사항 말머리 삭제	           |말머리 ID를 통해 공지사항 말머리 삭제|
-|	    |[상담원 관리](https://alpha-docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-agent/)	|상담원 목록 조회	      |상담원 리스트 취득|
-|           |		    |상담원 상세 조회 	           |상담원 ID를 통해 상담원 정보 취득|
-|	    |	            |상담원 추가	           |지정한 서비스에 상담원 추가 및 권한 부여|
-|           |		    |상담원 권한 변경           |서비스 내 상담원 권한 변경|
-|	    |	            |상담원 삭제	           |지정한 서비스에서 상담원 삭제|
-|	    |[헬프센터](https://alpha-docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-helpcenter/)	 |헬프센터 지정 데이터 추가   |추가 필요한 고객정보를 DB에 저장|
-|	    |[FAQ](https://alpha-docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-faq/)	     |FAQ 목록 조회	              |조회 조건 기준으로 FAQ 리스트를 리턴|
-|           |		     |FAQ 상세 조회	              |FAQ ID를 통해 FAQ 내용 취득|
-|           |		     |FAQ 등록	              |신규 FAQ 등록|
-|           |		     |FAQ 수정	              |FAQ ID 기준으로 내용 수정|
-|	    |	             |FAQ 카테고리별 고정 설정	             |FAQ 문서가 속한 카테고리 상단에 고정되도록 설정|
-|	    |	             |FAQ 메인화면 고정 설정	   |FAQ 문서가 메인화면 카테고리 상단에 고정되도록 설정|
-|	    |	             |FAQ 완료처리	             |FAQ 상태를 완료상태로 변경（status=C）|
-|	    |	             |FAQ 삭제	               |FAQ ID 기준으로 FAQ 삭제|
-|	    |	             |FAQ 카테고리 목록 조회	           |FAQ 카테고리 리스트 취득|
-|	    |	             |FAQ 카테고리 상세 조회	           |카테고리 ID를 통해 FAQ 카테고리 내용 취득|
-|	    |	             |FAQ 카테고리 추가	           |신규 FAQ 카테고리 추가|
-|	    |	             |FAQ 카테고리 수정	           |ID 기준으로 카테고리 명 수정|
-|	    |	             |FAQ 카테고리 삭제	           |카테고리 ID를 통해 FAQ 카테고리 삭제|
-|	    |	             |FAQ 첨부파일 첨부	   |서버에 파일 업로드|
-|	    |	             |FAQ 첨부파일 삭제	   |서버에 업로드한 파일 삭제|
-|           |[SSO](https://alpha-docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-sso/)             |SSO 원격로그인 API (Client Side)|사용자 시스템에서 동적으로 form을 생성하여 브라우저에 반환, form은 자동으로 API에 form 정보를 전달, 인증 후 성공 시 로그인 쿠키 값 설정|
-|           |                |SSO 원격로그인 API (Server Side)|사용자가 서버에서 직접 API 호출, API 로그인 성공 후 로그인 쿠키 값 설정|
-|           |                |SSO 로그인 상태 API             |사용자가 쿠키 정보를 기준으로 로그인 여부를 확인 후, JSON 형식의 데이터를 리턴|
-|           |[고객정보 연동](https://alpha-docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-customer-data/)    |고객정보 연동                   |전화 문의 인입 시 매체번호를 통해 고객 데이터를 조회하여 화면에 표시|
+|組織レベル	|[サービス](https://docs.toast.com/ja/Contact%20Center/ja/online-contact-api-guide-openapi-service/)	     |サービス追加	           |新規サービス追加|
+|	   |	           |サービス詳細 	         |サービスIDを通じてサービス情報を照会 |
+|  	   |	           |サービス修正 	         |サービスIDを通じてサービス情報を修正 |
+|	   |               |サービス無効化 	        |サービスIDを通じてサービスを無効化 |
+|	   |	           |サービス活性化	         |サービスIDを通じてサービス活性化 |
+|	   |	           |サービスの削除 	          |サービスIDを使って無効になったサービスの削除 |
+|	   |	           |サービスAPI Key再発行 	 |サービスIDにより当該サービスに生成されたAPI Key再発行|
+|	   |	           |サービス一覧 	          |組織内に生成されたすべてのサービス照会 |
+|          |               |サービス契約登録            |サービス契約登録 |
+|          |               |サービス契約変更            |契約変更 (1日に1回のみ) |
+|          |               |サービス契約一覧            |組織内サービス契約一覧 |
+|          |               |サービス契約詳細 - サービスID |サービスIDで契約詳細情報取得 |
+|          |               |サービス契約詳細 - 契約ID     |契約IDでサービス契約詳細情報を取得 |
+|サービスレベル|[メール設定](https://docs.toast.com/ja/Contact%20Center/ja/online-contact-api-guide-openapi-email/)     |代表アカウント作成               |サービス代表アカウント作成。(作成後は修正不可)形式: \*\*@oc.toast.com|       	
+|          |               |メール情報照会            |該当サービスすべてのEメール情報照会|
+|          |               |外部アカウント有効性チェック 	      |外部アカウント有効性チェック |
+|          |               |外部アカウント登録              |外部アカウント登録(有効性チェック後登録可能) |
+|          |               |外部アカウント修正               |外部アカウント修正(有効性チェック後修正可能) |
+|          |               |外部アカウント有効化             |無効化状態外部アカウントを有効化 |
+|          |               |外部アカウントの無効化           |有効化状態外部アカウントを無効化 |
+|          |               |外部アカウント削除               |無効化状態外部アカウント削除 |
+|          |               |メール情報保存            |メール情報保存 |
+|           |[受付タイプ管理](https://docs.toast.com/ja/Contact%20Center/ja/online-contact-api-guide-openapi-category/)  |受付タイプ追加	         |新規受付タイプ追加|
+|	    |              |受付タイプの詳細 	          |受付タイプIDで受付タイプの照会 |
+|	    |	           |受付タイプ修正 	          |受付タイプIDから受付タイプ修正 |
+|	    |	           |受付タイプの削除 	          |受付タイプIDから受付タイプの削除 |
+|  	    |	           |受付タイプ一覧	         |サービス内受付タイプ一覧 |
+|           |[チケット管理](https://docs.toast.com/ja/Contact%20Center/ja/online-contact-api-guide-openapi-ticket/)	|チケット生成	                |新規チケット生成|
+|	    |	           |チケット処理 	           |チケットIDでチケット処理 |
+|	    |	           |チケット詳細 	           |チケットIDを通じてチケット照会|
+|	    |	           |チケットリスト	          |検索条件を通じて条件に合ったチケットリストを露出 |
+|	    |	           |ユーザーチケットリスト          |検索条件を通じて条件に合うお客様のチケットリスト露出 |
+|	    |	           |チケット添付ファイル添付	        |サーバーにファイルアップロード|
+|	    |	           |チケット添付ファイルを開く/ダウンロード      |サーバーにアップロードされたファイル開く/ダウンロード|
+|	    |	           |チケット添付ファイルの削除         |サーバーにアップロードされたファイルの削除 |
+|	    |[お知らせ](https://docs.toast.com/ja/Contact%20Center/ja/online-contact-api-guide-openapi-notice/)	|お知らせ目録照会 	      |お知らせ事項の内容照会、検索条件によりお知らせリストをリターン|
+|	    |	           |お知らせ詳細照会 	          |お知らせIDからお知らせ内容を取得|
+|	    |	           |お知らせ詳細照会(複数件) 	|複数のお知らせIDから内容を取得 |
+|	    |	           |お知らせ登録 	          |新規お知らせ登録 |
+|	    |	           |お知らせ修正 	          |IDでお知らせ修正 |
+|           |		   |お知らせ削除 	          |IDでお知らせ削除 |
+|	    |	           |お知らせテンプレートリスト	           | テンプレート内容、テンプレートリスト照会|
+|	    |	           |お知らせテンプレート詳細照会 	           |テンプレートIDからテンプレート内容を取得 |
+|	    |	           |お知らせテンプレート登録 	           |新規テンプレート登録 |
+|	    |	           |お知らせテンプレート修正           |IDでテンプレート修正 |
+|	    |	           |お知らせテンプレート削除 	           |IDによりテンプレート削除 |
+|	    |	           |お知らせ添付ファイル添付        |サーバーにファイルアップロード |
+|	    |	           |お知らせ添付ファイルの削除        |サーバーにアップロードしたファイルの削除 |
+|	    |	           |お知らせタグリスト照会 	           |お知らせタグリスト取得 |
+|	    |	           |お知らせタグ詳細照会 	            |タグIDからお知らせタグ内容取得 |
+|	    |	           |お知らせタグ登録             |新規タグ登録 |
+|	    |	           |お知らせタグ修正 	            |タグIDでお知らせタグ修正 |
+|	    |	           |お知らせタグの削除 	            |タグIDからお知らせタグの削除 |
+|	    |	           |お知らせテーマ一覧 	           |お知らせテーマ一覧|
+|	    |	           |お知らせ テーマ詳細照会 	           |テーマIDからお知らせテーマ内容取得|
+|	    |	           |お知らせテーマ登録            |新規テーマ登録 |
+|	    |	           |お知らせテーマ修正 	           |テーマIDでテーマ名を修正 |
+|	    |	           |お知らせテーマ削除 	           |テーマIDを通じてお知らせテーマ削除 |
+|	    |[オペレーター管理](https://docs.toast.com/ja/Contact%20Center/ja/online-contact-api-guide-openapi-agent/)	|オペレーターリスト照会	      |オペレーターリスト 取得|
+|           |		    |オペレーター詳細照会  	           |オペレーターIDからオペレーター情報を取得 |
+|	    |	            |オペレーター追加 	           |指定したサービスにオペレーター追加、権限付与 |
+|           |		    |オペレーター権限の変更            |サービス内のオペレーター権限の変更 |
+|	    |	            |オペレーター削除 	           |指定したサービスからオペレーター削除 |
+|	    |[ヘルプセンター](https://docs.toast.com/ja/Contact%20Center/ja/online-contact-api-guide-openapi-helpcenter/)	 |ヘルプセンター指定データ追加    |追加必要な顧客情報をDBに保存|
+|	    |[FAQ](https://docs.toast.com/ja/Contact%20Center/ja/online-contact-api-guide-openapi-faq/)	     |FAQ リスト照会 	              |照会条件基準でFAQリストをリターン |
+|           |		     |FAQ詳細照会 	              |FAQ IDからFAQ内容取得 |
+|           |		     |FAQ登録 	              |新規FAQ登録 |
+|           |		     |FAQ修正 	              |FAQ ID基準で内容修正 |
+|	    |	             |FAQカテゴリー別固定設定 	             |FAQ文書が属するカテゴリー上段に固定されるように設定 |
+|	    |	             |FAQメイン画面固定設定 	   |FAQ文書がメイン画面カテゴリー上段に固定されるように設定|
+|	    |	             |FAQ完了処理 	             |FAQの状態を完了状態に変更（status=C）|
+|	    |	             |FAQ 削除 	               |FAQ ID 基準でFAQ 削除 |
+|	    |	             |FAQカテゴリーリスト	           |FAQカテゴリーリスト|
+|	    |	             |FAQカテゴリー詳細照会 	           |カテゴリーIDからFAQカテゴリー内容取得 |
+|	    |	             |FAQカテゴリー追加 	           |新規FAQカテゴリー追加 |
+|	    |	             |FAQカテゴリー修正 	           |ID基準でカテゴリー名修正 |
+|	    |	             |FAQカテゴリー削除 	           |カテゴリーIDでFAQカテゴリー削除 |
+|	    |	             |FAQ添付ファイル添付 	   |サーバーにファイルアップロード |
+|	    |	             |FAQ添付ファイルの削除 	   |サーバーにアップロードしたファイルの削除 |
+|           |[シングルサインオン](https://docs.toast.com/ja/Contact%20Center/ja/online-contact-api-guide-openapi-sso/)             |シングルサインオン遠隔ログインAPI (Client Side)|ーザーシステムで動的にformを生成してブラウザに返却、formは自動的にAPIにform情報を伝達、認証後に成功した場合ログインクッキー値設定|
+|           |                |シングルサインオン遠隔ログインAPI (Server Side)|ユーザーがサーバーから直接APIを呼び出し、APIログイン成功後ログインクッキー値設定|
+|           |                |シングルサインオンログイン状態API              |ユーザーがクッキー情報を基準にログインしているかどうかを確認後、JSON形式のデータをリターン |
+|           |[顧客情報連動](https://docs.toast.com/ja/Contact%20Center/ja/online-contact-api-guide-openapi-customer-data/)    |顧客情報連動                   |電話問い合わせ引込時、媒体番号から顧客データを照会して画面に表示|
 

@@ -1,30 +1,31 @@
-## Contact Center > Online Contact > API 가이드 > 상담원 관리
-### 상담원 목록 조회
-#### 인터페이스 설명
+## Contact Center > Online Contact > プログラマーのためのAPIガイド > オペレーター管理
+
+### オペレーター一覧
+#### インターフェース説明
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/users.json			
-- URL (개발):	https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/users.json			
+- URL (開発):	https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/users.json			
 
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|
+|インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|
 |------------|-------|--------|-----|--------|--------------|
-|상담원 목록 조회|HTTPS  |GET    |UTF-8|JSON    |상담원 목록 조회|
+|オペレーター一覧|HTTPS  |GET    |UTF-8|JSON    |オペレーター一覧|
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### リクエストパラメータ定義
+|名称|変数|データタイプ|必須|説明|
 |-----|-----|----------|-----|----|
-|서비스 ID	|serviceId	|String	|O	|URL PATH 내에  설정한 {serviceId}|
-|사용자 권한	|role	|String	|X	|ROLE_FRONT_ADMIN : 관리자, ROLE_FRONT_AGENT : 일반 상담원|
-|사용자 명	|name	|String	|X	|사용자 명칭|
-|페이지 수	|page	|Int	|X	|디폴트 값 = 1|
-|페이지 노출 건수	|pageSize	|Int	|X	|디폴트 값 = 10|
+|サービスID	|serviceId	|String	|O	|URL PATH内に設定した{serviceId}|
+|ユーザー権限	|role	|String	|X	|ROLE_FRONT_ADMIN : 管理者, ROLE_FRONT_AGENT : オペレーター|
+|ユーザー名	|name	|String	|X	|ユーザー名|
+|ページ数	|page	|Int	|X	|基本値 = 1|
+|ページあたりの露出件数	|pageSize	|Int	|X	|基本値 = 10|
 
-#### 결과 데이터
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### 結果データ
+|名称|変数|データタイプ|必須|説明|
 |-----|-----|-----------|----|----|
-|result.contents	|userId	|I	|O	|사용자 ID|
-|	                |usercode	|String	|O	|사용자 Code|
-|	                |uuid	|String	|O	|IAM |사용자 ID|
-|	                |username	|String	|O	|사용자 명|
-|	                |role	|String	|O	|사용자 권한. ROLE_FRONT_ADMIN : 관리자, ROLE_FRONT_AGENT : 일반 상담원|
+|result.contents	|userId	|I	|O	|ユーザーID|
+|	                |usercode	|String	|O	|ユーザーCode|
+|	                |uuid	|String	|O	|IAM |ユーザーID|
+|	                |username	|String	|O	|ユーザー名|
+|	                |role	|String	|O	|ユーザー権限. ROLE_FRONT_ADMIN : 管理者, ROLE_FRONT_AGENT : オペレーター|
 
 #### Response Body
 ```
@@ -38,10 +39,9 @@
     "contents": [
       {
         "userId": 10058,
-        "usercode": "honggildong",
-        "username": "홍길동",
+        "usercode": "example",
+        "username": "example",
         "uuid": "ef1bd956-6c13-4391-8256-1eb0d840355a",
-
         "role": "ROLE_FRONT_ADMIN",
       }
     ]
@@ -49,29 +49,29 @@
 }
 ```
 
-### 상담원 정보 취득
-#### 인터페이스 설명
+### オペレーター情報取得
+#### インターフェース説明
 - URL:	https://{domain}.oc.toast.com/{serviceId}/openapi/v1/users/{id}.json			
-- URL (개발):	https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/users/{id}.json			
+- URL (開発):	https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/users/{id}.json			
 
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|
+|インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|
 |------------|-------|--------|-----|--------|--------------|
-|상담원 상세 조회|HTTPS  |GET    |UTF-8|JSON    |상담원 ID를 통해 상담원 상세 정보 조회|
+|オペレーター情報取得|HTTPS  |GET    |UTF-8|JSON    |ユーザーIDを通じてオペレーター情報取得|
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### リクエストパラメータ定義
+|名称|変数|データタイプ|必須|説明|
 |-----|-----|----------|-----|----|
-|서비스 ID	|serviceId	|String	|O	|URL PATH 내에 설정한 {serviceId}|
-|사용자 ID	|id	        |Int	|O	|URL PATH 내에 설정한 {id}|
+|サービスID	|serviceId	|String	|O	|URL PATH内に設定した{serviceId}|
+|ユーザーID	|id	        |Int	|O	|URL PATH内に設定した{id}|
 
-#### 결과 데이터
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### 結果データ
+|名称|変数|データタイプ|必須|説明|
 |-----|-----|----------|-----|----|
-|result.contents	|userId	|Int	|O	|사용자ID|
-|	                |usercode	|String	|O	|사용자 Code|
-|	                |uuid	|String	|O	|IAM 사용자 ID|
-|	                |username	|String	|O	|사용자 명|
-|	                |role	|String	|O	|사용자 권한. ROLE_FRONT_ADMIN : 관리자, ROLE_FRONT_AGENT : 일반 상담원|
+|result.content	|userId	|Int	|O	|ユーザーID|
+|	                |usercode	|String	|O	|ユーザーCode|
+|	                |uuid	|String	|O	|IAMユーザーID|
+|	                |username	|String	|O	|ユーザー名|
+|	                |role	|String	|O	|ユーザー権限. ROLE_FRONT_ADMIN : 管理者, ROLE_FRONT_AGENT : オペレーター|
 
 #### Response Body
 ```
@@ -84,8 +84,8 @@
   "result": {
     "content": {
         "userId": 10058,
-        "usercode": "honggildong",
-        "username": "홍길동",
+        "usercode": "example",
+        "username": "example",
         ""uuid"": ""ef1bd956-6c13-4391-8256-1eb0d840355a"",
         "role": "ROLE_FRONT_ADMIN",
       }
@@ -94,30 +94,30 @@
 }
 ```
 
-### 상담원 추가
-#### 인터페이스 설명
+### オペレーター追加
+#### インターフェース説明
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/adduser.json				
-- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/adduser.json					
+- URL (開発): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/adduser.json					
 
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|
+|インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|
 |------------|-------|--------|-----|--------|--------------|
-|상담원 추가|HTTPS  |POST    |UTF-8|JSON    |지정한 서비스에 상담원 추가 및 권한 부여|
+|オペレーター追加|HTTPS  |POST    |UTF-8|JSON    |指定したサービスにオペレーターの追加、権限付与|
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### リクエストパラメータ定義
+|名称|変数|データタイプ|必須|説明|
 |-----|-----|----------|-----|----|
-|서비스 ID	|serviceId	|String	|O	|URL PATH 내에 설정한 {serviceId}|
-|	         |id	       |String	|O	|IAM 사용자 UUID|
-|	         |role	     |String	|O	|사용자 권한. ROLE_FRONT_ADMIN : 관리자, ROLE_FRONT_AGENT：일반 상담원|
+|サービスID	|serviceId	|String	|O	|URL PATH内に設定した{serviceId}|
+|	         |id	       |String	|O	|IAMユーザーUUID|
+|	         |role	     |String	|O	|ユーザー権限. ROLE_FRONT_ADMIN : 管理者, ROLE_FRONT_AGENT : オペレーター|
 
-#### 결과 데이터
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### 結果データ
+|名称|変数|データタイプ|必須|説明|
 |-----|-----|-----------|------|---|
-|result.contents	|userId	|Int	|O	|사용자 ID|
-|	                |usercode	|String	|O	|사용자 Code|
-|	                |uuid	|String	|O	|IAM 사용자 ID|
-|	                |username	|String	|O	|사용자 명|
-|	                |role	|String |O	|사용자 권한. ROLE_FRONT_ADMIN : 관리자, ROLE_FRONT_AGENT：일반 상담원|
+|result.content	|userId	|Int	|O	|ユーザーID|
+|	                |usercode	|String	|O	|ユーザーCode|
+|	                |uuid	|String	|O	|IAMユーザーID|
+|	                |username	|String	|O	|ユーザー名|
+|	                |role	|String	|O	|ユーザー権限. ROLE_FRONT_ADMIN : 管理者, ROLE_FRONT_AGENT : オペレーター|
 
 #### Response Body
 ```
@@ -130,8 +130,8 @@
   "result": {
     "content": {
         "userId": 10058,
-        "usercode": "honggildong",
-        "username": "홍길동",
+        "usercode": "example",
+        "username": "example",
         "uuid": "ef1bd956-6c13-4391-8256-1eb0d840355a",
         "role": "ROLE_FRONT_ADMIN",
     }
@@ -139,30 +139,30 @@
 }
 ```
 
-### 상담원 권한 변경
-#### 인터페이스 설명
+### オペレーター権限変更
+#### インターフェース説明
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/users/{id}.json						
-- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/users/{id}.json			
+- URL (開発): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/users/{id}.json			
 
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|
+|インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|
 |------------|-------|--------|-----|--------|--------------|
-|상담원 권한 변경|HTTPS  |PUT    |UTF-8|JSON    |서비스 내 상담원 권한 변경|
+|オペレーター権限変更|HTTPS  |PUT    |UTF-8|JSON    |サービス内のオペレーター権限変更|
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### リクエストパラメータ定義
+|名称|変数|データタイプ|必須|説明|
 |-----|-----|----------|-----|----|
-|서비스 ID	|serviceId	|String	|O	|URL PATH 내에 설정한 {serviceId}|
-|사용자ID	|id	|String	|O	|URL PATH 내에 설정한 {id}|
-|사용자 권한	|role	|String	|O	|ROLE_FRONT_ADMIN : 관리자, ROLE_FRONT_AGENT：일반 상담원|
+|サービスID	|serviceId	|String	|O	|URL PATH内に設定した{serviceId}|
+|ユーザーID	|id	|String	|O	|URL PATH内に設定した{id}|
+|ユーザー権限	|role	|String	|O	|ROLE_FRONT_ADMIN : 管理者, ROLE_FRONT_AGENT：オペレーター|
 
-#### 결과 데이터
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### 結果データ
+|名称|変数|データタイプ|必須|説明|
 |-----|-----|-----------|-----|----|
-|result.content	|userId	|Int	|O	|사용자 ID|
-|	              |usercode	|String	|O	|사용자 Code|
-|	              |uuid	|String |O	|IAM |사용자 ID|
-|	              |username	|String	|O	|사용자 명|
-|	              |role	|String	|O	|사용자 권한. ROLE_FRONT_ADMIN : 관리자, ROLE_FRONT_AGENT：일반 상담원|
+|result.contents	|userId	|Int	|O	|ユーザーID|
+|	                |usercode	|String	|O	|ユーザーCode|
+|	                |uuid	|String	|O	|IAMユーザーID|
+|	                |username	|String	|O	|ユーザー名|
+|	                |role	|String	|O	|ユーザー権限. ROLE_FRONT_ADMIN : 管理者, ROLE_FRONT_AGENT : オペレーター|
 
 #### Response Body
 ```
@@ -175,8 +175,8 @@
   "result": {
     "content": {
         "userId": 10058,
-        "usercode": "honggildong",
-        "username": "홍길동",
+        "usercode": "example",
+        "username": "example",
         "uuid": "ef1bd956-6c13-4391-8256-1eb0d840355a",
         "role": "ROLE_FRONT_ADMIN",
     }
@@ -184,21 +184,21 @@
 }
 ```
 
-### 상담원 삭제
-#### 인터페이스 설명
+### オペレーター削除
+#### インターフェース説明
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/users/{id}.json						
-- URL (개발): https://{domain}.alpha-oc.toast.com /{serviceId}/openapi/v1/users/{id}.json			
+- URL (開発): https://{domain}.alpha-oc.toast.com /{serviceId}/openapi/v1/users/{id}.json			
 
-|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|
+|インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|
 |------------|-------|--------|-----|--------|--------------|
-|상담원 삭제|HTTPS/80  |IN(DELETE)    |UTF-8|JSON    |지정한 서비스에서 상담원 삭제|
+|オペレーター削除|HTTPS/80  |IN(DELETE)    |UTF-8|JSON    |指定したサービスでオペレーター削除|
 
-#### 요청 파라미터 정의
-|명칭	|변수	|데이터 타입	|필수	|설명|
+#### リクエストパラメータ定義
+|名称|変数|データタイプ|必須|説明|
 |-----|-----|----------|-----|----|
-|서비스 ID	|serviceId	|String	|O	|URL PATH 내에 설정한 {serviceId}|
-|사용자 ID	|id	|Int	|O	|URL PATH 내에 설정한 {id}|
+|サービスID	|serviceId	|String	|O	|URL PATH内に設定した{serviceId}|
+|ユーザーID	|id	|Int	|O	|URL PATH内に設定した{id}|
 
-#### 결과 데이터
-- 없음
+#### 結果データ
+- なし
 

@@ -737,7 +737,7 @@
 |	                |parent	        |Int	|X	|상위 카테고리 ID（기본 값:0）|
 |	                |name	        |String	|O	|카테고리 명|
 |	                |level	        |Int	|X	|뎁스（1\|2\|3）|
-|	                |path	        |String	|X	|뎁스 경로（\level1\level2\"）|
+|	                |path	        |String	|X	|뎁스 경로（"\level1\level2\"）|
 |	                |orderNo	|Int	|X	|정렬 순서（기본 값:0）|
 |	                |createdDt	|Long	|X	|등록시간|
 |	                |updatedDt	|Long	|X	|수정시간|
@@ -814,8 +814,8 @@
 |	                |categoryCode	|String	|X	|카테고리 Code|
 |	                |parent	        |Int	|X	|상위 카테고리 ID（기본 값:0）|
 |	                |name	        |String	|O	|카테고리 명|
-|	                |level	        |Int	|X	|뎁스（1|2|3）|
-|	                |path	        |String	|X	|뎁스 경로（\level1\level2\"）|
+|	                |level	        |Int	|X	|뎁스（1\|2\|3）|
+|	                |path	        |String	|X	|뎁스 경로（"\level1\level2\"）|
 |	                |orderNo	|Int	|X	|정렬 순서（기본 값:0）|
 |	                |createdDt	|Long	|X	|등록시간|
 |	                |updatedDt	|Long	|X	|수정시간|
@@ -905,7 +905,7 @@
 |	                |parent	        |Int	|X	|상위 카테고리 ID（기본 값:0）|
 |	                |name	        |String	|O	|카테고리 명|
 |	                |level	        |Int	|X	|뎁스（1\|2\|3）|
-|	                |path	        |String	|X	|뎁스 경로（\level1\level2\"）|
+|	                |path	        |String	|X	|뎁스 경로（"\level1\level2\"）|
 |	                |orderNo	|Int	|X	|정렬 순서（기본 값:0）|
 |	                |createdDt	|Long	|X	|등록시간|
 |	                |updatedDt	|Long	|X	|수정시간|
@@ -996,7 +996,7 @@
 |	                |parent	        |Int	|X	|상위 카테고리 ID（기본 값:0）|
 |	                |name	        |String	|O	|카테고리 명|
 |	                |level	        |Int	|X	|뎁스（1\|2\|3）|
-|	                |path	        |String	|X	|뎁스 경로（\level1\level2\"）|
+|	                |path	        |String	|X	|뎁스 경로（"\level1\level2\"）|
 |	                |orderNo	|Int	|X	|정렬 순서（기본 값:0）|
 |	                |createdDt	|Long	|X	|등록시간|
 |	                |updatedDt	|Long	|X	|수정시간|
