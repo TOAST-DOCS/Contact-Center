@@ -1,4 +1,4 @@
-## Contact Center > Online Contact > サービスガイド >　顧客管理
+## Contact Center > Online Contact > サービスガイド >　顧客情報管理
 
 ![](http://static.toastoven.net/prod_contact_center/ja/2.2.7-(1)_ja.png)
 電話でのお問い合わせを受領した時、番号に該当するお客様側の**顧客データ**を**APIに通じて照会**し、Online Contactの画面に表示できるようにするための機能です。
