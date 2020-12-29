@@ -10,9 +10,3 @@ The mobile/PC application of Mobile Contact provides anytime, anywhere access to
 ![](http://static.toastoven.net/prod_contact_center/MC_overview_3_en.png)
 ![](http://static.toastoven.net/prod_contact_center/MC_overview_4_en.png)
 
-## Usage Cases
-![](http://static.toastoven.net/prod_contact_center/MC_overview_5_en.png)
-
-## Rate System
-![](http://static.toastoven.net/prod_contact_center/MC_overview_6_en.png)
-
