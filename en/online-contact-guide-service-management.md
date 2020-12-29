@@ -436,3 +436,8 @@ Click on the **Account which is connected** to set up the details of the KakaoTa
 
 When KakaoTalk is connected and activated in Online Contact, the existing plus friend 1:1 chat will be stopped, and inquiries received through KakaoTalk will be showed in the chat screen, with ‘channel’ of the ticket marked as ‘KakaoTalk’.
 
+## Security Management
+![](http://static.toastoven.net/prod_contact_center/2.2.6-(5)_en.png)
+If you have enabled the Service Management → Security Service feature in the contract information through prior consultation you can enable or disable **log linkage** in the  **Security Service** menu.
+Please contact the Online Contact administrator for enabling/disabling of log interlocking services through **Online Contact Customer Center**. ([Online Contact Customer Center Shortcut](https://nhn-contact.oc.toast.com/oc/hc/))
+
