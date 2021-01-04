@@ -27,7 +27,7 @@ OPEN API 탭에서는 외부에서 Online Contact의 데이터에 접근할 수 
 
 
 ## 채팅
-채팅 기능에 관련된 항목들입니다. 채팅 기능은 [서비스 관리 → 헬프센터 → 구성관리](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_32)에서 활성화하실 수 있으며, 활성화된 이후에 노출되는 우측 하단 **채팅 아이콘**으로 접속 가능합니다. 
+채팅 기능에 관련된 항목들입니다. 채팅 기능은 [전체관리 → 계약 서비스 현황 → 계약 현황](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-global-management/#_2) 탭에서 수정하실 수 있는 계약 상세 내역에서 채팅 기능을 사용 설정하신 후 [서비스 관리 → 헬프센터 → 구성관리](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_32)에서 활성화하실 수 있으며, 활성화된 이후에 노출되는 우측 하단 **채팅 아이콘**으로 접속 가능합니다. 
 
 ![](http://static.toastoven.net/prod_contact_center/2.2.2-(1).png)
 **채팅 아이콘**을 통해 접속한 후 **①** 좌측 상단 **상태 값**을 클릭하시면 (초기 기본값 ‘오프라인’) 온라인/휴식/오프라인 중 하나로 상태를 설정하실 수 있으며, 온라인 상태일 경우에만 고객의 채팅 요청에 답변할 수 있습니다.
