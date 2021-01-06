@@ -52,7 +52,7 @@ CTI管理メニューでは、Online  Contactと接続するCTI情報を設定�
 CTI設定メニューからOnline  Contactの電話機能と関連付けるCTIを設定できます。
 
 お選びいただける**① CTIバージョン**は以下のとおりです。
-- IPCC (Private): Privateサービスでご利用されたい場合はOnline  Contact顧客センターにて**事前協議**をお願いいたします。([Online Contact 顧客センター](https://nhn-contact.oc.toast.com/oc/hc/))
+- IPCC (Private): Privateサービスでご利用されたい場合はOnline  Contact顧客センターにて**事前協議**をお願いいたします。([Online Contact 顧客センター](https://nhn-contact.oc.toast.com/ocjp/hc/))
 - Mobile Contact: Toast  Consoleで**Mobile  Contactサービスを有効化**した後選択することができます。
 
 CTIバージョンを選択し、IPCCまたはMobile  Contact管理担当者から受け取った**サービス名**を**② テナント名**欄に入力してください。
