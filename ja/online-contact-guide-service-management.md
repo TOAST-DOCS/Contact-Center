@@ -444,4 +444,4 @@ CTI  ログインされた状態で  CTI  画面→**①  発信**  ボタンを
 ## セキュリティ管理
 ![](http://static.toastoven.net/prod_contact_center/2.2.6-(5)_ja.png)
 Online  Contact管理者との事前協議により、契約情報でサービス管理→セキュリティサービス機能を使用設定された場合、**セキュリティ管理**メニューで**ログ連動**を設定できます。
-連動サービスの有効化/無効化については、**Online  Contactお客様センター**を通じて管理者にお問い合わせください。([Online Contactお客様センター](https://nhn-contact.oc.toast.com/oc/hc/))
+連動サービスの有効化/無効化については、**Online  Contactお客様センター**を通じて管理者にお問い合わせください。([Online Contactお客様センター](https://nhn-contact.oc.toast.com/ocjp/hc/))
