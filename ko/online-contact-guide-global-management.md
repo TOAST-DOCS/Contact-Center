@@ -30,6 +30,8 @@ Online Contact에서는 **상담 관리**, **이슈 관리**의 2가지 서비�
 ![](http://static.toastoven.net/prod_contact_center/2.1.1-(4).png)
 **요금 현황** 탭에서는 전체, 서비스 유형별, 개별 서비스별 월별 청구 요금을 **①** 검색하여 조회하실 수 있습니다. 개별 서비스를 기준으로 조회하셨을 경우 **②** 서비스 상태가 함께 표시됩니다. 
 
+✔ **\[FAQ 바로가기]** [과금 기준은 어떻게 되나요?](https://nhn-contact.oc.toast.com/oc/hc/article/99/)
+✔ **\[FAQ 바로가기]** [요금은 언제 어떻게 결제되나요?](https://nhn-contact.oc.toast.com/oc/hc/article/67/)
 
 ## 조직관리자
 ![](http://static.toastoven.net/prod_contact_center/2.1.2-(1).png)
@@ -80,6 +82,8 @@ CTI 정보가 정상적으로 입력된 후에, 전화 권한이 있는 상담�
 
 SSO 로그인 설정 시 인증 처리에 사용되는 **API 인증 Key**를 제공하며, **② API Key 변경** 버튼을 통해 Key값 변경이 가능합니다.
 
+✔ **\[FAQ 바로가기]** [원격 로그인 URL은 어떤 용도로 사용되나요?](https://nhn-contact.oc.toast.com/oc/hc/article/50/)
+✔ **\[FAQ 바로가기]** [로그인 상태 URL(API)은 어떤 용도로 사용되나요?](https://nhn-contact.oc.toast.com/oc/hc/article/51/)
 
 ## 권한 변경 로그 관리
 ![](http://static.toastoven.net/prod_contact_center/2.1.4-(1).png)
