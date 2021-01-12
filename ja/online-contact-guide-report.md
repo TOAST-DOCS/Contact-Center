@@ -45,6 +45,8 @@
 
 **② データ抽出**ボタンで、適用した条件により算出された表形式のデータをエクセルでダウロードできます。
 
+✔ **\[FAQ]** [統計で時間区間内処理状況はどのような統計ですか？](https://nhn-contact.oc.toast.com/ocjp/hc/article/92/)
+
 ## 実績統計
 ![](http://static.toastoven.net/prod_contact_center/ja/6.3-(1)_ja.png)
 ![](http://static.toastoven.net/prod_contact_center/ja/6.3-(2)_ja.png)
@@ -66,6 +68,8 @@
 -	処理: オペレーターが待機リストのお客様お問い合わせリクエストをクリックした後**回答を送信**した場合
 
 **② データ抽出**ボタンで、適用した条件により算出された表形式のデータをエクセルでダウロードできます。
+
+✔ **\[FAQ]** [統計で時間区間内処理状況はどのような統計ですか？](https://nhn-contact.oc.toast.com/ocjp/hc/article/92/)
 
 ## 満足度統計
 ![](http://static.toastoven.net/prod_contact_center/ja/6.4-(1)_ja.png)
