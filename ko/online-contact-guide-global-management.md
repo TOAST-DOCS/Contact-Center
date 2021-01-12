@@ -39,6 +39,8 @@ Online Contact에서는 **상담 관리**, **이슈 관리**의 2가지 서비�
 조직관리자 권한만으로는 상담 기능과 서비스 관리 기능을 이용할 수 없으므로, 상담을 진행하고자 하거나 서비스를 초기에 구성하고자 하는 경우 [서비스 관리 → 상담원](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_25) 메뉴에서 관리자 또는 상담원 권한을 추가해주세요. 
 조직관리자 권한을 부여할 사용자는 IAM 회원으로 등록되어 있어야 합니다.
 
+✔ **\[FAQ 바로가기]** [권한의 종류와 차이점을 알고 싶습니다.](https://nhn-contact.oc.toast.com/oc/hc/article/36/)
+
 ### IAM 회원 등록
 -	화면 우측 상단 **① 회원 초대** 버튼 → 이름, ID, 이메일 입력
 -	TOAST CONSOLE → 멤버 관리 → IAM 회원 탭 → **IAM 회원 등록** 버튼 → ID, 이름, 메일, 휴대폰 번호 입력
