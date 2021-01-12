@@ -28,12 +28,16 @@ Online Contactでは**お問い合わせ管理**、 **イシュー管理**の2�
 ![](http://static.toastoven.net/prod_contact_center/ja/2.1.1-(4)_ja.png)
 **料金管理**タブでは、全体、サービスタイプ別、およびサービス別の月ごとの請求料金を**①** 検索して照会することができます。サービスごとの情報を基準として照会すると、 **②** サービスの利用状況も一緒に表示されます。
 
+✔ **\[FAQ]** [課金基準はどうなりますか。](https://nhn-contact.oc.toast.com/ocjp/hc/article/112/)
+✔ **\[FAQ]** [料金はいつ、どのように決済されますか。](https://nhn-contact.oc.toast.com/ocjp/hc/article/111/)
 
 ## 組織管理者
 ![](http://static.toastoven.net/prod_contact_center/ja/2.1.2-(1)_ja.png)
 **組織管理者**は Online Contactを使用する組織を管理できる権限を持ち、オペレーターの追加・削除、そしてオペレーターの中から組織管理者を追加・削除等の操作ができます。
 組織管理者の権限だけではオペレーション機能とサービス管理機能を利用することはできません。別の作業者にオペレーションの進行やサービスの初期セットアップをさせたい場合は、 [サービス管理 → オペレーター](https://docs.toast.com/ja/Contact%20Center/ja/online-contact-guide-service-management/#_29) メニューで管理者またはオペレーターの権限を追加してください。 
 組織管理者の権限を持たせるには、あらかじめIAM会員として登録されている必要があります。
+
+✔ **\[FAQ]** [権限の種類と違いを知りたいです。](https://nhn-contact.oc.toast.com/ocjp/hc/article/73/)
 
 ### IAM会員登録
 -	画面右上の **① 会員招待** ボタン → 名前、ID、メールアドレスを入力
@@ -79,6 +83,9 @@ CTI情報が正常に入力された後、電話権限のある相談員が電�
 
 SSOログイン設定時、認証処理に使用される**API認証Key**を提供し、**② API Key変更**ボタンでKey値の変更が可能です。
 
+✔ **\[FAQ]** [リモートログインURLはどのような用途で使用されますか？](https://nhn-contact.oc.toast.com/ocjp/hc/article/87/)
+✔ **\[FAQ]** [ログイン状態URL(API)はどのような用途で使用されますか？](https://nhn-contact.oc.toast.com/ocjp/hc/article/88/)
+
 ## 権限変更ログ管理
 ![](http://static.toastoven.net/prod_contact_center/ja/2.1.4-(1)_ja.png)
 **①** ヘルプセンター組織内部のオペレーター権限を変更する時のログが保存されます。組織管理者または管理者が権限の変更を行ったログを管理するメニューです。**②** 操作日時、操作内容、名前、IP、サービス、IDの項目から対象を絞りこんで検索することができます。
@@ -120,6 +127,8 @@ Online  Contact画面右上に表示された**①**現在接続されている*
 ![](http://static.toastoven.net/prod_contact_center/ja/2.1.5-(1)_ja.png)
 Online Contact画面右上に表示されている **①** 現在ログイン中の **アカウント名**をクリックすると **②** 個人情報設定メニューが開きます。このメニューではヘルプセンターにログインしているユーザー自身の個人情報設定を閲覧・変更できます。
 
+✔ **\[FAQ]** [ID、メール、名前を変更または削除したいです。](https://nhn-contact.oc.toast.com/ocjp/hc/article/70/)
+✔ **\[FAQ]** [パスワードを変更したいです。](https://nhn-contact.oc.toast.com/ocjp/hc/article/72/)
 
 ### 閲覧可能な情報
 -	アカウント 
