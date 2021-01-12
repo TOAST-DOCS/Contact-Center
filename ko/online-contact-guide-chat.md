@@ -1,4 +1,4 @@
-## Contact Center > Online Contact > 서비스 가이드 > 채
+## Contact Center > Online Contact > 서비스 가이드 > 채팅
 
 ## 기본 설정
 헬프센터 내에 채팅 기능을 **활성화**시키거나, 사용 중인 서비스 웹 페이지에 인입 스크립트를 통해 **채팅 위젯**을 추가하여 채팅 상담을 통한 문의 처리가 가능합니다.
