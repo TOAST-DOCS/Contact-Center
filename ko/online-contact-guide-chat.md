@@ -9,6 +9,9 @@
 -	채팅화면 삽입 코드: 사용 중인 서비스 페이지에 채팅 위젯을 삽입하여 Online Contact의 채팅 상담 서비스를 고객에게 제공하고 싶은 경우, 소스 코드에 삽입할 수 있도록 제공되는 **인입 스크립트** 확인
 -	카테고리 관리: 채팅 상담 시 상담원이 해당 채팅 상담에 대해 입력하는 고객의 **처리유형**을 1~3 뎁스까지 설정 가능
 
+✔ **\[FAQ 바로가기]** [채팅 화면은 채팅 권한이 있는 서비스에서만 접속할 수 있나요?](https://nhn-contact.oc.toast.com/oc/hc/article/102/)
+✔ **\[FAQ 바로가기]** [채팅은 로그인 유저만 채팅할 수 없나요?](https://nhn-contact.oc.toast.com/oc/hc/article/53/)
+
 ## 문의 접수/처리
 ### 채팅 접수
 ![](http://static.toastoven.net/prod_contact_center/5.2-(1).png)
