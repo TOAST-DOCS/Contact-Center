@@ -1,4 +1,4 @@
-## Contact Center > Online Contact > API Guide for Developers > Single Sign-On
+## Contact Center > Online Contact > API Guide for Developers > Member Integration (POST)
 
 ## Overview
 ### SSO Login Overview
