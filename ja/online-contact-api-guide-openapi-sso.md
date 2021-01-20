@@ -1,4 +1,4 @@
-## Contact Center > Online Contact > プログラマーのためのAPIガイド > シングルサインオン
+## Contact Center > Online Contact > プログラマーのためのAPIガイド > 会員認証 (POST)
 
 ## 概要
 ### シングルサインオン概要
