@@ -1,4 +1,5 @@
-## Contact Center > Online Contact > API 가이드 > SSO 로그인
+## Contact Center > Online Contact > API 가이드 > 회원 연동 (POST)
+
 ## 개요
 ### SSO 로그인 개요
 SSO 로그인은 사용자 시스템과 상담 시스템을 연동하는 기능이며, 원격인증은 API Key를 통해 진행됩니다.
