@@ -76,9 +76,9 @@ private String getSHA256Token(String serviceId, String usercode, String username
 |------------|-------|--------|-----|--------|--------------|
 |SSO 원격로그인 API (Client Side)|HTTPS  |POST    |UTF-8|Redirect    |사용자 시스템에서 동적으로 form를 생성하여 브라우저에 반환하며, form은 자동으로 API에 form정보를 전달. API에서 전달된 form정보로 인증 후 성공시 로그인 Cookie 값 설정.|
 
-사용자 시스템에서의 호출 방법은 하단 Sample project의 다음과 같은 class를 참조해 주세요.
-- FormLoginController.java
-- Method: submitLogin  
+- 사용자 시스템에서의 호출 방법은 하단 Sample project의 다음과 같은 class를 참조해 주세요.
+  - FormLoginController.java
+  - Method: submitLogin  
 
 #### 요청 파라미터 정의
 |명칭	|변수	|데이터 타입	|필수	|설명|
@@ -104,9 +104,9 @@ returnUrl 파라미터 존재시 지정된 returnUrl로 이동 , returnUrl 없�
 |------------|-------|--------|-----|--------|--------------|
 |SSO 원격로그인 API (Server Side)|HTTPS  |POST    |UTF-8|String   |사용자가 서버에서 직접 API 호출. API 로그인 성공 후 로그인 Cookie 값 설정.|
   
-사용자 시스템에서의 호출 방법은 하단 Sample project의 다음과 같은 class를 참조해 주세요.
-- ApiLoginController.java
-- Method: submitLogin     
+- 사용자 시스템에서의 호출 방법은 하단 Sample project의 다음과 같은 class를 참조해 주세요.
+  - ApiLoginController.java
+  - Method: submitLogin     
   
 #### 요청 파라미터 정의
 |명칭	|변수	|데이터 타입	|필수	|설명|
@@ -132,13 +132,14 @@ SUCCESS
 |SSO 로그인 URL|HTTPS|GET|UTF-8||Redirect|
 
 서비스 측 로그인 URL은 아래 기능을 제공해야 합니다.
-**사용자 미로그인**
+
+1) 사용자 미로그인
 - 로그인 화면 출력
 - 계정/비밀번호로 로그인 진행
 - 로그인 성공 후 cookie 생성 및 로그인 상태 기록，로그인 상태 체크시 사용 됨
 - 로그인 성공 후 Client 혹은 Server단에서 고객 정보를 OC로 전달 (SSO 원격로그인 API Client Side, Server Side 참조)
 
-**사용자 로그인 상태**
+2) 사용자 로그인 상태
 - 로그인 성공 후 Client 혹은 Server단에서 고객 정보를 OC로 전달 (SSO 원격로그인 API Client Side, Server Side 참조)
 
 #### 요청 파라미터 정의
@@ -147,17 +148,17 @@ SUCCESS
 |리턴 URL	|returnUrl	|Varchar	|O	|로그인 성공후 이동되는 URL|
 
 #### SSO 로그인 기능 설명
-**유저 미 로그인 상태**
+1) 유저 미 로그인 상태
 - ① 로그인 화면으로 이동
 - ② 유저 로그인
 - ③ 서비스 측의 서버에서 유저 로그인 처리 및 로그인 유저 관련 쿠키 생성
 - ④ SSO 원격 로그인 API 호출
 
-**유저 로그인 상태**
+2) 유저 로그인 상태
 - ① SSO 원격 로그인 API 호출
 
 #### SSO 원격 로그인 API 호출 방법 설명
-**SSO 원격 로그인 (Client Side)**
+1) SSO 원격 로그인 (Client Side)
 - ① 유저 정보와 API Key 기준으로 로그인 token 생성
 - ② 유저 정보와 token을 브라우저로 리다이렉트
 - ③ 화면에서 Form 작성, 상세한 파라미터는 [SSO 원격로그인 API (Client Side)](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-sso/#sso-api-client-side) 참조
@@ -165,7 +166,7 @@ SUCCESS
 - ⑤ SSO 원격 로그인 API를 통해 유저 정보와 token 전송
 - ⑥ 로그인 성공 후 {returnUrl}로 이동
 
-**SSO 원격 로그인 (Server Side)**
+2) SSO 원격 로그인 (Server Side)
 - ① 유저 정보와 API Key 기준으로 로그인 token 생성
 - ② 서버에서 "SSO 원격 로그인 API (Server Side)" 호출
 - ③ API 호출 파라미터 (usercode와 time)을 returnUrl 뒤에 추가 
@@ -181,9 +182,9 @@ SUCCESS
 |------------|--------|--------|------|--|----------|
 |SSO 로그인 상태 API|HTTPS|GET|UTF-8|JSON|사용자가 쿠키 정보를 기준으로 로그인 여부를 확인 후 JSON 형식의 데이터를 리턴|
 
-사용자 시스템에서의 호출 방법은 하단 Sample project의 다음과 같은 class를 참조해 주세요.
-- FormLoginController.java
-- Method: loginStatus
+- 사용자 시스템에서의 호출 방법은 하단 Sample project의 다음과 같은 class를 참조해 주세요.
+  - FormLoginController.java
+  - Method: loginStatus
 
 #### 요청 파라미터 정의 
 - 없음
