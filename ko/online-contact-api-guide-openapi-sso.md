@@ -29,9 +29,10 @@
 3. 서비스 성격에 맞는 ‘로그인 타입’ 선택
 4. 각 타입에 따라 필요한 API 개발 및 URL 설정 및 저장
 
-### 개발 명세서
-#### 인증토큰 생성
-Token 생성 샘플은 아래와 같습니다. 파라미터 순서는 반드시 아래와 일치해야 하며, SSO 로그인 API Key를 확인해주세요.
+## 개발 명세서
+### 인증토큰 생성
+Token 생성 샘플은 아래와 같습니다. 파라미터 순서는 반드시 아래와 일치해야 하며, 전체 관리 → SSO 로그인 메뉴에서 API Key를 확인해주세요.
+
 ```
 private String getSHA256Token(String serviceId, String usercode, String username, String email, String phone,
         String returnUrl, Long time, String apiKey) throws Exception {
@@ -66,8 +67,6 @@ private String getSHA256Token(String serviceId, String usercode, String username
     return new String(Base64.encodeBase64(rawHmac));
 }
 ```
-
-## SSO 로그인 API
 ### SSO 원격로그인 API (Client Side)
 #### 인터페이스 설명
 - URL: https://{domain}.oc.toast.com/v2/enduser/remote.json			
@@ -76,6 +75,10 @@ private String getSHA256Token(String serviceId, String usercode, String username
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|
 |------------|-------|--------|-----|--------|--------------|
 |SSO 원격로그인 API (Client Side)|HTTPS  |POST    |UTF-8|Redirect    |사용자 시스템에서 동적으로 form를 생성하여 브라우저에 반환하며, form은 자동으로 API에 form정보를 전달. API에서 전달된 form정보로 인증 후 성공시 로그인 Cookie 값 설정.|
+
+사용자 시스템에서의 호출 방법은 하단 Sample project의 다음과 같은 class를 참조해 주세요.
+- FormLoginController.java
+- Method: submitLogin  
 
 #### 요청 파라미터 정의
 |명칭	|변수	|데이터 타입	|필수	|설명|
@@ -101,6 +104,10 @@ returnUrl 파라미터 존재시 지정된 returnUrl로 이동 , returnUrl 없�
 |------------|-------|--------|-----|--------|--------------|
 |SSO 원격로그인 API (Server Side)|HTTPS  |POST    |UTF-8|String   |사용자가 서버에서 직접 API 호출. API 로그인 성공 후 로그인 Cookie 값 설정.|
   
+사용자 시스템에서의 호출 방법은 하단 Sample project의 다음과 같은 class를 참조해 주세요.
+- ApiLoginController.java
+- Method: submitLogin     
+  
 #### 요청 파라미터 정의
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |-----|----|-----------|-----|----|
@@ -117,9 +124,22 @@ SUCCESS
  
 ### SSO 로그인 URL (사용자)
 #### 인터페이스 설명
-|인터페이스 명|프로토콜|호출방향|인코딩|URL|URL(개발)|결과 형식|
-|------------|--------|--------|------|--|----------|--------|
-|SSO 로그인 URL|HTTPS|GET|UTF-8|사용자 제공|사용자 제공|Redirect|
+- URL: 사용자 제공			
+- URL (개발): 사용자 제공	
+
+|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|
+|------------|--------|--------|------|------|
+|SSO 로그인 URL|HTTPS|GET|UTF-8||Redirect|
+
+서비스 측 로그인 URL은 아래 기능을 제공해야 합니다.
+**사용자 미로그인**
+- 로그인 화면 출력
+- 계정/비밀번호로 로그인 진행
+- 로그인 성공 후 cookie 생성 및 로그인 상태 기록，로그인 상태 체크시 사용 됨
+- 로그인 성공 후 Client 혹은 Server단에서 고객 정보를 OC로 전달 (SSO 원격로그인 API Client Side, Server Side 참조)
+
+**사용자 로그인 상태**
+- 로그인 성공 후 Client 혹은 Server단에서 고객 정보를 OC로 전달 (SSO 원격로그인 API Client Side, Server Side 참조)
 
 #### 요청 파라미터 정의
 |명칭	|변수	|데이터 타입	|필수	|설명|
@@ -152,11 +172,18 @@ SUCCESS
   - 예시) https://nhn-cs.alpha-oc.toast.com/multilanguage/hc/ticket/list/?usercode=xxxxxx@163.com&time=1566531359635
 - ④ {returnUrl}로 이동
  
-### SSO 로그인 상태 API (사용자)
+### SSO 로그인 상태 URL (사용자)
 #### 인터페이스 설명
-|인터페이스 명|프로토콜|호출방향|인코딩|URL|URL(개발)|인터페이스 설명|결과 형식|
-|------------|--------|--------|------|--|----------|--------|--------------|
-|SSO 로그인 상태 API|HTTPS|GET|UTF-8|사용자 제공|사용자 제공|사용자가 쿠키 정보를 기준으로 로그인 여부를 확인 후 JSON 형식의 데이터를 리턴|JSON|
+- URL: 사용자 제공			
+- URL (개발): 사용자 제공	
+
+|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|
+|------------|--------|--------|------|--|----------|
+|SSO 로그인 상태 API|HTTPS|GET|UTF-8|JSON|사용자가 쿠키 정보를 기준으로 로그인 여부를 확인 후 JSON 형식의 데이터를 리턴|
+
+사용자 시스템에서의 호출 방법은 하단 Sample project의 다음과 같은 class를 참조해 주세요.
+- FormLoginController.java
+- Method: loginStatus
 
 #### 요청 파라미터 정의 
 - 없음
