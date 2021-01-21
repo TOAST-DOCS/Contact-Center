@@ -18,7 +18,7 @@
 1. USER가 헬프센터 문의하기 또는 문의 내역 페이지 접속
 2. 헬프센터 페이지에서 로그인 상태 URL 호출하여 로그인 상태 확인 (여기서 ‘로그인 상태 URL’은 고객사에서 아래 제공된 명세서에 따라 개발 후 OC 회원연동 화면에 등록해야 합니다.)
 3. 로그인 상태 확인 후 결과에 따라
-3-1 ‘미로그인’ 상태일 경우 고객사 서비스의 ‘로그인 URL’ 호출하여 로그인 유도 (여기서 ‘로그인 URL’은 고객사에서 제공하고 있는 로그인 화면 URL이며 OC 회원연동 화면에 등록해야 합니다.)
+3-1. ‘미로그인’ 상태일 경우 고객사 서비스의 ‘로그인 URL’ 호출하여 로그인 유도 (여기서 ‘로그인 URL’은 고객사에서 제공하고 있는 로그인 화면 URL이며 OC 회원연동 화면에 등록해야 합니다.)
 3-2. ‘로그인’ 상태일 경우 ‘원격 로그인 API’ 호출 하여 고객 정보를 OC헬프센터에 전달
 4. 회원 문의 또는 문의 내역 페이지 접속합니다.
 
@@ -76,9 +76,9 @@ private String getSHA256Token(String serviceId, String usercode, String username
 |------------|-------|--------|-----|--------|--------------|
 |SSO 원격로그인 API (Client Side)|HTTPS  |POST    |UTF-8|Redirect    |사용자 시스템에서 동적으로 form를 생성하여 브라우저에 반환하며, form은 자동으로 API에 form정보를 전달. API에서 전달된 form정보로 인증 후 성공시 로그인 Cookie 값 설정.|
 
-- 사용자 시스템에서의 호출 방법은 하단 Sample project의 다음과 같은 class를 참조해 주세요.
-  - FormLoginController.java
-  - Method: submitLogin  
+**사용자 시스템에서의 호출 방법**은 하단 Sample project의 다음과 같은 class를 참조해 주세요.
+- FormLoginController.java
+- Method: submitLogin  
 
 #### 요청 파라미터 정의
 |명칭	|변수	|데이터 타입	|필수	|설명|
@@ -104,9 +104,9 @@ returnUrl 파라미터 존재시 지정된 returnUrl로 이동 , returnUrl 없�
 |------------|-------|--------|-----|--------|--------------|
 |SSO 원격로그인 API (Server Side)|HTTPS  |POST    |UTF-8|String   |사용자가 서버에서 직접 API 호출. API 로그인 성공 후 로그인 Cookie 값 설정.|
   
-- 사용자 시스템에서의 호출 방법은 하단 Sample project의 다음과 같은 class를 참조해 주세요.
-  - ApiLoginController.java
-  - Method: submitLogin     
+**사용자 시스템에서의 호출 방법**은 하단 Sample project의 다음과 같은 class를 참조해 주세요.
+- ApiLoginController.java
+- Method: submitLogin     
   
 #### 요청 파라미터 정의
 |명칭	|변수	|데이터 타입	|필수	|설명|
@@ -182,9 +182,9 @@ SUCCESS
 |------------|--------|--------|------|--|----------|
 |SSO 로그인 상태 API|HTTPS|GET|UTF-8|JSON|사용자가 쿠키 정보를 기준으로 로그인 여부를 확인 후 JSON 형식의 데이터를 리턴|
 
-- 사용자 시스템에서의 호출 방법은 하단 Sample project의 다음과 같은 class를 참조해 주세요.
-  - FormLoginController.java
-  - Method: loginStatus
+**사용자 시스템에서의 호출 방법**은 하단 Sample project의 다음과 같은 class를 참조해 주세요.
+- FormLoginController.java
+- Method: loginStatus
 
 #### 요청 파라미터 정의 
 - 없음
