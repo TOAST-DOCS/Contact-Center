@@ -15,6 +15,7 @@
 - WEB 기반이 아닌 Native APP 서비스의 경우 적합한 연동 방식입니다.
 
 ### 프로세스 (GET 방식)
+
 1. USER가 APP 내에서 헬프센터에 접속합니다.
 2. 고객사의 APP은 헬프센터 호출 시 아래 URL 형식으로 호출합니다.
 - https://**{org}**.oc.toast.com/**{service}**/hc/?usercode=**{유저_아이디}**&username=**{유저_이름}**&email=**{유저_이메일}**&phone=**{유저_전화번호}**&token=**{인증토큰_값}**
