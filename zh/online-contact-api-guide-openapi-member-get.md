@@ -2,7 +2,8 @@
 
 ## Member Integration
 ### Overview
-Member Intergration function is designed to apply the membership confirmation process of the service provided by the customer company to the Online Contact help center so that the inquiry of the customer can be received and checked again.
+Member Intergration function is designed to apply the membership confirmation process of the service provided by the customer company to the Online Contact help center so that the inquiry of the customer can be received and checked again. Member Integration is provided in two types: GET method and POST method. For integrating, you need to develop the API according to the development specifications Online Contact provide and register it on the Member Integration screen.
+
 
 #### POST Method
 - It is suitable if the service you want to link to is provided based on WEB on both PC and MOBILE platforms.
