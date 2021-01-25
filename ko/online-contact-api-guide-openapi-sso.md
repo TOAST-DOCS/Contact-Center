@@ -15,7 +15,6 @@
 - WEB 기반이 아닌 Native APP 서비스의 경우 적합한 연동 방식입니다.
 
 ### 프로세스 (POST 방식)
-![](http://static.toastoven.net/prod_contact_center/dev_post_(3).png)
 ① USER가 헬프센터 문의하기 또는 문의 내역 페이지 접속
 ② 헬프센터 페이지에서 로그인 상태 URL 호출하여 로그인 상태 확인 (여기서 ‘로그인 상태 URL’은 고객사에서 아래 제공된 명세서에 따라 개발 후 OC 회원연동 화면에 등록해야 합니다.)
 ③ 로그인 상태 확인 후 결과에 따라
