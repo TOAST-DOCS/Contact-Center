@@ -11,6 +11,9 @@ You could enable chat function in [Service Management → Help Center → Defaul
 -	Chat Screen Insertion Code: If you want to insert chat widget to your service web page to provide Online Contact’s chat consultation service to customers, check **insertion code** in this menu. 
 -	Manage Category: Can set **processing type** which agents enter about the relevant chat consultation by 1 to 3 depth.
 
+✔ **\[FAQ]** [Can I access to the chat screen only from the service which I have chat permission?](https://nhn-contact.oc.toast.com/oceng/hc/article/151/)
+✔ **\[FAQ]** [Can I set chat function so that only logged-in users can participate?](https://nhn-contact.oc.toast.com/oceng/hc/article/136/)
+
 ## Chat inquiry Receipt/Processing
 ### Chat reception
 ![](http://static.toastoven.net/prod_contact_center/5.2-(1)_en.png)

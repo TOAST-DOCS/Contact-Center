@@ -30,12 +30,16 @@ Online Contact에서는 **상담 관리**, **이슈 관리**의 2가지 서비�
 ![](http://static.toastoven.net/prod_contact_center/2.1.1-(4).png)
 **요금 현황** 탭에서는 전체, 서비스 유형별, 개별 서비스별 월별 청구 요금을 **①** 검색하여 조회하실 수 있습니다. 개별 서비스를 기준으로 조회하셨을 경우 **②** 서비스 상태가 함께 표시됩니다. 
 
+✔ **\[FAQ 바로가기]** [과금 기준은 어떻게 되나요?](https://nhn-contact.oc.toast.com/oc/hc/article/99/)
+✔ **\[FAQ 바로가기]** [요금은 언제 어떻게 결제되나요?](https://nhn-contact.oc.toast.com/oc/hc/article/67/)
 
 ## 조직관리자
 ![](http://static.toastoven.net/prod_contact_center/2.1.2-(1).png)
 **조직관리자**는 Online Contact를 사용하는 조직을 관리할 수 있는 권한을 가지며, 상담원의 추가 및 삭제가 가능하고, 상담원 중에서 조직관리자를 추가하거나 삭제하실 수 있습니다. 
 조직관리자 권한만으로는 상담 기능과 서비스 관리 기능을 이용할 수 없으므로, 상담을 진행하고자 하거나 서비스를 초기에 구성하고자 하는 경우 [서비스 관리 → 상담원](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_25) 메뉴에서 관리자 또는 상담원 권한을 추가해주세요. 
 조직관리자 권한을 부여할 사용자는 IAM 회원으로 등록되어 있어야 합니다.
+
+✔ **\[FAQ 바로가기]** [권한의 종류와 차이점을 알고 싶습니다.](https://nhn-contact.oc.toast.com/oc/hc/article/36/)
 
 ### IAM 회원 등록
 -	화면 우측 상단 **① 회원 초대** 버튼 → 이름, ID, 이메일 입력
@@ -80,6 +84,8 @@ CTI 정보가 정상적으로 입력된 후에, 전화 권한이 있는 상담�
 
 SSO 로그인 설정 시 인증 처리에 사용되는 **API 인증 Key**를 제공하며, **② API Key 변경** 버튼을 통해 Key값 변경이 가능합니다.
 
+✔ **\[FAQ 바로가기]** [원격 로그인 URL은 어떤 용도로 사용되나요?](https://nhn-contact.oc.toast.com/oc/hc/article/50/)
+✔ **\[FAQ 바로가기]** [로그인 상태 URL(API)은 어떤 용도로 사용되나요?](https://nhn-contact.oc.toast.com/oc/hc/article/51/)
 
 ## 권한 변경 로그 관리
 ![](http://static.toastoven.net/prod_contact_center/2.1.4-(1).png)

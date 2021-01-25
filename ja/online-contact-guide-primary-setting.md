@@ -70,3 +70,5 @@ Online Contactサービスの初期設定が完了しました。 表示され�
 ![](http://static.toastoven.net/prod_contact_center/ja/1.3.4-(2)_ja.png)
 **①** パスワードを忘れた時は、ここをクリックしIAM会員登録時に登録したメールアカウントに認証メールが送信することができます。 そのメールに記載されたURLにアクセスしてパスワードを新しく設定してください。
 パスワードは、英数字·特殊文字を組み合わせた8~15桁で設定してください。
+
+✔ **\[FAQ]** [パスワードを変更したいです。](https://nhn-contact.oc.toast.com/ocjp/hc/article/72/)

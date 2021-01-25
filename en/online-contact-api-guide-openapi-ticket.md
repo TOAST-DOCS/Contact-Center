@@ -17,11 +17,12 @@
 |    	     |categoryId	|Int	|X	|Category ID，If none, no need to specify|
 |   	     |subject	    |String	|O	|Ticket title（max=255）|
 |          |content	        |String	|O	|Ticket contents|
-| 	       |endUser.usercode	|String	|O	|User code（Unique value）|
-|	         |endUser.email	    |String	|X	|User email（When ticket is processed, answer mail would be sent to the email. If none, mail would not be sent.)|
+| 	       |endUser.usercode	|String	|O	|User code（Unique value）If usercode value is null because the inquiry was submitted by non-member, create unique value through format such as mail+name+phone number |
+|	         |endUser.email	    |String	|X	|User email（When ticket is processed, answer mail would be sent to the email. If none, mail would not be sent.) Required value if ticket inquiry is processed in Online Contact|
 |	         |endUser.username	|String	|X	|User name|
 |          |endUser.phone	    |String	|X	|User phone number|
 |	         |addition	        |String	|X	|Information about fields added in addition to default fields|
+|            |status	        |String |X	|Value : open(processing), new(unassigned), default : open(processing)|
 |	         |attachments[].attachmentId	|String	|X	|Attachment ID|
 
 #### Request Body
@@ -37,6 +38,7 @@
         "phone":"13333333333"
     },
     "addition":"{'sex':'male','age':20}" ,
+    "status":"new" ,
     "attachments":[
        {
             "attachmentId":"5a13cbfd3c574f7dae644536d3e4159c"
@@ -56,7 +58,7 @@
 |	              |subject	    |String	|O	|Ticket title|
 |	              |categoryId	|Int	|X	|Submission category ID|
 |               |categoryName	|String	|X	|Submission category name|
-|	              |status	    |String	|O	|Ticket status（open:new ticket; closed:processed）|
+|	              |status	    |String	|O	|Ticket status (new : unassigned ; open : processing ; closed : processed)|
 |	              |endUser.usercode	|String	|O	|User code（Unique value）|
 |	              |endUser.email	|String	|X	|User email（When ticket is processed, answer mail would be sent to the email. If none, mail would not be sent.)|
 |	              |endUser.username	|String	|X	|User name|
@@ -132,6 +134,8 @@
 |-----|-----|-----------|-----|---|
 |Service ID	|serviceId	|String	|O	|Service ID，{serviceId} which is set in URL path|
 |Ticket ID	|id	|String	|O	|Ticket ID|
+|Response Contents|	comment	|String	|O	|{"comment":"Response Contents"} submitted by Request Body|
+|Agent Name|	assigneeName	|String	|X	|Agent who will process the ticket, Default value : null|
 |Attachment	|attachments	|String	|X	|Attachment ID（Format（File ID seperated by comma）：FileID1, FileID2, …, FileIDn）|
 
 #### Result Data
@@ -155,11 +159,20 @@
 |	              |contents.attachments	|String	|X	|Ticket processing attachment ID|
 |	              |attachments[].attachmentId	|String	|X	|Attachment ID|
 |               |addition	|String	|X	|Information about fields added in addition to default fields|
+|               |assigneeName	|String	|X	|Assigned agent, Default Value : null|
+
+
+#### Request URL
+?id=**TicketID**&assigneeName=**Ticket Assignee Name**	
 
 #### Request Body
-- 형식: application/json;charset=UTF-8
+- Format: application/json;charset=UTF-8
 ```
-{"comment":"comment content.XXXXXXXXX"}
+{
+   "comment":"Response Contents"
+}
+
+
 ```
 
 #### Response Body
@@ -191,6 +204,7 @@
             ],
             "attachments":null,
             "addition":null
+           "assigneeName":"Name" 
         }
     }
 }
@@ -242,6 +256,7 @@
 |	            |attachments.size	|Long	|X	|Ticket inquiry attachment size|
 |	            |attachments.createdDt	|Long	|X	|Ticket inquiry attachment attached time|
 |	            |addition	|String	|X	|Information about fields added in addition to default fields|
+|               |assigneeName	|String	|X	|Assigned agent, Default Value : null|
 
 #### Response Body
 ```
@@ -311,6 +326,7 @@
                 }
             ],
             "addition":"{'sex':'male','age':20}"
+            "assigneeName":"Name"
         }
     }
 }

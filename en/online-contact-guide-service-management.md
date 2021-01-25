@@ -25,6 +25,8 @@ In the Open API tab, **① OPEN API Activation** which allows access to data ins
 ## Chat
 Functions in this menu are related to chat consultation. Chat consultation could be enabled in [Service Management → Help Center → Default Settings](https://docs.toast.com/en/Contact%20Center/en/online-contact-guide-service-management/#default-settings_1), and could be accessed through **chat icon** which is displayed in the bottom right side after chat consultation is enabled.
 
+✔ **\[FAQ]** [Can I access to the chat screen only from the service which I have chat permission?](https://nhn-contact.oc.toast.com/oceng/hc/article/151/)
+
 ![](http://static.toastoven.net/prod_contact_center/2.2.2-(1)_en.png)
 After accessing through **chat icon**, click **status value** in the top left of the chat screen to set your status. (initially set to ‘offline’, can choose between online/break/offline). Responding to customer's chat request is only available when chat status is set to online.
 
@@ -86,6 +88,9 @@ Triggers are designed to increase task productivity by **automating** repetitive
 Example) If `Submission Type` of the ticket = `Billing`, `Assign` ticket to `test01` agent of `Billing` group `necessarily`
 
 Click the **① Add Trigger** button, enter all the title, conditions, and results, and click the **Save** button to save and activate the trigger. Enabled triggers can be disabled via the **② Disable** button, and conditions or results can be modified via the **③ Edit** button.
+
+✔ **\[FAQ]** [How can I automatically forward the received inquiry?](https://nhn-contact.oc.toast.com/oceng/hc/article/126/)
+✔ **\[FAQ]** [Can notification emails be sent under certain conditions?](https://nhn-contact.oc.toast.com/oceng/hc/article/125/)
 
 #### Trigger Condition Types
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(2)a_en.png)
@@ -159,16 +164,24 @@ Template managing is a feature that allows you to quickly process tickets by **p
 
 **① Add Template** button allows you to add a template. The submission type you need to select is which you previously added in [Service Management → Ticket → Manage Category]( https://docs.toast.com/en/Contact%20Center/en/online-contact-guide-service-management/#manage-category_1). You can insert links, images, and tables when you right-click on the body of the content.
 
+✔ **\[FAQ]** [How can I use answer templates?](https://nhn-contact.oc.toast.com/oceng/hc/article/122/)
+✔ **\[FAQ]** [I registered answer templates, but they are not shown when processing tickets.](https://nhn-contact.oc.toast.com/oceng/hc/article/143/)
+
 ### Email Settings
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(8)_en.png)
 You can create a **① representative account address** which domain is provided from Online Contact, or register a service representative account using one’s service domain by enrolling **② External account **.
 
 **③** You can save the **sender's name** and **address** of the email sent through Online Contact and can set common **Mail Layout** for every sent mail. If you delete the replacement code (#{content}) of the body, the contents in the answer mail may not be displayed, so please be aware to not delete the replacement code when creating layout. Also note that this is a common layout which applies to all outgoing mail, including the templates you created earlier in Ticket → Manage Template menu, so make sure there are no conflicts between layout and templates.
 
+✔ **\[FAQ]** [How can I connect my external email to Online Contact?](https://nhn-contact.oc.toast.com/oceng/hc/article/127/)
+
 ## Call
 In Call menu, you could register **IVR Route Code, Name** for managing callback, and register **Calling Number** which is displayed to the customer when making a outbound call. This menu is only viewable in services which **Ticket Management →  Include call(using CTI)** function is **activated** in contract details. 
 
 When call function is activated, to call authorized agents **call widget** will be shown, which allows agents to access call consultation related features.
+
+✔ **\[FAQ]** [Call icon is not displayed to the agent.](https://nhn-contact.oc.toast.com/oceng/hc/article/153/)
+✔ **\[FAQ]** [Can I access the CTI screen only when accessing service with call authority?](https://nhn-contact.oc.toast.com/oceng/hc/article/150/)
 
 ### IVR Route Management
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(8)-1_en.png)
@@ -201,6 +214,8 @@ Agent which CTI information is registered in Global Management → CTI Managemen
 - Ready : Set Agent status to ready, call request allocated when inbound call exists.
 - Business : Can choose between Education, Report, Meeting, Ticket, Chat, Monitor. Call request not allocated in this status.
 - Dial up: Can make outbound call after setting customer number, calling number. (Can set in Service Management → Call → Send No Management menu)
+
+✔ **\[FAQ]** [I have problems with CTI login.](https://nhn-contact.oc.toast.com/oceng/hc/article/152/)
 
 #### Inbound Call
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(11)_en.png)
@@ -267,6 +282,9 @@ There are two basic templates available, and you can add new templates with the 
 
 ![](http://static.toastoven.net/prod_contact_center/2.2.5-(2)_en.png)
 When adding or editing templates, you can directly input **① CSS / HTML / JS scripts**, or upload appropriate file (script, font, image, etc.) and enter the path of the resource in the editor to change the configuration of the Help Center. Through **Preview** button you could see the edits being applied, and after **saving**, you could apply the template.  
+
+✔ **\[FAQ]** [Is there some specific examples of managing help center PC/Mobile templates?](https://nhn-contact.oc.toast.com/oceng/hc/article/141/)
+✔ **\[FAQ]** [Can I change the font of the help center text or apply effects such as bold, underline, etc. ?](https://nhn-contact.oc.toast.com/oceng/hc/article/145/)
 
 **When modifying CSS**, the key elements you can refer are as follows:
 
@@ -418,6 +436,8 @@ When registering your account, you can set whether to switch tickets for **① T
 
 Access your Twitter account and check More → Settings and Privacy → Privacy and Safety → Direct Messages → **Receive message requests** must be enabled before a message to the linked account can be received as a ticket.
 
+✔ **\[FAQ]** [What is the process of submitting/answering tickets when external channel is activated?](https://nhn-contact.oc.toast.com/oceng/hc/article/142/)
+
 ### Kakao Talk Plus Friend
 ![](http://static.toastoven.net/prod_contact_center/2.2.6-(3)_en.png)
 You can **① Enable** or **Disable** KakaoTalk connection, and could register KakaoTalk ID and date to activate by **② Register** button when KakaoTalk connection is enabled. The connection takes up to 1~2 business days, and if the connection is rejected, the reason for rejection will be displayed. You must change Management → Detailed Settings → Channel Home → Enable Public Search to **ON** in the KakaoTalk channel manager center to connect with Online Contact.
@@ -435,4 +455,11 @@ Click on the **Account which is connected** to set up the details of the KakaoTa
     - End of consultation: Comment sent when consultation **ended**
 
 When KakaoTalk is connected and activated in Online Contact, the existing plus friend 1:1 chat will be stopped, and inquiries received through KakaoTalk will be showed in the chat screen, with ‘channel’ of the ticket marked as ‘KakaoTalk’.
+
+✔ **\[FAQ]** [What is the process of submitting/answering tickets when external channel is activated?](https://nhn-contact.oc.toast.com/oceng/hc/article/142/)
+
+## Security Management
+![](http://static.toastoven.net/prod_contact_center/2.2.6-(5)_en.png)
+If you have enabled the Service Management → Security Service feature in the contract information through prior consultation you can enable or disable **log linkage** in the  **Security Service** menu.
+Please contact the Online Contact administrator for enabling/disabling of log interlocking services through **Online Contact Customer Center**. ([Online Contact Customer Center Shortcut](https://nhn-contact.oc.toast.com/oceng/hc/))
 

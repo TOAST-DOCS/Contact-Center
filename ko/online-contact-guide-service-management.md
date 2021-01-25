@@ -27,7 +27,9 @@ OPEN API 탭에서는 외부에서 Online Contact의 데이터에 접근할 수 
 
 
 ## 채팅
-채팅 기능에 관련된 항목들입니다. 채팅 기능은 [서비스 관리 → 헬프센터 → 구성관리](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_32)에서 활성화하실 수 있으며, 활성화된 이후에 노출되는 우측 하단 **채팅 아이콘**으로 접속 가능합니다. 
+채팅 기능에 관련된 항목들입니다. 채팅 기능은 [전체관리 → 계약 서비스 현황 → 계약 현황](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-global-management/#_2) 탭에서 수정하실 수 있는 계약 상세 내역에서 채팅 기능을 사용 설정하신 후 [서비스 관리 → 헬프센터 → 구성관리](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_32)에서 활성화하실 수 있으며, 활성화된 이후에 노출되는 우측 하단 **채팅 아이콘**으로 접속 가능합니다. 
+
+✔ **\[FAQ 바로가기]** [채팅 화면은 채팅 권한이 있는 서비스에서만 접속할 수 있나요?](https://nhn-contact.oc.toast.com/oc/hc/article/102/)
 
 ![](http://static.toastoven.net/prod_contact_center/2.2.2-(1).png)
 **채팅 아이콘**을 통해 접속한 후 **①** 좌측 상단 **상태 값**을 클릭하시면 (초기 기본값 ‘오프라인’) 온라인/휴식/오프라인 중 하나로 상태를 설정하실 수 있으며, 온라인 상태일 경우에만 고객의 채팅 요청에 답변할 수 있습니다.
@@ -188,6 +190,9 @@ Online Contact에서 도메인을 제공하는 **① 대표 계정 주소**를 �
 
 전화 기능이 사용 설정되어 있는 상태에서 전화 권한이 부여된 상담원에게는 **전화 위젯**이 표시되며, 해당 위젯을 통해 전화 상담 관련 기능들을 이용하실 수 있습니다.
 
+✔ **\[FAQ 바로가기]** [상담원에게 전화 아이콘이 표시되지 않아요.](https://nhn-contact.oc.toast.com/oc/hc/article/104/)
+✔ **\[FAQ 바로가기]** [CTI 화면은 전화 권한이 있는 서비스에서만 접속할 수 있나요?](https://nhn-contact.oc.toast.com/oc/hc/article/101/)
+
 ### IVR Route 관리
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(8)-1.png)
 IVR Route 관리 메뉴에서는 콜백 관리를 위한 **IVR 경로 코드**와 **IVR 경로명**을 등록 및 관리하실 수 있습니다.
@@ -218,6 +223,8 @@ IVR Route 관리 메뉴에서는 콜백 관리를 위한 **IVR 경로 코드**�
 - 대기: 대기 상태로 설정되어 콜이 인입될 경우 할당됩니다.
 - 업무: 교육, 취합/보고, 회의, 티켓처리, 채팅처리, 코칭(모니터링) 중 업무 상태를 선택하실 수 있으며, 콜이 할당되지 않습니다.
 - 걸기: 고객번호와 발신번호 (서비스 관리 → 전화 → 발신번호 관리에서 설정) 설정 후 전화를 거실 수 있습니다.
+
+✔ **\[FAQ 바로가기]** [CTI 로그인이 진행되지 않아요.](https://nhn-contact.oc.toast.com/oc/hc/article/103/)
 
 #### 전화 인입
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(11).png)
@@ -286,6 +293,7 @@ CTI 로그인된 상태에서 CTI 화면 → **① 걸기** 버튼을 누르시�
 템플릿 추가 및 수정 시 **① CSS / HTML / JS 스크립트**를 주어진 편집기에 직접 작성하시거나 [서비스 관리 → 헬프센터 → 파일업로드 관리](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_31) 메뉴에서 필요하신 파일(스크립트, 폰트, 이미지 등)을 업로드하신 후 리소스의 경로를 입력하심을 통해 헬프센터의 구성을 변경하실 수 있습니다. 편집 후 **미리보기** 버튼을 통하여 편집 내용이 헬프센터에 적용된 모습을 바로 보실 수 있으며, **저장**하신 후 적용이 가능합니다.
 
 ✔ **\[FAQ 바로가기]** [헬프센터 PC/모바일 템플릿 관리 기능의 구체적인 예시가 궁금해요.](https://nhn-contact.oc.toast.com/oc/hc/article/60/)
+✔ **\[FAQ 바로가기]** [헬프센터 텍스트의 폰트를 바꾸거나, 굵게/밑줄 등의 효과를 적용할 수 있나요?](https://nhn-contact.oc.toast.com/oc/hc/article/64/)
 
 **CSS 수정 시** 활용하실 수 있는 주요한 요소들은 다음과 같습니다.
 
@@ -470,5 +478,5 @@ CTI 로그인된 상태에서 CTI 화면 → **① 걸기** 버튼을 누르시�
 
 ## 보안서비스
 ![](http://static.toastoven.net/prod_contact_center/2.2.6-(5).png)
-계약 정보에서 서비스 관리 → 보안 서비스 기능을 사용 설정하신 경우, **보안서비스** 메뉴가 표시되어 **로그 연동 여부**를 설정하실 수 있습니다.
+Online Contact 관리자와의 사전 협의를 통해 계약 정보에서 서비스 관리 → 보안 서비스 기능을 사용 설정하신 경우, **보안서비스** 메뉴에서 **로그 연동 여부**를 설정하실 수 있습니다.
 연동 서비스에 대한 활성화/비활성화는 **Online Contact 고객센터**를 통해 관리자에게 문의 부탁드립니다. ([Online Contact 고객센터 바로가기](https://nhn-contact.oc.toast.com/oc/hc/))

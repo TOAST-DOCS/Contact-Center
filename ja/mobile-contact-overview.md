@@ -9,9 +9,3 @@
 ## 主要機能
 ![](http://static.toastoven.net/prod_contact_center/MC_overview_3_ja.png)
 ![](http://static.toastoven.net/prod_contact_center/MC_overview_4_ja.png)
-
-## 活用事例
-![](http://static.toastoven.net/prod_contact_center/MC_overview_5_ja.png)
-
-## 料金制度
-![](http://static.toastoven.net/prod_contact_center/MC_overview_6_ja.png)
