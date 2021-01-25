@@ -209,7 +209,7 @@ SUCCESS
 
 ## 適用例
 ### Sample Code
-✔ [Sample Code 다운로드](http://static.toastoven.net/prod_contact_center/oc_sso_sample.zip)
+✔ [Sample Code ダウンロード](http://static.toastoven.net/prod_contact_center/oc_sso_sample.zip)
 
 ### iframeを利用したヘルプセンターの例
 #### 1. iframeを利用してOnline  Contactヘルプセンターをユーザーページに挿入
