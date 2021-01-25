@@ -44,6 +44,8 @@ You could **① search** based on the total/average, processing type/submission 
 
 You could download tabular data based on the conditions applied to Excel, by **② Download** button.
 
+✔ **\[FAQ]** [In report, what does 'Processing status in time interval by submission type' show?](https://nhn-contact.oc.toast.com/oceng/hc/article/138/)
+
 ### Performance Statistics
 ![](http://static.toastoven.net/prod_contact_center/6.3-(1)_en.png)
 ![](http://static.toastoven.net/prod_contact_center/6.3-(2)_en.png)
@@ -65,6 +67,8 @@ You could **① search** based on the total/average, agent group, and received d
 -	Processing: The case which the agent clicked the customer’s chat request, and **have replied** to the customer
 
 You could download tabular data based on the conditions applied to Excel, by **② Download** button.
+
+✔ **\[FAQ]** [In report, what does 'Processing status in time interval by submission type' show?](https://nhn-contact.oc.toast.com/oceng/hc/article/138/)
 
 ### Satisfaction Statistics
 ![](http://static.toastoven.net/prod_contact_center/6.4-(1)_en.png)

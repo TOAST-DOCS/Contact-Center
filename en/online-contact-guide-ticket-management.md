@@ -6,7 +6,7 @@ Tickets which were submitted/created by help center · mail · external channel 
 ![](http://static.toastoven.net/prod_contact_center/4.1.1-(1)_en.png)
 From **① All Tickets** Menu, you could check overall current situation of tickets regardless of ticket’s status and assigned agent. And from other **detailed menus**, you could check current situation of tickets displayed by **detailed conditions** such as group, ticket status. The color of each ticket is **given by each inflow channel**, so it could be used to classify tickets. Please refer to the image below for the type of inflow channel represented by each color.
 
-![](http://static.toastoven.net/prod_contact_center/4.1.1-(1)a_en.png)
+![](http://static.toastoven.net/prod_contact_center/4.1.1-(1)a_2_en.png)
  
 Information which you could check by each **detailed menu** is as follows:
 -	**②** All Unassigned Tickets: You can view all **unassigned tickets**. 
@@ -62,6 +62,9 @@ If you click tickets, you could utilize **Ticket Information**, **Ticket History
 
   
 You could use **Ticket Batching** to make a batch of answers to tickets with similar inquiries, or to change the agent or group of tickets collectively. **⑤ Ticket Batching** button is in the upper side of ticket list.
+
+✔ **\[FAQ]** [How can I use answer templates?](https://nhn-contact.oc.toast.com/oceng/hc/article/122/)
+✔ **\[FAQ]** [Can I process tickets with the same inquiry all at once?](https://nhn-contact.oc.toast.com/oceng/hc/article/121/)
 
 ### Create Tickets
 ![](http://static.toastoven.net/prod_contact_center/4.1.2-(6)_en.png)

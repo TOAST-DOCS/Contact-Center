@@ -46,6 +46,8 @@
 
 **② 데이터 추출** 버튼을 통해서, 적용한 조건에 따라 산출된 표 형태의 데이터를 엑셀로 다운로드 받을 수 있습니다.
 
+✔ **\[FAQ 바로가기]** [통계에서 시간 구간내 처리 현황은 어떤 통계인가요?](https://nhn-contact.oc.toast.com/oc/hc/article/55/)
+
 
 ## 실적 통계
 ![](http://static.toastoven.net/prod_contact_center/6.3-(1).png)
@@ -68,6 +70,9 @@
 -	처리: 상담원이 대기 목록에서 고객의 상담 요청을 클릭한 후 **답변을 전송**했을 경우
 
 **② 데이터 추출** 버튼을 통해서, 적용한 조건에 따라 산출된 표 형태의 데이터를 엑셀로 다운로드 받을 수 있습니다.
+
+✔ **\[FAQ 바로가기]** [통계에서 시간 구간내 처리 현황은 어떤 통계인가요?](https://nhn-contact.oc.toast.com/oc/hc/article/55/)
+
 
 ## 만족도 통계
 ![](http://static.toastoven.net/prod_contact_center/6.4-(1).png)

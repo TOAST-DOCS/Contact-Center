@@ -17,11 +17,12 @@
 |    	     |categoryId	|Int	|X	|受付タイプID，ない場合は指定しなくてもよい|
 |   	     |subject	    |String	|O	|チケットのタイトル（max=255）|
 |          |content	        |String	|O	|チケット内容|
-| 	       |endUser.usercode	|String	|O	|ユーザーコード（唯一の値）|
-|	         |endUser.email	    |String	|X	|ユーザーメール（チケット処理の際、該当メールに返答が送信されます。 ない場合はメールが送信されません。)|
+| 	       |endUser.usercode	|String	|O	|ユーザーコード（唯一の値）非会員のお問い合わせにより該当する値がない場合、Eメール+名前+電話番号などの形で唯一の値を作成|
+|	         |endUser.email	    |String	|X	|ユーザーメール（チケット処理の際、該当メールに返答が送信されます。 ない場合はメールが送信されません。)チケットをOnline Contactで処理する際は必須項目|
 |	         |endUser.username	|String	|X	|ユーザー名|
 |          |endUser.phone	    |String	|X	|ユーザー電話番号|
 |	         |addition	        |String	|X	|基本フィールドの他に追加されたフィールド情報|
+|            |status	        |String	|X	|値 : open(処理中), new(アサイン待ち), 基本値 : open(処理中)|
 |	         |attachments[].attachmentId	|String	|X	|添付ファイルID|
 
 #### Request Body
@@ -37,6 +38,7 @@
         "phone":"13333333333"
     },
     "addition":"{'sex':'male','age':20}" ,
+    "status":"new" ,
     "attachments":[
        {
             "attachmentId":"5a13cbfd3c574f7dae644536d3e4159c"
@@ -56,7 +58,7 @@
 |	              |subject	    |String	|O	|チケットタイトル|
 |	              |categoryId	|Int	|X	|受付タイプID|
 |               |categoryName	|String	|X	|受付タイプ名|
-|	              |status	    |String	|O	|チケットの状況（open:新規チケット; closed:処理完了）|
+|	              |status	    |String	|O	|チケットの状況（new : アサイン待ち ; open : 処理中 ; closed : 処理完了）|
 |	              |endUser.usercode	|String	|O	|ユーザーコード（唯一の値）|
 |	              |endUser.email	|String	|X	|ユーザーメール（チケット処理の際、該当メールに返答が送信されます。 ない場合はメールが送信されません。)|
 |	              |endUser.username	|String	|X	|ユーザー名|
@@ -132,6 +134,8 @@
 |-----|-----|-----------|-----|---|
 |サービスID	|serviceId	|String	|O	|サービスID，URL PATH内に設定した{serviceId}|
 |チケットID	|id	|String	|O	|チケットID|
+|回答内容	|comment	|String	|O	|Request Bodyで提出した {"comment":"回答内容"}|
+|チケット処理者名	|assigneeName	|String	|X	|チケット処理者, 基本値 : null|
 |添付ファイル	|attachments	|String	|X	|添付ファイルID（形式（ファイルIDは　,で分離）：ファイルID1,ファイルID2,…,ファイルIDn）|
 
 #### 結果データ
@@ -155,12 +159,17 @@
 |	              |contents.attachments	|String	|X	|チケット処理添付ファイルID|
 |	              |attachments[].attachmentId	|String	|X	|添付ファイルID|
 |               |addition	|String	|X	|基本フィールドの他に追加されたフィールド情報|
+|　　　　　　　　　|assigneeName	|String	|X	|チケット処理者 , 基本値 : null|
 
+#### Request URL				
+?id=チケットID&assigneeName=チケット処理者名				
 
 #### Request Body
 - 形式: application/json;charset=UTF-8
 ```
-{"comment":"comment content.XXXXXXXXX"}
+{
+   "comment":"チケット回答内容"
+}
 ```
 
 #### Response Body
@@ -192,6 +201,7 @@
             ],
             "attachments":null,
             "addition":null
+           "assigneeName":"チケット処理者名" 
         }
     }
 }
@@ -243,6 +253,7 @@
 |	            |attachments.size	|Long	|X	|チケットお問い合わせ添付ファイルのサイズ|
 |	            |attachments.createdDt	|Long	|X	|チケットお問い合わせ添付ファイルのアップロード時間|
 |	            |addition	|String	|X	|基本フィールドの他に追加されたフィールド情報|
+|　　　　　　　　　|assigneeName	|String	|X	|チケット処理者 , 基本値 : null|
 
 #### Response Body
 ```
@@ -312,6 +323,7 @@
                 }
             ],
             "addition":"{'sex':'male','age':20}"
+            "assigneeName":"チケット処理者名"
         }
     }
 }

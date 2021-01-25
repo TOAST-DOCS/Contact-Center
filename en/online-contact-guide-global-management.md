@@ -27,11 +27,16 @@ If you leave without going through all the steps of entering basic information a
 ![](http://static.toastoven.net/prod_contact_center/2.1.1-(4)_en.png)
 **Rate status** tab allows you to view monthly charges by type, individual service, and total through **①** Search button. **②** Service status will be displayed together if charges are set to be viewed based on individual services.
 
+✔ **\[FAQ]** [I want to know about the charge criteria.](https://nhn-contact.oc.toast.com/oceng/hc/article/148/)
+✔ **\[FAQ]** [When and how will the charge be paid?](https://nhn-contact.oc.toast.com/oceng/hc/article/147/)
+
 ## Organization Adminstrator
 ![](http://static.toastoven.net/prod_contact_center/2.1.2-(1)_en.png)
 **Organization Administrator** can manage the organization which uses Online Contact, can add and delete agents, and can add or delete organization administrators from among agents.
 Since consulting and service management functions are not available only by the organization administrator's authority, adding administrator or agent authority from [Service Management → Agent](https://docs.toast.com/en/Contact%20Center/en/online-contact-guide-service-management/#agent_1) menu is needed to consult customers, or set service initially.
 The user whom you want to grant organization administrator permission must be registered as an IAM member.
+
+✔ **\[FAQ]** [Types and difference between permissions](https://nhn-contact.oc.toast.com/oceng/hc/article/119/)
 
 ### Register as an IAM Member
 -	Click **① Invite Members** button → Enter name, ID, email
@@ -48,7 +53,7 @@ This menu is only viewable in services which **Ticket Management →  Include ca
 From CTI Setting menu, you could set CTI to connect with call consultation function of Online Contact.
 
 The **① Versions of CTI** which is able to choose are as follows:
-- IPCC (Private): Private service. Please **consult with us beforehand** from Online Contact help center if use is wanted.([Online Contact Help Center Shortcut](https://nhn-contact.oc.toast.com/oc/hc/))
+- IPCC (Private): Private service. Please **consult with us beforehand** from Online Contact help center if use is wanted.([Online Contact Help Center Shortcut](https://nhn-contact.oc.toast.com/oceng/hc/))
 - Mobile Contact: Can choose after **Mobile Contact is activated** in Toast Console.
 
 After choosing the version of CTI, please input **service name** which you received from IPCC or Mobile Contact administrator in the **② Tenant Name** input box.
@@ -73,6 +78,9 @@ SSO Login menu allows you to set the authentication method for logging in to hel
 ### SSO Login Adding Process
 -	Click **① +Register** button → Enter SSO Login Name, Remote Login URL, Login Status URL → Click **Confirm** button
 **API Key** is provided for authentication processing when SSO login is set up. The value of API Key can be changed through the **② Change API Key** button.
+
+✔ **\[FAQ]** [What is Remote Login URL, and how is it used?](https://nhn-contact.oc.toast.com/oceng/hc/article/133/)
+✔ **\[FAQ]** [What is Login Status URL(API), and how is it used?](https://nhn-contact.oc.toast.com/oceng/hc/article/134/)
 
 ## Authority Log Management
 ![](http://static.toastoven.net/prod_contact_center/2.1.4-(1)_en.png)
@@ -113,6 +121,10 @@ Detailed performance classifications for different types of consultations are as
 ## Privacy Settings
 ![](http://static.toastoven.net/prod_contact_center/2.1.5-(1)_en.png)
 Through clicking **currently connected ① account name** displayed in the upper right corner of the screen, **② privacy settings** menu is showed. User’s personal settings could be accessed and edited through this menu. 
+
+✔ **\[FAQ]** [How can I change or delete my ID, email, and name?](https://nhn-contact.oc.toast.com/oceng/hc/article/106/)
+✔ **\[FAQ]** [How can I change my password?](https://nhn-contact.oc.toast.com/oceng/hc/article/108/)
+
 
 ### Accessible Information
 -	Account

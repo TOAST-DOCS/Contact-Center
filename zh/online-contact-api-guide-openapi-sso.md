@@ -1,30 +1,35 @@
-## Contact Center > Online Contact > API Guide for Developers > Single Sign-On
+## Contact Center > Online Contact > API Guide for Developers > Member Integration (POST)
 
-## Overview
-### SSO Login Overview
-SSO login is a feature that links the user system with the consultation system, and remote authentication is done with API Key. 
-The API Key is the only optional string that can be generated and is a secure authentication method that allows remote login to connect to the consultation system.
+## Member Integration
+### Overview
+Member Intergration function is designed to apply the membership confirmation process of the service provided by the customer company to the Online Contact help center so that the inquiry of the customer can be received and checked again. Member Integration is provided in two types: GET method and POST method. For integrating, you need to develop the API according to the development specifications Online Contact provide and register it on the Member Integration screen.
 
-### Process of SSO Login
-1. Customer accesses consultation system for inquiries, chat consultation, etc.
-2. When a customer attempts to login from the consulting system, they are directed to the SSO login screen which is set up in the consulting organization.
-3. Login from the provided system login screen, not from Online Contact login screen.
-4. Create token through user information, API key after login has succeeded.
-5. Transfer user information, token to consultation system.
-6. Authenticate token in the consultation system and proceed login after success.
-7. Go to the pre-login screen.（returnUrl）
+#### POST Method
+- It is suitable if the service you want to link to is provided based on WEB on both PC and MOBILE platforms.
+- The login screen of the service must be provided in WEB URL format to be used.
+- In API specifications, two types are provided in detail: CLIENT-SIDE and SERVICER-SIDE.
 
-### Set SSO Login
-#### Register SSO Login
-![](http://static.toastoven.net/prod_contact_center/dev3_en.png)
-After connecting to Online Contact, register SSO login first from the Global Management → SSO Login menu. Please enter the SSO login URL and login status URL.
-Please copy API key after registering SSO Login. It is used as authentication token when calling remote login API.
+#### GET Method
+- Suitable for services without WEB-based login screen.
+- Suitable for Native APP services that are not WEB-based.
 
-#### Enable and Select SSO Login
-![](http://static.toastoven.net/prod_contact_center/dev4_en.png) 
-You can enable or disable SSO Login in Service Management → Authentication → SSO Login menu, and when enabled, you can select SSO login you want to assign to the service you selected.
+### Process (POST Method)
+① User accesses to 'Inquiry' or 'Inquiry History' page in the help center.
+② Call the login status URL on the help center page to check login status (Login status URL should be developed according to the specifications provided below and registered on the Online Contact Member Integration page.)
+③ According to the result of checking login status,
+③-1. If the user is not logged in, call 'Login URL' of the customer service to lead to log in (Login URL is the login page URL provided by the customer company and must be registered on the Online Contact Member Integration screen.)
+③-2. If the user is logged in, call 'Remote Login API' to deliver customer information to Online Contact Help Center.
+④ Access to 'Inquiry' or 'Inquiry History' page.
 
-#### Create Authentication Token
+### How to Integrate
+![](http://static.toastoven.net/prod_contact_center/dev_post_(1)_en.png)
+① Access Service Management > Help Center > Member Integration
+② Click Member integration activation > 'Enable' 
+③ Select the 'Login Type' that matches the characteristics of the service
+④ Develop necessary APIs and set URLs according to each type.
+
+## Development Specifications
+### Create Authentication Token
 Sample of creating token is as follows. The order of parameters must be consistent with the given example, and please check the SSO Login API key.
 ```
 private String getSHA256Token(String serviceId, String usercode, String username, String email, String phone,
@@ -61,7 +66,6 @@ private String getSHA256Token(String serviceId, String usercode, String username
 }
 ```
 
-## SSO Login API
 ### SSO Remote Login API (Client Side)
 #### Interface Description
 - URL: https://{domain}.oc.toast.com/v2/enduser/remote.json			
@@ -70,6 +74,10 @@ private String getSHA256Token(String serviceId, String usercode, String username
 |Interface name | Protocol | Call direction | Encoding | Result format | Interface description |
 |------------|-------|--------|-----|--------|--------------|
 |SSO Remote Login API (Client Side)|HTTPS  |POST    |UTF-8|Redirect    |The user system dynamically generates a form and returns it to the browser, which automatically passes form information to the API. Set login cookie value  with form information passed from API after authentication is successful.|
+
+Please refer to the following class in the sample project for the **method of calling in the user system**.
+- FormLoginController.java
+- Method: submitLogin  
 
 #### Request Parameters
 |Name |Variable |Data type |Required | Description|
@@ -94,7 +102,11 @@ If returnUrl parameter exists, move to the specified returnUrl, return SUCCESS s
 |Interface name | Protocol | Call direction | Encoding | Result format | Interface description |
 |------------|-------|--------|-----|--------|--------------|
 |SSO Remote Login API (Server Side)|HTTPS  |POST    |UTF-8|String   |User directly calls API from server. Set login cookie value after API Login has succeeded.|
-  
+
+Please refer to the following class in the sample project for the **method of calling in the user system**.
+- ApiLoginController.java
+- Method: submitLogin     
+
 #### Request Parameters
 |Name |Variable |Data type |Required | Description|
 |-----|----|-----------|-----|----|
@@ -114,6 +126,17 @@ SUCCESS
 |Interface name|Protocol|Call direction|Encoding|URL|URL(Dev)|Result format|
 |------------|--------|--------|------|--|----------|--------|
 |SSO Login URL|HTTPS|GET|UTF-8|Provided by user|Provided by user|Redirect|
+
+Login URL of the service side should provide the following functions:
+
+1) User not logged in
+- Show login page
+- Proceed to login with id/password
+- Used to create cookie, record login status, and check login status after login success.
+- After login success, the client or server passes customer information to Online Contact (See SSO Remote Login API Client Side, Server Side)
+
+2) User logged in
+- After login success, the client or server passes customer information to Online Contact (See SSO Remote Login API Client Side, Server Side)
 
 #### Request Parameters
 |Name |Variable |Data type |Required | Description|
@@ -151,6 +174,10 @@ SUCCESS
 |Interface name|Protocol|Call direction|Encoding|URL|URL(Dev)|Interface Description|Result format|
 |------------|--------|--------|------|--|----------|--------|--------------|
 |SSO Login status API |HTTPS|GET|UTF-8|Provided by user|Provided by user|User returns JSON data after confirming login based on cookie information|JSON|
+
+Please refer to the following class in the sample project for the **method of calling in the user system**.
+- FormLoginController.java
+- Method: loginStatus
 
 #### Request Parameters
 - None

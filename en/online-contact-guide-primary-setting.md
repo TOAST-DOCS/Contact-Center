@@ -68,3 +68,6 @@ Initially, the OWNER ID does not have a password set, login is available after p
 ![](http://static.toastoven.net/prod_contact_center/1.3.4-(2)_en.png)
 **①** Certification mail would be sent to the email account which accords to the IAM member information. Please set a new password via this email.
 Please make up the password from 8 to 15 digits of the combination of English, numbers, and special characters.
+
+✔ **\[FAQ]** [How can I change my password?](https://nhn-contact.oc.toast.com/oceng/hc/article/108/)
+

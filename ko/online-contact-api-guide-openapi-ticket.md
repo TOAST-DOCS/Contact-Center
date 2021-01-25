@@ -16,11 +16,12 @@
 |    	     |categoryId	|Int	|X	|접수유형 ID，없을 경우 지정하지 않아도 됨|
 |   	     |subject	    |String	|O	|티켓 제목（max=255）|
 |          |content	        |String	|O	|티켓 내용|
-| 	       |endUser.usercode	|String	|O	|유저 코드（유일한 값）|
-|	         |endUser.email	    |String	|X	|유저 이메일（티켓 처리 시 해당 이메일로 답변이 발송 됨. 없을 경우 메일이 발송되지 않음)|
+| 	       |endUser.usercode	|String	|O	|유저 코드（유일한 값). 비회원 문의로 해당 값이 없을 경우 이메일+이름+전화번호 등 형태로 유일한 값을 생성|
+|	         |endUser.email	    |String	|X	|유저 이메일（티켓 처리 시 해당 이메일로 답변이 발송 됨. 없을 경우 메일이 발송되지 않음). Online Contact에서 티켓 처리 시 필수 항목|
 |	         |endUser.username	|String	|X	|유저 명|
 |          |endUser.phone	    |String	|X	|유저 전화번호|
 |	         |addition	        |String	|X	|기본 필드 외에 추가 된 필드 정보|
+|            |status	        |String	|X	|값 : open(처리중), new(미할당). 기본 값 : open(처리중)|
 |	         |attachments[].attachmentId	|String	|X	|첨부파일 ID
 
 #### Request Body
@@ -36,6 +37,7 @@
         "phone":"13333333333"
     },
     "addition":"{'sex':'male','age':20}" ,
+    "status":"new" ,
     "attachments":[
        {
             "attachmentId":"5a13cbfd3c574f7dae644536d3e4159c"
@@ -55,7 +57,7 @@
 |	              |subject	    |String	|O	|티켓 제목|
 |	              |categoryId	|Int	|X	|접수유형 ID|
 |               |categoryName	|String	|X	|접수유형 명|
-|	              |status	    |String	|O	|티켓 상태（open:신규 티켓; closed:처리 완료）|
+|	              |status	    |String	|O	|티켓 상태 (new : 미힐당, open : 처리중, closed:처리 완료)|
 |	              |endUser.usercode	|String	|O	|유저 코드（유일한 값）|
 |	              |endUser.email	|String	|X	|유저 이메일（티켓 처리 시 해당 이메일로 답변이 발송 됨. 없을 경우 메일이 발송되지 않음)|
 |	              |endUser.username	|String	|X	|유저 명|
@@ -131,6 +133,8 @@
 |-----|-----|-----------|-----|---|
 |서비스 ID	|serviceId	|String	|O	|서비스 ID，URL PATH 내에 설정한 {serviceId}|
 |티켓 ID	|id	|String	|O	|티켓 ID|
+|답변 내용	|comment	|String	|O	|Request Body로 제출한 {"comment":"답변내용"}|
+|티켓 처리자 명	|assigneeName	|String	|X	|티켓 처리자 , 기본 값 : null|
 |첨부파일	|attachments	|String	|X	|첨부파일 ID（형식（파일 ID는 ,로 분리）：파일ID1,파일ID2,…,파일IDn）|
 
 #### 결과 데이터
@@ -154,11 +158,17 @@
 |	              |contents.attachments	|String	|X	|티켓 처리 첨부파일 ID|
 |	              |attachments[].attachmentId	|String	|X	|첨부파일 ID|
 |               |addition	|String	|X	|기본 필드 외에 추가 된 필드 정보|
+|               |assigneeName	|String	|X	|티켓 처리자 , 기본 값 : null|
+
+#### Request URL
+?id=티켓ID&assigneeName=티켓 처리자 명
 
 #### Request Body
 - 형식: application/json;charset=UTF-8
 ```
-{"comment":"comment content.XXXXXXXXX"}
+{
+   "comment":"티켓 답변 내용"
+}
 ```
 
 #### Response Body
@@ -190,6 +200,7 @@
             ],
             "attachments":null,
             "addition":null
+           "assigneeName":"티켓 처리자 명" 
         }
     }
 }
@@ -241,6 +252,8 @@
 |	            |attachments.size	|Long	|X	|티켓 문의 첨부파일 크기|
 |	            |attachments.createdDt	|Long	|X	|티켓 문의 첨부파일 업로드 시간|
 |	            |addition	|String	|X	|기본 필드 외에 추가 된 필드 정보|
+|               |assigneeName	|String	|X	|티켓 처리자 명 , 기본 값 : null|
+
 
 #### Response Body
 ```
@@ -310,6 +323,7 @@
                 }
             ],
             "addition":"{'sex':'male','age':20}"
+            "assigneeName":"티켓 처리자 명"
         }
     }
 }

@@ -10,9 +10,3 @@
 ![](http://static.toastoven.net/prod_contact_center/MC_overview_3_modified.png)
 ![](http://static.toastoven.net/prod_contact_center/MC_overview_4_modified.png)
 
-## 활용 사례
-![](http://static.toastoven.net/prod_contact_center/MC_overview_5.png)
-
-## 요금제도
-![](http://static.toastoven.net/prod_contact_center/MC_overview_6.png)
-

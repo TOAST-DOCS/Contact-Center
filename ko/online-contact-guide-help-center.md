@@ -1,7 +1,7 @@
 ## Contact Center > Online Contact > 서비스 가이드 > 헬프센터
 
 ## FAQ
-헬프센터 구성 항목 중 **FAQ**를 활성화했을 경우 ([서비스 관리 → 헬프센터 → 구성관리](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_32)에서 활성화 가능), FAQ 메뉴의 기능들을 통해 헬프센터에 등록되는 FAQ (자주 묻는 질문) 문서를 관리할 수 있습니다. 
+[전체관리 → 계약 서비스 현황 → 계약 현황](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-global-management/#_2) 탭에서 수정하실 수 있는 계약 상세 내역에서 FAQ 기능을 사용 설정하신 후, 헬프센터 구성 항목 중 **FAQ**를 활성화했을 경우 ([서비스 관리 → 헬프센터 → 구성관리](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_32)에서 활성화 가능), FAQ 메뉴의 기능들을 통해 헬프센터에 등록되는 FAQ (자주 묻는 질문) 문서를 관리할 수 있습니다. 
 
 
 ### 카테고리 관리
