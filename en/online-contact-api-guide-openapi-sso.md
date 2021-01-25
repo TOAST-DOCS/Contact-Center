@@ -28,7 +28,8 @@ Member Intergration function is designed to apply the membership confirmation pr
 ③ Select the 'Login Type' that matches the characteristics of the service
 ④ Develop necessary APIs and set URLs according to each type.
 
-#### Create Authentication Token
+## Development Specifications
+### Create Authentication Token
 Sample of creating token is as follows. The order of parameters must be consistent with the given example, and please check the SSO Login API key.
 ```
 private String getSHA256Token(String serviceId, String usercode, String username, String email, String phone,
