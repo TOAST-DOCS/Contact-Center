@@ -3,7 +3,7 @@
 ### API Certification Method Description
 #### Security Key
 ##### Organization level
-Each organization created in TOAST CONSOLE has its only security key. The security key enables encryption of data sent by the API and enables calling Open API related to organizational management. (register service, edit service, delete service, etc.) You could check organization level security key by Global Management → SSO Login → API Key menu.
+Each organization created in NHN Cloud CONSOLE has its only security key. The security key enables encryption of data sent by the API and enables calling Open API related to organizational management. (register service, edit service, delete service, etc.) You could check organization level security key by Global Management → SSO Login → API Key menu.
 ![](http://static.toastoven.net/prod_contact_center/dev1_en.png)
 
 ##### Service Level

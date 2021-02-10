@@ -8,7 +8,7 @@
 - Online Contact 우측 맨 하단 **헬프센터 바로가기**
 - https:// **도메인명** .oc.toast.com/ **서비스ID** /hc
 
-도메인명은 Online Contact 조직 생성 시 작성하신 정보로, TOAST CONSOLE → 조직 설정 → 도메인 설정에서 수정하실 수 있습니다. 서비스ID는 [전체 관리 → 계약 서비스 현황](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-global-management/#_1) 메뉴에서 서비스 추가 시 입력하셨던 정보로, 최초 생성 이후 수정이 불가합니다.
+도메인명은 Online Contact 조직 생성 시 작성하신 정보로, NHN Cloud CONSOLE → 조직 설정 → 도메인 설정에서 수정하실 수 있습니다. 서비스ID는 [전체 관리 → 계약 서비스 현황](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-global-management/#_1) 메뉴에서 서비스 추가 시 입력하셨던 정보로, 최초 생성 이후 수정이 불가합니다.
 
 
 ## 인증
@@ -260,7 +260,7 @@ CTI 로그인된 상태에서 CTI 화면 → **① 걸기** 버튼을 누르시�
 
 #### IAM 회원 등록
 -	화면 우측 상단 **① 회원 초대** 버튼 → 이름, ID, 이메일 입력
--	TOAST CONSOLE → 멤버 관리 → IAM 회원 탭 → IAM 회원 등록 버튼 → ID, 이름, 메일, 휴대폰 번호 입력
+-	NHN Cloud CONSOLE → 멤버 관리 → IAM 회원 탭 → IAM 회원 등록 버튼 → ID, 이름, 메일, 휴대폰 번호 입력
 
 위 두 방법 중 한가지를 선택하셔서 IAM 회원을 등록하시고, **② 상담원 추가** 버튼 → **상담원 조회** 버튼 → 등록된 IAM 회원을 이름/계정/이메일 중 일부 정보 입력을 통해 조회하신 후 추가하실 수 있습니다.
 

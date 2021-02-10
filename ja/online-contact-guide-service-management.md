@@ -7,7 +7,7 @@
 - Online Contact 右下の **ヘルプセンターへ**
 - https:// **ドメイン名** .oc.toast.com/ **サービスID** /hc
 
-ドメイン名はOnline Contactの組織生成の時、設定する情報で、TOAST CONSOLE → 組織設定 → ドメイン設定で修正することができます。一方、サービスIDは [全体管理 → サービス](https://docs.toast.com/ja/Contact%20Center/ja/online-contact-guide-global-management/#_1) メニューでサービス追加をした時入力した情報であり、初期生成以降は修正できません。
+ドメイン名はOnline Contactの組織生成の時、設定する情報で、NHN Cloud CONSOLE → 組織設定 → ドメイン設定で修正することができます。一方、サービスIDは [全体管理 → サービス](https://docs.toast.com/ja/Contact%20Center/ja/online-contact-guide-global-management/#_1) メニューでサービス追加をした時入力した情報であり、初期生成以降は修正できません。
 
 ## 認証
 [全体管理 → SSOログイン](https://docs.toast.com/ja/Contact%20Center/ja/online-contact-guide-global-management/#sso)メニューで登録した**SSOログイン**と、 **OPEN API**機能を有効化/無効化することができます。
@@ -251,7 +251,7 @@ CTI  ログインされた状態で  CTI  画面→**①  発信**  ボタンを
 
 #### IAM会員登録
 -	画面右上 **① 会員招待** ボタン → 名前、 ID、メール入力
--	TOAST CONSOLE → メンバー管理 → IAM会員タブ → IAM会員登録ボタン → ID、名前、メール、携帯電話入力
+-	NHN Cloud CONSOLE → メンバー管理 → IAM会員タブ → IAM会員登録ボタン → ID、名前、メール、携帯電話入力
 
 上記の二つの方法からひとつ選択してIAM会員を登録し、 **② オペレーター追加** ボタン → **オペレーター照会** ボタン → 登録した IAM会員を 名前/アカウント/メールのうちの一部の情報を入力し照会した後、追加することができます。
 

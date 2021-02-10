@@ -35,7 +35,7 @@ The user whom you want to grant organization administrator permission must be re
 
 ### Register as an IAM Member
 -	Click **① Invite Members** button → Enter name, ID, email
--	TOAST CONSOLE → Manage Member → IAM Member tab → Click **Register IAM Member** button → Enter ID, name, mail, and mobile phone number
+-	NHN Cloud CONSOLE → Manage Member → IAM Member tab → Click **Register IAM Member** button → Enter ID, name, mail, and mobile phone number
 Select one of the above two methods to register IAM member. After registering, click **Add Organization Administrator** button → click **View Agent** button → Search registered IAM Member by entering name/account/email, and add IAM Member as organization administrator.
 To newly registered IAM Members, password change mail will be sent by the registered email information. Logging in Online Contact becomes available after setting password through email.
 
@@ -49,7 +49,7 @@ From CTI Setting menu, you could set CTI to connect with call consultation funct
 
 The **① Versions of CTI** which is able to choose are as follows:
 - IPCC (Private): Private service. Please **consult with us beforehand** from Online Contact help center if use is wanted.([Online Contact Help Center Shortcut](https://nhn-contact.oc.toast.com/oc/hc/))
-- Mobile Contact: Can choose after **Mobile Contact is activated** in Toast Console.
+- Mobile Contact: Can choose after **Mobile Contact is activated** in NHN Cloud Console.
 
 After choosing the version of CTI, please input **service name** which you received from IPCC or Mobile Contact administrator in the **② Tenant Name** input box.
 
