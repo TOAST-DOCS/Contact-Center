@@ -3,7 +3,7 @@
 ### API 인증방법 설명
 #### Security Key
 ##### 조직 레벨
-TOAST CONSOLE에서 생성하신 조직 별로 유일한 Security Key를 보유하고 있습니다. Security Key를 통해 API로 전송되는 데이터를 암호화 처리할 수 있으며, 조직 관리와 관련된 Open API를 호출할 수 있습니다. (서비스 등록, 수정, 삭제 등) 사용하고 계시는 조직의 Online Contact에 접속하신 후 전체 관리 → SSO 로그인 → API Key에서 조직 레벨의 Security key를 확인하실 수 있습니다.
+NHN Cloud CONSOLE에서 생성하신 조직 별로 유일한 Security Key를 보유하고 있습니다. Security Key를 통해 API로 전송되는 데이터를 암호화 처리할 수 있으며, 조직 관리와 관련된 Open API를 호출할 수 있습니다. (서비스 등록, 수정, 삭제 등) 사용하고 계시는 조직의 Online Contact에 접속하신 후 전체 관리 → SSO 로그인 → API Key에서 조직 레벨의 Security key를 확인하실 수 있습니다.
 ![](http://static.toastoven.net/prod_contact_center/dev1.png)
 
 ##### 서비스 레벨

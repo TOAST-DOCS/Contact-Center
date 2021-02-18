@@ -3,7 +3,7 @@
 ### API認証方法の説明
 #### Security Key
 ##### 組織レベル
-TOAST CONSOLEで生成された組織ごとに唯一のSecurity Keyを有しています。 Security Keyを介してAPIに送信されるデータを暗号化処理でき、組織管理に関連するOpen APIを呼び出すことができます。(サービスの登録、修正、削除等) 
+NHN Cloud CONSOLEで生成された組織ごとに唯一のSecurity Keyを有しています。 Security Keyを介してAPIに送信されるデータを暗号化処理でき、組織管理に関連するOpen APIを呼び出すことができます。(サービスの登録、修正、削除等) 
 使用している組織のOnline Contactにアクセスし、全体管理→SSOログイン→API Keyで組織レベルのSecurity Keyを確認することができます。
 ![](http://static.toastoven.net/prod_contact_center/dev1_ja.png)
 

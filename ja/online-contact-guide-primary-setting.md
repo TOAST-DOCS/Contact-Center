@@ -1,7 +1,7 @@
 ## Contact Center > Online Contact > サービスガイド > サービス有効化と基本設定
 
-## TOAST会員登録
-Online Contactは、TOAST会員登録後にご利用いただけます。
+## NHN Cloud会員登録
+Online Contactは、NHN Cloud会員登録後にご利用いただけます。
 会員登録の際に決済手段の登録が必要ですので、クレジットカードをご用意ください。(**デビッドカード、プリペイド式カード、海外発行のクレジットカードは登録できません。**) 
 
 ![](http://static.toastoven.net/prod_contact_center/ja/1.3.1-(1)_ja.png)
@@ -19,7 +19,7 @@ Online Contactは、TOAST会員登録後にご利用いただけます。
 
 ## サービス選択、組織およびドメイン設定
 ![](http://static.toastoven.net/prod_contact_center/ja/1.3.2-(1)_ja.png)
-**①** 決済方法を登録した後、TOASTホームページ上段の**CONSOLE**ボタンをクリックするとCONSOLEに移動します。  
+**①** 決済方法を登録した後、NHN Cloudホームページ上段の**CONSOLE**ボタンをクリックするとCONSOLEに移動します。  
 
 
 ### 組織作成
@@ -47,8 +47,8 @@ Online Contactは、TOAST会員登録後にご利用いただけます。
 **①** 組織名とドメイン名を設定した後、IAM会員を登録します。 **IAM会員登録** ボタンを押すと、会員情報を入力できるウィンドウが表示されます。
 
 Online Contactの会員区分は2つです。
-- TOAST会員: TOASTサイトに登録されている会員で、 **組織を管理するメンバー**です。
-- IAM会員: 組織内部のメンバーで、 **組織内でのみ有効なメンバー**です。 TOAST CONSOLE組織のメンバー管理 → IAM会員タブから、追加登録が可能です。
+- NHN Cloud会員: NHN Cloudサイトに登録されている会員で、 **組織を管理するメンバー**です。
+- IAM会員: 組織内部のメンバーで、 **組織内でのみ有効なメンバー**です。 NHN Cloud CONSOLE組織のメンバー管理 → IAM会員タブから、追加登録が可能です。
 
 
 ### IAM会員登録

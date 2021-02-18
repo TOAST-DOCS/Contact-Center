@@ -9,7 +9,7 @@ You can check the detailed functions or configuration of the help center you set
 -	**Help Center Link** in the bottom right of Online Contact web page
 -	https:// **Domain Name**.oc.toast.com/ **Service ID** /hc
 
-Domain name is the information which was created when you added your organization. Modifying is available in TOAST Console → Set Organization → Set Domain. Service ID is the information which was entered when adding service from [Global Management → Contract Service Status](https://docs.toast.com/en/Contact%20Center/en/online-contact-guide-global-management/#contract-service-status) menu, and it cannot be modified after initial creation.
+Domain name is the information which was created when you added your organization. Modifying is available in NHN Cloud Console → Set Organization → Set Domain. Service ID is the information which was entered when adding service from [Global Management → Contract Service Status](https://docs.toast.com/en/Contact%20Center/en/online-contact-guide-global-management/#contract-service-status) menu, and it cannot be modified after initial creation.
 
 ## Authentication
 You can enable or disable **SSO Login** and **Open API** features which you registered in [Global Management → SSO Login](https://docs.toast.com/en/Contact%20Center/en/online-contact-guide-global-management/#sso-login) menu.
@@ -252,7 +252,7 @@ User must be registered as **IAM Member** to be added as an agent.
 
 #### Register IAM Member
 -	Click ① Invite Members button → Enter name, ID, email
--	TOAST CONSOLE → Manage Member → IAM Member tab → Click Register IAM Member button → Enter ID, name, mail, and mobile phone number 
+-	NHN Cloud CONSOLE → Manage Member → IAM Member tab → Click Register IAM Member button → Enter ID, name, mail, and mobile phone number 
 
 Select one of the above two methods to register IAM member., and click **② Add Agent** → **View Agent** → search registered IAM Member by entering name/account/email, and add the IAM Member as your service’s agent.
 

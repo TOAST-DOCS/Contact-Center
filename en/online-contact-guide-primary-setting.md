@@ -1,11 +1,11 @@
 ## Contact Center > Online Contact > Service Guide > Joining and Primary Settings
 
-## Joining TOAST 
-To access Online Contact, **joining TOAST** is needed.  
-Please prepare your credit card since it is **mandatory to register payment methods** when joining. Business members(TOAST Korea) are also required to prepare a copy of Business Registration Certificate.  
+## Joining NHN Cloud 
+To access Online Contact, **joining NHN Cloud** is needed.  
+Please prepare your credit card since it is **mandatory to register payment methods** when joining. Business members(NHN Cloud Korea) are also required to prepare a copy of Business Registration Certificate.  
 ![](http://static.toastoven.net/prod_contact_center/1.3.1-(1)_en.png)
-**①** Steps of Joining Toast: Select Country → Select Type of Membership (Individual/Business) → Consent to Terms of Use → Enter Member Inforamtion → Joining Completed
-**②** After joining TOAST, please register payment methods via My page → Payment Methods. 
+**①** Steps of Joining NHN Cloud: Select Country → Select Type of Membership (Individual/Business) → Consent to Terms of Use → Enter Member Inforamtion → Joining Completed
+**②** After joining NHN Cloud, please register payment methods via My page → Payment Methods. 
 
 
 ### Register Payment Methods
@@ -18,12 +18,12 @@ Please keep in mind that **debit cards could not be registered** as payment meth
 
 ## Choose Service, Set Organization/Domain name
 ![](http://static.toastoven.net/prod_contact_center/1.3.2-(1)_en.png)
-**①** After registering payment methods, you can move to TOAST CONSOLE through clicking **CONSOLE** button which is in the upper side of TOAST homepage.  
+**①** After registering payment methods, you can move to NHN Cloud CONSOLE through clicking **CONSOLE** button which is in the upper side of NHN Cloud homepage.  
 
 
 ### Create Organization
 ![](http://static.toastoven.net/prod_contact_center/1.3.2-(2)_en.png)
-**①** Create initial organization to use services TOAST provide through clicking **Create New Organization** Button. After creating, click **Service** to browse services which TOAST are providing.  
+**①** Create initial organization to use services NHN Cloud provide through clicking **Create New Organization** Button. After creating, click **Service** to browse services which NHN Cloud are providing.  
 If you have an organization created before, please move directly to **Service**. 
 
 ### Select Service
@@ -44,8 +44,8 @@ If organization/domain names are duplicated, please modify since duplicated name
 **①** After setting organization/domain names, you can register IAM members. Press **Register IAM Member** button and a window will be displayed where you can enter membership informations for IAM members.
 
 Online Contact has two distinct memberships.
-- TOAST Member: TOAST Members are whom registered in TOAST. Their role is to manage organization.
-- IAM Member: IAM Members are internal members of the organizaion. They are only valid inside of the organization. IAM Members are generated with an ID without TOAST certification, and can be added through TOAST CONSOLE Manage Member → IAM Member tab. 
+- NHN Cloud Member: NHN Cloud Members are whom registered in NHN Cloud. Their role is to manage organization.
+- IAM Member: IAM Members are internal members of the organizaion. They are only valid inside of the organization. IAM Members are generated with an ID without NHN Cloud certification, and can be added through NHN Cloud CONSOLE Manage Member → IAM Member tab. 
 
 
 ### Register IAM Member
@@ -59,7 +59,7 @@ Online Contact register process is completed. In the displayed register completi
 Please check **① Online Contact Access URL**, and the **OWNER ID** which you checked as OWNER before. These informations would be used after when accessing to Online Contact. 
 **②** About security settings related to IAM members login process, please refer the given link [Security Setting for IAM Console Logins](https://docs.toast.com/en/TOAST/en/console-guide/#security-setting-for-iam-console-logins).
 
-Access to Online Contact is able using the URL given on the register completion page, or click TOAST CONSOLE → Organization Service Usage → Online Contact to access the login page.
+Access to Online Contact is able using the URL given on the register completion page, or click NHN Cloud CONSOLE → Organization Service Usage → Online Contact to access the login page.
 Please login through using the OWNER ID given on the register completion page. Please  
 Initially, the OWNER ID does not have a password set, login is available after proceeding **Password Finding** first.
 
