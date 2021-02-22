@@ -7,8 +7,8 @@
 ✔[(상담원용) 빠른 시작 가이드](http://static.toastoven.net/prod_contact_center/OC_빠른시작가이드_상담원용_ko.pdf)
 ✔[Online Contact 고객센터 FAQ](https://nhn-contact.oc.toast.com/oc/hc/)
 
-## TOAST 회원가입
-Online Contact는 TOAST 회원가입 후 이용하실 수 있습니다. 
+## NHN Cloud 회원가입
+Online Contact는 NHN Cloud 회원가입 후 이용하실 수 있습니다. 
 회원가입 시 결제수단 등록이 필수이므로 신용카드를 준비해주시고, (**체크카드는 등록이 불가합니다.**) 사업자 회원의 경우 **사업자등록증 사본**도 함께 준비해주세요.
 
 ![](http://static.toastoven.net/prod_contact_center/1.3.1-(1).png)
@@ -26,12 +26,12 @@ Online Contact는 TOAST 회원가입 후 이용하실 수 있습니다.
 
 ## 서비스 선택, 조직 및 도메인 이름 설정
 ![](http://static.toastoven.net/prod_contact_center/1.3.2-(1).png)
-**①** 결제수단 등록 이후 TOAST 홈페이지 상단 **CONSOLE** 버튼을 누르시면 TOAST CONSOLE로 이동합니다. 
+**①** 결제수단 등록 이후 NHN Cloud 홈페이지 상단 **CONSOLE** 버튼을 누르시면 NHN Cloud CONSOLE로 이동합니다. 
 
 
 ### 조직 생성
 ![](http://static.toastoven.net/prod_contact_center/1.3.2-(2).png)
-**①** 상단의 **조직을 생성해 주세요.** 버튼을 클릭하셔서 서비스 사용을 위한 최초 조직을 생성하신 후, **②** **서비스 선택** 버튼을 누르시면 TOAST에서 제공하고 있는 여러 서비스를 열람하실 수 있습니다. 
+**①** 상단의 **조직을 생성해 주세요.** 버튼을 클릭하셔서 서비스 사용을 위한 최초 조직을 생성하신 후, **②** **서비스 선택** 버튼을 누르시면 NHN Cloud에서 제공하고 있는 여러 서비스를 열람하실 수 있습니다. 
 기존에 생성하신 조직이 있는 경우 바로 서비스 선택으로 이동해주세요.
 
 
@@ -54,8 +54,8 @@ Online Contact는 TOAST 회원가입 후 이용하실 수 있습니다.
 **①** 조직 이름과 도메인 이름을 설정한 이후 IAM 회원을 등록합니다. **IAM 회원 등록** 버튼을 누르시면 회원 정보를 입력하실 수 있는 창이 표시됩니다.
 
 Online Contact의 회원 구분은 두 가지입니다. 
-- TOAST 회원: TOAST 사이트에 가입되어 있는 회원으로 **조직을 관리하는 멤버**입니다.
-- IAM 회원: 조직 내부 회원으로 **조직 내에서만 유효한 멤버입**니다. TOAST 인증을 하지 않은 아이디로 생성되며, TOAST CONSOLE 내부 멤버 관리 → IAM 회원 탭에서 추가 등록 가능합니다.
+- NHN Cloud 회원: NHN Cloud 사이트에 가입되어 있는 회원으로 **조직을 관리하는 멤버**입니다.
+- IAM 회원: 조직 내부 회원으로 **조직 내에서만 유효한 멤버입**니다. NHN Cloud 인증을 하지 않은 아이디로 생성되며, NHN Cloud CONSOLE 내부 멤버 관리 → IAM 회원 탭에서 추가 등록 가능합니다.
 
 
 ### IAM 회원 등록
@@ -69,7 +69,7 @@ Online Contact 서비스 가입이 완료되었습니다. 표시되는 가입완
 **① Online Contact 접속 URL**과, IAM 회원 중 **OWNER로 설정한 ID**를 확인해주세요. 추후 해당 정보를 사용해서 접속하실 수 있습니다.
 **②** 로그인 보안 설정의 경우 [로그인 보안 설정 가이드](https://docs.toast.com/ko/TOAST/ko/console-guide/#iam)를 참고해주세요. 
 
-가입완료 페이지에서 확인하신 URL에 접속하시거나, 또는 TOAST CONSOLE 페이지 내부 조직 서비스 이용 현황 → Online Contact를 눌러서 접속하시면 로그인 페이지가 표시됩니다. 
+가입완료 페이지에서 확인하신 URL에 접속하시거나, 또는 NHN Cloud CONSOLE 페이지 내부 조직 서비스 이용 현황 → Online Contact를 눌러서 접속하시면 로그인 페이지가 표시됩니다. 
 마찬가지로 가입완료 페이지에서 확인하신 OWNER ID로 로그인해주세요. ID에 비밀번호가 설정되어 있지 않은 상태이므로 **비밀번호 찾기**를 먼저 진행해주신 후 로그인이 가능합니다.
 
 
