@@ -118,8 +118,22 @@ returnUrlパラメータが存在する場合、指定されたreturnUrlに移�
 |現在時間のtimestamp	|time	|Long	|O	|呼び出し時間が3分を超える場合、タイムアウトアラート出力。|
 |認証Token	           |token	|Varchar	|O	|以下のパラメータ値とSSO  API  Keyにより算出された SHA256 (パラメータ値がnull、または空の値の場合、暗号化文字列に追加する必要はない。注意:文字列のうち、各値の順序は、以下の例に指定された順序と一致している必要がある。) SHA256Digest(service + usercode + username + email + phone + time)|
 
-#### 結果データ
-SUCCESS
+#### Response Data
+```
+{	
+  "header": {	
+    "resultCode": 200,	
+    "resultMessage": "",	
+    "isSuccessful": true	
+  },	
+  "result": {	
+    "content": "xxxxxxaccessTokenxxxxxxx"	
+  }	
+}	
+```
+
+リターンされたcontent値はヘルプセンター呼び出し時、当該値をヘルプセンターURLパラメータ - accessToken値に指定してOCに伝達。
+例：https://nhn-cs.alpha-oc.toast.com/hangame/hc/?accessToken=xxxxxxaccessTokenxxxxxxx
  
 ### SSOログインURL (ユーザー)
 #### インターフェース説明
