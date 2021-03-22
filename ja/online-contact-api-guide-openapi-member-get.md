@@ -93,6 +93,10 @@ URL (開発)
 |timestamp	|time	|Long	|O	|時間単位:ミリ秒|
 |認証Token	           |token	|Varchar	|O	|次のパラメータ値と組織キーで計算（SHA256）。 (パラメータ値がnull、または空の値の場合、暗号化文字列に追加する必要はない。注意:文字列のうち、各値の順序は、以下の例に指定された順序と一致している必要がある。) SHA256Digest(service + usercode + username + email + phone + retunrnUrl + time)|
 
+##### 認証Token作成時の注意事項
+1. Token作成時にハングルがある場合は、ハングルで直接作成。 エンコード不要
+2. 作成されたTokenをURLパラメータとして使用する場合、encodeURIComponent()を使ったエンコードが必要
+
 #### 結果データ
 -  Token認証成功:会員にアクセスするアドレスに移動		
 -  Token認証失敗:非会員でアクセスするアドレスに移動		
