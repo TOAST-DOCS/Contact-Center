@@ -119,9 +119,23 @@ returnUrl 파라미터 존재시 지정된 returnUrl로 이동 , returnUrl 없�
 |현재 시간의 timestamp	|time	|Long	|O	|호출 시간이 3분 초과시, 타임아웃 얼럿 출력.|
 |인증 Token	|token	|Varchar	|O	|아래 파라미터 값과 SSO API Key로 산출된 SHA256 (필수가 아닌 파라미터 값이 null 혹은 빈값일 경우 , 암호화 문자열에 추가 할 필요 없음.주의：문자열 중 각 값의 순서는 아래 예시에 지정된 순서와 일치해야 함.) SHA256Digest(service + usercode + username + email + phone + time)|
 
-#### 결과 데이터
-SUCCESS
- 
+#### Response Data
+```
+{	
+  "header": {	
+    "resultCode": 200,	
+    "resultMessage": "",	
+    "isSuccessful": true	
+  },	
+  "result": {	
+    "content": "xxxxxxaccessTokenxxxxxxx"	
+  }	
+}	
+```
+
+리턴된 content 값은 헬프센터 호출 시, 해당 값을 헬프센터 URL 파라미터 - accessToken 값으로 지정하여 OC에 전달.
+예시: https://nhn-cs.alpha-oc.toast.com/hangame/hc/?accessToken=xxxxxxaccessTokenxxxxxxx
+
 ### SSO 로그인 URL (사용자)
 #### 인터페이스 설명
 - URL: 사용자 제공			
