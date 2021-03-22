@@ -94,7 +94,7 @@ URL (Dev)
 |Timestamp of Current Time 	|time	|Long	|O	|Time unit : milliseconds|
 |Authentication Token	           |token	|Varchar	|O	|Calculated by the following parameters and organization key (SHA256). (If non-required parameter values are null or empty, you do not need to add them to the encryption string. Caution: The order of each value in the string must be consistent with the following example.) SHA256Digest(service + usercode + username + email + phone + retunrnUrl + time)|
 
-#### Precautions for Creating Authentication Token
+##### Precautions for Creating Authentication Token
 1. When creating token, if there is Hangul, create directly in Korean. No encoding required.
 2. When using created token as URL parameter, encoding is required by encodeURIComponent().  
 
