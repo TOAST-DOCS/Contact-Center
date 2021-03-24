@@ -12,19 +12,13 @@
 
 
 ## 인증
-[전체 관리 → SSO 로그인](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-global-management/#sso) 메뉴에서 등록하셨던 **SSO 로그인**과, **OPEN API** 기능을 활성화/비활성화할 수 있습니다.
-
-
-### SSO 로그인
-![](http://static.toastoven.net/prod_contact_center/2.2.1-(1).png)
-SSO 로그인을 활성화하실 경우 **활성화** 버튼을 클릭하신 후, [전체 관리 → SSO 로그인](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-global-management/#sso) 메뉴에서 등록하셨던 SSO 로그인을 선택하시고 저장하시면 됩니다.
-SSO 로그인이 활성화되면 서비스 헬프센터 메인 페이지에 **문의내역** 아이콘이 표시되어 고객이 SSO 로그인을 통해 로그인 처리 후 본인의 문의내역을 조회할 수 있습니다. 
-
+인증 메뉴에서는 **OPEN API** 활성화/비활성화 및 관련 기능들을 사용하실 수 있습니다.
 
 ### OPEN API
-![](http://static.toastoven.net/prod_contact_center/2.2.1-(2).png)
-OPEN API 탭에서는 외부에서 Online Contact의 데이터에 접근할 수 있도록 하는 **① OPEN API 활성화**, **② API Key 변경**, **③ 접속 IP 제한 설정**이 가능하며, 접속 IP 제한을 설정할 시 설정한 IP에서만 OPEN API를 호출하실 수 있습니다.
-
+![](http://static.toastoven.net/prod_contact_center/2.2.1-(2)_1.png)
+**① OPEN API 활성화** 버튼을 통해 OPEN API를 활성화하시면, 서비스 Key와 접속IP 설정 화면이 활성화됩니다.
+**② 서비스 Key**는 서비스 하위 레벨에서의 기능들을 Online Contact 외부에서 API를 통해 사용하고자 할 때 인증에 활용됩니다. (예시: 특정 서비스의 FAQ 등록, 공지사항 등록, 티켓 생성 등)
+**③ 접속 IP 설정** 화면을 통해 접속 IP를 설정하실 경우, 설정한 IP에서만 OPEN API를 호출하실 수 있습니다.
 
 ## 채팅
 채팅 기능에 관련된 항목들입니다. 채팅 기능은 [전체관리 → 계약 서비스 현황 → 계약 현황](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-global-management/#_2) 탭에서 수정하실 수 있는 계약 상세 내역에서 채팅 기능을 사용 설정하신 후 [서비스 관리 → 헬프센터 → 구성관리](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_32)에서 활성화하실 수 있으며, 활성화된 이후에 노출되는 우측 하단 **채팅 아이콘**으로 접속 가능합니다. 
