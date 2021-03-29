@@ -405,7 +405,7 @@ IVR 경로 코드, 경로명의 확인이 어려우실 경우 Online Contact 고
 - [Online Contact > API 가이드 > 회원연동(GET)](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-member-get/)
 
 ## 외부채널
-**외부 SNS로 인입되는 문의**를 Online Contact에서 티켓으로 전환하여 처리할 수 있습니다. 현재 **트위터**와 **카카오 상담톡**을 지원하고 있습니다.
+**외부 채널**을 Online Contact와 연결하여 고객과 소통할 수 있습니다. 현재 **트위터**, **카카오 상담톡**, **SMS**를 지원하고 있습니다.
 
 ### 트위터
 ![](http://static.toastoven.net/prod_contact_center/2.2.6-(1).png)
@@ -422,7 +422,6 @@ IVR 경로 코드, 경로명의 확인이 어려우실 경우 Online Contact 고
 ![](http://static.toastoven.net/prod_contact_center/2.2.6-(3).png)
 상담톡 연동을 ① **활성화** 또는 **비활성화**하실 수 있으며, 활성화 시 우측 **② 등록** 버튼을 통해 카카오 플러스친구 ID와 활성화 희망일을 입력해주세요. 연결은 영업일 기준 최대 1~2일 소요되며, 연결이 반려될 경우 반려 사유 메시지가 표시되므로 확인해주세요. 카카오톡채널 관리자센터에서 관리 → 상세설정 → 채널 홈 → 공개설정을 **ON**으로 변경해야 연결 가능합니다.
 
-
 ![](http://static.toastoven.net/prod_contact_center/2.2.6-(4).png)
 연결이 완료된 **계정을 클릭**하시면 상담톡 기능의 세부 요소들을 설정할 수 있습니다.
 - **①** 상담시간
@@ -437,6 +436,14 @@ IVR 경로 코드, 경로명의 확인이 어려우실 경우 Online Contact 고
 상담톡 서비스가 활성화되면 기존 플러스친구 1:1 채팅은 중단되며, 카카오톡을 통해 접수되는 문의는 Online Contact에서 제공하는 채팅 기능에 유입 채널 ‘**카카오**’로 표시되어 접수됩니다.
 
 ✔ **\[FAQ 바로가기]** [외부채널 (트위터/카카오 상담톡) 연결을 활성화했을 때 문의의 인입/답변 과정은 어떻게 되나요?](https://nhn-contact.oc.toast.com/oc/hc/article/61/)
+
+### SMS
+![](http://static.toastoven.net/prod_contact_center/2.2.6-(6).png)
+**[NHN Cloud Notification → SMS](https://www.toast.com/kr/service/notification/sms)** 서비스를 Online Contact과 연동하여 SMS/MMS를 발송하실 수 있습니다.
+**①** SMS 연동 활성화를 위해서는, 먼저 **[NHN Cloud Notification → SMS](https://www.toast.com/kr/service/notification/sms) 서비스를 활성화**하신 후, CONSOLE에서 확인하실 수 있는 **APP KEY**를 입력하여 **②** 저장해주세요. 유효한 APP KEY를 입력하신 경우 자동으로 **SMS 기능이 활성화**되며, APP KEY 입력란 하단에 **발신번호 목록이 표시**됩니다.
+
+**③** **추가** 버튼을 누르시면 **발신번호 선택 팝업**이 표시됩니다. NHN Cloud Notification → SMS 서비스에 발신번호로 등록된 번호가 목록에 표시되므로, 발신번호 추가 전 **SMS 서비스에 발신번호가 등록**되어 있는지 확인해주세요. ([SMS > 콘솔 사용 가이드 > 발신번호 관리](https://docs.toast.com/ko/Notification/SMS/ko/console-guide/#_15)) 표시된 목록에서 발신번호로 추가하고자 하시는 번호를 체크하신 후, 확인 버튼을 누르시면 발신번호 목록에 번호가 추가되며, Online Contact에서 SMS/MMS 발송 시 **발신번호로 활용**하실 수 있습니다.
+
 
 ## 보안서비스
 ![](http://static.toastoven.net/prod_contact_center/2.2.6-(5).png)
