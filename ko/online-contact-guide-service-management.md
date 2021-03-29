@@ -393,7 +393,7 @@ IVR 경로 코드, 경로명의 확인이 어려우실 경우 Online Contact 고
 -	FAQ (자주 묻는 질문)
 -	1:1 문의 & 문의 내역 (문의하기)
 -	채팅
-- 헬프센터 위젯
+-	헬프센터 위젯
 
 ### 회원 연동
 ![](http://static.toastoven.net/prod_contact_center/2.2.5-(5).png)
