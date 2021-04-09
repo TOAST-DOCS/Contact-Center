@@ -440,10 +440,13 @@ IVR 경로 코드, 경로명의 확인이 어려우실 경우 Online Contact 고
 ### SMS
 ![](http://static.toastoven.net/prod_contact_center/2.2.6-(6).png)
 **[NHN Cloud Notification → SMS](https://www.toast.com/kr/service/notification/sms)** 서비스를 Online Contact과 연동하여 SMS/MMS를 발송하실 수 있습니다.
+전체 관리 → 계약 서비스 현황 → 계약 상세 내역에서 **SMS 발송** 기능을 **사용**으로 설정하신 경우 서비스 관리 → 외부채널 메뉴에 SMS 탭이 표시되어 SMS 연동을 관리하실 수 있습니다.
+
 **①** SMS 연동 활성화를 위해서는, 먼저 **[NHN Cloud Notification → SMS](https://www.toast.com/kr/service/notification/sms) 서비스를 활성화**하신 후, CONSOLE에서 확인하실 수 있는 **APP KEY**를 입력하여 **②** 저장해주세요. 유효한 APP KEY를 입력하신 경우 자동으로 **SMS 기능이 활성화**되며, APP KEY 입력란 하단에 **발신번호 목록이 표시**됩니다.
 
 **③** **추가** 버튼을 누르시면 **발신번호 선택 팝업**이 표시됩니다. NHN Cloud Notification → SMS 서비스에 발신번호로 등록된 번호가 목록에 표시되므로, 발신번호 추가 전 **SMS 서비스에 발신번호가 등록**되어 있는지 확인해주세요. ([SMS > 콘솔 사용 가이드 > 발신번호 관리](https://docs.toast.com/ko/Notification/SMS/ko/console-guide/#_15)) 표시된 목록에서 발신번호로 추가하고자 하시는 번호를 체크하신 후, 확인 버튼을 누르시면 발신번호 목록에 번호가 추가되며, Online Contact에서 SMS/MMS 발송 시 **발신번호로 활용**하실 수 있습니다.
 
+SMS 연동 활성화 및 발신번호 추가 이후에, **부가업무 → SMS발송** 메뉴에서 SMS 템플릿 관리 및 SMS 발송을 진행하실 수 있습니다.
 
 ## 보안서비스
 ![](http://static.toastoven.net/prod_contact_center/2.2.6-(5).png)
