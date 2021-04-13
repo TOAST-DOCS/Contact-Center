@@ -1,42 +1,126 @@
 ## Contact Center > Online Contact > API 가이드 > 고객정보 연동
 
-**전화 문의**가 인입되었을 때 해당 매체번호에 해당하는 **고객사 측 고객 데이터를 API를 통해 조회**해서 가져올 수 있도록 제공하는 기능입니다.
+### API 인증 방법
+#### Security Key
+![](http://static.toastoven.net/prod_contact_center/dev_cust_1.png)
+고객정보관리 → 고객정보연동 메뉴에서 암호화 키를 취득하실 수 있습니다.
 
-Request URL: 고객사의 API URL
-Response Type: JSON
+#### Authorization 문자열 생성 방법
+HmacSHA256로 암호화하거나, (request URI + 파라미터 값(json) + 현재 UTC시간 값）문자열에 대해 암호화하여 Authorization 문자열을 생성하실 수 있습니다.
 
-### 요청 파라미터
-|번호|변수|필수|데이터 타입|설명|
-|----|----|----|---------|----|
-|1   |telNo|O  |String   |인입된 콜의 매체번호|
-
-### 결과 데이터
-|번호|변수|데이터 타입|설명|
-|----|---|-----------|---|
-|1   |resultCode|String|성공:0, 실패:other|
-|2   |resultMsg |String|결과 메시지|
-|3   |resultData|Map   |결과 맵|
-
-### resultData 파라미터
-|번호|변수|데이터 타입|설명|
-|----|----|----------|---|
-|1  |custId|String   |   |
-|2  |custName|String |   |
-|...|...     |...    |...|
-
-### Response Body
+##### Java 예시
 ```
-{
-   "resultData":{
-      "custId": "test",
-      "custName": "테스트",
-      ..
-      ..
-   },
-   "resultCode": "0",
-   "resultMsg": "success"
+String token= request.getHeader("Authorization");String time = request.getHeader("X-TC-Timestamp");
+if (!StringUtils.isNumeric(time)) {
+    logger.error("X-TC-Timestamp is not numeric: " + time);
+    throw new Exception("error.bad_request");
+}
+DateTime date = null;
+date = new DateTime(Long.parseLong(time));
+if (date.minusMinutes(5).isAfterNow() || date.plusMinutes(5).isBeforeNow()) {
+    logger.error("X-TC-Timestamp is expired: " + time + ", now timestamp: " + Calendar.getInstance().getTimeInMillis());
+    throw new Exception("error.bad_request");
+}
+
+String apiKey = "bf7769e5321448de88838cdb";String content= new String(IOUtils.toByteArray(request.getInputStream()), StandardCharsets.UTF_8) + time;
+
+SecretKeySpec signingKey = new SecretKeySpec(apiKey.getBytes(StandardCharsets.UTF_8), "HmacSHA256");
+Mac mac = Mac.getInstance(signingKey.getAlgorithm());
+mac.init(signingKey);
+byte[] rawHmac = mac.doFinal(content.getBytes(StandardCharsets.UTF_8));
+String localAuthorization = new String(Base64.encodeBase64(rawHmac));
+logger.debug("Local token: " + localAuthorization);
+if (StringUtils.equals(token, localAuthorization)) {
+    return true;
+}  else {
+        logger.info("Local sha2 token: " + localAuthorization);
+        return false;
+    }
 }
 ```
 
-resultData 변수 내의 데이터는 고객사 측에서 원하시는 대로 설정하실 수 있으며, **API를 통해 리턴하시는 모든 데이터가 화면에 표시**됩니다.
-만약 resultData 내의 변수가 Online Contact 티켓 필드로 추가되어 있다면, 해당 변수의 **변수명**과 [필드의 **항목 코드 값**](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_22)이 **일치**해야 알맞게 매핑될 수 있습니다.
+### 고객정보연동 API
+#### 인터페이스 설명
+|인터페이스 명|프로토콜|호출방향|인코딩|요청 파라미터 형식|URL|접근제한 여부|
+|------------|-------|--------|-----|--------|--------------|---------|
+|고객정보연동 API|HTTPS  |POST    |UTF-8|JSON|기본 URL|공통 인증|
+
+#### 요청 파라미터 정의
+|명칭|변수|데이터 타입|필수|설명|
+|----|----|----|---------|----|
+|조회 항목 설정   |callNum|String  |O ||
+|                |nation |String  |  ||
+
+#### Request Body
+```
+{ 
+  "callNum":"1",
+  "nation":"korea"
+}
+```
+
+#### 결과 데이터
+|명칭|변수|데이터 타입|필수|설명|
+|----|---|-----------|---|----|
+|결과 항목 설정   |userName|String| | |
+|                |id |String| | |
+
+#### Response Body
+```
+{
+  "data": {
+    "userName": "test",
+    "id": "testId"
+    }
+}
+```
+
+### 리턴 결과
+성공 응답은 'data' 객체를, 실패 응답은 'error' 객체를 포함하며, 'error' 객체에는 에러에 대한 설명이 포함되어 있습니다.
+HTTP 상태 코드 200은 API 처리가 성공했음을 의미하며, 이외의 코드는 처리가 실패했음을 의미합니다. 실패 코드를 응답받으셨을 시에는 'error' 객체에 포함된 설명을 참고 부탁드리겠습니다.
+
+|명칭|변수|데이터 타입|필수|설명|
+|----|----|----------|---|----|
+|리턴 결과  |data|JSON   |O   | |
+|           |OC에서의 결과 항목 설정값|String |O   | |
+
+|명칭|변수|데이터 타입|필수|설명|
+|----|----|----------|---|----|
+|실패 리턴 결과 | error | JSON | O | |
+|              | code | String | O | |
+|              | message | String | O | |
+|              | detail  | String | O | |
+
+|리턴 코드 정보 | OC Message |
+|--------------|------------|
+|200 : SUCCESS |            |
+|400 : Bad Request | 확인중  |
+|403 : Forbidden   | 확인중  |
+|404 : Not Data Found | 확인중 |
+|500 : Server Error   | 확인중 |
+
+#### Sample
+```
+200 : OK
+{
+  "data": {
+    "userNo": "0",
+    "userId": "string",
+    "gameCode": "string",
+     "cashReal": "0",
+     "cashBonus": "0",
+     "cashTotal": "0"
+    }
+}
+
+```
+```
+Failure case : HTTP Status Code != 200 AND error object
+{
+  "error": {
+    "code": 911,
+    "message": "Not existing user.",
+    "detail": null
+  }
+}
+```
