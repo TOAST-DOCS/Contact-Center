@@ -10,7 +10,8 @@ HmacSHA256로 암호화하거나, (request URI + 파라미터 값(json) + 현재
 
 ##### Java 예시
 ```
-String token= request.getHeader("Authorization");String time = request.getHeader("X-TC-Timestamp");
+String token= request.getHeader("Authorization");
+String time = request.getHeader("X-TC-Timestamp");
 if (!StringUtils.isNumeric(time)) {
     logger.error("X-TC-Timestamp is not numeric: " + time);
     throw new Exception("error.bad_request");
@@ -22,7 +23,8 @@ if (date.minusMinutes(5).isAfterNow() || date.plusMinutes(5).isBeforeNow()) {
     throw new Exception("error.bad_request");
 }
 
-String apiKey = "bf7769e5321448de88838cdb";String content= new String(IOUtils.toByteArray(request.getInputStream()), StandardCharsets.UTF_8) + time;
+String apiKey = "bf7769e5321448de88838cdb";
+String content= new String(IOUtils.toByteArray(request.getInputStream()), StandardCharsets.UTF_8) + time;
 
 SecretKeySpec signingKey = new SecretKeySpec(apiKey.getBytes(StandardCharsets.UTF_8), "HmacSHA256");
 Mac mac = Mac.getInstance(signingKey.getAlgorithm());
