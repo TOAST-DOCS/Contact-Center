@@ -183,7 +183,7 @@
 - **④** 검색 코드 : **템플릿에 저장**하실 수 있는 20자 이내의 영문 또는 숫자 조합의 **코드**로, 고객 답변 시 템플릿 **검색에 활용**하실 수 있습니다.
 - **⑤** 템플릿 연결 : 템플릿에 연결하실 **처리유형을 선택**하실 수 있습니다. 이동하고자 하시는 처리유형의 **체크박스를 체크**하신 후 **화살표** 버튼을 누르시면 처리유형이 이동됩니다.
 
-템플릿 추가 시 선택하시는 처리유형은 앞서 [서비스 관리 → 티켓 → 카테고리 관리](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_9)에서 등록해두신 처리유형입니다. 내용 본문 부분에서 마우스 우 클릭 시 링크, 이미지, 테이블을 삽입하실 수 있습니다.
+템플릿 추가 시 선택하시는 처리유형은 앞서 [서비스 관리 → 티켓 → 카테고리 관리](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_9)에서 등록해두신 처리유형입니다. 내용 본문 부분에서 마우스 우 클릭 시 링크, 이미지, 테이블을 본문 내에 삽입하실 수 있으며, 이미지를 삽입하실 경우 [서비스 관리 → 헬프센터 → 파일 업로드 관리](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_42) 메뉴에서 업로드한 이미지의 경로를 사용하시거나, 이미지를 직접 첨부하셔서 등록하실 수 있습니다.
 
 #### 템플릿 연결
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(7)_3.png)
