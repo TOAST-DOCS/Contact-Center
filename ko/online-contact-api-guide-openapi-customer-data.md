@@ -50,7 +50,7 @@ if (StringUtils.equals(token, localAuthorization)) {
 #### 요청 파라미터 정의
 |명칭|변수|데이터 타입|필수|설명|
 |----|----|----|---------|----|
-|조회 항목 설정   |callNum|String  |O ||
+|설정한 조회 항목  |callNum|String  |O ||
 |                |nation |String  |  ||
 
 #### Request Body
@@ -64,7 +64,7 @@ if (StringUtils.equals(token, localAuthorization)) {
 #### 결과 데이터
 |명칭|변수|데이터 타입|필수|설명|
 |----|---|-----------|---|----|
-|결과 항목 설정   |userName|String| | |
+|설정한 결과 항목   |userName|String| | |
 |                |id |String| | |
 
 #### Response Body
@@ -78,18 +78,20 @@ if (StringUtils.equals(token, localAuthorization)) {
 ```
 
 ### 리턴 결과
+#### 파라미터 정의
 |명칭|변수|데이터 타입|필수|설명|
 |----|----|----------|---|----|
-|리턴 결과  |data|JSON   |O   | |
-|           |OC에서의 결과 항목 설정값|String |O   | |
+|성공 시 리턴 결과  |data|JSON   |O   | |
+|                  |OC에서의 결과 항목 설정값|String |O   | |
 
 |명칭|변수|데이터 타입|필수|설명|
 |----|----|----------|---|----|
-|실패 리턴 결과 | error | JSON | O | |
+|실패 시 리턴 결과 | error | JSON | O | |
 |              | code | String | O | |
 |              | message | String | O | |
 |              | detail  | String | O | |
 
+#### HTTP 상태 코드
 |리턴 코드 정보 | OC Message |
 |--------------|------------|
 |200 : SUCCESS |            |
@@ -98,7 +100,7 @@ if (StringUtils.equals(token, localAuthorization)) {
 |404 : Not Data Found | 확인중 |
 |500 : Server Error   | 확인중 |
 
-#### Sample
+#### 리턴 결과 예시
 ```
 200 : OK
 {
