@@ -42,7 +42,7 @@ NHN Cloud CONSOLE에서 생성하신 조직 별로 유일한 Security Key를 보
 #### Authorization 문자열 생성 방법
 HmacSHA256로 암호화하거나, (조직ID + request URI + 파라미터 값 + 현재 UTC시간 값）문자열에 대해 암호화하여 Authorization 문자열을 생성하실 수 있습니다.
 
-##### Java 예시
+##### HmacSHA256 암호화
 ```
 String URL = "http://nhn-cs.alpha-oc.toast.com/openapi/v1/admin/service/add.json";
 String organizationId = "WopqM8euoYw89B7i"; // 조직ID
@@ -66,6 +66,44 @@ String authorization = new String(Base64.encodeBase64(rawHmac));
 - Security Key
 	- /openapi/v1/admin/* 형태의 API 호출 시 조직 레벨 Security Key 사용
 	- {serviceId}/openapi/v1/* 형태의 API 호출 시 ，서비스 레벨 Security Key 사용
+
+##### Token 생성
+조직 ID, Request URI, Request Parameter, Request Body, time 등을 병합해서 생성합니다.
+병합 방법은 아래 코드를 참조해주세요.
+
+```
+// Generate token string sample with request body
+StringBuilder sb = new StringBuilder();
+sb.append(org.getId()); // organization Id
+sb.append(request.getRequestURI()); // requewt URI
+
+Map<String, String[]> params = request.getParameterMap();
+if (!params.isEmpty()) {
+	// Sort parameter
+	Map<String, String[]> treeMap = new TreeMap<>(params);
+	for (Map.Entry<String, String[]> entry : treeMap.entrySet()) {
+		sb.append(entry.getValue()[0]).append("&");
+	}
+	sb.deleteCharAt(sb.length() - 1); // Delete '&' character
+}
+
+// Get request body
+String body = new String(IOUtils.toByteArray(request.getInputStream()), StandardCharsets.UTF_8);
+
+if (StringUtils.isNotBlank(body)) {
+	if (!params.isEmpty()) {
+		// params is not empty, add '&' character
+		sb.append("&");
+	}
+	sb.append(body);
+}
+
+String time = request.getHeader("X-TC-Timestamp");
+// No '&' character
+sb.append(time);
+
+return sb.toString();
+```
 
 ### 공통 리턴 결과
 |명칭	|변수|	데이터 타입	|필수|	설명|
@@ -101,7 +139,7 @@ String authorization = new String(Base64.encodeBase64(rawHmac));
 #### API 목록
 |레벨	|그룹	|명칭	|설명|
 |---------|--------|---------|---|
-|조직 레벨	|[서비스](https://alpha-docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-service/)	     |서비스 추가	           |신규 서비스 추가|
+|조직 레벨	|[서비스](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-service/)	     |서비스 추가	           |신규 서비스 추가|
 |	   |	           |서비스 상세	         |서비스 ID를 통해 서비스 정보 조회|
 |  	   |	           |서비스 수정	         |서비스 ID를 통해 서비스 정보 수정|
 |	   |               |서비스 비활성화	        |서비스 ID를 통해 서비스 비활성화|
@@ -114,7 +152,7 @@ String authorization = new String(Base64.encodeBase64(rawHmac));
 |          |               |서비스 계약 목록   	|조직 내 서비스 계약 목록|
 |          |               |서비스 계약 상세 - 서비스 ID  |서비스 ID로 계약 상세 정보 취득|
 |          |               |서비스 계약 상세 - 계약 ID	 |계약 ID로 서비스 계약 상세 정보 취득|
-|서비스 레벨|[이메일 설정](https://alpha-docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-email/)     |대표계정 생성              |서비스 대표계정 생성. (생성 후 수정 불가) 형식: \*\*@oc.toast.com|       	
+|서비스 레벨|[이메일 설정](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-email/)     |대표계정 생성              |서비스 대표계정 생성. (생성 후 수정 불가) 형식: \*\*@oc.toast.com|       	
 |          |               |이메일 정보 조회           |해당 서비스 모든 이메일 정보 조회|
 |          |               |외부계정 유효성 체크	      |외부계정 유효성 체크|
 |          |               |외부계정 등록              |외부계정 등록(유효성 체크 후 등록 가능)|
@@ -123,12 +161,12 @@ String authorization = new String(Base64.encodeBase64(rawHmac));
 |          |               |외부계정 비활성화          |활성화 상태 외부계정을 비활성화|
 |          |               |외부계정 삭제              |비활성화 상태 외부계정 삭제|
 |          |               |이메일 정보 저장           |이메일 정보 저장|
-|           |[접수유형 관리](https://alpha-docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-category/)  |접수유형 추가	         |신규 접수유형 추가|
+|           |[접수유형 관리](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-category/)  |접수유형 추가	         |신규 접수유형 추가|
 |	    |              |접수유형 상세	          |접수유형 ID를 통해 접수유형 조회|
 |	    |	           |접수유형 수정	          |접수유형 ID를 통해 접수유형 수정|
 |	    |	           |접수유형 삭제	          |접수유형 ID를 통해 접수유형 삭제|
 |  	    |	           |접수유형 목록	         |서비스 내 접수유형 조회|
-|           |[티켓 관리](https://alpha-docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-ticket/)	|티켓 생성	                |신규 티켓 생성|
+|           |[티켓 관리](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-ticket/)	|티켓 생성	                |신규 티켓 생성|
 |	    |	           |티켓 처리	           |티켓 ID를 통해 티켓 처리|
 |	    |	           |티켓 상세	           |티켓 ID를 통해 티켓 조회|
 |	    |	           |티켓 목록	          |검색 조건을 통해 조건에 맞는 티켓 리스트 노출|
@@ -136,7 +174,7 @@ String authorization = new String(Base64.encodeBase64(rawHmac));
 |	    |	           |티켓 첨부파일 첨부	        |서버에 파일 업로드|
 |	    |	           |티켓 첨부파일 열기/다운     |서버에 업로드 된 파일 열기/다운|
 |	    |	           |티켓 첨부파일 삭제          |서버에 업로드 된 파일 삭제|
-|	    |[공지사항](https://alpha-docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-notice/)	|공지사항 목록 조회	      |공지사항의 내용 조회, 검색 조건에 따라 공지사항 리스트를 리턴|
+|	    |[공지사항](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-notice/)	|공지사항 목록 조회	      |공지사항의 내용 조회, 검색 조건에 따라 공지사항 리스트를 리턴|
 |	    |	           |공지사항 상세 조회	          |공지사항 ID를 통해 공지사항 내용 취득|
 |	    |	           |공지사항 상세 조회(여러 건)	|여러개의 공지사항 ID를 통해 내용 취득|
 |	    |	           |공지사항 등록	          |신규 공지사항 등록|
@@ -148,6 +186,7 @@ String authorization = new String(Base64.encodeBase64(rawHmac));
 |	    |	           |공지사항 템플릿 수정	           |ID를 통해 템플릿 수정|
 |	    |	           |공지사항 템플릿 삭제	           |ID를 통해 템플릿 삭제|
 |	    |	           |공지사항 첨부파일 첨부       |서버에 파일 업로드|
+|           |              |공지사항 첨부파일 열기/다운로드 |서버에 업로드 한 공지사항 첨부파일 열기/다운로드|
 |	    |	           |공지사항 첨부파일 삭제       |서버에 업로드 한 파일 삭제|
 |	    |	           |공지사항 태그 목록 조회	           |공지사항 태그 리스트 취득|
 |	    |	           |공지사항 태그 상세 조회	            |태그 ID를 통해 공지사항 태그내용 취득|
@@ -159,13 +198,13 @@ String authorization = new String(Base64.encodeBase64(rawHmac));
 |	    |	           |공지사항 말머리 등록	           |신규 말머리 등록|
 |	    |	           |공지사항 말머리 수정	           |말머리 ID를 통해 말머리 명 수정|
 |	    |	           |공지사항 말머리 삭제	           |말머리 ID를 통해 공지사항 말머리 삭제|
-|	    |[상담원 관리](https://alpha-docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-agent/)	|상담원 목록 조회	      |상담원 리스트 취득|
+|	    |[상담원 관리](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-agent/)	|상담원 목록 조회	      |상담원 리스트 취득|
 |           |		    |상담원 상세 조회 	           |상담원 ID를 통해 상담원 정보 취득|
 |	    |	            |상담원 추가	           |지정한 서비스에 상담원 추가 및 권한 부여|
 |           |		    |상담원 권한 변경           |서비스 내 상담원 권한 변경|
 |	    |	            |상담원 삭제	           |지정한 서비스에서 상담원 삭제|
-|	    |[헬프센터](https://alpha-docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-helpcenter/)	 |헬프센터 지정 데이터 추가   |추가 필요한 고객정보를 DB에 저장|
-|	    |[FAQ](https://alpha-docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-faq/)	     |FAQ 목록 조회	              |조회 조건 기준으로 FAQ 리스트를 리턴|
+|	    |[헬프센터](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-helpcenter/)	 |헬프센터 지정 데이터 추가   |추가 필요한 고객정보를 DB에 저장|
+|	    |[FAQ](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-faq/)	     |FAQ 목록 조회	              |조회 조건 기준으로 FAQ 리스트를 리턴|
 |           |		     |FAQ 상세 조회	              |FAQ ID를 통해 FAQ 내용 취득|
 |           |		     |FAQ 등록	              |신규 FAQ 등록|
 |           |		     |FAQ 수정	              |FAQ ID 기준으로 내용 수정|
@@ -179,9 +218,12 @@ String authorization = new String(Base64.encodeBase64(rawHmac));
 |	    |	             |FAQ 카테고리 수정	           |ID 기준으로 카테고리 명 수정|
 |	    |	             |FAQ 카테고리 삭제	           |카테고리 ID를 통해 FAQ 카테고리 삭제|
 |	    |	             |FAQ 첨부파일 첨부	   |서버에 파일 업로드|
+|           |                |FAQ 첨부파일 열기/다운로드  |서버에 업로드한 FAQ 첨부파일 열기/다운로드|
 |	    |	             |FAQ 첨부파일 삭제	   |서버에 업로드한 파일 삭제|
-|           |[SSO](https://alpha-docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-sso/)             |SSO 원격로그인 API (Client Side)|사용자 시스템에서 동적으로 form을 생성하여 브라우저에 반환, form은 자동으로 API에 form 정보를 전달, 인증 후 성공 시 로그인 쿠키 값 설정|
+|           |[회원연동 (POST)](https:/docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-sso/)             |SSO 원격로그인 API (Client Side)|사용자 시스템에서 동적으로 form을 생성하여 브라우저에 반환, form은 자동으로 API에 form 정보를 전달, 인증 후 성공 시 로그인 쿠키 값 설정|
 |           |                |SSO 원격로그인 API (Server Side)|사용자가 서버에서 직접 API 호출, API 로그인 성공 후 로그인 쿠키 값 설정|
-|           |                |SSO 로그인 상태 API             |사용자가 쿠키 정보를 기준으로 로그인 여부를 확인 후, JSON 형식의 데이터를 리턴|
-|           |[고객정보 연동](https://alpha-docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-customer-data/)    |고객정보 연동                   |전화 문의 인입 시 매체번호를 통해 고객 데이터를 조회하여 화면에 표시|
+|           |                |SSO 로그인 URL (사용자)         |                                                                   |
+|           |                |SSO 로그인 상태 URL (사용자)     |사용자가 쿠키 정보를 기준으로 로그인 여부를 확인 후, JSON 형식의 데이터를 리턴|
+|           |[회원연동 (GET)](https:/docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-member-get/)             |Token 인증 API (서비스 측)|서비스 측에서 token과 usercode로 로그인 상태 확인 후 JSON 형태 결과 값을 전송|
+|           |[고객정보 연동](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-customer-data/)    |고객정보 연동 API                  |   |
 
