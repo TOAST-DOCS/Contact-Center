@@ -36,7 +36,7 @@
 ### 기본 설정
 ![](http://static.toastoven.net/prod_contact_center/2.2.7-(6).png)
 고객사 측의 **고객 데이터**를 **API**를 통해 Online Contact에서 조회하실 수 있도록 제공하는 기능입니다.
-**① OPEN API를 활성화**하신 후 이용하실 수 있으며, **① 추가** 시 입력이 필요한 부분은 다음과 같습니다.
+**[서비스 관리 → 인증 → OPEN API] 메뉴에서 OPEN API를 활성화**하신 후 이용하실 수 있으며, **① 추가** 시 **② API 상세설정** 화면이 표시됩니다. 입력이 필요한 부분은 다음과 같습니다.
 
 - API 이름
 - 기본 URL : 개발 시 [API 가이드 > 고객정보 연동](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-customer-data/) 가이드 참고 부탁드립니다.
