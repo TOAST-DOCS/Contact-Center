@@ -92,9 +92,9 @@ if (StringUtils.equals(token, localAuthorization)) {
 |              | detail  | String | O | |
 
 #### HTTP 상태 코드
-|리턴 코드 정보 | OC Message |
+|리턴 코드 정보 | Online Contact 표시 메시지 |
 |--------------|------------|
-|200 : SUCCESS |            |
+|200 : SUCCESS | 조회 성공           |
 |400 : Bad Request | 조회 결과가 없습니다. |
 |403 : Forbidden   | 요청한 서버에 조회 권한이 없습니다. |
 |404 : Not Data Found | 요청한 서버에 에러가 있습니다. |
