@@ -2,13 +2,19 @@
 
 ### API 인증방법 설명
 #### Security Key
-##### 조직 레벨
-NHN Cloud CONSOLE에서 생성하신 조직 별로 유일한 Security Key를 보유하고 있습니다. Security Key를 통해 API로 전송되는 데이터를 암호화 처리할 수 있으며, 조직 관리와 관련된 Open API를 호출할 수 있습니다. (서비스 등록, 수정, 삭제 등) 사용하고 계시는 조직의 Online Contact에 접속하신 후 전체 관리 → SSO 로그인 → API Key에서 조직 레벨의 Security key를 확인하실 수 있습니다.
-![](http://static.toastoven.net/prod_contact_center/dev1.png)
+##### 조직 레벨 (조직 Key)
+![](http://static.toastoven.net/prod_contact_center/dev1_1.png)
 
-##### 서비스 레벨
-하나의 조직에서 여러 개의 서비스를 생성하실 수 있으며, 생성하신 각 서비스 별로 유일한 Security Key를 보유하고 있습니다. Security Key를 통해 API로 전송되는 데이터를 암호화 처리할 수 있으며, 서비스 관리와 관련된 Open API를 호출할 수 있습니다. (티켓 관리, FAQ 등) 서비스 추가 API(/openapi/v1/admin/service/add.json)를 통해 서비스 추가가 가능하며, 서비스 추가 후 리턴 결과 값에서 서비스 레벨의 Security Key를 취득할 수 있습니다. 또한 사용하고 계시는 조직의 Online Contact에 접속하신 후 security key를 확인하고자 하는 서비스를 선택, 서비스 관리 → 인증 → OPEN API → API Key에서도 서비스 레벨의 Security Key 취득이 가능합니다.
-![](http://static.toastoven.net/prod_contact_center/dev2.png)
+Online Contact에 생성된 조직마다 유일한 Security Key인 **① 조직 Key**를 보유하고 있습니다. 조직 Key를 통해 API로 전송되는 데이터를 암호화 처리할 수 있으며, 조직 관리와 관련된 Open API를 호출할 수 있습니다. (서비스 등록, 수정, 삭제 등) 
+
+사용하고 계시는 조직의 Online Contact에 접속하신 후 전체 관리 → 계약 서비스 현황 → 조직 정보 탭의 **OC 조직 정보** 항목에서 조직 레벨의 Security key를 확인하실 수 있습니다.
+
+##### 서비스 레벨 (서비스 Key)
+![](http://static.toastoven.net/prod_contact_center/dev2_1.png)
+
+하나의 조직에서 여러 개의 서비스를 생성하실 수 있으며, 생성하신 각 서비스 별로 유일한 Security Key인 **① 서비스 Key**를 보유하고 있습니다. 서비스 Key를 통해 API로 전송되는 데이터를 암호화 처리할 수 있으며, 서비스 관리와 관련된 Open API를 호출할 수 있습니다. (티켓 관리, FAQ 등) 
+
+서비스 추가 API(/openapi/v1/admin/service/add.json)를 통해 서비스 추가가 가능하며, 서비스 추가 후 리턴 결과 값에서 서비스 Key를 취득할 수 있습니다. 또한 사용하고 계시는 조직의 Online Contact에 접속하신 후 서비스를 선택, 서비스 관리 → 인증 → OPEN API 탭의 **OPEN API** 항목에서도 서비스 레벨의 Security Key를 확인하실 수 있습니다.
 
 ##### Response Body
 ```
@@ -40,7 +46,8 @@ NHN Cloud CONSOLE에서 생성하신 조직 별로 유일한 Security Key를 보
 - OUCODE：유저 code（필수 아님，설정하지 않을 경우 기본 값은 Owner）
 
 #### Authorization 문자열 생성 방법
-HmacSHA256로 암호화하거나, (조직ID + request URI + 파라미터 값 + 현재 UTC시간 값）문자열에 대해 암호화하여 Authorization 문자열을 생성하실 수 있습니다.
+HmacSHA256로 암호화하거나, (NHN Cloud 조직ID + request URI + 파라미터 값 + 현재 UTC시간 값）문자열에 대해 암호화하여 Authorization 문자열을 생성하실 수 있습니다.
+(NHN Cloud 조직ID : NHN Cloud Console → 조직 설정 → 조직 기본 설정 탭, Online Contact 전체 관리 → 계약 서비스 현황 → 조직 정보 탭의 TOAST 조직 정보 항목에서 확인 가능) 
 
 ##### HmacSHA256 암호화
 ```
@@ -220,10 +227,10 @@ return sb.toString();
 |	    |	             |FAQ 첨부파일 첨부	   |서버에 파일 업로드|
 |           |                |FAQ 첨부파일 열기/다운로드  |서버에 업로드한 FAQ 첨부파일 열기/다운로드|
 |	    |	             |FAQ 첨부파일 삭제	   |서버에 업로드한 파일 삭제|
-|           |[회원연동 (POST)](https:/docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-sso/)             |SSO 원격로그인 API (Client Side)|사용자 시스템에서 동적으로 form을 생성하여 브라우저에 반환, form은 자동으로 API에 form 정보를 전달, 인증 후 성공 시 로그인 쿠키 값 설정|
+|           |[회원연동 (POST)](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-sso/)             |SSO 원격로그인 API (Client Side)|사용자 시스템에서 동적으로 form을 생성하여 브라우저에 반환, form은 자동으로 API에 form 정보를 전달, 인증 후 성공 시 로그인 쿠키 값 설정|
 |           |                |SSO 원격로그인 API (Server Side)|사용자가 서버에서 직접 API 호출, API 로그인 성공 후 로그인 쿠키 값 설정|
 |           |                |SSO 로그인 URL (사용자)         |                                                                   |
 |           |                |SSO 로그인 상태 URL (사용자)     |사용자가 쿠키 정보를 기준으로 로그인 여부를 확인 후, JSON 형식의 데이터를 리턴|
-|           |[회원연동 (GET)](https:/docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-member-get/)             |Token 인증 API (서비스 측)|서비스 측에서 token과 usercode로 로그인 상태 확인 후 JSON 형태 결과 값을 전송|
+|           |[회원연동 (GET)](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-member-get/)             |Token 인증 API (서비스 측)|서비스 측에서 token과 usercode로 로그인 상태 확인 후 JSON 형태 결과 값을 전송|
 |           |[고객정보 연동](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-customer-data/)    |고객정보 연동 API                  |   |
 
