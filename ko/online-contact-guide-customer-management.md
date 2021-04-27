@@ -33,7 +33,7 @@
 통합 이후 티켓 상세 화면 조회 시, 기존 **공란**이었던 필드에만 갱신된 최신 고객 데이터가 **자동으로 입력**되며, 기존에 입력되어 있었던 고객 정보는 변경 없이 **유지**됩니다.
 
 ## 고객정보연동
-### 기본 설정
+### API 설정
 ![](http://static.toastoven.net/prod_contact_center/2.2.7-(6).png)
 고객사 측의 **고객 데이터**를 **API**를 통해 Online Contact에서 조회하실 수 있도록 제공하는 기능입니다.
 [서비스 관리 → 인증 → OPEN API](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#open-api) 메뉴에서 **OPEN API를 활성화**하신 후 이용하실 수 있으며, **① 추가** 시 **② API 상세설정** 화면이 표시됩니다. 입력이 필요한 부분은 다음과 같습니다.
@@ -61,7 +61,7 @@
 
 정보 입력 후 **저장** 버튼을 누르시면 API 정보가 저장되어 티켓 상세 화면에서 API를 통해 고객사 측의 고객 데이터를 조회하실 수 있습니다.
 
-### 고객정보 확인
+### 고객정보 조회
 ![](http://static.toastoven.net/prod_contact_center/2.2.7-(7).png)
 티켓 관리 메뉴 상단의 **① 정보조회** 버튼, 및 티켓 상세화면 **③ 고객정보** 탭을 통해 조회된 고객 정보를 확인하실 수 있습니다.
 
