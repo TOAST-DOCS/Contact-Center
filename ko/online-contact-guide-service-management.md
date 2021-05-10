@@ -206,7 +206,7 @@ Online Contact에서 도메인을 제공하는 **① 대표 계정 주소**를 �
 ✔ **\[FAQ 바로가기]** [상담원에게 전화 아이콘이 표시되지 않아요.](https://nhn-contact.oc.toast.com/oc/hc/article/104/)
 ✔ **\[FAQ 바로가기]** [CTI 화면은 전화 권한이 있는 서비스에서만 접속할 수 있나요?](https://nhn-contact.oc.toast.com/oc/hc/article/101/)
 
-## IVR Route 관리
+### IVR Route 관리
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(8)-1.png)
 IVR Route 관리 메뉴에서는 콜백 관리를 위한 **IVR 경로 코드**와 **IVR 경로명**을 등록 및 관리하실 수 있습니다.
 
