@@ -33,6 +33,25 @@ Online Contact에서는 **상담 관리**, **이슈 관리**의 2가지 서비�
 ✔ **\[FAQ 바로가기]** [과금 기준은 어떻게 되나요?](https://nhn-contact.oc.toast.com/oc/hc/article/99/)
 ✔ **\[FAQ 바로가기]** [요금은 언제 어떻게 결제되나요?](https://nhn-contact.oc.toast.com/oc/hc/article/67/)
 
+### 조직 정보
+![](http://static.toastoven.net/prod_contact_center/2.1.1-(5).png)
+**조직 정보** 탭에서는 Online Contact 서비스를 이용하고 있는 **① NHN Cloud 조직 정보**와, Online Contact 내부의 계약 서비스들을 관리하는 **② Online Contact 조직 정보**를 확인하실 수 있습니다.
+
+#### NHN Cloud 조직 정보
+NHN Cloud 조직 정보에서 확인하실 수 있는 내용은 아래와 같습니다.
+하기 정보는 모두 **NHN Cloud Console → 조직 설정 → 조직 기본 설정** 탭에서도 확인하실 수 있으며, 조직 이름, 도메인은 해당 탭에서 수정하실 수 있습니다.
+ 
+- NHN Cloud 조직 이름 : 조직 생성 시 설정한 이름
+- NHN Cloud 조직 ID : 조직 생성 시 각 조직마다 부여되는 고유한 ID. Online Contact Open API 사용 시 필요한 인증 토큰 생성에 사용 
+- NHN Cloud 조직 도메인 : 조직 생성 후 서비스 선택 시 설정한 도메인 이름
+
+#### Online Contact 조직 정보
+Online Contact 조직 정보에서 확인하실 수 있는 내용은 아래와 같습니다.
+**조직 Key**의 경우 API Key 변경 버튼을 통해 변경 가능하며, **Online Contact URL**은 NHN Cloud 조직 도메인을 이용해 생성되므로 조직 도메인 변경 시 함께 변경됩니다.
+
+- Online Contact 조직 Key : 서비스 등록/수정/삭제 등 조직 관리 차원에서 수행되는 행위를 Online Contact 외부에서 API를 통해 처리하고자 할 때 인증 단계에서 사용되는 Key
+- Online Contact URL : Online Contact 접속 URL. https://**조직 도메인**.oc.toast.com 형식으로 생성됨
+
 ## 조직관리자
 ![](http://static.toastoven.net/prod_contact_center/2.1.2-(1).png)
 **조직관리자**는 Online Contact를 사용하는 조직을 관리할 수 있는 권한을 가지며, 상담원의 추가 및 삭제가 가능하고, 상담원 중에서 조직관리자를 추가하거나 삭제하실 수 있습니다. 
@@ -50,8 +69,8 @@ Online Contact에서는 **상담 관리**, **이슈 관리**의 2가지 서비�
 **회원 초대** 버튼 또는 NHN Cloud CONSOLE을 통해 등록하신 IAM 회원의 경우 입력하신 이메일로 비밀번호 변경 이메일이 발송되며, 해당 이메일을 통해 비밀번호를 설정해주신 후에 로그인하실 수 있습니다.
 
 ## CTI 관리
-CTI 관리 메뉴에서는 Online Contact과 연결할 CTI 정보를 설정하고, 전화 상담을 진행할 각 상담원의 CTI ID와 CTI NO를 입력 및 수정하실 수 있습니다.
-해당 메뉴는 계약 정보에서 **티켓 관리 → 전화 포함 (❖CTI사용 포함)** 기능을 **사용**으로 설정하신 서비스에서만 조회 가능합니다.
+CTI 관리 메뉴에서는 Online Contact과 연결할 CTI 정보를 설정하고, 전화 상담을 진행할 각 상담원의 CTI ID와 CTI 번호를 입력 및 수정하실 수 있습니다.
+해당 메뉴는 계약 정보에서 **티켓 관리 → 전화 CTI 사용** 기능을 **사용**으로 설정하신 서비스에서만 조회 가능합니다.
 
 ### CTI 설정
 ![](http://static.toastoven.net/prod_contact_center/2.1.2-(2).png)
@@ -62,7 +81,7 @@ CTI 설정 메뉴를 통해 Online Contact의 전화 기능과 연결할 CTI를 
 - 모바일 컨택 (Mobile Contact): NHN Cloud Console에서 **Mobile Contact 서비스를 활성화**하신 후 선택하실 수 있습니다.
 
 CTI 버전을 선택하신 후, IPCC 또는 Mobile Contact 관리 담당자로부터 전달 받으신 **서비스명**을 **② 테넌트 명칭** 란에 입력해주세요.
-**③ 저장** 버튼을 누르시면 CTI 정보가 저장됩니다.
+**③ 저장** 버튼을 누르시면 CTI 정보가 저장됩니다. 
 
 ### CTI 상담원 관리
 ![](http://static.toastoven.net/prod_contact_center/2.1.2-(3).png)
@@ -71,21 +90,9 @@ CTI 버전을 선택하신 후, IPCC 또는 Mobile Contact 관리 담당자로�
 
 상담원 아이디, 이름, 이메일, CTI ID, CTI NO, 서비스 (상담원으로 등록된 서비스) 정보를 조회하실 수 있으며, **② 수정** 버튼을 통해 CTI ID와 CTI NO를 입력 또는 수정하실 수 있습니다.
 IPCC 또는 Mobile Contact 관리 담당자로부터 전달 받으신 **CTI ID**와 **CTI NO**를 입력하신 후 **③ 저장** 버튼을 눌러 입력된 정보를 저장해주세요.
+CTI 정보의 취득이 어려우실 경우 Online Contact 고객센터를 통해 문의 부탁드립니다. ([Online Contact 고객센터 바로가기](https://nhn-contact.oc.toast.com/oc/hc/))
 
 CTI 정보가 정상적으로 입력된 후에, 전화 권한이 있는 상담원이 전화 위젯에서 **CTI 로그인**을 진행하실 수 있습니다. 
-
-## SSO 로그인
-![](http://static.toastoven.net/prod_contact_center/2.1.3-(1).png)
-헬프센터 로그인 시 원하는 인증 방식을 설정할 수 있는 메뉴로, 해당 메뉴에서 SSO 로그인을 등록하신 후 [서비스 관리 → 인증](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_2) 메뉴에서 등록하신 로그인 방식을 설정하시면 헬프센터에 적용됩니다. 등록하신 후 수정도 가능합니다.
-
-
-### SSO 로그인 추가 절차
--	**① +등록** 버튼 클릭 → SSO 로그인 명, 원격 로그인 URL, 로그인 상태 URL 입력 후 **확인** 버튼 클릭
-
-SSO 로그인 설정 시 인증 처리에 사용되는 **API 인증 Key**를 제공하며, **② API Key 변경** 버튼을 통해 Key값 변경이 가능합니다.
-
-✔ **\[FAQ 바로가기]** [원격 로그인 URL은 어떤 용도로 사용되나요?](https://nhn-contact.oc.toast.com/oc/hc/article/50/)
-✔ **\[FAQ 바로가기]** [로그인 상태 URL(API)은 어떤 용도로 사용되나요?](https://nhn-contact.oc.toast.com/oc/hc/article/51/)
 
 ## 권한 변경 로그 관리
 ![](http://static.toastoven.net/prod_contact_center/2.1.4-(1).png)

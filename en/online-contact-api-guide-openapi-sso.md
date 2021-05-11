@@ -118,8 +118,22 @@ Please refer to the following class in the sample project for the **method of ca
 |Timestamp of Current Time	|time	|Long	|O	|Timeout alert is displayed when call time exceeded by 3 minutes.|
 |Authentication Token 	|token	|Varchar	|O	|SHA256 calculated by following parameter values and SSO API key (If non-required parameter values are null or empty, you do not need to add them to the encryption string. Caution: The order of each value in the string must be consistent with the following example.) SHA256Digest(service + usercode + username + email + phone + time)|
 
-#### Result Data
-SUCCESS
+#### Response Data
+```
+{	
+  "header": {	
+    "resultCode": 200,	
+    "resultMessage": "",	
+    "isSuccessful": true	
+  },	
+  "result": {	
+    "content": "xxxxxxaccessTokenxxxxxxx"	
+  }	
+}	
+```
+
+The returned content value is assigned to the parameter - accessToken value of the Help Center URL when Help Center is called, and delivered to Online Contact.  
+Example : https://nhn-cs.alpha-oc.toast.com/hangame/hc/?accessToken=xxxxxxaccessTokenxxxxxxx
  
 ### SSO Login URL (User)
 #### Interface Description
