@@ -165,7 +165,9 @@
 |               |assigneeName	|String	|X	|티켓 처리자, 기본 값 : null|
 
 #### Request URL
+```
 ?id=티켓ID&type=티켓 유형&assigneeName=티켓 처리자 명	
+```
 
 #### Request Body
 - 형식: application/json;charset=UTF-8
@@ -239,10 +241,13 @@
 |	            |createdDt	|Long	 |	    |재문의 시간|
 | 	            |attachments	|String |		|첨부파일 ID|
 
-#### Request Body
+#### Request URL
 ```
 ?id=티켓ID
-Request Body
+```
+
+#### Request Body
+```
 {
    "comment":"재문의 내용"
 }
