@@ -135,7 +135,7 @@
 |서비스 ID	|serviceId	|String	|O	|서비스 ID，URL PATH 내에 설정한 {serviceId}|
 |티켓 ID	|id	|String	|O	|티켓 ID|
 |티켓 처리 유형	|type	|String	|X	|티켓 처리유형 (new : 미할당, open : 처리중, reply : 보류, solved : 해결, closed : 완료). 티켓 해결 후 완료처리 가능|
-|답변 내용	|comment	|String	|O	|Request Body로 제출한 {"comment":"답변내용"}|
+|답변 내용	|comment	|String	|X	|Request Body로 제출한 {"comment":"답변내용"}|
 |티켓 처리자 명	|assigneeName	|String	|X	|티켓 처리자 , 기본 값 : null|
 |첨부파일	|attachments	|String	|X	|첨부파일 ID（형식（파일 ID는 ,로 분리）：파일ID1,파일ID2,…,파일IDn）|
 
