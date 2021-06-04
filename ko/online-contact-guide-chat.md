@@ -3,7 +3,7 @@
 ## 기본 설정
 헬프센터 내에 채팅 기능을 **활성화**시키거나, 사용 중인 서비스 웹 페이지에 인입 스크립트를 통해 **채팅 위젯**을 추가하여 채팅 상담을 통한 문의 처리가 가능합니다.
 
-[전체관리 → 계약 서비스 현황 → 계약 현황](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-global-management/#_2) 탭에서 수정하실 수 있는 계약 상세 내역에서 채팅 기능을 사용 설정하신 후[서비스 관리 → 헬프센터 → 구성관리](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_32) 탭에서 채팅 기능을 활성화시키실 수 있으며, 채팅 기능 활성화 시 다음과 같은 기능들을 [서비스 관리 → 채팅](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_3) 메뉴에서 설정하실 수 있습니다.
+[전체관리 → 계약 서비스 현황 → 계약 현황](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-global-management/#_2) 탭에서 수정하실 수 있는 계약 상세 내역에서 채팅 기능을 사용 설정하신 후 [서비스 관리 → 헬프센터 → 구성관리](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_32) 탭에서 채팅 기능을 활성화시키실 수 있으며, 채팅 기능 활성화 시 다음과 같은 기능들을 [서비스 관리 → 채팅](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_3) 메뉴에서 설정하실 수 있습니다.
 -	기본 설정: 채팅 상담 시작 시 전송되는 **인사말** 및 평가 요청 시 전송되는 **만족도 안내 메시지** 설정
 -	상담원 할당 설정: 채팅 상담 요청이 접수될 시, 해당 고객과의 최근 채팅기록이 있는 상담원에게 채팅 상담을 **우선으로 할당**하는 기능의 활성화 및 비활성화
 -	채팅화면 삽입 코드: 사용 중인 서비스 페이지에 채팅 위젯을 삽입하여 Online Contact의 채팅 상담 서비스를 고객에게 제공하고 싶은 경우, 소스 코드에 삽입할 수 있도록 제공되는 **인입 스크립트** 확인
