@@ -1,4 +1,5 @@
 ## Contact Center > Online Contact > API 가이드 > 티켓 관리
+
 ### 티켓 생성
 #### 인터페이스 설명
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/ticket/add.json			
@@ -133,7 +134,8 @@
 |-----|-----|-----------|-----|---|
 |서비스 ID	|serviceId	|String	|O	|서비스 ID，URL PATH 내에 설정한 {serviceId}|
 |티켓 ID	|id	|String	|O	|티켓 ID|
-|답변 내용	|comment	|String	|O	|Request Body로 제출한 {"comment":"답변내용"}|
+|티켓 처리 유형	|type	|String	|X	|티켓 처리유형 (new : 미할당, open : 처리중, reply : 보류, solved : 해결, closed : 완료). 티켓 해결 후 완료처리 가능|
+|답변 내용	|comment	|String	|X	|Request Body로 제출한 {"comment":"답변내용"}|
 |티켓 처리자 명	|assigneeName	|String	|X	|티켓 처리자 , 기본 값 : null|
 |첨부파일	|attachments	|String	|X	|첨부파일 ID（형식（파일 ID는 ,로 분리）：파일ID1,파일ID2,…,파일IDn）|
 
@@ -145,7 +147,7 @@
 |	              |subject	|String	|O	|티켓 제목|
 |	              |categoryId	|Int	|X	|접수유형 ID|
 |	              |categoryName	|String	|X	|접수유형 명|
-|	              |status	|String	|O	|티켓 상태（open:신규티켓; closed:처리완료）|
+|	              |status	|String	|O	|티켓 상태（new : 미할당, open : 처리중, reply : 보류, solved : 해결, closed : 완료）|
 |	              |endUser.usercode	|String	|O	|유저 코드（유일한 값）|
 |	              |endUser.email	|String	|X	|유저 이메일（티켓 처리 시 해당 이메일로 답변이 발송 됨. 없을 경우 메일이 발송되지 않음)|
 |	              |endUser.username	|String	|X	|유저 명|
@@ -154,14 +156,18 @@
 |               |createdDt	|Long	|O	|티켓 생성시간|
 |	              |updatedDt	|Long	|O	|티켓 업데이트 시간|
 |	              |contents.content	|String	|X	|티켓 처리 내용|
+|                 |contents.type	|String	|X	|티켓 유형 (reply : 상담원 답변, enduser : 고객 재문의)|
+|                 |contents.userName	|String	|X	|티켓 처리자/재문의 고객 명，기본 값 : null|
 |	              |contents.createdDt	|Long	|X	|티켓 처리 시간|
 |	              |contents.attachments	|String	|X	|티켓 처리 첨부파일 ID|
 |	              |attachments[].attachmentId	|String	|X	|첨부파일 ID|
 |               |addition	|String	|X	|기본 필드 외에 추가 된 필드 정보|
-|               |assigneeName	|String	|X	|티켓 처리자 , 기본 값 : null|
+|               |assigneeName	|String	|X	|티켓 처리자, 기본 값 : null|
 
 #### Request URL
-?id=티켓ID&assigneeName=티켓 처리자 명
+```
+?id=티켓ID&type=티켓 유형&assigneeName=티켓 처리자 명	
+```
 
 #### Request Body
 - 형식: application/json;charset=UTF-8
@@ -194,13 +200,82 @@
             "contents":[
                 {
                     "content":"I solve it",
+	                "type":"reply",
+             	    "userName":"티켓 처리자/재문의 고객 명",
                     "createdDt":1586927311120,
                     "attachments":null
                 }
             ],
             "attachments":null,
             "addition":null
-           "assigneeName":"티켓 처리자 명" 
+            "assigneeName":"티켓 처리자 명" 
+        }
+    }
+}
+```
+
+### 고객 재문의
+#### 인터페이스 설명
+- URL:	https://{domain}.oc.toast.com/{serviceId}/openapi/v1/ticket/comment.json			
+- URL (개발):	https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/ticket/comment.json
+
+|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|------------|-------|--------|-----|--------|--------------|------------|
+|고객 재문의  |HTTPS  |POST    |UTF-8|JSON    |티켓 아이디 기준으로 고객 재문의|공통 인증|
+
+#### 요청 파라미터 정의
+|명칭	|변수	|데이터 타입	|필수	|설명|
+|-----|-----|-----------|-----|---|
+|서비스 ID	|serviceId	|String	|O	|서비스 ID，URL PATH 내에 설정한 {serviceId}|
+|티켓 ID	 |id	     |String	|O	|티켓 ID|
+|재문의 내용	|comment	|String	  |O	|Request Body를 통해 제출. 제출 형태 : {"comment" : "재문의 내용"}|
+|첨부파일	 |attachments	|String	|X	|첨부파일 ID. 형식(파일 ID는 ,로 분리) : 파일ID1, 파일ID2, … ,파일IDn|
+
+#### 결과 데이터
+|명칭	|변수	|데이터 타입	|필수	|설명|
+|-----|-----|-----------|-----|---|
+|result.content	|contentId	|Long  |		|내용 ID|
+|	            |ticketId	|String	|	    |티켓 ID|
+|	            |type	    |String	 |	    |티켓 유형 (enduser:고객 재문의)|
+|	            |content	|String	 |	    |재문의 내용|
+|	            |createdDt	|Long	 |	    |재문의 시간|
+| 	            |attachments	|String |		|첨부파일 ID|
+
+#### Request URL
+```
+?id=티켓ID
+```
+
+#### Request Body
+```
+{
+   "comment":"재문의 내용"
+}
+```
+
+#### Response Body
+```
+{
+    "header":{
+        "resultCode":200,
+        "resultMessage":"",
+        "isSuccessful":true
+    },
+    "result":{
+        "content":{
+            "contentId":22891,
+            "ticketId":"T1586918360295gJrtI",
+            "eventId":45205,
+            "type":"enduser",
+            "subject":null,
+            "content":"재문의 내용",
+            "active":true,
+            "userId":10111,
+            "userName":null,
+            "groupId":null,
+            "groupName":null,
+            "createdDt":1586927311120,
+            "attachments":[]
         }
     }
 }
@@ -229,7 +304,7 @@
 |	            |subject	|String	|O	|티켓 제목|
 |	            |categoryId	|Int	|X	|접수유형 ID|
 |	            |categoryName	|String	|X	|접수유형 명|
-|	            |status	        |String	|O	|티켓 상태（open:신규티켓; closed:처리완료）|
+|	            |status	        |String	|O	|티켓 상태（new : 미할당, open : 처리중, reply : 보류, solved : 해결, closed : 완료）|
 |	            |endUser.usercode	|String	|O	|유저 코드（유일한 값）|
 |	            |endUser.email	    |String	|X	|유저 이메일（티켓 처리 시 해당 이메일로 답변이 발송 됨. 없을 경우 메일이 발송되지 않음)|
 |	            |endUser.username	|String	|X	|유저 명|
@@ -238,6 +313,8 @@
 |	            |createdDt	        |Long	|O	|티켓 생성시간|
 |	            |updatedDt	        |Long	|O	|티켓 업데이트 시간|
 |	            |contents.content	|String	|X	|티켓 처리내용|
+|               |contents.type	    |String	|X	|티켓 유형. reply : 상담원 답변, enduser : 고객 재문의|
+|               |contents.userName	|String	|X	|티켓 처리자/재문의 고객 명，기본 값 : null|
 |	            |contents.createdDt	|Long	|X	|티켓 처리시간|
 |	            |contents.attachments.attachmentId	|String	|X	|티켓 처리 첨부파일 ID|
 |	            |contents.attachments.fileName	|String	|X	|티켓 처리 첨부파일 명|
@@ -283,6 +360,8 @@
             "contents":[
                 {
                     "content":"I solve it",
+	                "type":"reply",
+                    "userName":"티켓 처리자/재문의 고객 명",
                     "createdDt":1586927311000,
                     "attachments":[
                         {
@@ -346,7 +425,7 @@
 |종료시간	|endDt	|String	|X	|검색 범위 종료시간(티켓 생성시간)(형식:yyyyMMddHHmmss）|
 |티켓 ID	|ticketId	|String	|X	|티켓 ID|
 |제목	|subject	|String	|X	|제목|
-|티켓 상태	|status	|String	|X	|티켓 상태（open:신규티켓; closed:처리완료）|
+|티켓 상태	|status	|String	|X	|티켓 상태（new : 미할당, open : 처리중, reply : 보류, solved : 해결, closed : 완료）|
 |접수유형	|categoryId	|Int	|X	|접수유형 ID（ID가 여러개 일 경우 , 로 분리）|
 |유저 코드	|usercode	|String	|X	|유저 코드（유일한 값）|
 |유저 명	|username	|String	|X	|유저 명|
@@ -363,7 +442,7 @@
 |	                |subject	|String	|O	|티켓 제목|
 |	                |categoryId	|Int	|X	|접수유형 ID|
 |	                |categoryName	|String	|X	|접수유형 명|
-|	                |status	|String	|O	|티켓 상태（open:신규티켓; closed:처리완료）|
+|	                |status	|String	|O	|티켓 상태（new : 미할당, open : 처리중, reply : 보류, solved : 해결, closed : 완료）|
 |	                |createdDt	|Long	|O	|티켓 생성시간|
 |	                |updatedDt	|Long	|O	|티켓 업데이트 시간|
 |	                |addition	|String	|X	|기본 필드 외에 추가 된 필드 정보|
@@ -475,7 +554,7 @@
 |종료시간	|endDt	    |String	|X	|검색 범위 종료시간(티켓 생성시간)(형식:yyyyMMddHHmmss）|
 |티켓 ID	|ticketId	  |String	|X	|티켓 ID|
 |제목	|subject	      |String	|X	|제목|
-|티켓 상태	|status	    |String	|X	|티켓 상태（open:신규티켓; closed:처리완료）|
+|티켓 상태	|status	    |String	|X	|티켓 상태（new : 미할당, open : 처리중, reply : 보류, solved : 해결, closed : 완료）|
 |접수유형	|categoryId	|Int	|X	|접수유형 ID（ID가 여러개 일 경우 , 로 분리）|
 |정렬방식	|sort	    |String	|X	|정렬 순서(기본값:updatedDt:desc; 형식 변수:정렬（오름차순:asc, 내림차순:desc))|
 |페이지	|page	     |Int	|X	|기본 값:1|
@@ -489,7 +568,7 @@
 |	                |subject	|String	|O	|티켓 제목|
 |	                |categoryId	|Int	|X	|접수유형 ID|
 |	                |categoryName	|String	|X	|접수유형 명|
-|	                |status	|String	|O	|티켓 상태（open:신규티켓; closed:처리완료）|
+|	                |status	|String	|O	|티켓 상태（new : 미할당, open : 처리중, reply : 보류, solved : 해결, closed : 완료）|
 |                   |createdDt	|Long	|O	|티켓 생성시간|
 |	                |updatedDt	|Long	|O	|티켓 업데이트 시간|
 |	                |addition	|String	|X	|기본 필드 외에 추가 된 필드 정보|

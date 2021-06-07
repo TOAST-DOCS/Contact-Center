@@ -5,6 +5,69 @@
 
 티켓은 헬프센터(PC, Mobile), 이메일, API, 채팅, 트위터(멘션, 메시지), 전화를 통해 유입될 수 있으며, 유입 채널별로 색상이 부여되어 티켓 구분에 활용하실 수 있습니다.
 
+### 헬프센터 (PC, Mobile)
+![](http://static.toastoven.net/prod_contact_center/4.1.1-(2).png)
+Online Contact 이용 시 기본으로 제공되는 **헬프센터**를 통해 문의를 접수 받아 티켓으로 처리하실 수 있습니다.
+[서비스 관리 → 티켓 → 카테고리 관리](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_9), [서비스 관리 → 티켓 → 필드](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_22) 메뉴에서 설정하신 접수유형 및 필드에 따라 작성된 문의를 티켓 상세화면에서 조회하실 수 있습니다.
+
+### 이메일
+![](http://static.toastoven.net/prod_contact_center/4.1.1-(3).png)
+[서비스 관리 → 티켓 → 이메일 설정](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_28) 메뉴에서 생성하신 **대표 계정**, 또는 연결하신 **외부 계정**을 통해 이메일을 통한 문의를 접수 받아 티켓으로 처리하실 수 있습니다. 
+
+### API
+**Open API**를 통해 티켓을 생성 또는 처리하실 수 있으며, 구체적인 API 가이드는 하단 링크에서 확인하실 수 있습니다.
+- [API 가이드 > 티켓 관리](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-ticket/)
+
+### 채팅
+![](http://static.toastoven.net/prod_contact_center/4.1.1-(4).png)
+채팅 상담 중, 또는 채팅 종료 이후에도 **채팅 위젯** 및 **[채팅 → 채팅 기록](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-chat/#_6)** 메뉴를 통해 티켓을 생성하실 수 있습니다. 생성된 티켓의 채널은 **①**‘채팅’으로 표시되며, 티켓 클릭 시 티켓 정보 상단에 **②**‘채팅내역’ 탭이 표시되어 티켓 처리 시 채팅 내역을 참고하실 수 있습니다.
+
+채팅 기능은 [전체 관리 → 계약 서비스 현황 → 계약 현황](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-global-management/#_2) 메뉴에서 채팅 기능을 '사용' 설정하신 후, [서비스 관리 → 헬프센터 → 구성관리](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_43) 메뉴에서 활성화하여 사용하실 수 있습니다.
+
+### 트위터(멘션, 메시지)
+![](http://static.toastoven.net/prod_contact_center/4.1.1-(5).png)
+[서비스 관리 → 외부채널 → 트위터](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_45) 메뉴에서 트위터 기능을 활성화하셨을 경우, 등록한 계정으로 수신된 멘션 또는 메시지를 티켓으로 처리하실 수 있습니다. 답변 내용을 입력하신 후, 해결 처리를 통해 최종답변을 전송하시면 트윗(멘션)으로 인입된 티켓의 경우 답변 또한 트윗(멘션)으로, 메시지로 인입된 티켓의 경우 답변 또한 메시지로 발송됩니다.
+
+### 전화
+[전체 관리 → 계약 서비스 현황 → 계약 현황](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-global-management/#_2) 메뉴에서 전화 기능이 '사용' 설정되어 있는 상태에서 전화 권한이 부여된 상담원에게는 **전화 아이콘**이 표시되며, 해당 아이콘을 클릭하시면 CTI 화면이 Online Contact 화면 우측 상단에 표시됩니다.
+
+#### CTI 로그인, 기본 상태
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(10).png)
+[전체관리 → CTI 관리 → CTI 상담원 관리](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-global-management/#cti_2) 메뉴에서 CTI 정보가 등록된 상담원이 **① CTI 로그인** 버튼을 클릭하여 로그인이 완료되면 **② 기본 화면**으로 이동되어 다음과 같은 기능들을 이용하실 수 있습니다.
+
+- CTI 로그아웃
+- 휴식: 휴식 상태로 설정되어 콜이 할당되지 않습니다.
+- 대기: 대기 상태로 설정되어 콜이 인입될 경우 할당됩니다.
+- 업무: 교육, 취합/보고, 회의, 티켓처리, 채팅처리, 코칭(모니터링) 중 업무 상태를 선택하실 수 있으며, 콜이 할당되지 않습니다.
+- 걸기: 고객번호와 발신번호 ([서비스 관리 → 전화 → 발신번호 관리](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_30) 메뉴에서 설정) 설정 후 전화를 거실 수 있습니다.
+
+✔ **\[FAQ 바로가기]** [CTI 로그인이 진행되지 않아요.](https://nhn-contact.oc.toast.com/oc/hc/article/103/)
+
+#### 전화 인입
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(11).png)
+대기 상태에서 콜이 인입될 경우 **① 콜 인입 알림창**이 표시되어 통화가 연결될 시 현재 콜이 인입된 서비스의 티켓 처리 창으로 자동으로 이동하게 됨을 상담원에게 알립니다.
+**② 확인** 버튼을 누르시면 통화가 연결되며, 현재 콜이 인입된 서비스에 **티켓이 자동으로 생성**되어 티켓 처리 창으로 화면이 이동됩니다.**취소** 버튼을 누르실 경우 인입되었던 콜은 다시 시나리오로 이동되어 대기 상담원을 탐색하며, 다시 '대기'로 상태를 변경하실 경우 콜을 수신하실 수 있습니다.
+
+#### 전화 걸기
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(12).png)
+CTI 로그인된 상태에서 CTI 화면 → **① 걸기** 버튼을 누르시면 **② 전화걸기** 화면이 표시됩니다.
+**고객번호**를 입력, **발신번호**를 기본 또는 [서비스 관리 → 전화 → 발신번호 관리](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_30) 메뉴에서 등록하신 번호로 선택하신 후 **③ 확인** 버튼을 누르시면 전화가 발신됩니다.
+전화 걸기가 진행되면 상태는 **발신중**으로 변경되며, 통화가 연결되면 현재 상담원이 접속해있는 서비스에 **티켓이 자동으로 생성**되어 티켓 처리 창으로 화면이 이동됩니다.
+
+#### 전화 처리
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(13).png)
+**통화 중** 상태에서는 CTI 화면을 통해 다음과 같은 기능들을 이용할 수 있습니다.
+
+- 호전환 : 현재 연결 중인 통화를 **다른 상담원에게 연결**합니다. 상담원 번호 입력 또는 상담원을 조회하여 **협의통화** 후 **고객연결**을 진행할 수 있습니다.
+- 강성종료 : 통화가 연결된 고객이 **강성고객**으로 정상적인 상담이 이루어지기 어려운 상황의 경우 강성종료를 선택하시면 **ARS 안내음이 송출**되며 통화가 종료됩니다. 
+- 보류 : 통화 연결 중 잠시 확인 또는 문의가 필요할 경우 보류를 선택하시면 **음악이 송출**되며 **보류중**으로 상태가 변경됩니다. **해제** 버튼을 눌러 보류 상태를 해제하실 수 있습니다. 
+- 끊기 : 통화가 종료됩니다.
+
+#### 전화 종료
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(14).png)
+통화가 종료되면 **CTI 상태 변경에 대한 알림**이 표시되며, **① 확인** 버튼을 누르실 경우 **대기** 상태로 변경되어 전화 상담을 계속해서 진행하실 수 있습니다.
+**② 취소** 버튼을 선택하실 경우 **업무(티켓처리)** 상태로 변경되어 콜 상담에 대해 생성된 티켓을 처리하실 수 있습니다.
+
 ## 티켓 처리
 ![](http://static.toastoven.net/prod_contact_center/4.1.1-(1).png)
 **① 전체 티켓** 메뉴를 통해 할당/처리/완료 여부, 담당자와 관계없이 **전체적인 티켓 현황**을 확인하실 수 있으며, **세부 메뉴**들을 통해 할당 여부, 그룹, 티켓 상태 등 **세부 조건**에 맞게 표시된 티켓 현황을 확인하실 수 있습니다. 
@@ -88,14 +151,6 @@
 이관 접수유형을 선택하시면 그에 따라 이슈 관리 서비스의 서비스 관리 → 티켓 → 필드 메뉴에서 설정된 **③ 고객 필드**가 표시되며, 고객필드, 제목 및 내용까지 채우신 뒤 **④ 이관하기** 버튼을 누르시면 티켓 이관이 처리됩니다. 
 이관된 티켓의 상태는 **⑤ 이관 처리중**으로 변경되며, 이슈 관리 서비스에서 해당 문의가 **해결**, **보류**, **내부해결** 처리되었을 경우 상태 값이 **이관 답변완료**로 변경됩니다.
 
-### 개인정보 마스킹
-서비스의 계약 정보에서 **보안 서비스** 기능이 **사용** 설정된 경우, 티켓 관리 화면에 **개인정보 마스킹** 버튼이 표시되어 상담 진행 시 전달되는 고객의 개인정보를 암호화하여 관리하실 수 있습니다.  
-
-![](http://static.toastoven.net/prod_contact_center/masking_1.gif)
-티켓 관리 시 개인정보 마스킹을 진행하실 수 있는 영역은 **고객 문의**, **상담원 답변** 영역입니다. 마스킹하고자 하시는 영역을 **드래그**하여 선택하신 후 **개인정보 마스킹** 버튼을 누르시면 화면 상의 개인정보가 별표(\*)로 치환되어 표시되며, 마스킹 처리된 데이터는 데이터베이스 상에도 마스킹된 상태로 저장되어 보관됩니다.
-
-![](http://static.toastoven.net/prod_contact_center/masking_2.gif)
-개인정보 마스킹을 **해제**하고자 하실 경우, **별표(\*)로 치환된 영역을 클릭**하시면 마스킹 해제 여부를 묻는 팝업 화면이 표시되며, **확인** 버튼을 누르시면 화면과 데이터베이스에서 개인정보 마스킹이 해제됩니다. 
 
 ## 티켓 검색
 ![](http://static.toastoven.net/prod_contact_center/4.1.3-(1)_1.png)
