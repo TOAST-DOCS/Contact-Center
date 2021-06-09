@@ -13,7 +13,7 @@
 - **휴식**: 휴식 상태로 설정되어 인입 전화가 할당되지 않습니다.
 - **대기**: 대기 상태로 설정되어 전화가 인입될 경우 할당됩니다.
 - **업무**: 교육, 취합/보고, 회의, 티켓처리, 채팅처리, 코칭(모니터링) 중 업무 상태를 선택하실 수 있으며, 인입 전화가 할당되지 않습니다.
-- **걸기**: 고객번호와 발신번호 ([서비스 관리 → 전화 → 발신번호 관리](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_33) 메뉴에서 설정) 입력 후 전화를 발신하실 수 있습니다.
+- **걸기**: 고객번호와 발신번호 ([서비스 관리 → 전화 → 발신번호 관리](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_33) 메뉴에서 설정) 입력 후 전화를 발신하실 수 있습니다. 
 
 ✔ **\[FAQ 바로가기]** [CTI 로그인이 진행되지 않아요.](https://nhn-contact.oc.toast.com/oc/hc/article/103/)
 
@@ -21,13 +21,36 @@
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(11).png)
 대기 상태에서 상담원으로 추가된 큐로 전화가 인입될 경우 **① 전화 인입 알림창**이 표시되어 전화가 연결될 시 현재 전화가 인입된 서비스의 티켓 처리 창으로 자동으로 이동하게 됨을 상담원에게 알립니다. **② 확인** 버튼을 누르시면 전화가 연결되며, 전화가 인입된 서비스에 티켓이 자동으로 생성되어 티켓 처리 창으로 화면이 이동합니다. **취소** 버튼을 누르실 경우 전화 인입 건은 호회수 시간이 지나기 전까지 해당 상담원에게 할당된 상태를 유지했다가, 호회수 시간이 지난 이후에 다시 시나리오로 이동되어 대기 상담원을 탐색하게 됩니다. 
 
+- 호회수 시간 : 30초 (Mobile Contact CTI 기본 설정값)
+- 최대 대기시간 : 60초 (Mobile Contact CTI 기본 설정값)
+
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(11)_1.png)
 호회수 시간이 지나기 전으로 전화가 상담원에게 계속 할당되어 있는 상태에서는 **① 전화받기** 버튼을 통해, 호회수 시간 이후에는 **대기**로 상태를 변경할 시에 전화를 다시 받으실 수 있습니다. 
 
+### 전화 걸기
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(12).png)
+CTI 로그인된 상태에서 CTI 화면 → **① 걸기** 버튼을 누르시면 **② 전화 걸기** 화면이 표시됩니다.
+**고객번호**를 입력, **발신번호**를 선택하신 후에 **③ 확인** 버튼을 누르시면 전화가 발신됩니다. 발신번호 선택 시, 선택하실 수 있는 각 항목의 세부적인 정보는 다음과 같습니다.
+
+- **기본** : 연동하신 CTI 테넌트 상에 설정되어 있는 발신번호입니다. 
+- **선택** : 상담원이 전화 걸기를 시도할 당시에 접속 상태인 서비스에 등록되어 있는 발신번호가 드롭박스에 표시됩니다. ([서비스 관리 → 전화 → 발신번호 관리](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_33) 메뉴에서 등록)
+
+전화 걸기가 진행되면 상태는 **발신 중**으로 변경되며, 통화가 연결되면 현재 상담원이 접속해있는 서비스에 티켓이 자동으로 생성되어 티켓 처리 화면으로 이동합니다.
+
 ### 전화 처리
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(13).png)
+**통화 중** 상태에서는 CTI 화면을 통해 다음과 같은 기능들을 이용할 수 있습니다.
+
 #### 호전환
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(13)_1.png)
+
 #### 강성종료
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(13)_2.png)
+
 #### 보류
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(13)_3.png)
+
 #### 끊기
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(13)_4.png)
 
 ### 전화 종료
