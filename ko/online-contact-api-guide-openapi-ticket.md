@@ -120,6 +120,82 @@
 }
 ```
 
+### 전화티켓 생성
+#### 인터페이스 설명
+- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/ticket/call.json		
+- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/ticket/call.json		
+
+|인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
+|------------|-------|--------|-----|--------|--------------|------------|
+|전화티켓 생성|HTTPS  |PUT     |UTF-8|JSON    |Mobile Contact APP을 통한 전화 티켓 생성|공통인증|
+
+#### 요청 파라미터 정의
+|명칭	|변수	|데이터 타입	|필수	|설명|
+|---------|--------|-----------|---------|----|
+|서비스ID	|serviceId	|String	|O	|서비스ID，URL PATH중 {serviceId}에 설정|
+|전화티켓 정보	|request body	|String	|O	|전화티켓 정보（JSON）|
+|	             |subject	     |String(255)	|O	|Online Contact 티켓 제목|
+|	             |content	     |String	        |O	|Online Contact 티켓 내용|
+|	             |requesterId	|Integer	|O	|CTI 상담원 ID (CTI 측 agentid)|
+|	             |endUser.phone	|String	        |O	|고객 전화번호|
+|	             |endUser.username	|String		|X      |고객 이름（이메일 입력 시 해당 항목 반드시 입력 필요）|
+|	             |endUser.email	|String		|X      |고객 이메일|
+|	             |ticketCall.inoutFlg	|String	|O	|전화 유형 (in:인입, out:발신)|
+|	             |ticketCall.ivrPathNo	|String	|O	|전화 ivr 경로|
+|	             |ticketCall.disconnectCd	|String	|O	|전화 종료구분 (agent: 상담원 끊기，block: 강성 종료，customer: 고객 끊기)|
+|	             |ticketCall.callRingKey	|String	|O	|전화 UCID|
+|	             |ticketCall.callRingDt	|String(14)	|O	|전화 울림시간 (UTC timestamp시간)|
+|	             |ticketCall.callStartDt	|String(14)	|O	|상담 시작일시 (UTC timestamp시간)|
+|	             |ticketCall.callEndDt	|String(14)	|O	|상담 종료일시 (UTC timestamp시간)|
+
+#### Request Body
+```
+{	
+    "subject":"test1",	
+    "content":"12312312313",	
+    "requesterId":2020112233,	
+    "endUser":{	
+         "phone":"01012345678",	
+         "username":"test",	
+         "email":"test@test.com"	
+    },	
+    "ticketCall":{	
+         "inoutFlg":"in",	
+         "ivrPathNo":"70556",	
+         "disconnectCd":"agent",	
+         "callRingKey":"BC9E3D2B-B42E-4555-81EF-62E9680C4A37",	
+         "callRingDt":"20210101120000",	
+         "callStartDt":"20210101120000",	
+         "callEndDt":"20210101120000"	
+    },	
+}	
+```
+
+#### 결과 데이터
+|명칭	|변수	|데이터 타입	|필수	|설명|
+|---------|---------|-----------|--------|----|
+|result.content	|ticketId	|String	 |	|생성된 티켓 ID|
+|	        |code	        |String	 |	|호출 결과 (success: 성공, error: 실패)|
+|	        |message	|String	 |	|실패 메시지, 성공 시 null|
+
+#### Response Body
+```
+{	
+    "header":{	
+        "resultCode":200,	
+        "resultMessage":"",	
+        "isSuccessful":true	
+    },	
+    "result":{	
+        "content":{	
+               "ticketId":"T1586918360295gJrtI",	
+            "code":"success",	
+            "message":null	
+        }	
+    }	
+}	
+```
+
 ### 티켓 처리
 #### 인터페이스 설명
 - URL:	https://{domain}.oc.toast.com/{serviceId}/openapi/v1/ticket/solve.json			
