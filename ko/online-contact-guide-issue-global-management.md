@@ -5,14 +5,14 @@
 ## 계약 서비스 현황
 ### 계약 현황
 
-![](http://static.toastoven.net/prod_contact_center/2.1.1-(1).png)
+![](http://static.toastoven.net/prod_contact_center/2.1.1-(1)_im.png)
 **계약 현황** 탭을 통해 Online Contact를 사용하고 계신 조직에 **①**서비스를 추가, **②**서비스 기본정보/계약내용 수정, **③**서비스 사용여부 설정, **④**서비스 해지와 같은 기능들을 이용하실 수 있습니다. 
 
 Online Contact에서는 **상담 관리**, **이슈 관리**의 2가지 서비스 유형을 제공하고 있습니다. 
 -	**상담 관리**: Online Contact에서 제공하는 채팅, 전화, 헬프센터 등의 채널들을 통해 고객과 직접적으로 상담할 수 있는 서비스 유형입니다.
 -	**이슈관리**: 상담 관리 서비스의 상담원이 직접 해결하기 어려운 문의를 이관 받아 처리할 수 있는 서비스 유형입니다.  
 
-![](http://static.toastoven.net/prod_contact_center/2.1.1-(2).png)
+![](http://static.toastoven.net/prod_contact_center/2.1.1-(2)_im.png)
 **서비스 추가** 버튼을 클릭하시면 서비스 추가 화면이 표시되며, 서비스의 기본 정보를 입력하실 수 있습니다. 입력이 필요한 항목은 다음과 같습니다.
 - 유형: 사용하실 서비스의 유형 (상담 관리, 이슈 관리)
 - 서비스 명: 사용하실 서비스의 이름 
@@ -22,20 +22,20 @@ Online Contact에서는 **상담 관리**, **이슈 관리**의 2가지 서비�
 
 기본정보를 모두 입력하신 후 다음 버튼을 누르시면 **계약 상세 내역**으로 넘어갑니다. 계약 상세 내역 화면에서는 Online Contact에서 제공하는 상담 기능들에 대해 해당 서비스에서의 **사용 여부**를 선택하실 수 있으며, 해당 선택 여부가 반영된 **예상 비용**을 산출해 보실 수 있습니다. 계약 상세 내역 입력을 완료하신 후 **계약 버튼**을 누르시면 계약이 완료됩니다.
 
-![](http://static.toastoven.net/prod_contact_center/2.1.1-(3).png)
+![](http://static.toastoven.net/prod_contact_center/2.1.1-(3)_im.png)
 서비스 추가 시 진행되는 서비스 기본정보 입력, 계약 상세 내역 입력 단계를 모두 진행하지 않고 이탈하시게 되면 서비스 사용 상태는 **미사용** 상태로, 진행하시지 않은 단계는 **등록** 버튼으로 표시되게 됩니다. 서비스 추가 단계를 모두 진행하신 서비스의 경우 **① 수정** 버튼을 통해 기본정보와 계약정보를 수정하실 수 있으며, **② 상태** 버튼을 통해 서비스 사용여부 선택을, **③ 해지** 버튼을 통해 서비스 해지를 진행하실 수 있습니다. 서비스 해지의 경우 상태가 **이용정지**로 설정되어 있어야 해지 버튼이 활성화되므로 참고해주세요. 
 
 계약정보는 **하루에 1번만 수정 가능**합니다.
 
 ### 요금 현황
-![](http://static.toastoven.net/prod_contact_center/2.1.1-(4).png)
+![](http://static.toastoven.net/prod_contact_center/2.1.1-(4)_im.png)
 **요금 현황** 탭에서는 전체, 서비스 유형별, 개별 서비스별 월별 청구 요금을 **①** 검색하여 조회하실 수 있습니다. 개별 서비스를 기준으로 조회하셨을 경우 **②** 서비스 상태가 함께 표시됩니다. 
 
 ✔ **\[FAQ 바로가기]** [과금 기준은 어떻게 되나요?](https://nhn-contact.oc.toast.com/oc/hc/article/99/)
 ✔ **\[FAQ 바로가기]** [요금은 언제 어떻게 결제되나요?](https://nhn-contact.oc.toast.com/oc/hc/article/67/)
 
 ### 조직 정보
-![](http://static.toastoven.net/prod_contact_center/2.1.1-(5).png)
+![](http://static.toastoven.net/prod_contact_center/2.1.1-(5)_im.png)
 **조직 정보** 탭에서는 Online Contact 서비스를 이용하고 있는 **① NHN Cloud 조직 정보**와, Online Contact 내부의 계약 서비스들을 관리하는 **② Online Contact 조직 정보**를 확인하실 수 있습니다.
 
 #### NHN Cloud 조직 정보
@@ -54,7 +54,7 @@ Online Contact 조직 정보에서 확인하실 수 있는 내용은 아래와 �
 - Online Contact URL : Online Contact 접속 URL. https://**조직 도메인**.oc.toast.com 형식으로 생성됨
 
 ## 조직관리자
-![](http://static.toastoven.net/prod_contact_center/2.1.2-(1).png)
+![](http://static.toastoven.net/prod_contact_center/2.1.2-(1)_im.png)
 **조직관리자**는 Online Contact를 사용하는 조직을 관리할 수 있는 권한을 가지며, 상담원의 추가 및 삭제가 가능하고, 상담원 중에서 조직관리자를 추가하거나 삭제하실 수 있습니다. 
 조직관리자 권한만으로는 상담 기능과 서비스 관리 기능을 이용할 수 없으므로, 상담을 진행하고자 하거나 서비스를 초기에 구성하고자 하는 경우 **서비스 관리 → 상담원** 메뉴에서 관리자 또는 상담원 권한을 추가해주세요. 
 조직관리자 권한을 부여할 사용자는 IAM 회원으로 등록되어 있어야 합니다.
@@ -70,11 +70,11 @@ Online Contact 조직 정보에서 확인하실 수 있는 내용은 아래와 �
 **회원 초대** 버튼 또는 NHN Cloud CONSOLE을 통해 등록하신 IAM 회원의 경우 입력하신 이메일로 비밀번호 변경 이메일이 발송되며, 해당 이메일을 통해 비밀번호를 설정해주신 후에 로그인하실 수 있습니다.
 
 ## 권한 변경 로그 관리
-![](http://static.toastoven.net/prod_contact_center/2.1.4-(1).png)
+![](http://static.toastoven.net/prod_contact_center/2.1.4-(1)_im.png)
 **①** 조직 내부 상담원들의 권한을 변경할 시 로그가 저장됩니다. 조직관리자 또는 관리자가 권한 변경을 진행한 로그를 관리하는 메뉴로, **②** 조작일시, 조작내용, 이름, IP, 서비스, ID 중 일부 정보 입력을 통해 검색할 수 있습니다.
 
 ## My 실적
-![](http://static.toastoven.net/prod_contact_center/2.1.4-(2).png)
+![](http://static.toastoven.net/prod_contact_center/2.1.4-(2)_im.png)
 Online Contact 화면 우측 상단에 표시된 **①** 현재 접속되어 있는 **계정 이름**을 클릭하시면 **② My 실적** 메뉴로 접속하실 수 있습니다. 
 해당 메뉴에서 **현재 접속 중인 서비스**에서의 티켓, 전화, 채팅 상담에 대한 세부적인 **실시간 누적 데이터**를 조회하실 수 있습니다. 
 
@@ -106,7 +106,7 @@ Online Contact 화면 우측 상단에 표시된 **①** 현재 접속되어 있
 - 휴식
 
 ## 사용자 설정
-![](http://static.toastoven.net/prod_contact_center/2.1.5-(1).png)
+![](http://static.toastoven.net/prod_contact_center/2.1.5-(1)_im.png)
 Online Contact 화면 우측 상단에 표시된 **①** 현재 접속되어 있는 **계정 이름**을 클릭하시면 **②** 개인정보설정 메뉴로 접속하실 수 있습니다. 
 해당 메뉴에서 Online Contact에 접속하는 사용자의 개인정보 설정을 열람하고 변경할 수 있습니다. 
 
