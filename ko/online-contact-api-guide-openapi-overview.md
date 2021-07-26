@@ -174,6 +174,7 @@ return sb.toString();
 |	    |	           |접수유형 삭제	          |접수유형 ID를 통해 접수유형 삭제|
 |  	    |	           |접수유형 목록	         |서비스 내 접수유형 조회|
 |           |[티켓 관리](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-ticket/)	|티켓 생성	                |신규 티켓 생성|
+|           |              |전화 티켓 생성              |전화 티켓 생성|
 |	    |	           |티켓 처리	           |티켓 ID를 통해 티켓 처리|
 |           |              |고객 재문의                |티켓 아이디 기준으로 고객 재문의|
 |	    |	           |티켓 상세	           |티켓 ID를 통해 티켓 조회|
