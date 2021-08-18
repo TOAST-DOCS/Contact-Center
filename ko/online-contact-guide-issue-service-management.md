@@ -123,7 +123,7 @@ Online Contact에서 도메인을 제공하는 **① 대표 계정 주소**를 �
 상담원 메뉴에서는 이관 티켓 처리를 위해 상담원과 그룹을 추가 및 수정하고, 상담원 별로 그룹과 권한을 설정할 수 있습니다.
 
 ### 상담원
-![](http://static.toastoven.net/prod_contact_center/2.2.4-(1).png)
+![](http://static.toastoven.net/prod_contact_center/2.2.4-(1)_im.png)
 상담원으로 추가할 사용자는 **IAM 회원**으로 등록되어 있어야 합니다.
 
 #### IAM 회원 등록
@@ -140,11 +140,11 @@ Online Contact에서 도메인을 제공하는 **① 대표 계정 주소**를 �
 -	상담원: **티켓 처리**를 위한 권한
 
 ### 그룹
-![](http://static.toastoven.net/prod_contact_center/2.2.4-(2).png)
+![](http://static.toastoven.net/prod_contact_center/2.2.4-(2)_im.png)
 그룹 메뉴에서는 그룹의 **① 추가**, **② 수정**, **③ 삭제**가 가능합니다. 그룹별 상담원을 구성할 경우 티켓 → 트리거 상에서 해당 그룹에 유형별 문의를 할당하거나, 알림 메일이 전송되도록 설정할 수 있습니다. 
 
 #### 그룹 추가
-![](http://static.toastoven.net/prod_contact_center/2.2.4-(3).png)
+![](http://static.toastoven.net/prod_contact_center/2.2.4-(3)_im.png)
 상단 좌측 **그룹 추가** 버튼을 누르신 후, 그룹 명을 입력해주시고 할당될 상담원을 선택하신 뒤 **①** ' **>** ' 버튼을 통해 할당된 상담원으로 이동해주세요. 반대로 상담원을 할당 해제하실 때는 ‘ **<** ‘ 버튼을 통해 미할당 상담원으로 이동하실 수 있습니다. 상담원 할당을 마친 후 **②** **저장** 버튼을 눌러 주시면 그룹 설정이 적용됩니다.
 
 상담원을 할당하시지 않고도 그룹을 추가하실 수 있으므로, 그룹의 최초 추가 시에는 그룹 명만 입력하신 다음 **저장** 버튼을 눌러 주시면 상담원 추가를 진행하실 수 있습니다.
@@ -153,7 +153,7 @@ Online Contact에서 도메인을 제공하는 **① 대표 계정 주소**를 �
 **외부 채널**을 Online Contact와 연결하여 고객과 소통할 수 있습니다. 이슈관리 서비스에서는 **SMS** 서비스를 연동하여 사용하실 수 있습니다.
 
 ### SMS
-![](http://static.toastoven.net/prod_contact_center/2.2.6-(6).png)
+![](http://static.toastoven.net/prod_contact_center/2.2.6-(6)_im.png)
 **[NHN Cloud Notification → SMS](https://www.toast.com/kr/service/notification/sms)** 서비스를 Online Contact과 연동하여 SMS/MMS를 발송하실 수 있습니다.
 전체 관리 → 계약 서비스 현황 → 계약 상세 내역에서 **SMS 발송** 기능을 **사용**으로 설정하신 경우 서비스 관리 → 외부채널 메뉴에 SMS 탭이 표시되어 SMS 연동을 관리하실 수 있습니다.
 
@@ -164,7 +164,7 @@ Online Contact에서 도메인을 제공하는 **① 대표 계정 주소**를 �
 SMS 연동 활성화 및 발신번호 추가 이후에, **부가업무 → SMS발송** 메뉴에서 SMS 템플릿 관리 및 SMS 발송을 진행하실 수 있습니다.
 
 ## 보안서비스
-![](http://static.toastoven.net/prod_contact_center/2.2.6-(5).png)
+![](http://static.toastoven.net/prod_contact_center/2.2.6-(5)_im.png)
 Online Contact 관리자와의 사전 협의를 통해 계약 정보에서 서비스 관리 → 보안 서비스 기능을 사용 설정하신 경우, 
 **로그 연동** 기능과, 채팅 및 티켓 상담 시 상담 진행을 위해 전달되는 고객의 개인정보를 암호화하여 관리할 수 있는 **개인정보 마스킹** 기능을 사용하실 수 있습니다. 
 
