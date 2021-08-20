@@ -43,10 +43,10 @@
 ![](http://static.toastoven.net/prod_contact_center/4.1.2-(3)_im.png)
 -	**① 문의내역**: 해당 고객의 이전 이관 처리내역 확인
 
-![](http://static.toastoven.net/prod_contact_center/4.1.2-(4).png)
+![](http://static.toastoven.net/prod_contact_center/4.1.2-(4)_im.png)
 -	**① 이벤트**: 해당 문의에 관련하여 발생한 이벤트 (할당, 담당자 변경, 전달 등) 확인
 
-![](http://static.toastoven.net/prod_contact_center/4.1.2-(5).png)
+![](http://static.toastoven.net/prod_contact_center/4.1.2-(5)_im.png)
 문의에 대해서 선택할 수 있는 **처리 상태**는 다음과 같습니다. **해결**, **보류**, **내부해결** 처리 시 상담 관리 서비스에서의 티켓 상태는 **이관 답변완료**로 변경됩니다.
 
 - **①** 해결: 고객에게 발송할 **최종 메일** 처리 
@@ -63,7 +63,7 @@
 ✔ **\[FAQ 바로가기]** [동일한 문의 내용을 한번에 일괄처리 할 수 있나요?](https://nhn-contact.oc.toast.com/oc/hc/article/38/)
 
 ### 티켓 생성
-![](http://static.toastoven.net/prod_contact_center/4.1.2-(6).png)
+![](http://static.toastoven.net/prod_contact_center/4.1.2-(6)_im.png)
 **① 티켓 생성** 버튼을 통해 새로운 티켓을 생성할 수 있습니다. 고객 문의 처리 과정에서 추가 티켓을 생성할 필요가 있거나, 전화 문의에 대한 메일 답변이 필요한 경우 사용될 수 있습니다.
 
 티켓 생성 시 입력이 필요한 항목은 다음과 같습니다.
@@ -82,7 +82,7 @@
 개인정보 마스킹을 **해제**하고자 하실 경우, **별표(\*)로 치환된 영역을 클릭**하시면 마스킹 해제 여부를 묻는 팝업 화면이 표시되며, **확인** 버튼을 누르시면 화면과 데이터베이스에서 개인정보 마스킹이 해제됩니다. 
 
 ## 티켓 검색
-![](http://static.toastoven.net/prod_contact_center/4.1.3-(1)_1.png)
+![](http://static.toastoven.net/prod_contact_center/4.1.3-(1)_1_im.png)
 티켓 목록 상단에 위치한 **① 티켓검색** 버튼을 누르시면 티켓 검색에 활용할 수 있는 조건들이 표시됩니다. 조건들은 구체적으로 다음과 같습니다.
 
 - 생성시간
@@ -95,7 +95,6 @@
 - 채널
 - 접수유형
 - 처리유형
-- 고객 고유번호
 - 이름
 - 아이디
 - 이메일
