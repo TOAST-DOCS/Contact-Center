@@ -1,4 +1,4 @@
-## Contact Center > Online Contact > 서비스 가이드 > 통계
+## Contact Center > Online Contact > 서비스 가이드 (상담관리) > 통계
 
 
 ## 기간 통계
