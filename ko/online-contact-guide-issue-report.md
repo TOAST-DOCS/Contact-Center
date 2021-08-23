@@ -2,8 +2,7 @@
 
 
 ## 기간 통계
-![](http://static.toastoven.net/prod_contact_center/6.1-(1).png)
-![](http://static.toastoven.net/prod_contact_center/6.1-(2).png)
+![](http://static.toastoven.net/prod_contact_center/6.1-(1)_im.png)
 티켓에 대한 **기간별 실적 현황**입니다. 1일/1주/3주/1개월/3개월 단위로 기간별 접수 및 처리건 그래프, 기간별 평균 처리시간 그래프, 기간별 실적 통계 종합에 대한 표를 조회하실 수 있습니다. 
 
 인입경로에 따라 일/주/월별 접수일/처리일 기준으로 통계 데이터를 **① 검색**하실 수 있습니다.
@@ -20,8 +19,7 @@
 **② 데이터 추출** 버튼을 통해서, 적용한 조건에 따라 산출된 표 형태의 데이터를 엑셀로 다운로드 받을 수 있습니다.
 
 ## 유형 통계
-![](http://static.toastoven.net/prod_contact_center/6.2-(1).png)
-![](http://static.toastoven.net/prod_contact_center/6.2-(2).png)
+![](http://static.toastoven.net/prod_contact_center/6.2-(1)_im.png)
 티켓에 대한 **접수유형별 실적 현황**입니다. 1일/1주/3주/1개월/3개월 단위로 접수유형별 접수 및 처리건 그래프, 접수유형별 처리시간 그래프, 접수유형별 상세 처리 현황 표, 접수유형별 시간 구간내 처리 현황 표를 조회하실 수 있습니다. 
 
 인입경로에 따라 합계/평균, 처리유형/접수유형, 접수일/처리일 기준으로 통계 데이터를 **① 검색**하실 수 있습니다.
@@ -40,8 +38,7 @@
 ✔ **\[FAQ 바로가기]** [통계에서 시간 구간내 처리 현황은 어떤 통계인가요?](https://nhn-contact.oc.toast.com/oc/hc/article/55/)
 
 ## 실적 통계
-![](http://static.toastoven.net/prod_contact_center/6.3-(1).png)
-![](http://static.toastoven.net/prod_contact_center/6.3-(2).png)
+![](http://static.toastoven.net/prod_contact_center/6.3-(1)_im.png)
 티켓에 대한 **상담원별 실적 현황**입니다. 1일/1주/3주/1개월/3개월 단위로 상담원별 접수 및 처리건 그래프, 상담원별 처리시간 그래프, 상담원별 상세 처리 현황 표, 상담원별 시간 구간내 처리 현황 표를 조회하실 수 있습니다. 
 
 인입경로에 따라 합계/평균, 상담원 그룹, 접수일/처리일 기준으로 통계 데이터를 **① 검색**하실 수 있습니다.
@@ -63,7 +60,7 @@
 SMS발송 기능에 대한 통계입니다. **발송 내역**, **기간별 현황**, **템플릿별 현황**을 검색 조건을 설정하여 조회하실 수 있습니다. 
 
 ### 발송 내역
-![](http://static.toastoven.net/prod_contact_center/6.5-(1).png)
+![](http://static.toastoven.net/prod_contact_center/6.5-(1)_im.png)
 발송 내역 탭에서는 검색 조건에 맞는 SMS 발송 내역을 목록 형태로 조회하실 수 있습니다.
 **① 검색 조건**을 설정하신 후 **② 검색** 버튼을 클릭하시면 설정하신 검색 조건에 맞는 SMS 발송 내역이 검색 조건 하단에 표시됩니다. 설정 가능한 검색 조건의 종류는 아래와 같습니다.
 
