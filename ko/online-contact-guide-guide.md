@@ -1,4 +1,4 @@
-## Contact Center > Online Contact > 서비스 가이드 > 가이드
+## Contact Center > Online Contact > 서비스 가이드 (상담관리) > 가이드
 
 ## 내부공지
 조직 내부에서 공유되어야 하는 **공지사항**을 관리자의 권한으로 등록할 수 있는 메뉴입니다. 등록된 공지사항은 **해당 메뉴**와 **Online Contact 메인 화면**에서 확인하실 수 있습니다. 

@@ -1,4 +1,4 @@
-## Contact Center > Online Contact > 서비스 가이드 > 티켓 관리 (전화)
+## Contact Center > Online Contact > 서비스 가이드 (상담관리) > 티켓 관리 (전화)
 
 [전체 관리 → 계약 서비스 현황 → 계약 현황](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-global-management/#_2) 탭에서 확인하실 수 있는 서비스의 계약 정보에서 **전화 CTI 사용** 기능이 **사용** 으로 설정되어 있는 경우, 상담원에게 **전화** 기능을 부여하실 수 있으며, 전화 권한이 부여된 상담원에게는 Online Contact 화면 우측 하단에 **전화 아이콘**이 표시됩니다.
 
