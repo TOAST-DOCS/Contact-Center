@@ -14,7 +14,68 @@
 - 서비스 명: 사용하실 서비스의 이름 
 - 서비스 ID: 서비스 식별에 사용되는 ID (URL에 포함됨). 영문만 가능
 - 타임 존: 헬프센터에 설정되는 시간대 (헬프센터 언어 선택 시 이에 맞춰 선택되며, 별도 수정 가능)
-- 프로필 사진: 파일 첨부 후 미리보기 가능하며, 업로드하셨을 시 Online Contact GNB에서의 서비스 탭 이미지와 채팅 시 상담원의 프로필 사진으로 적용됩니다.
+- 헬프센터 언어 : 
+- 서비스 배너: Online Contact GNB에서의 서비스 탭 이미지와 채팅 시 상담원의 프로필 사진으로 적용됩니다.
+
+#### ISO 주요 국가 코드 목록
+ISO 639는 국제 언어 분류를 위해 사용되는 표준화된 표기법입니다.
+온라인컨택에서 사용되는 각 언어 코드는 2글자로 구분하고 있는 639-1 코드법을 응용하고 있습니다.
+
+| 주요 언어 코드                     |                                     | 코드                |
+| ----------------------------------| ----------------------------------- |--------------------|
+| 중국어                            | Chinese                              | zh                 |
+| 영어                              | English                              | en                 |
+| 스페인어	                         | Spanish, Castilian	                  | es                 |
+| 아랍어	                           | Arabic	                              | ar                 |
+| 벵골어 (방글라데시)	               | Bengali	                             | bn                 |
+| 포르투갈어	                       | Portuguese	                          | pt                 |
+| 러시아어	                         | Russian	                             | ru                 |
+| 일본어	                           | Japanese	                            | ja                 |
+| 말레이어	                         | Malay	                               | ms                 |
+| 터키어	                           | Turkish	                             | tr                 |
+| 한국어	                           | Korean	                              | ko                 |
+| 프랑스어	                         | French	                              | fr                 |
+| 독일어	                           | German	                              | de                 |
+| 베트남어	                         | Vietnamese	                          | vi                 |
+| 자바어 (인도네시아)	               | Javanese	                            | jv                 |
+| 이탈리아어	                       | Italian	                              | it                |
+| 페르시아어 (이란)	                | Persian	                              | fa                |
+
+
+#### 전체 코드 목록
+
+| ISO 언어 이름                     | 코드                |
+| ---------------------------------|-------------------- |
+| Abkhazian                        | ab                  |
+| Afar	                            | aa                  |
+| Afrikaans	                       | af                  |
+| Akan	                            | ak                  |
+| Albanian	                        | sq                  |
+| Amharic	                         | am                  |
+| Arabic	                          | ar                  |
+| Aragonese	                       | an                  |
+| Armenian	                        | hy                  |
+| Assamese	                        | as                  |
+| Avaric	                          | av                  |
+| Avestan	                         | ae                  |
+| Aymara	                          | ay                  |
+| Azerbaijani	                     | az                  |
+| Bambara	                         | bm                  |
+| Bashkir	                         | ba                  |
+| Basque	                          | eu                  |
+| Belarusian	                      | be                  |
+| Bengali	                         | bn                  |
+| 비하르어	                         | bh                  |
+| Bislama	                         | bi                  |
+| Bosnian	                         | bs                  |
+| Breton	                          | br                  |
+| Bulgarian	                       | bg                  |
+| Burmese	                         | my                  |
+| Catalan, Valencian	              | ca                  |
+| Chamorro	                        | ch                  |
+| Chechen	                         | ce                  |
+| Chichewa, Chewa, Nyanja	         | ny                  |
+
 
 기본정보를 모두 입력하신 후 다음 버튼을 누르시면 **계약 상세 내역**으로 넘어갑니다. 계약 상세 내역 화면에서는 Online Contact에서 제공하는 상담 기능들에 대해 해당 서비스에서의 **사용 여부**를 선택하실 수 있으며, 해당 선택 여부가 반영된 **예상 비용**을 산출해 보실 수 있습니다. 계약 상세 내역 입력을 완료하신 후 **계약 버튼**을 누르시면 계약이 완료됩니다.
 
