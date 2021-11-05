@@ -43,7 +43,20 @@ ISO 639는 국제 언어 분류를 위해 사용되는 표준화된 표기법입
 
 <details markdown="1">
 <summary> 전체 코드 목록 </summary>
-#### 전체 코드 목록
+<table>
+ <thead>
+  <tr>
+   <th>ISO 언어 이름</th>
+   <th>코드</th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr>
+   <td>Abkhazian</td>
+   <td>ab</td>
+  </tr>
+ </tbody>
+</table>
 
 | ISO 언어 이름                     | 코드                |
 | ---------------------------------|-------------------- |
