@@ -41,7 +41,8 @@ ISO 639는 국제 언어 분류를 위해 사용되는 표준화된 표기법입
 | 이탈리아어	                       | Italian	                              | it                |
 | 페르시아어 (이란)	                | Persian	                              | fa                |
 
-
+<details markdown="1">
+<summary> 전체 코드 목록 </summary>
 #### 전체 코드 목록
 
 | ISO 언어 이름                     | 코드                |
@@ -75,7 +76,163 @@ ISO 639는 국제 언어 분류를 위해 사용되는 표준화된 표기법입
 | Chamorro	                        | ch                  |
 | Chechen	                         | ce                  |
 | Chichewa, Chewa, Nyanja	         | ny                  |
+| Chinese	                         | zh                  |
+| Chuvash	                         | cv                  |
+| Cornish	                         | kw                  |
+| Corsican	                        | co                  |
+| Cree	                            | cr                  |
+| Croatian	                        | hr                  |
+| Czech	                           | cs                  |
+| Danish	                          | da                  |
+| Divehi, Dhivehi, Maldivian	      | dv                  |
+| Dutch, Flemish 	                 | nl                  |
+| Dzongkha	                        | dz                  |
+| English	                         | en                  |
+| 에스페란토	                       | eo                  |
+| Estonian	                        | et                  |
+| Ewe	                             | ee                  |
+| Faroese	                         | fo                  |
+| Fijian	                          | fj                  |
+| Finnish	                         | fi                  |
+| French	                          | fr                  |
+| Fulah	                           | ff                  |
+| Galician	                        | gl                  |
+| Georgian	                        | ka                  |
+| German	                          | de                  |
+| Greek, Modern (1453-)	           | el                  |
+| Guarani	                         | gn                  |
+| Gujarati	                        | gu                  |
+| Haitian, Haitian Creole	         | ht                  |
+| Hausa	                           | ha                  |
+| Hebrew	                          | he                  |
+| Herero	                          | hz                  |
+| 힌디어	                           | hi                  |
+| Hiri Motu	                       | ho                  |
+| Hungarian	                       | hu                  |
+| 인테르링구아 (International Auxiliary Language Association)	| ia |
+| Indonesian	                      | id                  |
+| Interlingue, Occidental	         | ie                  |
+| Irish	                           | ga                  |
+| Igbo	                            | ig                  |
+| Inupiaq	                         | ik                  |
+| Ido	                             | io                  |
+| Icelandic	                       | is                  |
+| Italian	                         | it                  |
+| 이누크티투트어	                   | iu                  |
+| Japanese	                        | ja                  |
+| Javanese	                        | jv                  |
+| Kalaallisut, Greenlandic	        | kl                  |
+| Kannada	                         | kn                  |
+| Kanuri	                          | kr                  |
+| Kashmiri	                        | ks                  |
+| Kazakh	                          | kk                  |
+| Central Khmer	                   | km                  |
+| Kikuyu, Gikuyu	                  | ki                  |
+| 키냐르완다어	                     | rw                  |
+| Kirghiz, Kyrgyz	                 | ky                  |
+| Komi	                            | kv                  |
+| Kongo	                           | kg                  |
+| Korean	                          | ko                  |
+| Kurdish	                         | ku                  |
+| Kuanyama, Kwanyama	              | kj                  |
+| 라틴어	                           | la                  |
+| Luxembourgish, Letzeburgesch	    | lb                  |
+| Ganda	                           | lg                  |
+| Limburgan, Limburger, Limburgish	| li                  |
+| Lingala	                         | ln                  |
+| Lao	                             | lo                  |
+| Lithuanian	                      | lt                  |
+| Luba-Katanga	                    | lu                  |
+| Latvian	                         | lv                  |
+| Manx	                            | gv                  |
+| Macedonian	                      | mk                  |
+| Malagasy	                        | mg                  |
+| Malay	                           | ms                  |
+| Malayalam	                       | ml                  |
+| Maltese	                         | mt                  |
+| Maori	                           | mi                  |
+| Marathi 	                        | mr                  |
+| Marshallese	                     | mh                  |
+| Mongolian	                       | mn                  |
+| Nauru	                           | na                  |
+| Navajo, Navaho	                  | nv                  |
+| North Ndebele	                   | nd                  |
+| Nepali	                          | ne                  |
+| Ndonga	                          | ng                  |
+| Norwegian Bokmål	                | nb                  |
+| Norwegian Nynorsk	               | nn                  |
+| Norwegian	                       | no                  |
+| Sichuan Yi, Nuosu	               | ii                  |
+| South Ndebele	                   | nr                  |
+| Occitan	                         | oc                  |
+| Ojibwa	                          | oj                  |
+| Church Slavic, Old Slavonic, Church Slavonic, Old Bulgarian, Old Church Slavonic	| cu |
+| Oromo	                           | om                  |
+| Oriya	                           | or                  |
+| Ossetian, Ossetic	               | os                  |
+| Panjabi, Punjabi	                | pa                  |
+| Pali	                            | pi                  |
+| Persian	                         | fa                  |
+| Polish	                          | pl                  |
+| Pashto, Pushto	                  | ps                  |
+| Portuguese	                      | pt                  |
+| Quechua	                         | qu                  |
+| Romansh	                         | rm                  |
+| Rundi	                           | rn                  |
+| Romanian, Moldavian, Moldovan	   | ro                  |
+| Russian	                         | ru                  |
+| 산스크리트어	                     | sa                  |
+| Sardinian	                       | sc                  |
+| Sindhi	                          | sd                  |
+| 북부 사미어	                      | se                  |
+| Samoan	                          | sm                  |
+| Sango	                           | sg                  |
+| Serbian	                         | sr                  |
+| Gaelic, Scottish Gaelic	         | gd                  |
+| Shona	                           | sn                  |
+| Sinhala, Sinhalese	              | si                  |
+| Slovak	                          | sk                  |
+| Slovenian	                       | sl                  |
+| Somali	                          | so                  |
+| Southern Sotho	                  | st                  |
+| Spanish, Castilian	              | es                  |
+| Sundanese	                       | su                  |
+| Swahili	                         | sw                  |
+| Swati	                           | ss                  |
+| Swedish	                         | sv                  |
+| Tamil	                           | ta                  |
+| Telugu	                          | te                  |
+| Tajik	                           | tg                  |
+| Thai	                            | th                  |
+| Tigrinya	                        | ti                  |
+| Tibetan	                         | bo                  |
+| Turkmen	                         | tk                  |
+| Tagalog	                         | tl                  |
+| Tswana	                          | tn                  |
+| Tonga (Tonga Islands)	           | to                  |
+| Turkish	                         | tr                  |
+| Tsonga	                          | ts                  |
+| Tatar	                           | tt                  |
+| Twi 	                            | tw                  |
+| Tahitian	                        | ty                  |
+| Uighur, Uyghur	                  | ug                  |
+| Ukrainian	                       | uk                  |
+| 우르두어	                         | ur                  |
+| Uzbek	                           | uz                  |
+| Venda	                           | ve                  |
+| Vietnamese	                      | vi                  |
+| 볼라퓌크	                         | vo                  |
+| Walloon                          | wa                  |
+| Welsh	                           | cy                  |
+| Wolof	                           | wo                  |
+| Western Frisian	                 | fy                  |
+| Xhosa	                           | xh                  |
+| Yiddish	                         | yi                  |
+| Yoruba	                          | yo                  |
+| Zhuang, Chuang	                  | za                  |
+| Zulu	                            | zu                  |
 
+</details>
 
 기본정보를 모두 입력하신 후 다음 버튼을 누르시면 **계약 상세 내역**으로 넘어갑니다. 계약 상세 내역 화면에서는 Online Contact에서 제공하는 상담 기능들에 대해 해당 서비스에서의 **사용 여부**를 선택하실 수 있으며, 해당 선택 여부가 반영된 **예상 비용**을 산출해 보실 수 있습니다. 계약 상세 내역 입력을 완료하신 후 **계약 버튼**을 누르시면 계약이 완료됩니다.
 
