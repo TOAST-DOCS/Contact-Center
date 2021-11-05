@@ -21,230 +21,859 @@
 ISO 639는 국제 언어 분류를 위해 사용되는 표준화된 표기법입니다.
 온라인컨택에서 사용되는 각 언어 코드는 2글자로 구분하고 있는 639-1 코드법을 응용하고 있습니다.
 
-| 주요 언어 코드                     |                                     | 코드                |
-| ----------------------------------| ----------------------------------- |--------------------|
-| 중국어                            | Chinese                              | zh                 |
-| 영어                              | English                              | en                 |
-| 스페인어	                         | Spanish, Castilian	                  | es                 |
-| 아랍어	                           | Arabic	                              | ar                 |
-| 벵골어 (방글라데시)	               | Bengali	                             | bn                 |
-| 포르투갈어	                       | Portuguese	                          | pt                 |
-| 러시아어	                         | Russian	                             | ru                 |
-| 일본어	                           | Japanese	                            | ja                 |
-| 말레이어	                         | Malay	                               | ms                 |
-| 터키어	                           | Turkish	                             | tr                 |
-| 한국어	                           | Korean	                              | ko                 |
-| 프랑스어	                         | French	                              | fr                 |
-| 독일어	                           | German	                              | de                 |
-| 베트남어	                         | Vietnamese	                          | vi                 |
-| 자바어 (인도네시아)	               | Javanese	                            | jv                 |
-| 이탈리아어	                       | Italian	                              | it                |
-| 페르시아어 (이란)	                | Persian	                              | fa                |
+<details markdown="1">
+<summary> 주요 국가 코드 목록 </summary>
+
+<table>
+<thead>
+<tr>
+<th>주요 언어 코드</th>
+<th></th>
+<th>코드</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>중국어</td>
+<td>Chinese</td>
+<td>zh</td>
+</tr>
+<tr>
+<td>영어</td>
+<td>English</td>
+<td>en</td>
+</tr>
+<tr>
+<td>스페인어</td>
+<td>Spanish, Castilian</td>
+<td>es</td>
+</tr>
+<tr>
+<td>아랍어</td>
+<td>Arabic</td>
+<td>ar</td>
+</tr>
+<tr>
+<td>벵골어 (방글라데시)</td>
+<td>Bengali</td>
+<td>bn</td>
+</tr>
+<tr>
+<td>포르투갈어</td>
+<td>Portuguese</td>
+<td>pt</td>
+</tr>
+<tr>
+<td>러시아어</td>
+<td>Russian</td>
+<td>ru</td>
+</tr>
+<tr>
+<td>일본어</td>
+<td>Japanese</td>
+<td>ja</td>
+</tr>
+<tr>
+<td>말레이어</td>
+<td>Malay</td>
+<td>ms</td>
+</tr>
+<tr>
+<td>터키어</td>
+<td>Turkish</td>
+<td>tr</td>
+</tr>
+<tr>
+<td>한국어</td>
+<td>Korean</td>
+<td>ko</td>
+</tr>
+<tr>
+<td>프랑스어</td>
+<td>French</td>
+<td>fr</td>
+</tr>
+<tr>
+<td>독일어</td>
+<td>German</td>
+<td>de</td>
+</tr>
+<tr>
+<td>베트남어</td>
+<td>Vietnamese</td>
+<td>vi</td>
+</tr>
+<tr>
+<td>자바어 (인도네시아)</td>
+<td>Javanese</td>
+<td>jv</td>
+</tr>
+<tr>
+<td>이탈리아어</td>
+<td>Italian</td>
+<td>it</td>
+</tr>
+<tr>
+<td>페르시아어 (이란)</td>
+<td>Persian</td>
+<td>fa</td>
+</tr>
+</tbody>
+</table>
+
+</details>
 
 <details markdown="1">
 <summary> 전체 코드 목록 </summary>
-<table>
- <thead>
-  <tr>
-   <th>ISO 언어 이름</th>
-   <th>코드</th>
-  </tr>
- </thead>
- <tbody>
-  <tr>
-   <td>Abkhazian</td>
-   <td>ab</td>
-  </tr>
- </tbody>
-</table>
-</details>
 
-| ISO 언어 이름                     | 코드                |
-| ---------------------------------|-------------------- |
-| Abkhazian                        | ab                  |
-| Afar	                            | aa                  |
-| Afrikaans	                       | af                  |
-| Akan	                            | ak                  |
-| Albanian	                        | sq                  |
-| Amharic	                         | am                  |
-| Arabic	                          | ar                  |
-| Aragonese	                       | an                  |
-| Armenian	                        | hy                  |
-| Assamese	                        | as                  |
-| Avaric	                          | av                  |
-| Avestan	                         | ae                  |
-| Aymara	                          | ay                  |
-| Azerbaijani	                     | az                  |
-| Bambara	                         | bm                  |
-| Bashkir	                         | ba                  |
-| Basque	                          | eu                  |
-| Belarusian	                      | be                  |
-| Bengali	                         | bn                  |
-| 비하르어	                         | bh                  |
-| Bislama	                         | bi                  |
-| Bosnian	                         | bs                  |
-| Breton	                          | br                  |
-| Bulgarian	                       | bg                  |
-| Burmese	                         | my                  |
-| Catalan, Valencian	              | ca                  |
-| Chamorro	                        | ch                  |
-| Chechen	                         | ce                  |
-| Chichewa, Chewa, Nyanja	         | ny                  |
-| Chinese	                         | zh                  |
-| Chuvash	                         | cv                  |
-| Cornish	                         | kw                  |
-| Corsican	                        | co                  |
-| Cree	                            | cr                  |
-| Croatian	                        | hr                  |
-| Czech	                           | cs                  |
-| Danish	                          | da                  |
-| Divehi, Dhivehi, Maldivian	      | dv                  |
-| Dutch, Flemish 	                 | nl                  |
-| Dzongkha	                        | dz                  |
-| English	                         | en                  |
-| 에스페란토	                       | eo                  |
-| Estonian	                        | et                  |
-| Ewe	                             | ee                  |
-| Faroese	                         | fo                  |
-| Fijian	                          | fj                  |
-| Finnish	                         | fi                  |
-| French	                          | fr                  |
-| Fulah	                           | ff                  |
-| Galician	                        | gl                  |
-| Georgian	                        | ka                  |
-| German	                          | de                  |
-| Greek, Modern (1453-)	           | el                  |
-| Guarani	                         | gn                  |
-| Gujarati	                        | gu                  |
-| Haitian, Haitian Creole	         | ht                  |
-| Hausa	                           | ha                  |
-| Hebrew	                          | he                  |
-| Herero	                          | hz                  |
-| 힌디어	                           | hi                  |
-| Hiri Motu	                       | ho                  |
-| Hungarian	                       | hu                  |
-| 인테르링구아 (International Auxiliary Language Association)	| ia |
-| Indonesian	                      | id                  |
-| Interlingue, Occidental	         | ie                  |
-| Irish	                           | ga                  |
-| Igbo	                            | ig                  |
-| Inupiaq	                         | ik                  |
-| Ido	                             | io                  |
-| Icelandic	                       | is                  |
-| Italian	                         | it                  |
-| 이누크티투트어	                   | iu                  |
-| Japanese	                        | ja                  |
-| Javanese	                        | jv                  |
-| Kalaallisut, Greenlandic	        | kl                  |
-| Kannada	                         | kn                  |
-| Kanuri	                          | kr                  |
-| Kashmiri	                        | ks                  |
-| Kazakh	                          | kk                  |
-| Central Khmer	                   | km                  |
-| Kikuyu, Gikuyu	                  | ki                  |
-| 키냐르완다어	                     | rw                  |
-| Kirghiz, Kyrgyz	                 | ky                  |
-| Komi	                            | kv                  |
-| Kongo	                           | kg                  |
-| Korean	                          | ko                  |
-| Kurdish	                         | ku                  |
-| Kuanyama, Kwanyama	              | kj                  |
-| 라틴어	                           | la                  |
-| Luxembourgish, Letzeburgesch	    | lb                  |
-| Ganda	                           | lg                  |
-| Limburgan, Limburger, Limburgish	| li                  |
-| Lingala	                         | ln                  |
-| Lao	                             | lo                  |
-| Lithuanian	                      | lt                  |
-| Luba-Katanga	                    | lu                  |
-| Latvian	                         | lv                  |
-| Manx	                            | gv                  |
-| Macedonian	                      | mk                  |
-| Malagasy	                        | mg                  |
-| Malay	                           | ms                  |
-| Malayalam	                       | ml                  |
-| Maltese	                         | mt                  |
-| Maori	                           | mi                  |
-| Marathi 	                        | mr                  |
-| Marshallese	                     | mh                  |
-| Mongolian	                       | mn                  |
-| Nauru	                           | na                  |
-| Navajo, Navaho	                  | nv                  |
-| North Ndebele	                   | nd                  |
-| Nepali	                          | ne                  |
-| Ndonga	                          | ng                  |
-| Norwegian Bokmål	                | nb                  |
-| Norwegian Nynorsk	               | nn                  |
-| Norwegian	                       | no                  |
-| Sichuan Yi, Nuosu	               | ii                  |
-| South Ndebele	                   | nr                  |
-| Occitan	                         | oc                  |
-| Ojibwa	                          | oj                  |
-| Church Slavic, Old Slavonic, Church Slavonic, Old Bulgarian, Old Church Slavonic	| cu |
-| Oromo	                           | om                  |
-| Oriya	                           | or                  |
-| Ossetian, Ossetic	               | os                  |
-| Panjabi, Punjabi	                | pa                  |
-| Pali	                            | pi                  |
-| Persian	                         | fa                  |
-| Polish	                          | pl                  |
-| Pashto, Pushto	                  | ps                  |
-| Portuguese	                      | pt                  |
-| Quechua	                         | qu                  |
-| Romansh	                         | rm                  |
-| Rundi	                           | rn                  |
-| Romanian, Moldavian, Moldovan	   | ro                  |
-| Russian	                         | ru                  |
-| 산스크리트어	                     | sa                  |
-| Sardinian	                       | sc                  |
-| Sindhi	                          | sd                  |
-| 북부 사미어	                      | se                  |
-| Samoan	                          | sm                  |
-| Sango	                           | sg                  |
-| Serbian	                         | sr                  |
-| Gaelic, Scottish Gaelic	         | gd                  |
-| Shona	                           | sn                  |
-| Sinhala, Sinhalese	              | si                  |
-| Slovak	                          | sk                  |
-| Slovenian	                       | sl                  |
-| Somali	                          | so                  |
-| Southern Sotho	                  | st                  |
-| Spanish, Castilian	              | es                  |
-| Sundanese	                       | su                  |
-| Swahili	                         | sw                  |
-| Swati	                           | ss                  |
-| Swedish	                         | sv                  |
-| Tamil	                           | ta                  |
-| Telugu	                          | te                  |
-| Tajik	                           | tg                  |
-| Thai	                            | th                  |
-| Tigrinya	                        | ti                  |
-| Tibetan	                         | bo                  |
-| Turkmen	                         | tk                  |
-| Tagalog	                         | tl                  |
-| Tswana	                          | tn                  |
-| Tonga (Tonga Islands)	           | to                  |
-| Turkish	                         | tr                  |
-| Tsonga	                          | ts                  |
-| Tatar	                           | tt                  |
-| Twi 	                            | tw                  |
-| Tahitian	                        | ty                  |
-| Uighur, Uyghur	                  | ug                  |
-| Ukrainian	                       | uk                  |
-| 우르두어	                         | ur                  |
-| Uzbek	                           | uz                  |
-| Venda	                           | ve                  |
-| Vietnamese	                      | vi                  |
-| 볼라퓌크	                         | vo                  |
-| Walloon                          | wa                  |
-| Welsh	                           | cy                  |
-| Wolof	                           | wo                  |
-| Western Frisian	                 | fy                  |
-| Xhosa	                           | xh                  |
-| Yiddish	                         | yi                  |
-| Yoruba	                          | yo                  |
-| Zhuang, Chuang	                  | za                  |
-| Zulu	                            | zu                  |
+<table>
+<thead>
+<tr>
+<th>ISO 언어 이름</th>
+<th>코드</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Abkhazian</td>
+<td>ab</td>
+</tr>
+<tr>
+<td>Afar</td>
+<td>aa</td>
+</tr>
+<tr>
+<td>Afrikaans</td>
+<td>af</td>
+</tr>
+<tr>
+<td>Akan</td>
+<td>ak</td>
+</tr>
+<tr>
+<td>Albanian</td>
+<td>sq</td>
+</tr>
+<tr>
+<td>Amharic</td>
+<td>am</td>
+</tr>
+<tr>
+<td>Arabic</td>
+<td>ar</td>
+</tr>
+<tr>
+<td>Aragonese</td>
+<td>an</td>
+</tr>
+<tr>
+<td>Armenian</td>
+<td>hy</td>
+</tr>
+<tr>
+<td>Assamese</td>
+<td>as</td>
+</tr>
+<tr>
+<td>Avaric</td>
+<td>av</td>
+</tr>
+<tr>
+<td>Avestan</td>
+<td>ae</td>
+</tr>
+<tr>
+<td>Aymara</td>
+<td>ay</td>
+</tr>
+<tr>
+<td>Azerbaijani</td>
+<td>az</td>
+</tr>
+<tr>
+<td>Bambara</td>
+<td>bm</td>
+</tr>
+<tr>
+<td>Bashkir</td>
+<td>ba</td>
+</tr>
+<tr>
+<td>Basque</td>
+<td>eu</td>
+</tr>
+<tr>
+<td>Belarusian</td>
+<td>be</td>
+</tr>
+<tr>
+<td>Bengali</td>
+<td>bn</td>
+</tr>
+<tr>
+<td>비하르어</td>
+<td>bh</td>
+</tr>
+<tr>
+<td>Bislama</td>
+<td>bi</td>
+</tr>
+<tr>
+<td>Bosnian</td>
+<td>bs</td>
+</tr>
+<tr>
+<td>Breton</td>
+<td>br</td>
+</tr>
+<tr>
+<td>Bulgarian</td>
+<td>bg</td>
+</tr>
+<tr>
+<td>Burmese</td>
+<td>my</td>
+</tr>
+<tr>
+<td>Catalan, Valencian</td>
+<td>ca</td>
+</tr>
+<tr>
+<td>Chamorro</td>
+<td>ch</td>
+</tr>
+<tr>
+<td>Chechen</td>
+<td>ce</td>
+</tr>
+<tr>
+<td>Chichewa, Chewa, Nyanja</td>
+<td>ny</td>
+</tr>
+<tr>
+<td>Chinese</td>
+<td>zh</td>
+</tr>
+<tr>
+<td>Chuvash</td>
+<td>cv</td>
+</tr>
+<tr>
+<td>Cornish</td>
+<td>kw</td>
+</tr>
+<tr>
+<td>Corsican</td>
+<td>co</td>
+</tr>
+<tr>
+<td>Cree</td>
+<td>cr</td>
+</tr>
+<tr>
+<td>Croatian</td>
+<td>hr</td>
+</tr>
+<tr>
+<td>Czech</td>
+<td>cs</td>
+</tr>
+<tr>
+<td>Danish</td>
+<td>da</td>
+</tr>
+<tr>
+<td>Divehi, Dhivehi, Maldivian</td>
+<td>dv</td>
+</tr>
+<tr>
+<td>Dutch, Flemish</td>
+<td>nl</td>
+</tr>
+<tr>
+<td>Dzongkha</td>
+<td>dz</td>
+</tr>
+<tr>
+<td>English</td>
+<td>en</td>
+</tr>
+<tr>
+<td>에스페란토</td>
+<td>eo</td>
+</tr>
+<tr>
+<td>Estonian</td>
+<td>et</td>
+</tr>
+<tr>
+<td>Ewe</td>
+<td>ee</td>
+</tr>
+<tr>
+<td>Faroese</td>
+<td>fo</td>
+</tr>
+<tr>
+<td>Fijian</td>
+<td>fj</td>
+</tr>
+<tr>
+<td>Finnish</td>
+<td>fi</td>
+</tr>
+<tr>
+<td>French</td>
+<td>fr</td>
+</tr>
+<tr>
+<td>Fulah</td>
+<td>ff</td>
+</tr>
+<tr>
+<td>Galician</td>
+<td>gl</td>
+</tr>
+<tr>
+<td>Georgian</td>
+<td>ka</td>
+</tr>
+<tr>
+<td>German</td>
+<td>de</td>
+</tr>
+<tr>
+<td>Greek, Modern (1453-)</td>
+<td>el</td>
+</tr>
+<tr>
+<td>Guarani</td>
+<td>gn</td>
+</tr>
+<tr>
+<td>Gujarati</td>
+<td>gu</td>
+</tr>
+<tr>
+<td>Haitian, Haitian Creole</td>
+<td>ht</td>
+</tr>
+<tr>
+<td>Hausa</td>
+<td>ha</td>
+</tr>
+<tr>
+<td>Hebrew</td>
+<td>he</td>
+</tr>
+<tr>
+<td>Herero</td>
+<td>hz</td>
+</tr>
+<tr>
+<td>힌디어</td>
+<td>hi</td>
+</tr>
+<tr>
+<td>Hiri Motu</td>
+<td>ho</td>
+</tr>
+<tr>
+<td>Hungarian</td>
+<td>hu</td>
+</tr>
+<tr>
+<td>인테르링구아 (International Auxiliary Language Association)</td>
+<td>ia</td>
+</tr>
+<tr>
+<td>Indonesian</td>
+<td>id</td>
+</tr>
+<tr>
+<td>Interlingue, Occidental</td>
+<td>ie</td>
+</tr>
+<tr>
+<td>Irish</td>
+<td>ga</td>
+</tr>
+<tr>
+<td>Igbo</td>
+<td>ig</td>
+</tr>
+<tr>
+<td>Inupiaq</td>
+<td>ik</td>
+</tr>
+<tr>
+<td>Ido</td>
+<td>io</td>
+</tr>
+<tr>
+<td>Icelandic</td>
+<td>is</td>
+</tr>
+<tr>
+<td>Italian</td>
+<td>it</td>
+</tr>
+<tr>
+<td>이누크티투트어</td>
+<td>iu</td>
+</tr>
+<tr>
+<td>Japanese</td>
+<td>ja</td>
+</tr>
+<tr>
+<td>Javanese</td>
+<td>jv</td>
+</tr>
+<tr>
+<td>Kalaallisut, Greenlandic</td>
+<td>kl</td>
+</tr>
+<tr>
+<td>Kannada</td>
+<td>kn</td>
+</tr>
+<tr>
+<td>Kanuri</td>
+<td>kr</td>
+</tr>
+<tr>
+<td>Kashmiri</td>
+<td>ks</td>
+</tr>
+<tr>
+<td>Kazakh</td>
+<td>kk</td>
+</tr>
+<tr>
+<td>Central Khmer</td>
+<td>km</td>
+</tr>
+<tr>
+<td>Kikuyu, Gikuyu</td>
+<td>ki</td>
+</tr>
+<tr>
+<td>키냐르완다어</td>
+<td>rw</td>
+</tr>
+<tr>
+<td>Kirghiz, Kyrgyz</td>
+<td>ky</td>
+</tr>
+<tr>
+<td>Komi</td>
+<td>kv</td>
+</tr>
+<tr>
+<td>Kongo</td>
+<td>kg</td>
+</tr>
+<tr>
+<td>Korean</td>
+<td>ko</td>
+</tr>
+<tr>
+<td>Kurdish</td>
+<td>ku</td>
+</tr>
+<tr>
+<td>Kuanyama, Kwanyama</td>
+<td>kj</td>
+</tr>
+<tr>
+<td>라틴어</td>
+<td>la</td>
+</tr>
+<tr>
+<td>Luxembourgish, Letzeburgesch</td>
+<td>lb</td>
+</tr>
+<tr>
+<td>Ganda</td>
+<td>lg</td>
+</tr>
+<tr>
+<td>Limburgan, Limburger, Limburgish</td>
+<td>li</td>
+</tr>
+<tr>
+<td>Lingala</td>
+<td>ln</td>
+</tr>
+<tr>
+<td>Lao</td>
+<td>lo</td>
+</tr>
+<tr>
+<td>Lithuanian</td>
+<td>lt</td>
+</tr>
+<tr>
+<td>Luba-Katanga</td>
+<td>lu</td>
+</tr>
+<tr>
+<td>Latvian</td>
+<td>lv</td>
+</tr>
+<tr>
+<td>Manx</td>
+<td>gv</td>
+</tr>
+<tr>
+<td>Macedonian</td>
+<td>mk</td>
+</tr>
+<tr>
+<td>Malagasy</td>
+<td>mg</td>
+</tr>
+<tr>
+<td>Malay</td>
+<td>ms</td>
+</tr>
+<tr>
+<td>Malayalam</td>
+<td>ml</td>
+</tr>
+<tr>
+<td>Maltese</td>
+<td>mt</td>
+</tr>
+<tr>
+<td>Maori</td>
+<td>mi</td>
+</tr>
+<tr>
+<td>Marathi</td>
+<td>mr</td>
+</tr>
+<tr>
+<td>Marshallese</td>
+<td>mh</td>
+</tr>
+<tr>
+<td>Mongolian</td>
+<td>mn</td>
+</tr>
+<tr>
+<td>Nauru</td>
+<td>na</td>
+</tr>
+<tr>
+<td>Navajo, Navaho</td>
+<td>nv</td>
+</tr>
+<tr>
+<td>North Ndebele</td>
+<td>nd</td>
+</tr>
+<tr>
+<td>Nepali</td>
+<td>ne</td>
+</tr>
+<tr>
+<td>Ndonga</td>
+<td>ng</td>
+</tr>
+<tr>
+<td>Norwegian Bokmål</td>
+<td>nb</td>
+</tr>
+<tr>
+<td>Norwegian Nynorsk</td>
+<td>nn</td>
+</tr>
+<tr>
+<td>Norwegian</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Sichuan Yi, Nuosu</td>
+<td>ii</td>
+</tr>
+<tr>
+<td>South Ndebele</td>
+<td>nr</td>
+</tr>
+<tr>
+<td>Occitan</td>
+<td>oc</td>
+</tr>
+<tr>
+<td>Ojibwa</td>
+<td>oj</td>
+</tr>
+<tr>
+<td>Church Slavic, Old Slavonic, Church Slavonic, Old Bulgarian, Old Church Slavonic</td>
+<td>cu</td>
+</tr>
+<tr>
+<td>Oromo</td>
+<td>om</td>
+</tr>
+<tr>
+<td>Oriya</td>
+<td>or</td>
+</tr>
+<tr>
+<td>Ossetian, Ossetic</td>
+<td>os</td>
+</tr>
+<tr>
+<td>Panjabi, Punjabi</td>
+<td>pa</td>
+</tr>
+<tr>
+<td>Pali</td>
+<td>pi</td>
+</tr>
+<tr>
+<td>Persian</td>
+<td>fa</td>
+</tr>
+<tr>
+<td>Polish</td>
+<td>pl</td>
+</tr>
+<tr>
+<td>Pashto, Pushto</td>
+<td>ps</td>
+</tr>
+<tr>
+<td>Portuguese</td>
+<td>pt</td>
+</tr>
+<tr>
+<td>Quechua</td>
+<td>qu</td>
+</tr>
+<tr>
+<td>Romansh</td>
+<td>rm</td>
+</tr>
+<tr>
+<td>Rundi</td>
+<td>rn</td>
+</tr>
+<tr>
+<td>Romanian, Moldavian, Moldovan</td>
+<td>ro</td>
+</tr>
+<tr>
+<td>Russian</td>
+<td>ru</td>
+</tr>
+<tr>
+<td>산스크리트어</td>
+<td>sa</td>
+</tr>
+<tr>
+<td>Sardinian</td>
+<td>sc</td>
+</tr>
+<tr>
+<td>Sindhi</td>
+<td>sd</td>
+</tr>
+<tr>
+<td>북부 사미어</td>
+<td>se</td>
+</tr>
+<tr>
+<td>Samoan</td>
+<td>sm</td>
+</tr>
+<tr>
+<td>Sango</td>
+<td>sg</td>
+</tr>
+<tr>
+<td>Serbian</td>
+<td>sr</td>
+</tr>
+<tr>
+<td>Gaelic, Scottish Gaelic</td>
+<td>gd</td>
+</tr>
+<tr>
+<td>Shona</td>
+<td>sn</td>
+</tr>
+<tr>
+<td>Sinhala, Sinhalese</td>
+<td>si</td>
+</tr>
+<tr>
+<td>Slovak</td>
+<td>sk</td>
+</tr>
+<tr>
+<td>Slovenian</td>
+<td>sl</td>
+</tr>
+<tr>
+<td>Somali</td>
+<td>so</td>
+</tr>
+<tr>
+<td>Southern Sotho</td>
+<td>st</td>
+</tr>
+<tr>
+<td>Spanish, Castilian</td>
+<td>es</td>
+</tr>
+<tr>
+<td>Sundanese</td>
+<td>su</td>
+</tr>
+<tr>
+<td>Swahili</td>
+<td>sw</td>
+</tr>
+<tr>
+<td>Swati</td>
+<td>ss</td>
+</tr>
+<tr>
+<td>Swedish</td>
+<td>sv</td>
+</tr>
+<tr>
+<td>Tamil</td>
+<td>ta</td>
+</tr>
+<tr>
+<td>Telugu</td>
+<td>te</td>
+</tr>
+<tr>
+<td>Tajik</td>
+<td>tg</td>
+</tr>
+<tr>
+<td>Thai</td>
+<td>th</td>
+</tr>
+<tr>
+<td>Tigrinya</td>
+<td>ti</td>
+</tr>
+<tr>
+<td>Tibetan</td>
+<td>bo</td>
+</tr>
+<tr>
+<td>Turkmen</td>
+<td>tk</td>
+</tr>
+<tr>
+<td>Tagalog</td>
+<td>tl</td>
+</tr>
+<tr>
+<td>Tswana</td>
+<td>tn</td>
+</tr>
+<tr>
+<td>Tonga (Tonga Islands)</td>
+<td>to</td>
+</tr>
+<tr>
+<td>Turkish</td>
+<td>tr</td>
+</tr>
+<tr>
+<td>Tsonga</td>
+<td>ts</td>
+</tr>
+<tr>
+<td>Tatar</td>
+<td>tt</td>
+</tr>
+<tr>
+<td>Twi</td>
+<td>tw</td>
+</tr>
+<tr>
+<td>Tahitian</td>
+<td>ty</td>
+</tr>
+<tr>
+<td>Uighur, Uyghur</td>
+<td>ug</td>
+</tr>
+<tr>
+<td>Ukrainian</td>
+<td>uk</td>
+</tr>
+<tr>
+<td>우르두어</td>
+<td>ur</td>
+</tr>
+<tr>
+<td>Uzbek</td>
+<td>uz</td>
+</tr>
+<tr>
+<td>Venda</td>
+<td>ve</td>
+</tr>
+<tr>
+<td>Vietnamese</td>
+<td>vi</td>
+</tr>
+<tr>
+<td>볼라퓌크</td>
+<td>vo</td>
+</tr>
+<tr>
+<td>Walloon</td>
+<td>wa</td>
+</tr>
+<tr>
+<td>Welsh</td>
+<td>cy</td>
+</tr>
+<tr>
+<td>Wolof</td>
+<td>wo</td>
+</tr>
+<tr>
+<td>Western Frisian</td>
+<td>fy</td>
+</tr>
+<tr>
+<td>Xhosa</td>
+<td>xh</td>
+</tr>
+<tr>
+<td>Yiddish</td>
+<td>yi</td>
+</tr>
+<tr>
+<td>Yoruba</td>
+<td>yo</td>
+</tr>
+<tr>
+<td>Zhuang, Chuang</td>
+<td>za</td>
+</tr>
+<tr>
+<td>Zulu</td>
+<td>zu</td>
+</tr>
+</tbody>
+</table>
+
+</details>
 
 기본정보를 모두 입력하신 후 다음 버튼을 누르시면 **계약 상세 내역**으로 넘어갑니다. 계약 상세 내역 화면에서는 Online Contact에서 제공하는 상담 기능들에 대해 해당 서비스에서의 **사용 여부**를 선택하실 수 있으며, 해당 선택 여부가 반영된 **예상 비용**을 산출해 보실 수 있습니다. 계약 상세 내역 입력을 완료하신 후 **계약 버튼**을 누르시면 계약이 완료됩니다.
 
