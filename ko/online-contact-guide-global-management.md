@@ -936,6 +936,7 @@ CTI 관리 메뉴에서는 Online Contact과 연결할 CTI 정보를 설정하�
 CTI 설정 메뉴를 통해 Online Contact의 전화 기능과 연결할 CTI를 설정하실 수 있습니다.
 
 선택하실 수 있는 **① CTI 버전**은 다음과 같습니다.
+
 - IPCC (Private): Private 서비스로, 이용을 원하실 시 Online Contact 고객센터를 통해 **사전 협의** 부탁드립니다. ([Online Contact 고객센터 바로가기](https://nhn-contact.oc.toast.com/oc/hc/))
 - 모바일 컨택 (Mobile Contact): NHN Cloud Console에서 **Mobile Contact 서비스를 활성화**하신 후 선택하실 수 있습니다.
 
