@@ -115,7 +115,7 @@
 
 ##### Dooray 알림
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(2)g.png)
-트리거 조건이 충족되었을 경우 **① 템플릿 설정** 버튼을 통해 설정한 템플릿에 따라 티켓의 정보가 Dooray 알림으로 전송됩니다. 연동 URL은 [Dooray Messanger 서비스 가이드](https://docs.toast.com/ko/Dooray/Messenger/ko/service-guide/#_19)를 통해 확인 방법을 참고하실 수 있습니다. 
+트리거 조건이 충족되었을 경우 **① 템플릿 설정** 버튼을 통해 설정한 템플릿에 따라 티켓의 정보가 Dooray 알림으로 전송됩니다. 연동 URL은 [Dooray Messenger 서비스 가이드](https://docs.toast.com/ko/Dooray/Messenger/ko/service-guide/#_19)를 통해 확인 방법을 참고하실 수 있습니다. 
 
 ### 필드
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(3).png)
@@ -243,6 +243,7 @@ IVR Route 관리 메뉴에서는 **IVR Route** 관련 정보를 등록 및 관�
 상담원으로 추가할 사용자는 **IAM 회원**으로 등록되어 있어야 합니다.
 
 #### IAM 회원 등록
+
 -	화면 우측 상단 **① 회원 초대** 버튼 → 이름, ID, 이메일 입력
 -	NHN Cloud CONSOLE → 멤버 관리 → IAM 회원 탭 → IAM 회원 등록 버튼 → ID, 이름, 메일, 휴대폰 번호 입력
 
@@ -251,6 +252,7 @@ IVR Route 관리 메뉴에서는 **IVR Route** 관련 정보를 등록 및 관�
 상담원을 추가하실 때에는 반드시 그룹을 배정해야 하므로, 추가된 그룹이 없을 경우 **그룹을 먼저 추가**하신 후 상담원 추가를 진행해주세요.
 
 상담원 추가 시 설정할 수 있는 **권한**은 다음과 같으며, 조직 관리자 설정은 [전체 관리 → 조직관리자](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-global-management/#_5) 메뉴에서 가능합니다.
+
 -	관리자: **상담원** 권한에 **서비스 설정 메뉴 기능**이 추가된 권한 (티켓, 채팅 권한 개별 부여 가능, 전화 선택 시 티켓 자동 선택, 콜백 할당 권한 기본 부여)
 -	상담원: **티켓, 전화 및 채팅 상담**을 위한 권한 (티켓, 채팅 권한 개별 부여 가능, 전화 선택 시 티켓 자동 선택, 전화 선택 시 콜백 할당 권한 선택 가능 )
 
@@ -453,6 +455,7 @@ IVR Route 관리 메뉴에서는 **IVR Route** 관련 정보를 등록 및 관�
 
 ![](http://static.toastoven.net/prod_contact_center/2.2.6-(4).png)
 연결이 완료된 **계정을 클릭**하시면 상담톡 기능의 세부 요소들을 설정할 수 있습니다.
+
 - **①** 상담시간
 - **②** 채팅가능 요일
 - **③** 자동 멘트
