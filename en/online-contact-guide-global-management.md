@@ -1,15 +1,10 @@
 ## Contact Center > Online Contact > Service Guide (Consultation) > Global Management
-Global Management menu consists of the ability to add services managed by Online Contact and Organization Administrator, SSO Login, and Authority Log Management menu.
+Global Management menu in Consultation Management service consists of Contract Service Status, Organization Administrator, CTI Management and Authority Log Management menu.
 
 ## Contract service status
 ### Contract status
 ![](http://static.toastoven.net/prod_contact_center/2.1.1-(1)_en.png)
 Through **Contract status** tab, **①** add service to organization using Online Contact, **②** edit basic information/contents of contract, **③** set service usage state, **④** terminate service is available.
-
-Online Contact offers two service types, **Consultation Management**, **Issue Management**.
-
--	**Consultation Management**: Consultation management service type allows you to talk directly to customers through channels such as chat, phone, and help center provided by Online Contact.
--	**Issue Management**: Issue management service type allows agent of service which type is consultation management to transfer and process inquiries that are difficult to resolve by oneself.
 
 ![](http://static.toastoven.net/prod_contact_center/2.1.1-(2)_en.png)
 Click **① Add Service** button to view **② Add Service screen** for entering basic information for the service. The following items require input:
