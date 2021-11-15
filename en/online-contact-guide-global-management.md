@@ -1,4 +1,4 @@
-## Contact Center > Online Contact > Service Guide > Global Management
+## Contact Center > Online Contact > Service Guide (Consultation) > Global Management
 Global Management menu consists of the ability to add services managed by Online Contact and Organization Administrator, SSO Login, and Authority Log Management menu.
 
 ## Contract service status
@@ -7,11 +7,13 @@ Global Management menu consists of the ability to add services managed by Online
 Through **Contract status** tab, **①** add service to organization using Online Contact, **②** edit basic information/contents of contract, **③** set service usage state, **④** terminate service is available.
 
 Online Contact offers two service types, **Consultation Management**, **Issue Management**.
+
 -	**Consultation Management**: Consultation management service type allows you to talk directly to customers through channels such as chat, phone, and help center provided by Online Contact.
 -	**Issue Management**: Issue management service type allows agent of service which type is consultation management to transfer and process inquiries that are difficult to resolve by oneself.
 
 ![](http://static.toastoven.net/prod_contact_center/2.1.1-(2)_en.png)
-Click **① Add Service** button to view **② add service screen** for entering basic information for the service. The following items require input:
+Click **① Add Service** button to view **② Add Service screen** for entering basic information for the service. The following items require input:
+
 - Type: Type of service to use (Consultation management, Issue management)
 - Service Name: Name of service to be used
 - Service ID: ID used to identify the service (becomes included in URL of the service’s Online Contact, and help center). English only
@@ -30,6 +32,23 @@ If you leave without going through all the steps of entering basic information a
 ✔ **\[FAQ]** [I want to know about the charge criteria.](https://nhn-contact.oc.toast.com/oceng/hc/article/148/)
 ✔ **\[FAQ]** [When and how will the charge be paid?](https://nhn-contact.oc.toast.com/oceng/hc/article/147/)
 
+### Organization Information
+![](http://static.toastoven.net/prod_contact_center/2.1.1-(5)_en.png)
+In **Organization Information** tab, **① NHN Cloud Organization Information**, **② OC Organization Information** is available.
+
+#### NHN Cloud Organization Information
+In the menu, users can check the information written below, and the same information could be checked and modified in **NHN Cloud Console → Organization Management → Default Organization Setting** tab.
+
+- NHN Cloud Organization Name : The name set when the organization was created.
+- NHN Cloud Organization ID : Unique ID given to each organization when the organization was created. Used to create authentication token required when using Open API.
+- NHN Cloud Organization Domain : The name set when selecting a service after creating an organization.
+
+#### OC Organization Information
+In the menu, users can check the information written below. OC Organization Key could be changed by **Change API Key** button, and OC URL changes together when changing the NHN Cloud Organization Domain. 
+
+- OC Organization Key : Key used in the authentication phase when trying to process actions performed for organizational management through API.
+- OC URL : The access URL for Online Contact. Created in the following form : https://**Organization Domain**.oc.toast.com
+
 ## Organization Adminstrator
 ![](http://static.toastoven.net/prod_contact_center/2.1.2-(1)_en.png)
 **Organization Administrator** can manage the organization which uses Online Contact, can add and delete agents, and can add or delete organization administrators from among agents.
@@ -39,8 +58,10 @@ The user whom you want to grant organization administrator permission must be re
 ✔ **\[FAQ]** [Types and difference between permissions](https://nhn-contact.oc.toast.com/oceng/hc/article/119/)
 
 ### Register as an IAM Member
+
 -	Click **① Invite Members** button → Enter name, ID, email
 -	NHN Cloud CONSOLE → Manage Member → IAM Member tab → Click **Register IAM Member** button → Enter ID, name, mail, and mobile phone number
+
 Select one of the above two methods to register IAM member. After registering, click **Add Organization Administrator** button → click **View Agent** button → Search registered IAM Member by entering name/account/email, and add IAM Member as organization administrator.
 To newly registered IAM Members, password change mail will be sent by the registered email information. Logging in Online Contact becomes available after setting password through email.
 
@@ -49,16 +70,16 @@ In CTI Management menu, you could set CTI information to connect with Online Con
 This menu is only viewable in services which **Ticket Management →  Include call(using CTI)** function is **activated** in contract details.  
 
 ### CTI Setting
-![](http://static.toastoven.net/prod_contact_center/2.1.2-(2)_en.png)
+![](http://static.toastoven.net/prod_contact_center/2.1.2-(2)_1_en.png)
 From CTI Setting menu, you could set CTI to connect with call consultation function of Online Contact.
 
 The **① Versions of CTI** which is able to choose are as follows:
+
 - IPCC (Private): Private service. Please **consult with us beforehand** from Online Contact help center if use is wanted.([Online Contact Help Center Shortcut](https://nhn-contact.oc.toast.com/oceng/hc/))
 - Mobile Contact: Can choose after **Mobile Contact is activated** in NHN Cloud Console.
 
-After choosing the version of CTI, please input **service name** which you received from IPCC or Mobile Contact administrator in the **② Tenant Name** input box.
-
-CTI information would be saved by clicking **③ Save** button.
+After choosing the version of CTI, please input **tenant ID, service name** which you received from IPCC or Mobile Contact administrator in the **② Tenant ID, ③ Tenant Name** input box.
+If **④ CTI Log Monitoring** function is enabled, CTI log is recorded on a daily basis. The recorded log could be downloaded through **CTI Log Download** function which is accessible by clicking the account name at the top right of the screen.
 
 ### CTI Agent Management
 ![](http://static.toastoven.net/prod_contact_center/2.1.2-(3)_en.png)
@@ -70,17 +91,6 @@ Agent ID, name, email address, CTI ID, CTI NO, service (which the agent is regis
 Please input **CTI ID**, **CTI NO** received from IPCC or Mobile Contact administrator, and then click **③ Save** to save information.
 
 After CTI information is correctly entered and saved, agent with call authority could proceed **CTI Login** in the call widget.
-
-## SSO Login
-![](http://static.toastoven.net/prod_contact_center/2.1.3-(1)_en.png)
-SSO Login menu allows you to set the authentication method for logging in to help center. After registering SSO Login, set the login method you registered from [Service Management → Authentication](https://docs.toast.com/en/Contact%20Center/en/online-contact-guide-service-management/#authentication) menu. 
-
-### SSO Login Adding Process
--	Click **① +Register** button → Enter SSO Login Name, Remote Login URL, Login Status URL → Click **Confirm** button
-**API Key** is provided for authentication processing when SSO login is set up. The value of API Key can be changed through the **② Change API Key** button.
-
-✔ **\[FAQ]** [What is Remote Login URL, and how is it used?](https://nhn-contact.oc.toast.com/oceng/hc/article/133/)
-✔ **\[FAQ]** [What is Login Status URL(API), and how is it used?](https://nhn-contact.oc.toast.com/oceng/hc/article/134/)
 
 ## Authority Log Management
 ![](http://static.toastoven.net/prod_contact_center/2.1.4-(1)_en.png)
