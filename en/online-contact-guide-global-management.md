@@ -99,12 +99,14 @@ In this menu, detailed **real-time cumulative data** about ticket, call, chat co
 Detailed performance classifications for different types of consultations are as follows:
 
 **③ Ticket Achievements**
+
 - New 
 - Open 
 - Solved
 - Closed
 
 **④ Call Achievements**
+
 - IB Call (number of calls/minute)
 - OB Call (number of calls/minute)
 - Ready
@@ -119,6 +121,7 @@ Detailed performance classifications for different types of consultations are as
 - Monitor
 
 **⑤ Chat Achievements**
+
 - Ready
 - Online
 - Rest
@@ -132,6 +135,7 @@ Through clicking **currently connected ① account name** displayed in the upper
 
 
 ### Accessible Information
+
 -	Account
 -	Name
 -	Nickname (Editable) : Displayed when communicating through chat, mail
