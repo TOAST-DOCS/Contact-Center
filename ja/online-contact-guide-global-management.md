@@ -92,7 +92,7 @@ IPCCまたはMobile  Contact管理担当者から受け取った**CTI  ID**と**
 CTI情報が正常に入力された後、電話権限のある相談員が電話ウィジェットで**CTIログイン**を実行することができます。
 
 ## 権限変更ログ管理
-![](http://static.toastoven.net/prod_contact_center/ja/2.1.4-(1)_ja.png)
+![](http://static.toastoven.net/prod_contact_center/2.1.4-(1)_ja.png)
 **①** ヘルプセンター組織内部のオペレーター権限を変更する時のログが保存されます。組織管理者または管理者が権限の変更を行ったログを管理するメニューです。**②** 操作日時、操作内容、名前、IP、サービス、IDの項目から対象を絞りこんで検索することができます。
 
 ## My 業績
