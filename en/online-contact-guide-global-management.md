@@ -57,7 +57,7 @@ The user whom you want to grant organization administrator permission must be re
 -	Click **① Invite Members** button → Enter name, ID, email
 -	NHN Cloud CONSOLE → Manage Member → IAM Member tab → Click **Register IAM Member** button → Enter ID, name, mail, and mobile phone number
 
-Select one of the above two methods to register IAM member. After registering, click **Add Organization Administrator** button → click **View Agent** button → Search registered IAM Member by entering name/account/email, and add IAM Member as organization administrator.
+Select one of the above two methods to register IAM member. After registering, click **② Add Organization Administrator** button → click **View Agent** button → Search registered IAM Member by entering name/account/email, and add IAM Member as organization administrator.
 To newly registered IAM Members, password change mail will be sent by the registered email information. Logging in Online Contact becomes available after setting password through email.
 
 ## CTI Management
