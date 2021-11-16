@@ -1,18 +1,15 @@
-## Contact Center > Online Contact > サービスガイド > 全体管理
-全体管理メニューは、Online Contactで管理するサービスを追加する機能と、組織管理者の登録、SSOログイン登録、権限変更ログ管理メニューで構成されています。
+## Contact Center > Online Contact > サービスガイド（お問合わせ） > 全体管理
+お問合わせ管理サービスにおける全体管理メニューは、契約サービス管理、組織管理者、CTI管理、権限変更ログ管理メニューで構成されています。
 
 ## 契約サービス管理
 ### 契約管理
 
 ![](http://static.toastoven.net/prod_contact_center/ja/2.1.1-(1)_ja.png)
-**契約管理**タブからOnline Contactを使用いただいている組織に**①**サービス追加、**②**サービス基本情報/契約内容の修正、**③**サービス使用の有効/無効切り替え、**④**サービス解約などの機能をご利用いただけます。
-
-Online Contactでは**お問い合わせ管理**、 **イシュー管理**の2つのサービスタイプを提供しています。 
--	**お問い合わせ管理**: Online Contactで提供する、チャット、電話、問い合わせフォームなどのチャネルを通じて、お客様にサポート対応するサービスタイプです。
--	**イシュー管理**: サポート窓口のオペレーターが解決困難なお問い合わせ案件を、エスカレーションすることで対応するサービスタイプです。  
+**契約管理**タブからOnline Contactを使用いただいている組織に**①**サービス追加、**②**サービス基本情報/契約内容の修正、**③**サービス使用の有効/無効切り替え、**④**サービス解約などの機能をご利用いただけます。 
 
 ![](http://static.toastoven.net/prod_contact_center/ja/2.1.1-(2)_ja.png)
 **サービス追加** ボタンをクリックすると、サービス追加画面が表示されますので、基本情報を入力します。入力が必要な項目は次の通りです。
+
 - タイプ: サービスのタイプ(お問い合わせ管理、イシュー管理)
 - サービス名: 使用するサービスの名前 
 - サービスID: サービス識別で使うID(このIDがURLの文字列に含まれます）。英文のみ可能。
@@ -31,6 +28,25 @@ Online Contactでは**お問い合わせ管理**、 **イシュー管理**の2�
 ✔ **\[FAQ]** [課金基準はどうなりますか。](https://nhn-contact.oc.toast.com/ocjp/hc/article/112/)
 ✔ **\[FAQ]** [料金はいつ、どのように決済されますか。](https://nhn-contact.oc.toast.com/ocjp/hc/article/111/)
 
+## 組織情報
+![](http://static.toastoven.net/prod_contact_center/2.1.1-(5)_ja.png)
+**組織情報**タブでは、**① NHN Cloud 組織情報**、**② Online Contact 組織情報**のご確認が可能となります。
+
+### NHN Cloud 組織情報
+NHN Cloud 組織情報でご確認いただける内容は以下の通りです。
+以下の情報はすべて **NHN Cloud Console → 組織設定 → 組織基本設定** タブでもご確認が可能で、該当タブでは組織名、ドメインを修正することもできます。
+
+- NHN Cloud 組織名 : 組織作成時に設定した名前
+- NHN Cloud 組織ID : 組織作成時に各組織に付与される固有のID。Online Contact Open API使用時に必要な認証トークン作成に使用
+- NHN Cloud 組織ドメイン : 組織作成後、サービス選択時に設定したドメイン名
+
+### Online Contact 組織情報
+Online Contact 組織情報でご確認いただける内容は以下の通りです。
+**組織Key**は API Key 変更ボタンを通じてご変更が可能で、**Online Contact URL**は NHN Cloud 組織ドメインを利用して生成されるため、組織ドメイン変更時に一緒に変更されます。
+
+- Online Contact 組織Key : サービスの登録/修正/削除など、組織管理レベルで行われる行為をOnline Contactの外部からAPIで処理しようとする場合、認証段階で使用されるKey
+- Online Contact URL : Online Contact アクセスURL。https://**組織ドメイン**.oc.toast.com の形に作成
+
 ## 組織管理者
 ![](http://static.toastoven.net/prod_contact_center/ja/2.1.2-(1)_ja.png)
 **組織管理者**は Online Contactを使用する組織を管理できる権限を持ち、オペレーターの追加・削除、そしてオペレーターの中から組織管理者を追加・削除等の操作ができます。
@@ -40,10 +56,11 @@ Online Contactでは**お問い合わせ管理**、 **イシュー管理**の2�
 ✔ **\[FAQ]** [権限の種類と違いを知りたいです。](https://nhn-contact.oc.toast.com/ocjp/hc/article/73/)
 
 ### IAM会員登録
+
 -	画面右上の **① 会員招待** ボタン → 名前、ID、メールアドレスを入力
 -	NHN Cloud CONSOLE → メンバー管理 → IAM会員タブ → **IAM会員登録** ボタン → ID、名前、メール、携帯番号入力
 
-上記の２つの方法のうちどちらかの方法でIAM会員を登録し、 ②画面左上の **組織管理者追加** ボタン → **オペレーター照会** ボタン → 登録されたIAM会員の名前/アカウント/メールの位置、一部情報を入力して照会することができます。
+上記の２つの方法のうちどちらかの方法でIAM会員を登録し、 ② 画面左上の **組織管理者追加** ボタン → **オペレーター照会** ボタン → 登録されたIAM会員の名前/アカウント/メールの位置、一部情報を入力して照会することができます。
 
 **会員招待** ボタンまたはNHN Cloud CONSOLEで登録されたIAM会員の場合、入力されたメールアドレスにパスワード変更メールが送信され、該当メールにパスワードを設定してからログインすることができます。
 
@@ -52,15 +69,16 @@ CTI管理メニューでは、Online  Contactと接続するCTI情報を設定�
 このメニューは、契約情報で**チケット管理→電話含む(❖CTI利用含む)** 機能を**使用**に設定したサービスでのみ照会できます。
 
 ### CTI設定
-![](http://static.toastoven.net/prod_contact_center/2.1.2-(2)_ja.png)
+![](http://static.toastoven.net/prod_contact_center/2.1.2-(2)_1_ja.png)
 CTI設定メニューからOnline  Contactの電話機能と関連付けるCTIを設定できます。
 
 お選びいただける**① CTIバージョン**は以下のとおりです。
+
 - IPCC (Private): Privateサービスでご利用されたい場合はOnline  Contact顧客センターにて**事前協議**をお願いいたします。([Online Contact 顧客センター](https://nhn-contact.oc.toast.com/ocjp/hc/))
 - Mobile Contact: NHN Cloud Consoleで**Mobile  Contactサービスを有効化**した後選択することができます。
 
-CTIバージョンを選択し、IPCCまたはMobile  Contact管理担当者から受け取った**サービス名**を**② テナント名**欄に入力してください。
-**③  保存**ボタンを押すとCTI情報が保存されます。
+CTIバージョンを選択し、IPCCまたはMobile  Contact管理担当者から受け取った**テナントID**、**サービス名**を**② テナントID**、**③ テナント名**欄に入力してください。
+**④ CTI Log モニタリング**機能有効な場合、一日単位で CTI ログが記録され、記録されたログは、画面右上にあるアカウント名をクリックすると、利用できる **CTI Log ダウンロード**機能を通じて、エクセルファイルの形でダウンロードすることができます。
 
 ### CTIオペレーター管理
 ![](http://static.toastoven.net/prod_contact_center/2.1.2-(3)_ja.png)
@@ -72,19 +90,6 @@ ID、名前、メール、CTI　ID、CTI　NO、サービス(相談員として�
 IPCCまたはMobile  Contact管理担当者から受け取った**CTI  ID**と**CTI  NO**を入力した後、**③　保存**ボタンを押して入力された情報を保存してください。
 
 CTI情報が正常に入力された後、電話権限のある相談員が電話ウィジェットで**CTIログイン**を実行することができます。
-
-## SSOログイン
-![](http://static.toastoven.net/prod_contact_center/ja/2.1.3-(1)_ja.png)
-ヘルプセンターにログインする際の認証方式を設定できるメニューで、該当メニューにSSOログインを登録します。その後、[サービス管理 → 認証](https://docs.toast.com/ja/Contact%20Center/ja/online-contact-guide-service-management/#_2)メニューで登録したログイン方式を設定すると、ヘルプセンターに適用されます。登録後の修正も可能です。
-
-
-### SSOログインの追加手続き
--	**① +登録**ボタンをクリック → SSOログイン名、リモートログインURL、ログイン状態UR入力後、**確定** ボタンクリック
-
-SSOログイン設定時、認証処理に使用される**API認証Key**を提供し、**② API Key変更**ボタンでKey値の変更が可能です。
-
-✔ **\[FAQ]** [リモートログインURLはどのような用途で使用されますか？](https://nhn-contact.oc.toast.com/ocjp/hc/article/87/)
-✔ **\[FAQ]** [ログイン状態URL(API)はどのような用途で使用されますか？](https://nhn-contact.oc.toast.com/ocjp/hc/article/88/)
 
 ## 権限変更ログ管理
 ![](http://static.toastoven.net/prod_contact_center/ja/2.1.4-(1)_ja.png)
@@ -99,12 +104,14 @@ Online  Contact画面右上に表示された**①**現在接続されている*
 相談タイプによって表示される詳細な実績区分は以下のとおりです。
 
 **③ チケット実績**
+
 - アサイン待ち
 - 処理中
 - 解決
 - 完了
 
 **④ 電話実績**
+
 - IB通話 (件数/時間)
 - OB通話 (件数/時間)
 - 待機
@@ -119,6 +126,7 @@ Online  Contact画面右上に表示された**①**現在接続されている*
 - モニター
 
 **⑤ チャット実績**
+
 - 待機
 - オンライン
 - 休憩
@@ -131,6 +139,7 @@ Online Contact画面右上に表示されている **①** 現在ログイン中
 ✔ **\[FAQ]** [パスワードを変更したいです。](https://nhn-contact.oc.toast.com/ocjp/hc/article/72/)
 
 ### 閲覧可能な情報
+
 -	アカウント 
 -	名前
 -	ニックネーム (変更可能): チャットまたはメール処理時に表示される項目
