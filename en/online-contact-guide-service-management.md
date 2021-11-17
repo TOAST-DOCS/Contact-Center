@@ -1,26 +1,24 @@
-## Contact Center > Online Contact > Service Guide > Service Management
+## Contact Center > Online Contact > Service Guide (Consultation) > Service Management
 
-Service Management menu includes **detailed setting functions for accepting and processing inquiries** including SSO login settings, ticket settings, agent management, and help center template management.
+Service Management menu in Consultation Management service includes **detailed setting functions for accepting and processing inquiries** including authentication, chat, ticket, call, agent, help center, external channel and security management.
 
-You can check the detailed functions or configuration of the help center you set up at the help center for each service which is accessible in the following path.
-
+The configuration or detailed functions of the help center you set up in the menu can be checked immediately after application at the help center for each service, which can be accessed through the following route.
 
 ### Help Center Access
+
 -	**Help Center Link** in the bottom right of Online Contact web page
 -	https:// **Domain Name**.oc.toast.com/ **Service ID** /hc
 
-Domain name is the information which was created when you added your organization. Modifying is available in NHN Cloud Console → Set Organization → Set Domain. Service ID is the information which was entered when adding service from [Global Management → Contract Service Status](https://docs.toast.com/en/Contact%20Center/en/online-contact-guide-global-management/#contract-service-status) menu, and it cannot be modified after initial creation.
+**Domain name** is the information which was created when you added your organization. Modifying is available in NHN Cloud Console → Set Organization → Set Domain. 
+**Service ID** is the information which was entered when adding service from [Global Management → Contract Service Status](https://docs.toast.com/en/Contact%20Center/en/online-contact-guide-global-management/#contract-service-status) menu. It cannot be modified after initial creation.
 
 ## Authentication
-You can enable or disable **SSO Login** and **Open API** features which you registered in [Global Management → SSO Login](https://docs.toast.com/en/Contact%20Center/en/online-contact-guide-global-management/#sso-login) menu.
-
-### SSO Login
-![](http://static.toastoven.net/prod_contact_center/2.2.1-(1)_en.png)
-If you want to enable SSO Login, click **Enable** and select, save the login method which you registered from [Global Management → SSO Login](https://docs.toast.com/en/Contact%20Center/en/online-contact-guide-global-management/#sso-login) menu. Once SSO login is activated, **Inquiry History** icon will be displayed on the main page of the service’s Help Center so that the customer can view their previous inquiries after logging in.
+In authentication menu, you could enable/disable **Open API**, and manage related functions.
 
 ### Open API
 ![](http://static.toastoven.net/prod_contact_center/2.2.1-(2)_en.png)
-In the Open API tab, **① OPEN API Activation** which allows access to data inside of Online Contact from outside, **② Change API Key**, managing **③ Accessible IP List** is available. Through Accessible IP List, Open API can be called only from the IP which is registered in the list. 
+In Open API tab, OPEN API could be **① enabled or disabled**, and **② Service Key**, **③ Allowed IP List** could be managed.
+Through **Allowed IP List**, Open API can be called only from the IP which is registered in the list. 
 
 ## Chat
 Functions in this menu are related to chat consultation. Chat consultation could be enabled in [Service Management → Help Center → Default Settings](https://docs.toast.com/en/Contact%20Center/en/online-contact-guide-service-management/#default-settings_1), and could be accessed through **chat icon** which is displayed in the bottom right side after chat consultation is enabled.
@@ -28,11 +26,11 @@ Functions in this menu are related to chat consultation. Chat consultation could
 ✔ **\[FAQ]** [Can I access to the chat screen only from the service which I have chat permission?](https://nhn-contact.oc.toast.com/oceng/hc/article/151/)
 
 ![](http://static.toastoven.net/prod_contact_center/2.2.2-(1)_en.png)
-After accessing through **chat icon**, click **status value** in the top left of the chat screen to set your status. (initially set to ‘offline’, can choose between online/break/offline). Responding to customer's chat request is only available when chat status is set to online.
+After accessing through **chat icon**, click **① status value** in the top left of the chat screen to set your status. (initially set to ‘offline’, can choose between online/break/offline). Responding to customer's chat request is only available when chat status is set to online.
 
 ### Default Settings
 ![](http://static.toastoven.net/prod_contact_center/2.2.2-(2)_en.png)
-You can set **Greeting Message** which is sent automatically when chat consultation is connected, and **Satisfaction Guide Message** which is sent when requesting evaluation about the consultation to customer. Evaluation request could be sent through **Evaluation** button in the top of the chat screen.
+You can set **① Greeting Message** which is sent automatically when chat consultation is connected, and **② Satisfaction Guide Message** which is sent when requesting evaluation about the consultation to customer. Evaluation request could be sent through **Evaluation** button in the top of the chat screen.
 
 ### Agent Assignment Settings
 ![](http://static.toastoven.net/prod_contact_center/2.2.2-(3)_en.png)
@@ -40,46 +38,40 @@ You can set **Greeting Message** which is sent automatically when chat consultat
 
 ### Chat Screen Insertion Code
 ![](http://static.toastoven.net/prod_contact_center/2.2.2-(4)_en.png)
-This code is provided if you want to provide Online Contact's chat service only on the service page you previously managed. **①** Please copy the script provided and insert it in front of the </body> tag of your website HTML source code.
+**① Chat Widget Insertion code** is provided to apply Online Contact's chat service in other external pages. Please copy the script provided and insert it in front of the </body> tag of the website's HTML source code.
 
 ### Manage Category
 ![](http://static.toastoven.net/prod_contact_center/2.2.2-(5)_en.png)
-This menu allows you to manage the category of **Processing Type** among the consultation information which the agent inputs directly about the customer during chat consulting. You can set processing types 1 through 3 depth.
+This menu allows you to manage the category of **Processing Type** among the consultation information which the agent inputs about the customer during chat consulting. You can set processing types 1 through 3 depth.
 
-**①** When adding category in the lower depth after adding the upper category, click the upper category first, and then add the subcategory after checking whether the right category has been selected. Under the color-highlighted category, a new subcategory would be added.
+**① When adding category** in the lower depth after adding the upper category, click the upper category first, and then add the subcategory after checking whether the right category has been selected. Under the color-highlighted category, a new subcategory would be added.
 
-Category name **duplicate is not possible** within the same depth. (Possible if the depth is different)
-
+**Duplicate category names are not allowed** within the same depth. (Possible if the depth is different)
 
 ## Ticket
-From the Ticket menu, you can manage category which you select to receive or process inquiries, use trigger features that can improve your business efficiency, configure the Help Center Inquiry field, Manage Templates, and Set up Email.
+From the Ticket menu, you can **manage categories** which are used when processing inquiries, **use trigger features** that can improve business efficiency, **configure Help Center Inquiry fields**, **manage Templates**, and **set up Email**.
 
 ### Manage Category
-![](http://static.toastoven.net/prod_contact_center/2.2.3-(1)_en.png)
-Depending on the type of service, categories of ticket are used as follows.
+In Consultation Management service, Ticket Categories are used as follows.
 
-#### Consultation Management
--	Submission Type: Selected by customer when making inquiries
--	Processing Type: Selected by agent when processing tickets
+-	**Submission Type**: Selected by customer when making inquiries
+-	**Processing Type**: Selected by agent when processing tickets
 
-#### Issue Management
--	Submission Type: Selected by agents of Consultation Management service when escalating tickets
--	Processing Type: Selected by agents of Issue Management service when processing escalated tickets
+#### Submission Type
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(1)-1_en.png)
+**①** When adding lower level categories, please click the upper level category first and check whether it is properly selected. Categories will be created below the highlighted category. **Duplicate** category names are not allowed within the same depth. 
 
-**①** When adding category in the lower depth after adding the upper category, click the upper category first, and then add the subcategory after checking whether the right category has been selected. Under the color-highlighted category, a new subcategory would be added.
+**②** If you click the created category, **delete** button will appear. You can **edit category names** by double clicking the category.
 
-Category name **duplicate is not possible** within the same depth. (Possible if the depth is different)
-In case of **Processing Type** categories, add **processing type** field (created by default) through Service Management → Ticket → Field → Agent Field → Add button to view processing type categories you set when ticket processing.
+From toggle buttons, you could configure the **state** of submission types. **Activated** submission types are displayed in both **Help Center** and **Ticket Management** menu, and **deactivated** submission types are only displayed in **Ticket Management** menu. Thus, submission types could be separately managed depending on the purpose.  
 
-**② Copy** button in the top right allows you to copy the **Category ID** automatically assigned to each category, and **③ Download** button allows you to extract the entire category information into an **Excel file**. The following information is extracted:
+**③** You could copy **Category ID** through **Copy** button, and **download overall category information** into excel format through **Download** button.
 
-#### Information extracted by Download button
--	Category ID
--	Category name
--	Depth 
--	Upper category ID
--	Modified Time
--	Created Time
+#### Processing Type
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(1)-2_en.png)
+**①** When adding lower level categories, please click the upper level category first and check whether it is properly selected. Categories will be created below the highlighted category. **Duplicate** category names are not allowed within the same depth. **②** You could modify or delete categories through **Edit**, **Delete** button.
+
+**③** You could copy **Category ID** through **Copy** button, and **download overall category information** into excel format through **Download** button.
 
 ### Trigger
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(2)_en.png)
@@ -125,15 +117,10 @@ If the trigger conditions are met, information of the ticket is sent via Dooray 
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(3)_en.png)
 Fields are divided into **① Customer Field** and **① Agent Field**. Please select whether you want to manage before selecting field setting or field management.
 
-Depending on the type of service, customer and agent fields are used as follows:
+In Consultation Management service, customer and agent fields are used as follows:
 
-#### Consultation Management
--	Agent Field: fields that the agent enters directly about the ticket when processing ticket
--	Customer Field: fields shown to the customer in Help Center → Inquiry screen. Implemented on Help Center Inquiry screen as set in field setting menu.
-
-#### Issue Management
--	Agent Field: fields entered directly by the agent of the Issue Management Type service for the ticket when processing the escalated ticket
--	Customer Field: fields entered and forwarded according to the specified category when a ticket is escalated
+-	**Agent Field**: Fields which agent enters when processing ticket
+-	**Customer Field** : Fields shown to the customer in Help Center → Inquiry screen. Implemented on Help Center Inquiry screen as set in field setting menu.
 
 #### Field Setting
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(4)_en.png)
@@ -141,10 +128,14 @@ Depending on the type of service, customer and agent fields are used as follows:
 
 You can also **③ add** and **④ remove** the fields you previously added on the Field Management menu.
 
-#### Field Management
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(4)-1_en.png)
+**Call related fields** (Consultation Time, IN/OUT, Call Reservation, Call Reservation Time, Call Reservation Phone Number) are only displayed in tickets which are submitted through call, even if they were added in activated submission types. Thus, one submission type could be used in several channels.
+
+#### Field Management (System Field)
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(5)_en.png)
 Manage individual fields on the Field Management menu so that you can add fields for each submission type in Field Settings menu. Default fields can only be modified or initialized instead of deletion, and both modification and deletion is available for the fields you created.
 
+#### Field Management (User Field)
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(6)_en.png)
 For adding customer fields, items required to be filled are as follows:
 
