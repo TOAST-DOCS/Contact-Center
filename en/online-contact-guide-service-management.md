@@ -132,28 +132,60 @@ You can also **③ add** and **④ remove** the fields you previously added on t
 **Call related fields** (Consultation Time, IN/OUT, Call Reservation, Call Reservation Time, Call Reservation Phone Number) are only displayed in tickets which are submitted through call, even if they were added in activated submission types. Thus, one submission type could be used in several channels.
 
 #### Field Management (System Field)
-![](http://static.toastoven.net/prod_contact_center/2.2.3-(5)_en.png)
-Manage individual fields on the Field Management menu so that you can add fields for each submission type in Field Settings menu. Default fields can only be modified or initialized instead of deletion, and both modification and deletion is available for the fields you created.
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(5)_1_en.png)
+**①** You can manage fields in **Field Management** tab. Settings of **System Fields** could only be **modified** or **initialized**. 
+
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(5)_2_en.png)
+In the case of **system fields**, it is possible to modify **'Field Name'**, **'Notice'**, **'Personal Information'**, **'Destroy Personal Information'**. The modification of **'Required'**, **'Exposured'** is determined by the kind of field. 
+
+- System Fields required for Help Center (Type, Email, Title, Contents, Personal Information) : 'Required'/'Exposured' default value 'Yes', cannot change value.
+- System Fields related to Call (Consultation Time, IN/OUT, Call Reservation, Call Reservation Time, Call Reservation Phone Number) : 'Exposured' default value 'No', cannot change value.
 
 #### Field Management (User Field)
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(5)_3_en.png)
+**①** You can manage fields in **Field Management** tab. **User Fields** could be **added**, **modified**, or **deleted**.
+
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(6)_en.png)
 For adding customer fields, items required to be filled are as follows:
 
--	**①** Field type: The **type of field**. If you select the field type, **Detailed Settings** and **Preview** will be displayed at the bottom of Basic Settings. Detailed settings allow you to set the values to be displayed for the field, and you can use preview to see what the field will look like on the customer's screen. 
--	**②** Field code: When developing inquiry feature with Open API, field code is used as a unique value to represent the field.
--	**③** Field Name: The name of the field, which appears with the field on the Inquiry screen.
--	**④** Notice: A guide phrase for the field, which appears with the field on the Inquiry screen.
--	**⑤** Required: When set, it is marked with a \*(star) to the right of the field name and must be filled before you move on to the next field. Among the default fields, type, email, title, contents, personal information must be set to ‘required’.
--	**⑥** Personal information (Encrypt or not)
--	**⑦** Destroy personal information
+-	**① Field type** : The **type of field**. If you select the field type, **Detailed Settings** and **Preview** will be displayed at the bottom of Basic Settings. Detailed settings allow you to set the values to be displayed for the field, and you can use preview to see what the field will look like on the customer's screen. 
+-	**② Field code** : When developing inquiry feature with Open API, field code is used as a unique value to represent the field.
+-	**③ Field Name** : The name of the field, which appears with the field on the Inquiry screen.
+-	**④ Notice** : A guide phrase for the field, which appears with the field on the Inquiry screen.
+-	**⑤ Required** : When set, it is marked with a \*(star) to the right of the field name and must be filled before you move on to the next field. Among the default fields, type, email, title, contents, personal information must be set to ‘required’.
+-	**⑥ Personal information (Encrypt or not)**
+-	**⑦ Destroy personal information**
 
 For agent fields, **Permission** (Administrator, Agent) item is additionally required to be filled.
 
 ### Manage Template
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(7)_en.png)
-Template managing is a feature that allows you to quickly process tickets by **pre-adding answer templates** for frequently asked questions. You can choose templates when you process tickets in the Ticket Management menu, and it is only selectable when the submission type of the template is same as the submission type of the ticket.
+Template managing is a feature that allows you to quickly process tickets by **pre-adding answer templates** for frequently asked questions. 
 
-**① Add Template** button allows you to add a template. The submission type you need to select is which you previously added in [Service Management → Ticket → Manage Category]( https://docs.toast.com/en/Contact%20Center/en/online-contact-guide-service-management/#manage-category_1). You can insert links, images, and tables when you right-click on the body of the content.
+#### Template Registration
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(7)_1_en.png)
+At **Template Registration** tab, you could **add** templates, **② search** templates by setting **① search criteria**, **modify** or **delete** templates.
+You could serach templates by title, processing type, search code. In the **③ template list**, information are displayed as follows :
+
+- Title
+- Processing Type : Type **connected** to the template
+- Search Code : **Code** which can be used when searching templates
+- Number of Use : The **number of times** which the template was **selected**
+
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(7)_2_en.png)
+If you click **① Add Template** button, pop-up screen for setting template will be displayed. 
+
+- **② Template Title** 
+- **③ Contents** : **Replacement code** could be used when writing contents. **Double-click** adds the code to the contents, and data is inserted into code area of the template when processing tickets, making it more convenient to write replies.
+- **④ Search Code** : **Code** which can be used when searching templates. (English or number combination within 20 characters)
+- **⑤ Template Connection** : You can **select processing types** to connect to the template. **Check** the type you want to move, and press the **arrow** button.
+
+You can insert **links**, **images**, and **tables** into the body when you right-click on the body of the content, and when inserting images, you can use the path of the uploaded image from the Service Management → Help Center → Manage File Uploads menu or by attaching the image directly.
+
+#### Template Connection
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(7)_3_en.png)
+You can **view the templates linked to each processing type**, **add** templates to each processing type, or **delete** added templates.
+If you select a processing type from the list, you will see the list of connected templates, and you can add templates through **① Add** button.
 
 ✔ **\[FAQ]** [How can I use answer templates?](https://nhn-contact.oc.toast.com/oceng/hc/article/122/)
 ✔ **\[FAQ]** [I registered answer templates, but they are not shown when processing tickets.](https://nhn-contact.oc.toast.com/oceng/hc/article/143/)
