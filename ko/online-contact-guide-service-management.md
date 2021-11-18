@@ -415,7 +415,7 @@ IVR Route 관리 메뉴에서는 **IVR Route** 관련 정보를 등록 및 관�
 
 
 ### 구성관리
-![](http://static.toastoven.net/prod_contact_center/2.2.5-(4)_1.png)
+![](http://static.toastoven.net/prod_contact_center/2.2.5-(4).png)
 헬프센터의 구성 항목 중 사용하는 기능은 **활성화**, 사용하지 않는 기능은 **비활성화** 처리하실 수 있습니다.
 관리 가능한 기능은 다음과 같습니다.
 
@@ -424,7 +424,6 @@ IVR Route 관리 메뉴에서는 **IVR Route** 관련 정보를 등록 및 관�
 -	문의하기 & 문의내역
 -	채팅
 - 헬프센터 위젯
-- 모바일 첨부 권한
 
 ### 회원 연동
 ![](http://static.toastoven.net/prod_contact_center/2.2.5-(5).png)
