@@ -194,9 +194,15 @@ If you select a processing type from the list, you will see the list of connecte
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(8)_en.png)
 You can create a **① representative account address** which domain is provided from Online Contact, or register a service representative account using one’s service domain by enrolling **② External account **.
 
-**③** You can save the **sender's name** and **address** of the email sent through Online Contact and can set common **Mail Layout** for every sent mail. If you delete the replacement code (#{content}) of the body, the contents in the answer mail may not be displayed, so please be aware to not delete the replacement code when creating layout. Also note that this is a common layout which applies to all outgoing mail, including the templates you created earlier in Ticket → Manage Template menu, so make sure there are no conflicts between layout and templates.
+**③** You can save the **sender's name** and **address** of the email sent through Online Contact and can set common **④ Mail Layout** for every mail.
+When setting up the layout, you can set ticket related information to be automatically entered at the selected location through **replacement code** available on the right side of the editor.
 
 ✔ **\[FAQ]** [How can I connect my external email to Online Contact?](https://nhn-contact.oc.toast.com/oceng/hc/article/127/)
+
+### Data Transfer
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(8)_2_en.png)
+If consultation data has to be transferred to Online Contact, you could upload excel format data through **Data Transfer** menu.
+You could download the transfer template through clicking the **① Download** text at the bottom left of the screen. After entering the data into the template, you can upload the file through **② Add** button.
 
 ## Call
 In Call menu, you could register **IVR Route Code, Name** for managing callback, and register **Calling Number** which is displayed to the customer when making a outbound call. This menu is only viewable in services which **Ticket Management →  Include call(using CTI)** function is **activated** in contract details. 
