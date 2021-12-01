@@ -37,7 +37,7 @@
 https://nhn-cs.alpha-oc.toast.com/hangame/hc/ticket/?additionId=ef1bd9560xxxxx
 
 ### APP 내 모바일 헬프센터 첨부 권한 체크
-Online Contact 내 문의하기 첨부 이용 시, 고객사 App의 카메라 및 사진첩 권한 유무에 따라 첨부 권한을 제한할 수 있도록 제공되는 기능입니다.
+Online Contact 내 문의하기 첨부 이용 시, **고객사 App**의 **카메라 및 사진첩 권한 유무**에 따라 **첨부 권한을 제한**할 수 있도록 제공되는 기능입니다.
 해당 기능을 이용하기 위해서는 하기 2가지 작업이 필요합니다.
 
 - 헬프센터 URL 호출 시, ?from=app 파라미터를 붙여 호출
