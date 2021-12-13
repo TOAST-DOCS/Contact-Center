@@ -199,11 +199,6 @@ When setting up the layout, you can set ticket related information to be automat
 
 ✔ **\[FAQ]** [How can I connect my external email to Online Contact?](https://nhn-contact.oc.toast.com/oceng/hc/article/127/)
 
-### Data Transfer
-![](http://static.toastoven.net/prod_contact_center/2.2.3-(8)_2_en.png)
-If consultation data has to be transferred to Online Contact, you could upload excel format data through **Data Transfer** menu.
-You could download the transfer template through clicking the **① Download** text at the bottom left of the screen. After entering the data into the template, you can upload the file through **② Add** button.
-
 ## Call
 In Call menu, you could register **IVR Route Code, Name** for managing callback, and register **Calling Number** which is displayed to the customer when making a outbound call. This menu is only viewable in services which **Ticket Management →  Include call(using CTI)** function is **activated** in contract details. 
 
@@ -213,12 +208,14 @@ When call function is activated, to call authorized agents **call widget** will 
 ✔ **\[FAQ]** [Can I access the CTI screen only when accessing service with call authority?](https://nhn-contact.oc.toast.com/oceng/hc/article/150/)
 
 ### IVR Route Management
-![](http://static.toastoven.net/prod_contact_center/2.2.3-(8)-1_en.png)
-In IVR Route Management menu, you could manage **IVR Route Code**, **IVR Route Name** for managing callback.
+In IVR Route Management menu, you could manage **IVR Route** information.
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(8)-1_2_en.png)
 
-By clicking **① Add** button, screen for adding IVR route will be shown. Please input IVR route code and route name received by CTI administrator, and save the IVR information. If callback request is received through the added IVR route, you could **check the IVR route for the received callback request** in Additional Business Management → Callback Management → Callback List menu (To view this menu, additional work → callback function should be activated in contract details).
+If you click **① Add** button after **CTI Login**, you can access pop-up screen for **② Adding IVR Route**.
+On the screen, you could view **unregistered counsel menus** for the current service **among all counseling menus** in linked CTI tenants.
+After selecting the IVR Route to add, click **Save** button to finish adding process.
 
-You could **② modify, delete** added IVR routes.
+Registered IVR Route data could be only **③ deleted**. If IVR Route data has been modified in the linked CTI tenant, you could update to the revised data through **deleting** and **adding** the data again.
 
 ### Send No Management
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(9)_en.png)
