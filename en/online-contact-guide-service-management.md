@@ -217,57 +217,16 @@ After selecting the IVR Route to add, click **Save** button to finish adding pro
 
 Registered IVR Route data could be only **③ deleted**. If IVR Route data has been modified in the linked CTI tenant, you could update to the revised data through **deleting** and **adding** the data again.
 
-### Send No Management
-![](http://static.toastoven.net/prod_contact_center/2.2.3-(9)_en.png)
+### Calling Number
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(9)_1_en.png)
 In this menu, you could manage **calling number** which is displayed to the customer when making a outbound call.
-It can be used by agents within an organization who conduct call consultations about multiple services when trying outbound calls by selecting the calling number appropriately for the purpose of the outbound call.
+It can be used by agents who conduct call consultations in multiple services by selecting calling number appropriately for the purpose of the outbound call.
 
-By clicking **① Add** button, screen for adding calling number would be shown. After entering name, number, and attaching certificate of use of communication service, click save, and the added calling number would be added to the calling number list as **New** status. **② Modifying** is only able when the status is **new**, and **③ deleting** is able regardless of the current status.
+The list of calling numbers is divided into **① Confirmed**, and **② Total**. In **② Total** list, you can check the registered calling numbers in all states. In **① Confirmed** list, only **confirmed** calling numbers are displayed, and the order between the calling numbers can be adjusted. The adjusted order is applied in the calling number list of the CTI widget in real time. 
 
-Once the verification with the certificate of use of communication service for the added calling number is completed, the status will be changed to **Confirm** or **Reject**. You can check the reason for the change of status.
+By clicking **① Add** button, page for adding calling number would be shown. After entering name, number, and attaching certificate of use of communication service, click save, and the added calling number would be added to the total list as **New**. **Modifying** is only possible when the state is **new**, and **deleting** is possible regardless of the state.
 
-**Confirmed** calling numbers are viewed in the calling number dropbox when the agent with the call authority of the service clicks **Dial Up** in the call widget.
-
-### Call Consultation
-When call function is activated, **call icon** is displayed to the call authorized agent. CTI screen will be displayed in the upper right side of Online Contact if call icon is clicked.
-
-#### CTI Login, Base Status
-![](http://static.toastoven.net/prod_contact_center/2.2.3-(10)_en.png)
-Agent which CTI information is registered in Global Management → CTI Management → CTI Agent Management menu could login to the CTI through **① Login** button. After login is completed, the CTI screen is changed to **② default screen**, and the following functions are able to use.
-
-- Logout
-- Rest : Set agent status to rest, call request not allocated in this status.
-- Ready : Set Agent status to ready, call request allocated when inbound call exists.
-- Business : Can choose between Education, Report, Meeting, Ticket, Chat, Monitor. Call request not allocated in this status.
-- Dial up: Can make outbound call after setting customer number, calling number. (Can set in Service Management → Call → Send No Management menu)
-
-✔ **\[FAQ]** [I have problems with CTI login.](https://nhn-contact.oc.toast.com/oceng/hc/article/152/)
-
-#### Inbound Call
-![](http://static.toastoven.net/prod_contact_center/2.2.3-(11)_en.png)
-If call is requested when agent status is set to ready, **① alert about inbound call** which notifies if call consultation is connected, current screen will be changed to the ticket processing screen of the service which call is requested is displayed.
-
-Call would be connected by clicking **② Confirm** button, and ticket would be automatically created to the service which call is requested. When cancel button is clicked, the call goes back to the scenario to navigate agents in ready status, and if the agent status is changed to 'ready' again, the agent would be able to receive call again.
-
-#### Outbound Call
-![](http://static.toastoven.net/prod_contact_center/2.2.3-(12)_en.png)
-When clicking **① Dial up** button in the CTI screen, screen for **② dial up** will be displayed.
-After entering **customer number**, and selecting **sending number**, click **③ confirm** to make outbound call.
-When calling is proceeded, the agent status would be changed to **Dialing**, and when call is connected, ticket would be automatically created to the service which call is made.
-
-#### Process Call
-![](http://static.toastoven.net/prod_contact_center/2.2.3-(13)_en.png)
-In **Talking** status, you can use the following functions through the CTI screen.
-- Transfer : You can **transfer** the currently connected call to other agent. After entering agent number or searching agent, you can discuss with the other agent through **transfer try** button, and can transfer the call through **transfer connect** button. 
-- Disconnect: In the case of a situation where **normal consultation is difficult to take place due to the customer's strong attitude**, click disconnect to finish call with an ARS announcement.
-- Hold: If you need a moment of confirmation or inquiry while consulting, select Hold. **Music will be transmissed** to the customer, and agent status will be changed to **holding**. Click **retrieve** to reconnect call.
-- Hang up: Call will be finished.
-
-#### Finish Call
-![](http://static.toastoven.net/prod_contact_center/2.2.3-(14)_en.png)
-When call is finished, **alert about change of agent status** will be displayed, and if **① Confirm** button is clicked, agent status will be changed to **ready**.
-
-If **② Cancel** is selected, status will be changed to **Ticket**, and you could process ticket created for the proceeded call consultation. For call tickets, you could process through selecting the following items: **Resolved**, **Pending**, **Add a Comment**.
+Once the verification with the certificate of use of communication service is completed, the state will be changed to **Confirm** or **Reject**. **Confirmed** calling numbers will be added in the confirmed list.
 
 ## Agent
 In this menu, you can add and edit agents and groups for handling customer inquiries (ticket, chat, call consultations), and set up groups and permissions for each agent.
@@ -277,27 +236,25 @@ In this menu, you can add and edit agents and groups for handling customer inqui
 User must be registered as **IAM Member** to be added as an agent.
 
 #### Register IAM Member
--	Click ① Invite Members button → Enter name, ID, email
+-	Click **① Invite Members** button → Enter name, ID, email
 -	NHN Cloud CONSOLE → Manage Member → IAM Member tab → Click Register IAM Member button → Enter ID, name, mail, and mobile phone number 
 
-Select one of the above two methods to register IAM member., and click **② Add Agent** → **View Agent** → search registered IAM Member by entering name/account/email, and add the IAM Member as your service’s agent.
+Select one of the above two methods to register IAM member., and click **② Add Agent** → **View Agent** → search registered IAM Member by entering name/account/email, and add the member as the service agent.
 
-Group assigning is mandatory when adding a counselor, so please add **group** first and proceed with adding a counselor.
+When adding a agent, assigning group is mandatory. Thus, adding groups should be proceeded before adding agents.
 
-The **permissions** you can set when adding an agent is as follows, and settings about organization administrator are available from [Global Management → Organization Administrator](https://docs.toast.com/en/Contact%20Center/en/online-contact-guide-global-management/#organization-adminstrator) menu.
+The **permission** of agents is as follows. Setting organization administrator permission is available from [Global Management → Organization Administrator](https://docs.toast.com/en/Contact%20Center/en/online-contact-guide-global-management/#organization-adminstrator) menu.
 
--	Administrator: Permission which features related to **service settings** added to the permission of **agents**. (Ticket, chat permissions can be selected individually. When call is selected, ticket becomes automatically selected together.)
--	Agent: Permission for **ticket, call, chat consultation**. (Ticket, chat permissions can be selected individually. When call is selected, ticket becomes automatically selected together.)
+-	Administrator: Permission which features related to **service setting** added to the permission of **agents**. 
+-	Agent: Permission for **ticket, call, chat consultation**. 
 
 ### Group
 ![](http://static.toastoven.net/prod_contact_center/2.2.4-(2)_en.png)
-In Group menu, you can **① add**, **② edit**, **③ delete** groups. When configuring agents into groups, you can assign type-specific inquiries to the appropriate group, or set up notification mail to be sent by Ticket → Trigger.
+In Group menu, you can **① add**, **② edit**, **③ delete** groups. When configuring agents into groups, you can assign type-specific inquiries to the appropriate group, or set up notification mails.
 
 #### Add Group
 ![](http://static.toastoven.net/prod_contact_center/2.2.4-(3)_en.png)
-Click **Add Group**, enter group name, choose agent to be assigned, and click **①** ‘**>** ‘button to move agent to ‘Assigned Agent’. Conversely, when you unassign a agent, click ‘**<**’ button to move agent to ‘Unassigned Agent’. After assigning agents, press **② Save** button to apply group settings. 
-
-You can add a group without assigning agents, so when you add a group initially, you can proceed adding agents by simply entering the group name and pressing the **Save** button.
+Click **Add Group**, enter group name, choose agent to be assigned, and click **①** ‘**>** ‘button to move agent to ‘Assigned Agent’. Conversely, when you unassign a agent, click ‘**<**’ button to move agent to ‘Unassigned Agent’. After assigning agents, press **② Save** button to apply group settings. A group can be added without assigning agents. 
 
 ## Help Center
 ### Template Management
@@ -449,6 +406,8 @@ Functions you can manage are as follows:
 -	1:1 Inquiry & My Inquiries
 -	Chat
 -	Help center navigation
+
+### Member Interlink
 
 ## External Channel
 Inquiries received by external services could be switched to tickets in Online Contact. Twitter and KakaoTalk are currently supported services.
