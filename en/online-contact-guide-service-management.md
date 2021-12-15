@@ -408,9 +408,18 @@ Functions you can manage are as follows:
 -	Help center navigation
 
 ### Member Interlink
+![](http://static.toastoven.net/prod_contact_center/2.2.5-(5)_1_en.png)
+**Member Interlink** is a function to apply **member certification process** provided by the client to the help center of Online Contact. Through this function, **member inquiries** could be received, and customers could **check** the **sent inquiries**. The login method is provided by two types : **GET**, **POST**. For the linkage, API should be developed and registered according to the API guide provided by Online Contact.
+
+Member Interlink function could be **① activated/deactivated** through the button. If the function is **activated**, you can select whether to activate **② Non-member inquiry**, and **③ login method**. If **Non-member inquiry** option is activated, inquiries can be received even when the customer is not logged in, and if deactivated, inquiries can only be received while customers are logged-in. 
+
+API guide for each **login method** is linked below. 
+
+- [Online Contact > API Guide for Developers > Member Integration (POST)](https://docs.toast.com/en/Contact%20Center/en/online-contact-api-guide-openapi-sso/)
+- [Online Contact > API Guide for Developers > Member Integration (GET)](https://docs.toast.com/en/Contact%20Center/en/online-contact-api-guide-openapi-member-get/)
 
 ## External Channel
-Inquiries received by external services could be switched to tickets in Online Contact. Twitter and KakaoTalk are currently supported services.
+Inquiries received by **external services** could be switched to tickets in Online Contact. **Twitter**, **KakaoTalk**, and **SMS** are currently supported services.
 
 ### Twitter
 ![](http://static.toastoven.net/prod_contact_center/2.2.6-(1)_en.png)
@@ -443,8 +452,21 @@ When KakaoTalk is connected and activated in Online Contact, the existing plus f
 
 ✔ **\[FAQ]** [What is the process of submitting/answering tickets when external channel is activated?](https://nhn-contact.oc.toast.com/oceng/hc/article/142/)
 
+### SMS
+![](http://static.toastoven.net/prod_contact_center/2.2.6-(6)_en.png)
+You could send SMS/MMS through linking **[NHN Cloud Notification → SMS](https://www.toast.com/kr/service/notification/sms)** service with Online Contact.
+If **SMS** function is **activated** in Global Management → Contract Service Status → Contract Details, SMS menu tab is shown in Service Management → External Channel menu. 
+
+To **① activate** SMS linkage, please **activate [NHN Cloud Notification → SMS](https://www.toast.com/kr/service/notification/sms) service** first, and **② save** the **APP KEY** which you could find in NHN CLOUD CONSOLE. If you enter and save a valid APP KEY, the SMS function is automatically **activated**, and **sending number** list is displayed. 
+
+If you click **③ Add** button, pop-up screen for **selecting sending number** will be shown. The numbers which are registered in NHN Cloud Notification → SMS service are shown in the kist, thus please check if there are registered sending numbers before adding in Online Contact. ([SMS > Console Guide > Sender Number Management](https://docs.toast.com/en/Notification/SMS/en/console-guide/#sender-number-management)) Check the number you want to add, and click confirm button to add the number to the sending number list. The added numbers could be used as **sending number** when sending SMS/MMS in Online Contact. 
+
+After activating SMS service and adding sending number, you could proceed to sending/managing SMS in **Additional Business Management → SMS Send** menu. 
+
 ## Security Management
 ![](http://static.toastoven.net/prod_contact_center/2.2.6-(5)_en.png)
-If you have enabled the Service Management → Security Service feature in the contract information through prior consultation you can enable or disable **log linkage** in the  **Security Service** menu.
-Please contact the Online Contact administrator for enabling/disabling of log interlocking services through **Online Contact Customer Center**. ([Online Contact Customer Center Shortcut](https://nhn-contact.oc.toast.com/oceng/hc/))
+If you have enabled the Service Management → Security Service feature in the contract information through prior consultation, you can activate **log linkage**, and use **personal information masking** function for encrypting personal information transmitted during chatting and ticket consultation.  
 
+**Personal information masking** function can be used in ticket management, chat widget, chat log without further settings if **Security Service** function is **activated**, and **log linkage** function can be used after activating in Security management menu → log linkage tab.
+
+Please contact the Online Contact administrator for activating log linkage through **Online Contact Customer Center**. ([Online Contact Customer Center Shortcut](https://nhn-contact.oc.toast.com/oceng/hc/))
