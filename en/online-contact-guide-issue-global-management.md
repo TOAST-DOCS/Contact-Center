@@ -64,6 +64,18 @@ To newly registered IAM Members, **password change mail** will be sent to the re
 ![](http://static.toastoven.net/prod_contact_center/2.1.4-(1)_im_en.png)
 **① Logs are recorded** when you change the permissions of agents inside the organization. This menu manages logs about change of permission by the organization administrator or administrator. You can **② search** by entering some of the information, including the date and time of operation, operated contents, name, IP, service, or ID.
 
+## Data Transfer
+![](http://static.toastoven.net/prod_contact_center/2.1.6-(2)_en.png)
+
+If consultation data should be transferred to Online Contact, you could upload data and create tickets through **Data Transfer** menu.
+
+If you click **① Add** button, you can access to the screen for **downloading transfer template**. Select the service you want to transfer consultation data, and click **② Download** to download the transfer template of the service. The field configuration set for the service is reflected in the downloaded template, thus re-download of the template is needed when the field configuration had changes. 
+
+After downloading the template, click **Next** button to access **Register Data** screen.
+You can upload the file you created by clicking **③ Add** button, and after checking the service and file name once more, click **④ Confirm** button to complete data registration.
+
+You can **delete** the reserved transfer cases before the transfer is processed, and if the transfer is completed, delete button will be deactivated.
+
 ## My Performance
 ![](http://static.toastoven.net/prod_contact_center/2.1.4-(2)_im_en.png)
 Through clicking **① account name** displayed in the upper right corner of the screen, you could access to **② My Performance** menu.
