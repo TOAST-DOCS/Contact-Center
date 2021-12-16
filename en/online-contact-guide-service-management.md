@@ -224,7 +224,7 @@ It can be used by agents who conduct call consultations in multiple services by 
 
 The list of calling numbers is divided into **① Confirmed**, and **② Total**. In **② Total** list, you can check the registered calling numbers in all states. In **① Confirmed** list, only **confirmed** calling numbers are displayed, and the order between the calling numbers can be adjusted. The adjusted order is applied in the calling number list of the CTI widget in real time. 
 
-By clicking **① Add** button, page for adding calling number would be shown. After entering name, number, and attaching certificate of use of communication service, click save, and the added calling number would be added to the total list as **New**. **Modifying** is only possible when the state is **new**, and **deleting** is possible regardless of the state.
+By clicking **③ Add** button, page for adding calling number would be shown. After entering name, number, and attaching certificate of use of communication service, click save, and the added calling number would be added to the total list as **New**. **Modifying** is only possible when the state is **new**, and **deleting** is possible regardless of the state.
 
 Once the verification with the certificate of use of communication service is completed, the state will be changed to **Confirm** or **Reject**. **Confirmed** calling numbers will be added in the confirmed list.
 
@@ -401,6 +401,7 @@ As a tool for managing the files used to create templates and layouts, you can u
 You can **Enable** functions you use in the Help Center and **Disable** functions you don't use. When disabled, the function becomes hidden from the Help Center page.
 
 Functions you can manage are as follows:
+
 -	Notice
 -	FAQ
 -	1:1 Inquiry & My Inquiries
@@ -411,7 +412,7 @@ Functions you can manage are as follows:
 ![](http://static.toastoven.net/prod_contact_center/2.2.5-(5)_1_en.png)
 **Member Interlink** is a function to apply **member certification process** provided by the client to the help center of Online Contact. Through this function, **member inquiries** could be received, and customers could **check** the **sent inquiries**. The login method is provided by two types : **GET**, **POST**. For the linkage, API should be developed and registered according to the API guide provided by Online Contact.
 
-Member Interlink function could be **① activated/deactivated** through the button. If the function is **activated**, you can select whether to activate **② Non-member inquiry**, and **③ login method**. If **Non-member inquiry** option is activated, inquiries can be received even when the customer is not logged in, and if deactivated, inquiries can only be received while customers are logged-in. 
+Member Interlink function could be **① activated/deactivated** through the button. If the function is **activated**, you can select whether to activate **② non-member inquiry**, and **③ login method**. If **non-member inquiry** option is activated, inquiries can be received even when the customer is not logged in, and if deactivated, inquiries can only be received while customers are logged-in. 
 
 API guide for each **login method** is linked below. 
 
@@ -469,4 +470,4 @@ If you have enabled the Service Management → Security Service feature in the c
 
 **Personal information masking** function can be used in ticket management, chat widget, chat log without further settings if **Security Service** function is **activated**, and **log linkage** function can be used after activating in Security management menu → log linkage tab.
 
-Please contact the Online Contact administrator for activating log linkage through **Online Contact Customer Center**. ([Online Contact Customer Center Shortcut](https://nhn-contact.oc.toast.com/oceng/hc/))
+Please contact the Online Contact administrator for activating log linkage through **Online Contact Customer Center**. ([Online Contact Customer Center](https://nhn-contact.oc.toast.com/oceng/hc/))
