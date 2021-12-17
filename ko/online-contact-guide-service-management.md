@@ -429,6 +429,12 @@ IVR Route 관리 메뉴에서는 **IVR Route** 관련 정보를 등록 및 관�
 - [Online Contact > API 가이드 > 회원연동(POST)](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-sso/)
 - [Online Contact > API 가이드 > 회원연동(GET)](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-member-get/)
 
+### 다국어 코드 관리
+![](http://static.toastoven.net/prod_contact_center/2.2.5-(5).png)
+
+### 회사정보 관리
+![](http://static.toastoven.net/prod_contact_center/2.2.5-(6).png)
+
 ## 외부채널
 **외부 채널**을 Online Contact와 연결하여 고객과 소통할 수 있습니다. 상담관리 서비스에서는 현재 **트위터**, **카카오 상담톡**, **SMS** 서비스를 연동하여 사용하실 수 있습니다.
 
