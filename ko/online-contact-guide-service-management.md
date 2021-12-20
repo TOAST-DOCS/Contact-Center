@@ -408,7 +408,7 @@ IVR Route 관리 메뉴에서는 **IVR Route** 관련 정보를 등록 및 관�
 
 
 ### 구성관리
-![](http://static.toastoven.net/prod_contact_center/2.2.5-(4).png)
+![](http://static.toastoven.net/prod_contact_center/2.2.5-(4)_2.png)
 헬프센터의 구성 항목 중 사용하는 기능은 **활성화**, 사용하지 않는 기능은 **비활성화** 처리하실 수 있습니다.
 관리 가능한 기능은 다음과 같습니다.
 
@@ -417,6 +417,7 @@ IVR Route 관리 메뉴에서는 **IVR Route** 관련 정보를 등록 및 관�
 -	문의하기 & 문의내역
 -	채팅
 - 헬프센터 위젯
+- 회사 정보 (서비스 관리 → 헬프센터 → 회사정보 관리 메뉴에서 추가 및 수정 가능)
 
 ### 회원 연동
 ![](http://static.toastoven.net/prod_contact_center/2.2.5-(5)_1.png)
@@ -430,10 +431,16 @@ IVR Route 관리 메뉴에서는 **IVR Route** 관련 정보를 등록 및 관�
 - [Online Contact > API 가이드 > 회원연동(GET)](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-member-get/)
 
 ### 다국어 코드 관리
-![](http://static.toastoven.net/prod_contact_center/2.2.5-(5).png)
+![](http://static.toastoven.net/prod_contact_center/2.2.5-(7).png)
+
+
 
 ### 회사정보 관리
 ![](http://static.toastoven.net/prod_contact_center/2.2.5-(6).png)
+
+PC, 모바일 헬프센터의 푸터 영역에 회사 정보 및 이용약관을 표시할 수 있도록 설정 가능한 기능입니다.
+**① 추가** 버튼을 누르시면 설정 화면이 표시되어, **② 회사 정보**, **③ 상표 및 저작권**, **④ 이용 약관** 정보를 설정하실 수 있습니다.
+정보 입력 후 **저장** 버튼을 누르시면 설정하신 회사 정보 구성이 목록에 추가되며, 서비스 관리 → 헬프센터 → 구성관리 메뉴에서 선택 후 실제 헬프센터에 **⑤ 반영**하실 수 있습니다.
 
 ## 외부채널
 **외부 채널**을 Online Contact와 연결하여 고객과 소통할 수 있습니다. 상담관리 서비스에서는 현재 **트위터**, **카카오 상담톡**, **SMS** 서비스를 연동하여 사용하실 수 있습니다.
