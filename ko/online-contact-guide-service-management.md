@@ -266,139 +266,501 @@ IVR Route 관리 메뉴에서는 **IVR Route** 관련 정보를 등록 및 관�
 
 기본으로 두 가지의 템플릿이 제공되며, **① 템플릿 등록** 버튼을 통해 새로운 템플릿을 추가하실 수 있습니다. 추가하신 템플릿은 **② 수정** 또는 **삭제**하실 수 있으며, 활성화 중인 템플릿은 삭제가 불가하므로 다른 템플릿을 활성화하신 다음 삭제해주세요.
 
-![](http://static.toastoven.net/prod_contact_center/2.2.5-(2).png)
-템플릿 추가 및 수정 시 **① CSS / HTML / JS 스크립트**를 주어진 편집기에 직접 작성하시거나 [서비스 관리 → 헬프센터 → 파일업로드 관리](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_38) 메뉴에서 필요하신 파일(스크립트, 폰트, 이미지 등)을 업로드하신 후 리소스의 경로를 입력하심을 통해 헬프센터의 구성을 변경하실 수 있습니다. 편집 후 **미리보기** 버튼을 통하여 편집 내용이 헬프센터에 적용된 모습을 바로 보실 수 있으며, **저장**하신 후 적용이 가능합니다.
+![](http://static.toastoven.net/prod_contact_center/2.2.5-(2)_1.png)
+템플릿 추가 및 수정 시 **① CSS / HTML / JS 스크립트**를 주어진 편집기에 직접 작성하시거나 [서비스 관리 → 헬프센터 → 파일업로드 관리](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_38) 메뉴에서 필요하신 파일(스크립트, 폰트, 이미지 등)을 업로드하신 후 리소스 경로 입력을 통해 헬프센터의 구성을 변경하실 수 있습니다. **② 다국어 코드 삽입** 버튼을 누르시면 [서비스 관리 → 헬프센터 → 다국어 코드 관리] 메뉴에서 설정하신 언어 세트 목록이 표시되며, **선택** 버튼을 통해 템플릿 내에 다국어 코드를 삽입하실 수 있습니다.
+
+편집 후 **④ 미리보기** 버튼을 통하여 편집 내용이 헬프센터에 적용된 모습을 사전에 열람하실 수 있으며, **③ 저장**하신 후 적용이 가능합니다.
 
 ✔ **\[FAQ 바로가기]** [헬프센터 PC/모바일 템플릿 관리 기능의 구체적인 예시가 궁금해요.](https://nhn-contact.oc.toast.com/oc/hc/article/60/)
 ✔ **\[FAQ 바로가기]** [헬프센터 텍스트의 폰트를 바꾸거나, 굵게/밑줄 등의 효과를 적용할 수 있나요?](https://nhn-contact.oc.toast.com/oc/hc/article/64/)
 
 **CSS 수정 시** 활용하실 수 있는 주요한 요소들은 다음과 같습니다.
 
-#### main.css
-| 요소 이름                                                 | 설명                                |
-| -------------------------------------------------------- | ----------------------------------- |
-| .main_banner                                             | 메인 상단 배너 영역                  |
-| .main_banner img                                         | 메인 상단 배너 영역 이미지            |
-| .carousel-caption .title_txt                             | 메인 상단 배너 영역 제목              |
-| .carousel-caption .sub_txt                               | 메인 상단 배너 영역 소제목            |
-| .search-box                                              | 메인 상단 배너 영역 검색상자          |
-| .search-box .icon-ic-search                              | 메인 상단 배너 영역 검색아이콘        |
-| #supports .container-con                                 | 메인 고객센터 구성요소 영역           |
-| #supports .support__item:nth-child(1):before             | 메인 공지사항 아이콘                 |
-| #supports .support__item:nth-child(2):before             | 메인 FAQ 아이콘                      |
-| #supports .support__item:nth-child(3):before             | 메인 문의하기 아이콘                  |
-| #supports .support__item:nth-child(4):before             | 메인 문의내역 아이콘                  |
-| #supports .support__item .card-title .btn                | 메인 구성요소 제목                    |
-| #supports .support__item .card-title .btn:hover          | 메인 구성요소 제목 호버 시 색 변경     |
-| #supports .support__item .card-title .btn:after          | 메인 구성요소 텍스트 우측 화살표 아이콘 |
-| #supports .support__item .card-text                      | 메인 구성요소 설명 텍스트              |
-| #sec_contact-news .textArea                              | 메인 하단 배너 영역                   |
-| #sec_contact-news .textArea .text-item h3                | 메인 하단 배너 영역 제목               |
-| #sec_contact-news .textArea .text-item .icon-more::after | 메인 하단 배너 영역 더보기 아이콘       |
-| #sec_contact-news .textArea .text-item li                | 메인 하단 배너 영역 게시글 리스트       |
-| #chat-offline                                            | 상담원 부재중 박스                     |
-| #chat-offline .title                                     | 상담원 부재중 박스 제목                |
-| #chat-offline .text                                      | 상담원 부재중 박스 텍스트              |
-| #chat-offline .close                                     | 상담원 부재중 박스 닫기 아이콘          |
-| #chat-offline .btn                                       | 상담원 부재중 박스 문의하기 아이콘      |
+<!-- css 요소 목록 html -->
 
+<details markdown="1">
+<summary> main.css </summary>
 
-#### faq.css
-| 요소 이름                              | 설명                                |
-| ------------------------------------- | ----------------------------------- |
-| .lnb--fixed .lnb--fixed__nav          | 세부 페이지 좌측 LNB                 |
-| .help-center-title                    | 세부 페이지 좌측 LNB 제목             |
-| .lnb__nav                             | 세부 페이지 좌측 LNB 리스트           |
-| .lnb__nav li a                        | 세부 페이지 좌측 LNB 리스트 개별      |
-| .lnb__nav li.on a                     | 세부 페이지 좌측 LNB 리스트 선택      |
-| .lnb--fixed__side-divider             | 세부 페이지 LNB/contents 구분선      |
-| .lnb--fixed__content                  | 세부 페이지 콘텐츠 영역               |
-| .tit_txt                              | 세부 페이지 콘텐츠 영역 제목          |
-| .data_info-box                        | 세부 페이지 콘텐츠 영역 박스          |
-| .tab_category                         | 세부 페이지 콘텐츠 영역 카테고리 탭    |
-| .tab_category>li.on                   | 세부 페이지 콘텐츠 영역 카테고리 선택  |
-| .tab_category>li                      | 세부 페이지 콘텐츠 영역 카테고리 개별  |
-| .tbl_wrap                             | 세부 페이지 콘텐츠 영역 리스트         |
-| .faqData th:nth-child(1)              | FAQ 테이블 카테고리                   |
-| .faqData th:nth-child(2)              | FAQ 테이블 제목                       |
-| .faqData th:nth-child(3)              | FAQ 테이블 등록일                     |
-| .faqData tr.hot-text td               | FAQ 테이블 개별 상단고정 카테고리      |
-| .faqData tr.hot-text td .title-info a | FAQ 테이블 개별 상단고정 제목          |
-| .faqData td .title-info sup           | FAQ 테이블 개별 상단고정 HOT          |
-| .gocont .search                       | FAQ 검색                             |
-| .sel                                  | FAQ 검색 카테고리                      |
-| .search .inp                          | FAQ 검색어 입력                      |
-| .search .btnArea                      | FAQ 검색 버튼                        |
-| .faqData_info-con                     | FAQ 세부 문서 콘텐츠                 |
-| .faqData_info-con .dataTit            | FAQ 세부 문서 제목                   |
-| .faqData_info-con .dataTime           | FAQ 세부 문서 등록일                 |
-| .faqData_info-con .dataTextBox        | FAQ 세부 문서 내용 텍스트            |
+<table>
+<thead>
+<tr>
+<th>요소 이름</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.main_banner</td>
+<td>메인 상단 배너 영역</td>
+</tr>
+<tr>
+<td>.main_banner img</td>
+<td>메인 상단 배너 영역 이미지</td>
+</tr>
+<tr>
+<td>.carousel-caption .title_txt</td>
+<td>메인 상단 배너 영역 제목</td>
+</tr>
+<tr>
+<td>.carousel-caption .sub_txt</td>
+<td>메인 상단 배너 영역 소제목</td>
+</tr>
+<tr>
+<td>.search-box</td>
+<td>메인 상단 배너 영역 검색상자</td>
+</tr>
+<tr>
+<td>.search-box .icon-ic-search</td>
+<td>메인 상단 배너 영역 검색아이콘</td>
+</tr>
+<tr>
+<td>#supports .container-con</td>
+<td>메인 고객센터 구성요소 영역</td>
+</tr>
+<tr>
+<td>#supports .support__item:nth-child(1):before</td>
+<td>메인 공지사항 아이콘</td>
+</tr>
+<tr>
+<td>#supports .support__item:nth-child(2):before</td>
+<td>메인 FAQ 아이콘</td>
+</tr>
+<tr>
+<td>#supports .support__item:nth-child(3):before</td>
+<td>메인 문의하기 아이콘</td>
+</tr>
+<tr>
+<td>#supports .support__item:nth-child(4):before</td>
+<td>메인 문의내역 아이콘</td>
+</tr>
+<tr>
+<td>#supports .support__item .card-title .btn</td>
+<td>메인 구성요소 제목</td>
+</tr>
+<tr>
+<td>#supports .support__item .card-title .btn:hover</td>
+<td>메인 구성요소 제목 호버 시 색 변경</td>
+</tr>
+<tr>
+<td>#supports .support__item .card-title .btn:after</td>
+<td>메인 구성요소 텍스트 우측 화살표 아이콘</td>
+</tr>
+<tr>
+<td>#supports .support__item .card-text</td>
+<td>메인 구성요소 설명 텍스트</td>
+</tr>
+<tr>
+<td>#sec_contact-news .textArea</td>
+<td>메인 하단 배너 영역</td>
+</tr>
+<tr>
+<td>#sec_contact-news .textArea .text-item h3</td>
+<td>메인 하단 배너 영역 제목</td>
+</tr>
+<tr>
+<td>#sec_contact-news .textArea .text-item .icon-more::after</td>
+<td>메인 하단 배너 영역 더보기 아이콘</td>
+</tr>
+<tr>
+<td>#sec_contact-news .textArea .text-item li</td>
+<td>메인 하단 배너 영역 게시글 리스트</td>
+</tr>
+<tr>
+<td>#chat-offline</td>
+<td>상담원 부재중 박스</td>
+</tr>
+<tr>
+<td>#chat-offline .title</td>
+<td>상담원 부재중 박스 제목</td>
+</tr>
+<tr>
+<td>#chat-offline .text</td>
+<td>상담원 부재중 박스 텍스트</td>
+</tr>
+<tr>
+<td>#chat-offline .close</td>
+<td>상담원 부재중 박스 닫기 아이콘</td>
+</tr>
+<tr>
+<td>#chat-offline .btn</td>
+<td>상담원 부재중 박스 문의하기 아이콘</td>
+</tr>
+</tbody>
+</table>
  
+</details>
 
-#### notice.css
-| 요소 이름                                               | 설명                                |
-| ------------------------------------------------------ | ----------------------------------- |
-| .el-breadcrumb                                         | 세부 페이지 우측 상단 텍스트 영역      |
-| .el-breadcrumb li                                      | 세부 페이지 우측 상단 텍스트 영역 개별 |
-| .noticeData                                            | 공지사항 테이블                       |
-| .noticeData th:nth-child(1)                            | 공지사항 테이블 번호                  |
-| .noticeData th:nth-child(2)                            | 공지사항 테이블 제목                  |
-| .noticeData th:nth-child(3)                            | 공지사항 테이블 말머리                |
-| .noticeData th:nth-child(4)                            | 공지사항 테이블 등록일                |
-| .noticeData tr.hot-text                                | 공지사항 테이블 개별 상단고정          |
-| .noticeData tr.hot-text td                             | 공지사항 테이블 개별 상단고정 번호     |
-| .noticeData tr.hot-text td .title-info a               | 공지사항 테이블 개별 상단고정 제목     |
-| .noticeData td .title-info sup                         | 공지사항 테이블 개별 상단고정 HOT      |
-| .icon-leavel-1                                         | 공지사항 테이블 개별 상단고정 말머리   |
-| .noticeData tr                                         | 공지사항 테이블 개별                  |
-| .noticeData td .title-info a                           | 공지사항 테이블 개별 제목             |
-| .upload-text-memo                                      | 문의하기 첨부파일 필드 텍스트          |
-| .faqData_info-con .dataTime .noticeType                | 공지사항 세부 문서 말머리            |
-| .faqData_info-con .dataTime .noticeType .icon-leavel-1 | 공지사항 세부 문서 말머리 아이콘      |
+<details markdown="1">
+<summary> faq.css </summary>
 
+<table>
+<thead>
+<tr>
+<th>요소 이름</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.lnb--fixed .lnb--fixed__nav</td>
+<td>세부 페이지 좌측 LNB</td>
+</tr>
+<tr>
+<td>.help-center-title</td>
+<td>세부 페이지 좌측 LNB 제목</td>
+</tr>
+<tr>
+<td>.lnb__nav</td>
+<td>세부 페이지 좌측 LNB 리스트</td>
+</tr>
+<tr>
+<td>.lnb__nav li a</td>
+<td>세부 페이지 좌측 LNB 리스트 개별</td>
+</tr>
+<tr>
+<td>.lnb__nav li.on a</td>
+<td>세부 페이지 좌측 LNB 리스트 선택</td>
+</tr>
+<tr>
+<td>.lnb--fixed__side-divider</td>
+<td>세부 페이지 LNB/contents 구분선</td>
+</tr>
+<tr>
+<td>.lnb--fixed__content</td>
+<td>세부 페이지 콘텐츠 영역</td>
+</tr>
+<tr>
+<td>.tit_txt</td>
+<td>세부 페이지 콘텐츠 영역 제목</td>
+</tr>
+<tr>
+<td>.data_info-box</td>
+<td>세부 페이지 콘텐츠 영역 박스</td>
+</tr>
+<tr>
+<td>.tab_category</td>
+<td>세부 페이지 콘텐츠 영역 카테고리 탭</td>
+</tr>
+<tr>
+<td>.tab_category&gt;li.on</td>
+<td>세부 페이지 콘텐츠 영역 카테고리 선택</td>
+</tr>
+<tr>
+<td>.tab_category&gt;li</td>
+<td>세부 페이지 콘텐츠 영역 카테고리 개별</td>
+</tr>
+<tr>
+<td>.tbl_wrap</td>
+<td>세부 페이지 콘텐츠 영역 리스트</td>
+</tr>
+<tr>
+<td>.faqData th:nth-child(1)</td>
+<td>FAQ 테이블 카테고리</td>
+</tr>
+<tr>
+<td>.faqData th:nth-child(2)</td>
+<td>FAQ 테이블 제목</td>
+</tr>
+<tr>
+<td>.faqData th:nth-child(3)</td>
+<td>FAQ 테이블 등록일</td>
+</tr>
+<tr>
+<td>.faqData tr.hot-text td</td>
+<td>FAQ 테이블 개별 상단고정 카테고리</td>
+</tr>
+<tr>
+<td>.faqData tr.hot-text td .title-info a</td>
+<td>FAQ 테이블 개별 상단고정 제목</td>
+</tr>
+<tr>
+<td>.faqData td .title-info sup</td>
+<td>FAQ 테이블 개별 상단고정 HOT</td>
+</tr>
+<tr>
+<td>.gocont .search</td>
+<td>FAQ 검색</td>
+</tr>
+<tr>
+<td>.sel</td>
+<td>FAQ 검색 카테고리</td>
+</tr>
+<tr>
+<td>.search .inp</td>
+<td>FAQ 검색어 입력</td>
+</tr>
+<tr>
+<td>.search .btnArea</td>
+<td>FAQ 검색 버튼</td>
+</tr>
+<tr>
+<td>.faqData_info-con</td>
+<td>FAQ 세부 문서 콘텐츠</td>
+</tr>
+<tr>
+<td>.faqData_info-con .dataTit</td>
+<td>FAQ 세부 문서 제목</td>
+</tr>
+<tr>
+<td>.faqData_info-con .dataTime</td>
+<td>FAQ 세부 문서 등록일</td>
+</tr>
+<tr>
+<td>.faqData_info-con .dataTextBox</td>
+<td>FAQ 세부 문서 내용 텍스트</td>
+</tr>
+</tbody>
+</table>
 
-#### search.css
-| 요소 이름                                           | 설명                                |
-| -------------------------------------------------- | ----------------------------------- |
-| .paginate                                          | 페이지네이션 영역                    |
-| .paginate li                                       | 페이지네이션 개별                    |
-| .paginate li.firstPage a                           | 페이지네이션 << 키                   |
-| .paginate li.firstPage a.img                       | 페이지네이션 << 키 이미지             |
-| .paginate li.prev a.                               | 페이지네이션 < 키                    |
-| .paginate li.prev a img                            | 페이지네이션 < 키 이미지              |
-| .paginate li a                                     | 페이지네이션 개별 페이지              |
-| .paginate li.number.active a                       | 페이지네이션 현재 페이지              |
-| .paginate li.next a.                               | 페이지네이션 > 키                    |
-| .paginate li.next a img                            | 페이지네이션 > 키 이미지              | 
-| .paginate li.lastPage a                            | 페이지네이션 >> 키                   |
-| .paginate li.lastPage a.img                        | 페이지네이션 >> 키 이미지             |
-| .search-title                                      | 검색결과 제목                        |
-| .search-title strong                               | 검색결과 제목 검색어 강조             |
-| .search-text                                       | 검색결과                             |
-| .search-text .search-title_sub                     | 검색결과 하위분류                     |
-| .search-text .search-text_lit                      | 검색결과 개별                        | 
-| .search-text .search-text_lit dt a                 | 검색결과 개별 제목                    |
-| .search-text .search-text_lit dd .search-text_con  | 검색결과 개별 내용 미리보기            |
-| .search-text .search-text_lit dd .search-text_time | 검색결과 개별 작성일                  |
+</details>
 
+<details markdown="1">
+<summary> notice.css </summary>
 
-#### inquiry.css
-| 요소 이름                                                                  | 설명                                |
-| ------------------------------------------------------------------------- | ----------------------------------- |
-| .selectStyle                                                              | 검색 내부 옵션                       |
-| .inquiry-con                                                              | 문의하기 콘텐츠 영역                  |
-| .inquiry-con_table                                                        | 문의하기 테이블                       | 
-| .inquiry-con_table th                                                     | 문의하기 테이블 필드                  |
-| .bl_ess                                                                   | 문의하기 테이블 필드 필수 *           |
-| .inquiry-con_table td                                                     | 문의하기 테이블 입력                  |
-| .error_txt                                                                | 문의하기 테이블 입력 에러 텍스트       | 
-| .inquiry-btn                                                              | 문의하기 접수 버튼                    |
-| .layui-icon                                                               | 화살표 버튼                          |
-| .layui-icon-right                                                         | > (좌측 방향) 화살표 버튼             |
-| .layui-icon-up                                                            | V (아래 방향) 화살표 버튼             |
-| .check_area_wrap .td-radio .layui-form-checkbox\[lay-skin="primary"] span | 체크박스 텍스트                       |
-| .error_txt                                                                | 에러 텍스트                          |
+<table>
+<thead>
+<tr>
+<th>요소 이름</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.el-breadcrumb</td>
+<td>세부 페이지 우측 상단 텍스트 영역</td>
+</tr>
+<tr>
+<td>.el-breadcrumb li</td>
+<td>세부 페이지 우측 상단 텍스트 영역 개별</td>
+</tr>
+<tr>
+<td>.noticeData</td>
+<td>공지사항 테이블</td>
+</tr>
+<tr>
+<td>.noticeData th:nth-child(1)</td>
+<td>공지사항 테이블 번호</td>
+</tr>
+<tr>
+<td>.noticeData th:nth-child(2)</td>
+<td>공지사항 테이블 제목</td>
+</tr>
+<tr>
+<td>.noticeData th:nth-child(3)</td>
+<td>공지사항 테이블 말머리</td>
+</tr>
+<tr>
+<td>.noticeData th:nth-child(4)</td>
+<td>공지사항 테이블 등록일</td>
+</tr>
+<tr>
+<td>.noticeData tr.hot-text</td>
+<td>공지사항 테이블 개별 상단고정</td>
+</tr>
+<tr>
+<td>.noticeData tr.hot-text td</td>
+<td>공지사항 테이블 개별 상단고정 번호</td>
+</tr>
+<tr>
+<td>.noticeData tr.hot-text td .title-info a</td>
+<td>공지사항 테이블 개별 상단고정 제목</td>
+</tr>
+<tr>
+<td>.noticeData td .title-info sup</td>
+<td>공지사항 테이블 개별 상단고정 HOT</td>
+</tr>
+<tr>
+<td>.icon-leavel-1</td>
+<td>공지사항 테이블 개별 상단고정 말머리</td>
+</tr>
+<tr>
+<td>.noticeData tr</td>
+<td>공지사항 테이블 개별</td>
+</tr>
+<tr>
+<td>.noticeData td .title-info a</td>
+<td>공지사항 테이블 개별 제목</td>
+</tr>
+<tr>
+<td>.upload-text-memo</td>
+<td>문의하기 첨부파일 필드 텍스트</td>
+</tr>
+<tr>
+<td>.faqData_info-con .dataTime .noticeType</td>
+<td>공지사항 세부 문서 말머리</td>
+</tr>
+<tr>
+<td>.faqData_info-con .dataTime .noticeType .icon-leavel-1</td>
+<td>공지사항 세부 문서 말머리 아이콘</td>
+</tr>
+</tbody>
+</table>
 
+</details>
+
+<details markdown="1">
+<summary> search.css </summary>
+
+<table>
+<thead>
+<tr>
+<th>요소 이름</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.paginate</td>
+<td>페이지네이션 영역</td>
+</tr>
+<tr>
+<td>.paginate li</td>
+<td>페이지네이션 개별</td>
+</tr>
+<tr>
+<td>.paginate li.firstPage a</td>
+<td>페이지네이션 &lt;&lt; 키</td>
+</tr>
+<tr>
+<td>.paginate li.firstPage a.img</td>
+<td>페이지네이션 &lt;&lt; 키 이미지</td>
+</tr>
+<tr>
+<td>.paginate li.prev a.</td>
+<td>페이지네이션 &lt; 키</td>
+</tr>
+<tr>
+<td>.paginate li.prev a img</td>
+<td>페이지네이션 &lt; 키 이미지</td>
+</tr>
+<tr>
+<td>.paginate li a</td>
+<td>페이지네이션 개별 페이지</td>
+</tr>
+<tr>
+<td>.paginate li.number.active a</td>
+<td>페이지네이션 현재 페이지</td>
+</tr>
+<tr>
+<td>.paginate li.next a.</td>
+<td>페이지네이션 &gt; 키</td>
+</tr>
+<tr>
+<td>.paginate li.next a img</td>
+<td>페이지네이션 &gt; 키 이미지</td>
+</tr>
+<tr>
+<td>.paginate li.lastPage a</td>
+<td>페이지네이션 &gt;&gt; 키</td>
+</tr>
+<tr>
+<td>.paginate li.lastPage a.img</td>
+<td>페이지네이션 &gt;&gt; 키 이미지</td>
+</tr>
+<tr>
+<td>.search-title</td>
+<td>검색결과 제목</td>
+</tr>
+<tr>
+<td>.search-title strong</td>
+<td>검색결과 제목 검색어 강조</td>
+</tr>
+<tr>
+<td>.search-text</td>
+<td>검색결과</td>
+</tr>
+<tr>
+<td>.search-text .search-title_sub</td>
+<td>검색결과 하위분류</td>
+</tr>
+<tr>
+<td>.search-text .search-text_lit</td>
+<td>검색결과 개별</td>
+</tr>
+<tr>
+<td>.search-text .search-text_lit dt a</td>
+<td>검색결과 개별 제목</td>
+</tr>
+<tr>
+<td>.search-text .search-text_lit dd .search-text_con</td>
+<td>검색결과 개별 내용 미리보기</td>
+</tr>
+<tr>
+<td>.search-text .search-text_lit dd .search-text_time</td>
+<td>검색결과 개별 작성일</td>
+</tr>
+</tbody>
+</table>
+
+</details>
+
+<details markdown="1">
+<summary> inquiry.css </summary>
+
+<table>
+<thead>
+<tr>
+<th>요소 이름</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.selectStyle</td>
+<td>검색 내부 옵션</td>
+</tr>
+<tr>
+<td>.inquiry-con</td>
+<td>문의하기 콘텐츠 영역</td>
+</tr>
+<tr>
+<td>.inquiry-con_table</td>
+<td>문의하기 테이블</td>
+</tr>
+<tr>
+<td>.inquiry-con_table th</td>
+<td>문의하기 테이블 필드</td>
+</tr>
+<tr>
+<td>.bl_ess</td>
+<td>문의하기 테이블 필드 필수 *</td>
+</tr>
+<tr>
+<td>.inquiry-con_table td</td>
+<td>문의하기 테이블 입력</td>
+</tr>
+<tr>
+<td>.error_txt</td>
+<td>문의하기 테이블 입력 에러 텍스트</td>
+</tr>
+<tr>
+<td>.inquiry-btn</td>
+<td>문의하기 접수 버튼</td>
+</tr>
+<tr>
+<td>.layui-icon</td>
+<td>화살표 버튼</td>
+</tr>
+<tr>
+<td>.layui-icon-right</td>
+<td>&gt; (좌측 방향) 화살표 버튼</td>
+</tr>
+<tr>
+<td>.layui-icon-up</td>
+<td>V (아래 방향) 화살표 버튼</td>
+</tr>
+<tr>
+<td>.check_area_wrap .td-radio .layui-form-checkbox[lay-skin="primary"] span</td>
+<td>체크박스 텍스트</td>
+</tr>
+<tr>
+<td>.error_txt</td>
+<td>에러 텍스트</td>
+</tr>
+</tbody>
+</table>
+
+</details>
 
 ### 파일업로드 관리
 ![](http://static.toastoven.net/prod_contact_center/2.2.5-(3).png)
