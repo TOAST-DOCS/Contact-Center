@@ -430,10 +430,20 @@ IVR Route 관리 메뉴에서는 **IVR Route** 관련 정보를 등록 및 관�
 - [Online Contact > API 가이드 > 회원연동(POST)](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-sso/)
 - [Online Contact > API 가이드 > 회원연동(GET)](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-member-get/)
 
-### 다국어 코드 관리
+### (다국어) 코드 관리
+[전체 관리 → 계약 서비스 현황 → 계약 현황 → 계약 기본정보 설정] 화면에서 설정하신 헬프센터 언어에 따라, 언어별 헬프센터에서 사용하실 다국어 코드 및 태그를 관리하실 수 있습니다.
+
+#### (다국어) 코드
 ![](http://static.toastoven.net/prod_contact_center/2.2.5-(7).png)
+**① 다국어 코드** 탭에서 언어별 헬프센터에서 사용하실 다국어 언어 세트를 관리하실 수 있습니다. 
+기본적으로 등록되어 있는 시스템 언어 세트의 경우 내용 및 태그의 수정만 가능하며, 코드의 값은 변경이 불가합니다.
 
+**② 세트 등록** 버튼 클릭 시 **사용자 정의** 언어 세트를 등록하실 수 있습니다. 계약 기본정보 설정 화면에서 설정하신 헬프센터 언어에 따라 **언어별 입력 칸**이 표시되며, **태그** 설정을 통해 언어 세트를 사용처 및 종류별로 분류하실 수 있습니다. 등록된 세트는 템플릿 관리 시 스크립트 내에 삽입이 가능하여, **③ 언어별 헬프센터** 페이지를 구성하는 데에 활용될 수 있습니다. 
 
+#### 태그
+![](http://static.toastoven.net/prod_contact_center/2.2.5-(7)-1.png)
+**① 태그** 탭에서 언어 세트에 매핑하여 분류에 활용하실 수 있는 **사용자 정의 태그**를 관리하실 수 있습니다.
+태그 명 입력 후 **② 추가** 버튼을 누르시면 사용자 정의 태그가 추가되며, 언어 세트 관리 및 검색 시 **태그 목록**에서 **시스템 태그와 함께** 조회하실 수 있습니다. 
 
 ### 회사정보 관리
 ![](http://static.toastoven.net/prod_contact_center/2.2.5-(6).png)
