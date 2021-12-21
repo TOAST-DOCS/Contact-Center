@@ -794,10 +794,10 @@ IVR Route 관리 메뉴에서는 **IVR Route** 관련 정보를 등록 및 관�
 - [Online Contact > API 가이드 > 회원연동(POST)](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-sso/)
 - [Online Contact > API 가이드 > 회원연동(GET)](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-member-get/)
 
-### (다국어) 코드 관리
+### 다국어 코드 관리
 [전체 관리 → 계약 서비스 현황 → 계약 현황 → 계약 기본정보 설정] 화면에서 설정하신 헬프센터 언어에 따라, 언어별 헬프센터에서 사용하실 다국어 코드 및 태그를 관리하실 수 있습니다.
 
-#### (다국어) 코드
+#### 다국어 코드
 ![](http://static.toastoven.net/prod_contact_center/2.2.5-(7).png)
 **① 다국어 코드** 탭에서 언어별 헬프센터에서 사용하실 다국어 언어 세트를 관리하실 수 있습니다. 
 기본적으로 등록되어 있는 시스템 언어 세트의 경우 내용 및 태그의 수정만 가능하며, 코드의 값은 변경이 불가합니다.
