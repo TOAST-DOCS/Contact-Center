@@ -20,7 +20,7 @@
 **③ 접속 IP 설정** 화면을 통해 접속 IP를 설정하실 경우, 설정한 IP에서만 OPEN API를 호출하실 수 있습니다.
 
 ## 채팅
-채팅 기능에 관련된 항목들입니다. 채팅 기능은 [전체관리 → 계약 서비스 현황 → 계약 현황](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-global-management/#_2) 탭에서 수정하실 수 있는 계약 상세 내역에서 채팅 기능을 사용 설정하신 후 [서비스 관리 → 헬프센터 → 구성관리](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_39)에서 활성화하실 수 있으며, 활성화된 이후에 노출되는 우측 하단 **채팅 아이콘**으로 접속 가능합니다. 
+채팅 기능에 관련된 항목들입니다. 채팅 기능은 [전체관리 → 계약 서비스 현황 → 계약 현황](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-global-management/#_2) 탭에서 수정하실 수 있는 계약 상세 내역에서 채팅 기능을 사용 설정하신 후 [서비스 관리 → 헬프센터 → 구성관리](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_39)에서 활성화하실 수 있으며, 활성화된 이후에 노출되는 우측 하단 **채팅 아이콘**을 통해 채팅 위젯에 접속 가능합니다. 
 
 ✔ **\[FAQ 바로가기]** [채팅 화면은 채팅 권한이 있는 서비스에서만 접속할 수 있나요?](https://nhn-contact.oc.toast.com/oc/hc/article/102/)
 
@@ -29,8 +29,8 @@
 
 
 ### 기본 설정
-![](http://static.toastoven.net/prod_contact_center/2.2.2-(2).png)
-**①** 채팅 연결 시 고객에게 자동으로 발송되는 **인사말**과, **②** 고객에게 평가 요청 시 발송되는 **만족도 안내 메시지**를 설정할 수 있습니다. 평가 요청은 채팅 화면 상단 **평가** 버튼을 통해 고객에게 전송할 수 있습니다.
+![](http://static.toastoven.net/prod_contact_center/2.2.2-(2)_1.png)
+**①** 채팅 연결 시 고객에게 자동으로 발송되는 **인사말**과, **②** 고객에게 평가 요청 시 발송되는 **만족도 안내 메시지**를 [전체 관리 → 계약 서비스 현황 → 계약 현황 → 계약 기본정보 설정] 화면에서 설정하신 **헬프센터 언어별**로 설정하실 수 있습니다. 평가 요청은 채팅 화면 상단 **평가** 버튼을 통해 고객에게 전송 가능합니다.
 
 
 ### 상담원 할당 설정
