@@ -882,6 +882,212 @@ Online Contact에서 사용되는 각 언어 코드는 2글자로 구분하고 �
 
 </details>
 
+|ISO 언어명               |언어명                 |언어 코드|
+|---------------------------|-----------------------|---------|
+|Korean	                    |한국어	                |ko       |
+|Japanese	                  |日本語	                |ja       |
+|English	                   |English	               |en       |
+|Chinese	                   |中文	                  |zh       |
+|Traditional Chinese	       |中文(繁體)	            |zh_TW    |
+|Cantonese 	                |粵語	                  |yue      |
+|Thai	                      |ไทย	                   |th       |
+|Vietnamese	                |Tiếng Việt	            |vi      |
+|Indonesian	                |Indonesia	             |id      |
+|Malay	                     |Melayu	                |ms      |
+|Russian	                   |русский	               |ru      |
+|French	                    |français	              |fr      |
+|German	                    |Deutsch	               |de      |
+|Spanish, Castilian	        |Español	               |es      |
+|Spanish (Latin America)	   |Español(Latinoamérica)	|es_LA   | 
+|Portuguese (Portugal)	     |Português	             |pt      |
+|Portuguese (Brazil)	       |Português(Brasil)	     |pt_BR   |
+|Italian	                   |Italiano	              |it      |
+|Arabic	                    |العربية	              |ar       |
+|Turkish	                   |Türkçe	                |tr      |
+|Dutch, Flemish	            |Nederlands	            |nl      |
+|Polish	                    |polski	                |pl      |
+|Abkhazian	                 |аҧсшәа	                |ab      |
+|Afar	                      |Afaraf	                |aa      |
+|Aragonese	                 |aragonés	              |an      |
+|Assamese	                  |অসমীয়া	                |as     |
+|Avaric,Avar 	              |авар мацӀ	              |av     |
+|Avestan	                   |avesta	                 |ae     |
+|Aymara	                    |aymar aru	              |ay     |
+|Bambara	                   |bamanankan	             |bm     |
+|Bislama	                   |Bislama	                |bi     |
+|Croatian	                  |hrvatsk	                |hr     |
+|Bashkir	                   |башҡорт теле	           |ba     |
+|Acoli	                     |Lwo	                    |ach    |
+|Afrikaans	                 |Afrikaans	              |af     |
+|Akan	                      |Akan	                   |ak     |
+|Chamorro	                  |Chamoru	                |ch     |
+|Azerbaijani	               |Azərbaycan	             |az     |
+|Chechen	                   |нохчийн мотт	           |ce     |
+|Balinese	                  |Basa Bali	              |ban    |
+|Sundanese	                 |Basa Sunda	             |su     |
+|Cebuano	                   |Binisayâ	               |ceb    |
+|Chuvash	                   |чӑваш чӗлхи	            |cv     |
+|Bosnian	                   |bosanski	               |bs     |
+|Cornish	                   |Kernewek	               |kw     |
+|Breton	                    |Brezhoneg	              |br     |
+|Catalan; Valencian	        |català	                 |ca     |
+|Cree	                      |ᓀᐦᐃᔭᐍᐏᐣ	               |cr     |
+|Czech	                     |čeština	                |cs     |
+|Shona	                     |chiShona	               |sn     |
+|Corsican	                  |Corsu	                  |co     |
+|Welsh	                     |Cymraeg	                |cy     |
+|Divehi, Dhivehi, Maldivian	|ދިވެހި	                    |dv     |
+|Danish	                    |dansk	                  |da     |
+|Dzongkha	                  |རྫོང་ཁ 	                   |dz     |
+|Yoruba	                    |Èdè Yorùbá	             |yo    |
+|Estonian	                  |eesti	                  |et    |
+|Esperanto	                 |Esperanto	              |eo    |
+|Basque	                    |euskara	                |eu    |
+|Ewe	                       |Èʋegbe	                 |ee    |
+|Tagalog	                   |Tagalog	                |tl    |
+|Filipino; Pilipino	        |Filipino	               |fil   |
+|Fijian	                    |vosa Vakaviti	          |fj    |
+|Faroese	                   |føroyskt	               |fo    |
+|Western Frisian	           |Frysk	                  |fy    |
+|Fulah	                     |Pular	                  |ff    |
+|Ga	                        |Gã	                     |gaa   |
+|Irish	                     |Gaeilge	                |ga    |
+|Gaelic; Scottish Gaelic	   |Gàidhlig	               |gd    |
+|Galician	                  |galego	                 |gl    |
+|Guarani	                   |Avañe'ẽ	                |gn    |
+|Haitian; Haitian Creole	   |Kreyòl ayisyen	         |ht    |
+|Hausa	                     |Hausa	                  |ha    |
+|Hawaiian	                  |ʻŌlelo Hawaiʻi	         |haw   |
+|Bemba	                     |Chibemba	               |bem   |
+|Igbo	                      |Igbo	                   |ig    |
+|Herero	                    |Otjiherero	             |hz    |
+|Rundi	                     |Ikirundi	               |rn    |
+|Interlingua (International Auxiliary Language Association)	|Interlingua	|ia|
+|Hiri Motu	                 |Hiri Motu	              |ho    |
+|Xhosa	                     |isiXhosa	               |xh    |
+|Zulu	                      |isiZulu	                |zu    |
+|Icelandic	                 |íslenska	               |is    |
+|Javanese	                  |Jawa	                   |jv    |
+|Interlingue, Occidental	   |Occidental	             |ie    |
+|Kinyarwanda	               |Ikinyarwanda	           |rw    |
+|Swahili	                   |Kiswahili	              |sw    |
+|Klingon; tlhIngan-Hol	     |Klingon	                |tlh   |
+|Inupiaq	                   |Iñupiaq	                |ik    |
+|Kongo	                     |Kikongo	                |kg    |
+|Ido 	                      |Ido	                    |io    |
+|Latin	                     |Latin	                  |la    |
+|Inuktitut	                 |ᐃᓄᒃᑎᑐᑦ	                |iu    |
+|Latvian	                   |latviešu	               |lv    |
+|Tonga (Tonga Islands)	     |lea fakatonga	          |to    |
+|Lithuanian	                |lietuvių	               |lt    |
+|Kalaallisut, Greenlandic	  |kalaallisut 	           |kl    |
+|Lingala	                   |lingála	                |ln    |
+|Lozi	                      |Lozi	                   |loz   |
+|Kanuri	                    |Kanuri	                 |kr    |
+|Luba-Lulua	                |Tshiluba	               |lua   |
+|Kashmiri	                  |कॉशुर	                   |ks    |
+|Ganda	                     |Luganda	                |lg    |
+|Hungarian	                 |magyar	                 |hu    |
+|Malagasy	                  |Malagasy	               |mg    |
+|Kikuyu, Gikuyu	            |Gĩkũyũ	                 |ki    |
+|Maltese	                   |Malti	                  |mt    |
+|Norwegian	                 |norsk	                  |no    |
+|Komi	                      |коми кыв	               |kv    |
+|Norwegian Nynorsk; Nynorsk, Norwegian	|norsk nynorsk	|nn   |
+|Pedi; Sepedi; Northern Sotho	|Northern Sotho	       |nso   |
+|Chichewa; Chewa; Nyanja	     |chinyanja	            |ny    |
+|Kurdish 	                  |Kurdî	                  |ku    |
+|Uzbek	                     |Oʻzbek	                 |uz    |
+|Kuanyama, Kwanyama	        |Kuanyama	               |kj    |
+|Occitan	                   |Occitan	                |oc    |
+|Oromo	                     |Oromoo	                 |om    |
+|Luxembourgish, Letzeburgesch	|Lëtzebuergesch	       |lb    |
+|Romanian; Moldavian; Moldovan	|Română	              |ro    |
+|Romansh	                   |Rumantsch	              |rm    |
+|Limburgan, Limburger, Limburgish	|Limburgs	         |li    |
+|Quechua	                   |Runa Simi	              |qu    |
+|Nyankole	                  |Runyankore	             |nyn   |
+|Albanian	                  |Shqip	                  |sq    |
+|Luba-Katanga	              |Kiluba	                 |lu    |
+|Slovak	                    |slovenčina	             |sk    |
+|Slovenian	                 |slovenščina	            |sl    |
+|Manx	                      |Gaelg	                  |gv    |
+|Somali	                    |Soomaali	               |so    |
+|Sotho, Southern	           |Sesotho	                |st    |
+|Serbian	                   |српски	                 |sr    |
+|Serbian (Montenegro)	      |srpski(Crna Gora)	      |sr_ME |
+|Serbian (Latin)	           |srpski(latinica)	       |sr_LN |
+|Finnish	                   |suomi	                  |fi    |
+|Swedish	                   |svenska	                |sv    |
+|Maori	                     |te reo Māori	           |mi    |
+|Tswana	                    |Setswana	               |tn    |
+|Marshallese	               |Kajin M̧ajeļ	            |mh    |
+|Tumbuka	                   |Tumbuka	                |tum   |
+|Turkmen	                   |türkmen dili  	         |tk    |
+|Nauru	                     |Dorerin Naoero	         |na    |
+|Twi	                       |Twi	                    |tw    |
+|Navajo, Navaho	            |Diné bizaad	            |nv    |
+|Wolof	                     |Wolof	                  |wo    |
+|Greek, Modern (1453–)	     |Ελληνικά	               |el    |
+|North Ndebele	             |isiNdebele	             |nd    |
+|Belarusian	                |беларуская	             |be    |
+|Bulgarian	                 |български	              |bg    |
+|Ndonga	                    |Owambo	                 |ng    |
+|Kirghiz, Kyrgyz	           |кыргызча	               |ky    |
+|Norwegian Bokmål	          |Norsk Bokmål	           |nb    |
+|Kazakh	                    |қазақ тілі	             |kk    |
+|Macedonian	                |македонски	             |mk    |
+|Sichuan Yi, Nuosu	         |ꆈꌠ꒿	                   |ii    |
+|Mongolian	                 |монгол	                 |mn    |
+|South Ndebele	             |isiNdebele	             |nr    |
+|Tatar	                     |татар	                  |tt    |
+|Ojibwa	                    |ᐊᓂᔑᓈᐯᒧᐎᓐ	             |oj    |
+|Tajik	                     |тоҷикӣ	                 |tg    |
+|Church Slavic, Old Slavonic, Church Slavonic, Old Bulgarian, Old Church Slavonic	|ѩзыкъ словѣньскъ	|cu|
+|Ukrainian	                 |Українська	             |uk    |
+|Georgian	                  |ქართული	               |ka    |
+|Armenian	                  |Հայերեն	                 |hy   |
+|Ossetian, Ossetic	         |ирон ӕвзаг	              |os   |
+|Yiddish	                   |ייִדיש	                   |yi   |
+|Hebrew	                    |עברית	                   |he   |
+|Pali	                      |पालि	                     |pi   |
+|Uighur, Uyghur	            |ئۇيغۇرچە‎	               |ug   |
+|Urdu	                      |اردو	                    |ur   |
+|Pashto, Pushto	            |پښتو	                    |ps   |
+|Sindhi	                    |سنڌي	                    |sd   |
+|Persian	                   |فارسی	                   |fa   |
+|Tigrinya	                  |ትግርኛ	                    |ti   |
+|Amharic	                   |አማርኛ	                    |am   |
+|Nepali	                    |नेपाली          	          |ne    |
+|Marathi	                   |मराठी	                    |mr    |
+|Hindi	                     |हिन्दी             	        |hi    |
+|Sanskrit	                  |संस्कृतम्, 𑌸𑌂𑌸𑍍𑌕𑍃𑌤𑌮𑍍	        |sa    |
+|Bengali	                   |বাংলা	                     |bn    |
+|Sardinian	                 |sardu	                    |sc    |
+|Punjabi, Panjabi	          |ਪੰਜਾਬੀ	                     |pa    |
+|Gujarati	                  |ગુજરાતી 	                  |gu    |
+|Northern Sami	             |Davvisámegiella	          |se    |
+|Oriya	                     |ଓଡ଼ିଆ	                     |or    |
+|Samoan	                    |gagana fa'a Samoa	        |sm    |
+|Sango	                     |yângâ tî sängö	           |sg    |
+|Tamil	                     |தமிழ்	                   |ta    |
+|Telugu	                    |తెలుగు	                   |te   |
+|Kannada	                   |ಕನ್ನಡ	                    |kn   |
+|Malayalam	                 |മലയാളം	                |ml   |
+|Sinhala, Sinhalese	        |සිංහල	                    |si   |
+|Lao	                       |ລາວ	                      |lo   |
+|Burmese	                   |မြန်မာ	                     |my   |
+|Central Khmer	             |ខ្មែរ	                       |km   |
+|Cherokee	                  |ᏣᎳᎩ	                      |chr  |
+|Swati	                     |SiSwati	                   |ss   |
+|Tibetan	                   |བོད་ཡིག 	                      |bo   |
+|Tsonga	                    |Xitsonga	                   |ts  |
+|Tahitian	                  |Reo Tahiti	                 |ty  |
+|Venda	                     |Tshivenḓa	                  |ve  |
+|Volapük	                   |Volapük	                    |vo  |
+|Walloon	                   |Walon	                     |wa   |
+|Zhuang, Chuang	            |Saɯ cueŋƅ	                 |za   |
+
 기본정보를 모두 입력하신 후 다음 버튼을 누르시면 **③ 계약 상세 내역**으로 넘어갑니다. 계약 상세 내역 화면에서는 Online Contact에서 제공하는 상담 기능들에 대해 해당 서비스에서의 **사용 여부**를 선택하실 수 있으며, 해당 선택 여부가 반영된 **예상 비용**을 산출해 보실 수 있습니다. 계약 상세 내역 입력을 완료하신 후 **계약 버튼**을 누르시면 계약이 완료됩니다.
 
 ![](http://static.toastoven.net/prod_contact_center/2.1.1-(3).png)
