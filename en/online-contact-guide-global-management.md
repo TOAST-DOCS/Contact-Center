@@ -6,14 +6,16 @@ Global Management menu in Consultation Management service consists of **Contract
 ![](http://static.toastoven.net/prod_contact_center/2.1.1-(1)_en.png)
 Through **Contract status** tab, you can **①** add service to organization using Online Contact, **②** edit basic information/contents of contract, **③** set service usage state, and **④** terminate service.
 
-![](http://static.toastoven.net/prod_contact_center/2.1.1-(2)_en.png)
+![](http://static.toastoven.net/prod_contact_center/2.1.1-(2)_3_en.png)
 Click **① Add Service** button to view **② Add Service screen** for entering basic information for the service. The following items require input:
 
 - **Type** : Type of service to use (Consultation management, Issue management)
 - **Service Name** : Name of service to be used
 - **Service ID** : ID used to identify the service (becomes included in URL of the service’s Online Contact, and help center). English only
-- **Time zone** : Time zone set in the help center (selected accordingly when help center language becomes selected. Can be modified separately)
+- **Help Center Language** : Help Center language setting (Language code : ISO international standard code entry required, refer to the **ISO code list** below.)
+- **Time zone** : Time zone set in the help center
 - **Service Banner** : Can attach image. When uploaded, it becomes applied as the image of the service tab in Online Contact GNB and as a profile photo of the agent when chat consulting.
+- **Editor type** : 
 
 After entering all the basic information, press the next button to go to **③ Contract Details**. On the Contract Details screen, you can **activate functions** from the consultation functions provided by Online Contact for your service, and calculate **Estimated Cost** that reflect your choice. After completing the contract details, press **Contract** button to complete the contract.
 
