@@ -20,7 +20,7 @@
 **③ 접속 IP 설정** 화면을 통해 접속 IP를 설정하실 경우, 설정한 IP에서만 OPEN API를 호출하실 수 있습니다.
 
 ## 채팅
-채팅 기능에 관련된 항목들입니다. 채팅 기능은 [전체관리 → 계약 서비스 현황 → 계약 현황](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-global-management/#_2) 탭에서 수정하실 수 있는 계약 상세 내역에서 채팅 기능을 사용 설정하신 후 [서비스 관리 → 헬프센터 → 구성관리](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_39)에서 활성화하실 수 있으며, 활성화된 이후에 노출되는 우측 하단 **채팅 아이콘**을 통해 채팅 위젯에 접속 가능합니다. 
+채팅 기능에 관련된 항목들입니다. 채팅 기능은 [전체관리 → 계약 서비스 현황 → 계약 현황](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-global-management/#_2) 탭에서 수정하실 수 있는 계약 상세 내역에서 채팅 기능을 사용 설정하신 후 [서비스 관리 → 헬프센터 → 구성관리](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_38)에서 활성화하실 수 있으며, 활성화된 이후에 노출되는 우측 하단 **채팅 아이콘**을 통해 채팅 위젯에 접속 가능합니다. 
 
 ✔ **\[FAQ 바로가기]** [채팅 화면은 채팅 권한이 있는 서비스에서만 접속할 수 있나요?](https://nhn-contact.oc.toast.com/oc/hc/article/102/)
 
@@ -269,7 +269,7 @@ IVR Route 관리 메뉴에서는 **IVR Route** 관련 정보를 등록 및 관�
 기본으로 두 가지의 템플릿이 제공되며, **① 템플릿 등록** 버튼을 통해 새로운 템플릿을 추가하실 수 있습니다. 추가하신 템플릿은 **② 수정** 또는 **삭제**하실 수 있으며, 활성화 중인 템플릿은 삭제가 불가하므로 다른 템플릿을 활성화하신 다음 삭제해주세요.
 
 ![](http://static.toastoven.net/prod_contact_center/2.2.5-(2)_1.png)
-템플릿 추가 및 수정 시 **① CSS / HTML / JS 스크립트**를 주어진 편집기에 직접 작성하시거나 [서비스 관리 → 헬프센터 → 파일업로드 관리](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_38) 메뉴에서 필요하신 파일(스크립트, 폰트, 이미지 등)을 업로드하신 후 리소스 경로 입력을 통해 헬프센터의 구성을 변경하실 수 있습니다. **② 다국어 코드 삽입** 버튼을 누르시면 [서비스 관리 → 헬프센터 → 다국어 코드 관리] 메뉴에서 설정하신 언어 세트 목록이 표시되며, **선택** 버튼을 통해 템플릿 내에 다국어 코드를 삽입하실 수 있습니다.
+템플릿 추가 및 수정 시 **① CSS / HTML / JS 스크립트**를 주어진 편집기에 직접 작성하시거나 [서비스 관리 → 헬프센터 → 파일업로드 관리](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_37) 메뉴에서 필요하신 파일(스크립트, 폰트, 이미지 등)을 업로드하신 후 리소스 경로 입력을 통해 헬프센터의 구성을 변경하실 수 있습니다. **② 다국어 코드 삽입** 버튼을 누르시면 [서비스 관리 → 헬프센터 → 다국어 코드 관리] 메뉴에서 설정하신 언어 세트 목록이 표시되며, **선택** 버튼을 통해 템플릿 내에 다국어 코드를 삽입하실 수 있습니다.
 
 편집 후 **④ 미리보기** 버튼을 통하여 편집 내용이 헬프센터에 적용된 모습을 사전에 열람하실 수 있으며, **③ 저장**하신 후 적용이 가능합니다.
 
