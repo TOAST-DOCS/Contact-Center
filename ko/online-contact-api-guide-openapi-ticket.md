@@ -741,11 +741,11 @@
 ### 티켓 첨부파일 첨부
 #### 인터페이스 설명
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/attachments/ticket/upload.json			 							
-- URL (개발):	https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/attachments/ticket/upload.json									
+- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/attachments/ticket/upload.json									
 
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
 |------------|-------|--------|-----|--------|--------------|------------|
-|첨부파일 첨부  |HTTPS  |GET    |UTF-8|JSON    |서버에 파일 업로드			|공통 인증   |
+|첨부파일 첨부  |HTTPS  |POST    |UTF-8|JSON    |서버에 파일 업로드			|공통 인증   |
 
 #### 요청 파라미터 정의
 |명칭	|변수	|데이터 타입	|필수	|설명|
@@ -759,7 +759,7 @@
 |result.content	|attachmentId	|String	|O	|첨부한 파일 ID|
 |	            |fileName	    |String	|O	|파일 명|
 |	            |contentType	|String	|O	|파일 유형|
-|	            |disposition	|String	|O	|파일 처리방식（attachment:첨부파일）|
+|	            |disposition	|String	|O	|파일 처리방식（attachment : 첨부파일）|
 |	            |size	|Long	|O	|파일 크기|
 |               |createdDt	|Long	|O	|파일 첨부 시간|
 
