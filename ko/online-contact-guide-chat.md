@@ -3,7 +3,7 @@
 ## 기본 설정
 헬프센터 내에 채팅 기능을 **활성화**시키거나, 사용 중인 서비스 웹 페이지에 인입 스크립트를 통해 **채팅 위젯**을 추가하여 채팅 상담을 통한 문의 처리가 가능합니다.
 
-[전체관리 → 계약 서비스 현황 → 계약 현황](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-global-management/#_2) 탭에서 수정하실 수 있는 계약 상세 내역에서 채팅 기능을 사용 설정하신 후 [서비스 관리 → 헬프센터 → 구성관리](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_32) 탭에서 채팅 기능을 활성화시키실 수 있으며, 채팅 기능 활성화 시 다음과 같은 기능들을 [서비스 관리 → 채팅](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_3) 메뉴에서 설정하실 수 있습니다.
+[전체관리 → 계약 서비스 현황 → 계약 현황](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-global-management/#_2) 탭에서 수정하실 수 있는 계약 상세 내역에서 채팅 기능을 사용 설정하신 후 [서비스 관리 → 헬프센터 → 구성관리](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_38) 탭에서 채팅 기능을 활성화시키실 수 있으며, 채팅 기능 활성화 시 다음과 같은 기능들을 [서비스 관리 → 채팅](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_3) 메뉴에서 설정하실 수 있습니다.
 
 -	기본 설정: 채팅 상담 시작 시 전송되는 **인사말** 및 평가 요청 시 전송되는 **만족도 안내 메시지** 설정
 -	상담원 할당 설정: 채팅 상담 요청이 접수될 시, 해당 고객과의 최근 채팅기록이 있는 상담원에게 채팅 상담을 **우선으로 할당**하는 기능의 활성화 및 비활성화
@@ -16,7 +16,7 @@
 ## 문의 접수/처리
 ### 채팅 접수
 ![](http://static.toastoven.net/prod_contact_center/5.2-(1).png)
-헬프센터 내에 채팅 기능이 활성화된 상태에서 (채팅 기능 활성화: [서비스 관리 → 헬프센터 → 구성관리](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_32) 탭) 고객이 헬프센터에 접속하면, 홈페이지 우측 하단에 **① 채팅 아이콘**이 표시됩니다.
+헬프센터 내에 채팅 기능이 활성화된 상태에서 (채팅 기능 활성화: [서비스 관리 → 헬프센터 → 구성관리](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_38) 탭) 고객이 헬프센터에 접속하면, 홈페이지 우측 하단에 **① 채팅 아이콘**이 표시됩니다.
 
 
 ![](http://static.toastoven.net/prod_contact_center/5.2-(2).png)
@@ -29,7 +29,7 @@
 
 ### 채팅 처리
 ![](http://static.toastoven.net/prod_contact_center/5.2-(4).png)
-헬프센터 내에 채팅 기능이 활성화된 상태에서 (채팅 기능 활성화: [서비스 관리 → 헬프센터 → 구성관리](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_32) 탭) 상담원이 Online Contact에 접속하면, 홈페이지 우측 하단에 **① 채팅 아이콘**이 표시되며, 해당 아이콘 클릭 시 채팅 상담을 진행할 수 있는 화면이 표시됩니다.
+헬프센터 내에 채팅 기능이 활성화된 상태에서 (채팅 기능 활성화: [서비스 관리 → 헬프센터 → 구성관리](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_38) 탭) 상담원이 Online Contact에 접속하면, 홈페이지 우측 하단에 **① 채팅 아이콘**이 표시되며, 해당 아이콘 클릭 시 채팅 상담을 진행할 수 있는 화면이 표시됩니다.
 
 ![](http://static.toastoven.net/prod_contact_center/5.2-(5)_1.png)
 채팅 화면 좌측 상단의 **① 상태 창**에서는 고객의 채팅 문의를 처리하기 위한 상태 값을 변경하실 수 있습니다. 온라인, 휴식, 오프라인의 세 가지 값 중에서 하나를 선택하실 수 있으며, **온라인 상태일때만** 채팅 문의를 할당 받으실 수 있습니다.
@@ -71,7 +71,7 @@
 ![](http://static.toastoven.net/prod_contact_center/5.3-(2).png)
 채팅이 완료된 후 고객이 채팅 상담에 대한 만족도 평가를 직접 진행하거나, 또는 상담원이 평가 요청을 전송해 만족도 평가를 안내할 수 있습니다. 고객이 직접 채팅 화면 상단 **① 평가** 버튼을 클릭하면 바로 만족도 평가 화면이 표시되며, 상담원이 채팅 화면 상단 **① 평가** 버튼을 누를 경우 만족도 안내 메시지가 ([서비스 관리 → 채팅 → 기본설정](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_4) 탭에서 설정) 전송됩니다.
 
-채팅 상담이 종료되면 **② 대화 종료** 버튼을 통해 상담을 종료할 수 있습니다. 고객이 대화를 종료했을 경우 상담원이 대화 종료 버튼을 누르기 전까지 채팅 화면에서 고객정보 및 상담정보의 입력과 티켓 생성이 가능하지만, 상담원이 대화 종료 버튼을 눌렀을 경우 채팅 화면에서는 더이상 해당 채팅 상담을 확인하실 수 없으며, 대화 종료 이후의 정보 입력 및 수정, 티켓 생성은 [채팅 → 채팅기록](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-chat/#_6) 메뉴에서만 가능하므로 대화를 종료하시기 전 유의해주세요. 
+채팅 상담이 종료되면 **② 대화 종료** 버튼을 통해 상담을 종료할 수 있습니다. 고객이 대화를 종료했을 경우 상담원이 대화 종료 버튼을 누르기 전까지 채팅 화면에서 고객정보 및 상담정보의 입력과 티켓 생성이 가능하지만, 상담원이 대화 종료 버튼을 눌렀을 경우 채팅 화면에서는 더이상 해당 채팅 상담을 확인하실 수 없으며, 대화 종료 이후의 정보 입력 및 수정, 티켓 생성은 [채팅 → 채팅기록](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-chat/#_7) 메뉴에서만 가능하므로 대화를 종료하시기 전 유의해주세요. 
 
 ## 채팅 기록
 ![](http://static.toastoven.net/prod_contact_center/5.4-(2)_2.png)
