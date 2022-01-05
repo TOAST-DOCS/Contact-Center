@@ -1,4 +1,4 @@
-## Contact Center > Online Contact > 서비스 가이드 > 고객정보관리
+## Contact Center > Online Contact > 서비스 가이드 (상담관리) > 고객정보관리
 [전체관리 → 계약 서비스 현황 → 계약 현황](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-global-management/#_2) 탭에서 조회하실 수 있는 계약 상세 내역에서 **고객정보관리** 기능을 **사용** 설정하신 경우, 관리자의 권한으로 고객정보를 관리, 고객사 시스템에서 조회하고자 하는 고객 정보를 API를 통해 조회하여 티켓 처리 및 고객 응대에 활용하실 수 있습니다. 
 
 ## 고객관리

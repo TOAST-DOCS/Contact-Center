@@ -1,6 +1,6 @@
-## Contact Center > Online Contact > 서비스 가이드 > 서비스 관리
+## Contact Center > Online Contact > 서비스 가이드 (상담관리) > 서비스 관리
 
-서비스 관리 메뉴에는 SSO 로그인 설정, 티켓 설정, 상담원 관리, 헬프센터 템플릿 관리 등 **문의의 접수와 처리를 위한 상세 설정 기능**이 포함되어 있습니다.
+상담관리 서비스에서의 **서비스 관리** 메뉴에는 회원연동 설정, 티켓 설정, 상담원 관리, 헬프센터 템플릿 관리 등 **문의의 접수와 처리를 위한 상세 설정 기능**이 포함되어 있습니다.
 해당 메뉴에서 설정하시는 헬프센터의 구성 또는 세부 기능들은, 아래와 같은 경로로 접근하실 수 있는 각 서비스별 헬프센터에서 적용과 동시에 바로 확인하실 수 있습니다.
 
 
@@ -20,7 +20,7 @@
 **③ 접속 IP 설정** 화면을 통해 접속 IP를 설정하실 경우, 설정한 IP에서만 OPEN API를 호출하실 수 있습니다.
 
 ## 채팅
-채팅 기능에 관련된 항목들입니다. 채팅 기능은 [전체관리 → 계약 서비스 현황 → 계약 현황](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-global-management/#_2) 탭에서 수정하실 수 있는 계약 상세 내역에서 채팅 기능을 사용 설정하신 후 [서비스 관리 → 헬프센터 → 구성관리](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_32)에서 활성화하실 수 있으며, 활성화된 이후에 노출되는 우측 하단 **채팅 아이콘**으로 접속 가능합니다. 
+채팅 기능에 관련된 항목들입니다. 채팅 기능은 [전체관리 → 계약 서비스 현황 → 계약 현황](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-global-management/#_2) 탭에서 수정하실 수 있는 계약 상세 내역에서 채팅 기능을 사용 설정하신 후 [서비스 관리 → 헬프센터 → 구성관리](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_38)에서 활성화하실 수 있으며, 활성화된 이후에 노출되는 우측 하단 **채팅 아이콘**을 통해 채팅 위젯에 접속 가능합니다. 
 
 ✔ **\[FAQ 바로가기]** [채팅 화면은 채팅 권한이 있는 서비스에서만 접속할 수 있나요?](https://nhn-contact.oc.toast.com/oc/hc/article/102/)
 
@@ -29,8 +29,8 @@
 
 
 ### 기본 설정
-![](http://static.toastoven.net/prod_contact_center/2.2.2-(2).png)
-**①** 채팅 연결 시 고객에게 자동으로 발송되는 **인사말**과, **②** 고객에게 평가 요청 시 발송되는 **만족도 안내 메시지**를 설정할 수 있습니다. 평가 요청은 채팅 화면 상단 **평가** 버튼을 통해 고객에게 전송할 수 있습니다.
+![](http://static.toastoven.net/prod_contact_center/2.2.2-(2)_1.png)
+**①** 채팅 연결 시 고객에게 자동으로 발송되는 **인사말**과, **②** 고객에게 평가 요청 시 발송되는 **만족도 안내 메시지**를 [전체 관리 → 계약 서비스 현황 → 계약 현황 → 계약 기본정보 설정] 화면에서 설정하신 **헬프센터 언어별**로 설정하실 수 있습니다. 평가 요청은 채팅 화면 상단 **평가** 버튼을 통해 고객에게 전송 가능합니다.
 
 
 ### 상담원 할당 설정
@@ -56,19 +56,14 @@
 티켓 메뉴에서는 고객의 문의 접수 또는 문의 처리 시 선택하는 카테고리 관리, 업무 효율화를 높일 수 있는 트리거 기능, 고객센터 문의 접수 화면 구성 필드, 템플릿 관리, 이메일 설정 메뉴를 사용할 수 있습니다.
 
 ### 카테고리 관리
-티켓의 카테고리는 서비스 유형에 따라 다음과 같이 사용됩니다.
+상담관리 서비스에서의 티켓 카테고리는 다음과 같이 사용됩니다.
 
-#### 상담 관리
 -	접수유형: 헬프센터 문의하기를 통한 문의 시 고객이 직접 선택하는 카테고리입니다. (전화, 메일을 통한 문의의 경우 카테고리 선택 절차가 없어 공란으로 접수되며, 상담원이 티켓 처리 시 선택하여 저장할 수 있습니다.) 
 -	처리유형: 상담원이 티켓 처리 시 선택하는 카테고리입니다.
 
-#### 이슈 관리
--	접수유형: 상담 관리 유형 서비스의 상담원이 티켓을 이관할 시 선택하는 카테고리입니다.
--	처리유형: 이슈 관리 유형 서비스의 상담원이 이관 티켓을 처리할 시 선택하는 카테고리입니다.
-
 #### 접수유형
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(1)-1.png)
-**①** 상위 카테고리를 먼저 추가하신 후, 하위 뎁스에 카테고리를 추가할 시 상위 카테고리를 먼저 클릭하셔서 선택된 것을 확인한 후 추가해주세요. 색으로 강조된 카테고리 아래에 새로운 하위 카테고리가 생성됩니다. 동일 뎁스 내에서 카테고리명 **중복은 불가능**합니다. (뎁스가 다를 경우는 가능)
+**①** 상위 카테고리를 먼저 추가하신 후, 하위 뎁스에 카테고리를 추가할 시 상위 카테고리를 먼저 클릭하셔서 선택된 것을 확인한 후 추가해주세요. 색으로 강조된 카테고리 아래에 새로운 하위 카테고리가 생성됩니다. 동일 뎁스 내에서 카테고리명 **중복은 불가능**합니다. (뎁스가 다를 경우는 가능) [전체 관리 → 계약 서비스 현황 → 계약 현황 → 계약 기본정보 설정] 화면에서 설정하신 헬프센터 언어별로 접수유형을 설정하실 수 있습니다. 
 
 **②** 생성된 카테고리를 클릭하시면 **삭제** 버튼이 표시되어 삭제가 가능하며, **명칭 수정**은 더블 클릭 후 진행하실 수 있습니다.
 
@@ -109,7 +104,7 @@
 
 ##### 알림
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(2)e.png)
-트리거 조건이 충족되었을 경우 지정된 수신인에게 **알림 메일이 발송**되는 결과 유형입니다. 해당 결과유형을 선택하시면 수신인 선택 란 옆에 표시되는 **① 알림메일 설정** 버튼을 통해 발송될 알림 메일의 제목과 내용을 설정하실 수 있습니다.
+트리거 조건이 충족되었을 경우 지정된 수신인에게 **알림 메일이 발송**되는 결과 유형입니다. 해당 결과유형을 선택하시면 수신인 선택 란 옆에 표시되는 **① 알림메일 설정** 버튼을 통해 발송될 알림 메일의 제목과 내용을 설정하실 수 있습니다. 알림메일 설정 시, 내용 작성 에디터는 [전체 관리 → 계약 서비스 현황 → 계약 기본정보 설정] 에서의 에디터 타입 설정 값에 따라 **HTML** 모드 또는 **TEXT** 모드로 표시됩니다.
 
 ##### 전달
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(2)f.png)
@@ -120,39 +115,46 @@
 
 ##### Dooray 알림
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(2)g.png)
-트리거 조건이 충족되었을 경우 **① 템플릿 설정** 버튼을 통해 설정한 템플릿에 따라 티켓의 정보가 Dooray 알림으로 전송됩니다. 연동 URL은 [Dooray Messanger 서비스 가이드](https://docs.toast.com/ko/Dooray/Messenger/ko/service-guide/#_19)를 통해 확인 방법을 참고하실 수 있습니다. 
+트리거 조건이 충족되었을 경우 **① 템플릿 설정** 버튼을 통해 설정한 템플릿에 따라 티켓의 정보가 Dooray 알림으로 전송됩니다. 연동 URL은 [Dooray Messenger 서비스 가이드](https://docs.toast.com/ko/Dooray/Messenger/ko/service-guide/#_19)를 통해 확인 방법을 참고하실 수 있습니다. 
 
 ### 필드
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(3).png)
 필드는 **① 고객 필드**와 **② 상담원 필드**로 구분됩니다. 필드 설정 또는 관리 탭을 선택하시기 전에 상담원 필드를 관리하실 것인지, 고객 필드를 관리하실 것인지 먼저 선택해주세요.
-고객 필드와 상담원 필드는 서비스의 유형에 따라 다음과 같이 사용됩니다.
+상담관리 서비스에서의 고객 필드와 상담원 필드는 다음과 같이 사용됩니다.
 
-#### 상담 관리
 -	상담원 필드: 티켓 처리 시 상담원이 해당 티켓에 대해 직접 입력하는 항목
--	고객 필드: 헬프센터 → 문의하기 기능에서 고객에게 보이는 문의 항목. 접수유형 카테고리별로 필드를 다르게 설정하실 수 있으며, 설정한 그대로 헬프센터 문의하기 화면에 구현됩니다. (전화, 메일을 통한 문의의 경우 별도 필드 입력 절차가 없어 공란으로 접수되며, 상담원이 티켓 처리 시 입력하여 저장할 수 있습니다.)
-
-#### 이슈 관리
--	상담원 필드: 이관 티켓 처리 시 이슈관리 유형 서비스의 상담원이 해당 티켓에 대해 직접 입력하는 항목
--	고객 필드: 티켓이 이관될 시 지정된 카테고리에 따라 입력되어 전달되는 항목
+-	고객 필드: 헬프센터 → 문의하기 기능에서 고객에게 보이는 문의 항목. 접수유형 카테고리별로 필드를 다르게 설정하실 수 있으며, 설정한 내용은 헬프센터 문의하기 화면에 반영됩니다. (전화, 메일을 통한 문의의 경우 별도 필드 입력 절차가 없어 공란으로 접수되며, 상담원이 티켓 처리 시 입력하여 저장할 수 있습니다.)
 
 #### 필드 설정
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(4).png)
 **①** 앞서 [티켓 → 카테고리 관리](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_9)에서 등록해두신 접수유형에 따라 문의내역에 필요한 필드를 다르게 설정하실 수 있습니다. **접수유형**을 클릭하시면 설정해두신 필드를 열람하실 수 있으며, 개인정보수집 항목을 제외한 필드들의 **②** 순서를 변경하실 수 있습니다. (개인정보수집 항목의 경우 항상 맨 아래 노출되도록 고정됨) 또한 필드 관리 탭에서 추가해두신 필드를 **③** 새롭게 **추가**하시거나, 이미 추가하신 필드를 **④ 제거**하실 수 있습니다.
 
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(4)-1.png)
-기본 필드 중 **전화 관련 필드** (상담일시, IN/OUT, 전화예약, 예약시간, 전화예약번호)의 경우 활성화되어 있는 접수유형에 추가하시더라도 **헬프센터 및 전화 외 채널로 접수된 티켓**에서 **조회되지 않아**, 하나의 접수유형을 헬프센터, 전화, 메일 등 여러 채널에서 같이 이용하고자 하실 경우에 활용될 수 있습니다.  
+시스템 필드 중 **전화 관련 필드** (상담일시, IN/OUT, 전화예약, 예약시간, 전화예약번호)의 경우 활성화되어 있는 접수유형에 추가하시더라도 **헬프센터 및 전화 외 채널로 접수된 티켓**에서 **조회되지 않아**, 하나의 접수유형을 헬프센터, 전화, 메일 등 여러 채널에서 같이 이용하고자 하실 경우에 활용될 수 있습니다.  
 
-#### 필드 관리
-![](http://static.toastoven.net/prod_contact_center/2.2.3-(5).png)
-**①** 필드 설정 탭에서 각 접수유형에 맞게 필드를 추가할 수 있도록 필드 관리 탭에서 개별 필드를 관리합니다. 기본 필드는 삭제 대신 **수정** 또는 필드 설정의 **초기화**만 가능하며, 직접 만드신 필드의 경우 **수정**과 **삭제** 모두 가능합니다.
+#### 필드 관리 (시스템 필드)
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(5)_1.png)
+**①** 필드 설정 탭에서 각 접수유형에 맞게 필드를 추가할 수 있도록 필드 관리 탭에서 개별 필드를 관리합니다. **시스템 필드**는 **수정** 또는 필드 설정 **초기화**만 가능합니다.
 
-![](http://static.toastoven.net/prod_contact_center/2.2.3-(6).png)
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(5)_2_1.png)
+**시스템 필드**의 경우 항목 명, 안내 문구, 개인정보(암호화 여부), 개인정보 파기 항목의 수정이 가능하며, 항목 명의 경우 [전체 관리 → 계약 서비스 현황 → 계약 현황 → 계약 기본정보 설정] 에서 설정하신 **① 헬프센터 언어별**로 설정하실 수 있습니다.
+
+**② 필수 여부** 및 **노출 여부**의 경우 필드의 종류에 따라 수정 가능 여부가 구분됩니다.
+
+- 헬프센터 필수 시스템 필드 (접수유형, 이메일, 제목, 문의내용, 개인정보수집) : 필수/노출 여부 기본값 '예', 변경 불가
+- 전화 관련 시스템 필드 (상담일시, IN/OUT, 전화예약, 예약시간, 전화예약번호) : 노출 여부 기본값 '아니오', 변경 불가  
+
+#### 필드 관리 (사용자 필드)
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(5)_3.png)
+**①** 필드 설정 탭에서 각 접수유형에 맞게 필드를 추가할 수 있도록 필드 관리 탭에서 개별 필드를 관리합니다. 사용자 필드의 경우 **추가**, **수정**, **삭제**가 가능합니다.
+
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(6)_1.png)
 고객 필드를 추가하실 때 입력해야 하는 항목은 다음과 같습니다.
 
 -	**①** 항목 유형: 필드의 **항목 유형**입니다. 항목유형을 선택하시면 기본 설정 하단에 **상세 설정**과 **미리보기**가 표시됩니다. 상세설정을 통해 해당 항목에 표시될 값을 설정할 수 있으며, 미리보기를 통해 고객의 화면에서 해당 필드가 어떻게 보일지 확인할 수 있습니다.
--	**②** 항목 코드: Open API로 문의하기 기능을 개발할 시 해당 필드를 나타내는 고유한 값으로 사용됩니다.
--	**③** 항목 명: 필드의 이름으로, 문의하기 화면에 필드와 함께 표시됩니다.
--	**④** 안내 문구: 필드에 대한 안내 문구로, 문의하기 화면에 필드와 함께 표시됩니다.
+-	**②** 항목 코드: Open API로 문의하기 기능을 개발 시 해당 필드를 나타내는 고유한 값으로 사용됩니다.
+-	**③** 항목 명: 필드의 이름으로, 문의하기 화면에 필드와 함께 표시됩니다. [전체 관리 → 계약 서비스 현황 → 계약 현황 → 계약 기본정보 설정] 에서 설정하신 **헬프센터 언어별**로 설정하실 수 있습니다.
+-	**④** 안내 문구: 필드에 대한 안내 문구로, 문의하기 화면에 필드와 함께 표시됩니다. [전체 관리 → 계약 서비스 현황 → 계약 현황 → 계약 기본정보 설정] 에서 설정하신 **헬프센터 언어별**로 설정하실 수 있습니다.
 -	**⑤** 필수 여부: 설정 시 항목 명 오른쪽에 \*(별표)로 표시되며, 반드시 입력되어야 다음 단계로 넘어갈 수 있습니다. 기본 필드 중 제목, 이메일, 유형, 내용, 개인정보수집 필드는 필수입력 항목에 대해 ‘아니오’ 설정이 불가합니다.
 -	**⑥** 개인정보 (암호화 여부)
 -	**⑦** 개인정보 파기 여부
@@ -176,11 +178,11 @@
 **① 템플릿 추가** 버튼을 누르시면 템플릿 추가 팝업이 표시됩니다. 설정이 필요한 항목들은 아래와 같습니다.
 
 - **②** 템플릿 제목 
-- **③** 내용 : 내용 작성 시 우측의 **치환 코드**를 활용하실 수 있습니다. **더블 클릭** 시 치환 코드가 본문에 추가되며, 티켓 처리 시 템플릿의 치환 코드 영역에 데이터가 직접 삽입되어 보다 편리하게 답변을 작성하실 수 있습니다.
+- **③** 내용 : [전체 관리 → 계약 서비스 현황 → 계약 기본정보 설정] 에서 설정된 에디터 타입이 반영되며, 내용 작성 시 우측의 **치환 코드**를 활용하실 수 있습니다. **더블 클릭** 시 치환 코드가 본문에 추가되며, 티켓 처리 시 템플릿의 치환 코드 영역에 데이터가 직접 삽입되어 보다 편리하게 답변을 작성하실 수 있습니다.
 - **④** 검색 코드 : **템플릿에 저장**하실 수 있는 20자 이내의 영문 또는 숫자 조합의 **코드**로, 고객 답변 시 템플릿 **검색에 활용**하실 수 있습니다.
 - **⑤** 템플릿 연결 : 템플릿에 연결하실 **처리유형을 선택**하실 수 있습니다. 이동하고자 하시는 처리유형의 **체크박스를 체크**하신 후 **화살표** 버튼을 누르시면 처리유형이 이동됩니다.
 
-템플릿 추가 시 선택하시는 처리유형은 앞서 [서비스 관리 → 티켓 → 카테고리 관리](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_9)에서 등록해두신 처리유형입니다. 내용 본문 부분에서 마우스 우 클릭 시 링크, 이미지, 테이블을 본문 내에 삽입하실 수 있으며, 이미지를 삽입하실 경우 [서비스 관리 → 헬프센터 → 파일 업로드 관리](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_42) 메뉴에서 업로드한 이미지의 경로를 사용하시거나, 이미지를 직접 첨부하셔서 등록하실 수 있습니다.
+템플릿 추가 시 선택하시는 처리유형은 앞서 [서비스 관리 → 티켓 → 카테고리 관리](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_9)에서 등록해두신 처리유형입니다. 
 
 #### 템플릿 연결
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(7)_3.png)
@@ -192,14 +194,14 @@
 
 ### 이메일 설정
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(8).png)
-Online Contact에서 도메인을 제공하는 **① 대표 계정 주소**를 생성하실 수 있으며, **② 외부 계정 등록**을 통해 서비스 도메인을 사용하는 서비스 대표 계정을 등록하실 수도 있습니다. 
+Online Contact에서 도메인을 제공하는 **① 대표 계정 주소**를 생성하실 수 있으며, **② 외부 계정 등록**을 통해 서비스 도메인을 사용하는 서비스 대표 계정을 등록하실 수 있습니다. 
 
-**③** Online Contact를 통해 발신되는 이메일의 **발신자 명**과 **발신자 주소**를 저장하실 수 있으며, **④** 모든 발송 메일에 대한 공통적인 **메일 레이아웃**을 설정하실 수 있습니다. 본문의 치환코드 (#{content})를 삭제할 경우 답변 메일에서 각 항목에 대한 내용이 보이지 않을 수 있으니 템플릿 작성 시 유의해주세요. 또한 앞서 티켓 → 템플릿 관리에서 작성하신 템플릿을 비롯하여 모든 발송 메일에 적용되는 공통적인 메일 레이아웃이므로, 템플릿과 레이아웃 간 내용 충돌이 일어나지 않도록 유의해주세요.
+**③** Online Contact를 통해 발신되는 이메일의 **발신자 명**과 **발신자 주소**를 저장하실 수 있으며, **④** 모든 발송 메일에 대한 공통적인 **메일 레이아웃**을 설정하실 수 있습니다. 메일 레이아웃 설정 시, 편집기 우측에서 사용하실 수 있는 **치환 코드**를 통해, 메일 발송 시 티켓 정보가 지정된 위치에 자동으로 입력되도록 설정 가능합니다. 레이아웃 작성 에디터는 [전체 관리 → 계약 서비스 현황 → 계약 기본정보 설정] 에서의 에디터 타입 설정 값에 따라 **HTML** 모드 또는 **TEXT** 모드로 표시됩니다.
 
 ✔ **\[FAQ 바로가기]** [현재 사용하고 있는 외부 이메일을 연결하여 문의를 접수 받고 싶습니다.](https://nhn-contact.oc.toast.com/oc/hc/article/44/)
 
 ## 전화
-전화 메뉴에서는 콜백 관리를 위한 **IVR 경로 코드, 경로명**를 등록하고, 아웃바운드 통화를 시도할 시 고객에게 표시되는 **발신번호**를 등록하실 수 있습니다. 해당 메뉴는 계약 정보에서 **티켓 관리 → 전화 포함 (❖CTI사용 포함) 기능**이 **사용**으로 설정되었을 시 표시됩니다.
+전화 메뉴에서는 콜백 관리를 위한 **IVR 경로 코드, 경로명**을 등록하고, 전화 발신 시 고객에게 표시되는 **발신번호**를 등록하실 수 있습니다. 해당 메뉴는 계약 정보에서 **티켓 관리 → 전화 포함 (❖CTI사용 포함) 기능**이 **사용**으로 설정되었을 시 표시됩니다.
 
 전화 기능이 사용 설정되어 있는 상태에서 전화 권한이 부여된 상담원에게는 **전화 위젯**이 표시되며, 해당 위젯을 통해 전화 상담 관련 기능들을 이용하실 수 있습니다.
 
@@ -207,23 +209,26 @@ Online Contact에서 도메인을 제공하는 **① 대표 계정 주소**를 �
 ✔ **\[FAQ 바로가기]** [CTI 화면은 전화 권한이 있는 서비스에서만 접속할 수 있나요?](https://nhn-contact.oc.toast.com/oc/hc/article/101/)
 
 ### IVR Route 관리
-![](http://static.toastoven.net/prod_contact_center/2.2.3-(8)-1.png)
-IVR Route 관리 메뉴에서는 콜백 관리를 위한 **IVR 경로 코드**와 **IVR 경로명**을 등록 및 관리하실 수 있습니다.
+IVR Route 관리 메뉴에서는 **IVR Route** 관련 정보를 등록 및 관리하실 수 있습니다.
 
-**① 추가** 버튼을 누르시면 등록 화면으로 이동되며, CTI 관리 담당자께 전달받은 IVR 경로 코드와 경로명을 입력하시고 저장하시면 해당 경로로 콜백이 접수될 시 부가업무 → 콜백 관리 → 콜백 리스트 메뉴(계약 정보에서 부가업무 → 콜백 기능 사용 설정 필요)에서 **접수된 콜백 요청건에 대한 IVR 경로를 확인**하실 수 있습니다.
-IVR 경로 코드, 경로명의 확인이 어려우실 경우 Online Contact 고객센터로 문의 부탁드립니다. ([Online Contact 고객센터 바로가기](https://nhn-contact.oc.toast.com/oc/hc/))
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(8)-1_2.png)
 
-등록된 IVR 경로에 대한 **② 수정, 삭제**가 가능합니다.
+**CTI 로그인** 후 **① 추가** 버튼을 누르시면 **② IVR Route 추가** 화면이 표시됩니다. 
+해당 화면에서는 CTI 연동된 테넌트에 등록된 **전체 상담 메뉴** 중 해당 서비스에 **등록되지 않은 상담메뉴**를 조회하실 수 있으며, 추가하시고자 하는 IVR Route를 선택하신 후 **저장** 버튼을 누르시면 IVR Route 추가가 완료됩니다. 
+
+등록된 IVR Route 데이터는 **③ 삭제** 만 가능하며, 연동된 CTI 상에서 IVR Route 데이터가 수정되었을 경우 IVR Route **삭제 후 다시 추가**를 진행하시면 수정된 데이터로 업데이트하실 수 있습니다.
 
 ### 발신번호 관리
-![](http://static.toastoven.net/prod_contact_center/2.2.3-(9).png)
-발신번호 관리 메뉴에서는 아웃바운드 통화를 시도할 시 고객에게 표시되는 **발신번호**를 등록 및 관리하실 수 있습니다.
-한 조직 내에서 복수의 서비스에 대해 전화 상담을 진행하는 상담원이 아웃바운드 통화 목적에 맞게 발신번호를 선택하여 통화를 시도하는 데에 활용될 수 있습니다.
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(9)_1.png)
+발신번호 관리 메뉴에서는 전화 발신 시 고객에게 표시되는 **발신번호**를 등록 및 관리하실 수 있습니다.
+한 조직 내에서 복수의 서비스에 대해 전화 상담을 진행하는 상담원이 아웃바운드 통화 목적에 맞게 발신번호를 선택하는 기능으로 활용될 수 있습니다.
 
-**① 추가** 버튼을 누르시면 발신번호 추가 화면으로 이동되며, 발신번호 이름, 발신번호, 통신 서비스 이용 증명원을 첨부하신 후 저장 버튼을 누르시면 발신번호 리스트에 추가하신 발신번호가 '**확인중**' 상태로 추가됩니다. 추가하신 발신번호 정보의 **② 수정**은 **확인중** 상태일 때에만 가능하며, **③ 삭제**는 상태와 무관하게 진행하실 수 있습니다.
+발신번호 목록은 **① 등록 완료**, **② 전체 발신번호** 로 구분됩니다. **② 전체 발신번호** 목록에서는 전체 상태의 발신번호를 확인하실 수 있으며, **① 등록 완료** 목록에서는 **'등록완료'** 상태의 발신번호가 표시되어 발신번호 간의 순서를 조정하실 수 있습니다. 해당 순서는 CTI 위젯 → 전화 걸기 메뉴의 발신번호 선택 목록에 실시간으로 반영됩니다.
 
-추가하신 발신번호에 대해서 통신 서비스 이용 증명원과의 검증이 완료되면 상태가 '**등록완료**' 또는 '**등록불가**'로 변경되며, 상태 변경에 대한 사유를 함께 확인하실 수 있습니다.
-**등록 완료**된 발신번호는 해당 서비스에 대해 전화 권한이 부여된 상담원이 전화 위젯에서 **걸기**를 시도했을 때 발신번호 선택 드롭박스에 표시됩니다. 
+**③ 추가** 버튼을 누르시면 발신번호 추가 화면으로 이동되며, 발신번호 이름, 발신번호, 통신 서비스 이용 증명원을 첨부하신 후 저장 버튼을 누르시면 추가하신 발신번호가 **'확인중'** 상태로 전체 발신번호 목록에 추가됩니다. 추가하신 발신번호 정보의 **수정**은 **'확인중'** 상태일 때에만 가능하며, **삭제**는 상태와 무관하게 진행하실 수 있습니다.
+
+추가하신 발신번호에 대해서 통신 서비스 이용 증명원과의 검증이 완료되면 상태가 **'등록완료'** 또는 **'등록불가'** 로 변경되며, 상태 변경에 대한 사유를 함께 확인하실 수 있습니다.
+**등록 완료**된 발신번호는 등록 완료 목록에 추가됩니다.
 
 ## 상담원
 상담원 메뉴에서는 고객 문의 처리 (티켓 및 채팅 상담)을 위해 상담원과 그룹을 추가 및 수정하고, 상담원 별로 그룹과 권한을 설정할 수 있습니다.
@@ -233,6 +238,7 @@ IVR 경로 코드, 경로명의 확인이 어려우실 경우 Online Contact 고
 상담원으로 추가할 사용자는 **IAM 회원**으로 등록되어 있어야 합니다.
 
 #### IAM 회원 등록
+
 -	화면 우측 상단 **① 회원 초대** 버튼 → 이름, ID, 이메일 입력
 -	NHN Cloud CONSOLE → 멤버 관리 → IAM 회원 탭 → IAM 회원 등록 버튼 → ID, 이름, 메일, 휴대폰 번호 입력
 
@@ -240,7 +246,8 @@ IVR 경로 코드, 경로명의 확인이 어려우실 경우 Online Contact 고
 
 상담원을 추가하실 때에는 반드시 그룹을 배정해야 하므로, 추가된 그룹이 없을 경우 **그룹을 먼저 추가**하신 후 상담원 추가를 진행해주세요.
 
-상담원 추가 시 설정할 수 있는 **권한**은 다음과 같으며, 조직 관리자 설정은 [전체 관리 → 조직관리자](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-global-management/#_4) 메뉴에서 가능합니다.
+상담원 추가 시 설정할 수 있는 **권한**은 다음과 같으며, 조직 관리자 설정은 [전체 관리 → 조직관리자](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-global-management/#_5) 메뉴에서 가능합니다.
+
 -	관리자: **상담원** 권한에 **서비스 설정 메뉴 기능**이 추가된 권한 (티켓, 채팅 권한 개별 부여 가능, 전화 선택 시 티켓 자동 선택, 콜백 할당 권한 기본 부여)
 -	상담원: **티켓, 전화 및 채팅 상담**을 위한 권한 (티켓, 채팅 권한 개별 부여 가능, 전화 선택 시 티켓 자동 선택, 전화 선택 시 콜백 할당 권한 선택 가능 )
 
@@ -261,139 +268,501 @@ IVR 경로 코드, 경로명의 확인이 어려우실 경우 Online Contact 고
 
 기본으로 두 가지의 템플릿이 제공되며, **① 템플릿 등록** 버튼을 통해 새로운 템플릿을 추가하실 수 있습니다. 추가하신 템플릿은 **② 수정** 또는 **삭제**하실 수 있으며, 활성화 중인 템플릿은 삭제가 불가하므로 다른 템플릿을 활성화하신 다음 삭제해주세요.
 
-![](http://static.toastoven.net/prod_contact_center/2.2.5-(2).png)
-템플릿 추가 및 수정 시 **① CSS / HTML / JS 스크립트**를 주어진 편집기에 직접 작성하시거나 [서비스 관리 → 헬프센터 → 파일업로드 관리](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_31) 메뉴에서 필요하신 파일(스크립트, 폰트, 이미지 등)을 업로드하신 후 리소스의 경로를 입력하심을 통해 헬프센터의 구성을 변경하실 수 있습니다. 편집 후 **미리보기** 버튼을 통하여 편집 내용이 헬프센터에 적용된 모습을 바로 보실 수 있으며, **저장**하신 후 적용이 가능합니다.
+![](http://static.toastoven.net/prod_contact_center/2.2.5-(2)_1.png)
+템플릿 추가 및 수정 시 **① CSS / HTML / JS 스크립트**를 주어진 편집기에 직접 작성하시거나 [서비스 관리 → 헬프센터 → 파일업로드 관리](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_37) 메뉴에서 필요하신 파일(스크립트, 폰트, 이미지 등)을 업로드하신 후 리소스 경로 입력을 통해 헬프센터의 구성을 변경하실 수 있습니다. **② 다국어 코드 삽입** 버튼을 누르시면 [서비스 관리 → 헬프센터 → 다국어 코드 관리] 메뉴에서 설정하신 언어 세트 목록이 표시되며, **선택** 버튼을 통해 템플릿 내에 다국어 코드를 삽입하실 수 있습니다.
+
+편집 후 **④ 미리보기** 버튼을 통하여 편집 내용이 헬프센터에 적용된 모습을 사전에 열람하실 수 있으며, **③ 저장**하신 후 적용이 가능합니다.
 
 ✔ **\[FAQ 바로가기]** [헬프센터 PC/모바일 템플릿 관리 기능의 구체적인 예시가 궁금해요.](https://nhn-contact.oc.toast.com/oc/hc/article/60/)
 ✔ **\[FAQ 바로가기]** [헬프센터 텍스트의 폰트를 바꾸거나, 굵게/밑줄 등의 효과를 적용할 수 있나요?](https://nhn-contact.oc.toast.com/oc/hc/article/64/)
 
 **CSS 수정 시** 활용하실 수 있는 주요한 요소들은 다음과 같습니다.
 
-#### main.css
-| 요소 이름                                                 | 설명                                |
-| -------------------------------------------------------- | ----------------------------------- |
-| .main_banner                                             | 메인 상단 배너 영역                  |
-| .main_banner img                                         | 메인 상단 배너 영역 이미지            |
-| .carousel-caption .title_txt                             | 메인 상단 배너 영역 제목              |
-| .carousel-caption .sub_txt                               | 메인 상단 배너 영역 소제목            |
-| .search-box                                              | 메인 상단 배너 영역 검색상자          |
-| .search-box .icon-ic-search                              | 메인 상단 배너 영역 검색아이콘        |
-| #supports .container-con                                 | 메인 고객센터 구성요소 영역           |
-| #supports .support__item:nth-child(1):before             | 메인 공지사항 아이콘                 |
-| #supports .support__item:nth-child(2):before             | 메인 FAQ 아이콘                      |
-| #supports .support__item:nth-child(3):before             | 메인 문의하기 아이콘                  |
-| #supports .support__item:nth-child(4):before             | 메인 문의내역 아이콘                  |
-| #supports .support__item .card-title .btn                | 메인 구성요소 제목                    |
-| #supports .support__item .card-title .btn:hover          | 메인 구성요소 제목 호버 시 색 변경     |
-| #supports .support__item .card-title .btn:after          | 메인 구성요소 텍스트 우측 화살표 아이콘 |
-| #supports .support__item .card-text                      | 메인 구성요소 설명 텍스트              |
-| #sec_contact-news .textArea                              | 메인 하단 배너 영역                   |
-| #sec_contact-news .textArea .text-item h3                | 메인 하단 배너 영역 제목               |
-| #sec_contact-news .textArea .text-item .icon-more::after | 메인 하단 배너 영역 더보기 아이콘       |
-| #sec_contact-news .textArea .text-item li                | 메인 하단 배너 영역 게시글 리스트       |
-| #chat-offline                                            | 상담원 부재중 박스                     |
-| #chat-offline .title                                     | 상담원 부재중 박스 제목                |
-| #chat-offline .text                                      | 상담원 부재중 박스 텍스트              |
-| #chat-offline .close                                     | 상담원 부재중 박스 닫기 아이콘          |
-| #chat-offline .btn                                       | 상담원 부재중 박스 문의하기 아이콘      |
+<!-- css 요소 목록 html -->
 
+<details markdown="1">
+<summary> main.css </summary>
 
-#### faq.css
-| 요소 이름                              | 설명                                |
-| ------------------------------------- | ----------------------------------- |
-| .lnb--fixed .lnb--fixed__nav          | 세부 페이지 좌측 LNB                 |
-| .help-center-title                    | 세부 페이지 좌측 LNB 제목             |
-| .lnb__nav                             | 세부 페이지 좌측 LNB 리스트           |
-| .lnb__nav li a                        | 세부 페이지 좌측 LNB 리스트 개별      |
-| .lnb__nav li.on a                     | 세부 페이지 좌측 LNB 리스트 선택      |
-| .lnb--fixed__side-divider             | 세부 페이지 LNB/contents 구분선      |
-| .lnb--fixed__content                  | 세부 페이지 콘텐츠 영역               |
-| .tit_txt                              | 세부 페이지 콘텐츠 영역 제목          |
-| .data_info-box                        | 세부 페이지 콘텐츠 영역 박스          |
-| .tab_category                         | 세부 페이지 콘텐츠 영역 카테고리 탭    |
-| .tab_category>li.on                   | 세부 페이지 콘텐츠 영역 카테고리 선택  |
-| .tab_category>li                      | 세부 페이지 콘텐츠 영역 카테고리 개별  |
-| .tbl_wrap                             | 세부 페이지 콘텐츠 영역 리스트         |
-| .faqData th:nth-child(1)              | FAQ 테이블 카테고리                   |
-| .faqData th:nth-child(2)              | FAQ 테이블 제목                       |
-| .faqData th:nth-child(3)              | FAQ 테이블 등록일                     |
-| .faqData tr.hot-text td               | FAQ 테이블 개별 상단고정 카테고리      |
-| .faqData tr.hot-text td .title-info a | FAQ 테이블 개별 상단고정 제목          |
-| .faqData td .title-info sup           | FAQ 테이블 개별 상단고정 HOT          |
-| .gocont .search                       | FAQ 검색                             |
-| .sel                                  | FAQ 검색 카테고리                      |
-| .search .inp                          | FAQ 검색어 입력                      |
-| .search .btnArea                      | FAQ 검색 버튼                        |
-| .faqData_info-con                     | FAQ 세부 문서 콘텐츠                 |
-| .faqData_info-con .dataTit            | FAQ 세부 문서 제목                   |
-| .faqData_info-con .dataTime           | FAQ 세부 문서 등록일                 |
-| .faqData_info-con .dataTextBox        | FAQ 세부 문서 내용 텍스트            |
+<table>
+<thead>
+<tr>
+<th>요소 이름</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.main_banner</td>
+<td>메인 상단 배너 영역</td>
+</tr>
+<tr>
+<td>.main_banner img</td>
+<td>메인 상단 배너 영역 이미지</td>
+</tr>
+<tr>
+<td>.carousel-caption .title_txt</td>
+<td>메인 상단 배너 영역 제목</td>
+</tr>
+<tr>
+<td>.carousel-caption .sub_txt</td>
+<td>메인 상단 배너 영역 소제목</td>
+</tr>
+<tr>
+<td>.search-box</td>
+<td>메인 상단 배너 영역 검색상자</td>
+</tr>
+<tr>
+<td>.search-box .icon-ic-search</td>
+<td>메인 상단 배너 영역 검색아이콘</td>
+</tr>
+<tr>
+<td>#supports .container-con</td>
+<td>메인 고객센터 구성요소 영역</td>
+</tr>
+<tr>
+<td>#supports .support__item:nth-child(1):before</td>
+<td>메인 공지사항 아이콘</td>
+</tr>
+<tr>
+<td>#supports .support__item:nth-child(2):before</td>
+<td>메인 FAQ 아이콘</td>
+</tr>
+<tr>
+<td>#supports .support__item:nth-child(3):before</td>
+<td>메인 문의하기 아이콘</td>
+</tr>
+<tr>
+<td>#supports .support__item:nth-child(4):before</td>
+<td>메인 문의내역 아이콘</td>
+</tr>
+<tr>
+<td>#supports .support__item .card-title .btn</td>
+<td>메인 구성요소 제목</td>
+</tr>
+<tr>
+<td>#supports .support__item .card-title .btn:hover</td>
+<td>메인 구성요소 제목 호버 시 색 변경</td>
+</tr>
+<tr>
+<td>#supports .support__item .card-title .btn:after</td>
+<td>메인 구성요소 텍스트 우측 화살표 아이콘</td>
+</tr>
+<tr>
+<td>#supports .support__item .card-text</td>
+<td>메인 구성요소 설명 텍스트</td>
+</tr>
+<tr>
+<td>#sec_contact-news .textArea</td>
+<td>메인 하단 배너 영역</td>
+</tr>
+<tr>
+<td>#sec_contact-news .textArea .text-item h3</td>
+<td>메인 하단 배너 영역 제목</td>
+</tr>
+<tr>
+<td>#sec_contact-news .textArea .text-item .icon-more::after</td>
+<td>메인 하단 배너 영역 더보기 아이콘</td>
+</tr>
+<tr>
+<td>#sec_contact-news .textArea .text-item li</td>
+<td>메인 하단 배너 영역 게시글 리스트</td>
+</tr>
+<tr>
+<td>#chat-offline</td>
+<td>상담원 부재중 박스</td>
+</tr>
+<tr>
+<td>#chat-offline .title</td>
+<td>상담원 부재중 박스 제목</td>
+</tr>
+<tr>
+<td>#chat-offline .text</td>
+<td>상담원 부재중 박스 텍스트</td>
+</tr>
+<tr>
+<td>#chat-offline .close</td>
+<td>상담원 부재중 박스 닫기 아이콘</td>
+</tr>
+<tr>
+<td>#chat-offline .btn</td>
+<td>상담원 부재중 박스 문의하기 아이콘</td>
+</tr>
+</tbody>
+</table>
  
+</details>
 
-#### notice.css
-| 요소 이름                                               | 설명                                |
-| ------------------------------------------------------ | ----------------------------------- |
-| .el-breadcrumb                                         | 세부 페이지 우측 상단 텍스트 영역      |
-| .el-breadcrumb li                                      | 세부 페이지 우측 상단 텍스트 영역 개별 |
-| .noticeData                                            | 공지사항 테이블                       |
-| .noticeData th:nth-child(1)                            | 공지사항 테이블 번호                  |
-| .noticeData th:nth-child(2)                            | 공지사항 테이블 제목                  |
-| .noticeData th:nth-child(3)                            | 공지사항 테이블 말머리                |
-| .noticeData th:nth-child(4)                            | 공지사항 테이블 등록일                |
-| .noticeData tr.hot-text                                | 공지사항 테이블 개별 상단고정          |
-| .noticeData tr.hot-text td                             | 공지사항 테이블 개별 상단고정 번호     |
-| .noticeData tr.hot-text td .title-info a               | 공지사항 테이블 개별 상단고정 제목     |
-| .noticeData td .title-info sup                         | 공지사항 테이블 개별 상단고정 HOT      |
-| .icon-leavel-1                                         | 공지사항 테이블 개별 상단고정 말머리   |
-| .noticeData tr                                         | 공지사항 테이블 개별                  |
-| .noticeData td .title-info a                           | 공지사항 테이블 개별 제목             |
-| .upload-text-memo                                      | 문의하기 첨부파일 필드 텍스트          |
-| .faqData_info-con .dataTime .noticeType                | 공지사항 세부 문서 말머리            |
-| .faqData_info-con .dataTime .noticeType .icon-leavel-1 | 공지사항 세부 문서 말머리 아이콘      |
+<details markdown="1">
+<summary> faq.css </summary>
 
+<table>
+<thead>
+<tr>
+<th>요소 이름</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.lnb--fixed .lnb--fixed__nav</td>
+<td>세부 페이지 좌측 LNB</td>
+</tr>
+<tr>
+<td>.help-center-title</td>
+<td>세부 페이지 좌측 LNB 제목</td>
+</tr>
+<tr>
+<td>.lnb__nav</td>
+<td>세부 페이지 좌측 LNB 리스트</td>
+</tr>
+<tr>
+<td>.lnb__nav li a</td>
+<td>세부 페이지 좌측 LNB 리스트 개별</td>
+</tr>
+<tr>
+<td>.lnb__nav li.on a</td>
+<td>세부 페이지 좌측 LNB 리스트 선택</td>
+</tr>
+<tr>
+<td>.lnb--fixed__side-divider</td>
+<td>세부 페이지 LNB/contents 구분선</td>
+</tr>
+<tr>
+<td>.lnb--fixed__content</td>
+<td>세부 페이지 콘텐츠 영역</td>
+</tr>
+<tr>
+<td>.tit_txt</td>
+<td>세부 페이지 콘텐츠 영역 제목</td>
+</tr>
+<tr>
+<td>.data_info-box</td>
+<td>세부 페이지 콘텐츠 영역 박스</td>
+</tr>
+<tr>
+<td>.tab_category</td>
+<td>세부 페이지 콘텐츠 영역 카테고리 탭</td>
+</tr>
+<tr>
+<td>.tab_category&gt;li.on</td>
+<td>세부 페이지 콘텐츠 영역 카테고리 선택</td>
+</tr>
+<tr>
+<td>.tab_category&gt;li</td>
+<td>세부 페이지 콘텐츠 영역 카테고리 개별</td>
+</tr>
+<tr>
+<td>.tbl_wrap</td>
+<td>세부 페이지 콘텐츠 영역 리스트</td>
+</tr>
+<tr>
+<td>.faqData th:nth-child(1)</td>
+<td>FAQ 테이블 카테고리</td>
+</tr>
+<tr>
+<td>.faqData th:nth-child(2)</td>
+<td>FAQ 테이블 제목</td>
+</tr>
+<tr>
+<td>.faqData th:nth-child(3)</td>
+<td>FAQ 테이블 등록일</td>
+</tr>
+<tr>
+<td>.faqData tr.hot-text td</td>
+<td>FAQ 테이블 개별 상단고정 카테고리</td>
+</tr>
+<tr>
+<td>.faqData tr.hot-text td .title-info a</td>
+<td>FAQ 테이블 개별 상단고정 제목</td>
+</tr>
+<tr>
+<td>.faqData td .title-info sup</td>
+<td>FAQ 테이블 개별 상단고정 HOT</td>
+</tr>
+<tr>
+<td>.gocont .search</td>
+<td>FAQ 검색</td>
+</tr>
+<tr>
+<td>.sel</td>
+<td>FAQ 검색 카테고리</td>
+</tr>
+<tr>
+<td>.search .inp</td>
+<td>FAQ 검색어 입력</td>
+</tr>
+<tr>
+<td>.search .btnArea</td>
+<td>FAQ 검색 버튼</td>
+</tr>
+<tr>
+<td>.faqData_info-con</td>
+<td>FAQ 세부 문서 콘텐츠</td>
+</tr>
+<tr>
+<td>.faqData_info-con .dataTit</td>
+<td>FAQ 세부 문서 제목</td>
+</tr>
+<tr>
+<td>.faqData_info-con .dataTime</td>
+<td>FAQ 세부 문서 등록일</td>
+</tr>
+<tr>
+<td>.faqData_info-con .dataTextBox</td>
+<td>FAQ 세부 문서 내용 텍스트</td>
+</tr>
+</tbody>
+</table>
 
-#### search.css
-| 요소 이름                                           | 설명                                |
-| -------------------------------------------------- | ----------------------------------- |
-| .paginate                                          | 페이지네이션 영역                    |
-| .paginate li                                       | 페이지네이션 개별                    |
-| .paginate li.firstPage a                           | 페이지네이션 << 키                   |
-| .paginate li.firstPage a.img                       | 페이지네이션 << 키 이미지             |
-| .paginate li.prev a.                               | 페이지네이션 < 키                    |
-| .paginate li.prev a img                            | 페이지네이션 < 키 이미지              |
-| .paginate li a                                     | 페이지네이션 개별 페이지              |
-| .paginate li.number.active a                       | 페이지네이션 현재 페이지              |
-| .paginate li.next a.                               | 페이지네이션 > 키                    |
-| .paginate li.next a img                            | 페이지네이션 > 키 이미지              | 
-| .paginate li.lastPage a                            | 페이지네이션 >> 키                   |
-| .paginate li.lastPage a.img                        | 페이지네이션 >> 키 이미지             |
-| .search-title                                      | 검색결과 제목                        |
-| .search-title strong                               | 검색결과 제목 검색어 강조             |
-| .search-text                                       | 검색결과                             |
-| .search-text .search-title_sub                     | 검색결과 하위분류                     |
-| .search-text .search-text_lit                      | 검색결과 개별                        | 
-| .search-text .search-text_lit dt a                 | 검색결과 개별 제목                    |
-| .search-text .search-text_lit dd .search-text_con  | 검색결과 개별 내용 미리보기            |
-| .search-text .search-text_lit dd .search-text_time | 검색결과 개별 작성일                  |
+</details>
 
+<details markdown="1">
+<summary> notice.css </summary>
 
-#### inquiry.css
-| 요소 이름                                                                  | 설명                                |
-| ------------------------------------------------------------------------- | ----------------------------------- |
-| .selectStyle                                                              | 검색 내부 옵션                       |
-| .inquiry-con                                                              | 문의하기 콘텐츠 영역                  |
-| .inquiry-con_table                                                        | 문의하기 테이블                       | 
-| .inquiry-con_table th                                                     | 문의하기 테이블 필드                  |
-| .bl_ess                                                                   | 문의하기 테이블 필드 필수 *           |
-| .inquiry-con_table td                                                     | 문의하기 테이블 입력                  |
-| .error_txt                                                                | 문의하기 테이블 입력 에러 텍스트       | 
-| .inquiry-btn                                                              | 문의하기 접수 버튼                    |
-| .layui-icon                                                               | 화살표 버튼                          |
-| .layui-icon-right                                                         | > (좌측 방향) 화살표 버튼             |
-| .layui-icon-up                                                            | V (아래 방향) 화살표 버튼             |
-| .check_area_wrap .td-radio .layui-form-checkbox\[lay-skin="primary"] span | 체크박스 텍스트                       |
-| .error_txt                                                                | 에러 텍스트                          |
+<table>
+<thead>
+<tr>
+<th>요소 이름</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.el-breadcrumb</td>
+<td>세부 페이지 우측 상단 텍스트 영역</td>
+</tr>
+<tr>
+<td>.el-breadcrumb li</td>
+<td>세부 페이지 우측 상단 텍스트 영역 개별</td>
+</tr>
+<tr>
+<td>.noticeData</td>
+<td>공지사항 테이블</td>
+</tr>
+<tr>
+<td>.noticeData th:nth-child(1)</td>
+<td>공지사항 테이블 번호</td>
+</tr>
+<tr>
+<td>.noticeData th:nth-child(2)</td>
+<td>공지사항 테이블 제목</td>
+</tr>
+<tr>
+<td>.noticeData th:nth-child(3)</td>
+<td>공지사항 테이블 말머리</td>
+</tr>
+<tr>
+<td>.noticeData th:nth-child(4)</td>
+<td>공지사항 테이블 등록일</td>
+</tr>
+<tr>
+<td>.noticeData tr.hot-text</td>
+<td>공지사항 테이블 개별 상단고정</td>
+</tr>
+<tr>
+<td>.noticeData tr.hot-text td</td>
+<td>공지사항 테이블 개별 상단고정 번호</td>
+</tr>
+<tr>
+<td>.noticeData tr.hot-text td .title-info a</td>
+<td>공지사항 테이블 개별 상단고정 제목</td>
+</tr>
+<tr>
+<td>.noticeData td .title-info sup</td>
+<td>공지사항 테이블 개별 상단고정 HOT</td>
+</tr>
+<tr>
+<td>.icon-leavel-1</td>
+<td>공지사항 테이블 개별 상단고정 말머리</td>
+</tr>
+<tr>
+<td>.noticeData tr</td>
+<td>공지사항 테이블 개별</td>
+</tr>
+<tr>
+<td>.noticeData td .title-info a</td>
+<td>공지사항 테이블 개별 제목</td>
+</tr>
+<tr>
+<td>.upload-text-memo</td>
+<td>문의하기 첨부파일 필드 텍스트</td>
+</tr>
+<tr>
+<td>.faqData_info-con .dataTime .noticeType</td>
+<td>공지사항 세부 문서 말머리</td>
+</tr>
+<tr>
+<td>.faqData_info-con .dataTime .noticeType .icon-leavel-1</td>
+<td>공지사항 세부 문서 말머리 아이콘</td>
+</tr>
+</tbody>
+</table>
 
+</details>
+
+<details markdown="1">
+<summary> search.css </summary>
+
+<table>
+<thead>
+<tr>
+<th>요소 이름</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.paginate</td>
+<td>페이지네이션 영역</td>
+</tr>
+<tr>
+<td>.paginate li</td>
+<td>페이지네이션 개별</td>
+</tr>
+<tr>
+<td>.paginate li.firstPage a</td>
+<td>페이지네이션 &lt;&lt; 키</td>
+</tr>
+<tr>
+<td>.paginate li.firstPage a.img</td>
+<td>페이지네이션 &lt;&lt; 키 이미지</td>
+</tr>
+<tr>
+<td>.paginate li.prev a.</td>
+<td>페이지네이션 &lt; 키</td>
+</tr>
+<tr>
+<td>.paginate li.prev a img</td>
+<td>페이지네이션 &lt; 키 이미지</td>
+</tr>
+<tr>
+<td>.paginate li a</td>
+<td>페이지네이션 개별 페이지</td>
+</tr>
+<tr>
+<td>.paginate li.number.active a</td>
+<td>페이지네이션 현재 페이지</td>
+</tr>
+<tr>
+<td>.paginate li.next a.</td>
+<td>페이지네이션 &gt; 키</td>
+</tr>
+<tr>
+<td>.paginate li.next a img</td>
+<td>페이지네이션 &gt; 키 이미지</td>
+</tr>
+<tr>
+<td>.paginate li.lastPage a</td>
+<td>페이지네이션 &gt;&gt; 키</td>
+</tr>
+<tr>
+<td>.paginate li.lastPage a.img</td>
+<td>페이지네이션 &gt;&gt; 키 이미지</td>
+</tr>
+<tr>
+<td>.search-title</td>
+<td>검색결과 제목</td>
+</tr>
+<tr>
+<td>.search-title strong</td>
+<td>검색결과 제목 검색어 강조</td>
+</tr>
+<tr>
+<td>.search-text</td>
+<td>검색결과</td>
+</tr>
+<tr>
+<td>.search-text .search-title_sub</td>
+<td>검색결과 하위분류</td>
+</tr>
+<tr>
+<td>.search-text .search-text_lit</td>
+<td>검색결과 개별</td>
+</tr>
+<tr>
+<td>.search-text .search-text_lit dt a</td>
+<td>검색결과 개별 제목</td>
+</tr>
+<tr>
+<td>.search-text .search-text_lit dd .search-text_con</td>
+<td>검색결과 개별 내용 미리보기</td>
+</tr>
+<tr>
+<td>.search-text .search-text_lit dd .search-text_time</td>
+<td>검색결과 개별 작성일</td>
+</tr>
+</tbody>
+</table>
+
+</details>
+
+<details markdown="1">
+<summary> inquiry.css </summary>
+
+<table>
+<thead>
+<tr>
+<th>요소 이름</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.selectStyle</td>
+<td>검색 내부 옵션</td>
+</tr>
+<tr>
+<td>.inquiry-con</td>
+<td>문의하기 콘텐츠 영역</td>
+</tr>
+<tr>
+<td>.inquiry-con_table</td>
+<td>문의하기 테이블</td>
+</tr>
+<tr>
+<td>.inquiry-con_table th</td>
+<td>문의하기 테이블 필드</td>
+</tr>
+<tr>
+<td>.bl_ess</td>
+<td>문의하기 테이블 필드 필수 *</td>
+</tr>
+<tr>
+<td>.inquiry-con_table td</td>
+<td>문의하기 테이블 입력</td>
+</tr>
+<tr>
+<td>.error_txt</td>
+<td>문의하기 테이블 입력 에러 텍스트</td>
+</tr>
+<tr>
+<td>.inquiry-btn</td>
+<td>문의하기 접수 버튼</td>
+</tr>
+<tr>
+<td>.layui-icon</td>
+<td>화살표 버튼</td>
+</tr>
+<tr>
+<td>.layui-icon-right</td>
+<td>&gt; (좌측 방향) 화살표 버튼</td>
+</tr>
+<tr>
+<td>.layui-icon-up</td>
+<td>V (아래 방향) 화살표 버튼</td>
+</tr>
+<tr>
+<td>.check_area_wrap .td-radio .layui-form-checkbox[lay-skin="primary"] span</td>
+<td>체크박스 텍스트</td>
+</tr>
+<tr>
+<td>.error_txt</td>
+<td>에러 텍스트</td>
+</tr>
+</tbody>
+</table>
+
+</details>
 
 ### 파일업로드 관리
 ![](http://static.toastoven.net/prod_contact_center/2.2.5-(3).png)
@@ -403,27 +772,52 @@ IVR 경로 코드, 경로명의 확인이 어려우실 경우 Online Contact 고
 
 
 ### 구성관리
-![](http://static.toastoven.net/prod_contact_center/2.2.5-(4).png)
-헬프센터의 구성 항목 중 사용하는 기능은 **활성화**, 사용하지 않는 기능은 **비활성화** 처리하실 수 있습니다. 비활성화 시 헬프센터 화면에서 **숨김** 처리됩니다.
-
+![](http://static.toastoven.net/prod_contact_center/2.2.5-(4)_2.png)
+헬프센터의 구성 항목 중 사용하는 기능은 **활성화**, 사용하지 않는 기능은 **비활성화** 처리하실 수 있습니다.
 관리 가능한 기능은 다음과 같습니다.
+
 -	공지사항
 -	FAQ (자주 묻는 질문)
--	1:1 문의 & 문의 내역 (문의하기)
+-	문의하기 & 문의내역
 -	채팅
 - 헬프센터 위젯
+- 회사 정보 (서비스 관리 → 헬프센터 → 회사정보 관리 메뉴에서 추가 및 수정 가능)
 
 ### 회원 연동
-![](http://static.toastoven.net/prod_contact_center/2.2.5-(5).png)
+![](http://static.toastoven.net/prod_contact_center/2.2.5-(5)_1.png)
 **회원 연동** 기능은 고객사에서 제공하는 서비스의 회원 인증을 Online Contact 헬프센터에서도 적용하여, **회원 문의를 접수**하고 **접수한 문의 내역을 다시 확인**할 수 있도록 하기 위한 기능입니다. **GET 방식**과 **POST 방식**의 두 가지 타입으로 제공하고 있으며, 연동을 위해서는 Online Contact에서 제공하는 개발 명세서에 따라 API를 개발하여 회원연동 관리 화면에 등록해 주셔야 합니다.
 
-**①** **활성화/비활성화** 버튼을 통해 회원 연동을 활성화 및 비활성화하실 수 있습니다. 회원연동을 **활성화**하시면 **로그인 타입**을 선택하실 수 있으며, 각 로그인 타입에 따른 API 가이드는 하단 링크에서 확인하실 수 있습니다.
+**①** **활성화/비활성화** 버튼을 통해 회원 연동을 활성화 및 비활성화하실 수 있습니다. 회원연동을 **활성화**하시면 **② 비회원 문의 접수** 활성화 여부와, **③ 로그인 타입**을 선택하실 수 있습니다. **비회원 문의 접수**를 활성화하실 경우, 고객이 로그인하지 않은 상태에서도 문의 접수가 가능하며, 비활성화하실 경우, 로그인 상태에서만 문의 접수가 가능하도록 설정됩니다.
+
+각 **로그인 타입**에 따른 API 가이드는 하단 링크에서 확인하실 수 있습니다.
 
 - [Online Contact > API 가이드 > 회원연동(POST)](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-sso/)
 - [Online Contact > API 가이드 > 회원연동(GET)](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-member-get/)
 
+### 다국어 코드 관리
+[전체 관리 → 계약 서비스 현황 → 계약 현황 → 계약 기본정보 설정] 화면에서 설정하신 헬프센터 언어에 따라, 언어별 헬프센터에서 사용하실 다국어 코드 및 태그를 관리하실 수 있습니다.
+
+#### 다국어 코드
+![](http://static.toastoven.net/prod_contact_center/2.2.5-(7).png)
+**① 다국어 코드** 탭에서 언어별 헬프센터에서 사용하실 다국어 언어 세트를 관리하실 수 있습니다. 
+기본적으로 등록되어 있는 시스템 언어 세트의 경우 내용 및 태그의 수정만 가능하며, 코드의 값은 변경이 불가합니다.
+
+**② 세트 등록** 버튼 클릭 시 **사용자 정의** 언어 세트를 등록하실 수 있습니다. 계약 기본정보 설정 화면에서 설정하신 헬프센터 언어에 따라 **언어별 입력 칸**이 표시되며, **태그** 설정을 통해 언어 세트를 사용처 및 종류별로 분류하실 수 있습니다. 등록된 세트는 템플릿 관리 시 스크립트 내에 삽입이 가능하여, **③ 언어별 헬프센터** 페이지를 구성하는 데에 활용될 수 있습니다. 
+
+#### 태그
+![](http://static.toastoven.net/prod_contact_center/2.2.5-(7)-1.png)
+**① 태그** 탭에서 언어 세트에 매핑하여 분류에 활용하실 수 있는 **사용자 정의 태그**를 관리하실 수 있습니다.
+태그 명 입력 후 **② 추가** 버튼을 누르시면 사용자 정의 태그가 추가되며, 언어 세트 관리 및 검색 시 **태그 목록**에서 **시스템 태그와 함께** 조회하실 수 있습니다. 
+
+### 회사정보 관리
+![](http://static.toastoven.net/prod_contact_center/2.2.5-(6).png)
+
+PC, 모바일 헬프센터의 푸터 영역에 회사 정보 및 이용약관을 표시할 수 있도록 설정 가능한 기능입니다.
+**① 추가** 버튼을 누르시면 설정 화면이 표시되어, **② 회사 정보**, **③ 상표 및 저작권**, **④ 이용 약관** 정보를 설정하실 수 있습니다.
+정보 입력 후 **저장** 버튼을 누르시면 설정하신 회사 정보 구성이 목록에 추가되며, 서비스 관리 → 헬프센터 → 구성관리 메뉴에서 선택 후 실제 헬프센터에 **⑤ 반영**하실 수 있습니다.
+
 ## 외부채널
-**외부 채널**을 Online Contact와 연결하여 고객과 소통할 수 있습니다. 현재 **트위터**와 **카카오 상담톡**을 지원하고 있습니다.
+**외부 채널**을 Online Contact와 연결하여 고객과 소통할 수 있습니다. 상담관리 서비스에서는 현재 **트위터**, **카카오 상담톡**, **SMS** 서비스를 연동하여 사용하실 수 있습니다.
 
 ### 트위터
 ![](http://static.toastoven.net/prod_contact_center/2.2.6-(1).png)
@@ -442,6 +836,7 @@ IVR 경로 코드, 경로명의 확인이 어려우실 경우 Online Contact 고
 
 ![](http://static.toastoven.net/prod_contact_center/2.2.6-(4).png)
 연결이 완료된 **계정을 클릭**하시면 상담톡 기능의 세부 요소들을 설정할 수 있습니다.
+
 - **①** 상담시간
 - **②** 채팅가능 요일
 - **③** 자동 멘트

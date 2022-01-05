@@ -3,7 +3,8 @@
 
 ## 基本設定
 ヘルプセンター内でチャット機能を**有効化**したり、使用中のサービスウェブページに連携用スクリプトを追記することで**チャットウィジェット**を追加し、チャット相談によるお問い合わせ処理が可能です。
-[サービス管理 → ヘルプセンター → 基本設定](https://docs.toast.com/ja/Contact%20Center/ja/online-contact-guide-service-management/#_36) タブでチャット機能を有効にすることができます。チャット機能を有効にすると、 [サービス管理 → チャット](https://docs.toast.com/ja/Contact%20Center/ja/online-contact-guide-service-management/#_3) メニューで、次のような機能を設定することができます。
+[サービス管理 → ヘルプセンター → 基本設定](https://docs.toast.com/ja/Contact%20Center/ja/online-contact-guide-service-management/#_37) タブでチャット機能を有効にすることができます。チャット機能を有効にすると、 [サービス管理 → チャット](https://docs.toast.com/ja/Contact%20Center/ja/online-contact-guide-service-management/#_3) メニューで、次のような機能を設定することができます。
+
 -	基本設定: チャット相談開始時に送られる **挨拶** および評価リクエストの際送信される **満足度案内メッセージ** の設定
 -	オペレーターアサイン設定: チャット相談リクエストが受け付けられた際、割り当て顧客を直近でチャット記録があるオペレーターへ**優先的にアサイン**する機能の有効化および無効化
 -	チャット画面挿入コード: 使用中のサービスページにチャットウィジェットを挿入してOnline Contactのチャット相談サービスをお客様に提供したい場合、ソースコードに挿入してチャット搭載が可能な**連携スクリプト**の確認が可能 
@@ -15,7 +16,7 @@
 ## お問い合わせの受付/処理
 ### チャットの受付
 ![](http://static.toastoven.net/prod_contact_center/ja/5.2-(1)_ja.png)
-ヘルプセンター内のチャット機能が有効な状態で（チャット機能の有効化: [サービス管理 → ヘルプセンター → 基本設定](https://docs.toast.com/ja/Contact%20Center/ja/online-contact-guide-service-management#_36) タブ） お客様がヘルプセンターにアクセスすると、ホームページの右下に **① チャットアイコン**が表示されます。
+ヘルプセンター内のチャット機能が有効な状態で（チャット機能の有効化: [サービス管理 → ヘルプセンター → 基本設定](https://docs.toast.com/ja/Contact%20Center/ja/online-contact-guide-service-management/#_37) タブ） お客様がヘルプセンターにアクセスすると、ホームページの右下に **① チャットアイコン**が表示されます。
 
 
 ![](http://static.toastoven.net/prod_contact_center/ja/5.2-(2)_ja.png)
@@ -28,7 +29,7 @@
 
 ### チャット処理
 ![](http://static.toastoven.net/prod_contact_center/ja/5.2-(4)_ja.png)
-ヘルプセンター内のチャット機能が有効な状態で（チャット機能の有効化:[サービス管理 → ヘルプセンター → 基本設定](https://docs.toast.com/ja/Contact%20Center/ja/online-contact-guide-service-management#_36) タブ)、オペレーターがOnline Contactにアクセスすると、ホームページの右下に**①チャットアイコン**が表示され、該当アイコンをクリックすると、チャット相談を進める画面が表示されます。
+ヘルプセンター内のチャット機能が有効な状態で（チャット機能の有効化:[サービス管理 → ヘルプセンター → 基本設定](https://docs.toast.com/ja/Contact%20Center/ja/online-contact-guide-service-management/#_37) タブ)、オペレーターがOnline Contactにアクセスすると、ホームページの右下に**①チャットアイコン**が表示され、該当アイコンをクリックすると、チャット相談を進める画面が表示されます。
 
 
 ![](http://static.toastoven.net/prod_contact_center/ja/5.2-(5)_ja.png)
@@ -40,6 +41,7 @@
 顧客情報と相談情報で確認·入力できる項目は以下の通りです。
 
 **③ 顧客情報**
+
 -	名前
 -	メールアドレス     
 -	備考
@@ -47,6 +49,7 @@
 -	デバイス
 
 **④ お問い合わせ情報**
+
 -	チャネル: チャット相談リクエスト時**接続したチャネル**
 -	処理タイプ: オペレーターが当該顧客とのチャット相談を分類する**処理タイプ**で、[サービス管理 → チャット → カテゴリー管理](https://docs.toast.com/ja/Contact%20Center/ja/online-contact-guide-service-management#_7)タブで登録が可能
 
@@ -69,5 +72,6 @@ Online Contactで行った**チャット相談の記録**をご確認いただ�
 チャット履歴の中から条件に合った記録を**②検索**することができ、**データ抽出**ボタンで条件に合ったチャット記録をエクセルファイルで抽出いただけます。
 
 チャット履歴で確認できる**③ステータス**は、下記の通りです。
+
 -	処理: オペレーターが待機リストからお客様の相談リクエストをクリックし、**回答を送信**した場合
 -	未処理: オペレーターが待機リストでお客様の相談リクエストをクリックしなかったり、メッセージに対する回答を送信しなかった場合([統計](https://docs.toast.com/ja/Contact%20Center/ja/online-contact-guide-report/)メニューでの**破棄**と同じ)
