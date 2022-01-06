@@ -13,10 +13,12 @@ You can **② edit** and **③ delete** categories, and please keep in mind that
 ### Distribute Document / Draft Document
 ![](http://static.toastoven.net/prod_contact_center/3.1-(2)_en.png)
 FAQ documents are divided as follows:
+
 - Draft Document: Step to **save FAQ documents in advance** and obtain validation
 - Distribute Document: Step to **deploy** after reviewing saved draft documents
 
 From Distribute Document / Draft Document menu, you could check following information about **Distribute Documents** which are displayed in Help Center currently, and **Draft Documents** which are in validation phase.
+
 -	Number
 -	Title
 -	Fix Main Screen
@@ -38,6 +40,7 @@ If documents are edited and saved, registrant of the document would be changed t
 By clicking **Register FAQ** button in distribute document/draft document menu, you could write documents to be displayed in Help Center FAQ.
 
 Items which need to be filled are as follows:
+
 - **①** Category: Please select the appropriate category which you added in [Help Center → FAQ → Manage Category](https://docs.toast.com/en/Contact%20Center/en/online-contact-guide-help-center/#manage-category). The document would be placed under the selected category.
 - **②** Fix Main Screen: If checked, the document would be fixed in the top of ‘All’ group which all FAQ documents are displayed regardless of each category. The most recent registered document is pinned to the top.
 - **③** Fix by Category: If checked, the document would be fixed in the top of the **document’s category** group. The most recent registered document is pinned to the top.
@@ -58,6 +61,7 @@ Headings are displayed when registering notice in the order shown on the Manage 
 ### Distribute Document / Draft Document
 ![](http://static.toastoven.net/prod_contact_center/3.2-(2)_en.png)
 Notice documents are divided as follows (Same as FAQ documents)
+
 -	Draft Document: Step to **save notice documents in advance** and obtain validation
 -	Distribute Document: Step to **deploy** after reviewing saved draft documents
 From Distribute Document / Draft Document menu, you could check following information about **Distribute Documents** which are displayed in Help Center currently, and **Draft Documents** which are in validation phase.
@@ -82,6 +86,7 @@ For frequently used forms when creating notices, you could add templates to shor
 
 ![](http://static.toastoven.net/prod_contact_center/3.2-(4)_en.png)
 Through **Registration Template** button, templates could be created, and items which need to be filled are as follows:
+
 - **①** Template Title
 - **②** Template Description
 - **③** Heading
