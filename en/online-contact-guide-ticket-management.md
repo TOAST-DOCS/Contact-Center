@@ -1,4 +1,4 @@
-## Contact Center > Online Contact > Service Guide > Ticket Management
+## Contact Center > Online Contact > Service Guide (Consultation) > Ticket Management
 
 ## Ticket
 Tickets which were submitted/created by help center · mail · external channel · call · chat (**Consultation Management**), or escalated from consultation management type (**Issue Management**) could be assigned and processed by trigger conditions (can set in Service Management → Ticket → Trigger) or could be manually assigned if unassigned.
@@ -9,6 +9,7 @@ From **① All Tickets** Menu, you could check overall current situation of tick
 ![](http://static.toastoven.net/prod_contact_center/4.1.1-(1)a_2_en.png)
  
 Information which you could check by each **detailed menu** is as follows:
+
 -	**②** All Unassigned Tickets: You can view all **unassigned tickets**. 
 -	**③** All Tickets in Group: You can view the **entire ticket within the group** you belong to.
 -	**④** My Tickets in Progress: Assigned tickets’ status will be changed to **processing**. In this menu, you can view tickets assigned to you.
@@ -31,6 +32,7 @@ If submitted (Consultation Management) or escalated (Issue Management) tickets w
 If you click tickets, you could utilize **Ticket Information**, **Ticket History**, **Event** tabs. (If the ticket was created through chat function, you could utilize chat consultation history when processing tickets through displayed **Chat History** tab.)
 
 ![](http://static.toastoven.net/prod_contact_center/4.1.2-(2)_en.png)
+
 -	**① Ticket Information**: View information related to customer inquiry 
     - **②** Ticket ID: Automatically created when ticket created
     - **③** Group (the group which the assigned agent belongs to)
@@ -41,13 +43,16 @@ If you click tickets, you could utilize **Ticket Information**, **Ticket History
     - **⑧** Inquiry Contents
 
 ![](http://static.toastoven.net/prod_contact_center/4.1.2-(3)_en.png)
+
 -	**① Ticket History**: Check previous inquiry history of the customer
 
 ![](http://static.toastoven.net/prod_contact_center/4.1.2-(4)_en.png)
+
 -	**① Event**: Check events occurred related to the ticket (Assign, Change of agent, forward, etc.)
 
 ![](http://static.toastoven.net/prod_contact_center/4.1.2-(5)_en.png)
 **Processing status** which you can select for each ticket is as follows:
+
 - **①** Resolved: Select to send **final mail** to customer
 - **②** Pending: Select to send **intermediate answer mail** before sending final mail
 - **③** Add a Comment: Add **memo** to ticket. Used when forwarding ticket to another agent.
@@ -71,6 +76,7 @@ You could use **Ticket Batching** to make a batch of answers to tickets with sim
 You could create new tickets through **① Create Ticket** button. This can be used if you need to create additional tickets in the process of handling customer inquiries, or if you need an email response to a telephone inquiry.
 
 The following items are required to enter when creating a ticket:
+
 -	**②** Group
 -	**③** Agent
 -	**④** Submission Type
