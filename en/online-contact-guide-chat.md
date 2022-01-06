@@ -1,4 +1,4 @@
-## Contact Center > Online Contact > Service Guide > Chat
+## Contact Center > Online Contact > Service Guide (Consultation) > Chat
 
 
 ## Default Settings
@@ -38,6 +38,7 @@ When a customer enquiry is received, the chat icon will flash to indicate that a
 The following items can be checked and entered in customer information and consultation information.
 
 **③ Customer Information**
+
 -	Name
 -	Email
 -	Remarks
@@ -45,6 +46,7 @@ The following items can be checked and entered in customer information and consu
 -	Device
 
 **④ Consultation Information**
+
 -	Channel: **The accessed path** when the customer requested chat consultation 
 -	Process type: **Process type** which agent enters about chat consultation with the relevant customer. Can set in [Service Management → Chat → Manage Category](https://docs.toast.com/en/Contact%20Center/en/online-contact-guide-service-management/#manage-category) menu
 
@@ -66,5 +68,6 @@ You could check **Chat consultation logs** in this menu. If you click each chat 
 You could **② search** logs and extract chat records that meet your criteria into an Excel file through **Data extraction** button.
 
 **③ Status values** which you can view in chat logs are divided as follows:
+
 -	Processed: The case which the agent clicked the customer’s chat request, and **have replied** to the customer.
 -	Unprocessed: The case which the agent did not click the customer’s chat request, or did not replied to the customer. (Same with **Give up** in [Report](https://docs.toast.com/en/Contact%20Center/en/online-contact-guide-report/) menu)
