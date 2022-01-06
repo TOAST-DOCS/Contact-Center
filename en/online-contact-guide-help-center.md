@@ -1,4 +1,4 @@
-## Contact Center > Online Contact > Service Guide > Help Center
+## Contact Center > Online Contact > Service Guide (Consultation) > Help Center
 
 ## FAQ
 If you have enabled **FAQ** among the help center configuration items, (Can enable at [Service Management → Help Center → Default Settings](https://docs.toast.com/en/Contact%20Center/en/online-contact-guide-service-management/#default-settings_1)), functions in FAQ menu allow you to manage FAQ(frequently asked questions) documents registered to the help center. 
