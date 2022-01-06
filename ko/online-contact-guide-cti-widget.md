@@ -13,7 +13,7 @@
 - **휴식**: 휴식 상태로 설정되어 인입 전화가 할당되지 않습니다.
 - **대기**: 대기 상태로 설정되어 전화가 인입될 경우 할당됩니다.
 - **업무**: 교육, 취합/보고, 회의, 티켓처리, 채팅처리, 코칭(모니터링) 중 업무 상태를 선택하실 수 있으며, 인입 전화가 할당되지 않습니다.
-- **걸기**: 고객번호와 발신번호 ([서비스 관리 → 전화 → 발신번호 관리](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_33) 메뉴에서 설정) 입력 후 전화를 발신하실 수 있습니다. 
+- **걸기**: 고객번호와 발신번호 ([서비스 관리 → 전화 → 발신번호 관리](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_30) 메뉴에서 설정) 입력 후 전화를 발신하실 수 있습니다. 
 
 ✔ **\[FAQ 바로가기]** [CTI 로그인이 진행되지 않아요.](https://nhn-contact.oc.toast.com/oc/hc/article/103/)
 
