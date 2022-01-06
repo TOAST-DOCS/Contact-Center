@@ -1,4 +1,4 @@
-## Contact Center > Online Contact > サービスガイド > ヘルプセンター
+## Contact Center > Online Contact > サービスガイド（お問合わせ） > ヘルプセンター
 
 ## FAQ
 ヘルプセンターの基本設定で **FAQ**を有効にした場合([サービス管理 → ヘルプセンター → 基本設定](https://docs.toast.com/ja/Contact%20Center/ja/online-contact-guide-service-management/#_37)で有効化可能)、 FAQ メニューの機能から、ヘルプセンターに登録を管理することができます。
