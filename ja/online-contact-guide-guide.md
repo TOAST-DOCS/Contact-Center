@@ -1,4 +1,4 @@
-## Contact Center > Online Contact > サービスガイド > ガイド
+## Contact Center > Online Contact > サービスガイド（お問合わせ） > ガイド
 
 
 ## 業務お知らせ
