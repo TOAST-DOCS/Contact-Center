@@ -1,4 +1,4 @@
-## Contact Center > Online Contact > サービスガイド > チャット
+## Contact Center > Online Contact > サービスガイド（お問合わせ） > チャット
 
 
 ## 基本設定
