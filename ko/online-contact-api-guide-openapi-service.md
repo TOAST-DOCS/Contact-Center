@@ -232,7 +232,6 @@
 |서비스 ID	        |serviceId	    |String  |O	     |서비스 ID，URL PATH 내에 설정한{serviceId}|
 |서비스 정보	      |request body	   |String  |O	    |서비스 정보（JSON）|
 |	          |name	               |String	|O	|서비스 명（유일한 값:예; 길이:min = 0, max = 100)|
-|	          |language	       |String	|O	|서비스 언어(값:zh\|ja\|ko\|en）ko:한국어, ja:일본어, en:영어, zh:중국어)|
 |	          |language	       |String	|O	|서비스 기본 언어 (값 : languages.code), 설정하지 않았을 경우 한국어(ko), 일본어(ja), 영어(en), 중국어(zh) 지원|
 |                 |languages.code      |String	|X	|언어코드 (영문, 기호 '\_' 허용, 최대길이 : 6）, [언어 코드 리스트](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-global-management/#iso) 참조|
 |                 |languages.name      |String	|X	|언어명 (최대길이 : 50)|
