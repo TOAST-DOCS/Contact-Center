@@ -274,131 +274,491 @@ IVR  Route管理メニューでは、コールバック管理のための**IVR R
 
 **CSS修正時** 活用できる主要な要素は以下のとおりです。
 
-##### main.css
-| 要素名                                                 | 説明                                |
-| -------------------------------------------------------- | ----------------------------------- |
-| .main_banner                                             | メイン上段のバナーエリア             |
-| .main_banner img                                         | メイン上段のバナーエリア画像        |
-| .carousel-caption .title_txt                             | メイン上段のバナーエリアタイトル　    |
-| .carousel-caption .sub_txt                               | メイン上段のバナーエリア小見出し      |
-| .search-box                                              | メイン上段のバナーエリア検索ボックス  |
-| .search-box .icon-ic-search                              | メイン上段のバナーエリア検索アイコン  |
-| #supports .container-con                                 | メイン顧客センター構成要素エリア      |
-| #supports .support__item:nth-child(1):before             | メインお知らせアイコン              |
-| #supports .support__item:nth-child(2):before             | メインFAQ アイコン                 |
-| #supports .support__item:nth-child(3):before             | メイン問い合わせアイコン            |
-| #supports .support__item:nth-child(4):before             | メイン問い合わせ履歴アイコン            |
-| #supports .support__item .card-title .btn                | メイン構成要素のタイトル               |
-| #supports .support__item .card-title .btn:hover          | メイン構成要素のタイトル　ホバー色変更     |
-| #supports .support__item .card-title .btn:after          | メイン構成要素テキスト右矢印アイコン |
-| #supports .support__item .card-text                      | メイン構成要素説明テキスト          |
-| #sec_contact-news .textArea                              | メイン下段バナーエリア             |
-| #sec_contact-news .textArea .text-item h3                | メイン下段バナーエリアタイトル               |
-| #sec_contact-news .textArea .text-item .icon-more::after | メイン下段バナーエリアもっと見るアイコン   |
-| #sec_contact-news .textArea .text-item li                | メイン下段バナーエリア掲示リスト   |
-| #chat-offline                                            | オペレーター不在ボックス            |
-| #chat-offline .title                                     | オペレーター不在ボックスタイトル           |
-| #chat-offline .text                                      | オペレーター不在ボックステキスト        |
-| #chat-offline .close                                     | オペレーター不在ボックス閉じるアイコン      |
-| #chat-offline .btn                                       | オペレーター不在ボックス問い合わせアイコン   |
+<!-- css 요소 목록 html -->
 
+<details markdown="1">
+<summary> main.css </summary>
 
-##### faq.css
-| 要素名                              | 説明                                |
-| ------------------------------------- | ----------------------------------- |
-| .lnb--fixed .lnb--fixed__nav          | 詳細ページ左ナビゲーションバー              |
-| .help-center-title                    | 詳細ページ左ナビゲーションバータイトル            |
-| .lnb__nav                             | 詳細ページ左ナビゲーションバーリスト          |
-| .lnb__nav li a                        | 詳細ページ左ナビゲーションバーリスト個別     |
-| .lnb__nav li.on a                     | 詳細ページ左ナビゲーションバーリスト選択     |
-| .lnb--fixed__side-divider             | 詳細ページ左ナビゲーションバーコンテンツ区分線     |
-| .lnb--fixed__content                  | 詳細ページコンテンツ領域         |
-| .tit_txt                              | 詳細ページコンテンツ領域タイトル          |
-| .data_info-box                        | 詳細ページコンテンツ領域ボックス          |
-| .tab_category                         | 詳細ページコンテンツ領域カテゴリータブ   |
-| .tab_category>li.on                   | 詳細ページコンテンツ領域カテゴリー選択  |
-| .tab_category>li                      | 詳細ページコンテンツ領域カテゴリー個別  |
-| .tbl_wrap                             | 詳細ページページコンテンツ領域リスト      |
-| .faqData th:nth-child(1)              | FAQテーブルカテゴリー           |
-| .faqData th:nth-child(2)              | FAQテーブルタイトル           |
-| .faqData th:nth-child(3)              | FAQテーブル登録日                     |
-| .faqData tr.hot-text td               | FAQテーブル個別　上段固定カテゴリー   |
-| .faqData tr.hot-text td .title-info a | FAQテーブル個別　上段固定タイトル     |
-| .faqData td .title-info sup           | FAQテーブル上段固定HOT          |
-| .gocont .search                       | FAQ検索                           |
-| .sel                                  | FAQ検索テーマ                 |
-| .search .inp                          | FAQ検索語入力                 |
-| .search .btnArea                      | FAQ検索ボタン                   |
-| .faqData_info-con                     | FAQ詳細文書コンテンツ                 |
-| .faqData_info-con .dataTit            | FAQ詳細文書タイトル                   |
-| .faqData_info-con .dataTime           | FAQ詳細文書登録日               |
-| .faqData_info-con .dataTextBox        | FAQ詳細文書内容テスト         |
+<table>
+<thead>
+<tr>
+<th>要素名</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.main_banner</td>
+<td>メイン上段のバナーエリア</td>
+</tr>
+<tr>
+<td>.main_banner img</td>
+<td>メイン上段のバナーエリア画像</td>
+</tr>
+<tr>
+<td>.carousel-caption .title_txt</td>
+<td>メイン上段のバナーエリアタイトル　</td>
+</tr>
+<tr>
+<td>.carousel-caption .sub_txt</td>
+<td>メイン上段のバナーエリア小見出し</td>
+</tr>
+<tr>
+<td>.search-box</td>
+<td>メイン上段のバナーエリア検索ボックス</td>
+</tr>
+<tr>
+<td>.search-box .icon-ic-search</td>
+<td>メイン上段のバナーエリア検索アイコン</td>
+</tr>
+<tr>
+<td>#supports .container-con</td>
+<td>メイン顧客センター構成要素エリア</td>
+</tr>
+<tr>
+<td>#supports .support__item:nth-child(1):before</td>
+<td>メインお知らせアイコン</td>
+</tr>
+<tr>
+<td>#supports .support__item:nth-child(2):before</td>
+<td>メインFAQ アイコン</td>
+</tr>
+<tr>
+<td>#supports .support__item:nth-child(3):before</td>
+<td>メイン問い合わせアイコン</td>
+</tr>
+<tr>
+<td>#supports .support__item:nth-child(4):before</td>
+<td>メイン問い合わせ履歴アイコン</td>
+</tr>
+<tr>
+<td>#supports .support__item .card-title .btn</td>
+<td>メイン構成要素のタイトル</td>
+</tr>
+<tr>
+<td>#supports .support__item .card-title .btn:hover</td>
+<td>メイン構成要素のタイトル　ホバー色変更</td>
+</tr>
+<tr>
+<td>#supports .support__item .card-title .btn:after</td>
+<td>メイン構成要素テキスト右矢印アイコン</td>
+</tr>
+<tr>
+<td>#supports .support__item .card-text</td>
+<td>メイン構成要素説明テキスト</td>
+</tr>
+<tr>
+<td>#sec_contact-news .textArea</td>
+<td>メイン下段バナーエリア</td>
+</tr>
+<tr>
+<td>#sec_contact-news .textArea .text-item h3</td>
+<td>メイン下段バナーエリアタイトル</td>
+</tr>
+<tr>
+<td>#sec_contact-news .textArea .text-item .icon-more::after</td>
+<td>メイン下段バナーエリアもっと見るアイコン</td>
+</tr>
+<tr>
+<td>#sec_contact-news .textArea .text-item li</td>
+<td>メイン下段バナーエリア掲示リスト</td>
+</tr>
+<tr>
+<td>#chat-offline</td>
+<td>オペレーター不在ボックス</td>
+</tr>
+<tr>
+<td>#chat-offline .title</td>
+<td>オペレーター不在ボックスタイトル</td>
+</tr>
+<tr>
+<td>#chat-offline .text</td>
+<td>オペレーター不在ボックステキスト</td>
+</tr>
+<tr>
+<td>#chat-offline .close</td>
+<td>オペレーター不在ボックス閉じるアイコン</td>
+</tr>
+<tr>
+<td>#chat-offline .btn</td>
+<td>オペレーター不在ボックス問い合わせアイコン</td>
+</tr>
+</tbody>
+</table>
 
+</details>
 
-#### notice.css
-| 要素名                                               | 説明                                |
-| ------------------------------------------------------ | ----------------------------------- |
-| .el-breadcrumb                                         | 詳細ページ右上のテキスト領域      |
-| .el-breadcrumb li                                      | 詳細ページ右上のテキスト領域個別|
-| .noticeData                                            | お知らせテーブル                       |
-| .noticeData th:nth-child(1)                            | お知らせテーブル番号                  |
-| .noticeData th:nth-child(2)                            | お知らせテーブルタイトル                  |
-| .noticeData th:nth-child(3)                            | お知らせテーブルテーマ              |
-| .noticeData th:nth-child(4)                            | お知らせテーブル登録日               |
-| .noticeData tr.hot-text                                | お知らせテーブル個別 上段固定          |
-| .noticeData tr.hot-text td                             | お知らせテーブル個別 上段固定番号    |
-| .noticeData tr.hot-text td .title-info a               | お知らせテーブル個別 上段固定タイトル     |
-| .noticeData td .title-info sup                         | お知らせテーブル個別 上段固定HOT      |
-| .icon-leavel-1                                         | お知らせテーブル個別 上段固定テーマ   |
-| .noticeData tr                                         | お知らせテーブル個別                  |
-| .noticeData td .title-info a                           | お知らせテーブル個別タイトル             |
-| .upload-text-memo                                      | お問い合わせ添付ファイルフィールドテキスト          |
-| .faqData_info-con .dataTime .noticeType                | お知らせ詳細文書カテゴリー            |
-| .faqData_info-con .dataTime .noticeType .icon-leavel-1 | お知らせ詳細文書カテゴリーアイコン      |
+<details markdown="1">
+<summary> faq.css </summary>
 
+<table>
+<thead>
+<tr>
+<th>要素名</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.lnb--fixed .lnb--fixed__nav</td>
+<td>詳細ページ左ナビゲーションバー</td>
+</tr>
+<tr>
+<td>.help-center-title</td>
+<td>詳細ページ左ナビゲーションバータイトル</td>
+</tr>
+<tr>
+<td>.lnb__nav</td>
+<td>詳細ページ左ナビゲーションバーリスト</td>
+</tr>
+<tr>
+<td>.lnb__nav li a</td>
+<td>詳細ページ左ナビゲーションバーリスト個別</td>
+</tr>
+<tr>
+<td>.lnb__nav li.on a</td>
+<td>詳細ページ左ナビゲーションバーリスト選択</td>
+</tr>
+<tr>
+<td>.lnb--fixed__side-divider</td>
+<td>詳細ページ左ナビゲーションバーコンテンツ区分線</td>
+</tr>
+<tr>
+<td>.lnb--fixed__content</td>
+<td>詳細ページコンテンツ領域</td>
+</tr>
+<tr>
+<td>.tit_txt</td>
+<td>詳細ページコンテンツ領域タイトル</td>
+</tr>
+<tr>
+<td>.data_info-box</td>
+<td>詳細ページコンテンツ領域ボックス</td>
+</tr>
+<tr>
+<td>.tab_category</td>
+<td>詳細ページコンテンツ領域カテゴリータブ</td>
+</tr>
+<tr>
+<td>.tab_category&gt;li.on</td>
+<td>詳細ページコンテンツ領域カテゴリー選択</td>
+</tr>
+<tr>
+<td>.tab_category&gt;li</td>
+<td>詳細ページコンテンツ領域カテゴリー個別</td>
+</tr>
+<tr>
+<td>.tbl_wrap</td>
+<td>詳細ページページコンテンツ領域リスト</td>
+</tr>
+<tr>
+<td>.faqData th:nth-child(1)</td>
+<td>FAQテーブルカテゴリー</td>
+</tr>
+<tr>
+<td>.faqData th:nth-child(2)</td>
+<td>FAQテーブルタイトル</td>
+</tr>
+<tr>
+<td>.faqData th:nth-child(3)</td>
+<td>FAQテーブル登録日</td>
+</tr>
+<tr>
+<td>.faqData tr.hot-text td</td>
+<td>FAQテーブル個別　上段固定カテゴリー</td>
+</tr>
+<tr>
+<td>.faqData tr.hot-text td .title-info a</td>
+<td>FAQテーブル個別　上段固定タイトル</td>
+</tr>
+<tr>
+<td>.faqData td .title-info sup</td>
+<td>FAQテーブル上段固定HOT</td>
+</tr>
+<tr>
+<td>.gocont .search</td>
+<td>FAQ検索</td>
+</tr>
+<tr>
+<td>.sel</td>
+<td>FAQ検索テーマ</td>
+</tr>
+<tr>
+<td>.search .inp</td>
+<td>FAQ検索語入力</td>
+</tr>
+<tr>
+<td>.search .btnArea</td>
+<td>FAQ検索ボタン</td>
+</tr>
+<tr>
+<td>.faqData_info-con</td>
+<td>FAQ詳細文書コンテンツ</td>
+</tr>
+<tr>
+<td>.faqData_info-con .dataTit</td>
+<td>FAQ詳細文書タイトル</td>
+</tr>
+<tr>
+<td>.faqData_info-con .dataTime</td>
+<td>FAQ詳細文書登録日</td>
+</tr>
+<tr>
+<td>.faqData_info-con .dataTextBox</td>
+<td>FAQ詳細文書内容テスト</td>
+</tr>
+</tbody>
+</table>
 
-#### search.css-
-| 要素名                                           | 説明                                |
-| -------------------------------------------------- | ----------------------------------- |
-| .paginate                                          | ページネーション領域                    |
-| .paginate li                                       | ページネーション個別                    |
-| .paginate li.firstPage a                           | ページネーション << キー                   |
-| .paginate li.firstPage a.img                       | ページネーション << キーイメージ             |
-| .paginate li.prev a.                               | ページネーション < キー                    |
-| .paginate li.prev a img                            | ページネーション < キーイメージ              |
-| .paginate li a                                     | ページネーション 個別ページ             |
-| .paginate li.number.active a                       | ページネーション 現在のページ              |
-| .paginate li.next a.                               | ページネーション > キー                  |
-| .paginate li.next a img                            | ページネーション > キーイメージ            | 
-| .paginate li.lastPage a                            | ページネーション >> キー                  |
-| .paginate li.lastPage a.img                        | ページネーション >> キーイメージ            |
-| .search-title                                      | 検索結果タイトル                       |
-| .search-title strong                               | 検索結果タイトル検索語強調             |
-| .search-text                                       | 検索結果                             |
-| .search-text .search-title_sub                     | 検索結果下位分類                    |
-| .search-text .search-text_lit                      | 検索結果個別                        | 
-| .search-text .search-text_lit dt a                 | 検索結果個別タイトル                    |
-| .search-text .search-text_lit dd .search-text_con  | 検索結果個別内容プレビュー            |
-| .search-text .search-text_lit dd .search-text_time | 検索結果個別作成日                  |
+</details>
 
+<details markdown="1">
+<summary> notice.css </summary>
 
-#### inquiry.css
-| 要素名                                                                  | 説明                               |
-| ------------------------------------------------------------------------- | ----------------------------------- |
-| .selectStyle                                                              | 検索内部オプション                    |
-| .inquiry-con                                                              | お問い合わせコンテンツエリア                |
-| .inquiry-con_table                                                        | お問い合わせテーブル                     | 
-| .inquiry-con_table th                                                     | お問い合わせテーブルフィールド               |
-| .bl_ess                                                                   | お問い合わせテーブルフィールド 必須 *           |
-| .inquiry-con_table td                                                     | お問い合わせテーブル 入力               |
-| .error_txt                                                                | お問い合わせテーブル 入力エラーテキスト       | 
-| .inquiry-btn                                                              | お問い合わせ受付ボタン                |
-| .layui-icon                                                               | 矢印ボタン                      |
-| .layui-icon-right                                                         | > （左方向）矢印ボタン           |
-| .layui-icon-up                                                            | V （下方向)矢印ボタン             |
-| .check_area_wrap .td-radio .layui-form-checkbox\[lay-skin="primary"] span | チェックボックステキスト               |
-| .error_txt                                                                | エラーテキスト                    |
+<table>
+<thead>
+<tr>
+<th>要素名</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.el-breadcrumb</td>
+<td>詳細ページ右上のテキスト領域</td>
+</tr>
+<tr>
+<td>.el-breadcrumb li</td>
+<td>詳細ページ右上のテキスト領域個別</td>
+</tr>
+<tr>
+<td>.noticeData</td>
+<td>お知らせテーブル</td>
+</tr>
+<tr>
+<td>.noticeData th:nth-child(1)</td>
+<td>お知らせテーブル番号</td>
+</tr>
+<tr>
+<td>.noticeData th:nth-child(2)</td>
+<td>お知らせテーブルタイトル</td>
+</tr>
+<tr>
+<td>.noticeData th:nth-child(3)</td>
+<td>お知らせテーブルテーマ</td>
+</tr>
+<tr>
+<td>.noticeData th:nth-child(4)</td>
+<td>お知らせテーブル登録日</td>
+</tr>
+<tr>
+<td>.noticeData tr.hot-text</td>
+<td>お知らせテーブル個別 上段固定</td>
+</tr>
+<tr>
+<td>.noticeData tr.hot-text td</td>
+<td>お知らせテーブル個別 上段固定番号</td>
+</tr>
+<tr>
+<td>.noticeData tr.hot-text td .title-info a</td>
+<td>お知らせテーブル個別 上段固定タイトル</td>
+</tr>
+<tr>
+<td>.noticeData td .title-info sup</td>
+<td>お知らせテーブル個別 上段固定HOT</td>
+</tr>
+<tr>
+<td>.icon-leavel-1</td>
+<td>お知らせテーブル個別 上段固定テーマ</td>
+</tr>
+<tr>
+<td>.noticeData tr</td>
+<td>お知らせテーブル個別</td>
+</tr>
+<tr>
+<td>.noticeData td .title-info a</td>
+<td>お知らせテーブル個別タイトル</td>
+</tr>
+<tr>
+<td>.upload-text-memo</td>
+<td>お問い合わせ添付ファイルフィールドテキスト</td>
+</tr>
+<tr>
+<td>.faqData_info-con .dataTime .noticeType</td>
+<td>お知らせ詳細文書カテゴリー</td>
+</tr>
+<tr>
+<td>.faqData_info-con .dataTime .noticeType .icon-leavel-1</td>
+<td>お知らせ詳細文書カテゴリーアイコン</td>
+</tr>
+</tbody>
+</table>
 
+</details>
+
+<details markdown="1">
+<summary> search.css </summary>
+
+<table>
+<thead>
+<tr>
+<th>要素名</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.paginate</td>
+<td>ページネーション領域</td>
+</tr>
+<tr>
+<td>.paginate li</td>
+<td>ページネーション個別</td>
+</tr>
+<tr>
+<td>.paginate li.firstPage a</td>
+<td>ページネーション &lt;&lt; キー</td>
+</tr>
+<tr>
+<td>.paginate li.firstPage a.img</td>
+<td>ページネーション &lt;&lt; キーイメージ</td>
+</tr>
+<tr>
+<td>.paginate li.prev a.</td>
+<td>ページネーション &lt; キー</td>
+</tr>
+<tr>
+<td>.paginate li.prev a img</td>
+<td>ページネーション &lt; キーイメージ</td>
+</tr>
+<tr>
+<td>.paginate li a</td>
+<td>ページネーション 個別ページ</td>
+</tr>
+<tr>
+<td>.paginate li.number.active a</td>
+<td>ページネーション 現在のページ</td>
+</tr>
+<tr>
+<td>.paginate li.next a.</td>
+<td>ページネーション &gt; キー</td>
+</tr>
+<tr>
+<td>.paginate li.next a img</td>
+<td>ページネーション &gt; キーイメージ</td>
+</tr>
+<tr>
+<td>.paginate li.lastPage a</td>
+<td>ページネーション &gt;&gt; キー</td>
+</tr>
+<tr>
+<td>.paginate li.lastPage a.img</td>
+<td>ページネーション &gt;&gt; キーイメージ</td>
+</tr>
+<tr>
+<td>.search-title</td>
+<td>検索結果タイトル</td>
+</tr>
+<tr>
+<td>.search-title strong</td>
+<td>検索結果タイトル検索語強調</td>
+</tr>
+<tr>
+<td>.search-text</td>
+<td>検索結果</td>
+</tr>
+<tr>
+<td>.search-text .search-title_sub</td>
+<td>検索結果下位分類</td>
+</tr>
+<tr>
+<td>.search-text .search-text_lit</td>
+<td>検索結果個別</td>
+</tr>
+<tr>
+<td>.search-text .search-text_lit dt a</td>
+<td>検索結果個別タイトル</td>
+</tr>
+<tr>
+<td>.search-text .search-text_lit dd .search-text_con</td>
+<td>検索結果個別内容プレビュー</td>
+</tr>
+<tr>
+<td>.search-text .search-text_lit dd .search-text_time</td>
+<td>検索結果個別作成日</td>
+</tr>
+</tbody>
+</table>
+
+</details>
+
+<details markdown="1">
+<summary> inquiry.css </summary>
+
+<table>
+<thead>
+<tr>
+<th>要素名</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.selectStyle</td>
+<td>検索内部オプション</td>
+</tr>
+<tr>
+<td>.inquiry-con</td>
+<td>お問い合わせコンテンツエリア</td>
+</tr>
+<tr>
+<td>.inquiry-con_table</td>
+<td>お問い合わせテーブル</td>
+</tr>
+<tr>
+<td>.inquiry-con_table th</td>
+<td>お問い合わせテーブルフィールド</td>
+</tr>
+<tr>
+<td>.bl_ess</td>
+<td>お問い合わせテーブルフィールド 必須 *</td>
+</tr>
+<tr>
+<td>.inquiry-con_table td</td>
+<td>お問い合わせテーブル 入力</td>
+</tr>
+<tr>
+<td>.error_txt</td>
+<td>お問い合わせテーブル 入力エラーテキスト</td>
+</tr>
+<tr>
+<td>.inquiry-btn</td>
+<td>お問い合わせ受付ボタン</td>
+</tr>
+<tr>
+<td>.layui-icon</td>
+<td>矢印ボタン</td>
+</tr>
+<tr>
+<td>.layui-icon-right</td>
+<td>&gt; （左方向）矢印ボタン</td>
+</tr>
+<tr>
+<td>.layui-icon-up</td>
+<td>V （下方向)矢印ボタン</td>
+</tr>
+<tr>
+<td>.check_area_wrap .td-radio .layui-form-checkbox[lay-skin="primary"] span</td>
+<td>チェックボックステキスト</td>
+</tr>
+<tr>
+<td>.error_txt</td>
+<td>エラーテキスト</td>
+</tr>
+</tbody>
+</table>
+
+</details>
 
 ### ファイルアップロード管理
 ![](http://static.toastoven.net/prod_contact_center/ja/2.2.5-(3)_ja.png)
@@ -452,7 +812,7 @@ PC、モバイルヘルプセンターのフッター領域に、会社情報お
 情報入力後、**保存**ボタンを押すと、設定した会社情報構成がリストに追加され、サービス管理 → ヘルプセンター → 基本設定メニューから選択し、実際のヘルプセンターに**⑤ 反映**することができます。
 
 ## 外部チャンネル
-**外部SNSに入力されるお問い合わせ**をOnline Contactでチケット化して処理することができます。現在は**ツイッター**と **カカオ相談トーク**をサポートしています。
+**外部チャンネル**をOnline Contactと接続させてお客様とコミュニケーションすることができます。 相談管理サービスでは現在**ツイッター**、**カカオ相談トーク**、**SMS**サービスを連動して利用できます。
 
 ### ツイッター
 ![](http://static.toastoven.net/prod_contact_center/ja/2.2.6-(1)_ja.png)
