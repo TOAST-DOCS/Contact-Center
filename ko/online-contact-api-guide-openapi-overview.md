@@ -41,6 +41,7 @@ Online Contact에 생성된 조직마다 유일한 Security Key인 **① 조직 
 
 #### 인증 Header
 각 Request Header에 아래의 값들을 반드시 설정해야 합니다.
+
 - Authorization：Security Key를 통해 생성된 인증 문자열
 - X-TC-Timestamp：현재 UTC 시간 값{new Date().getTime()}
 - OUCODE：유저 code（필수 아님，설정하지 않을 경우 기본 값은 Owner）
@@ -213,6 +214,7 @@ return sb.toString();
 |           |		    |상담원 권한 변경           |서비스 내 상담원 권한 변경|
 |	    |	            |상담원 삭제	           |지정한 서비스에서 상담원 삭제|
 |	    |[헬프센터](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-helpcenter/)	 |헬프센터 지정 데이터 추가   |추가 필요한 고객정보를 DB에 저장|
+|           |               |APP 내 모바일 헬프센터 첨부 권한 체크|고객사 App의 카메라 및 사진첩 권한 유무에 따라 첨부 권한 제한|
 |	    |[FAQ](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-faq/)	     |FAQ 목록 조회	              |조회 조건 기준으로 FAQ 리스트를 리턴|
 |           |		     |FAQ 상세 조회	              |FAQ ID를 통해 FAQ 내용 취득|
 |           |		     |FAQ 등록	              |신규 FAQ 등록|
@@ -231,7 +233,7 @@ return sb.toString();
 |	    |	             |FAQ 첨부파일 삭제	   |서버에 업로드한 파일 삭제|
 |           |[회원연동 (POST)](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-sso/)             |SSO 원격로그인 API (Client Side)|사용자 시스템에서 동적으로 form을 생성하여 브라우저에 반환, form은 자동으로 API에 form 정보를 전달, 인증 후 성공 시 로그인 쿠키 값 설정|
 |           |                |SSO 원격로그인 API (Server Side)|사용자가 서버에서 직접 API 호출, API 로그인 성공 후 로그인 쿠키 값 설정|
-|           |                |SSO 로그인 URL (사용자)         |                                                                   |
+|           |                |SSO 로그인 URL (사용자)         |서비스 측 로그인 URL                                                      |
 |           |                |SSO 로그인 상태 URL (사용자)     |사용자가 쿠키 정보를 기준으로 로그인 여부를 확인 후, JSON 형식의 데이터를 리턴|
 |           |[회원연동 (GET)](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-member-get/)             |Token 인증 API (서비스 측)|서비스 측에서 token과 usercode로 로그인 상태 확인 후 JSON 형태 결과 값을 전송|
 |           |[고객정보 연동](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-customer-data/)    |고객정보 연동 API                  |   |
