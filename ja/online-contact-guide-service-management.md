@@ -83,10 +83,10 @@
 ✔ **\[FAQ]** [受け付けられたお問い合わせを自動的に外部に転送したいです。](https://nhn-contact.oc.toast.com/ocjp/hc/article/80/)
 ✔ **\[FAQ]** [特定条件でお知らせメールを送りたいです。](https://nhn-contact.oc.toast.com/ocjp/hc/article/79/)
 
-#### トリガー受付タイプ
+#### トリガー条件タイプ
 ![](http://static.toastoven.net/prod_contact_center/ja/2.2.3-(2)a_ja.png)
 
-#### トリガー受付タイプ(詳細)
+#### トリガー条件タイプ(詳細)
 ![](http://static.toastoven.net/prod_contact_center/ja/2.2.3-(2)b_ja.png)
 
 #### トリガー結果タイプ
