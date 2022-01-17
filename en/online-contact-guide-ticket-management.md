@@ -90,6 +90,18 @@ If you select the submission type, **③ Customer Fields** which were set in [Se
 
 After the ticket was escalated, the status of the ticket will be changed to **⑤ Escalation in Progress**. If the ticket was processed as **resolved**, **pending**, **resolve internally** in issue management service, the status will be changed into **Escalation resolved**.
 
+### Personal Data Masking
+If **Security Service** function is **activated** in the contract details, **Masking Personal Information** button is showed in the ticket management page.
+Through this function, the personal information of the customer could be encrypted.
+
+![](http://static.toastoven.net/prod_contact_center/masking_1.gif)
+The areas where you can mask personal information when managing tickets are **customer inquiries** and **replies from agents**.
+**Drag** to select the area which needs masking, and click **Masking Personal Information** button. The personal information inside the page will be substituted with asterisks (\*). The masked data is stored in the masked state on the database.
+
+![](http://static.toastoven.net/prod_contact_center/masking_2.gif)
+To **remove** data masking, **click the substituted area**. A pop-up page asking whether to remove data masking will be showed. 
+Click **confirm** to remove data masking on the page and database.
+
 ## Search Tickets
 ![](http://static.toastoven.net/prod_contact_center/4.1.3-(1)_2_en.png)
 If you click the **① Search Ticket** button in top of the ticket list, conditions of searching tickets will be displayed. The conditions are as follows.
