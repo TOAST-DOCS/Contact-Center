@@ -69,8 +69,7 @@ Tickets could be **processed** as follows:
 
 ### Create Tickets
 ![](http://static.toastoven.net/prod_contact_center/4.1.2-(6)_en.png)
-You could create new tickets through **① Create Ticket** button. This can be used if you need to create additional tickets in the process of handling customer inquiries, or if you need an email response to a telephone inquiry.
-
+You could create new tickets through **① Create Ticket** button. Tickets could be created when additional tickets are needed in the process of handling customer inquiries.
 The following items are required to enter when creating a ticket:
 
 -	**②** Group
@@ -80,31 +79,34 @@ The following items are required to enter when creating a ticket:
 -	**⑥** Title, **⑦** Contents
 
 ### Escalate Tickets
-Inquiries **difficult to resolve** in **consultation management** service could be **escalated** to **issue management** service created in organization. 
+Inquiries which are **difficult to resolve** could be escalated to **issue management** type service.
 
 ![](http://static.toastoven.net/prod_contact_center/4.1.2-(7)_en.png)
 ![](http://static.toastoven.net/prod_contact_center/4.1.2-(8)_en.png)
 
-If you click **① Escalation** button, screen which you could select service to escalate would be displayed. Only services which type is issue management will be displayed in the drop box. After **② selecting service**, click **confirm**, and escalation screen would be displayed in the bottom of the ticket. 
+If you click **① Escalation** button, screen which you could select service to escalate would be displayed. Only issue management type services will be displayed in the drop box. After **② selecting the service to escalate**, click **confirm**. Escalation screen would be displayed in the bottom of the ticket. 
 
-If you select submission type, **③ Customer Fields** which were set in Service Management → Ticket → Field menu of issue management service would be displayed according to the selected submission type. Fill in the customer fields, title, contents, and click **④ Escalation** button to process escalation.
+If you select the submission type, **③ Customer Fields** which were set in [Service Management → Ticket → Field] menu of issue management service would be displayed according to the selected submission type. Fill in the customer fields, title, contents, and click **④ Escalation** button to process ticket escalation.
 
-After escalated, ticket status will be changed to **⑤ Escalation in Progress**, and if the ticket was processed as **resolved**, **pending**, **resolve internally** in issue management service, the status will be changed into **Escalation resolved**.
+After the ticket was escalated, the status of the ticket will be changed to **⑤ Escalation in Progress**. If the ticket was processed as **resolved**, **pending**, **resolve internally** in issue management service, the status will be changed into **Escalation resolved**.
 
 ## Search Tickets
-![](http://static.toastoven.net/prod_contact_center/4.1.3-(1)_en.png)
-If you click **① Search Ticket** button in top of the ticket list, search conditions would be displayed. The conditions are specific as follows.
+![](http://static.toastoven.net/prod_contact_center/4.1.3-(1)_2_en.png)
+If you click the **① Search Ticket** button in top of the ticket list, conditions of searching tickets will be displayed. The conditions are as follows.
 
--	**Created Time**: he ticket’s created time
--	**Priority**: Priority which the processor entered when processing the ticket
--	**Ticket ID**: Ticket ID which was automatically created when the ticket was created
--	**Title**: Title which the customer entered when submitting ticket
--	**Group**: Select all or each group
--	**Agent**: Agent which processed the ticket
--	**Status**: Current status of the ticket
--	**Channel**: Channel which the ticket was submitted
--	**Submission Type**: Type which customer selected when submitting ticket
--	**Processing Type**: Type which agent selected when processing ticket
--	**Email (Account)**: Email address of the ticket
--	**Name**: Name of enquirer
-
+-	**Created Time**
+-	**Priority**
+-	**Ticket ID**
+-	**Title**
+-	**Group**
+-	**Agent**
+-	**Status** 
+-	**Channel** 
+-	**Submission Type**
+-	**Processing Type**
+-	**Customer Unique Number**
+-	**Name**
+-	**ID**
+-	**Email**
+-	**Phone**
+-	**Language**
