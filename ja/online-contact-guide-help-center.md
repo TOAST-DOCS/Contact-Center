@@ -1,4 +1,4 @@
-## Contact Center > Online Contact > サービスガイド（お問合わせ） > ヘルプセンター
+## Contact Center > Online Contact > サービスガイド（お問合わせ管理） > ヘルプセンター
 
 ## FAQ
 [全体管理 → 契約サービス管理 → 契約管理](https://docs.toast.com/ja/Contact%20Center/ja/online-contact-guide-global-management/#_2)タブで修正できる契約の詳細で**FAQ**機能を**使用**に設定した後、ヘルプセンターの基本設定で **FAQ**を有効にした場合([サービス管理 → ヘルプセンター → 基本設定](https://docs.toast.com/ja/Contact%20Center/ja/online-contact-guide-service-management/#_37)で有効化可能)、FAQ メニューの機能から、ヘルプセンターに登録されるFAQ文書を管理することができます。
