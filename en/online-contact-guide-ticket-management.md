@@ -3,6 +3,7 @@
 ## Ticket
 Submitted/created tickets could be assigned and processed by trigger conditions (could be set in Service Management → Ticket → Trigger menu) or could be manually assigned to agents.
 
+## Ticket Processing
 ![](http://static.toastoven.net/prod_contact_center/4.1.1-(1)_en.png)
 From **① All Tickets** Menu, you could check overall current situation of tickets regardless of ticket’s status and assigned agent. And from other **detailed menus**, you could check the current situation of tickets displayed by **detailed conditions** such as group or ticket status.
 
@@ -15,7 +16,6 @@ Information which you could check by each **detailed menu** is as follows:
 -	**⑦ My Completed Tickets**: A ticket becomes ‘**completed**’ if the administrator processes the ticket to be ‘**completed**’, or if **two weeks has been past** after the ticket was resolved. Completed tickets cannot be processed.
 -	**⑧ Spam Box**: Tickets are moved to spam box if processed as **'Resolve Internally → Spam’.** Spam tickets could be restored or deleted. They could not be answered or forwarded before restoration.
 
-## Ticket Processing
 ### Keep Tickets
 ![](http://static.toastoven.net/prod_contact_center/4.1.2-(1)_en.png)
 Agents could assign **unassigned** tickets to oneself through ‘**keep**’ button. Click **① Keep** button, and select agent group if you belong to more than one group. 
