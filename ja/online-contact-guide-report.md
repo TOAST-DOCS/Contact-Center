@@ -1,4 +1,4 @@
-## Contact Center > Online Contact > サービスガイド（お問合わせ） > 統計
+## Contact Center > Online Contact > サービスガイド（お問合わせ管理） > 統計
 
 ## 期間統計
 ![](http://static.toastoven.net/prod_contact_center/ja/6.1-(1)_ja.png)
