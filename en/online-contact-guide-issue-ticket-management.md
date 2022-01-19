@@ -5,7 +5,7 @@ Escalated tickets could be assigned to groups or agents by trigger conditions (C
 Tickets can be **escalated** from consultation management service, or **created** by the agent of issue management service. 
 Colors given to each inflow channel can be used to classify tickets.
 
-## Process Tickets
+## Ticket Processing
 ![](http://static.toastoven.net/prod_contact_center/4.1.1-(1)_im.png)
 **① 전체 티켓** 메뉴를 통해 할당/처리/완료 여부, 담당자와 관계없이 **전체적인 티켓 현황**을 확인하실 수 있으며, **세부 메뉴**들을 통해 할당 여부, 그룹, 티켓 상태 등 **세부 조건**에 맞게 표시된 티켓 현황을 확인하실 수 있습니다. 
 
