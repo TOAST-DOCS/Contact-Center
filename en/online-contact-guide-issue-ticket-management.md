@@ -1,11 +1,11 @@
 ## Contact Center > Online Contact > Service Guide (Issue) > Ticket Management
 
-## 티켓
-상담 관리 유형의 서비스에서 이관된 티켓들을 트리거 조건 (서비스 관리 → 티켓 → 트리거 메뉴에서 추가 가능)에 맞춰 그룹 · 상담원에게 자동으로 할당하여 처리하거나, 할당되지 않은 티켓을 수동으로 할당하여 처리할 수 있습니다.
+## Ticket
+Escalated tickets could be assigned to groups or agents by trigger conditions (Can set in Service Management → Ticket → Trigger menu), or could be manually assigned.
+Tickets can be **escalated** from consultation management service, or **created** by the agent of issue management service. 
+Colors given to each inflow channel can be used to classify tickets.
 
-티켓은 상담 관리 서비스에서 **이관**되거나 이슈 관리 서비스의 상담원이 직접 **생성**할 수 있으며, 유입 채널별로 색상이 부여되어 티켓 구분에 활용하실 수 있습니다.
-
-## 티켓 처리
+## Process Tickets
 ![](http://static.toastoven.net/prod_contact_center/4.1.1-(1)_im.png)
 **① 전체 티켓** 메뉴를 통해 할당/처리/완료 여부, 담당자와 관계없이 **전체적인 티켓 현황**을 확인하실 수 있으며, **세부 메뉴**들을 통해 할당 여부, 그룹, 티켓 상태 등 **세부 조건**에 맞게 표시된 티켓 현황을 확인하실 수 있습니다. 
 
