@@ -32,18 +32,20 @@
 
 ![](http://static.toastoven.net/prod_contact_center/4.1.2-(2)_im.png)
 -	**① 티켓정보**: 이관 티켓 관련 정보 확인 및 처리 
-    - **②** 티켓 ID: 티켓 생성 시 자동으로 생성
-    - **③** 담당자 소속 그룹
-    - **④** 담당자
-    - **⑤** 티켓 상태
-    - **⑥** 채널: 문의가 인입된 채널
-    - **⑦** 티켓 이관 시 입력된 정보
-    - **⑧** 상담 처리 내역
+      - **②** 티켓 ID: 티켓 생성 시 자동으로 생성
+      - **③** 담당자 소속 그룹
+      - **④** 담당자
+      - **⑤** 티켓 상태
+      - **⑥** 채널: 문의가 인입된 채널
+      - **⑦** 티켓 이관 시 입력된 정보
+      - **⑧** 상담 처리 내역
 
 ![](http://static.toastoven.net/prod_contact_center/4.1.2-(3)_im.png)
+
 -	**① 문의내역**: 해당 고객의 이전 이관 처리내역 확인
 
 ![](http://static.toastoven.net/prod_contact_center/4.1.2-(4)_im.png)
+
 -	**① 이벤트**: 해당 문의에 관련하여 발생한 이벤트 (할당, 담당자 변경, 전달 등) 확인
 
 ![](http://static.toastoven.net/prod_contact_center/4.1.2-(5)_im.png)
