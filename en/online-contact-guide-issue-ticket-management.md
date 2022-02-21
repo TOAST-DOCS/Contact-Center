@@ -6,20 +6,19 @@ Tickets can be **escalated** from consultation management service, or **created*
 Colors given to each inflow channel can be used to classify tickets.
 
 ## Ticket Processing
-![](http://static.toastoven.net/prod_contact_center/4.1.1-(1)_im.png)
-**① 전체 티켓** 메뉴를 통해 할당/처리/완료 여부, 담당자와 관계없이 **전체적인 티켓 현황**을 확인하실 수 있으며, **세부 메뉴**들을 통해 할당 여부, 그룹, 티켓 상태 등 **세부 조건**에 맞게 표시된 티켓 현황을 확인하실 수 있습니다. 
+![](http://static.toastoven.net/prod_contact_center/4.1.1-(1)_im_en.png)
+From **① All Tickets** Menu, you could check the **overall situation of tickets** regardless of status or agent in charge. And from other **detailed menus**, you could check the current situation of tickets categorized by **detailed conditions** such as group or ticket status.
 
-각 **세부 메뉴**를 통해 확인할 수 있는 정보는 다음과 같습니다.
--	**②** 전체 미할당 티켓: 전체 티켓 중 담당자에게 **할당되지 않은 티켓**을 확인할 수 있습니다.
--	**③** 그룹내 전체 티켓: 본인이 소속된 **그룹 내 전체 티켓**을 확인할 수 있습니다.
--	**④** 내가 처리중인 티켓: 담당자에게 할당된 티켓은 ‘**처리중**’ 상태로 변경되며, 이 메뉴에서 본인에게 할당된 티켓을 확인할 수 있습니다.
--	**⑤** 내가 보류중인 티켓: 처리 중 확인이 필요한 경우 ‘**보류**’ 처리를 할 수 있으며, 이 메뉴에서 본인이 ‘보류’ 처리한 티켓을 확인할 수 있습니다. 보류건은 다시 처리하여 해결할 수 있습니다.
--	**⑥** 내가 해결한 티켓: 할당된 티켓을 ‘**해결**’ 처리하면 티켓 상태가 ‘해결’로 변경되어 이 메뉴에서 확인할 수 있습니다. 답변 메일로 다시 재문의 시 처리 가능합니다.
--	**⑦** 내가 완료한 티켓: 할당된 티켓의 처리가 종료되어 관리자가 ‘**완료**’ 처리를 했거나, ‘해결’ 처리 이후 **2주가 경과**하면 티켓 상태가 ‘완료’로 변경되어 이 메뉴에서 확인할 수 있습니다. ‘완료’ 처리된 티켓에 대해 재문의는 가능하지 않습니다.
--	**⑧** 스팸함: 처리 시 ‘**내부해결**’ 상태 중 ‘**스팸**’ 항목으로 처리했을 시 스팸함으로 이동합니다. 삭제 또는 복구가 가능하며, 복구 전까지 답변, 전달 등의 처리는 불가합니다.
+Information which you could check by each **detailed menu** is as follows:
 
-### 가져오기
-![](http://static.toastoven.net/prod_contact_center/4.1.2-(1)_im.png)
+-	**③ All Tickets in Group**: You can view the **entire ticket within the group** you belong to.
+-	**④ My Tickets in Progress**: When a ticket is assigned to an agent, the status changes to **processing**. In this menu, you can view tickets assigned to you.
+-	**⑤ My Tickets in Pending**: If a ticket needs to be additionally checked, the agent can set the ticket status to **pending**. In this menu, you can view tickets which you processed as ‘pending’.
+-	**⑥ My Resolved Tickets**: If an agent process a ticket as ‘**resolved**’, the status of the ticket changes to ‘resolved’ and could be viewed at this menu. If the customer resubmits inquiries to the answer mail, the ticket could be processed again.
+-	**⑦ My Completed Tickets**: A ticket becomes ‘**completed**’ if the administrator processes the ticket to be ‘**completed**’, or if **two weeks has been past** after the ticket was resolved. Completed tickets cannot be processed.
+
+### Keep Tickets
+![](http://static.toastoven.net/prod_contact_center/4.1.2-(1)_im_en.png)
 접수된 티켓이 **미할당** 상태일 경우 ‘**가져오기**’ 기능을 통해서 티켓을 배분할 수 있습니다. 미할당 상태의 티켓에 표시된 **① 가져오기** 버튼을 누르고, 본인이 소속된 상담원 그룹이 복수일 경우 하나의 그룹을 선택하시면 티켓이 '가져오기' 처리되어 티켓을 처리하실 수 있습니다.
 
 트리거를 통해서 티켓 할당이 설정된 경우에는 ‘가져오기’ 기능을 사용하지 않아도 티켓이 조건에 맞게 자동으로 배분됩니다. 이 경우 자동으로 할당된 처리자를 바꾸기 위해서는 **관리자**의 권한으로 티켓을 다른 상담원에게 **전달**할 수 있습니다. 티켓정보 탭의 최하단에 위치한 **② 전달** 버튼을 누르고, 티켓을 전달할 상담원의 그룹과 상담원을 선택해주세요.
