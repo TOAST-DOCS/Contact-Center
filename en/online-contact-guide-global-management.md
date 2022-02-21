@@ -1,5 +1,5 @@
 ## Contact Center > Online Contact > Service Guide (Consultation) > Global Management
-Global Management menu in Consultation Management service consists of **Contract Service Status**, **Organization Administrator**, **CTI Management** and **Authority Log Management** menu.
+Global Management menu in Consultation Management service consists of **Contract Service Status**, **Organization Administrator**, **Company Information Management**, **CTI Management**, **Authority Log Management** and **Data Transfer** menu.
 
 ## Contract service status
 ### Contract status
@@ -1102,6 +1102,13 @@ The user whom you want to grant permission must be registered as an IAM member.
 
 Select one of the above two methods to register IAM member. After registering, click **② Add Organization Administrator** → click **View Agent** → Search registered IAM Member by entering name/account/email, and add IAM Member as organization administrator.
 To newly registered IAM Members, **password change mail** will be sent to the registered email. Logging in Online Contact becomes available after setting password through email.
+
+## Company Information Management
+![](http://static.toastoven.net/prod_contact_center/2.2.5-(6)_1_en.png)
+
+In this menu, you can set company information, terms and conditions in the footer area of the PC/mobile help center.
+Press **① Add** button to display setting screen, which allows you to set **② company information**, **③ trademarks and copyrights**, and **④ terms of use**.
+If you press **Save** button after entering the information, the company information configuration you have set will be added to the list. You can select the added configuration from Service Management → Help Center → Default Settings menu, and **⑤ apply** it in the help center.
 
 ## CTI Management
 In CTI Management menu, you could set CTI information to connect with Online Contact, and manage CTI ID, CTI NO of each call consultation agent. 
