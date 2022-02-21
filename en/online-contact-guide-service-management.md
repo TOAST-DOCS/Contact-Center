@@ -776,7 +776,7 @@ Functions you can manage are as follows:
 -	1:1 Inquiry & My Inquiries
 -	Chat
 -	Help center navigation
--	Company Informaton (Can be added/modified in Service Management → Help Center → Company Information Management menu)
+-	Company Informaton (Can be added/modified in Global Management → Company Information Management menu)
 
 ### Member Interlink
 ![](http://static.toastoven.net/prod_contact_center/2.2.5-(5)_1_en.png)
@@ -803,12 +803,6 @@ From **② Registration** button, you could register **user-defined** language s
 ![](http://static.toastoven.net/prod_contact_center/2.2.5-(7)-1_en.png)
 In the **① Tag** tab, you can manage **user-defined** tags that can be used for classifying language sets.
 If you press **② Add** button after entering the tag name, user-defined tag will be added, and it will be shown in the tag list with the system tags when managing, or searching language sets.
-
-### Company Information Management
-![](http://static.toastoven.net/prod_contact_center/2.2.5-(6)_en.png)
-In this menu, you can set company information, terms and conditions in the footer area of the PC and mobile help center.
-Press **① Add** button to display setting screen, allowing you to set **② company information**, **③ trademarks and copyrights**, and **④ terms of use**.
-If you press **Save** button after entering the information, the company information configuration you have set will be added to the list. You can select the added configuration from Service Management → Help Center → Default Settings menu, and **⑤ apply** it in the help center.
 
 ## External Channel
 Inquiries received by **external services** could be switched to tickets in Online Contact. **Twitter**, **KakaoTalk**, and **SMS** are currently supported services.
