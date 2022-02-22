@@ -36,61 +36,62 @@ You could utilize **Ticket Information**, **Ticket History**, **Event** tabs whe
 
 -	**① Ticket History**: Details of the customer's previous escalated inquiries
 
-![](http://static.toastoven.net/prod_contact_center/4.1.2-(4)_im.png)
+![](http://static.toastoven.net/prod_contact_center/4.1.2-(4)_im_en.png)
 
--	**① 이벤트**: 해당 문의에 관련하여 발생한 이벤트 (할당, 담당자 변경, 전달 등) 확인
+-	**① Event**: Occurred events of the ticket (Ticket assign, Change of agent, etc.)
 
-![](http://static.toastoven.net/prod_contact_center/4.1.2-(5)_im.png)
-문의에 대해서 선택할 수 있는 **처리 상태**는 다음과 같습니다. **해결**, **보류**, **내부해결** 처리 시 상담 관리 서비스에서의 티켓 상태는 **이관 답변완료**로 변경됩니다.
+![](http://static.toastoven.net/prod_contact_center/4.1.2-(5)_im_en.png)
+Tickets could be **processed** as follows. When a ticket is **resolved** or **pended**, the status of the ticket in counsultation management service changes to **Escalation resolved**. 
 
-- **①** 해결: 고객에게 발송할 **최종 메일** 처리 
-- **②** 보류: 고객에게 최종 메일 전달 전 **중간답변** 시 선택
-- **③** 코멘트 추가: **메모**를 추가하는 것. 타 상담원에게 전달 시 활용됨
-- **④** 내부해결: 고객에게 **최종메일을 발송하지 않아도 되는** 상황. 세부 구성 요소는 다음과 같습니다.
-    - 채팅해결: 채팅을 통해 문의가 해결되어 메일로 답변을 드리지 않아도 됨
-    - 전화해결: 전화를 통해 문의가 해결되어 메일로 답변을 드리지 않아도 됨
-    - 기타
-  
-문의 내용이 유사한 티켓들에 대해 답변을 일괄적으로 작성하고자 하거나, 티켓들의 처리자 또는 그룹을 일괄적으로 변경하고자 할 때 **티켓 일괄 처리** 기능을 사용할 수 있습니다. **⑤ 티켓 일괄 처리** 버튼은 티켓 리스트 상단에 위치해 있습니다.
+- **① Resolved**: Tickets could be resolved to send a **final answer mail** to the customer.
+- **② Pending**: Tickets could be pended to send a **intermediate reply** before the final reply.
+- **③ Add a Comment**: **Comments** could be added to the ticket. 
+- **④ Resolve Internally**: Tickets could be resolved internally when the ticket **does not need to be replied**.
+    - Resolved via Chat: Inquiry resolved through chat
+    - Resolved via Call: Inquiry resolved through call
+    - Others
 
-✔ **\[FAQ 바로가기]** [답변 템플릿은 어떻게 사용하나요?](https://nhn-contact.oc.toast.com/oc/hc/article/39/)
-✔ **\[FAQ 바로가기]** [동일한 문의 내용을 한번에 일괄처리 할 수 있나요?](https://nhn-contact.oc.toast.com/oc/hc/article/38/)
+**Ticket Batching** function could be used when similar inquiries need to be answered at once, or when agents/groups of tickets should be changed together. **⑤ Ticket Batching** button is in the upper side of the ticket list. 
 
-### 티켓 생성
-![](http://static.toastoven.net/prod_contact_center/4.1.2-(6)_im.png)
-**① 티켓 생성** 버튼을 통해 새로운 티켓을 생성할 수 있습니다. 고객 문의 처리 과정에서 추가 티켓을 생성할 필요가 있거나, 전화 문의에 대한 메일 답변이 필요한 경우 사용될 수 있습니다.
+✔ **\[FAQ]** [How can I use answer templates?](https://nhn-contact.oc.toast.com/oceng/hc/article/122/)
+✔ **\[FAQ]** [Can I process tickets with the same inquiry all at once?](https://nhn-contact.oc.toast.com/oceng/hc/article/121/)
 
-티켓 생성 시 입력이 필요한 항목은 다음과 같습니다.
--	**②** 담당그룹
--	**③** 담당자
--	**④** 접수유형
--	**⑤** 제목, **⑥** 내용
+### Create Tickets
+![](http://static.toastoven.net/prod_contact_center/4.1.2-(6)_im_en.png)
+You could create new tickets through **① Create Ticket** button. Tickets could be created when additional tickets are needed in the process of handling customer inquiries.
+The following items are required to enter when creating a ticket:
 
-### 개인정보 마스킹
-서비스의 계약 정보에서 **보안 서비스** 기능이 **사용** 설정된 경우, 티켓 관리 화면에 **개인정보 마스킹** 버튼이 표시되어 상담 진행 시 전달되는 고객의 개인정보를 암호화하여 관리하실 수 있습니다.  
+-	**②** Group
+-	**③** Agent
+-	**④** Submission Type
+-	**⑤** Title, **⑥** Contents
+
+### Personal Data Masking
+If **Security Service** function is **activated** in the contract details, **Masking Personal Information** button is showed in the ticket management page.
+Through this function, the personal information of the customer could be encrypted.
 
 ![](http://static.toastoven.net/prod_contact_center/masking_1.gif)
-티켓 관리 시 개인정보 마스킹을 진행하실 수 있는 영역은 **고객 문의**, **상담원 답변** 영역입니다. 마스킹하고자 하시는 영역을 **드래그**하여 선택하신 후 **개인정보 마스킹** 버튼을 누르시면 화면 상의 개인정보가 별표(\*)로 치환되어 표시되며, 마스킹 처리된 데이터는 데이터베이스 상에도 마스킹된 상태로 저장되어 보관됩니다.
+The areas where you can mask personal information when managing tickets are **customer inquiries** and **replies from agents**.
+**Drag** to select the area which needs masking, and click **Masking Personal Information** button. The personal information inside the page will be substituted with asterisks (\*). The masked data is stored in the masked state on the database.
 
 ![](http://static.toastoven.net/prod_contact_center/masking_2.gif)
-개인정보 마스킹을 **해제**하고자 하실 경우, **별표(\*)로 치환된 영역을 클릭**하시면 마스킹 해제 여부를 묻는 팝업 화면이 표시되며, **확인** 버튼을 누르시면 화면과 데이터베이스에서 개인정보 마스킹이 해제됩니다. 
+To **remove** data masking, **click the substituted area**. A pop-up page asking whether to remove data masking will be showed. 
+Click **confirm** to remove data masking on the page and database.
 
-## 티켓 검색
-![](http://static.toastoven.net/prod_contact_center/4.1.3-(1)_1_im.png)
-티켓 목록 상단에 위치한 **① 티켓검색** 버튼을 누르시면 티켓 검색에 활용할 수 있는 조건들이 표시됩니다. 조건들은 구체적으로 다음과 같습니다.
+## Search Tickets
+![](http://static.toastoven.net/prod_contact_center/4.1.3-(1)_1_im_en.png)
+If you click the **① Search Ticket** button in top of the ticket list, conditions of searching tickets will be displayed. The conditions are as follows.
 
-- 생성시간
-- 우선순위
-- 티켓ID
-- 제목
-- 담당그룹
-- 담당자
-- 티켓상태
-- 채널
-- 접수유형
-- 처리유형
-- 이름
-- 아이디
-- 이메일
-- 전화번호
-
+-	**Created Time**
+-	**Priority**
+-	**Ticket ID**
+-	**Title**
+-	**Group/Agent**
+-	**Status** 
+-	**Channel** 
+-	**Submission Type**
+-	**Processing Type**
+-	**Name**
+-	**ID**
+-	**Email**
+-	**Phone**
