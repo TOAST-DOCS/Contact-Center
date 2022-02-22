@@ -68,15 +68,14 @@ Tickets could be **processed** as follows:
 ✔ **\[FAQ]** [Can I process tickets with the same inquiry all at once?](https://nhn-contact.oc.toast.com/oceng/hc/article/121/)
 
 ### Create Tickets
-![](http://static.toastoven.net/prod_contact_center/4.1.2-(6)_en.png)
+![](http://static.toastoven.net/prod_contact_center/4.1.2-(6)_1_en.png)
 You could create new tickets through **① Create Ticket** button. Tickets could be created when additional tickets are needed in the process of handling customer inquiries.
 The following items are required to enter when creating a ticket:
 
 -	**②** Group
 -	**③** Agent
 -	**④** Submission Type
--	**⑤** Template
--	**⑥** Title, **⑦** Contents
+-	**⑤** Title, **⑥** Contents
 
 ### Escalate Tickets
 Inquiries which are **difficult to resolve** could be escalated to **issue management** type service.
@@ -103,15 +102,14 @@ To **remove** data masking, **click the substituted area**. A pop-up page asking
 Click **confirm** to remove data masking on the page and database.
 
 ## Search Tickets
-![](http://static.toastoven.net/prod_contact_center/4.1.3-(1)_2_en.png)
+![](http://static.toastoven.net/prod_contact_center/4.1.3-(1)_3_en.png)
 If you click the **① Search Ticket** button in top of the ticket list, conditions of searching tickets will be displayed. The conditions are as follows.
 
 -	**Created Time**
 -	**Priority**
 -	**Ticket ID**
 -	**Title**
--	**Group**
--	**Agent**
+-	**Group/Agent**
 -	**Status** 
 -	**Channel** 
 -	**Submission Type**
