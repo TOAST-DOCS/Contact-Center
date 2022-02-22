@@ -19,25 +19,17 @@ Information which you could check by each **detailed menu** is as follows:
 
 ### Keep Tickets
 ![](http://static.toastoven.net/prod_contact_center/4.1.2-(1)_im_en.png)
-접수된 티켓이 **미할당** 상태일 경우 ‘**가져오기**’ 기능을 통해서 티켓을 배분할 수 있습니다. 미할당 상태의 티켓에 표시된 **① 가져오기** 버튼을 누르고, 본인이 소속된 상담원 그룹이 복수일 경우 하나의 그룹을 선택하시면 티켓이 '가져오기' 처리되어 티켓을 처리하실 수 있습니다.
+Agents could assign **unassigned** tickets to oneself through ‘**keep**’ button. Click **① Keep** button, and select agent group if you belong to more than one group. 
 
-트리거를 통해서 티켓 할당이 설정된 경우에는 ‘가져오기’ 기능을 사용하지 않아도 티켓이 조건에 맞게 자동으로 배분됩니다. 이 경우 자동으로 할당된 처리자를 바꾸기 위해서는 **관리자**의 권한으로 티켓을 다른 상담원에게 **전달**할 수 있습니다. 티켓정보 탭의 최하단에 위치한 **② 전달** 버튼을 누르고, 티켓을 전달할 상담원의 그룹과 상담원을 선택해주세요.
+If ticket assign is set through trigger, tickets could be assigned according to the trigger conditions. In this case, to change automatically assigned agents, **administrator** of the service could **forward** the ticket to another agent. Click **② Forward** button, and select agent/group.
 
+### Process Tickets
+If a escalated/created ticket is assigned, the status of the ticket changes to ‘**processing**’. Customer inquiries could be processed in this state.
 
-### 처리하기
-이관 또는 직접 생성된 티켓이 트리거를 통해 자동으로 할당되었거나, 가져오기/전달 기능을 통해 수동으로 할당된 경우 티켓의 상태가 ‘**처리중**’으로 변경되며 해당 상태에서 고객 문의를 처리할 수 있습니다. 
+You could utilize **Ticket Information**, **Ticket History**, **Event** tabs when processing a ticket.
 
-티켓 클릭 시, 선택된 티켓에 대해서 **티켓정보**, **문의내역**, **이벤트** 탭을 활용하실 수 있습니다. 
-
-![](http://static.toastoven.net/prod_contact_center/4.1.2-(2)_im.png)
--	**① 티켓정보**: 이관 티켓 관련 정보 확인 및 처리 
-    - **②** 티켓 ID: 티켓 생성 시 자동으로 생성
-    - **③** 담당자 소속 그룹
-    - **④** 담당자
-    - **⑤** 티켓 상태
-    - **⑥** 채널: 문의가 인입된 채널
-    - **⑦** 티켓 이관 시 입력된 정보
-    - **⑧** 상담 처리 내역
+![](http://static.toastoven.net/prod_contact_center/4.1.2-(2)_im_1_en.png)
+-	**① Ticket Information**: Information related to the escalated ticket
 
 ![](http://static.toastoven.net/prod_contact_center/4.1.2-(3)_im.png)
 -	**① 문의내역**: 해당 고객의 이전 이관 처리내역 확인
