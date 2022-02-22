@@ -31,6 +31,7 @@
 티켓 클릭 시, 선택된 티켓에 대해서 **티켓정보**, **문의내역**, **이벤트** 탭을 활용하실 수 있습니다. 
 
 ![](http://static.toastoven.net/prod_contact_center/4.1.2-(2)_im_1.png)
+
 - **① 티켓정보**: 이관 티켓 관련 정보 확인 및 처리 
 
 ![](http://static.toastoven.net/prod_contact_center/4.1.2-(3)_im.png)
@@ -38,6 +39,7 @@
 - **① 문의내역**: 해당 고객의 이전 이관 처리내역 확인
 
 ![](http://static.toastoven.net/prod_contact_center/4.1.2-(4)_im.png)
+
 - **① 이벤트**: 해당 문의에 관련하여 발생한 이벤트 (할당, 담당자 변경, 전달 등) 확인
 
 ![](http://static.toastoven.net/prod_contact_center/4.1.2-(5)_im.png)
