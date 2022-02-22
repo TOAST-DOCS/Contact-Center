@@ -29,12 +29,15 @@ If a escalated/created ticket is assigned, the status of the ticket changes to �
 You could utilize **Ticket Information**, **Ticket History**, **Event** tabs when processing a ticket.
 
 ![](http://static.toastoven.net/prod_contact_center/4.1.2-(2)_im_1_en.png)
+
 -	**① Ticket Information**: Information related to the escalated ticket
 
-![](http://static.toastoven.net/prod_contact_center/4.1.2-(3)_im.png)
--	**① 문의내역**: 해당 고객의 이전 이관 처리내역 확인
+![](http://static.toastoven.net/prod_contact_center/4.1.2-(3)_im_en.png)
+
+-	**① Ticket History**: Details of the customer's previous escalated inquiries
 
 ![](http://static.toastoven.net/prod_contact_center/4.1.2-(4)_im.png)
+
 -	**① 이벤트**: 해당 문의에 관련하여 발생한 이벤트 (할당, 담당자 변경, 전달 등) 확인
 
 ![](http://static.toastoven.net/prod_contact_center/4.1.2-(5)_im.png)
