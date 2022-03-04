@@ -84,11 +84,12 @@ private String getSHA256Token(String serviceId, String usercode, String username
 #### 요청 파라미터 정의
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |-----|----|------------|----|----|
-|서비스ID	|service	|Varchar(50)	|O	|서비스 ID|
-|유저ID	   |usercode	|Varchar(50)	|O	|유저ID，유일한 유저임을 표시|
-|유저 명	  |username	|Varchar(50)	|X	|유저 명|
+|서비스ID	           |service	|Varchar(50)	|O	|서비스 ID|
+|유저ID	            |usercode	|Varchar(50)	|O	|유저ID，유일한 유저임을 표시|
+|유저 명	            |username	|Varchar(50)	|X	|유저 명|
 |유저 이메일 주소	|email	|Varchar(100)	|X	|유저 이메일|
-|전화번호	        |phone	|Varchar(20)	|X	|전화번호|
+|전화번호	          |phone	|Varchar(20)	|X	|전화번호|
+|회원번호	          |memberno	|Varchar(50)	|X	|회원번호|
 |현재 시간의 timestamp	|time	|Long	|O	|호출 시간이 3분 초과시, 타임아웃 얼럿 출력.|
 |인증 Token	           |token	|Varchar	|O	|아래 파라미터 값과 SSO API Key로 산출된 SHA256 (필수가 아닌 파라미터 값이 null 혹은 빈값일 경우 , 암호화 문자열에 추가 할 필요 없음.주의：문자열 중 각 값의 순서는 아래 예시에 지정된 순서와 일치해야 함.) SHA256Digest(service + usercode + username + email + phone + retunrnUrl + time)|
 |리턴 화면 URL	|returnUrl	|Varchar	|X	|설정 및 로그인 성공시 해당 주소로 이동|
@@ -118,6 +119,7 @@ returnUrl 파라미터 존재시 지정된 returnUrl로 이동 , returnUrl 없�
 |유저 명	|username	|Varchar(50)	|X	|유저 명|
 |유저 이메일 주소	|email	|Varchar(100)	|X	|유저 이메일|
 |전화번호	|phone	|Varchar(20)	|X	|전화번호|
+|회원번호	|memberno	|Varchar(50)	|X	|회원번호|
 |현재 시간의 timestamp	|time	|Long	|O	|호출 시간이 3분 초과시, 타임아웃 얼럿 출력.|
 |인증 Token	|token	|Varchar	|O	|아래 파라미터 값과 SSO API Key로 산출된 SHA256 (필수가 아닌 파라미터 값이 null 혹은 빈값일 경우 , 암호화 문자열에 추가 할 필요 없음.주의：문자열 중 각 값의 순서는 아래 예시에 지정된 순서와 일치해야 함.) SHA256Digest(service + usercode + username + email + phone + time)|
 
@@ -202,7 +204,7 @@ returnUrl 파라미터 존재시 지정된 returnUrl로 이동 , returnUrl 없�
 
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|
 |------------|--------|--------|------|--|----------|
-|SSO 로그인 상태 API|HTTPS|GET|UTF-8|JSON|사용자가 쿠키 정보를 기준으로 로그인 여부를 확인 후 JSON 형식의 데이터를 리턴|
+|SSO 로그인 상태 API|HTTPS|GET|UTF-8|JSON|사용자가 쿠키 정보를 기준으로 로그인 여부를 확인 후 JSON 형식의 데이터를 리턴. 서비스 측 Server에서 response에 Cross domain 접속 설정 필요|
 
 **사용자 시스템에서의 호출 방법**은 하단 Sample project의 다음과 같은 class를 참조해 주세요.
 - FormLoginController.java
@@ -232,7 +234,7 @@ returnUrl 파라미터 존재시 지정된 returnUrl로 이동 , returnUrl 없�
 
 ## 적용 예시
 ### Sample Code
-✔ [Sample Code 다운로드](http://static.toastoven.net/prod_contact_center/oc_sso_sample.zip)
+✔ [Sample Code 다운로드](http://static.toastoven.net/prod_contact_center/oc_sso_sample-20220228.zip)
 
 ### iframe을 이용한 헬프센터 예시
 #### 1. iframe을 이용하여 Online Contact 헬프센터를 사용자 페이지에 삽입
