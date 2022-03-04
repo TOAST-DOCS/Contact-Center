@@ -31,7 +31,7 @@
 
 ## 개발 명세서
 ### 인증토큰 생성
-Token 생성 샘플은 아래와 같습니다. 파라미터 순서는 반드시 아래와 일치해야 하며, 전체 관리 → SSO 로그인 메뉴에서 API Key를 확인해주세요.
+Token 생성 샘플은 아래와 같습니다. 파라미터 순서는 반드시 아래와 일치해야 하며, 전체 관리 → 계약 서비스 현황 → 조직 정보 메뉴에서 조직 Key를 확인해주세요.
 
 ```
 private String getSHA256Token(String serviceId, String usercode, String username, String email, String phone,
@@ -67,14 +67,14 @@ private String getSHA256Token(String serviceId, String usercode, String username
     return new String(Base64.encodeBase64(rawHmac));
 }
 ```
-### SSO 원격로그인 API (Client Side)
+### POST 원격로그인 API (Client Side)
 #### 인터페이스 설명
 - URL: https://{domain}.oc.toast.com/v2/enduser/remote.json			
 - URL (개발): https://{domain}.alpha-oc.toast.com/v2/enduser/remote.json		
 
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|
 |------------|-------|--------|-----|--------|--------------|
-|SSO 원격로그인 API (Client Side)|HTTPS  |POST    |UTF-8|Redirect    |사용자 시스템에서 동적으로 form를 생성하여 브라우저에 반환하며, form은 자동으로 API에 form정보를 전달. API에서 전달된 form정보로 인증 후 성공시 로그인 Cookie 값 설정.|
+|POST 원격로그인 API (Client Side)|HTTPS  |POST    |UTF-8|Redirect    |사용자 시스템에서 동적으로 form를 생성하여 브라우저에 반환하며, form은 자동으로 API에 form정보를 전달. API에서 전달된 form정보로 인증 후 성공시 로그인 Cookie 값 설정.|
 
 **사용자 시스템에서의 호출 방법**은 하단 Sample project의 다음과 같은 class를 참조해 주세요.
 
@@ -97,14 +97,14 @@ private String getSHA256Token(String serviceId, String usercode, String username
 #### 결과 데이터
 returnUrl 파라미터 존재시 지정된 returnUrl로 이동 , returnUrl 없을 경우 문자열 : SUCCESS 반환
 
-### SSO 원격로그인 API (Server Side)
+### POST 원격로그인 API (Server Side)
 #### 인터페이스 설명
 - URL: https://{domain}.oc.toast.com/api/v2/enduser/remote.json			
 - URL (개발): https://{domain}.alpha-oc.toast.com/api/v2/enduser/remote.json			
 
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|
 |------------|-------|--------|-----|--------|--------------|
-|SSO 원격로그인 API (Server Side)|HTTPS  |POST    |UTF-8|String   |사용자가 서버에서 직접 API 호출. API 로그인 성공 후 로그인 Cookie 값 설정.|
+|POST 원격로그인 API (Server Side)|HTTPS  |POST    |UTF-8|String   |사용자가 서버에서 직접 API 호출. API 로그인 성공 후 로그인 Cookie 값 설정.|
   
 **사용자 시스템에서의 호출 방법**은 하단 Sample project의 다음과 같은 class를 참조해 주세요.
 
@@ -140,14 +140,14 @@ returnUrl 파라미터 존재시 지정된 returnUrl로 이동 , returnUrl 없�
 리턴된 content 값은 헬프센터 호출 시, 해당 값을 헬프센터 URL 파라미터 - accessToken 값으로 지정하여 OC에 전달.
 예시: https://nhn-cs.alpha-oc.toast.com/hangame/hc/?accessToken=xxxxxxaccessTokenxxxxxxx
 
-### SSO 로그인 URL (사용자)
+### POST 로그인 URL (사용자)
 #### 인터페이스 설명
 - URL: 사용자 제공			
 - URL (개발): 사용자 제공	
 
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|
 |------------|--------|--------|------|------|
-|SSO 로그인 URL|HTTPS|GET|UTF-8||Redirect|
+|POST 로그인 URL|HTTPS|GET|UTF-8||Redirect|
 
 서비스 측 로그인 URL은 아래 기능을 제공해야 합니다.
 
@@ -197,14 +197,14 @@ returnUrl 파라미터 존재시 지정된 returnUrl로 이동 , returnUrl 없�
   - 예시) https://nhn-cs.alpha-oc.toast.com/multilanguage/hc/ticket/list/?usercode=xxxxxx@163.com&time=1566531359635
 - ④ {returnUrl}로 이동
  
-### SSO 로그인 상태 URL (사용자)
+### POST 로그인 상태 URL (사용자)
 #### 인터페이스 설명
 - URL: 사용자 제공			
 - URL (개발): 사용자 제공	
 
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|
 |------------|--------|--------|------|--|----------|
-|SSO 로그인 상태 API|HTTPS|GET|UTF-8|JSON|사용자가 쿠키 정보를 기준으로 로그인 여부를 확인 후 JSON 형식의 데이터를 리턴. 서비스 측 Server에서 response에 Cross domain 접속 설정 필요|
+|POST 로그인 상태 API|HTTPS|GET|UTF-8|JSON|사용자가 쿠키 정보를 기준으로 로그인 여부를 확인 후 JSON 형식의 데이터를 리턴. 서비스 측 Server에서 response에 Cross domain 접속 설정 필요|
 
 **사용자 시스템에서의 호출 방법**은 하단 Sample project의 다음과 같은 class를 참조해 주세요.
 - FormLoginController.java
