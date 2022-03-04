@@ -67,7 +67,7 @@ private String getSHA256Token(String serviceId, String usercode, String username
 }
 ```
 
-### Token 회원인증 방법
+### GET 회원인증 방법
 #### 인터페이스 설명
 
 URL
@@ -84,7 +84,7 @@ URL (개발)
   
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|
 |------------|-------|--------|-----|--------|--------------|
-|Token 회원인증 |HTTPS |GET |UTF-8 | |서비스 측에서 헬프센터 접속 시, 고객정보 및 암호화 후 생성된 token 값을 파라미터 형태로 전송 |
+|GET 회원인증 |HTTPS |GET |UTF-8 | |서비스 측에서 헬프센터 접속 시, 고객정보 및 암호화 후 생성된 token 값을 파라미터 형태로 전송 |
 
 #### 파라미터
 |명칭|변수|데이터 타입|필수|설명|
@@ -94,8 +94,9 @@ URL (개발)
 |유저 명	  |username	 |VARCHAR(50)	 |X	 |유저 명|
 |유저 이메일	|email	  |VARCHAR(100)	|O	|유저 이메일|
 |전화번호	   |phone	   |VARCHAR(20)	 |X	 |전화번호|
+|회원번호	|memberno	|VARCHAR(50)	|X	|회원번호|
 |timestamp	|time	    |LONG	        |O	|시간단위 : 밀리초|
-|인증Token	|token	  |VARCHAR	     |O	|다음 파라미터 값과 조직 Key로 계산(SHA256). (선택사항 값이 null 혹은 없을 경우, token 생성에서 제외. 주의사항 : 문자열에서 각 값의 순서는 다음과 동일해야 함) SHA256Digest(service + usercode + username + email + phone + retunrnUrl + time)|아ㅣㄴ
+|인증Token	|token	  |VARCHAR	     |O	|다음 파라미터 값과 조직 Key로 계산(SHA256). (선택사항 값이 null 혹은 없을 경우, token 생성에서 제외. 주의사항 : 문자열에서 각 값의 순서는 다음과 동일해야 함) SHA256Digest(service + usercode + username + email + phone + retunrnUrl + time)|
 
 ##### 인증 Token 생성 시 주의사항
 1. Token 생성 시, 한글이 있을 경우 한글로 직접 생성. 인코딩 필요 없음
