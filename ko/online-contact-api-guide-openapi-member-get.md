@@ -30,7 +30,7 @@
 
 ## 개발 명세서
 ### 인증토큰 생성
-Token 생성 샘플은 아래와 같습니다. 파라미터 순서는 반드시 아래와 일치해야 하며, 전체 관리 → SSO 로그인 메뉴에서 API Key를 확인해주세요.
+Token 생성 샘플은 아래와 같습니다. 파라미터 순서는 반드시 아래와 일치해야 하며, 전체 관리 → 계약 서비스 현황 → 조직 정보 메뉴에서  Key를 확인해주세요.
 
 ```
 private String getSHA256Token(String serviceId, String usercode, String username, String email, String phone,
