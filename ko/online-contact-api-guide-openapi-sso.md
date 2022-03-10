@@ -91,7 +91,7 @@ private String getSHA256Token(String serviceId, String usercode, String username
 |전화번호	          |phone	|Varchar(20)	|X	|전화번호|
 |회원번호	          |memberno	|Varchar(50)	|X	|회원번호|
 |현재 시간의 timestamp	|time	|Long	|O	|호출 시간이 3분 초과시, 타임아웃 얼럿 출력.|
-|인증 Token	           |token	|Varchar	|O	|아래 파라미터 값과 SSO API Key로 산출된 SHA256 (필수가 아닌 파라미터 값이 null 혹은 빈값일 경우 , 암호화 문자열에 추가 할 필요 없음.주의：문자열 중 각 값의 순서는 아래 예시에 지정된 순서와 일치해야 함.) SHA256Digest(service + usercode + username + email + phone + retunrnUrl + time)|
+|인증 Token	           |token	|Varchar	|O	|아래 파라미터 값과 SSO API Key로 산출된 SHA256 (필수가 아닌 파라미터 값이 null 혹은 빈값일 경우 , 암호화 문자열에 추가 할 필요 없음.주의：문자열 중 각 값의 순서는 아래 예시에 지정된 순서와 일치해야 함.) SHA256Digest(service + usercode + username + email + phone + memberno + returnUrl + time)|
 |리턴 화면 URL	|returnUrl	|Varchar	|X	|설정 및 로그인 성공시 해당 주소로 이동|
 
 #### 결과 데이터
@@ -121,7 +121,7 @@ returnUrl 파라미터 존재시 지정된 returnUrl로 이동 , returnUrl 없�
 |전화번호	|phone	|Varchar(20)	|X	|전화번호|
 |회원번호	|memberno	|Varchar(50)	|X	|회원번호|
 |현재 시간의 timestamp	|time	|Long	|O	|호출 시간이 3분 초과시, 타임아웃 얼럿 출력.|
-|인증 Token	|token	|Varchar	|O	|아래 파라미터 값과 SSO API Key로 산출된 SHA256 (필수가 아닌 파라미터 값이 null 혹은 빈값일 경우 , 암호화 문자열에 추가 할 필요 없음.주의：문자열 중 각 값의 순서는 아래 예시에 지정된 순서와 일치해야 함.) SHA256Digest(service + usercode + username + email + phone + time)|
+|인증 Token	|token	|Varchar	|O	|아래 파라미터 값과 SSO API Key로 산출된 SHA256 (필수가 아닌 파라미터 값이 null 혹은 빈값일 경우 , 암호화 문자열에 추가 할 필요 없음.주의：문자열 중 각 값의 순서는 아래 예시에 지정된 순서와 일치해야 함.) SHA256Digest(service + usercode + username + email + phone + memberno + time)|
 
 #### Response Data
 ```
@@ -156,11 +156,11 @@ returnUrl 파라미터 존재시 지정된 returnUrl로 이동 , returnUrl 없�
 - 로그인 화면 출력
 - 계정/비밀번호로 로그인 진행
 - 로그인 성공 후 cookie 생성 및 로그인 상태 기록，로그인 상태 체크시 사용 됨
-- 로그인 성공 후 Client 혹은 Server단에서 고객 정보를 OC로 전달 (SSO 원격로그인 API Client Side, Server Side 참조)
+- 로그인 성공 후 Client 혹은 Server단에서 고객 정보를 OC로 전달 (POST 원격로그인 API Client Side, Server Side 참조)
 
 2) 사용자 로그인 상태
 
-- 로그인 성공 후 Client 혹은 Server단에서 고객 정보를 OC로 전달 (SSO 원격로그인 API Client Side, Server Side 참조)
+- 로그인 성공 후 Client 혹은 Server단에서 고객 정보를 OC로 전달 (POST 원격로그인 API Client Side, Server Side 참조)
 
 #### 요청 파라미터 정의
 |명칭	|변수	|데이터 타입	|필수	|설명|
@@ -173,26 +173,26 @@ returnUrl 파라미터 존재시 지정된 returnUrl로 이동 , returnUrl 없�
 - ① 로그인 화면으로 이동
 - ② 유저 로그인
 - ③ 서비스 측의 서버에서 유저 로그인 처리 및 로그인 유저 관련 쿠키 생성
-- ④ SSO 원격 로그인 API 호출
+- ④ POST 원격 로그인 API 호출
 
 2) 유저 로그인 상태
 
-- ① SSO 원격 로그인 API 호출
+- ① POST 원격 로그인 API 호출
 
-#### SSO 원격 로그인 API 호출 방법 설명
-1) SSO 원격 로그인 (Client Side)
+#### POST 원격 로그인 API 호출 방법 설명
+1) POST 원격 로그인 (Client Side)
 
 - ① 유저 정보와 API Key 기준으로 로그인 token 생성
 - ② 유저 정보와 token을 브라우저로 리다이렉트
-- ③ 화면에서 Form 작성, 상세한 파라미터는 [SSO 원격로그인 API (Client Side)](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-sso/#sso-api-client-side) 참조
+- ③ 화면에서 Form 작성, 상세한 파라미터는 [POST 원격로그인 API (Client Side)](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-sso/#sso-api-client-side) 참조
 - ④ Form 제출
-- ⑤ SSO 원격 로그인 API를 통해 유저 정보와 token 전송
+- ⑤ POST 원격 로그인 API를 통해 유저 정보와 token 전송
 - ⑥ 로그인 성공 후 {returnUrl}로 이동
 
-2) SSO 원격 로그인 (Server Side)
+2) POST 원격 로그인 (Server Side)
 
 - ① 유저 정보와 API Key 기준으로 로그인 token 생성
-- ② 서버에서 "SSO 원격 로그인 API (Server Side)" 호출
+- ② 서버에서 POST 원격 로그인 API (Server Side) 호출
 - ③ API 호출 파라미터 (usercode와 time)을 returnUrl 뒤에 추가 
   - 예시) https://nhn-cs.alpha-oc.toast.com/multilanguage/hc/ticket/list/?usercode=xxxxxx@163.com&time=1566531359635
 - ④ {returnUrl}로 이동
@@ -206,7 +206,13 @@ returnUrl 파라미터 존재시 지정된 returnUrl로 이동 , returnUrl 없�
 |------------|--------|--------|------|--|----------|
 |POST 로그인 상태 API|HTTPS|GET|UTF-8|JSON|사용자가 쿠키 정보를 기준으로 로그인 여부를 확인 후 JSON 형식의 데이터를 리턴. 서비스 측 Server에서 response에 Cross domain 접속 설정 필요|
 
-**사용자 시스템에서의 호출 방법**은 하단 Sample project의 다음과 같은 class를 참조해 주세요.
+**Cross domain 접속 설정** 방법은 하기 내용을 참조해 주세요.
+```
+response.addHeader("Access-Control-Allow-Origin", request.getHeader("origin"));
+response.addHeader("Access-Control-Allow-Credentials", "true");
+```
+
+**사용자 시스템에서의 구현 방법**은 하단 Sample project의 다음과 같은 class를 참조해 주세요.
 - FormLoginController.java
 - Method: loginStatus
 
@@ -217,7 +223,7 @@ returnUrl 파라미터 존재시 지정된 returnUrl로 이동 , returnUrl 없�
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |---------|---------|-----------|---------|----|
 |javascript function	|login	|Boolean	|O	|로그인 상태. 로그인 ：true, 미로그인 ：false|
-|유저 코드	|usercode	|Varchar(50)	|X	|유저 ID(유니크 값). 로그인 상태가 true 인 경우 유저코드는 필수|
+|유저 ID	|usercode	|Varchar(50)	|X	|유저 ID(유니크 값). 로그인 상태가 true 인 경우 유저코드는 필수|
 
 #### Response Body
 ```
@@ -273,7 +279,7 @@ iframe.style.height = setHeight + margin + "px";
 };
 ```
 
-#### 3. 로그인 처리 후 설정해야 할 쿠키는 사용자 페이지에서 취득 가능
+#### 3. 사용자 시스템에서 login 후 설정해야 할 cookie는 사용자 페이지에서 취득 가능
 help_frame.ftl 파일 중 javascript 코드를 참조해주세요.
 ```
 // get cookie
