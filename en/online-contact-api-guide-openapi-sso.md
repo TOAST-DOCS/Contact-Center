@@ -2,35 +2,37 @@
 
 ## Member Integration
 ### Overview
-Member Intergration function is designed to apply the membership confirmation process of the service provided by the customer company to the Online Contact help center so that the inquiry of the customer can be received and checked again. Member Integration is provided in two types: GET method and POST method. For integrating, you need to develop the API according to the development specifications Online Contact provide and register it on the Member Integration screen.
+Member Intergration function is designed to apply membership confirmation process of the client to the Online Contact help center. Through this function, members of the client service could submit member inquiries, and check the history of previous inquiries. Member Integration is provided in two types: GET method and POST method. For integrating, API needs to be developed according to the development specifications Online Contact provide.
 
 #### POST Method
-- It is suitable if the service you want to link to is provided based on WEB on both PC and MOBILE platforms.
-- The login screen of the service must be provided in WEB URL format to be used.
-- In API specifications, two types are provided in detail: CLIENT-SIDE and SERVICER-SIDE.
+- It is suitable if the service you are trying to integrate is provided based on WEB on both PC and MOBILE platforms.
+- The login page of the service must be provided in WEB URL format.
+- Client-side API, Servicer-side API are provided.
 
 #### GET Method
-- Suitable for services without WEB-based login screen.
-- Suitable for Native APP services that are not WEB-based.
+- Suitable for services without WEB-based login page.
+- Suitable for Native APP services which are not WEB-based.
 
 ### Process (POST Method)
 ① User accesses to 'Inquiry' or 'Inquiry History' page in the help center.
-② Call the login status URL on the help center page to check login status (Login status URL should be developed according to the specifications provided below and registered on the Online Contact Member Integration page.)
-③ According to the result of checking login status,
-③-1. If the user is not logged in, call 'Login URL' of the customer service to lead to log in (Login URL is the login page URL provided by the customer company and must be registered on the Online Contact Member Integration screen.)
-③-2. If the user is logged in, call 'Remote Login API' to deliver customer information to Online Contact Help Center.
-④ Access to 'Inquiry' or 'Inquiry History' page.
+② In help center page, call login status URL to check login status (Login status URL should be developed according to the specifications provided below, and registered in Member Integration menu.)
+③ After checking the login status, depending on the result,
+③-1. If the user is not logged in, call 'Login URL' of the client service to encourage log in ('Login URL' is the login page URL provided by the client service. It must be registered in the Member Integration menu.)
+③-2. If the user is logged in, call 'Remote Login API' to deliver information of the customer to Online Contact help center.
+④ Access 'Inquiry' or 'Inquiry History' page.
 
 ### How to Integrate
 ![](http://static.toastoven.net/prod_contact_center/dev_post_(1)_en.png)
 ① Access Service Management > Help Center > Member Integration
-② Click Member integration activation > 'Enable' 
-③ Select the 'Login Type' that matches the characteristics of the service
-④ Develop necessary APIs and set URLs according to each type.
+② Enable member integration 
+③ Select the 'Login Type' which matches the characteristics of the service
+④ Develop and register necessary APIs according to the type
 
 ## Development Specifications
 ### Create Authentication Token
-Sample of creating token is as follows. The order of parameters must be consistent with the given example, and please check the SSO Login API key.
+The authentication token generation sample is as follows. The order of parameters must be consistent with the given example.
+OC Organization Key is available at Global Management → Contract Service Status → Organization Information menu.
+
 ```
 private String getSHA256Token(String serviceId, String usercode, String username, String email, String phone,
         String returnUrl, Long time, String apiKey) throws Exception {
@@ -66,16 +68,17 @@ private String getSHA256Token(String serviceId, String usercode, String username
 }
 ```
 
-### SSO Remote Login API (Client Side)
+### POST Remote Login API (Client Side)
 #### Interface Description
 - URL: https://{domain}.oc.toast.com/v2/enduser/remote.json			
 - URL (Dev): https://{domain}.alpha-oc.toast.com/v2/enduser/remote.json		
 
 |Interface name | Protocol | Call direction | Encoding | Result format | Interface description |
 |------------|-------|--------|-----|--------|--------------|
-|SSO Remote Login API (Client Side)|HTTPS  |POST    |UTF-8|Redirect    |The user system dynamically generates a form and returns it to the browser, which automatically passes form information to the API. Set login cookie value  with form information passed from API after authentication is successful.|
+|POST Remote Login API (Client Side)|HTTPS  |POST    |UTF-8|Redirect    |The user system dynamically generates a form and returns it to the browser, which automatically passes the information of the form to the API. After authentication with the form information delivered from the API, the login cookie value is set when authentication is successful.|
 
-Please refer to the following class in the sample project for the **method of calling in the user system**.
+Please refer to the following class in the sample project for **how to call in the user system**.
+
 - FormLoginController.java
 - Method: submitLogin  
 
@@ -86,24 +89,27 @@ Please refer to the following class in the sample project for the **method of ca
 |User ID 	   |usercode	|Varchar(50)	|O	|User ID, indicates that the user is unique|
 |Username	  |username	|Varchar(50)	|X	|Username|
 |User Email Address 	|email	|Varchar(100)	|X	|User Email|
-|Phone Number 	        |phone	|Varchar(20)	|X	|Phone number |
-|Timestamp of Current Time 	|time	|Long	|O	|Timeout alert is displayed when call time exceeded by 3 minutes|
-|Authentication Token	           |token	|Varchar	|O	|SHA256 calculated by following parameter values and SSO API key (If non-required parameter values are null or empty, you do not need to add them to the encryption string. Caution: The order of each value in the string must be consistent with the following example.) SHA256Digest(service + usercode + username + email + phone + retunrnUrl + time)|
-|Return Screen URL	|returnUrl	|Varchar	|X	|Go to the address upon successful configuration and login|
+|Phone Number 	        |phone	|Varchar(20)	|X	|Phone number|
+|Membership Number          |memberno |Varchar(50)  |X      |Membership Number|
+|Timestamp of Current Time 	|time	|Long	|O	|Timeout alert is displayed when the call time exceeds 3 minutes.|
+|Authentication Token	           |token	|Varchar	|O	|SHA256 calculated by following parameter values and SSO API key (If non-required parameter values are null or empty, they need not be added to the encryption string. Caution: The order of each value in the string must be consistent with the following example.) SHA256Digest(service + usercode + username + email + phone + memberno + returnUrl + time)|
+|Return page URL	|returnUrl	|Varchar	|X	|If settings and login are successful, move to the address|
 
 #### Result Data
-If returnUrl parameter exists, move to the specified returnUrl, return SUCCESS string if parameter doesn't exist.
+If returnUrl parameter exists, move to the specified returnUrl. 
+If returnUrl parameter does not exist, return SUCCESS string.
 
-### SSO Remote Login API (Server Side)
+### POST Remote Login API (Server Side)
 #### Interface Description
 - URL: https://{domain}.oc.toast.com/api/v2/enduser/remote.json			
 - URL (Dev): https://{domain}.alpha-oc.toast.com/api/v2/enduser/remote.json			
 
 |Interface name | Protocol | Call direction | Encoding | Result format | Interface description |
 |------------|-------|--------|-----|--------|--------------|
-|SSO Remote Login API (Server Side)|HTTPS  |POST    |UTF-8|String   |User directly calls API from server. Set login cookie value after API Login has succeeded.|
+|POST Remote Login API (Server Side)|HTTPS  |POST    |UTF-8|String   |User directly calls API from the server. Login cookie value is set after API Login has succeeded.|
 
-Please refer to the following class in the sample project for the **method of calling in the user system**.
+Please refer to the following class in the sample project for the **how to call in the user system**.
+
 - ApiLoginController.java
 - Method: submitLogin     
 
@@ -115,8 +121,9 @@ Please refer to the following class in the sample project for the **method of ca
 |User Name 	|username	|Varchar(50)	|X	|User name|
 |User Email Address	|email	|Varchar(100)	|X	|User email|
 |Phone Number	|phone	|Varchar(20)	|X	|Phone number|
-|Timestamp of Current Time	|time	|Long	|O	|Timeout alert is displayed when call time exceeded by 3 minutes.|
-|Authentication Token 	|token	|Varchar	|O	|SHA256 calculated by following parameter values and SSO API key (If non-required parameter values are null or empty, you do not need to add them to the encryption string. Caution: The order of each value in the string must be consistent with the following example.) SHA256Digest(service + usercode + username + email + phone + time)|
+|Membership number |memberno |Varchar(50) |X    |Membership number|
+|Timestamp of Current Time	|time	|Long	|O	|Timeout alert is displayed when the call time exceeds 3 minutes.|
+|Authentication Token 	|token	|Varchar	|O	|SHA256 calculated by following parameter values and SSO API key (If non-required parameter values are null or empty, they need not be added to the encryption string. Caution: The order of each value in the string must be consistent with the following example.) SHA256Digest(service + usercode + username + email + phone + memberno + time)|
 
 #### Response Data
 ```
@@ -132,14 +139,14 @@ Please refer to the following class in the sample project for the **method of ca
 }	
 ```
 
-The returned content value is assigned to the parameter - accessToken value of the Help Center URL when Help Center is called, and delivered to Online Contact.  
+When help center is called, the returned content value is delivered to Online Contact by the Help Center URL as 'accessToken' parameter.
 Example : https://nhn-cs.alpha-oc.toast.com/hangame/hc/?accessToken=xxxxxxaccessTokenxxxxxxx
  
-### SSO Login URL (User)
+### POST Login URL (User)
 #### Interface Description
 |Interface name|Protocol|Call direction|Encoding|URL|URL(Dev)|Result format|
 |------------|--------|--------|------|--|----------|--------|
-|SSO Login URL|HTTPS|GET|UTF-8|Provided by user|Provided by user|Redirect|
+|POST Login URL|HTTPS|GET|UTF-8|Provided by user|Provided by user|Redirect|
 
 Login URL of the service side should provide the following functions:
 
