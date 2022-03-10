@@ -96,7 +96,7 @@ URL (개발)
 |전화번호	   |phone	   |VARCHAR(20)	 |X	 |전화번호|
 |회원번호	|memberno	|VARCHAR(50)	|X	|회원번호|
 |timestamp	|time	    |LONG	        |O	|시간단위 : 밀리초|
-|인증Token	|token	  |VARCHAR	     |O	|다음 파라미터 값과 조직 Key로 계산(SHA256). (선택사항 값이 null 혹은 없을 경우, token 생성에서 제외. 주의사항 : 문자열에서 각 값의 순서는 다음과 동일해야 함) SHA256Digest(service + usercode + username + email + phone + memberno + retunrnUrl + time)|
+|인증Token	|token	  |VARCHAR	     |O	|다음 파라미터 값과 조직 Key로 계산(SHA256). (선택사항 값이 null 혹은 없을 경우, token 생성에서 제외. 주의사항 : 문자열에서 각 값의 순서는 다음과 동일해야 함) SHA256Digest(service + usercode + username + email + phone + memberno + returnUrl + time)|
 
 ##### 인증 Token 생성 시 주의사항
 1. Token 생성 시, 한글이 있을 경우 한글로 직접 생성. 인코딩 필요 없음
