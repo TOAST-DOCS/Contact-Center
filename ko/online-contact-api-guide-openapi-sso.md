@@ -91,7 +91,7 @@ private String getSHA256Token(String serviceId, String usercode, String username
 |전화번호	          |phone	|Varchar(20)	|X	|전화번호|
 |회원번호	          |memberno	|Varchar(50)	|X	|회원번호|
 |현재 시간의 timestamp	|time	|Long	|O	|호출 시간이 3분 초과시, 타임아웃 얼럿 출력.|
-|인증 Token	           |token	|Varchar	|O	|아래 파라미터 값과 SSO API Key로 산출된 SHA256 (필수가 아닌 파라미터 값이 null 혹은 빈값일 경우 , 암호화 문자열에 추가 할 필요 없음.주의：문자열 중 각 값의 순서는 아래 예시에 지정된 순서와 일치해야 함.) SHA256Digest(service + usercode + username + email + phone + memberno + returnUrl + time)|
+|인증 Token	           |token	|Varchar	|O	|아래 파라미터 값과 조직 Key로 산출된 SHA256 (필수가 아닌 파라미터 값이 null 혹은 빈값일 경우 , 암호화 문자열에 추가 할 필요 없음.주의：문자열 중 각 값의 순서는 아래 예시에 지정된 순서와 일치해야 함.) SHA256Digest(service + usercode + username + email + phone + memberno + returnUrl + time)|
 |리턴 화면 URL	|returnUrl	|Varchar	|X	|설정 및 로그인 성공시 해당 주소로 이동|
 
 #### 결과 데이터
@@ -121,7 +121,7 @@ returnUrl 파라미터 존재시 지정된 returnUrl로 이동 , returnUrl 없�
 |전화번호	|phone	|Varchar(20)	|X	|전화번호|
 |회원번호	|memberno	|Varchar(50)	|X	|회원번호|
 |현재 시간의 timestamp	|time	|Long	|O	|호출 시간이 3분 초과시, 타임아웃 얼럿 출력.|
-|인증 Token	|token	|Varchar	|O	|아래 파라미터 값과 SSO API Key로 산출된 SHA256 (필수가 아닌 파라미터 값이 null 혹은 빈값일 경우 , 암호화 문자열에 추가 할 필요 없음.주의：문자열 중 각 값의 순서는 아래 예시에 지정된 순서와 일치해야 함.) SHA256Digest(service + usercode + username + email + phone + memberno + time)|
+|인증 Token	|token	|Varchar	|O	|아래 파라미터 값과 조직 Key로 산출된 SHA256 (필수가 아닌 파라미터 값이 null 혹은 빈값일 경우 , 암호화 문자열에 추가 할 필요 없음.주의：문자열 중 각 값의 순서는 아래 예시에 지정된 순서와 일치해야 함.) SHA256Digest(service + usercode + username + email + phone + memberno + time)|
 
 #### Response Data
 ```
@@ -213,6 +213,7 @@ response.addHeader("Access-Control-Allow-Credentials", "true");
 ```
 
 **사용자 시스템에서의 구현 방법**은 하단 Sample project의 다음과 같은 class를 참조해 주세요.
+
 - FormLoginController.java
 - Method: loginStatus
 
