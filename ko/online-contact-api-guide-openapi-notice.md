@@ -1565,7 +1565,7 @@
 ### 공지사항 말머리 목록 조회
 #### 인터페이스 설명
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v2/notice/categories.json												 
-- URL: https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v2/notice/categories.json											
+- URL(개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v2/notice/categories.json											
 
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|
 |------------|-------|--------|-----|--------|--------------|
