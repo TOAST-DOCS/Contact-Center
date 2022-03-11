@@ -150,53 +150,67 @@ Example : https://nhn-cs.alpha-oc.toast.com/hangame/hc/?accessToken=xxxxxxaccess
 
 Login URL of the service side should provide the following functions:
 
-1) User not logged in
+**1) If user is not logged in**
+
 - Show login page
 - Proceed to login with id/password
 - Used to create cookie, record login status, and check login status after login success.
-- After login success, the client or server passes customer information to Online Contact (See SSO Remote Login API Client Side, Server Side)
+- After login has succeeded, create cookie and record login status. Used to check login status.
+- After login has succeeded, client or server passes customer information to Online Contact (Refer to POST Remote Login API Client Side, Server Side)
 
-2) User logged in
-- After login success, the client or server passes customer information to Online Contact (See SSO Remote Login API Client Side, Server Side)
+**2) If user is logged in**
+
+- After login has succeeded, client or server passes customer information to Online Contact (Refer to POST Remote Login API Client Side, Server Side)
 
 #### Request Parameters
 |Name |Variable |Data type |Required | Description|
 |---------|---------|-----------|---------|----|
-|Return URL	|returnUrl	|Varchar	|O	|URL to be moved after successfully logged-in|
+|Return URL	|returnUrl	|Varchar	|O	|If login has succeeded, move to the URL|
 
-#### SSO Login Function Description
-**User Not Logged In**
-- ① Move to login screen
+#### POST Login Function Description
+**1) If user is not logged In**
+
+- ① Move to login page
 - ② User logs in
-- ③ Service-side server processes user to be logged in, and create logged-in user-related cookies
-- ④ Call SSO remote login API
+- ③ Service-side server processes user login, creates user-related cookies
+- ④ Call POST remote login API
 
-**User Logged In**
-- ① Call SSO remote login API
+**2) If user is logged in**
 
-#### How to Call SSO Remote Login API
-**SSO Remote Login (Client Side)**
+- ① Call POST remote login API
+
+#### How to Call POST Remote Login API
+**1) POST Remote Login (Client Side)**
+
 - ① Create login token based on user information, API key
 - ② Redirect user information, token to browser
-- ③ Input Form in screen, Refer SSO Remote Login API (Client Side) about parameter details.
+- ③ Create Form. Refer POST Remote Login API (Client Side) about parameter details.
 - ④ Submit form
-- ⑤ Send user information, token through SSO Remote Login API
-- ⑥ Move to {returnUrl} after log-in succeeded
+- ⑤ Send user information, token through POST Remote Login API
+- ⑥ Move to {returnUrl} after login
 
-**SSO Remote Login (Server Side)**
+**2) POST Remote Login (Server Side)**
+
 - ① Create login token based on user information, API Key
-- ② Call “SSO Remote Login API (Server Side)” in server
+- ② Call POST Remote Login API (Server Side) in server
 - ③ Append API call parameters (usercode, time) in the end of returnUrl
   - Example) https://nhn-cs.alpha-oc.toast.com/multilanguage/hc/ticket/list/?usercode=xxxxxx@163.com&time=1566531359635
 - ④ Move to {returnUrl}
  
-### SSO Login Status API (User)
+### POST Login Status API (User)
 #### Interface Description
 |Interface name|Protocol|Call direction|Encoding|URL|URL(Dev)|Interface Description|Result format|
 |------------|--------|--------|------|--|----------|--------|--------------|
-|SSO Login status API |HTTPS|GET|UTF-8|Provided by user|Provided by user|User returns JSON data after confirming login based on cookie information|JSON|
+|POST Login status API |HTTPS|GET|UTF-8|Provided by user|Provided by user|User returns JSON data after confirming login based on cookie information. Service-side server requires cross domain connection settings for response.|JSON|
 
-Please refer to the following class in the sample project for the **method of calling in the user system**.
+Please refer to the following information on how to set up **cross domain connection**.
+```
+response.addHeader("Access-Control-Allow-Origin", request.getHeader("origin"));
+response.addHeader("Access-Control-Allow-Credentials", "true");
+```
+
+Please refer to the following class in the sample project for **how to call in the user system**.
+
 - FormLoginController.java
 - Method: loginStatus
 
@@ -206,8 +220,8 @@ Please refer to the following class in the sample project for the **method of ca
 #### Result Data
 |Name |Variable |Data type |Required | Description|
 |---------|---------|-----------|---------|----|
-|Javascript Function	|login	|Boolean	|O	|Login status. Logged-in：true, Logged-out：false|
-|User Code	|usercode	|Varchar(50)	|X	|User ID (Unique). Required if login status is true|
+|javascript function	|login	        |Boolean	|O	|Login status. Logged-in：true, Logged-out：false|
+|User Code	        |usercode	|Varchar(50)	|X	|User ID (Unique). Required if login status is true|
 
 #### Response Body
 ```
@@ -224,11 +238,11 @@ Please refer to the following class in the sample project for the **method of ca
 
 ## Examples of applications
 ### Sample Code
-✔ [Download Sample Code](http://static.toastoven.net/prod_contact_center/oc_sso_sample.zip)
+✔ [Download Sample Code](https://static.toastoven.net/prod_contact_center/oc_sso_sample-20220228.zip)
 
 ### Help center example by using iframe
-#### 1. Insert Online Contact Help center into user page by ifrmae
-Please refer'oc_sso_sample/src/main/resources/templates/help_frame.ftl' in attached Sample Code file.
+#### 1. Insert Online Contact Help center into user page by iframe
+Please refer'oc_sso_sample/src/main/resources/templates/help_frame.ftl' in the attached Sample Code file.
 The name of iframe must be specified into id = "ocPage".
 ```
 <iframe src="https://${domain}/hangame/hc/?iframe=true" id="ocPage" frameborder="0" scrolling="no" style="padding-top: 60px; box-sizing: unset; height: 100px; width: 100%">
