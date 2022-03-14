@@ -2,34 +2,36 @@
 
 ## Member Integration
 ### Overview
-Member Intergration function is designed to apply the membership confirmation process of the service provided by the customer company to the Online Contact help center so that the inquiry of the customer can be received and checked again. Member Integration is provided in two types: GET method and POST method. For integrating, you need to develop the API according to the development specifications Online Contact provide and register it on the Member Integration screen.
+Member Intergration function is designed to apply membership confirmation process of the client to the Online Contact help center. Through this function, members of the client service could submit member inquiries, and check the history of previous inquiries. Member Integration is provided in two types: GET method and POST method. For integrating, API needs to be developed according to the development specifications Online Contact provide.
 
 #### POST Method
-- It is suitable if the service you want to link to is provided based on WEB on both PC and MOBILE platforms.
-- The login screen of the service must be provided in WEB URL format to be used.
-- In API specifications, two types are provided in detail: CLIENT-SIDE and SERVICER-SIDE.
+- It is suitable if the service you are trying to integrate is provided based on WEB on both PC and MOBILE platforms.
+- The login page of the service must be provided in WEB URL format.
+- Client-side API, Servicer-side API are provided.
 
 #### GET Method
-- Suitable for services without WEB-based login screen.
-- Suitable for Native APP services that are not WEB-based.
+- Suitable for services without WEB-based login page.
+- Suitable for Native APP services which are not WEB-based.
 
 ### Process (GET Method)
-① The user connects to the help center within the APP.
+① The user accesses to the help center within the APP.
 ② The APP of the customer company is called in the URL format below when help center is called.
+② The client APP calls the help center through the URL format below.
 - https://**{org}**.oc.toast.com/**{service}**/hc/?usercode=**{user_id}**&username=**{user_name}**&email=**{user_email}**&phone=**{user_phonenumber}**&token=**{verification_token_value}**
-③ Help center calls the 'Token Verification URL'. (Token verification URL must be developed according to the specifications provided below by the customer company, and should be registered on member integration menu of Online Contact.)
-④ After verification of the token, access towards the 'Inquiry' or 'Inquiry History' page is allowed if the status is success. If the verification fails, the inquiry will be received as non-member inquiry.
+③ Help center calls 'Token Verification URL'. (Token verification URL must be developed according to the specifications provided below, and should be registered in member integration menu.)
+④ If the verification result is successful after token verification, access the 'Inquiry' or 'Inquiry History' page. If the verification fails, the inquiry will be submitted as non-member inquiry.
 
 ### How to Integrate
 ![](http://static.toastoven.net/prod_contact_center/dev_post_(2)_en.png)
 ① Access Service Management > Help Center > Member Integration
-② Click Member integration activation > 'Enable' 
-③ Select the 'Login Type' that matches the characteristics of the service
-④ Develop necessary APIs and set URLs according to each type.
+② Enable member integration 
+③ Select the 'Login Type' which matches the characteristics of the service
+④ Develop and register necessary APIs according to the type
 
 ## Development Specifications
 ### Create Verification Token
-Sample of creating token is as follows. The order of parameters must be consistent with the given example, and please check the SSO Login API key.
+The authentication token generation sample is as follows. The order of parameters must be consistent with the given example.
+OC Organization Key is available at Global Management → Contract Service Status → Organization Information menu.
 
 ```
 private String getSHA256Token(String serviceId, String usercode, String username, String email, String phone,
@@ -66,42 +68,45 @@ private String getSHA256Token(String serviceId, String usercode, String username
 }
 ```
 
-### Method of Token Member Verification
+### Method of GET Member Verification
 #### Interface Description
 
 URL
+
 - https://{org}.oc.toast.com/{service}/hc/?usercode=aaaabbb&username=yzg&email=yzgname@163.com&phone=12345678901&time=12345678&token=8NPaBegAfbSvh1Lna9M0I1wBqjnoRyKO2r2izhuEAng%3d
 - https://{org}.oc.toast.com/{service}/hc/ticket/?usercode=aaaabbb&username=yzg&email=yzgname@163.com&phone=12345678901&time=12345678&token=8NPaBegAfbSvh1Lna9M0I1wBqjnoRyKO2r2izhuEAng%3d
 - https://{org}.oc.toast.com/{service}/hc/ticket/list/?usercode=aaaabbb&username=yzg&email=yzgname@163.com&phone=12345678901&time=12345678&token=8NPaBegAfbSvh1Lna9M0I1wBqjnoRyKO2r2izhuEAng%3d
 
 URL (Dev)
+
 - https://{domain}.alpha-oc.toast.com/{service}/hc/?usercode=aaaabbb&username=yzg&email=yzgname@163.com&phone=12345678901&time=12345678&token=8NPaBegAfbSvh1Lna9M0I1wBqjnoRyKO2r2izhuEAng%3d
 - https://{domain}.alpha-oc.toast.com/{service}/hc/ticket/?usercode=aaaabbb&username=yzg&email=yzgname@163.com&phone=12345678901&time=12345678&token=8NPaBegAfbSvh1Lna9M0I1wBqjnoRyKO2r2izhuEAng%3d
 - https://{domain}.alpha-oc.toast.com/{service}/hc/ticket/list/?usercode=aaaabbb&username=yzg&email=yzgname@163.com&phone=12345678901&time=12345678&token=8NPaBegAfbSvh1Lna9M0I1wBqjnoRyKO2r2izhuEAng%3d
 
 |Interface name | Protocol | Call direction | Encoding | Result format | Interface description |
 |------------|-------|--------|-----|--------|--------------|
-|Token Member Verification |HTTPS |GET |UTF-8 | |When accessing help center from service side, the token value generated after customer information encryption is sent in parameter form. |
+|GET Member Verification |HTTPS |GET |UTF-8 | |When the help center is accessed from the service side, the interface is called by adding customer information and token value to the URL as parameters.|
 
 #### Parameters
 |Name |Variable |Data type |Required | Description|
 |-----|----|------------|----|----|
-|Service ID	|service	|Varchar(50)	|O	|Service ID|
-|User ID 	   |usercode	|Varchar(50)	|O	|User ID, indicates that the user is unique|
-|Username	  |username	|Varchar(50)	|X	|Username|
-|User Email Address 	|email	|Varchar(100)	|O	|User Email|
-|Phone Number 	        |phone	|Varchar(20)	|X	|Phone number |
+|Service ID	|service	|VARCHAR(50)	|O	|Service ID|
+|User ID 	   |usercode	|VARCHAR(50)	|O	|User ID, indicates that the user is unique|
+|Username	  |username	|VARCHAR(50)	|X	|Username|
+|User Email Address 	|email	|VARCHAR(100)	|O	|User email|
+|Phone Number 	        |phone	|VARCHAR(20)	|X	|Phone number |
+|Membership Number	|memberno	|VARCHAR(50)	|X	|Membership number|
 |Timestamp of Current Time 	|time	|Long	|O	|Time unit : milliseconds|
-|Authentication Token	           |token	|Varchar	|O	|Calculated by the following parameters and organization key (SHA256). (If non-required parameter values are null or empty, you do not need to add them to the encryption string. Caution: The order of each value in the string must be consistent with the following example.) SHA256Digest(service + usercode + username + email + phone + retunrnUrl + time)|
+|Authentication Token	           |token	|VARCHAR	|O	|Calculated by the following parameters and organization key (SHA256). (If non-required parameter values are null or empty, they need not be added to the encryption string. Caution: The order of each value in the string must be consistent with the following example.) SHA256Digest(service + usercode + username + email + phone + memberno + returnUrl + time)|
 
 ##### Precautions for Creating Authentication Token
-1. When creating token, if there is Hangul, create directly in Korean. No encoding required.
-2. When using created token as URL parameter, encoding is required by encodeURIComponent().  
+1. If korean alphabet is within the parameters when creating a token, create it directly in korean alphabet without encoding.
+2. Encoding by encodeURIComponent() is required when the generated token is used as URL parameter.
 
 #### Result Data
-- Token Verification Success: Move to the member access address
-- Token Verification Fail: Move to the non-member access address	
-- If the user accesses to 'Inquiry History' in token verification fail status, the screen moves to 'Inquiry' screen.
+- Verification Success: Move to member access address
+- Verification Fail: Move to non-member access address	
+- When accessing 'Inquiry History' page in token verification failure state, it will be moved to 'Inquiry' page.
 
 ### Token Verification API (Service Side)
 #### Interface Description
@@ -116,7 +121,7 @@ URL (Dev)
 |Name |Variable |Data type |Required | Description|
 |---------|---------|-----------|---------|----|
 |User ID	|usercode	|VARCHAR(50)	|O	|User ID(Unique value)|
-|Token Created by Service Side	|token	|VARCHAR	|O	|Calculated by the following parameters and organization key (SHA256). (If non-required parameter values are null or empty, you do not need to add them to the encryption string. Caution: The order of each value in the string must be consistent with the following example.) SHA256Digest(service + usercode + username + email + phone + retunrnUrl + time)|
+|Token Created by Service Side	|token	|VARCHAR	|O	|Calculated by the following parameters and organization key (SHA256). (If non-required parameter values are null or empty, they need not be added to the encryption string. Caution: The order of each value in the string must be consistent with the following example.) SHA256Digest(service + usercode + username + email + phone + memberno + returnUrl + time)|
 
 #### Response Body
 ```
