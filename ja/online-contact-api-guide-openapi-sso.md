@@ -73,7 +73,7 @@ private String getSHA256Token(String serviceId, String usercode, String username
 
 |インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|
 |------------|-------|--------|-----|--------|--------------|
-|POST遠隔ログインAPI (Client Side)|HTTPS  |POST    |UTF-8|Redirect    |ユーザーシステムで動的にformを生成してブラウザに返し、formは自動的にAPIにform情報を伝達。 APIで配信されたform情報で認証後、成功時のログインCookie値設定。|
+|POST遠隔ログインAPI (Client Side)|HTTPS  |POST    |UTF-8|Redirect    |ユーザーシステムで動的にformを生成してブラウザに返し、formは自動的にAPIにform情報を伝達。 APIで配信されたform情報で認証後、成功時ログインCookie値設定。|
 
 **ユーザーシステムでの呼び出し方法**は、下段のSample  projectの次のようなclassを参照してください。
 
@@ -223,7 +223,7 @@ response.addHeader("Access-Control-Allow-Credentials", "true");
 |名称|変数|データタイプ|必須|説明|
 |---------|---------|-----------|---------|----|
 |javascript function	|login	|Boolean	|O	|ログイン状態. ログイン ：true, 未ログイン ：false|
-|ユーザーコード	|usercode	|Varchar(50)	|X	|ユーザーID(ユニーク値). ログイン状態がtrueの場合、ユーザーコードは必須|
+|ユーザーID	|usercode	|Varchar(50)	|X	|ユーザーID(ユニーク値). ログイン状態がtrueの場合、ユーザーコードは必須|
 
 #### Response Body
 ```
@@ -240,7 +240,7 @@ response.addHeader("Access-Control-Allow-Credentials", "true");
 
 ## 適用例
 ### Sample Code
-✔ [Sample Code ダウンロード](http://static.toastoven.net/prod_contact_center/oc_sso_sample.zip)
+✔ [Sample Code ダウンロード](https://static.toastoven.net/prod_contact_center/oc_sso_sample-20220228.zip)
 
 ### iframeを利用したヘルプセンターの例
 #### 1. iframeを利用してOnline  Contactヘルプセンターをユーザーページに挿入
