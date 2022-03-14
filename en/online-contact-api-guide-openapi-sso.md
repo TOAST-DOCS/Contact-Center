@@ -88,11 +88,11 @@ Please refer to the following class in the sample project for **how to call in t
 |Service ID	|service	|Varchar(50)	|O	|Service ID|
 |User ID 	   |usercode	|Varchar(50)	|O	|User ID, indicates that the user is unique|
 |Username	  |username	|Varchar(50)	|X	|Username|
-|User Email Address 	|email	|Varchar(100)	|X	|User Email|
+|User Email Address 	|email	|Varchar(100)	|X	|User email|
 |Phone Number 	        |phone	|Varchar(20)	|X	|Phone number|
-|Membership Number          |memberno |Varchar(50)  |X      |Membership Number|
+|Membership Number          |memberno |Varchar(50)  |X      |Membership number|
 |Timestamp of Current Time 	|time	|Long	|O	|Timeout alert is displayed when the call time exceeds 3 minutes.|
-|Authentication Token	           |token	|Varchar	|O	|SHA256 calculated by following parameter values and SSO API key (If non-required parameter values are null or empty, they need not be added to the encryption string. Caution: The order of each value in the string must be consistent with the following example.) SHA256Digest(service + usercode + username + email + phone + memberno + returnUrl + time)|
+|Authentication Token	           |token	|Varchar	|O	|SHA256 calculated by following parameter values and organization key (If non-required parameter values are null or empty, they need not be added to the encryption string. Caution: The order of each value in the string must be consistent with the following example.) SHA256Digest(service + usercode + username + email + phone + memberno + returnUrl + time)|
 |Return page URL	|returnUrl	|Varchar	|X	|If settings and login are successful, move to the address|
 
 #### Result Data
@@ -106,7 +106,7 @@ If returnUrl parameter does not exist, return SUCCESS string.
 
 |Interface name | Protocol | Call direction | Encoding | Result format | Interface description |
 |------------|-------|--------|-----|--------|--------------|
-|POST Remote Login API (Server Side)|HTTPS  |POST    |UTF-8|String   |User directly calls API from the server. Login cookie value is set after API Login has succeeded.|
+|POST Remote Login API (Server Side)|HTTPS  |POST    |UTF-8|String   |User directly calls API from the server. Login cookie value is set after API login has succeeded.|
 
 Please refer to the following class in the sample project for the **how to call in the user system**.
 
@@ -154,7 +154,6 @@ Login URL of the service side should provide the following functions:
 
 - Show login page
 - Proceed to login with id/password
-- Used to create cookie, record login status, and check login status after login success.
 - After login has succeeded, create cookie and record login status. Used to check login status.
 - After login has succeeded, client or server passes customer information to Online Contact (Refer to POST Remote Login API Client Side, Server Side)
 
@@ -221,7 +220,7 @@ Please refer to the following class in the sample project for **how to call in t
 |Name |Variable |Data type |Required | Description|
 |---------|---------|-----------|---------|----|
 |javascript function	|login	        |Boolean	|O	|Login status. Logged-in：true, Logged-out：false|
-|User Code	        |usercode	|Varchar(50)	|X	|User ID (Unique). Required if login status is true|
+|User ID	        |usercode	|Varchar(50)	|X	|User ID (Unique). Required if login status is true|
 
 #### Response Body
 ```
@@ -242,7 +241,7 @@ Please refer to the following class in the sample project for **how to call in t
 
 ### Help center example by using iframe
 #### 1. Insert Online Contact Help center into user page by iframe
-Please refer'oc_sso_sample/src/main/resources/templates/help_frame.ftl' in the attached Sample Code file.
+Please refer 'oc_sso_sample/src/main/resources/templates/help_frame.ftl' in the attached Sample Code file.
 The name of iframe must be specified into id = "ocPage".
 ```
 <iframe src="https://${domain}/hangame/hc/?iframe=true" id="ocPage" frameborder="0" scrolling="no" style="padding-top: 60px; box-sizing: unset; height: 100px; width: 100%">
