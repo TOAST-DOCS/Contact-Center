@@ -97,7 +97,7 @@ URL (Dev)
 |Phone Number 	        |phone	|VARCHAR(20)	|X	|Phone number |
 |Membership Number	|memberno	|VARCHAR(50)	|X	|Membership number|
 |Timestamp of Current Time 	|time	|Long	|O	|Time unit : milliseconds|
-|Authentication Token	           |token	|VARCHAR	|O	|Calculated by the following parameters and organization key (SHA256). (If non-required parameter values are null or empty, they need not be added to the encryption string. Caution: The order of each value in the string must be consistent with the following example.) SHA256Digest(service + usercode + username + email + phone + memberno + returnUrl + time)|
+|Authentication Token	           |token	|VARCHAR	|O	|Calculated by the following parameters and organization key (SHA256). (If non-required parameter values are null or empty, exclude from creating token. Caution: The order of each value in the string must be consistent with the following example.) SHA256Digest(service + usercode + username + email + phone + memberno + returnUrl + time)|
 
 ##### Precautions for Creating Authentication Token
 1. If korean alphabet is within the parameters when creating a token, create it directly in korean alphabet without encoding.
@@ -121,7 +121,7 @@ URL (Dev)
 |Name |Variable |Data type |Required | Description|
 |---------|---------|-----------|---------|----|
 |User ID	|usercode	|VARCHAR(50)	|O	|User ID(Unique value)|
-|Token Created by Service Side	|token	|VARCHAR	|O	|Calculated by the following parameters and organization key (SHA256). (If non-required parameter values are null or empty, they need not be added to the encryption string. Caution: The order of each value in the string must be consistent with the following example.) SHA256Digest(service + usercode + username + email + phone + memberno + returnUrl + time)|
+|Token Created by Service Side	|token	|VARCHAR	|O	|Calculated by the following parameters and organization key (SHA256). (If non-required parameter values are null or empty, exclude from creating token. Caution: The order of each value in the string must be consistent with the following example.) SHA256Digest(service + usercode + username + email + phone + memberno + returnUrl + time)|
 
 #### Response Body
 ```
