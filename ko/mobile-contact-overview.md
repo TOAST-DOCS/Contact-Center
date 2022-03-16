@@ -5,5 +5,6 @@
 ## 서비스 소개 및 기능
 
 ![](http://static.toastoven.net/prod_contact_center/img_summary_mc_202203_mod.png)
-![](http://static.toastoven.net/prod_contact_center/MC_overview_4_modified.png)
+![](http://static.toastoven.net/prod_contact_center/img_summary_mc_202203_2.png)
+
 
