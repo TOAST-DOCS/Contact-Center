@@ -123,6 +123,11 @@ When setting up the layout, you can set ticket related information to be automat
 
 ✔ **\[FAQ]** [How can I connect my external email to Online Contact?](https://nhn-contact.oc.toast.com/oceng/hc/article/127/)
 
+### Sensitive
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(15)_im_en.png)
+You can manage sensitive words to prevent errors or incorrect instructions from being included in ticket replies.
+If you proceed **ticket preview** or **resolve/pend** tickets while the **① added** sensitive text is included in the content, a **② pop-up** will be displayed indicating that sensitive words are included.
+
 ## Agent
 In this menu, you can add and edit agents and groups for processing escalated tickets, and set up groups and permissions for each agent.
 
