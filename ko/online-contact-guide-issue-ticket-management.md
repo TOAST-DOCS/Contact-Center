@@ -32,13 +32,13 @@
 ![](http://static.toastoven.net/prod_contact_center/4.1.2-(2)_im_1.png)
 
 - **① 티켓정보**: 이관 티켓 관련 정보 확인 및 처리
-  - 티켓 ID
-  - 티켓 담당그릅/담당자
-  - 티켓 상태
-  - 채널
-  - 이관 관련 정보
-  - 접수유형 및 고객/상담원 필드
-  - 상담 처리 내역
+    - 티켓 ID
+    - 티켓 담당그릅/담당자
+    - 티켓 상태
+    - 채널
+    - 이관 관련 정보
+    - 접수유형 및 고객/상담원 필드
+    - 상담 처리 내역
 
 ![](http://static.toastoven.net/prod_contact_center/4.1.2-(3)_im.png)
 
