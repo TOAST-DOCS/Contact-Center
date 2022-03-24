@@ -25,7 +25,6 @@ If ticket assign is set through trigger, tickets could be assigned according to 
 
 ### Process Tickets
 If a escalated/created ticket is assigned, the status of the ticket changes to ‘**processing**’. Customer inquiries could be processed in this state.
-
 You could utilize **Ticket Information**, **Ticket History**, **Event** tabs when processing a ticket.
 
 ![](http://static.toastoven.net/prod_contact_center/4.1.2-(2)_im_1_en.png)
@@ -40,18 +39,19 @@ You could utilize **Ticket Information**, **Ticket History**, **Event** tabs whe
 
 -	**① Event**: Occurred events of the ticket (Ticket assign, Change of agent, etc.)
 
-![](http://static.toastoven.net/prod_contact_center/4.1.2-(5)_im_en.png)
-Tickets could be **processed** as follows. When a ticket is **resolved** or **pended**, the status of the ticket in counsultation management service changes to **Escalation resolved**. 
+![](http://static.toastoven.net/prod_contact_center/4.1.2-(5)_im_1_en.png)
+After filling in the contents, you can pre-check whether the banned word is included, and the final reply mail including the mail layout through **① ticket preview**.
+Tickets could be **② processed** as follows. When a ticket is **resolved** or **pended**, the status of the ticket in counsultation management service changes to **Escalation resolved**. 
 
-- **① Resolved**: Tickets could be resolved to send a **final answer mail** to the customer.
-- **② Pending**: Tickets could be pended to send a **intermediate reply** before the final reply.
-- **③ Add a Comment**: **Comments** could be added to the ticket. 
-- **④ Resolve Internally**: Tickets could be resolved internally when the ticket **does not need to be replied**.
+- **Resolved**: Tickets could be resolved to send a **final answer mail** to the customer.
+- **Pending**: Tickets could be pended to send a **intermediate reply** before the final reply.
+- **Add a Comment**: **Comments** could be added to the ticket. 
+- **Resolve Internally**: Tickets could be resolved internally when the ticket **does not need to be replied**.
     - Resolved via Chat: Inquiry resolved through chat
     - Resolved via Call: Inquiry resolved through call
     - Others
 
-**Ticket Batching** function could be used when similar inquiries need to be answered at once, or when agents/groups of tickets should be changed together. **⑤ Ticket Batching** button is in the upper side of the ticket list. 
+**③ Ticket Batching** function could be used when similar inquiries need to be answered at once, or when agents/groups of tickets should be changed together.
 
 ✔ **\[FAQ]** [How can I use answer templates?](https://nhn-contact.oc.toast.com/oceng/hc/article/122/)
 ✔ **\[FAQ]** [Can I process tickets with the same inquiry all at once?](https://nhn-contact.oc.toast.com/oceng/hc/article/121/)
