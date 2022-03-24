@@ -24,7 +24,7 @@ If ticket assign is set through trigger, tickets could be assigned according to 
 
 ### Process Tickets
 If a ticket is assigned, the status of the ticket changes to ‘**processing**’. Customer inquiries could be processed in this state.
-**Ticket information**, **Ticket History**, and **Event** tabs are available for tickets, and additionally, **Chat History** tab is displayed for tickets generated through chat widget/chat history, and **Customer Information** tab is displayed when customer information management function is enabled.
+**Ticket Information**, **Ticket History**, and **Event** tabs are available for tickets, and additionally, **Chat History** tab is displayed for tickets generated through chat widget/chat history, and **Customer Information** tab is displayed when customer information management function is enabled.
 
 ![](http://static.toastoven.net/prod_contact_center/4.1.2-(2)_1_en.png)
 
