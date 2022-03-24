@@ -39,7 +39,7 @@ You could utilize **Ticket Information**, **Ticket History**, **Event** tabs whe
 
 -	**① Event**: Occurred events of the ticket (Ticket assign, Change of agent, etc.)
 
-![](http://static.toastoven.net/prod_contact_center/4.1.2-(5)_im_1_en.png)
+![](http://static.toastoven.net/prod_contact_center/4.1.2.-(5)_im_1_en.png)
 After filling in the contents, you can pre-check whether the banned word is included, and the final reply mail including the mail layout through **① ticket preview**.
 Tickets could be **② processed** as follows. When a ticket is **resolved** or **pended**, the status of the ticket in counsultation management service changes to **Escalation resolved**. 
 
