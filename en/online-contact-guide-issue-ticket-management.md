@@ -30,6 +30,13 @@ You could utilize **Ticket Information**, **Ticket History**, **Event** tabs whe
 ![](http://static.toastoven.net/prod_contact_center/4.1.2-(2)_im_1_en.png)
 
 -	**① Ticket Information**: Information related to the escalated ticket
+      - Ticket ID
+      - Group/Agent
+      - Status
+      - Channel
+      - Escalation-related information
+      - Submission type, customer/agent field
+      - Consultation processing history
 
 ![](http://static.toastoven.net/prod_contact_center/4.1.2-(3)_im_en.png)
 
