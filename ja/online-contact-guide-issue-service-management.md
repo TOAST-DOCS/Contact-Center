@@ -159,12 +159,12 @@ Online Contactでドメインを提供する **① 代表アカウント**を生
 
 ### SMS
 ![](http://static.toastoven.net/prod_contact_center/2.2.6-(6)_im_ja.png)
-**[NHN Cloud Notification → SMS](https://www.toast.com/kr/service/notification/sms)** サービスをOnline Contactと連動させてSMS/MMSを発送できます。
+**[NHN Cloud Notification → SMS]** サービスをOnline Contactと連動させてSMS/MMSを発送できます。
 「全体管理 → 契約サービス管理 → 契約詳細」で**SMS発送**機能を**使用**設定した場合、「サービス管理 → 外部チャンネル」メニューにSMSメニューが表示され、SMS連携を管理できます。
 
-**①** SMS連動の有効化のためには、まず **[NHN Cloud Notification → SMS](https://www.toast.com/kr/service/notification/sms)サービスを活性化**した後、CONSOLEで確認できる**APP KEY**を入力して**②** 保存してください。 有効なAPPKEYを入力した場合、自動的に**SMS機能が有効化**され、APPKEY入力欄の下段に**発信番号リストが表示**されます。
+**①** SMS連動の有効化のためには、まず **[NHN Cloud Notification → SMS] サービスを活性化**した後、CONSOLEで確認できる**APP KEY**を入力して**②** 保存してください。 有効なAPPKEYを入力した場合、自動的に**SMS機能が有効化**され、APPKEY入力欄の下段に**発信番号リストが表示**されます。
 
-**③ 追加** ボタンを押すと、**発信番号選択ポップアップ**が表示されます。 NHN Cloud Notification → SMSサービスに発信番号として登録された番号がリストに表示されるので、発信番号を追加する前に**SMSサービスに発信番号が登録**されているかを確認してください。 ([SMS > コンソール使用ガイド > 発信番号の管理](https://docs.toast.com/ja/Notification/SMS/ja/console-guide/#_15))表示されたリストで、発信番号として追加したい番号をチェックした後、確認ボタンを押すと、発信番号リストに追加され、Online ContactでSMS/MMSを送信する際、**発信番号として活用**することができます。
+**③ 追加** ボタンを押すと、**発信番号選択ポップアップ**が表示されます。 NHN Cloud Notification → SMSサービスに発信番号として登録された番号がリストに表示されるので、発信番号を追加する前に**SMSサービスに発信番号が登録**されているかを確認してください。 表示されたリストで、発信番号として追加したい番号をチェックした後、確認ボタンを押すと、発信番号リストに追加され、Online ContactでSMS/MMSを送信する際、**発信番号として活用**することができます。
 
 SMS連動の有効化および送信番号の追加以降に、**付加業務 → SMS発送**メニューからSMSテンプレートの管理およびSMS発送を実行することができます。
 
