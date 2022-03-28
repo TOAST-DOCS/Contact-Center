@@ -1,7 +1,7 @@
 ## Contact Center > Online Contact > Service Guide (Consultation) > Help Center
 
 ## FAQ
-If you have enabled **FAQ** among the help center configuration items, (Can enable at [Service Management → Help Center → Default Settings](https://docs.toast.com/en/Contact%20Center/en/online-contact-guide-service-management/#default-settings_1)), FAQ menu allows you to manage FAQ (frequently asked questions) documents. 
+If you have enabled **FAQ** among the help center configuration items, (Can enable at [Service Management → Help Center → Default Settings] menu), FAQ menu allows you to manage FAQ (frequently asked questions) documents. 
 
 ### Manage Category
 ![](http://static.toastoven.net/prod_contact_center/3.1-(1)_2_en.png)
@@ -42,7 +42,7 @@ By clicking **Register FAQ** button in distribute/draft document menu, you could
 
 Items which need to be filled are as follows:
 
-- **Category**: Please select the appropriate category which you added in [Help Center → FAQ → Manage Category](https://docs.toast.com/en/Contact%20Center/en/online-contact-guide-help-center/#manage-category). The document would be placed under the selected category.
+- **Category**: Please select the appropriate category which you added in [Help Center → FAQ → Manage Category] menu. The document would be placed under the selected category.
 - **Fix Main Screen**: If checked, the document would be fixed in the top of ‘All’ group which all FAQ documents are displayed.
 - **Fix by Category**: If checked, the document would be fixed in the top of the **relevant category** group. 
 - **Title**
@@ -51,7 +51,7 @@ Items which need to be filled are as follows:
 After filling in all the contents, click **② Save Draft** to register as draft document, or **③ Register** to register as distribute document.
 
 ## Notice
-If you have enabled **Notice** among the help center configuration items, (Can enable at [Service Management → Help Center → Default Settings]( https://docs.toast.com/en/Contact%20Center/en/online-contact-guide-service-management/#default-settings_1)), Notice menu allows you to manage notice documents.  
+If you have enabled **Notice** among the help center configuration items, (Can enable at [Service Management → Help Center → Default Settings] menu), Notice menu allows you to manage notice documents.  
 
 ### Manage Heading
 ![](http://static.toastoven.net/prod_contact_center/3.2-(1)_1_en.png)
@@ -108,9 +108,9 @@ By clicking **Registration Notice** button in distribute/draft document menu, yo
 
 Items which need to be filled are as follows:
 
-- **Select Template**: Please select the appropriate template which you registered in  [Help Center → Notice → Manage Template](https://docs.toast.com/en/Contact%20Center/en/online-contact-guide-help-center/#manage-template) menu. The settings for each language will be applied.
-- **Heading**:  Please select the appropriate heading which you registered in [Help Center → Notice → Manage Heading](https://docs.toast.com/en/Contact%20Center/en/online-contact-guide-help-center/#manage-heading) menu. The document will be classified in the selected heading.
-- **Tag**: Please select the appropriate tag which you registered in [Help Center → Notice → Manage Tag](https://docs.toast.com/en/Contact%20Center/en/online-contact-guide-help-center/#manage-tag) menu. Multiple choices are available.
+- **Select Template**: Please select the appropriate template which you registered in  [Help Center → Notice → Manage Template] menu. The settings for each language will be applied.
+- **Heading**:  Please select the appropriate heading which you registered in [Help Center → Notice → Manage Heading] menu. The document will be classified in the selected heading.
+- **Tag**: Please select the appropriate tag which you registered in [Help Center → Notice → Manage Tag] menu. Multiple choices are available.
 - **Notice Period**: The period which the notice document would be posted. If the start date is set after the date of creation, the posting will be **reserved** for that date.
 - **Fixed Top**: The document will be fixed in the top of **All**, and in **the relevant heading**.
 - **Output Date**: This is the registration date of the notice displayed on the Help Center.
