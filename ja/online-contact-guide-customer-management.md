@@ -1,4 +1,4 @@
-## Contact Center > Online Contact > サービスガイド >　顧客情報管理
+## Contact Center > Online Contact > サービスガイド（お問合わせ管理） >　顧客情報管理
         
 ## 顧客情報連動
 ### API情報設定

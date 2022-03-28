@@ -10,7 +10,7 @@ The configuration or detailed functions of the help center you set up in the men
 -	https:// **Domain Name**.oc.toast.com/ **Service ID** /hc
 
 **Domain name** is the information which was created when you added your organization. Modifying is available in NHN Cloud Console → Set Organization → Set Domain. 
-**Service ID** is the information which was entered when adding service from [Global Management → Contract Service Status](https://docs.toast.com/en/Contact%20Center/en/online-contact-guide-global-management/#contract-service-status) menu. It cannot be modified after initial creation.
+**Service ID** is the information which was entered when adding service from [Global Management → Contract Service Status] menu. It cannot be modified after initial creation.
 
 ## Authentication
 In authentication menu, you could enable/disable **Open API**, and manage related functions.
@@ -21,7 +21,7 @@ In Open API tab, OPEN API could be **① enabled or disabled**, and **② Servic
 Through **Allowed IP List**, Open API can be called only from the IP which is registered in the list. 
 
 ## Chat
-Functions in this menu are related to chat consultation. Chat consultation could be enabled in [Service Management → Help Center → Default Settings](https://docs.toast.com/en/Contact%20Center/en/online-contact-guide-service-management/#default-settings_1), and could be accessed through **chat icon** which is displayed in the bottom right side after chat consultation is enabled.
+Functions in this menu are related to chat consultation. Chat consultation could be enabled in [Service Management → Help Center → Default Settings] menu, and could be accessed through **chat icon** which is displayed in the bottom right side after chat consultation is enabled.
 
 ✔ **\[FAQ]** [Can I access to the chat screen only from the service which I have chat permission?](https://nhn-contact.oc.toast.com/oceng/hc/article/151/)
 
@@ -29,8 +29,8 @@ Functions in this menu are related to chat consultation. Chat consultation could
 After accessing through **chat icon**, click **① status value** in the top left of the chat screen to set your status. (initially set to ‘offline’, can choose between online/break/offline). Responding to customer's chat request is only available when chat status is set to online.
 
 ### Default Settings
-![](http://static.toastoven.net/prod_contact_center/2.2.2-(2)_en.png)
-You can set **① Greeting Message** which is sent automatically when chat consultation is connected, and **② Satisfaction Guide Message** which is sent when requesting evaluation about the consultation to customer. Evaluation request could be sent through **Evaluation** button in the top of the chat screen.
+![](http://static.toastoven.net/prod_contact_center/2.2.2-(2)_1_en.png)
+You can set **① Greeting Message**, and **② Satisfaction Guide Message** by the help center language you set on [Global Management → Contract Service Status → Basic Information] menu.  Evaluation request could be sent through **Evaluation** button in the top of the chat screen.
 
 ### Agent Assignment Settings
 ![](http://static.toastoven.net/prod_contact_center/2.2.2-(3)_en.png)
@@ -49,17 +49,17 @@ This menu allows you to manage the category of **Processing Type** among the con
 **Duplicate category names are not allowed** within the same depth. (Possible if the depth is different)
 
 ## Ticket
-From the Ticket menu, you can **manage categories** which are used when processing inquiries, **use trigger features** that can improve business efficiency, **configure Help Center Inquiry fields**, **manage Templates**, and **set up Email**.
+From Ticket menu, you can **manage submission/processing categories**, **set trigger features** that can improve business efficiency, **configure help center inquiry fields**, **manage templates**, and **set up email**.
 
 ### Manage Category
 In Consultation Management service, Ticket Categories are used as follows.
 
--	**Submission Type**: Selected by customer when making inquiries
--	**Processing Type**: Selected by agent when processing tickets
+-	**Submission Type**: Selected by customer when making inquiries through help center inquiry. (In the case of inquiries via phone or e-mail, categories are received as blank, and the agent can select and save when processing the ticket.)
+-	**Processing Type**: Selected by agents when processing tickets
 
 #### Submission Type
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(1)-1_en.png)
-**①** When adding lower level categories, please click the upper level category first and check whether it is properly selected. Categories will be created below the highlighted category. **Duplicate** category names are not allowed within the same depth. 
+**①** When adding lower level categories, please click the upper level category first and check whether it is properly selected. Categories will be created below the highlighted category. **Duplicate** category names are not allowed within the same depth. Category names can be set for each help center language you set on [Global Management → Contract Service Status → Basic Information] menu.
 
 **②** If you click the created category, **delete** button will appear. You can **edit category names** by double clicking the category.
 
@@ -96,11 +96,11 @@ Click the **① Add Trigger** button, enter all the title, conditions, and resul
 #### Trigger Result Details
 ##### Ticket : Assign
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(2)d_en.png)
-If you select and save the agent group and the ticket distribution method within the group (random allocation, linear allocation, select agent), the assignment will be executed according to the results you selected when the trigger conditions are met. **Random allocation** means that the group’s agents are assigned tickets at **random**, and **linear Allocation** means the ticket would be assigned in the order in which agents are **added to the group.** If you have multiple triggers that specify results with different agents under the same conditions, all triggers, not randomly assigned to one of these agents, will be triggered sequentially, and tickets will continue to be assigned only to the person set for the last trigger, so if you intend to randomly assign tickets within the group, make sure to select ** random allocation**. 
+If you select and save the agent group and the ticket distribution method within the group (random allocation, linear allocation, select agent), the assignment will be executed according to the results you selected when the trigger conditions are met. **Random allocation** means that the group’s agents are assigned tickets at **random**, and **linear Allocation** means the ticket would be assigned in the order in which agents are **added to the group.** If you have multiple triggers that specify results with different agents under the same conditions, all triggers, not randomly assigned to one of these agents, will be triggered sequentially, and tickets will continue to be assigned only to the person set for the last trigger, so if you intend to randomly assign tickets within the group, make sure to select **random allocation**. 
 
 ##### Notification
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(2)e_en.png)
-Notification is the type of result that **notification mail is sent** to the specified recipient when the trigger condition is met. If you select this result type, you can set the subject and content of the notification mail to be sent via the **① Notification Settings** button.
+Notification is the type of result that **notification mail is sent** to the specified recipient when the trigger condition is met. If you select this result type, you can set the subject and content of the notification mail to be sent via the **① Notification Settings** button. When setting up the notification mail, the content editor is displayed in **HTML** or **TEXT** mode according to the editor type setting value in [Global Management → Contract Service Status → Basic Information] menu.
 
 ##### Forward
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(2)f_en.png)
@@ -120,11 +120,11 @@ Fields are divided into **① Customer Field** and **① Agent Field**. Please s
 In Consultation Management service, customer and agent fields are used as follows:
 
 -	**Agent Field**: Fields which agent enters when processing ticket
--	**Customer Field** : Fields shown to the customer in Help Center → Inquiry screen. Implemented on Help Center Inquiry screen as set in field setting menu.
+-	**Customer Field** : Fields shown to the customer in Help Center → Inquiry screen. Implemented on Help Center Inquiry screen as set in field setting menu. (In the case of inquiries via phone or e-mail, there is no separate field entry procedure, thus customer fields are received blankly. Agents can enter information when processing the ticket.)
 
 #### Field Setting
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(4)_en.png)
-**①** Depending on the submission type you added earlier in [Service Management → Ticket → Manage Category](https://docs.toast.com/en/Contact%20Center/en/online-contact-guide-service-management/#manage-category_1), you can set the fields required for inquiry details differently. Click **Submission Type** to view the fields you have set up, and you can change the **②** order of fields except for personal information field. In the case of personal information field, it is always pinned to the bottom.
+**①** Depending on the submission type you added earlier in [Service Management → Ticket → Manage Category] menu, you can set the fields required for inquiry details differently. Click **Submission Type** to view the fields you have set up, and you can change the **②** order of fields except for personal information field. In the case of personal information field, it is always pinned to the bottom.
 
 You can also **③ add** and **④ remove** the fields you previously added on the Field Management menu.
 
@@ -135,8 +135,10 @@ You can also **③ add** and **④ remove** the fields you previously added on t
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(5)_1_en.png)
 **①** You can manage fields in **Field Management** tab. Settings of **System Fields** could only be **modified** or **initialized**. 
 
-![](http://static.toastoven.net/prod_contact_center/2.2.3-(5)_2_en.png)
-In the case of **system fields**, it is possible to modify **'Field Name'**, **'Notice'**, **'Personal Information'**, **'Destroy Personal Information'**. The modification of **'Required'**, **'Exposured'** is determined by the kind of field. 
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(5)_2_1_en.png)
+In the case of **system fields**, it is possible to modify **'Field Name'**, **'Notice'**, **'Personal Information'**, **'Destroy Personal Information'**. **① Field names** can be set for **each help center language** you set on [Global Management → Contract Service Status → Basic Information] menu.
+
+The modification of **② 'Required'**, **'Exposured'** is determined by the kind of field.
 
 - System Fields required for Help Center (Type, Email, Title, Contents, Personal Information) : 'Required'/'Exposured' default value 'Yes', cannot change value.
 - System Fields related to Call (Consultation Time, IN/OUT, Call Reservation, Call Reservation Time, Call Reservation Phone Number) : 'Exposured' default value 'No', cannot change value.
@@ -145,13 +147,13 @@ In the case of **system fields**, it is possible to modify **'Field Name'**, **'
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(5)_3_en.png)
 **①** You can manage fields in **Field Management** tab. **User Fields** could be **added**, **modified**, or **deleted**.
 
-![](http://static.toastoven.net/prod_contact_center/2.2.3-(6)_en.png)
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(6)_1_en.png)
 For adding customer fields, items required to be filled are as follows:
 
 -	**① Field type** : The **type of field**. If you select the field type, **Detailed Settings** and **Preview** will be displayed at the bottom of Basic Settings. Detailed settings allow you to set the values to be displayed for the field, and you can use preview to see what the field will look like on the customer's screen. 
 -	**② Field code** : When developing inquiry feature with Open API, field code is used as a unique value to represent the field.
--	**③ Field Name** : The name of the field, which appears with the field on the Inquiry screen.
--	**④ Notice** : A guide phrase for the field, which appears with the field on the Inquiry screen.
+-	**③ Field Name** : The name of the field, which appears with the field on the Inquiry screen. Can be set for each help center language set on [Global Management → Contract Service Status → Basic Information] menu.
+-	**④ Notice** : A guide phrase for the field, which appears with the field on the Inquiry screen. Can be set for each help center language set on [Global Management → Contract Service Status → Basic Information] menu.
 -	**⑤ Required** : When set, it is marked with a \*(star) to the right of the field name and must be filled before you move on to the next field. Among the default fields, type, email, title, contents, personal information must be set to ‘required’.
 -	**⑥ Personal information (Encrypt or not)**
 -	**⑦ Destroy personal information**
@@ -176,7 +178,7 @@ You could serach templates by title, processing type, search code. In the **③ 
 If you click **① Add Template** button, pop-up screen for setting template will be displayed. 
 
 - **② Template Title** 
-- **③ Contents** : **Replacement code** could be used when writing contents. **Double-click** adds the code to the contents, and data is inserted into code area of the template when processing tickets, making it more convenient to write replies.
+- **③ Contents** : Content editor is displayed in **HTML** or **TEXT** mode according to the editor type setting value in [Global Management → Contract Service Status → Basic Information] menu. **Replacement code** could be used when writing contents. **Double-click** adds the code to the contents, and data is inserted into code area of the template when processing tickets, making it more convenient to write replies.
 - **④ Search Code** : **Code** which can be used when searching templates. (English or number combination within 20 characters)
 - **⑤ Template Connection** : You can **select processing types** to connect to the template. **Check** the type you want to move, and press the **arrow** button.
 
@@ -192,12 +194,17 @@ If you select a processing type from the list, you will see the list of connecte
 
 ### Email Settings
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(8)_en.png)
-You can create a **① representative account address** which domain is provided from Online Contact, or register a service representative account using one’s service domain by enrolling **② External account **.
+You can create a **① representative email account address** which domain is provided from Online Contact, or register a service representative account using one’s service domain by enrolling **② External account**.
 
 **③** You can save the **sender's name** and **address** of the email sent through Online Contact and can set common **④ Mail Layout** for every mail.
-When setting up the layout, you can set ticket related information to be automatically entered at the selected location through **replacement code** available on the right side of the editor.
+When setting up the layout, you can set ticket related information to be automatically entered at the selected location through **replacement code** available on the right side of the editor. The content editor is displayed in **HTML** or **TEXT** mode according to the editor type setting value in [Global Management → Contract Service Status → Basic Information] menu.
 
 ✔ **\[FAQ]** [How can I connect my external email to Online Contact?](https://nhn-contact.oc.toast.com/oceng/hc/article/127/)
+
+### Sensitive
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(15)_en.png)
+You can manage sensitive words to prevent errors or incorrect instructions from being included in ticket replies.
+If you proceed **ticket preview** or **resolve/pend** tickets while the **① added** sensitive text is included in the content, a **② pop-up** will be displayed indicating that sensitive words are included.
 
 ## Call
 In Call menu, you could register **IVR Route Code, Name** for managing callback, and register **Calling Number** which is displayed to the customer when making a outbound call. This menu is only viewable in services which **Ticket Management →  Include call(using CTI)** function is **activated** in contract details. 
@@ -263,141 +270,508 @@ In this menu, you can **manage design themes** for your Help Center. Using the p
 
 There are two basic templates available, and you can add new templates with the **① Add Template** button. The template you added can be **② edited** or **deleted**. The template in use cannot be deleted, so please enable another template to delete it.
 
-![](http://static.toastoven.net/prod_contact_center/2.2.5-(2)_en.png)
-When adding or editing templates, you can directly input **① CSS / HTML / JS scripts**, or upload appropriate file (script, font, image, etc.) and enter the path of the resource in the editor to change the configuration of the Help Center. Through **Preview** button you could see the edits being applied, and after **saving**, you could apply the template.  
+![](http://static.toastoven.net/prod_contact_center/2.2.5-(2)_1_en.png)
+When adding or editing templates, you can directly input **① CSS / HTML / JS scripts**, or upload appropriate file (script, font, image, etc.) and enter the path of the resource in the editor to change the configuration of the Help Center. Through **② Insert multilingual code** button, you could view the list of language sets which have been set in [Service Management → Help Center → Multilingual Management] menu. The multilingual code could be inserted into the template through **Choice** button. 
+
+Through **④ Preview** button you could see the edits being applied, and after **③ saving**, you could apply the template to the help center.  
 
 ✔ **\[FAQ]** [Is there some specific examples of managing help center PC/Mobile templates?](https://nhn-contact.oc.toast.com/oceng/hc/article/141/)
 ✔ **\[FAQ]** [Can I change the font of the help center text or apply effects such as bold, underline, etc. ?](https://nhn-contact.oc.toast.com/oceng/hc/article/145/)
 
 **When modifying CSS**, the key elements you can refer are as follows:
 
-##### main.css
-| Element Name                                        | Details                                |
-| --------------------------------------------------- | ---------------------------------- |
-| .main_banner                                    | Upper banner area / main page                  |
-| .main_banner img                                | Image of upper banner area / main page           |
-| .carousel-caption .title_txt                    | Title of upper banner area / main page             |
-| .carousel-caption .sub_txt                      | Subtitle of upper banner area / main page           |
-| .search-box                                     | Search box of upper banner area / main page         |
-| .search-box .icon-ic-search                     | Search icon of upper banner area / main page       |
-| #supports .container-con                        | Contents area / main page          |
-| #supports .support__item:nth-child(1):before    | Notice icon / main page                 |
-| #supports .support__item:nth-child(2):before    | FAQ icon / main page                     |
-| #supports .support__item:nth-child(3):before    | Inquiry icon / main page                 |
-| #supports .support__item:nth-child(4):before    | Inquiry History icon / main page                 |
-| #supports .support__item .card-title .btn       | Title of contents area / main page                   |
-| #supports .support__item .card-title .btn:hover | Title of contents area / main page (Color changed when hovered)    |
-| #supports .support__item .card-title .btn:after | Right arrow icon of contents area / main page |
-| #supports .support__item .card-text             | Information text of contents area / main page |
-| #sec_contact-news .textArea                     | Bottom banner area / main page |
-| #sec_contact-news .textArea .text-item h3       | Title of bottom banner area / main page |
-| #sec_contact-news .textArea .text-item .icon-more::after | See more icon of bottom banner area / main page |
-| #sec_contact-news .textArea .text-item li       | Document list of bottom banner area / main page |
-| #chat-offline                                   | Agent offline box |
-| #chat-offline .title                            | Title of agent offline box |
-| #chat-offline .text                             | Text of agent offline box |
-| #chat-offline .close                            | Close icon of agent offline box |
-| #chat-offline .btn                              | Contact us icon of agent offline box |
+<!-- css 요소 목록 html -->
 
-##### faq.css
-| Element Name                          | Information                                |
-| ---------------------------------- | ---------------------------------- |
-| .lnb--fixed .lnb--fixed__nav       | Left LNB / details page                |
-| .help-center-title                 | Title of left LNB / details page            |
-| .lnb__nav                          | List of left LNB / details page          |
-| .lnb__nav li a                     | Item of list of left LNB / details page     |
-| .lnb__nav li.on a                  | Selected item of list of left LNB / details page     |
-| .lnb--fixed__side-divider          | Dividing line of left LNB and contents     |
-| .lnb--fixed__content               | Contents area / details page              |
-| .tit_txt                           | Title of contents area / details page         |
-| .data_info-box                     | Box of contents area / details page         |
-| .tab_category                      | Category tab of contents area / details page   |
-| .tab_category>li.on                | Selected category of contents area / details page |
-| .tab_category>li                   | Category of contents area / details page |
-| .tbl_wrap                          | List of contents area / details page        |
-| .faqData th:nth-child(1)           | Category of FAQ table                  |
-| .faqData th:nth-child(2)           | Title of FAQ table                     |
-| .faqData th:nth-child(3)           | Registered date of FAQ table                    |
-| .faqData tr.hot-text td            | Category of main-fixed document of FAQ table     |
-| .faqData tr.hot-text td .title-info a | Title of main-fixed document of FAQ table     |
-| .faqData td .title-info sup        | HOT icon of main-fixed document of FAQ table         |
-| .gocont .search                    | FAQ search                           |
-| .sel                               | Category in FAQ search                  |
-| .search .inp                       | Search input in FAQ search                   |
-| .search .btnArea                   | Search button in FAQ search                    |
-| .faqData_info-con                  | Contents of FAQ document                |
-| .faqData_info-con .dataTit         | Title of FAQ document              |
-| .faqData_info-con .dataTime        | Registered date of FAQ document              |
-| .faqData_info-con .dataTextBox     | Text of contents of FAQ document           |
+<details markdown="1">
+<summary> main.css </summary>
 
-##### notice.css
-| Element Name                         | Details                                |
-| ---------------------------------- | ---------------------------------- |
-| .el-breadcrumb                     | Right-upper text area / details page   |
-| .el-breadcrumb li                  | Item of right-upper text area / details page|
-| .noticeData                        | Notice table                   |
-| .noticeData th:nth-child(1)        | Number of notice table                |
-| .noticeData th:nth-child(2)        | Title of notice table             |
-| .noticeData th:nth-child(3)        | Heading of notice table               |
-| .noticeData th:nth-child(4)        | Registered date of notice table               |
-| .noticeData tr.hot-text            | Main-fixed document of notice table      |
-| .noticeData tr.hot-text td         | Number of main-fixed document of notice table |
-| .noticeData tr.hot-text td .title-info a | Title of main-fixed document of notice table |
-| .noticeData td .title-info sup     | HOT icon of main-fixed document of notice table    |
-| .icon-leavel-1                     | Heading of main-fixed document of notice table   |
-| .noticeData tr                     | Item of notice table               |
-| .noticeData td .title-info a       | Title of item of notice table             |
-| .upload-text-memo                  | Text of attachments field of inquiry         |
-| .faqData_info-con .dataTime .noticeType | Heading of item of notice table      |
-| .faqData_info-con .dataTime .noticeType .icon-leavel-1 | Heading icon of item of notice table |
+<table>
+<thead>
+<tr>
+<th>Element Name</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.main_banner</td>
+<td>Upper banner area / main page</td>
+</tr>
+<tr>
+<td>.main_banner img</td>
+<td>Image of upper banner area / main page</td>
+</tr>
+<tr>
+<td>.carousel-caption .title_txt</td>
+<td>Title of upper banner area / main page</td>
+</tr>
+<tr>
+<td>.carousel-caption .sub_txt</td>
+<td>Subtitle of upper banner area / main page</td>
+</tr>
+<tr>
+<td>.search-box</td>
+<td>Search box of upper banner area / main page</td>
+</tr>
+<tr>
+<td>.search-box .icon-ic-search</td>
+<td>Search icon of upper banner area / main page</td>
+</tr>
+<tr>
+<td>#supports .container-con</td>
+<td>Contents area / main page</td>
+</tr>
+<tr>
+<td>#supports .support__item:nth-child(1):before</td>
+<td>Notice icon / main page</td>
+</tr>
+<tr>
+<td>#supports .support__item:nth-child(2):before</td>
+<td>FAQ icon / main page</td>
+</tr>
+<tr>
+<td>#supports .support__item:nth-child(3):before</td>
+<td>Inquiry icon / main page</td>
+</tr>
+<tr>
+<td>#supports .support__item:nth-child(4):before</td>
+<td>Inquiry History icon / main page</td>
+</tr>
+<tr>
+<td>#supports .support__item .card-title .btn</td>
+<td>Title of contents area / main page</td>
+</tr>
+<tr>
+<td>#supports .support__item .card-title .btn:hover</td>
+<td>Title of contents area / main page (Color changed when hovered)</td>
+</tr>
+<tr>
+<td>#supports .support__item .card-title .btn:after</td>
+<td>Right arrow icon of contents area / main page</td>
+</tr>
+<tr>
+<td>#supports .support__item .card-text</td>
+<td>Information text of contents area / main page</td>
+</tr>
+<tr>
+<td>#sec_contact-news .textArea</td>
+<td>Bottom banner area / main page</td>
+</tr>
+<tr>
+<td>#sec_contact-news .textArea .text-item h3</td>
+<td>Title of bottom banner area / main page</td>
+</tr>
+<tr>
+<td>#sec_contact-news .textArea .text-item .icon-more::after</td>
+<td>See more icon of bottom banner area / main page</td>
+</tr>
+<tr>
+<td>#sec_contact-news .textArea .text-item li</td>
+<td>Document list of bottom banner area / main page</td>
+</tr>
+<tr>
+<td>#chat-offline</td>
+<td>Agent offline box</td>
+</tr>
+<tr>
+<td>#chat-offline .title</td>
+<td>Title of agent offline box</td>
+</tr>
+<tr>
+<td>#chat-offline .text</td>
+<td>Text of agent offline box</td>
+</tr>
+<tr>
+<td>#chat-offline .close</td>
+<td>Close icon of agent offline box</td>
+</tr>
+<tr>
+<td>#chat-offline .btn</td>
+<td>Contact us icon of agent offline box</td>
+</tr>
+</tbody>
+</table>
 
-##### search.css
-| Element Name                          | Details                                |
-| ---------------------------------- | ---------------------------------- |
-| .paginate                          | Pagination area                   |
-| .paginate li                       | Item of pagination area                 |
-| .paginate li.firstPage a           | << key of pagination area                |
-| .paginate li.firstPage a.img       | Image of << key of pagination area            |
-| .paginate li.prev a.               | < key of pagination area                   |
-| .paginate li.prev a img            | Image of < key of pagination area      |
-| .paginate li a                     | Each page of pagination area             |
-| .paginate li.number.active a       | Current page of pagination area        |
-| .paginate li.next a.               | > key of pagination area               |
-| .paginate li.next a img            | Image of > key of pagination area           |
-| .paginate li.lastPage a            | >> key of pagination area                  |
-| .paginate li.lastPage a.img        | Image of >> key of pagination area            |
-| .search-title                      | Title of search result                   |
-| .search-title strong               | Search term (emphasized) of search result         |
-| .search-text                       | Search result                        |
-| .search-text .search-title_sub     | Subclass of search result                  |
-| .search-text .search-text_lit      | Item of search result               |
-| .search-text .search-text_lit dt a | Title of item of search result               |
-| .search-text .search-text_lit dd .search-text_con | Preview of contents of item of search result |
-| .search-text .search-text_lit dd .search-text_time | Registered date of contents of item of search result |
+</details>
 
-##### inquiry.css
-| Element Name                   | Details                                |
-| ---------------------------------- | ---------------------------------- |
-| .selectStyle                       | Option of search                    |
-| .inquiry-con                       | Contents area of inquiry                |
-| .inquiry-con_table                 | Inquiry table                      |
-| .inquiry-con_table th              | Field of inquiry table                 |
-| .bl_ess                            | Required field of inquiry table         |
-| .inquiry-con_table td              | Input of inquiry table                |
-| .error_txt                         | Input of inquiry table (Error)     | 
-| .inquiry-btn                       | Submit button of inquiry table                  |
-| .layui-icon                        | Arrow button                        |
-| .layui-icon-right                  | Left arrow button            |
-| .layui-icon-up                     | Down arrow button            |
-| .check_area_wrap .td-radio .layui-form-checkbox\[lay-skin="primary"] span | Checkbox text|
-| .error_txt                         | Error text                       |
+<details markdown="1">
+<summary> faq.css </summary>
+
+<table>
+<thead>
+<tr>
+<th>Element Name</th>
+<th>Information</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.lnb--fixed .lnb--fixed__nav</td>
+<td>Left LNB / details page</td>
+</tr>
+<tr>
+<td>.help-center-title</td>
+<td>Title of left LNB / details page</td>
+</tr>
+<tr>
+<td>.lnb__nav</td>
+<td>List of left LNB / details page</td>
+</tr>
+<tr>
+<td>.lnb__nav li a</td>
+<td>Item of list of left LNB / details page</td>
+</tr>
+<tr>
+<td>.lnb__nav li.on a</td>
+<td>Selected item of list of left LNB / details page</td>
+</tr>
+<tr>
+<td>.lnb--fixed__side-divider</td>
+<td>Dividing line of left LNB and contents</td>
+</tr>
+<tr>
+<td>.lnb--fixed__content</td>
+<td>Contents area / details page</td>
+</tr>
+<tr>
+<td>.tit_txt</td>
+<td>Title of contents area / details page</td>
+</tr>
+<tr>
+<td>.data_info-box</td>
+<td>Box of contents area / details page</td>
+</tr>
+<tr>
+<td>.tab_category</td>
+<td>Category tab of contents area / details page</td>
+</tr>
+<tr>
+<td>.tab_category&gt;li.on</td>
+<td>Selected category of contents area / details page</td>
+</tr>
+<tr>
+<td>.tab_category&gt;li</td>
+<td>Category of contents area / details page</td>
+</tr>
+<tr>
+<td>.tbl_wrap</td>
+<td>List of contents area / details page</td>
+</tr>
+<tr>
+<td>.faqData th:nth-child(1)</td>
+<td>Category of FAQ table</td>
+</tr>
+<tr>
+<td>.faqData th:nth-child(2)</td>
+<td>Title of FAQ table</td>
+</tr>
+<tr>
+<td>.faqData th:nth-child(3)</td>
+<td>Registered date of FAQ table</td>
+</tr>
+<tr>
+<td>.faqData tr.hot-text td</td>
+<td>Category of main-fixed document of FAQ table</td>
+</tr>
+<tr>
+<td>.faqData tr.hot-text td .title-info a</td>
+<td>Title of main-fixed document of FAQ table</td>
+</tr>
+<tr>
+<td>.faqData td .title-info sup</td>
+<td>HOT icon of main-fixed document of FAQ table</td>
+</tr>
+<tr>
+<td>.gocont .search</td>
+<td>FAQ search</td>
+</tr>
+<tr>
+<td>.sel</td>
+<td>Category in FAQ search</td>
+</tr>
+<tr>
+<td>.search .inp</td>
+<td>Search input in FAQ search</td>
+</tr>
+<tr>
+<td>.search .btnArea</td>
+<td>Search button in FAQ search</td>
+</tr>
+<tr>
+<td>.faqData_info-con</td>
+<td>Contents of FAQ document</td>
+</tr>
+<tr>
+<td>.faqData_info-con .dataTit</td>
+<td>Title of FAQ document</td>
+</tr>
+<tr>
+<td>.faqData_info-con .dataTime</td>
+<td>Registered date of FAQ document</td>
+</tr>
+<tr>
+<td>.faqData_info-con .dataTextBox</td>
+<td>Text of contents of FAQ document</td>
+</tr>
+</tbody>
+</table>
+
+</details>
+
+<details markdown="1">
+<summary> notice.css </summary>
+
+<table>
+<thead>
+<tr>
+<th>Element Name</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.el-breadcrumb</td>
+<td>Right-upper text area / details page</td>
+</tr>
+<tr>
+<td>.el-breadcrumb li</td>
+<td>Item of right-upper text area / details page</td>
+</tr>
+<tr>
+<td>.noticeData</td>
+<td>Notice table</td>
+</tr>
+<tr>
+<td>.noticeData th:nth-child(1)</td>
+<td>Number of notice table</td>
+</tr>
+<tr>
+<td>.noticeData th:nth-child(2)</td>
+<td>Title of notice table</td>
+</tr>
+<tr>
+<td>.noticeData th:nth-child(3)</td>
+<td>Heading of notice table</td>
+</tr>
+<tr>
+<td>.noticeData th:nth-child(4)</td>
+<td>Registered date of notice table</td>
+</tr>
+<tr>
+<td>.noticeData tr.hot-text</td>
+<td>Main-fixed document of notice table</td>
+</tr>
+<tr>
+<td>.noticeData tr.hot-text td</td>
+<td>Number of main-fixed document of notice table</td>
+</tr>
+<tr>
+<td>.noticeData tr.hot-text td .title-info a</td>
+<td>Title of main-fixed document of notice table</td>
+</tr>
+<tr>
+<td>.noticeData td .title-info sup</td>
+<td>HOT icon of main-fixed document of notice table</td>
+</tr>
+<tr>
+<td>.icon-leavel-1</td>
+<td>Heading of main-fixed document of notice table</td>
+</tr>
+<tr>
+<td>.noticeData tr</td>
+<td>Item of notice table</td>
+</tr>
+<tr>
+<td>.noticeData td .title-info a</td>
+<td>Title of item of notice table</td>
+</tr>
+<tr>
+<td>.upload-text-memo</td>
+<td>Text of attachments field of inquiry</td>
+</tr>
+<tr>
+<td>.faqData_info-con .dataTime .noticeType</td>
+<td>Heading of item of notice table</td>
+</tr>
+<tr>
+<td>.faqData_info-con .dataTime .noticeType .icon-leavel-1</td>
+<td>Heading icon of item of notice table</td>
+</tr>
+</tbody>
+</table>
+
+</details>
+
+<details markdown="1">
+<summary> search.css </summary>
+
+<table>
+<thead>
+<tr>
+<th>Element Name</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.paginate</td>
+<td>Pagination area</td>
+</tr>
+<tr>
+<td>.paginate li</td>
+<td>Item of pagination area</td>
+</tr>
+<tr>
+<td>.paginate li.firstPage a</td>
+<td>&lt;&lt; key of pagination area</td>
+</tr>
+<tr>
+<td>.paginate li.firstPage a.img</td>
+<td>Image of &lt;&lt; key of pagination area</td>
+</tr>
+<tr>
+<td>.paginate li.prev a.</td>
+<td>&lt; key of pagination area</td>
+</tr>
+<tr>
+<td>.paginate li.prev a img</td>
+<td>Image of &lt; key of pagination area</td>
+</tr>
+<tr>
+<td>.paginate li a</td>
+<td>Each page of pagination area</td>
+</tr>
+<tr>
+<td>.paginate li.number.active a</td>
+<td>Current page of pagination area</td>
+</tr>
+<tr>
+<td>.paginate li.next a.</td>
+<td>&gt; key of pagination area</td>
+</tr>
+<tr>
+<td>.paginate li.next a img</td>
+<td>Image of &gt; key of pagination area</td>
+</tr>
+<tr>
+<td>.paginate li.lastPage a</td>
+<td>&gt;&gt; key of pagination area</td>
+</tr>
+<tr>
+<td>.paginate li.lastPage a.img</td>
+<td>Image of &gt;&gt; key of pagination area</td>
+</tr>
+<tr>
+<td>.search-title</td>
+<td>Title of search result</td>
+</tr>
+<tr>
+<td>.search-title strong</td>
+<td>Search term (emphasized) of search result</td>
+</tr>
+<tr>
+<td>.search-text</td>
+<td>Search result</td>
+</tr>
+<tr>
+<td>.search-text .search-title_sub</td>
+<td>Subclass of search result</td>
+</tr>
+<tr>
+<td>.search-text .search-text_lit</td>
+<td>Item of search result</td>
+</tr>
+<tr>
+<td>.search-text .search-text_lit dt a</td>
+<td>Title of item of search result</td>
+</tr>
+<tr>
+<td>.search-text .search-text_lit dd .search-text_con</td>
+<td>Preview of contents of item of search result</td>
+</tr>
+<tr>
+<td>.search-text .search-text_lit dd .search-text_time</td>
+<td>Registered date of contents of item of search result</td>
+</tr>
+</tbody>
+</table>
+
+</details>
+
+<details markdown="1">
+<summary> inquiry.css </summary>
+
+<table>
+<thead>
+<tr>
+<th>Element Name</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.selectStyle</td>
+<td>Option of search</td>
+</tr>
+<tr>
+<td>.inquiry-con</td>
+<td>Contents area of inquiry</td>
+</tr>
+<tr>
+<td>.inquiry-con_table</td>
+<td>Inquiry table</td>
+</tr>
+<tr>
+<td>.inquiry-con_table th</td>
+<td>Field of inquiry table</td>
+</tr>
+<tr>
+<td>.bl_ess</td>
+<td>Required field of inquiry table</td>
+</tr>
+<tr>
+<td>.inquiry-con_table td</td>
+<td>Input of inquiry table</td>
+</tr>
+<tr>
+<td>.error_txt</td>
+<td>Input of inquiry table (Error)</td>
+</tr>
+<tr>
+<td>.inquiry-btn</td>
+<td>Submit button of inquiry table</td>
+</tr>
+<tr>
+<td>.layui-icon</td>
+<td>Arrow button</td>
+</tr>
+<tr>
+<td>.layui-icon-right</td>
+<td>Left arrow button</td>
+</tr>
+<tr>
+<td>.layui-icon-up</td>
+<td>Down arrow button</td>
+</tr>
+<tr>
+<td>.check_area_wrap .td-radio .layui-form-checkbox[lay-skin="primary"] span</td>
+<td>Checkbox text</td>
+</tr>
+<tr>
+<td>.error_txt</td>
+<td>Error text</td>
+</tr>
+</tbody>
+</table>
+
+</details>
 
 ### Manage File Uploads
 ![](http://static.toastoven.net/prod_contact_center/2.2.5-(3)_en.png)
 As a tool for managing the files used to create templates and layouts, you can upload the files through the **① Upload File** button and use **② File Path** of the resource without having to upload files every time. File names could not be duplicated.
 
 ### Default Settings
-![](http://static.toastoven.net/prod_contact_center/2.2.5-(4)_en.png)
+![](http://static.toastoven.net/prod_contact_center/2.2.5-(4)_2_en.png)
 You can **Enable** functions you use in the Help Center and **Disable** functions you don't use. When disabled, the function becomes hidden from the Help Center page.
 
 Functions you can manage are as follows:
@@ -407,6 +781,7 @@ Functions you can manage are as follows:
 -	1:1 Inquiry & My Inquiries
 -	Chat
 -	Help center navigation
+-	Company Informaton (Can be added/modified in Global Management → Company Information Management menu)
 
 ### Member Interlink
 ![](http://static.toastoven.net/prod_contact_center/2.2.5-(5)_1_en.png)
@@ -418,6 +793,21 @@ API guide for each **login method** is linked below.
 
 - [Online Contact > API Guide for Developers > Member Integration (POST)](https://docs.toast.com/en/Contact%20Center/en/online-contact-api-guide-openapi-sso/)
 - [Online Contact > API Guide for Developers > Member Integration (GET)](https://docs.toast.com/en/Contact%20Center/en/online-contact-api-guide-openapi-member-get/)
+
+### Multilingual Management
+For each help center language set in [Global Management → Contract Service Status → Basic Information] menu, you can manage multilingual codes and tags to use in language-specific help centers.
+
+#### Multilingual Code
+![](http://static.toastoven.net/prod_contact_center/2.2.5-(7)_en.png)
+**① Multilingual Code** tab allows you to manage the multilingual language set you will use in the language-specific help center. 
+In the case of system language sets, only content and tags can be modified, and the value of the code cannot be changed.
+
+From **② Registration** button, you could register **user-defined** language sets. **Input columns for each language** are displayed according to the help center language you set on the contract basic information setting screen, and you can classify language sets by use and type through setting **tags**. Registered sets can be inserted into the script when managing templates, so they can be used to configure **③ help center pages for each language**.
+
+#### Tag
+![](http://static.toastoven.net/prod_contact_center/2.2.5-(7)-1_en.png)
+In the **① Tag** tab, you can manage **user-defined** tags that can be used for classifying language sets.
+If you press **② Add** button after entering the tag name, user-defined tag will be added, and it will be shown in the tag list with the system tags when managing, or searching language sets.
 
 ## External Channel
 Inquiries received by **external services** could be switched to tickets in Online Contact. **Twitter**, **KakaoTalk**, and **SMS** are currently supported services.
@@ -455,12 +845,12 @@ When KakaoTalk is connected and activated in Online Contact, the existing plus f
 
 ### SMS
 ![](http://static.toastoven.net/prod_contact_center/2.2.6-(6)_en.png)
-You could send SMS/MMS through linking **[NHN Cloud Notification → SMS](https://www.toast.com/kr/service/notification/sms)** service with Online Contact.
+You could send SMS/MMS through linking **[NHN Cloud Notification → SMS]** service with Online Contact.
 If **SMS** function is **activated** in Global Management → Contract Service Status → Contract Details, SMS menu tab is shown in Service Management → External Channel menu. 
 
-To **① activate** SMS linkage, please **activate [NHN Cloud Notification → SMS](https://www.toast.com/kr/service/notification/sms) service** first, and **② save** the **APP KEY** which you could find in NHN CLOUD CONSOLE. If you enter and save a valid APP KEY, the SMS function is automatically **activated**, and **sending number** list is displayed. 
+To **① activate** SMS linkage, please **activate [NHN Cloud Notification → SMS] service** first, and **② save** the **APP KEY** which you could find in NHN CLOUD CONSOLE. If you enter and save a valid APP KEY, the SMS function is automatically **activated**, and **sending number** list is displayed. 
 
-If you click **③ Add** button, pop-up screen for **selecting sending number** will be shown. The numbers which are registered in NHN Cloud Notification → SMS service are shown in the kist, thus please check if there are registered sending numbers before adding in Online Contact. ([SMS > Console Guide > Sender Number Management](https://docs.toast.com/en/Notification/SMS/en/console-guide/#sender-number-management)) Check the number you want to add, and click confirm button to add the number to the sending number list. The added numbers could be used as **sending number** when sending SMS/MMS in Online Contact. 
+If you click **③ Add** button, pop-up screen for **selecting sending number** will be shown. The numbers which are registered in NHN Cloud Notification → SMS service are shown in the kist, thus please check if there are registered sending numbers before adding in Online Contact. Check the number you want to add, and click confirm button to add the number to the sending number list. The added numbers could be used as **sending number** when sending SMS/MMS in Online Contact. 
 
 After activating SMS service and adding sending number, you could proceed to sending/managing SMS in **Additional Business Management → SMS Send** menu. 
 

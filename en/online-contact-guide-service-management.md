@@ -10,7 +10,7 @@ The configuration or detailed functions of the help center you set up in the men
 -	https:// **Domain Name**.oc.toast.com/ **Service ID** /hc
 
 **Domain name** is the information which was created when you added your organization. Modifying is available in NHN Cloud Console → Set Organization → Set Domain. 
-**Service ID** is the information which was entered when adding service from [Global Management → Contract Service Status](https://docs.toast.com/en/Contact%20Center/en/online-contact-guide-global-management/#contract-service-status) menu. It cannot be modified after initial creation.
+**Service ID** is the information which was entered when adding service from [Global Management → Contract Service Status] menu. It cannot be modified after initial creation.
 
 ## Authentication
 In authentication menu, you could enable/disable **Open API**, and manage related functions.
@@ -21,7 +21,7 @@ In Open API tab, OPEN API could be **① enabled or disabled**, and **② Servic
 Through **Allowed IP List**, Open API can be called only from the IP which is registered in the list. 
 
 ## Chat
-Functions in this menu are related to chat consultation. Chat consultation could be enabled in [Service Management → Help Center → Default Settings](https://docs.toast.com/en/Contact%20Center/en/online-contact-guide-service-management/#default-settings_1), and could be accessed through **chat icon** which is displayed in the bottom right side after chat consultation is enabled.
+Functions in this menu are related to chat consultation. Chat consultation could be enabled in [Service Management → Help Center → Default Settings] menu, and could be accessed through **chat icon** which is displayed in the bottom right side after chat consultation is enabled.
 
 ✔ **\[FAQ]** [Can I access to the chat screen only from the service which I have chat permission?](https://nhn-contact.oc.toast.com/oceng/hc/article/151/)
 
@@ -124,7 +124,7 @@ In Consultation Management service, customer and agent fields are used as follow
 
 #### Field Setting
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(4)_en.png)
-**①** Depending on the submission type you added earlier in [Service Management → Ticket → Manage Category](https://docs.toast.com/en/Contact%20Center/en/online-contact-guide-service-management/#manage-category_1), you can set the fields required for inquiry details differently. Click **Submission Type** to view the fields you have set up, and you can change the **②** order of fields except for personal information field. In the case of personal information field, it is always pinned to the bottom.
+**①** Depending on the submission type you added earlier in [Service Management → Ticket → Manage Category] menu, you can set the fields required for inquiry details differently. Click **Submission Type** to view the fields you have set up, and you can change the **②** order of fields except for personal information field. In the case of personal information field, it is always pinned to the bottom.
 
 You can also **③ add** and **④ remove** the fields you previously added on the Field Management menu.
 
@@ -200,6 +200,11 @@ You can create a **① representative email account address** which domain is pr
 When setting up the layout, you can set ticket related information to be automatically entered at the selected location through **replacement code** available on the right side of the editor. The content editor is displayed in **HTML** or **TEXT** mode according to the editor type setting value in [Global Management → Contract Service Status → Basic Information] menu.
 
 ✔ **\[FAQ]** [How can I connect my external email to Online Contact?](https://nhn-contact.oc.toast.com/oceng/hc/article/127/)
+
+### Sensitive
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(15)_en.png)
+You can manage sensitive words to prevent errors or incorrect instructions from being included in ticket replies.
+If you proceed **ticket preview** or **resolve/pend** tickets while the **① added** sensitive text is included in the content, a **② pop-up** will be displayed indicating that sensitive words are included.
 
 ## Call
 In Call menu, you could register **IVR Route Code, Name** for managing callback, and register **Calling Number** which is displayed to the customer when making a outbound call. This menu is only viewable in services which **Ticket Management →  Include call(using CTI)** function is **activated** in contract details. 
@@ -776,7 +781,7 @@ Functions you can manage are as follows:
 -	1:1 Inquiry & My Inquiries
 -	Chat
 -	Help center navigation
--	Company Informaton (Can be added/modified in Service Management → Help Center → Company Information Management menu)
+-	Company Informaton (Can be added/modified in Global Management → Company Information Management menu)
 
 ### Member Interlink
 ![](http://static.toastoven.net/prod_contact_center/2.2.5-(5)_1_en.png)
@@ -803,12 +808,6 @@ From **② Registration** button, you could register **user-defined** language s
 ![](http://static.toastoven.net/prod_contact_center/2.2.5-(7)-1_en.png)
 In the **① Tag** tab, you can manage **user-defined** tags that can be used for classifying language sets.
 If you press **② Add** button after entering the tag name, user-defined tag will be added, and it will be shown in the tag list with the system tags when managing, or searching language sets.
-
-### Company Information Management
-![](http://static.toastoven.net/prod_contact_center/2.2.5-(6)_en.png)
-In this menu, you can set company information, terms and conditions in the footer area of the PC and mobile help center.
-Press **① Add** button to display setting screen, allowing you to set **② company information**, **③ trademarks and copyrights**, and **④ terms of use**.
-If you press **Save** button after entering the information, the company information configuration you have set will be added to the list. You can select the added configuration from Service Management → Help Center → Default Settings menu, and **⑤ apply** it in the help center.
 
 ## External Channel
 Inquiries received by **external services** could be switched to tickets in Online Contact. **Twitter**, **KakaoTalk**, and **SMS** are currently supported services.
@@ -846,12 +845,12 @@ When KakaoTalk is connected and activated in Online Contact, the existing plus f
 
 ### SMS
 ![](http://static.toastoven.net/prod_contact_center/2.2.6-(6)_en.png)
-You could send SMS/MMS through linking **[NHN Cloud Notification → SMS](https://www.toast.com/kr/service/notification/sms)** service with Online Contact.
+You could send SMS/MMS through linking **[NHN Cloud Notification → SMS]** service with Online Contact.
 If **SMS** function is **activated** in Global Management → Contract Service Status → Contract Details, SMS menu tab is shown in Service Management → External Channel menu. 
 
-To **① activate** SMS linkage, please **activate [NHN Cloud Notification → SMS](https://www.toast.com/kr/service/notification/sms) service** first, and **② save** the **APP KEY** which you could find in NHN CLOUD CONSOLE. If you enter and save a valid APP KEY, the SMS function is automatically **activated**, and **sending number** list is displayed. 
+To **① activate** SMS linkage, please **activate [NHN Cloud Notification → SMS] service** first, and **② save** the **APP KEY** which you could find in NHN CLOUD CONSOLE. If you enter and save a valid APP KEY, the SMS function is automatically **activated**, and **sending number** list is displayed. 
 
-If you click **③ Add** button, pop-up screen for **selecting sending number** will be shown. The numbers which are registered in NHN Cloud Notification → SMS service are shown in the kist, thus please check if there are registered sending numbers before adding in Online Contact. ([SMS > Console Guide > Sender Number Management](https://docs.toast.com/en/Notification/SMS/en/console-guide/#sender-number-management)) Check the number you want to add, and click confirm button to add the number to the sending number list. The added numbers could be used as **sending number** when sending SMS/MMS in Online Contact. 
+If you click **③ Add** button, pop-up screen for **selecting sending number** will be shown. The numbers which are registered in NHN Cloud Notification → SMS service are shown in the kist, thus please check if there are registered sending numbers before adding in Online Contact. Check the number you want to add, and click confirm button to add the number to the sending number list. The added numbers could be used as **sending number** when sending SMS/MMS in Online Contact. 
 
 After activating SMS service and adding sending number, you could proceed to sending/managing SMS in **Additional Business Management → SMS Send** menu. 
 

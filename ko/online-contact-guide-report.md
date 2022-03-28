@@ -112,7 +112,7 @@
 ![](http://static.toastoven.net/prod_contact_center/6.6-(2).png)
 **큐별 호처리 관련 통계 데이터**를 조회하실 수 있습니다. 조건에 따라 데이터를 **① 검색**하실 수 있으며, 엑셀 파일 형식으로 **② 데이터 추출**을 진행하실 수 있습니다.
 
-메뉴 초기 진입 시 현재 **접속 중인 서비스**의 [서비스 관리 → 전화 → IVR Route 관리](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#ivr-route) 메뉴에 **등록되어 있는 IVR Route**가 **기본 조회 대상**으로 설정되어 있으며, 조회대상 드롭박스 상에는 **전체 서비스의 IVR Route가 표시**되어 검색 조건으로 설정하실 수 있습니다.
+메뉴 초기 진입 시 현재 **접속 중인 서비스**의 [서비스 관리 → 전화 → IVR Route 관리] 메뉴에 **등록되어 있는 IVR Route**가 **기본 조회 대상**으로 설정되어 있으며, 조회대상 드롭박스 상에는 **전체 서비스의 IVR Route가 표시**되어 검색 조건으로 설정하실 수 있습니다.
 
 해당 메뉴에서 조회하실 수 있는 세부 항목은 아래와 같습니다.
 
@@ -134,7 +134,7 @@
 ![](http://static.toastoven.net/prod_contact_center/6.6-(3).png)
 **큐별 대기/포기 관련 통계 데이터**를 조회하실 수 있습니다. 조건에 따라 데이터를 **① 검색**하실 수 있으며, 엑셀 파일 형식으로 **② 데이터 추출**을 진행하실 수 있습니다.
 
-메뉴 초기 진입 시 **현재 접속 중인 서비스**의 [서비스 관리 → 전화 → IVR Route 관리](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#ivr-route) 메뉴에 **등록되어 있는 IVR Route**가 **기본 조회 대상**으로 설정되어 있으며, 조회대상 드롭박스에는 **전체 서비스의 IVR Route가 표시**되어 검색 조건으로 설정하실 수 있습니다.
+메뉴 초기 진입 시 **현재 접속 중인 서비스**의 [서비스 관리 → 전화 → IVR Route 관리] 메뉴에 **등록되어 있는 IVR Route**가 **기본 조회 대상**으로 설정되어 있으며, 조회대상 드롭박스에는 **전체 서비스의 IVR Route가 표시**되어 검색 조건으로 설정하실 수 있습니다.
 
 해당 메뉴에서 조회하실 수 있는 세부 항목은 아래와 같습니다.
 

@@ -1,4 +1,4 @@
-## Contact Center > Online Contact > サービスガイド（イシュー管理） > イシュー管理フロー
+## Contact Center > Online Contact > サービスガイド（イシュー管理）> 概要
 
 ## 개요
 Online Contact 상담관리에서 바로 처리가 불가한 문의는 ‘**이관**’ 기능을 통해 이슈관리 티켓으로 생성시킬 수 있습니다. 
