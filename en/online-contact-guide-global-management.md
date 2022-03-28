@@ -1090,7 +1090,7 @@ In the menu, users can check the information written below. OC Organization Key 
 ## Organization Adminstrator
 ![](http://static.toastoven.net/prod_contact_center/2.1.2-(1)_en.png)
 **Organization Administrator** has access to functions related to managing organization, agents, and organization administrators.
-Since consulting and service management functions are not available only by the organization administrator authority, getting **administrator** or **agent** authority from [Service Management → Agent](https://docs.toast.com/en/Contact%20Center/en/online-contact-guide-service-management/#agent_1) menu is needed to consult, or set service.
+Since consulting and service management functions are not available only by the organization administrator authority, getting **administrator** or **agent** authority from [Service Management → Agent] menu is needed to consult, or set service.
 The user whom you want to grant permission must be registered as an IAM member.
 
 ✔ **\[FAQ]** [Types and difference between permissions](https://nhn-contact.oc.toast.com/oceng/hc/article/119/)
