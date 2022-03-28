@@ -1094,7 +1094,7 @@ Online Contact 組織情報でご確認いただける内容は以下の通り�
 ## 組織管理者
 ![](http://static.toastoven.net/prod_contact_center/ja/2.1.2-(1)_ja.png)
 **組織管理者**は Online Contactを使用する組織を管理できる権限を持ち、オペレーターの追加・削除、そしてオペレーターの中から組織管理者を追加・削除等の操作ができます。
-組織管理者の権限だけではオペレーション機能とサービス管理機能を利用することはできません。別の作業者にオペレーションの進行やサービスの初期セットアップをさせたい場合は、 [サービス管理 → オペレーター](https://docs.toast.com/ja/Contact%20Center/ja/online-contact-guide-service-management/#_30) メニューで管理者またはオペレーターの権限を追加してください。 
+組織管理者の権限だけではオペレーション機能とサービス管理機能を利用することはできません。別の作業者にオペレーションの進行やサービスの初期セットアップをさせたい場合は、 [サービス管理 → オペレーター] メニューで管理者またはオペレーターの権限を追加してください。 
 組織管理者の権限を持たせるには、あらかじめIAM会員として登録されている必要があります。
 
 ✔ **\[FAQ]** [権限の種類と違いを知りたいです。](https://nhn-contact.oc.toast.com/ocjp/hc/article/73/)
@@ -1124,7 +1124,7 @@ CTI設定メニューからOnline  Contactの電話機能と関連付けるCTI�
 
 お選びいただける**① CTIバージョン**は以下のとおりです。
 
-- IPCC (Private): Privateサービスでご利用されたい場合はOnline  Contact顧客センターにて**事前協議**をお願いいたします。([Online Contact 顧客センター](https://nhn-contact.oc.toast.com/ocjp/hc/))
+- IPCC (Private): Privateサービスでご利用されたい場合はOnline  Contact顧客センターにて**事前協議**をお願いいたします。([Online Contactお客様センター](https://nhn-contact.oc.toast.com/ocjp/hc/))
 - Mobile Contact: NHN Cloud Consoleで**Mobile  Contactサービスを有効化**した後選択することができます。
 
 CTIバージョンを選択し、IPCCまたはMobile  Contact管理担当者から受け取った**テナントID**、**サービス名**を**② テナントID**、**③ テナント名**欄に入力してください。
