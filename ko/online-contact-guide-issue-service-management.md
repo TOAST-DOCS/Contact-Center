@@ -119,6 +119,11 @@ Online Contact에서 도메인을 제공하는 **① 대표 계정 주소**를 �
 
 ✔ **\[FAQ 바로가기]** [현재 사용하고 있는 외부 이메일을 연결하여 문의를 접수 받고 싶습니다.](https://nhn-contact.oc.toast.com/oc/hc/article/44/)
 
+### 금칙어
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(15)_im.png)
+금칙어 관리를 통해, 고객 문의에 대한 답변 처리 시 오탈자 또는 잘못된 안내사항이 답변에 포함되는 것을 방지할 수 있습니다.
+해당 메뉴에서 **① 추가**하신 금칙어가 처리 내용에 포함된 상태에서 **티켓 미리보기** 또는 **티켓 해결/보류** 처리를 진행하실 경우, 처리 내용에 금칙어가 포함되어 있음을 알리는 **② 팝업**이 표시되어, 내용에 포함된 금칙어를 확인하신 후 수정하여 티켓 처리를 진행하실 수 있습니다.
+
 ## 상담원
 상담원 메뉴에서는 이관 티켓 처리를 위해 상담원과 그룹을 추가 및 수정하고, 상담원 별로 그룹과 권한을 설정할 수 있습니다.
 
@@ -154,12 +159,12 @@ Online Contact에서 도메인을 제공하는 **① 대표 계정 주소**를 �
 
 ### SMS
 ![](http://static.toastoven.net/prod_contact_center/2.2.6-(6)_im.png)
-**[NHN Cloud Notification → SMS](https://www.toast.com/kr/service/notification/sms)** 서비스를 Online Contact과 연동하여 SMS/MMS를 발송하실 수 있습니다.
+**[NHN Cloud Notification → SMS]** 서비스를 Online Contact과 연동하여 SMS/MMS를 발송하실 수 있습니다.
 전체 관리 → 계약 서비스 현황 → 계약 상세 내역에서 **SMS 발송** 기능을 **사용**으로 설정하신 경우 서비스 관리 → 외부채널 메뉴에 SMS 탭이 표시되어 SMS 연동을 관리하실 수 있습니다.
 
-**①** SMS 연동 활성화를 위해서는, 먼저 **[NHN Cloud Notification → SMS](https://www.toast.com/kr/service/notification/sms) 서비스를 활성화**하신 후, CONSOLE에서 확인하실 수 있는 **APP KEY**를 입력하여 **②** 저장해주세요. 유효한 APP KEY를 입력하신 경우 자동으로 **SMS 기능이 활성화**되며, APP KEY 입력란 하단에 **발신번호 목록이 표시**됩니다.
+**①** SMS 연동 활성화를 위해서는, 먼저 **[NHN Cloud Notification → SMS] 서비스를 활성화**하신 후, CONSOLE에서 확인하실 수 있는 **APP KEY**를 입력하여 **②** 저장해주세요. 유효한 APP KEY를 입력하신 경우 자동으로 **SMS 기능이 활성화**되며, APP KEY 입력란 하단에 **발신번호 목록이 표시**됩니다.
 
-**③** **추가** 버튼을 누르시면 **발신번호 선택 팝업**이 표시됩니다. NHN Cloud Notification → SMS 서비스에 발신번호로 등록된 번호가 목록에 표시되므로, 발신번호 추가 전 **SMS 서비스에 발신번호가 등록**되어 있는지 확인해주세요. ([SMS > 콘솔 사용 가이드 > 발신번호 관리](https://docs.toast.com/ko/Notification/SMS/ko/console-guide/#_15)) 표시된 목록에서 발신번호로 추가하고자 하시는 번호를 체크하신 후, 확인 버튼을 누르시면 발신번호 목록에 번호가 추가되며, Online Contact에서 SMS/MMS 발송 시 **발신번호로 활용**하실 수 있습니다.
+**③** **추가** 버튼을 누르시면 **발신번호 선택 팝업**이 표시됩니다. NHN Cloud Notification → SMS 서비스에 발신번호로 등록된 번호가 목록에 표시되므로, 발신번호 추가 전 **SMS 서비스에 발신번호가 등록**되어 있는지 확인해주세요. 표시된 목록에서 발신번호로 추가하고자 하시는 번호를 체크하신 후, 확인 버튼을 누르시면 발신번호 목록에 번호가 추가되며, Online Contact에서 SMS/MMS 발송 시 **발신번호로 활용**하실 수 있습니다.
 
 SMS 연동 활성화 및 발신번호 추가 이후에, **부가업무 → SMS발송** 메뉴에서 SMS 템플릿 관리 및 SMS 발송을 진행하실 수 있습니다.
 

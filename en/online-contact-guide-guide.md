@@ -1,4 +1,4 @@
-## Contact Center > Online Contact > Service Guide > Guide
+## Contact Center > Online Contact > Service Guide (Consultation) > Guide
 
 ## Internal Notice
 In this menu, administrators could register **notice** which should be shared within the organization. Registered notice documents are viewed in the **relevant menu**, and **main page of Online Contact**. 
@@ -8,6 +8,7 @@ In this menu, administrators could register **notice** which should be shared wi
 Before registering notice documents, you could add **headings** which documents would be classified. Please proceed adding headings before registering notice documents or templates since **selecting heading is required** when registering. Only **administrators** could register, edit, delete headings.
 
 Headings of internal notice are divided as follows:
+
 -	**①** Private: Heading which is used **only in the relevant service**
 -	**②** Common: Heading which is used in **the entire service in the organization**. When registered, it is registered commonly to all services inside the organization.
 
@@ -20,6 +21,7 @@ Please note that heading names cannot be duplicated, regardless of whether they 
 From distribute document menu, you could view or search information related to notice documents which are currently shown to agents in the organization. **① Registering**, **② editing**, **deleting** of notice documents are available to **only administrators.**
 
 Viewable information is as follows:
+
 -	Number
 -	Status (In Progress/Reserved/Done)
 -	Heading
@@ -33,6 +35,7 @@ Viewable information is as follows:
 For frequently used forms when creating notices, you could add templates to shorten the time for creating documents. You could **① Register** templates, and only **administrators** could register, edit, delete templates.
 
 Items which need to be filled are as follows:
+
 - **①** Template Title
 - **②** Template Description
 - **③** Heading
@@ -46,6 +49,7 @@ Items which need to be filled are as follows:
 **Tags** could be helpful for searching. Tags could be registered by **① Register** button, and **② Editing**, **Deleting** is also available. Only **administrators** could register, edit, delete tags. The most recent registered tag would be viewed first.
 
 Tags are divided as follows:
+
 -	**①** Private: Tags which is used **only in the relevant service**
 -	**②** Common: Tags which is used in **the entire service in the organization**. When registered, it is registered commonly to all services inside the organization.
 
@@ -57,6 +61,7 @@ By clicking **Registration Notice** button in distribute document menu, you coul
 
 ![](http://static.toastoven.net/prod_contact_center/7.1-(3)_en.png)
 Items which need to be filled are as follows:
+
 - **①** Select Template
 - **②** Heading
 - **③** Tag
@@ -76,6 +81,7 @@ In this menu, administrators could register **consultation knowledge** which sho
 Before registering knowledge documents, you could add **headings** which documents would be classified. Please proceed adding headings before registering documents or templates since **selecting heading is required** when registering. Only **administrators** could register, edit, delete headings.
 
 Headings of internal notice are divided as follows:
+
 -	**①** Private: Heading which is used **only in the relevant service**
 -	**②** Common: Heading which is used in **the entire service in the organization**. When registered, it is registered commonly to all services inside the organization.
 
@@ -88,6 +94,7 @@ Please note that heading names **cannot be duplicated**, regardless of whether t
 From consultation knowledge menu, you could view, or search information related to knowledge documents which are currently shown to agents in the organization. **① Registering**, **② editing**, **deleting** of knowledge documents are available to **only administrators.**
 
 Viewable information is as follows:
+
 -	Number
 -	Status (In Progress/Reserved/Done)
 -	Heading
@@ -101,6 +108,7 @@ Viewable information is as follows:
 For frequently used forms when creating knowledge documents, you could add templates to shorten the time for creating documents. You could **① Register** templates, and only **administrators** could register, edit, delete templates.
 
 Items which need to be filled are as follows:
+
 - **①** Template Title
 - **②** Template Description
 - **③** Heading
@@ -114,6 +122,7 @@ Items which need to be filled are as follows:
 **Tags** could be helpful for searching. Tags could be registered by **① Register** button, and **② Editing**, **Deleting** is also available. Only **administrators** could register, edit, delete tags. The most recent registered tag would be viewed first.
 
 Tags are divided as follows:
+
 -	**①** Private: Tags which is used **only in the relevant service**
 -	**②** Common: Tags which is used in **the entire service in the organization**. When registered, it is registered commonly to all services inside the organization.
 

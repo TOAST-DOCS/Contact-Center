@@ -1,4 +1,4 @@
-## Contact Center > Online Contact > Service Guide > Additional Business Management
+## Contact Center > Online Contact > Service Guide (Consultation) > Additional Business Management
 
 ## Callback Management
 From **Callback Management** menu, you could view and process **callback requests**, **assign or unassign callback to agents**, and view **processing status** of callbacks.
@@ -8,6 +8,7 @@ From **Callback Management** menu, you could view and process **callback request
 In this menu, you could view callback list through search conditions. **Administrators** could view all of the list according to the period, and **agents** could view callbacks assigned to themselves. Only agents with **call authority** can view callback list.
 
 Search conditions are as follows, and searching is available through clicking  **① Search** button.
+
 - Query Time
 - IVR Route : IVR route added in Service Management → Call → IVR Route Management menu
 - Status
@@ -29,6 +30,7 @@ Callback list can be queried through time, IVR route, phone number, person in ch
 You can select a callback request from the left callback list screen, and then select a agent from the right agent list screen to process the assignment.
 
 Methods of assignment are as follows:
+
 - **③ Average Assign** : If you select multiple agents and select average assign, selected callback request will be assigned to one of the selected agents.
 - **④ Manual Assign** : Callback request will be assigned to the selected agent.
 

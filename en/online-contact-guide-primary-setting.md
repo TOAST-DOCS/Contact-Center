@@ -57,7 +57,7 @@ Online Contact has two distinct memberships.
 ![](http://static.toastoven.net/prod_contact_center/1.3.4-(1)_en.png)
 Online Contact register process is completed. In the displayed register completion page, 
 Please check **① Online Contact Access URL**, and the **OWNER ID** which you checked as OWNER before. These informations would be used after when accessing to Online Contact. 
-**②** About security settings related to IAM members login process, please refer the given link [Security Setting for IAM Console Logins](https://docs.toast.com/en/TOAST/en/console-guide/#security-setting-for-iam-console-logins).
+**②** About security settings related to IAM members login process, please refer the given link [Login Security Setting](https://docs.toast.com/en/TOAST/en/console-guide/#login-security-setting).
 
 Access to Online Contact is able using the URL given on the register completion page, or click NHN Cloud CONSOLE → Organization Service Usage → Online Contact to access the login page.
 Please login through using the OWNER ID given on the register completion page. Please  

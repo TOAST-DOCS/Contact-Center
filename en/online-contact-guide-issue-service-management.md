@@ -123,6 +123,11 @@ When setting up the layout, you can set ticket related information to be automat
 
 ✔ **\[FAQ]** [How can I connect my external email to Online Contact?](https://nhn-contact.oc.toast.com/oceng/hc/article/127/)
 
+### Sensitive
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(15)_im_en.png)
+You can manage sensitive words to prevent errors or incorrect instructions from being included in ticket replies.
+If you proceed **ticket preview** or **resolve/pend** tickets while the **① added** sensitive text is included in the content, a **② pop-up** will be displayed indicating that sensitive words are included.
+
 ## Agent
 In this menu, you can add and edit agents and groups for processing escalated tickets, and set up groups and permissions for each agent.
 
@@ -138,7 +143,7 @@ Select one of the above two methods to register IAM member., and click **② Add
 
 When adding a agent, assigning group is mandatory. Thus, adding groups should be proceeded before adding agents.
 
-The **permission** of agents is as follows. Setting organization administrator permission is available from [Global Management → Organization Administrator](https://docs.toast.com/en/Contact%20Center/en/online-contact-guide-global-management/#organization-adminstrator) menu.
+The **permission** of agents is as follows. Setting organization administrator permission is available from [Global Management → Organization Administrator] menu.
 
 -	Administrator: Permission which features related to **service setting** added to the permission of **agents**. 
 -	Agent: Permission for **ticket consultation**.
@@ -156,12 +161,12 @@ You can communicate with customers by connecting **external channel** with Onlin
 
 ### SMS
 ![](http://static.toastoven.net/prod_contact_center/2.2.6-(6)_im_en.png)
-You could send SMS/MMS through linking **[NHN Cloud Notification → SMS](https://www.toast.com/kr/service/notification/sms)** service with Online Contact.
+You could send SMS/MMS through linking **[NHN Cloud Notification → SMS]** service with Online Contact.
 If **SMS** function is **activated** in Global Management → Contract Service Status → Contract Details, SMS menu tab is shown in Service Management → External Channel menu. 
 
-To **① activate** SMS linkage, please **activate [NHN Cloud Notification → SMS](https://www.toast.com/kr/service/notification/sms) service** first, and **② save** the **APP KEY** which you could find in NHN CLOUD CONSOLE. If you enter and save a valid APP KEY, the SMS function is automatically **activated**, and **sending number** list is displayed. 
+To **① activate** SMS linkage, please **activate [NHN Cloud Notification → SMS] service** first, and **② save** the **APP KEY** which you could find in NHN CLOUD CONSOLE. If you enter and save a valid APP KEY, the SMS function is automatically **activated**, and **sending number** list is displayed. 
 
-If you click **③ Add** button, pop-up screen for **selecting sending number** will be shown. The numbers which are registered in NHN Cloud Notification → SMS service are shown in the kist, thus please check if there are registered sending numbers before adding in Online Contact. ([SMS > Console Guide > Sender Number Management](https://docs.toast.com/en/Notification/SMS/en/console-guide/#sender-number-management)) Check the number you want to add, and click confirm button to add the number to the sending number list. The added numbers could be used as **sending number** when sending SMS/MMS in Online Contact. 
+If you click **③ Add** button, pop-up screen for **selecting sending number** will be shown. The numbers which are registered in NHN Cloud Notification → SMS service are shown in the kist, thus please check if there are registered sending numbers before adding in Online Contact. Check the number you want to add, and click confirm button to add the number to the sending number list. The added numbers could be used as **sending number** when sending SMS/MMS in Online Contact. 
 
 After activating SMS service and adding sending number, you could proceed to sending/managing SMS in **Additional Business Management → SMS Send** menu. 
 

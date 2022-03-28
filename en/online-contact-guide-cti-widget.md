@@ -30,6 +30,7 @@ When calling is proceeded, the agent status would be changed to **Dialing**, and
 #### Process Call
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(13)_en.png)
 In **Talking** status, you can use the following functions through the CTI screen.
+
 - Transfer : You can **transfer** the currently connected call to other agent. After entering agent number or searching agent, you can discuss with the other agent through **transfer try** button, and can transfer the call through **transfer connect** button. 
 - Disconnect: In the case of a situation where **normal consultation is difficult to take place due to the customer's strong attitude**, click disconnect to finish call with an ARS announcement.
 - Hold: If you need a moment of confirmation or inquiry while consulting, select Hold. **Music will be transmissed** to the customer, and agent status will be changed to **holding**. Click **retrieve** to reconnect call.

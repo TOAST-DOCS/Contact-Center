@@ -18,7 +18,7 @@
 ① USER가 APP 내에서 헬프센터에 접속합니다.
 ② 고객사의 APP은 헬프센터 호출 시 아래 URL 형식으로 호출합니다.
 - https://**{org}**.oc.toast.com/**{service}**/hc/?usercode=**{유저_아이디}**&username=**{유저_이름}**&email=**{유저_이메일}**&phone=**{유저_전화번호}**&token=**{인증토큰_값}**
-③ 헬프센터에서 ‘토큰 검증 URL’을 호출합니다. (여기서 ‘토큰 검증 URL 은 고객사에서 아래 제공된 명세서에 따라 개발 후 OC 회원연동 화면에 등록해야 합니다.)
+③ 헬프센터에서 ‘Token 검증 URL’을 호출합니다. (여기서 ‘Token 검증 URL 은 고객사에서 아래 제공된 명세서에 따라 개발 후 OC 회원연동 화면에 등록해야 합니다.)
 ④ 토큰 검증 후 정상일 경우 ‘문의하기’ 또는 ‘문의내역’ 페이지에 접속합니다. 이 때 검증에 실패 할 경우 ‘문의하기’는 비회원으로 접수됩니다.
 
 ### 회원 연동 방법
@@ -30,7 +30,7 @@
 
 ## 개발 명세서
 ### 인증토큰 생성
-Token 생성 샘플은 아래와 같습니다. 파라미터 순서는 반드시 아래와 일치해야 하며, 전체 관리 → SSO 로그인 메뉴에서 API Key를 확인해주세요.
+Token 생성 샘플은 아래와 같습니다. 파라미터 순서는 반드시 아래와 일치해야 하며, 전체 관리 → 계약 서비스 현황 → 조직 정보 메뉴에서 조직 Key를 확인해주세요.
 
 ```
 private String getSHA256Token(String serviceId, String usercode, String username, String email, String phone,
@@ -67,22 +67,24 @@ private String getSHA256Token(String serviceId, String usercode, String username
 }
 ```
 
-### Token 회원인증 방법
+### GET 회원인증 방법
 #### 인터페이스 설명
 
 URL
+
 - https://{org}.oc.toast.com/{service}/hc/?usercode=aaaabbb&username=yzg&email=yzgname@163.com&phone=12345678901&time=12345678&token=8NPaBegAfbSvh1Lna9M0I1wBqjnoRyKO2r2izhuEAng%3d
 - https://{org}.oc.toast.com/{service}/hc/ticket/?usercode=aaaabbb&username=yzg&email=yzgname@163.com&phone=12345678901&time=12345678&token=8NPaBegAfbSvh1Lna9M0I1wBqjnoRyKO2r2izhuEAng%3d
 - https://{org}.oc.toast.com/{service}/hc/ticket/list/?usercode=aaaabbb&username=yzg&email=yzgname@163.com&phone=12345678901&time=12345678&token=8NPaBegAfbSvh1Lna9M0I1wBqjnoRyKO2r2izhuEAng%3d
 
 URL (개발)
+
 - https://{domain}.alpha-oc.toast.com/{service}/hc/?usercode=aaaabbb&username=yzg&email=yzgname@163.com&phone=12345678901&time=12345678&token=8NPaBegAfbSvh1Lna9M0I1wBqjnoRyKO2r2izhuEAng%3d
 - https://{domain}.alpha-oc.toast.com/{service}/hc/ticket/?usercode=aaaabbb&username=yzg&email=yzgname@163.com&phone=12345678901&time=12345678&token=8NPaBegAfbSvh1Lna9M0I1wBqjnoRyKO2r2izhuEAng%3d
 - https://{domain}.alpha-oc.toast.com/{service}/hc/ticket/list/?usercode=aaaabbb&username=yzg&email=yzgname@163.com&phone=12345678901&time=12345678&token=8NPaBegAfbSvh1Lna9M0I1wBqjnoRyKO2r2izhuEAng%3d
   
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|
 |------------|-------|--------|-----|--------|--------------|
-|Token 회원인증 |HTTPS |GET |UTF-8 | |서비스 측에서 헬프센터 접속 시, 고객정보 및 암호화 후 생성된 token 값을 파라미터 형태로 전송 |
+|GET 회원인증 |HTTPS |GET |UTF-8 | |서비스 측에서 헬프센터 접속 시, 고객정보 및 암호화 후 생성된 token 값을 파라미터로 URL에 추가해서 호출|
 
 #### 파라미터
 |명칭|변수|데이터 타입|필수|설명|
@@ -92,8 +94,9 @@ URL (개발)
 |유저 명	  |username	 |VARCHAR(50)	 |X	 |유저 명|
 |유저 이메일	|email	  |VARCHAR(100)	|O	|유저 이메일|
 |전화번호	   |phone	   |VARCHAR(20)	 |X	 |전화번호|
+|회원번호	|memberno	|VARCHAR(50)	|X	|회원번호|
 |timestamp	|time	    |LONG	        |O	|시간단위 : 밀리초|
-|인증Token	|token	  |VARCHAR	     |O	|다음 파라미터 값과 조직 Key로 계산(SHA256). (선택사항 값이 null 혹은 없을 경우, token 생성에서 제외. 주의사항 : 문자열에서 각 값의 순서는 다음과 동일해야 함) SHA256Digest(service + usercode + username + email + phone + retunrnUrl + time)|아ㅣㄴ
+|인증Token	|token	  |VARCHAR	     |O	|다음 파라미터 값과 조직 Key로 계산(SHA256). (선택사항 값이 null 혹은 없을 경우, token 생성에서 제외. 주의사항 : 문자열에서 각 값의 순서는 다음과 동일해야 함) SHA256Digest(service + usercode + username + email + phone + memberno + returnUrl + time)|
 
 ##### 인증 Token 생성 시 주의사항
 1. Token 생성 시, 한글이 있을 경우 한글로 직접 생성. 인코딩 필요 없음
@@ -104,20 +107,20 @@ URL (개발)
 - Token 인증 실패: 비회원으로 접속하는 주소로 이동		
 - Token 인증 실패 상태에서 문의내역으로 접속 시, 문의하기 화면으로 이동		
 
-### Token 인증 API (서비스 측)
+### Token 검증 API (서비스 측)
 #### 인터페이스 설명
 - URL: 서비스 측에서 지원 		
 - URL (개발): 서비스 측에서 지원
 
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|
 |------------|-------|--------|-----|--------|--------------|
-|Token 인증 확인 API |HTTPS |GET |UTF-8 |JSON |서비스 측에서 token과 usercode로 로그인 상태 확인 후 JSON 형태 결과 값을 전송 |
+|Token 검증 API |HTTPS |GET |UTF-8 |JSON |서비스 측에서 token과 usercode로 로그인 상태 확인 후 JSON 형태 결과 값을 전송 |
 
 #### 요청 파라미터
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |----|-------|----------|----|---|
 |유저 ID	|usercode	|VARCHAR(50)	|O	|유저 ID(유니크 값)|
-|서비스 측에서 생성한 Token	|token	|VARCHAR	|O	|다음 파라미터 값과 조직 Key로 계산(SHA256). (선택사항 값이 null 혹은 없을 경우, token 생성에서 제외. 주의사항 : 문자열에서 각 값의 순서는 다음과 동일해야 함) SHA256Digest(service + usercode + username + email + phone + retunrnUrl + time)|
+|서비스 측에서 생성한 Token	|token	|VARCHAR	|O	|다음 파라미터 값과 조직 Key로 계산(SHA256). (선택사항 값이 null 혹은 없을 경우, token 생성에서 제외. 주의사항 : 문자열에서 각 값의 순서는 다음과 동일해야 함) SHA256Digest(service + usercode + username + email + phone + memberno + returnUrl + time)|
 
 #### Response Body
 ```

@@ -1,5 +1,5 @@
 ## Contact Center > Online Contact > Service Guide (Issue) > Global Management
-Global Management menu in Issue Management service consists of **Contract Service Status**, **Organization Administrator**, **Authority Log Management** menu.
+Global Management menu in Issue Management service consists of **Contract Service Status**, **Organization Administrator**, **Company Information Management**, **Authority Log Management** and **Data Transfer** menu.
 
 ## Contract service status
 ### Contract status
@@ -47,7 +47,7 @@ In the menu, users can check the information written below. OC Organization Key 
 ## Organization Adminstrator
 ![](http://static.toastoven.net/prod_contact_center/2.1.2-(1)_im_en.png)
 **Organization Administrator** has access to functions related to managing organization, agents, and organization administrators.
-Since consulting and service management functions are not available only by the organization administrator authority, getting **administrator** or **agent** authority from [Service Management → Agent](https://docs.toast.com/en/Contact%20Center/en/online-contact-guide-service-management/#agent_1) menu is needed to consult, or set service.
+Since consulting and service management functions are not available only by the organization administrator authority, getting **administrator** or **agent** authority from [Service Management → Agent] menu is needed to consult, or set service.
 The user whom you want to grant permission must be registered as an IAM member.
 
 ✔ **\[FAQ]** [Types and difference between permissions](https://nhn-contact.oc.toast.com/oceng/hc/article/119/)
@@ -59,6 +59,13 @@ The user whom you want to grant permission must be registered as an IAM member.
 
 Select one of the above two methods to register IAM member. After registering, click **② Add Organization Administrator** → click **View Agent** → Search registered IAM Member by entering name/account/email, and add IAM Member as organization administrator.
 To newly registered IAM Members, **password change mail** will be sent to the registered email. Logging in Online Contact becomes available after setting password through email.
+
+## Company Information Management
+![](http://static.toastoven.net/prod_contact_center/2.2.5-(6)_1_im_en.png)
+
+In this menu, you can set company information, terms and conditions in the footer area of the PC/mobile help center.
+Press **① Add** button to display setting screen, which allows you to set **② company information**, **③ trademarks and copyrights**, and **④ terms of use**.
+If you press **Save** button after entering the information, the company information configuration you have set will be added to the list. You can select the added configuration from Service Management → Help Center → Default Settings menu, and **⑤ apply** it in the help center.
 
 ## Authority Log Management
 ![](http://static.toastoven.net/prod_contact_center/2.1.4-(1)_im_en.png)

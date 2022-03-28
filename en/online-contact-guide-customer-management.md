@@ -1,4 +1,4 @@
-## Contact Center > Online Contact > Service Guide > Customer Management
+## Contact Center > Online Contact > Service Guide (Consultation) > Customer Management
 
 ## Customer Info Contact
 ### Set Customer System API Information

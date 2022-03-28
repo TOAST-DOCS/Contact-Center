@@ -1,4 +1,4 @@
-## Contact Center > Online Contact > サービスガイド > サービス管理
+## Contact Center > Online Contact > サービスガイド（お問合わせ管理） > サービス管理
 
 サービス管理メニューには、認証設定、チケット作成、オペレーター管理、ヘルプセンター（サポートページ）のテンプレート管理など、 **問い合わせ受付と処理のための詳細設定機能**が含まれます。
 このメニュー内で設定するヘルプセンターの構成や設定機能は、適用と同時にヘルプセンター画面で確認することができます。 ヘルプセンターへのアクセスは以下をご参照ください。
@@ -8,7 +8,7 @@
 - Online Contact 右下の **ヘルプセンターへ**
 - https:// **ドメイン名** .oc.toast.com/ **サービスID** /hc
 
-ドメイン名はOnline Contactの組織生成の時、設定する情報で、NHN Cloud CONSOLE → 組織設定 → ドメイン設定で修正することができます。一方、サービスIDは [全体管理 → 契約サービス管理](https://docs.toast.com/ja/Contact%20Center/ja/online-contact-guide-global-management/#_1) メニューでサービス追加をした時入力した情報であり、初期生成以降は修正できません。
+ドメイン名はOnline Contactの組織生成の時、設定する情報で、NHN Cloud CONSOLE → 組織設定 → ドメイン設定で修正することができます。一方、サービスIDは [全体管理 → 契約サービス管理] メニューでサービス追加をした時入力した情報であり、初期生成以降は修正できません。
 
 ## 認証
 認証メニューでは、**OPEN API**有効化/無効化および関連機能を使用することができます。
@@ -20,7 +20,7 @@
 **③ 接続IP設定**で接続IPを設定しておくと、指定したIPからのみOPEN APIを呼び出すことができるようになります。
 
 ## チャット
-チャット機能に関連した項目です。チャット機能は、[全体管理 → 契約サービス管理 → 契約管理](https://docs.toast.com/ja/Contact%20Center/ja/online-contact-guide-global-management/#_2)タブで変更できる契約の詳細内訳でチャット機能を使用設定し、[サービス管理 → ヘルプセンター → 基本設定](https://docs.toast.com/ja/Contact%20Center/ja/online-contact-guide-service-management/#_37)メニューでで有効化できます。有効化した後、右下にチャットアイコンが表示され、そこからチャットにアクセスできるようになります。
+チャット機能に関連した項目です。チャット機能は、[全体管理 → 契約サービス管理 → 契約管理] タブで変更できる契約の詳細内訳でチャット機能を使用設定し、[サービス管理 → ヘルプセンター → 基本設定] メニューでで有効化できます。有効化した後、右下にチャットアイコンが表示され、そこからチャットにアクセスできるようになります。
 
 ✔ **\[FAQ]** [チャット画面はチャット権限があるサービスでのみアクセスできますか？](https://nhn-contact.oc.toast.com/ocjp/hc/article/115/)
 
@@ -29,7 +29,7 @@
 
 ### 基本設定
 ![](http://static.toastoven.net/prod_contact_center/2.2.2-(2)_1_ja.png)
-**①** チャット接続時にお客様に自動で送られる **挨拶メッセージ**と、 **②** お客様評価リクエスト時に送られる **満足度案内メッセージ**を[全体管理 → 契約サービス管理 → 契約管理 → 基本情報]画面で設定したヘルプセンター言語別に設定することができます。評価リクエストはチャット画面上部にある**評価**ボタンからお客様に送信できます。
+**①** チャット接続時にお客様に自動で送られる **挨拶メッセージ**と、 **②** お客様評価リクエスト時に送られる **満足度案内メッセージ**を[全体管理 → 契約サービス管理 → 契約管理 → 基本情報] 画面で設定したヘルプセンター言語別に設定することができます。評価リクエストはチャット画面上部にある**評価**ボタンからお客様に送信できます。
 
 ### オペレーターアサイン設定
 ![](http://static.toastoven.net/prod_contact_center/ja/2.2.2-(3)_ja.png)
@@ -58,7 +58,7 @@
 
 #### 受付タイプ
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(1)-1_ja.png)
-**①** 上位カテゴリーを先に選択し、下位の階層にカテゴリーを追加します。その際、上位カテゴリーを先にクリックし選択されたことを確認し、追加してください。選択されると背景色に色がつき、強調されます。強調されたカテゴリーの下に新しい下位カテゴリーが作成されます。同一階層において、カテゴリー名の **重複はできません**。 (階層が異なる場合は可能) [全体管理 → 契約サービス管理 → 契約管理 → 基本情報]画面で設定したヘルプセンター言語別に受付タイプを設定できます。
+**①** 上位カテゴリーを先に選択し、下位の階層にカテゴリーを追加します。その際、上位カテゴリーを先にクリックし選択されたことを確認し、追加してください。選択されると背景色に色がつき、強調されます。強調されたカテゴリーの下に新しい下位カテゴリーが作成されます。同一階層において、カテゴリー名の **重複はできません**。 (階層が異なる場合は可能) [全体管理 → 契約サービス管理 → 契約管理 → 基本情報] 画面で設定したヘルプセンター言語別に受付タイプを設定できます。
 
 **②**生成されたカテゴリーをクリックすると**削除**ボタンが表示され削除が可能で、**名称の修正**はダブルクリック後に進めることができます。
 
@@ -83,10 +83,10 @@
 ✔ **\[FAQ]** [受け付けられたお問い合わせを自動的に外部に転送したいです。](https://nhn-contact.oc.toast.com/ocjp/hc/article/80/)
 ✔ **\[FAQ]** [特定条件でお知らせメールを送りたいです。](https://nhn-contact.oc.toast.com/ocjp/hc/article/79/)
 
-#### トリガー受付タイプ
+#### トリガー条件タイプ
 ![](http://static.toastoven.net/prod_contact_center/ja/2.2.3-(2)a_ja.png)
 
-#### トリガー受付タイプ(詳細)
+#### トリガー条件タイプ(詳細)
 ![](http://static.toastoven.net/prod_contact_center/ja/2.2.3-(2)b_ja.png)
 
 #### トリガー結果タイプ
@@ -95,7 +95,7 @@
 #### トリガー結果タイプ(詳細)
 ##### アサイン
 ![](http://static.toastoven.net/prod_contact_center/ja/2.2.3-(2)d_ja.png)
-オペレーターグループとグループ内でのチケットアサイン方式を選択して保存すると (任意アサイン/順次アサイン/オペレーター選択)、トリガー条件が満たされた際、選択した結果に合わせて担当の割り当てが実行されます。 **任意アサイン**である場合、グループ内オペレーターに **ランダム**で チケットが割り当てられ、 **順次配分**である場合、グループに相談員が **追加された順** にしたがってチケットが割り当てられます。同一の条件にそれぞれ異なるオペレーターで結果値を指定したり、トリガーが複数ある場合、そのオペレーターの中から一人にランダムに割り当てられるのではなく、 全てのトリガーが順次発動され、最後のトリガーに設定されたオペレーターの方にのみ継続してチケットが割り当てられます。そのため、チケットのグループ内ランダム割り当てを意図する場合は**任意アサイン**を必ず選択してください。
+オペレーターグループとグループ内でのチケットアサイン方式を選択して保存すると (任意アサイン/順次アサイン/オペレーター選択)、トリガー条件が満たされた際、選択した結果に合わせて担当の割り当てが実行されます。 **任意アサイン**である場合、グループ内オペレーターに **ランダム**で チケットが割り当てられ、 **順次アサイン**である場合、グループにオペレーターが **追加された順** にしたがってチケットが割り当てられます。同一の条件にそれぞれ異なるオペレーターで結果値を指定したり、トリガーが複数ある場合、そのオペレーターの中から一人にランダムに割り当てられるのではなく、 全てのトリガーが順次発動され、最後のトリガーに設定されたオペレーターの方にのみ継続してチケットが割り当てられます。そのため、チケットのグループ内ランダム割り当てを意図する場合は**任意アサイン**を必ず選択してください。
 
 ##### お知らせ
 ![](http://static.toastoven.net/prod_contact_center/ja/2.2.3-(2)e_ja.png)
@@ -122,7 +122,7 @@
 
 #### フィールド設定
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(4)_ja.png)
-**①** まず [チケット → カテゴリー管理](https://docs.toast.com/ja/Contact%20Center/ja/online-contact-guide-service-management/#_9)で登録いただいた受付タイプによって、問い合わせ内容に必要なフィールドの設定可能です。**受付タイプ** をクリックすると設定しておいたフィールドを閲覧でき、個人情報収集項目を除いたフィールドの**②**順を変更できます。(個人情報収集項目の場合、常に一番下に表示されるように固定される)また、フィールド管理タブで追加しておいたフィールドを新しく**③ 追加**したり、すでに追加したフィールドを**④ 削除**することができます。
+**①** まず [チケット → カテゴリー管理] メニューで登録いただいた受付タイプによって、問い合わせ内容に必要なフィールドの設定可能です。**受付タイプ** をクリックすると設定しておいたフィールドを閲覧でき、個人情報収集項目を除いたフィールドの**②**順を変更できます。(個人情報収集項目の場合、常に一番下に表示されるように固定される)また、フィールド管理タブで追加しておいたフィールドを新しく**③ 追加**したり、すでに追加したフィールドを**④ 削除**することができます。
 
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(4)-1_ja.png)
 システムフィールドのうち、**電話関連フィールド**(相談時間、IN/OUT、電話予約、予約時間、予約電話番号)の場合、有効化されている受付タイプに追加しても**ヘルプセンターおよび電話以外のチャンネルで受付されたチケット**で**照会されず**、1つの受付タイプをヘルプセンター、電話、メールなどの様々なチャンネルで一緒に利用しようとする場合に活用することができます。
@@ -132,7 +132,7 @@
 **①** フィールド設定タブで各受付タイプに合わせてフィールドが追加できるよう、フィールド管理タブで個別フィールドを管理します。システムフィールドは**修正**またはフィールド設定の **初期化**のみ可能です。
 
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(5)_2_1_ja.png)
-**システムフィールド**の場合、項目名、説明文言、個人情報(暗号化可否)、個人情報の破棄項目の変更が可能です。項目名の場合は、[全体管理 → 契約サービス管理 → 契約管理 → 基本設定]で設定した**① ヘルプセンター言語別**に設定できます。
+**システムフィールド**の場合、項目名、説明文言、個人情報(暗号化可否)、個人情報の破棄項目の変更が可能です。項目名の場合は、[全体管理 → 契約サービス管理 → 契約管理 → 基本設定] で設定した**① ヘルプセンター言語別**に設定できます。
 
 **② 必須可否** および **表示可否**の場合、フィールドの種類によって修正可能可否が区分されます。
 
@@ -149,8 +149,8 @@
 -	**①** タイプ: フィールドの**項目タイプ**です。項目タイプを選択すると、基本設定の下部に**詳細設定**と**プレビュー**が表示されます。 詳細設定で、項目に表示される値を設定することができ、
   プレビューでお客様の画面でそのフィールドがどのように見えるかを確認できます。
 -	**②** 項目コード: Open APIへの問い合わせ機能を開発する場合、そのフィールドを表す固有の値として使用されます。
--	**③** 項目名: フィールドの名前で、お問い合わせ画面にフィールドと一緒に表示されます。[全体管理 → 契約サービス管理 → 契約管理 → 基本設定]で設定した**ヘルプセンター言語別**に設定できます。
--	**④** 説明文言: フィールドに関する説明文で、お問い合わせ画面にフィールドと一緒に表示されます。[全体管理 → 契約サービス管理 → 契約管理 → 基本設定]で設定した**ヘルプセンター言語別**に設定できます。
+-	**③** 項目名: フィールドの名前で、お問い合わせ画面にフィールドと一緒に表示されます。[全体管理 → 契約サービス管理 → 契約管理 → 基本設定] で設定した**ヘルプセンター言語別**に設定できます。
+-	**④** 説明文言: フィールドに関する説明文で、お問い合わせ画面にフィールドと一緒に表示されます。[全体管理 → 契約サービス管理 → 契約管理 → 基本設定] で設定した**ヘルプセンター言語別**に設定できます。
 -	**⑤** 必須可否: 設定時、項目名の右側に \*(別表)で表示され、必ず入力してから次のステップに進むことができます。基本フィールドのうち、タイトル、メール、タイプ、内容、個人情報収集フィールドには必須入力項目について「いいえ」設定ができません。 
 -	**⑥** 個人情報(暗号化可否)
 -	**⑦** 個人情報破棄
@@ -174,11 +174,11 @@
 **① テンプレート追加** ボタンを通じてテンプレートを追加することができます。設定が必要な項目は以下の通りです。
 
 - **②** タイトル 
-- **③** 内容 : [全体管理 → 契約サービス管理 → 基本情報]で設定されたエディタタイプが反映され、内容作成の際に右側の**置換コード**をご活用いただけます。 **ダブルクリック** 時置換コードが本文に追加され、チケット処理の際にテンプレートの置換コード領域にデータが直接挿入され、より便利に回答を作成できます。
+- **③** 内容 : [全体管理 → 契約サービス管理 → 基本情報] で設定されたエディタタイプが反映され、内容作成の際に右側の**置換コード**をご活用いただけます。 **ダブルクリック** 時置換コードが本文に追加され、チケット処理の際にテンプレートの置換コード領域にデータが直接挿入され、より便利に回答を作成できます。
 - **④** 検索コード : **テンプレートに保存**できる20文字以内の英字または数字の組み合わせの**コード**で、お客様ご回答の際、テンプレート**検索にご活用**いただけます。
 - **⑤** テンプレート割当 : テンプレートにリンクする**処理タイプを選択**することができます。 移動したい処理タイプの**チェックボックスにチェック**を入れた後、**矢印**を押すと処理タイプが移動されます。
 
-テンプレート追加の際、選択した受付タイプは、あらかじめ [サービス管理 → チケット → カテゴリー管理](https://docs.toast.com/ja/Contact%20Center/ja/online-contact-guide-service-management/#_9)で登録した受付タイプです。
+テンプレート追加の際、選択した受付タイプは、あらかじめ [サービス管理 → チケット → カテゴリー管理] メニューで登録した受付タイプです。
 
 #### テンプレート割当
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(7)_3_ja.png)
@@ -192,9 +192,14 @@
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(8)_1_ja.png)
 Online Contactでドメインを提供する **① 代表アカウント**を生成し、 **② 外部アカウント登録**を使うと、サービスドメインを使用するサービス代表アカウントを登録することもできます。
 
-**③** Online Contactによって発信されるEメールの **発信者名**と **発信者アドレス**を保存でき、 **④** すべての送信メールに対する共通の **メールレイアウト**を設定できます。メールレイアウトの設定時、エディタの右側で使用できる**置換コード**を使って、メール送信時にチケット情報が指定された場所に自動的に入力されるように設定することができます。 レイアウト作成エディタは、[全体管理 → 契約サービス管理 → 基本情報]でのエディタタイプの設定値に応じて**HTML**モードまたは**TEXT**モードで表示されます。
+**③** Online Contactによって発信されるEメールの **発信者名**と **発信者アドレス**を保存でき、 **④** すべての送信メールに対する共通の **メールレイアウト**を設定できます。メールレイアウトの設定時、エディタの右側で使用できる**置換コード**を使って、メール送信時にチケット情報が指定された場所に自動的に入力されるように設定することができます。 レイアウト作成エディタは、[全体管理 → 契約サービス管理 → 基本情報] でのエディタタイプの設定値に応じて**HTML**モードまたは**TEXT**モードで表示されます。
 
 ✔ **\[FAQ]** [現在使用している外部のメールを接続して問い合わせを受け付けたいです。](https://nhn-contact.oc.toast.com/ocjp/hc/article/81/)
+
+### 禁制語
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(15)_ja.png)
+禁則語の管理はお客様のお問い合わせに対する回答処理時に誤字脱字または誤った案内が回答に含まれることを防止できます。
+**① 追加**された禁則語が処理内容に含まれている状態でチケットの**プレビュー**または**チケット解決/保留**処理を行う場合、処理内容に禁則語が含まれていることを知らせる**② ポップアップ**が表示され、内容に含まれている禁則語を確認・修正し、チケット処理を進めることができます。
 
 ## 電話
 電話メニューでは、コールバック管理のための**IVR Routeコード、Route名**を登録し、アウトバウンド通話の場合、お客様に表示される**発信番号**を登録することができます。このメニューは、契約情報で**チケット管理 → 電話含む（❖CTI利用含む）機能**が**使用**に設定された場合に表示されます。
@@ -242,7 +247,7 @@ IVR  Route管理メニューでは、コールバック管理のための**IVR R
 
 オペレーターを追加する際は、必ずグループを割り当ててください。追加したグループがない場合は、**グループを先に追加**した後、オペレーター追加してください。
 
-オペレータの追加時、設定することができる**権限**は、次の通りです。組織管理者の設定は [全体管理 → 組織管理者](https://docs.toast.com/ja/Contact%20Center/ja/online-contact-guide-global-management/#_5) メニューで行えます。
+オペレータの追加時、設定することができる**権限**は、次の通りです。組織管理者の設定は [全体管理 → 組織管理者] メニューで行えます。
 
 -	管理者: **オペレーター** 権限に **サービス設定メニュー機能**が追加された権限 (チケット、電話、チャット権限を個別に付与可能、電話選択時にチケット権限自動選択)
 -	オペレーター: **チケット、 電話およびチャット対応**のための権限 (チケット、電話、チャット権限を個別に付与可能、電話選択時にチケット権限自動選択)
@@ -253,7 +258,7 @@ IVR  Route管理メニューでは、コールバック管理のための**IVR R
 
 #### グループ追加
 ![](http://static.toastoven.net/prod_contact_center/ja/2.2.4-(3)_ja.png)
-上段左側 **グループ追加** ボタンを押した後、グループ名を入力し、割り当てられたオペレーターを選択します。その後、 **①** 「 **>** 」 ボタンからアサインされたオペレーターにより移動してください。また、オペーターの割り当てを解除する時は 「 **<** 」ボタンから未アサインオペレーターに移動することができます。オペレーターのアサインが終わった後 **②** **保存** ボタンでグループ設定が適用されます。
+上段左側 **グループ追加** ボタンを押した後、グループ名を入力し、割り当てたいペレーターを選択します。その後、 **①** 「 **>** 」 ボタンからアサイン済みオペレーターに移動してください。また、オペレーターの割り当てを解除する時は 「 **<** 」ボタンから未アサインオペレーターに移動することができます。オペレーターのアサインが終わった後 **②** **保存** ボタンでグループ設定が適用されます。
 
 オペレーターを割り当てなくてもグループを追加できるため、グループの最初の追加時はグループ名のみ入力した後、**保存** ボタンを押すとオペレーターの追加を進めることができます。
 
@@ -265,7 +270,7 @@ IVR  Route管理メニューでは、コールバック管理のための**IVR R
 基本的に2種類のテンプレートが提供され、**① テンプレート追加** ボタンで新しいテンプレートを追加できます。追加したテンプレートは **② 修正** または **削除**が可能です。有効化中のテンプレートは削除できません。他のテンプレートを有効化した上で削除してください。
 
 ![](http://static.toastoven.net/prod_contact_center/2.2.5-(2)_1_ja.png)
-テンプレート追加および修正時 **① CSS / HTML / JS スクリプト**を与えられたエディターで直接作成するか、 [サービス管理 → ヘルプセンター → ファイルアップロード管理](https://docs.toast.com/ja/Contact%20Center/ja/online-contact-guide-service-management/#_36) メニューで必要なファイル(スクリプト、フォント、イメージなど)をアップロードしてから、リソースのパスを入力することによって、ヘルプセンターの構成を変更することができます。**② 多国語コード挿入** ボタンを押すと、[サービス管理 → ヘルプセンター → 多国語コード管理] メニューで設定した言語セットリストが表示され、**選択** ボタンからテンプレート内に多言語コードを挿入できます。
+テンプレート追加および修正時 **① CSS / HTML / JS スクリプト**を与えられたエディターで直接作成するか、 [サービス管理 → ヘルプセンター → ファイルアップロード管理] メニューで必要なファイル(スクリプト、フォント、イメージなど)をアップロードしてから、リソースのパスを入力することによって、ヘルプセンターの構成を変更することができます。**② 多国語コード挿入** ボタンを押すと、[サービス管理 → ヘルプセンター → 多国語コード管理] メニューで設定した言語セットリストが表示され、**選択** ボタンからテンプレート内に多言語コードを挿入できます。
 
 編集後、 **④ プレビュー** ボタンから編集内容がヘルプセンターに適用された外観をすぐに見ることができ、**③ 保存**した後、適用可能です。
 
@@ -274,131 +279,491 @@ IVR  Route管理メニューでは、コールバック管理のための**IVR R
 
 **CSS修正時** 活用できる主要な要素は以下のとおりです。
 
-##### main.css
-| 要素名                                                 | 説明                                |
-| -------------------------------------------------------- | ----------------------------------- |
-| .main_banner                                             | メイン上段のバナーエリア             |
-| .main_banner img                                         | メイン上段のバナーエリア画像        |
-| .carousel-caption .title_txt                             | メイン上段のバナーエリアタイトル　    |
-| .carousel-caption .sub_txt                               | メイン上段のバナーエリア小見出し      |
-| .search-box                                              | メイン上段のバナーエリア検索ボックス  |
-| .search-box .icon-ic-search                              | メイン上段のバナーエリア検索アイコン  |
-| #supports .container-con                                 | メイン顧客センター構成要素エリア      |
-| #supports .support__item:nth-child(1):before             | メインお知らせアイコン              |
-| #supports .support__item:nth-child(2):before             | メインFAQ アイコン                 |
-| #supports .support__item:nth-child(3):before             | メイン問い合わせアイコン            |
-| #supports .support__item:nth-child(4):before             | メイン問い合わせ履歴アイコン            |
-| #supports .support__item .card-title .btn                | メイン構成要素のタイトル               |
-| #supports .support__item .card-title .btn:hover          | メイン構成要素のタイトル　ホバー色変更     |
-| #supports .support__item .card-title .btn:after          | メイン構成要素テキスト右矢印アイコン |
-| #supports .support__item .card-text                      | メイン構成要素説明テキスト          |
-| #sec_contact-news .textArea                              | メイン下段バナーエリア             |
-| #sec_contact-news .textArea .text-item h3                | メイン下段バナーエリアタイトル               |
-| #sec_contact-news .textArea .text-item .icon-more::after | メイン下段バナーエリアもっと見るアイコン   |
-| #sec_contact-news .textArea .text-item li                | メイン下段バナーエリア掲示リスト   |
-| #chat-offline                                            | オペレーター不在ボックス            |
-| #chat-offline .title                                     | オペレーター不在ボックスタイトル           |
-| #chat-offline .text                                      | オペレーター不在ボックステキスト        |
-| #chat-offline .close                                     | オペレーター不在ボックス閉じるアイコン      |
-| #chat-offline .btn                                       | オペレーター不在ボックス問い合わせアイコン   |
+<!-- css 요소 목록 html -->
 
+<details markdown="1">
+<summary> main.css </summary>
 
-##### faq.css
-| 要素名                              | 説明                                |
-| ------------------------------------- | ----------------------------------- |
-| .lnb--fixed .lnb--fixed__nav          | 詳細ページ左ナビゲーションバー              |
-| .help-center-title                    | 詳細ページ左ナビゲーションバータイトル            |
-| .lnb__nav                             | 詳細ページ左ナビゲーションバーリスト          |
-| .lnb__nav li a                        | 詳細ページ左ナビゲーションバーリスト個別     |
-| .lnb__nav li.on a                     | 詳細ページ左ナビゲーションバーリスト選択     |
-| .lnb--fixed__side-divider             | 詳細ページ左ナビゲーションバーコンテンツ区分線     |
-| .lnb--fixed__content                  | 詳細ページコンテンツ領域         |
-| .tit_txt                              | 詳細ページコンテンツ領域タイトル          |
-| .data_info-box                        | 詳細ページコンテンツ領域ボックス          |
-| .tab_category                         | 詳細ページコンテンツ領域カテゴリータブ   |
-| .tab_category>li.on                   | 詳細ページコンテンツ領域カテゴリー選択  |
-| .tab_category>li                      | 詳細ページコンテンツ領域カテゴリー個別  |
-| .tbl_wrap                             | 詳細ページページコンテンツ領域リスト      |
-| .faqData th:nth-child(1)              | FAQテーブルカテゴリー           |
-| .faqData th:nth-child(2)              | FAQテーブルタイトル           |
-| .faqData th:nth-child(3)              | FAQテーブル登録日                     |
-| .faqData tr.hot-text td               | FAQテーブル個別　上段固定カテゴリー   |
-| .faqData tr.hot-text td .title-info a | FAQテーブル個別　上段固定タイトル     |
-| .faqData td .title-info sup           | FAQテーブル上段固定HOT          |
-| .gocont .search                       | FAQ検索                           |
-| .sel                                  | FAQ検索テーマ                 |
-| .search .inp                          | FAQ検索語入力                 |
-| .search .btnArea                      | FAQ検索ボタン                   |
-| .faqData_info-con                     | FAQ詳細文書コンテンツ                 |
-| .faqData_info-con .dataTit            | FAQ詳細文書タイトル                   |
-| .faqData_info-con .dataTime           | FAQ詳細文書登録日               |
-| .faqData_info-con .dataTextBox        | FAQ詳細文書内容テスト         |
+<table>
+<thead>
+<tr>
+<th>要素名</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.main_banner</td>
+<td>メイン上段のバナーエリア</td>
+</tr>
+<tr>
+<td>.main_banner img</td>
+<td>メイン上段のバナーエリア画像</td>
+</tr>
+<tr>
+<td>.carousel-caption .title_txt</td>
+<td>メイン上段のバナーエリアタイトル　</td>
+</tr>
+<tr>
+<td>.carousel-caption .sub_txt</td>
+<td>メイン上段のバナーエリア小見出し</td>
+</tr>
+<tr>
+<td>.search-box</td>
+<td>メイン上段のバナーエリア検索ボックス</td>
+</tr>
+<tr>
+<td>.search-box .icon-ic-search</td>
+<td>メイン上段のバナーエリア検索アイコン</td>
+</tr>
+<tr>
+<td>#supports .container-con</td>
+<td>メイン顧客センター構成要素エリア</td>
+</tr>
+<tr>
+<td>#supports .support__item:nth-child(1):before</td>
+<td>メインお知らせアイコン</td>
+</tr>
+<tr>
+<td>#supports .support__item:nth-child(2):before</td>
+<td>メインFAQ アイコン</td>
+</tr>
+<tr>
+<td>#supports .support__item:nth-child(3):before</td>
+<td>メイン問い合わせアイコン</td>
+</tr>
+<tr>
+<td>#supports .support__item:nth-child(4):before</td>
+<td>メイン問い合わせ履歴アイコン</td>
+</tr>
+<tr>
+<td>#supports .support__item .card-title .btn</td>
+<td>メイン構成要素のタイトル</td>
+</tr>
+<tr>
+<td>#supports .support__item .card-title .btn:hover</td>
+<td>メイン構成要素のタイトル　ホバー色変更</td>
+</tr>
+<tr>
+<td>#supports .support__item .card-title .btn:after</td>
+<td>メイン構成要素テキスト右矢印アイコン</td>
+</tr>
+<tr>
+<td>#supports .support__item .card-text</td>
+<td>メイン構成要素説明テキスト</td>
+</tr>
+<tr>
+<td>#sec_contact-news .textArea</td>
+<td>メイン下段バナーエリア</td>
+</tr>
+<tr>
+<td>#sec_contact-news .textArea .text-item h3</td>
+<td>メイン下段バナーエリアタイトル</td>
+</tr>
+<tr>
+<td>#sec_contact-news .textArea .text-item .icon-more::after</td>
+<td>メイン下段バナーエリアもっと見るアイコン</td>
+</tr>
+<tr>
+<td>#sec_contact-news .textArea .text-item li</td>
+<td>メイン下段バナーエリア掲示リスト</td>
+</tr>
+<tr>
+<td>#chat-offline</td>
+<td>オペレーター不在ボックス</td>
+</tr>
+<tr>
+<td>#chat-offline .title</td>
+<td>オペレーター不在ボックスタイトル</td>
+</tr>
+<tr>
+<td>#chat-offline .text</td>
+<td>オペレーター不在ボックステキスト</td>
+</tr>
+<tr>
+<td>#chat-offline .close</td>
+<td>オペレーター不在ボックス閉じるアイコン</td>
+</tr>
+<tr>
+<td>#chat-offline .btn</td>
+<td>オペレーター不在ボックス問い合わせアイコン</td>
+</tr>
+</tbody>
+</table>
 
+</details>
 
-#### notice.css
-| 要素名                                               | 説明                                |
-| ------------------------------------------------------ | ----------------------------------- |
-| .el-breadcrumb                                         | 詳細ページ右上のテキスト領域      |
-| .el-breadcrumb li                                      | 詳細ページ右上のテキスト領域個別|
-| .noticeData                                            | お知らせテーブル                       |
-| .noticeData th:nth-child(1)                            | お知らせテーブル番号                  |
-| .noticeData th:nth-child(2)                            | お知らせテーブルタイトル                  |
-| .noticeData th:nth-child(3)                            | お知らせテーブルテーマ              |
-| .noticeData th:nth-child(4)                            | お知らせテーブル登録日               |
-| .noticeData tr.hot-text                                | お知らせテーブル個別 上段固定          |
-| .noticeData tr.hot-text td                             | お知らせテーブル個別 上段固定番号    |
-| .noticeData tr.hot-text td .title-info a               | お知らせテーブル個別 上段固定タイトル     |
-| .noticeData td .title-info sup                         | お知らせテーブル個別 上段固定HOT      |
-| .icon-leavel-1                                         | お知らせテーブル個別 上段固定テーマ   |
-| .noticeData tr                                         | お知らせテーブル個別                  |
-| .noticeData td .title-info a                           | お知らせテーブル個別タイトル             |
-| .upload-text-memo                                      | お問い合わせ添付ファイルフィールドテキスト          |
-| .faqData_info-con .dataTime .noticeType                | お知らせ詳細文書カテゴリー            |
-| .faqData_info-con .dataTime .noticeType .icon-leavel-1 | お知らせ詳細文書カテゴリーアイコン      |
+<details markdown="1">
+<summary> faq.css </summary>
 
+<table>
+<thead>
+<tr>
+<th>要素名</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.lnb--fixed .lnb--fixed__nav</td>
+<td>詳細ページ左ナビゲーションバー</td>
+</tr>
+<tr>
+<td>.help-center-title</td>
+<td>詳細ページ左ナビゲーションバータイトル</td>
+</tr>
+<tr>
+<td>.lnb__nav</td>
+<td>詳細ページ左ナビゲーションバーリスト</td>
+</tr>
+<tr>
+<td>.lnb__nav li a</td>
+<td>詳細ページ左ナビゲーションバーリスト個別</td>
+</tr>
+<tr>
+<td>.lnb__nav li.on a</td>
+<td>詳細ページ左ナビゲーションバーリスト選択</td>
+</tr>
+<tr>
+<td>.lnb--fixed__side-divider</td>
+<td>詳細ページ左ナビゲーションバーコンテンツ区分線</td>
+</tr>
+<tr>
+<td>.lnb--fixed__content</td>
+<td>詳細ページコンテンツ領域</td>
+</tr>
+<tr>
+<td>.tit_txt</td>
+<td>詳細ページコンテンツ領域タイトル</td>
+</tr>
+<tr>
+<td>.data_info-box</td>
+<td>詳細ページコンテンツ領域ボックス</td>
+</tr>
+<tr>
+<td>.tab_category</td>
+<td>詳細ページコンテンツ領域カテゴリータブ</td>
+</tr>
+<tr>
+<td>.tab_category&gt;li.on</td>
+<td>詳細ページコンテンツ領域カテゴリー選択</td>
+</tr>
+<tr>
+<td>.tab_category&gt;li</td>
+<td>詳細ページコンテンツ領域カテゴリー個別</td>
+</tr>
+<tr>
+<td>.tbl_wrap</td>
+<td>詳細ページページコンテンツ領域リスト</td>
+</tr>
+<tr>
+<td>.faqData th:nth-child(1)</td>
+<td>FAQテーブルカテゴリー</td>
+</tr>
+<tr>
+<td>.faqData th:nth-child(2)</td>
+<td>FAQテーブルタイトル</td>
+</tr>
+<tr>
+<td>.faqData th:nth-child(3)</td>
+<td>FAQテーブル登録日</td>
+</tr>
+<tr>
+<td>.faqData tr.hot-text td</td>
+<td>FAQテーブル個別　上段固定カテゴリー</td>
+</tr>
+<tr>
+<td>.faqData tr.hot-text td .title-info a</td>
+<td>FAQテーブル個別　上段固定タイトル</td>
+</tr>
+<tr>
+<td>.faqData td .title-info sup</td>
+<td>FAQテーブル上段固定HOT</td>
+</tr>
+<tr>
+<td>.gocont .search</td>
+<td>FAQ検索</td>
+</tr>
+<tr>
+<td>.sel</td>
+<td>FAQ検索テーマ</td>
+</tr>
+<tr>
+<td>.search .inp</td>
+<td>FAQ検索語入力</td>
+</tr>
+<tr>
+<td>.search .btnArea</td>
+<td>FAQ検索ボタン</td>
+</tr>
+<tr>
+<td>.faqData_info-con</td>
+<td>FAQ詳細文書コンテンツ</td>
+</tr>
+<tr>
+<td>.faqData_info-con .dataTit</td>
+<td>FAQ詳細文書タイトル</td>
+</tr>
+<tr>
+<td>.faqData_info-con .dataTime</td>
+<td>FAQ詳細文書登録日</td>
+</tr>
+<tr>
+<td>.faqData_info-con .dataTextBox</td>
+<td>FAQ詳細文書内容テスト</td>
+</tr>
+</tbody>
+</table>
 
-#### search.css-
-| 要素名                                           | 説明                                |
-| -------------------------------------------------- | ----------------------------------- |
-| .paginate                                          | ページネーション領域                    |
-| .paginate li                                       | ページネーション個別                    |
-| .paginate li.firstPage a                           | ページネーション << キー                   |
-| .paginate li.firstPage a.img                       | ページネーション << キーイメージ             |
-| .paginate li.prev a.                               | ページネーション < キー                    |
-| .paginate li.prev a img                            | ページネーション < キーイメージ              |
-| .paginate li a                                     | ページネーション 個別ページ             |
-| .paginate li.number.active a                       | ページネーション 現在のページ              |
-| .paginate li.next a.                               | ページネーション > キー                  |
-| .paginate li.next a img                            | ページネーション > キーイメージ            | 
-| .paginate li.lastPage a                            | ページネーション >> キー                  |
-| .paginate li.lastPage a.img                        | ページネーション >> キーイメージ            |
-| .search-title                                      | 検索結果タイトル                       |
-| .search-title strong                               | 検索結果タイトル検索語強調             |
-| .search-text                                       | 検索結果                             |
-| .search-text .search-title_sub                     | 検索結果下位分類                    |
-| .search-text .search-text_lit                      | 検索結果個別                        | 
-| .search-text .search-text_lit dt a                 | 検索結果個別タイトル                    |
-| .search-text .search-text_lit dd .search-text_con  | 検索結果個別内容プレビュー            |
-| .search-text .search-text_lit dd .search-text_time | 検索結果個別作成日                  |
+</details>
 
+<details markdown="1">
+<summary> notice.css </summary>
 
-#### inquiry.css
-| 要素名                                                                  | 説明                               |
-| ------------------------------------------------------------------------- | ----------------------------------- |
-| .selectStyle                                                              | 検索内部オプション                    |
-| .inquiry-con                                                              | お問い合わせコンテンツエリア                |
-| .inquiry-con_table                                                        | お問い合わせテーブル                     | 
-| .inquiry-con_table th                                                     | お問い合わせテーブルフィールド               |
-| .bl_ess                                                                   | お問い合わせテーブルフィールド 必須 *           |
-| .inquiry-con_table td                                                     | お問い合わせテーブル 入力               |
-| .error_txt                                                                | お問い合わせテーブル 入力エラーテキスト       | 
-| .inquiry-btn                                                              | お問い合わせ受付ボタン                |
-| .layui-icon                                                               | 矢印ボタン                      |
-| .layui-icon-right                                                         | > （左方向）矢印ボタン           |
-| .layui-icon-up                                                            | V （下方向)矢印ボタン             |
-| .check_area_wrap .td-radio .layui-form-checkbox\[lay-skin="primary"] span | チェックボックステキスト               |
-| .error_txt                                                                | エラーテキスト                    |
+<table>
+<thead>
+<tr>
+<th>要素名</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.el-breadcrumb</td>
+<td>詳細ページ右上のテキスト領域</td>
+</tr>
+<tr>
+<td>.el-breadcrumb li</td>
+<td>詳細ページ右上のテキスト領域個別</td>
+</tr>
+<tr>
+<td>.noticeData</td>
+<td>お知らせテーブル</td>
+</tr>
+<tr>
+<td>.noticeData th:nth-child(1)</td>
+<td>お知らせテーブル番号</td>
+</tr>
+<tr>
+<td>.noticeData th:nth-child(2)</td>
+<td>お知らせテーブルタイトル</td>
+</tr>
+<tr>
+<td>.noticeData th:nth-child(3)</td>
+<td>お知らせテーブルテーマ</td>
+</tr>
+<tr>
+<td>.noticeData th:nth-child(4)</td>
+<td>お知らせテーブル登録日</td>
+</tr>
+<tr>
+<td>.noticeData tr.hot-text</td>
+<td>お知らせテーブル個別 上段固定</td>
+</tr>
+<tr>
+<td>.noticeData tr.hot-text td</td>
+<td>お知らせテーブル個別 上段固定番号</td>
+</tr>
+<tr>
+<td>.noticeData tr.hot-text td .title-info a</td>
+<td>お知らせテーブル個別 上段固定タイトル</td>
+</tr>
+<tr>
+<td>.noticeData td .title-info sup</td>
+<td>お知らせテーブル個別 上段固定HOT</td>
+</tr>
+<tr>
+<td>.icon-leavel-1</td>
+<td>お知らせテーブル個別 上段固定テーマ</td>
+</tr>
+<tr>
+<td>.noticeData tr</td>
+<td>お知らせテーブル個別</td>
+</tr>
+<tr>
+<td>.noticeData td .title-info a</td>
+<td>お知らせテーブル個別タイトル</td>
+</tr>
+<tr>
+<td>.upload-text-memo</td>
+<td>お問い合わせ添付ファイルフィールドテキスト</td>
+</tr>
+<tr>
+<td>.faqData_info-con .dataTime .noticeType</td>
+<td>お知らせ詳細文書カテゴリー</td>
+</tr>
+<tr>
+<td>.faqData_info-con .dataTime .noticeType .icon-leavel-1</td>
+<td>お知らせ詳細文書カテゴリーアイコン</td>
+</tr>
+</tbody>
+</table>
 
+</details>
+
+<details markdown="1">
+<summary> search.css </summary>
+
+<table>
+<thead>
+<tr>
+<th>要素名</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.paginate</td>
+<td>ページネーション領域</td>
+</tr>
+<tr>
+<td>.paginate li</td>
+<td>ページネーション個別</td>
+</tr>
+<tr>
+<td>.paginate li.firstPage a</td>
+<td>ページネーション &lt;&lt; キー</td>
+</tr>
+<tr>
+<td>.paginate li.firstPage a.img</td>
+<td>ページネーション &lt;&lt; キーイメージ</td>
+</tr>
+<tr>
+<td>.paginate li.prev a.</td>
+<td>ページネーション &lt; キー</td>
+</tr>
+<tr>
+<td>.paginate li.prev a img</td>
+<td>ページネーション &lt; キーイメージ</td>
+</tr>
+<tr>
+<td>.paginate li a</td>
+<td>ページネーション 個別ページ</td>
+</tr>
+<tr>
+<td>.paginate li.number.active a</td>
+<td>ページネーション 現在のページ</td>
+</tr>
+<tr>
+<td>.paginate li.next a.</td>
+<td>ページネーション &gt; キー</td>
+</tr>
+<tr>
+<td>.paginate li.next a img</td>
+<td>ページネーション &gt; キーイメージ</td>
+</tr>
+<tr>
+<td>.paginate li.lastPage a</td>
+<td>ページネーション &gt;&gt; キー</td>
+</tr>
+<tr>
+<td>.paginate li.lastPage a.img</td>
+<td>ページネーション &gt;&gt; キーイメージ</td>
+</tr>
+<tr>
+<td>.search-title</td>
+<td>検索結果タイトル</td>
+</tr>
+<tr>
+<td>.search-title strong</td>
+<td>検索結果タイトル検索語強調</td>
+</tr>
+<tr>
+<td>.search-text</td>
+<td>検索結果</td>
+</tr>
+<tr>
+<td>.search-text .search-title_sub</td>
+<td>検索結果下位分類</td>
+</tr>
+<tr>
+<td>.search-text .search-text_lit</td>
+<td>検索結果個別</td>
+</tr>
+<tr>
+<td>.search-text .search-text_lit dt a</td>
+<td>検索結果個別タイトル</td>
+</tr>
+<tr>
+<td>.search-text .search-text_lit dd .search-text_con</td>
+<td>検索結果個別内容プレビュー</td>
+</tr>
+<tr>
+<td>.search-text .search-text_lit dd .search-text_time</td>
+<td>検索結果個別作成日</td>
+</tr>
+</tbody>
+</table>
+
+</details>
+
+<details markdown="1">
+<summary> inquiry.css </summary>
+
+<table>
+<thead>
+<tr>
+<th>要素名</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.selectStyle</td>
+<td>検索内部オプション</td>
+</tr>
+<tr>
+<td>.inquiry-con</td>
+<td>お問い合わせコンテンツエリア</td>
+</tr>
+<tr>
+<td>.inquiry-con_table</td>
+<td>お問い合わせテーブル</td>
+</tr>
+<tr>
+<td>.inquiry-con_table th</td>
+<td>お問い合わせテーブルフィールド</td>
+</tr>
+<tr>
+<td>.bl_ess</td>
+<td>お問い合わせテーブルフィールド 必須 *</td>
+</tr>
+<tr>
+<td>.inquiry-con_table td</td>
+<td>お問い合わせテーブル 入力</td>
+</tr>
+<tr>
+<td>.error_txt</td>
+<td>お問い合わせテーブル 入力エラーテキスト</td>
+</tr>
+<tr>
+<td>.inquiry-btn</td>
+<td>お問い合わせ受付ボタン</td>
+</tr>
+<tr>
+<td>.layui-icon</td>
+<td>矢印ボタン</td>
+</tr>
+<tr>
+<td>.layui-icon-right</td>
+<td>&gt; （左方向）矢印ボタン</td>
+</tr>
+<tr>
+<td>.layui-icon-up</td>
+<td>V （下方向)矢印ボタン</td>
+</tr>
+<tr>
+<td>.check_area_wrap .td-radio .layui-form-checkbox[lay-skin="primary"] span</td>
+<td>チェックボックステキスト</td>
+</tr>
+<tr>
+<td>.error_txt</td>
+<td>エラーテキスト</td>
+</tr>
+</tbody>
+</table>
+
+</details>
 
 ### ファイルアップロード管理
 ![](http://static.toastoven.net/prod_contact_center/ja/2.2.5-(3)_ja.png)
@@ -417,7 +782,7 @@ IVR  Route管理メニューでは、コールバック管理のための**IVR R
 -	お問合せ/お問合せ履歴
 -	チャット設定
 - ヘルプセンターのナビゲーション設定
-- 会社情報 (サービス管理 → ヘルプセンター → 会社情報管理 メニューで追加·修正が可能です。)
+- 会社情報 (全体管理 → 会社情報管理 メニューで追加·修正が可能です。)
 
 ### 会員認証
 ![](http://static.toastoven.net/prod_contact_center/2.2.5-(5)_1_ja.png)
@@ -431,7 +796,7 @@ IVR  Route管理メニューでは、コールバック管理のための**IVR R
 - [Online Contact > プログラマーのためのAPIガイド > 会員認証 (GET)](https://docs.toast.com/ja/Contact%20Center/ja/online-contact-api-guide-openapi-member-get/)
 
 ### 多国語コード管理
-[全体管理 → 契約サービス管理 → 契約管理 → 基本情報]画面で設定したヘルプセンター言語に応じて、言語別ヘルプセンターで使用する多言語コードとタグを管理することができます。
+[全体管理 → 契約サービス管理 → 契約管理 → 基本情報] 画面で設定したヘルプセンター言語に応じて、言語別ヘルプセンターで使用する多言語コードとタグを管理することができます。
 
 #### 多国語コード
 ![](http://static.toastoven.net/prod_contact_center/2.2.5-(7)_ja.png)
@@ -445,14 +810,8 @@ IVR  Route管理メニューでは、コールバック管理のための**IVR R
 **① タグ**タブで、言語セットにマッピングし、分類に活用できる**ユーザ定義タグ**を管理することができます。
 タグ名を入力し、**② 追加**ボタンを押すと、ユーザー定義タグが追加され、言語セットの管理や検索時に**タグリスト**で、**システムタグと一緒に**照会することができます。
 
-### 会社情報管理
-![](http://static.toastoven.net/prod_contact_center/2.2.5-(6)_ja.png)
-PC、モバイルヘルプセンターのフッター領域に、会社情報および利用約款を表示できるように設定可能な機能です。
-**① 追加** ボタンを押すと設定画面が表示され、**② 会社情報**、**③ 商標及び著作権**、**④ 利用規約** 情報を設定できます。
-情報入力後、**保存**ボタンを押すと、設定した会社情報構成がリストに追加され、サービス管理 → ヘルプセンター → 基本設定メニューから選択し、実際のヘルプセンターに**⑤ 反映**することができます。
-
 ## 外部チャンネル
-**外部SNSに入力されるお問い合わせ**をOnline Contactでチケット化して処理することができます。現在は**ツイッター**と **カカオ相談トーク**をサポートしています。
+**外部チャンネル**をOnline Contactと接続させてお客様とコミュニケーションすることができます。 お問合わせ管理サービスでは現在**ツイッター**、**カカオ相談トーク**、**SMS**サービスを連動して利用できます。
 
 ### ツイッター
 ![](http://static.toastoven.net/prod_contact_center/ja/2.2.6-(1)_ja.png)
@@ -485,7 +844,23 @@ PC、モバイルヘルプセンターのフッター領域に、会社情報お
 
 ✔ **\[FAQ]** [外部チャンネル(ツイッター、カカオ相談トーク)の接続を有効にした場合、お問い合わせの引込・回答過程はどうなりますか？](https://nhn-contact.oc.toast.com/ocjp/hc/article/95/)
 
+### SMS
+![](http://static.toastoven.net/prod_contact_center/2.2.6-(6)_ja.png)
+**[NHN Cloud Notification → SMS]** サービスをOnline Contactと連動させてSMS/MMSを発送できます。
+全体管理 → 契約サービス管理 → 契約詳細で**SMS発送**機能を**使用**設定した場合、サービス管理 → 外部チャンネルメニューにSMSメニューが表示され、SMS連携を管理できます。
+
+**①** SMS連動の有効化のためには、まず **[NHN Cloud Notification → SMS] サービスを活性化**した後、CONSOLEで確認できる**APP KEY**を入力して**②** 保存してください。 有効なAPPKEYを入力した場合、自動的に**SMS機能が有効化**され、APPKEY入力欄の下段に**発信番号リストが表示**されます。
+
+**③ 追加** ボタンを押すと、**発信番号選択ポップアップ**が表示されます。 NHN Cloud Notification → SMSサービスに発信番号として登録された番号がリストに表示されるので、発信番号を追加する前に**SMSサービスに発信番号が登録**されているかを確認してください。 表示されたリストで、発信番号として追加したい番号をチェックした後、確認ボタンを押すと、発信番号リストに追加され、Online ContactでSMS/MMSを送信する際、**発信番号として活用**することができます。
+
+SMS連動の有効化および送信番号の追加以降に、**付加業務 → SMS発送**メニューからSMSテンプレートの管理およびSMS発送を実行することができます。
+
 ## セキュリティ管理
 ![](http://static.toastoven.net/prod_contact_center/2.2.6-(5)_ja.png)
-Online  Contact管理者との事前協議により、契約情報でサービス管理→セキュリティサービス機能を使用設定された場合、**セキュリティ管理**メニューで**ログ連動**を設定できます。
+Online  Contact管理者との事前協議により、契約情報でサービス管理 → セキュリティサービス機能を使用設定された場合、
+**ログ連動**機能と、チャット及びチケット相談時、相談進行のために伝達される顧客の個人情報を暗号化して管理できる**個人情報マスキング**機能を使用することができます。
+
+**個人情報マスキング**機能は、**セキュリティサービス**機能が**使用**設定されている場合、別途の設定なしでチケット管理、チャット画面、チャット履歴メニューですぐに使用することができます。 
+**ログ連動**機能は、セキュリティサービス → ログ連動タブで連携するかどうかを設定した後、使用できます。
+
 連動サービスの有効化/無効化については、**Online  Contactお客様センター**を通じて管理者にお問い合わせください。([Online Contactお客様センター](https://nhn-contact.oc.toast.com/ocjp/hc/))
