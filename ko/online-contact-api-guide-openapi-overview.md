@@ -231,10 +231,10 @@ return sb.toString();
 |	    |	             |FAQ 첨부파일 첨부	   |서버에 파일 업로드|
 |           |                |FAQ 첨부파일 열기/다운로드  |서버에 업로드한 FAQ 첨부파일 열기/다운로드|
 |	    |	             |FAQ 첨부파일 삭제	   |서버에 업로드한 파일 삭제|
-|           |[회원연동 (POST)](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-sso/)             |SSO 원격로그인 API (Client Side)|사용자 시스템에서 동적으로 form을 생성하여 브라우저에 반환, form은 자동으로 API에 form 정보를 전달, 인증 후 성공 시 로그인 쿠키 값 설정|
-|           |                |SSO 원격로그인 API (Server Side)|사용자가 서버에서 직접 API 호출, API 로그인 성공 후 로그인 쿠키 값 설정|
-|           |                |SSO 로그인 URL (사용자)         |서비스 측 로그인 URL                                                      |
-|           |                |SSO 로그인 상태 URL (사용자)     |사용자가 쿠키 정보를 기준으로 로그인 여부를 확인 후, JSON 형식의 데이터를 리턴|
-|           |[회원연동 (GET)](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-member-get/)             |Token 인증 API (서비스 측)|서비스 측에서 token과 usercode로 로그인 상태 확인 후 JSON 형태 결과 값을 전송|
+|           |[회원연동 (POST)](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-sso/)             |POST 원격로그인 API (Client Side)|사용자 시스템에서 동적으로 form을 생성하여 브라우저에 반환, form은 자동으로 API에 form 정보를 전달, 인증 후 성공 시 로그인 쿠키 값 설정|
+|           |                |POST 원격로그인 API (Server Side)|사용자가 서버에서 직접 API 호출, API 로그인 성공 후 로그인 쿠키 값 설정|
+|           |                |POST 로그인 URL (사용자)         |서비스 측 로그인 URL                                                      |
+|           |                |POST 로그인 상태 URL (사용자)     |사용자가 쿠키 정보를 기준으로 로그인 여부를 확인 후, JSON 형식의 데이터를 리턴|
+|           |[회원연동 (GET)](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-member-get/)             |Token 검증 API (서비스 측)|서비스 측에서 token과 usercode로 로그인 상태 확인 후 JSON 형태 결과 값을 전송|
 |           |[고객정보 연동](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-customer-data/)    |고객정보 연동 API                  |   |
 
