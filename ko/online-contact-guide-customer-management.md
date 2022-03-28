@@ -1,5 +1,5 @@
 ## Contact Center > Online Contact > 서비스 가이드 (상담관리) > 고객정보관리
-[전체관리 → 계약 서비스 현황 → 계약 현황](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-global-management/#_2) 탭에서 조회하실 수 있는 계약 상세 내역에서 **고객정보관리** 기능을 **사용** 설정하신 경우, 관리자의 권한으로 고객정보를 관리, 고객사 시스템에서 조회하고자 하는 고객 정보를 API를 통해 조회하여 티켓 처리 및 고객 응대에 활용하실 수 있습니다. 
+[전체관리 → 계약 서비스 현황 → 계약 현황] 탭에서 조회하실 수 있는 계약 상세 내역에서 **고객정보관리** 기능을 **사용** 설정하신 경우, 관리자의 권한으로 고객정보를 관리, 고객사 시스템에서 조회하고자 하는 고객 정보를 API를 통해 조회하여 티켓 처리 및 고객 응대에 활용하실 수 있습니다. 
 
 ## 고객관리
 ### 고객관리
@@ -36,10 +36,10 @@
 ### API 설정
 ![](http://static.toastoven.net/prod_contact_center/2.2.7-(6).png)
 고객사 측의 **고객 데이터**를 **API**를 통해 Online Contact에서 조회하실 수 있도록 제공하는 기능입니다.
-[서비스 관리 → 인증 → OPEN API](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#open-api) 메뉴에서 **OPEN API를 활성화**하신 후 이용하실 수 있으며, **① 추가** 시 **② API 상세설정** 화면이 표시됩니다. 입력이 필요한 부분은 다음과 같습니다.
+[서비스 관리 → 인증 → OPEN API] 메뉴에서 **OPEN API를 활성화**하신 후 이용하실 수 있으며, **① 추가** 시 **② API 상세설정** 화면이 표시됩니다. 입력이 필요한 부분은 다음과 같습니다.
 
 (1) **API 이름**
-(2) **기본 URL** : 개발 시 [API 가이드 > 고객정보 연동](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-customer-data/) 가이드 참고 부탁드립니다.
+(2) **기본 URL** : 개발 시 [API 가이드 > 고객정보 연동] 가이드 참고 부탁드립니다.
 (3) **암호화 여부** : '예'를 선택하실 경우 하단에 암호화 키가 생성됩니다.
 (4) **암호화 키** : 암호화 여부가 '예'로 설정될 경우 자동으로 생성되며, 우측 버튼을 통해 Key 복사 및 변경이 가능합니다.
 (5) **OC 서버 정보** : API 연동 전 Online Contact 서비스에 대한 방화벽 오픈이 필요합니다. **조회** 버튼을 통해 수신자를 설정한 후, **메일 발송** 버튼을 누르시면 IP 정보가 메일로 발송됩니다.
