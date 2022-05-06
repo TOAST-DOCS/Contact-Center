@@ -10,7 +10,7 @@ Mobile Contact 신청/구성은 [https://mobile-contact.toast.com](https://mobi
 
 ![](http://static.toastoven.net/prod_contact_center/img_step3_modified.png)
 
-![](http://static.toastoven.net/prod_contact_center/img_step4.png)
+![](http://static.toastoven.net/prod_contact_center/img_step4_220506.jpg)
 
 ![](http://static.toastoven.net/prod_contact_center/img_step5.jpg)
 
