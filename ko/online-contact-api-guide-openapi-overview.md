@@ -12,7 +12,7 @@
 #### 조직ID
 ![](http://static.toastoven.net/prod_contact_center/dev1_1_2.png)
 
-전체 관리 → 계약 서비스 현황 → 조직 정보 탭에서 **①NHN Cloud 조직ID**를 확인하실 수 있습니다.
+전체 관리 → 계약 서비스 현황 → 조직 정보 탭에서 **① NHN Cloud 조직ID**를 확인하실 수 있습니다.
 
 #### 인증 Header
 각 Request Header에 아래의 값들을 반드시 설정해야 합니다.

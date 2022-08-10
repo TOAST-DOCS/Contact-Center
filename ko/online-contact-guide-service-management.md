@@ -121,7 +121,7 @@
 
 ##### Dooray 알림
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(2)g.png)
-트리거 조건이 충족되었을 경우 **① 템플릿 설정** 버튼을 통해 설정한 템플릿에 따라 티켓의 정보가 Dooray 알림으로 전송됩니다. 연동 URL은 [Dooray Messenger 서비스 가이드](https://docs.toast.com/ko/Dooray/Messenger/ko/service-guide/#_19)를 통해 확인 방법을 참고하실 수 있습니다. 
+트리거 조건이 충족되었을 경우 **① 템플릿 설정** 버튼을 통해 설정한 템플릿에 따라 티켓의 정보가 Dooray 알림으로 전송됩니다. 연동 URL은 [Dooray Messenger 가이드](https://helpdesk.dooray.com/share/pages/9wWo-xwiR66BO5LGshgVTg/2900079470974051262)를 통해 확인 방법을 참고하실 수 있습니다. 
 
 ### 필드
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(3).png)

@@ -571,7 +571,7 @@
 |티켓 정보	|request body	    |Object	 |body	|O	|티켓 정보(JSON)|
 |카테고리	|categoryId	        |Integer |		|O	|카테고리(접수유형) ID|
 |제목	    |subject	        |String	 |	    |O	|제목(max=255)|
-|설명	    |content	        |String	 |	    |O	|원칙 상 단순 텍스트만 허용. Base64 내용으로 제출할 경우 티켓 확인시 내용이 많아 문제될 수 있음. 이미지는 첨부파일 형식으로 업로드하거나, 파일 업로드 후 html의 <img src=""/{serviceId}/api/v2/ticket/attachments/{attachmentId}""/>로 불러와서 사용|
+|설명	    |content	        |String	 |	    |O	|원칙 상 단순 텍스트만 허용. Base64 내용으로 제출할 경우 티켓 확인시 내용이 많아 문제될 수 있음. 이미지는 첨부파일 형식으로 업로드하거나, 파일 업로드 후 html의 img src=""/{serviceId}/api/v2/ticket/attachments/{attachmentId}""/ 로 불러와서 사용|
 |고객 정보	|endUser	        |Object	  |	     |O	 |고객 정보|
 |아이디	    |endUser.usercode	|String	  |	     |X	 |ID(회원 고유 ID). 회원 연동 기능을 사용할 경우, 플랫폼 측의 사용자 고유 ID를 usercode로 사용할 수 있으며, 해당 usercode를 통해 회원의 문의 내역을 조회할수 있음. 비회원 문의일 경우 값을 전송할 필요 없음|
 |메일	    |endUser.email	    |String	  |	     |O	 |메일(서비스 관리 → 티켓 → 이메일 설정 메뉴에서 메일 정보를 설정하였을 경우, 티켓 처리 시 해당 메일 주소로 고객에게 메일 발송)|
@@ -582,7 +582,7 @@
 |구분1	    |typeOne	                |String	  |	     |X	 |구분1(확장 시스템 필드1)|
 |구분2	    |typeTwo	                |String   |		 |X	 |구분2(확장 시스템 필드2)|
 |언어	    |language	                |String	  |	     |X	 |언어|
-|채널	    |source	                    |String   |		 |X	 |티켓 채널(web: 웹, spweb: 모바일 웹, api: API, 기본값: web)|
+|채널	    |source	                    |String   |		 |X	 |티켓 채널(web: 웹, spweb: 모바일 웹, api: API, 기본 값: web)|
 |사용자 필드	|userFields	            |Array	   |	  |X  |사용자 필드|
 |항목 코드	    |userFields.code	    |String	   |	  |O  |사용자 필드, 항목 코드|
 |사용자 입력 값	|userFields.value	    |String	   |      |O  |사용자 필드의 사용자 입력 값|

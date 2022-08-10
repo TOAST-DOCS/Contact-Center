@@ -17,7 +17,7 @@
 #### 결과 데이터
 |명칭	|변수	|데이터 타입	|설명|
 |-----|----|-----------|------|
-|result.content	|serviceId	    |String		|서비스ID|
+|result.content	|serviceId	    |String		|서비스 ID|
 |	            |name	        |String		|서비스명|
 |	            |profile	    |String		|서비스 배경 이미지|
 |	            |language	    |String		|서비스 기본 언어 코드|
@@ -25,7 +25,7 @@
 |	            |languages.code	|String		|언어 코드|
 |	            |languages.name	|String		|언어 명칭|
 |	            |languages.orderNo	|Integer		|언어 노출 순서|
-|	            |multiLanguage	|Boolean		|서비스 다국어 여부, 값(true:다국어, false: 단일 언어)|
+|	            |multiLanguage	|Boolean		|서비스 다국어 여부, 값(true: 다국어, false: 단일 언어)|
 
 
 #### Response Body

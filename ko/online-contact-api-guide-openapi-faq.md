@@ -142,7 +142,7 @@
 
 #### 요청 파라미터 정의
 |명칭	|변수	|데이터 타입	|변수 유형|필수	|설명|
-|-----|----|-----------|-----|----|
+|-----|----|-----------|-----|----|----|
 |서비스 ID	    |serviceId	|String	  |path	  |O	|서비스 ID, URL PATH 내에 설정한{serviceId}|
 |언어 코드	    |language	  |String	  |query	|X	|헬프센터 언어 코드(기본 값 : 기본 언어 코드)|
 |카테고리 ID	  |categoryId	|Integer	|query	|X	|FAQ 카테고리 ID|
@@ -392,8 +392,8 @@ sort 파라미터의 형식 및 예시는 하기와 같습니다.
 |언어 코드	|language	  |String	 |query	 |X	 |서비스 헬프센터 기본 언어 코드|
 
 #### 결과 데이터
-|명칭	|변수	|데이터 타입	|필수	|설명|
-|-----|-----|----------|-----|----|
+|명칭	|변수	|데이터 타입	|설명|
+|-----|-----|----------|--------|
 |result.content	|helpDocId	                    |Integer		 |FAQ ID|
 |	              |title	                        |String		   |FAQ 제목|
 |	              |content	                      |String		   |FAQ 내용|

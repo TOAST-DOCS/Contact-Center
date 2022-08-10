@@ -220,7 +220,7 @@
 
 #### 요청 파라미터 정의
 |명칭	|변수	|데이터 타입	|변수 유형 |필수	|설명|
-|-----|-----|-----------|-----|---|
+|-----|-----|-----------|-----|---|------|
 |서비스 ID	|serviceId	|String	|path	|O	|서비스 ID，URL PATH 내에 설정한 {serviceId}|
 |아이디	    |usercode	|String	|path	|O	|아이디(사용자 고유 ID), 문의 접수 시의 usercode|
 |티켓 ID	|ticketId	|String	|path	|O	|티켓 ID|
@@ -241,7 +241,7 @@
 |	            |updatedDt	        |Long		|수정 시간|
 |	            |contents	        |Array		|티켓 상세 내용|
 |	            |contents.content	|String		|내용 상세|
-|	            |contents.type	    |String		|문의 유형. enduser: 문의(접수 완료), csuser:답변(접수 완료)|
+|	            |contents.type	    |String		|문의 유형. enduser: 문의(접수 완료), csuser: 답변(접수 완료)|
 |	            |contents.typeName	|String		|내용 유형 명|
 |	            |contents.createdDt	|Long		|티켓 처리 시간|
 |	            |contents.displayDt	|String		|내용 노출 시간(yyyy.MM.dd)|
@@ -348,7 +348,7 @@
 |명칭	|변수	|데이터 타입	|변수 유형|필수	|설명|
 |-------|------|---------------|---------|---|----|
 |서비스 ID	    |serviceId	|String	|path   |O	|URL PATH 내에 설정한 {serviceId}|
-|첨부한 파일 ID	|id	        |String	|path   |O	|첨부파일 ID, URL PATH 내에 설정한 {serviceId}| 
+|첨부한 파일 ID	|id	        |String	|path   |O	|첨부파일 ID, URL PATH 내에 설정한 {id}| 
 |처리방식	    |type	    |String	|query  |X	|기본 값은 브라우저로 열기(download: 다운로드, open: 브라우저로 열기）|
 
 #### 결과 데이터
@@ -373,7 +373,7 @@ File
 |첨부파일	|attachments	|String	|query	|X	|첨부파일 ID. 복수의 파일 첨부시 파일 ID를 (,)로 분리, max는 5건(파일ID1,파일ID2,…,파일ID5)|
 
 #### 결과 데이터
-|명칭	|변수	|데이터 타입	설명|
+|명칭	|변수	|데이터 타입	|설명|
 |-----|-----|-----------|-------|
 |result.content	|content	|String		|재문의 내용|
 |	            |type	    |String		|타입. 고정값: enduser|
