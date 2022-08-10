@@ -1,696 +1,419 @@
-## Contact Center > Online Contact > プログラマーのためのAPIガイド > チケット管理
+## Contact Center > Online Contact > プログラマーのためのAPIガイド > お問合せ履歴 
 
-### チケット作成
+### 顧客チケットリスト
 #### インターフェース説明
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/ticket/add.json			
-- URL (開発): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/ticket/add.json			
+- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/ticket/enduser/{usercode}/list.json
+- URL(開発): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/ticket/enduser/{usercode}/list.json
 
 |インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
-|チケット作成|HTTPS  |POST    |UTF-8|JSON    |新規チケット作成|共通認証|
+|顧客チケットリスト |HTTPS  |POST    |UTF-8|JSON    |検索条件により、条件に合った顧客のチケットリストを露出|共通認証  |
 
 #### リクエストパラメータ定義
-|名称|変数|データタイプ|必須|説明|
-|-----|-----|----------|-----|----|
-|サービスID	|serviceId	     |String	|O	|サービスID，URL PATH内に設定した{serviceId}|
-|チケット情報 |request body	|String	|O	|チケット情報JSON)|
-|    	     |categoryId	|Int	|X	|受付タイプID，ない場合は指定しなくてもよい|
-|   	     |subject	    |String	|O	|チケットのタイトル（max=255）|
-|          |content	        |String	|O	|チケット内容|
-| 	       |endUser.usercode	|String	|O	|ユーザーコード（唯一の値）非会員のお問い合わせにより該当する値がない場合、Eメール+名前+電話番号などの形で唯一の値を作成|
-|	         |endUser.email	    |String	|X	|ユーザーメール（チケット処理の際、該当メールに返答が送信されます。 ない場合はメールが送信されません。)チケットをOnline Contactで処理する際は必須項目|
-|	         |endUser.username	|String	|X	|ユーザー名|
-|          |endUser.phone	    |String	|X	|ユーザー電話番号|
-|	         |addition	        |String	|X	|基本フィールドの他に追加されたフィールド情報|
-|            |status	        |String	|X	|値 : open(処理中), new(アサイン待ち), 基本値 : open(処理中)|
-|	         |attachments[].attachmentId	|String	|X	|添付ファイルID|
-
-#### Request Body
-```
-{
-    "categoryId":1567,
-    "subject":"This is a new ticket",
-    "content":"I have a question for you",
-    "endUser":{
-        "usercode":"gamebaseuser1",
-        "username":"TestUser",
-        "email":"gamebaseuser1@toast.com",
-        "phone":"13333333333"
-    },
-    "addition":"{'sex':'male','age':20}" ,
-    "status":"new" ,
-    "attachments":[
-       {
-            "attachmentId":"5a13cbfd3c574f7dae644536d3e4159c"
-        },
-       {
-            "attachmentId":"43f035ea67554ceab7f11535ee7ac5ac"
-        }
-    ]
-}
-```
+|名称|変数|データタイプ|変数タイプ|必須|説明|
+|----|----|----------|----------|----|---|
+|サービスID	       |serviceId	|String	    |path	|O	|サービスID，URL PATH内に設定した{serviceId}|
+|ユーザーコード	       |usercode	|String	    |path	|O	|ユーザーコード(唯一の値)，URL PATH内に設定した{usercode}|
+|カテゴリーID	   |categoryId	|Integer	|query	|X	|カテゴリー（受付タイプ）ID|
+|チケットの状態	       |status	    |String  	|query	|X	|チケットの状態. new: アサイン待ち, open: 処理中, reply: 保留, solved: 解決, closed: 完了|
+|言語コード	       |language	|String	    |query	|X	|サービスヘルプセンターの基本言語コード|
+|チャンネル	           |source  	|String 	|query	|X	|お問い合わせチャンネル(web:PCウェブ、spweb:モバイルウェブ、api:API)。 複数のチャンネル照会時にコンマを通じて使い分け（例:web,spweb,api）。 デフォルト値はweb,spweb,api|
+|整列方式	       |sort	     |String	|query	|X	|整列順序(デフォルト:updatedDt:desc;整列形式:昇順:asc、降順:desc)|
+|ページ	           |page	     |Integer	|query	|X	|基本値: 1|
+|1ページあたりの露出件数	|pageSize	  |Integer	 |query	 |X	 |基本値: 10; max=200|
 
 #### 結果データ
-|名称|変数|データタイプ|必須|説明|
-|-----|----|-----------|-----|----|
-|result.content	|ticketId	    |String	|O	|チケットID|
-|	              |serviceId	|String	|O	|サービスID|
-|	              |subject	    |String	|O	|チケットタイトル|
-|	              |categoryId	|Int	|X	|受付タイプID|
-|               |categoryName	|String	|X	|受付タイプ名|
-|	              |status	    |String	|O	|チケットの状況（new : アサイン待ち ; open : 処理中 ; closed : 処理完了）|
-|	              |endUser.usercode	|String	|O	|ユーザーコード（唯一の値）|
-|	              |endUser.email	|String	|X	|ユーザーメール（チケット処理の際、該当メールに返答が送信されます。 ない場合はメールが送信されません。)|
-|	              |endUser.username	|String	|X	|ユーザー名|
-|	              |endUser.phone	|String	|X	|ユーザー電話番号|
-| 	            |content	|String	|O	|チケットのお問い合わせ内容|
-|	              |createdDt	|Long	|O	|チケット作成時間|
-|	              |updatedDt	|Long	|O	|チケットアップデート時間|
-|               |contents	|String	|X	|チケット処理情報|
-|	              |attachments[].attachmentId	|String	|X	|添付ファイル ID|
-|	              |addition	|String	|X	|基本フィールドの他に追加されたフィールド情報|
+|名称|変数|データタイプ|説明|
+|-----|----|-----------|-------|
+|result.contents	|ticketId	        |String		    |チケットID|
+|	                |subject	        |String		    |チケットのタイトル|
+|	                |categoryId	        |Integer		|受付タイプID|
+|	                |categoryName	    |String		    |受付タイプ名|
+|	                |categoryFullName	|String		    |カテゴリー全体経路(>で各レベルを接続)|
+|	                |status 	        |String		    |チケットの状態. new: アサイン待ち, open: 処理中, reply: 保留, solved: 解決, closed: 完了|
+|	                |statusName	        |String		    |チケットの状態名|
+|	                |createdDt	        |Long		    |チケット作成時間|
+|	                |updatedDt	        |Long		    |チケットアップデート時間|
+|	                |displayDt	        |String		    |露出時間(yyyy.MM.dd)|
+|result 	        |total	            |Integer		|総件数|
+|	                |pages	            |Integer		|総ページ数|
+|	                |pageNum	        |Integer		|現在のページ|
+|                   |pageSize	        |Integer		|1ページあたりの露出件数|
 
 #### Response Body
 ```
-{
-    "header":{
-        "resultCode":200,
-        "resultMessage":"",
-        "isSuccessful":true
-    },
-    "result":{
-        "content":{
-            "ticketId":"T1586918360295gJrtI",
-            "serviceId":"GameBaseService",
-            "subject":"This is a new ticket",
-            "categoryId":1567,
-            "categoryName":null,
-            "status":"open",
-            "endUser":{
-                "usercode":"gamebaseuser1",
-                "username":"TestUser",
-                "email":"gamebaseuser1@toast.com",
-                "phone":"13333333333"
-            },
-            "content":"I have a question for you",
-            "createdDt":1586918360291,
-            "updatedDt":1586918360291,
-            "contents":null,
-            "attachments":[
-                {
-                    "attachmentId":"5a13cbfd3c574f7dae644536d3e4159c",
-                    "fileName":null,
-                    "contentType":null,
-                    "disposition":null,
-                    "size":null,
-                    "createdDt":null
-                },
-                {
-                    "attachmentId":"43f035ea67554ceab7f11535ee7ac5ac",
-                    "fileName":null,
-                    "contentType":null,
-                    "disposition":null,
-                    "size":null,
-                    "createdDt":null
-                }
-            ],
-            "addition":"{'sex':'male','age':20}"
-        }
-    }
-}
-```
-
-### チケット処理
-#### インターフェース説明
-- URL:	https://{domain}.oc.toast.com/{serviceId}/openapi/v1/ticket/solve.json			
-- URL (開発):	https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/ticket/solve.json			
-
-|インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
-|------------|-------|--------|-----|--------|--------------|------------|
-|チケット処理 |HTTPS  |POST    |UTF-8|JSON    |チケットIDでチケット処理|共通認証|
-
-#### リクエストパラメータ定義
-|名称|変数|データタイプ|必須|説明|
-|-----|-----|-----------|-----|---|
-|サービスID	|serviceId	|String	|O	|サービスID，URL PATH内に設定した{serviceId}|
-|チケットID	|id	|String	|O	|チケットID|
-|回答内容	|comment	|String	|O	|Request Bodyで提出した {"comment":"回答内容"}|
-|チケット処理者名	|assigneeName	|String	|X	|チケット処理者, 基本値 : null|
-|添付ファイル	|attachments	|String	|X	|添付ファイルID（形式（ファイルIDは　,で分離）：ファイルID1,ファイルID2,…,ファイルIDn）|
-
-#### 結果データ
-|名称|変数|データタイプ|必須|説明|
-|-----|----|-----------|-----|----|
-|result.content	|id	|String	|O	|チケットID|
-|	              |serviceId	|String	|O	|サービスID|
-|	              |subject	|String	|O	|チケットタイトル|
-|	              |categoryId	|Int	|X	|受付タイプID|
-|               |categoryName	|String	|X	|受付タイプ名|
-|	              |status	    |String	|O	|チケットの状況（open:新規チケット; closed:処理完了）|
-|	              |endUser.usercode	|String	|O	|ユーザーコード（唯一の値）|
-|	              |endUser.email	|String	|X	|ユーザーメール（チケット処理の際、該当メールに返答が送信されます。 ない場合はメールが送信されません。)|
-|	              |endUser.username	|String	|X	|ユーザー名|
-|	              |endUser.phone	|String	|X	|ユーザー電話番号|
-|	              |content	|String	|O	|チケットのお問い合わせ内容|
-|	              |createdDt	|Long	|O	|チケット作成時間|
-|	              |updatedDt	|Long	|O	|チケットアップデート時間|
-|	              |contents.content	|String	|X	|チケット処理内容|
-|	              |contents.createdDt	|Long	|X	|チケット処理時間|
-|	              |contents.attachments	|String	|X	|チケット処理添付ファイルID|
-|	              |attachments[].attachmentId	|String	|X	|添付ファイルID|
-|               |addition	|String	|X	|基本フィールドの他に追加されたフィールド情報|
-|　　　　　　　　　|assigneeName	|String	|X	|チケット処理者 , 基本値 : null|
-
-#### Request URL				
-?id=チケットID&assigneeName=チケット処理者名				
-
-#### Request Body
-- 形式: application/json;charset=UTF-8
-```
-{
-   "comment":"チケット回答内容"
-}
-```
-
-#### Response Body
-```
-{
-    "header":{
-        "resultCode":200,
-        "resultMessage":"",
-        "isSuccessful":true
-    },
-    "result":{
-        "content":{
-            "ticketId":"T1586918360295gJrtI",
-            "serviceId":"GameBaseService",
-            "subject":"This is a new ticket",
-            "categoryId":1567,
-            "categoryName":"bug",
-            "status":"closed",
-            "endUser":null,
-            "content":null,
-            "createdDt":1586918360000,
-            "updatedDt":1586927308531,
-            "contents":[
-                {
-                    "content":"I solve it",
-                    "createdDt":1586927311120,
-                    "attachments":null
-                }
-            ],
-            "attachments":null,
-            "addition":null
-           "assigneeName":"チケット処理者名" 
-        }
-    }
-}
+{		
+  "header": {		
+    "resultCode": 200,		
+    "resultMessage": "",		
+    "isSuccessful": true		
+  },		
+  "result": {		
+    "contents": [		
+      {		
+        "ticketId": "T1658213182227yb9hI",		
+        "subject": "유형11",		
+        "categoryId": 2542,		
+        "categoryName": "유형1-1-1-1-1",		
+        "categoryFullName": "유형1>유형1-1>유형1-1-1>유형1-1-1-1>유형1-1-1-1-1",		
+        "status": "reply",		
+        "statusName": "추가 확인",		
+        "content": null,		
+        "createdDt": 1658213182000,		
+        "updatedDt": 1658215682000,		
+        "contents": null,		
+        "attachments": null,		
+        "displayDt": "2022.07.19"		
+      },		
+      {		
+        "ticketId": "T16582131010751o8BM",		
+        "subject": "유형10",		
+        "categoryId": 2542,		
+        "categoryName": "유형1-1-1-1-1",		
+        "categoryFullName": "유형1>유형1-1>유형1-1-1>유형1-1-1-1>유형1-1-1-1-1",		
+        "status": "solved",		
+        "statusName": "답변 완료",		
+        "content": null,		
+        "createdDt": 1658213101000,		
+        "updatedDt": 1658215702000,		
+        "contents": null,		
+        "attachments": null,		
+        "displayDt": "2022.07.19"		
+      },		
+      {		
+        "ticketId": "T1658213078429EFmxm",		
+        "subject": "유형9",		
+        "categoryId": 2542,		
+        "categoryName": "유형1-1-1-1-1",		
+        "categoryFullName": "유형1>유형1-1>유형1-1-1>유형1-1-1-1>유형1-1-1-1-1",		
+        "status": "closed",		
+        "statusName": "최종 완료",		
+        "content": null,		
+        "createdDt": 1658213078000,		
+        "updatedDt": 1658215720000,		
+        "contents": null,		
+        "attachments": null,		
+        "displayDt": "2022.07.19"		
+      },		
+      {		
+        "ticketId": "T1658213060072Witj6",		
+        "subject": "유형8",		
+        "categoryId": 2542,		
+        "categoryName": "유형1-1-1-1-1",		
+        "categoryFullName": "유형1>유형1-1>유형1-1-1>유형1-1-1-1>유형1-1-1-1-1",		
+        "status": "open",		
+        "statusName": "문의 확인",		
+        "content": null,		
+        "createdDt": 1658213060000,		
+        "updatedDt": 1658215646000,		
+        "contents": null,		
+        "attachments": null,		
+        "displayDt": "2022.07.19"		
+      },		
+      {		
+        "ticketId": "T1658212816320fVxqS",		
+        "subject": "유형7",		
+        "categoryId": 2542,		
+        "categoryName": "유형1-1-1-1-1",		
+        "categoryFullName": "유형1>유형1-1>유형1-1-1>유형1-1-1-1>유형1-1-1-1-1",		
+        "status": "new",		
+        "statusName": "접수 완료",		
+        "content": null,		
+        "createdDt": 1658212816000,		
+        "updatedDt": 1658212816000,		
+        "contents": null,		
+        "attachments": null,		
+        "displayDt": "2022.07.19"		
+      },		
+      {		
+        "ticketId": "T1658211072628h00Qf",		
+        "subject": "유형6",		
+        "categoryId": 2542,		
+        "categoryName": "유형1-1-1-1-1",		
+        "categoryFullName": "유형1>유형1-1>유형1-1-1>유형1-1-1-1>유형1-1-1-1-1",		
+        "status": "new",		
+        "statusName": "접수 완료",		
+        "content": null,		
+        "createdDt": 1658211073000,		
+        "updatedDt": 1658211073000,		
+        "contents": null,		
+        "attachments": null,		
+        "displayDt": "2022.07.19"		
+      },		
+      {		
+        "ticketId": "T1658211058049HP1U0",		
+        "subject": "유형5",		
+        "categoryId": 2542,		
+        "categoryName": "유형1-1-1-1-1",		
+        "categoryFullName": "유형1>유형1-1>유형1-1-1>유형1-1-1-1>유형1-1-1-1-1",		
+        "status": "new",		
+        "statusName": "접수 완료",		
+        "content": null,		
+        "createdDt": 1658211058000,		
+        "updatedDt": 1658211058000,		
+        "contents": null,		
+        "attachments": null,		
+        "displayDt": "2022.07.19"		
+      },		
+      {		
+        "ticketId": "T165821104308563aoM",		
+        "subject": "유형4",		
+        "categoryId": 2542,		
+        "categoryName": "유형1-1-1-1-1",		
+        "categoryFullName": "유형1>유형1-1>유형1-1-1>유형1-1-1-1>유형1-1-1-1-1",		
+        "status": "new",		
+        "statusName": "접수 완료",		
+        "content": null,		
+        "createdDt": 1658211043000,		
+        "updatedDt": 1658211043000,		
+        "contents": null,		
+        "attachments": null,		
+        "displayDt": "2022.07.19"		
+      },		
+      {		
+        "ticketId": "T1658211028245FwMKd",		
+        "subject": "유형3",		
+        "categoryId": 2542,		
+        "categoryName": "유형1-1-1-1-1",		
+        "categoryFullName": "유형1>유형1-1>유형1-1-1>유형1-1-1-1>유형1-1-1-1-1",		
+        "status": "new",		
+        "statusName": "접수 완료",		
+        "content": null,		
+        "createdDt": 1658211028000,		
+        "updatedDt": 1658211028000,		
+        "contents": null,		
+        "attachments": null,		
+        "displayDt": "2022.07.19"		
+      },		
+      {		
+        "ticketId": "T1658211012753VCyy2",		
+        "subject": "유형2",		
+        "categoryId": 2542,		
+        "categoryName": "유형1-1-1-1-1",		
+        "categoryFullName": "유형1>유형1-1>유형1-1-1>유형1-1-1-1>유형1-1-1-1-1",		
+        "status": "new",		
+        "statusName": "접수 완료",		
+        "content": null,		
+        "createdDt": 1658211013000,		
+        "updatedDt": 1658211013000,		
+        "contents": null,		
+        "attachments": null,		
+        "displayDt": "2022.07.19"		
+      }		
+    ],		
+    "total": 12,		
+    "pages": 2,		
+    "pageNum": 1,		
+    "pageSize": 10		
+  }		
+}		
 ```
 
 ### チケット詳細
 #### インターフェース説明
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/ticket/{id}.json			
-- URL (開発):	https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/ticket/{id}.json			
+- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/ticket/enduser/{usercode}/{ticketId}/detail.json
+- URL(開発): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/ticket/enduser/{usercode}/{ticketId}/detail.json
 
 |インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
-|チケット詳細 |HTTPS  |GET    |UTF-8|JSON    |チケットIDを通じてチケット照会|共通認証 |
+|チケット詳細  |HTTPS  |GET    |UTF-8|JSON    |顧客が受け付けたチケット詳細照会|共通認証  |
 
 #### リクエストパラメータ定義
-|名称|変数|データタイプ|必須|説明|
-|-----|-----|-----------|-----|---|
-|サービスID	|serviceId	|String	|O	|サービスID，URL PATH内に設定した{serviceId}|
-|チケットID	|id	|String	|O	|チケットID，URL PATH内に設定した{id}|
+|名称|変数|データタイプ|変数タイプ|必須|説明|
+|----|----|----------|----------|----|---|
+|サービスID	|serviceId	|String	|path	|O	|サービスID，URL PATH内に設定した{serviceId}|
+|ID	    |usercode	|String	|path	|O	|ID(ユーザー固有ID)、お問い合わせ受付時のusercode|
+|チケットID	|ticketId	|String	|path	|O	|チケットID|
+|言語コード	|language	 |String	|query	|X	|サービスヘルプセンターの基本言語コード|
 
 #### 結果データ
-|名称|変数|データタイプ|必須|説明|
-|-----|-----|-----------|-----|---|
-|result.content	|ticketId	|String	|O	|チケットID|
-|	            |serviceId	|String	|O	|サービスID|
-|	            |subject	|String	|O	|チケットタイトル|
-|	            |categoryId	|Int	|X	|受付タイプID|
-|	            |categoryName	|String	|X	|受付タイプ名|
-|	            |status	        |String	|O	|チケットの状態（open:新規チケット; closed:処理完了）|
-|	            |endUser.usercode	|String	|O	|ユーザーコード（唯一の値）|
-|	            |endUser.email	    |String	|X	|ユーザーメール（チケット処理の際、該当メールに返答が送信されます。 ない場合はメールが送信されません。)|
-|	            |endUser.username	|String	|X	|ユーザー名|
-|	            |endUser.phone	    |String	|X	|ユーザー電話番号|
-|	            |content	        |String	|O	|チケットのお問い合わせ内容|
-|	            |createdDt	        |Long	|O	|チケット作成時間|
-|	            |updatedDt	        |Long	|O	|チケットアップデート時間|
-|	            |contents.content	|String	|X	|チケット処理内容|
-|	            |contents.createdDt	|Long	|X	|チケット処理時間|
-|	            |contents.attachments.attachmentId	|String	|X	|チケット処理添付ファイルID|
-|	            |contents.attachments.fileName	|String	|X	|チケット処理添付ファイル名|
-|	            |contents.attachments.contentType	|String	|X	|チケット処理添付ファイルタイプ|
-|	            |contents.attachments.disposition	|String	|X	|チケット処理添付ファイル処理方式（attachment:添付ファイル）|
-|	            |contents.attachments.size	|Long	|X	|チケット処理添付ファイルサイズ|
-|	            |contents.attachments.createdDt	|Long	|X	|チケット処理添付ファイルのアップロード時間|
-|	            |attachments.attachmentId	|String	|X	|チケットお問い合わせ添付ファイルID|
-|	            |attachments.fileName	|String	|X	|チケットお問い合わせ添付ファイル名|
-|	            |attachments.contentType	|String	|X	|チケットお問い合わせ添付ファイルタイプ|
-|	            |attachments.disposition	|String	|X	|チケット問い合わせ添付ファイル処理方式（attachment:添付ファイル）|
-|	            |attachments.size	|Long	|X	|チケットお問い合わせ添付ファイルのサイズ|
-|	            |attachments.createdDt	|Long	|X	|チケットお問い合わせ添付ファイルのアップロード時間|
-|	            |addition	|String	|X	|基本フィールドの他に追加されたフィールド情報|
-|　　　　　　　　　|assigneeName	|String	|X	|チケット処理者 , 基本値 : null|
+|名称|変数|データタイプ|説明|
+|-----|----|-----------|-------|
+|result.content	|ticketId	|String		    |チケットID|
+|	            |subject	|String		    |サービスID|
+|	            |categoryId	|Integer		|カテゴリー（受付タイプ）ID|
+|	            |categoryName	|String		|カテゴリー名|
+|	            |categoryFullName	|String		|カテゴリー全体経路(>で各レベルを接続)|
+|	            |status	            |String		|チケットの状態. new: アサイン待ち, open: 処理中, reply: 保留, solved: 解決, closed: 完了|
+|	            |statusName	        |String		|チケットの状態名|
+|	            |content	        |String		|問い合わせ内容|
+|	            |createdDt	        |Long		|作成時間|
+|	            |updatedDt	        |Long		|修正時間|
+|	            |contents	        |Array		|チケット詳細|
+|	            |contents.content	|String		|内容詳細|
+|	            |contents.type	    |String		|お問い合わせタイプ。enduser:お問い合わせ(受付完了)、csuser:回答(受付完了)|
+|	            |contents.typeName	|String		|内容タイプ名|
+|	            |contents.createdDt	|Long		|チケット処理時間|
+|	            |contents.displayDt	|String		|内容露出時間(yyyy.MM.dd)|
+|	            |contents.attachments	|Array		|チケット処理内容の添付ファイル|
+|	            |contents.attachments.attachmentId	|String		|チケット処理内容の添付ファイルID|
+|	            |contents.attachments.fileName	    |String		|チケット処理内容の添付ファイル名|
+|	            |contents.attachments.contentType	|String		|チケット処理内容の添付ファイルタイプ|
+|	            |contents.attachments.disposition	|String		|チケット処理内容の添付ファイル処理方式(attachment:添付ファイル)|
+|	            |contents.attachments.size	        |Long		|チケット処理内容の添付ファイルサイズ|
+|	            |contents.attachments.createdDt	    |Long		|チケット処理内容の添付ファイルのアップロード時間|
+|	            |attachments	                    |Array		|チケットお問い合わせの添付ファイル|
+|	            |attachments.attachmentId	        |String		|チケットお問い合わせの添付ファイルID|
+|               |attachments.fileName	            |String		|チケットお問い合わせの添付ファイル名|
+|	            |attachments.contentType	        |String		|チケットお問い合わせの添付ファイルタイプ|
+|	            |attachments.disposition	        |String		|チケットお問い合わせの添付ファイル処理方式(attachment:添付ファイル)|
+|	            |attachments.size	                |Long		|チケットお問い合わせの添付ファイルサイズ|
+|	            |attachments.createdDt	            |Long		|チケットお問い合わせの添付ファイルのアップロード時間|
+|	            |displayDt	                        |String		|露出時間(yyyy.MM.dd)|
+|result	        |total	                            |Integer	|総件数|
+|	            |pages	                            |Integer	|総ページ数|
+|	            |pageNum	                        |Integer	|ページ|
+|	            |pageSize	                        |Integer	|1ページあたりの露出件数|
 
 #### Response Body
 ```
-{
-    "header":{
-        "resultCode":200,
-        "resultMessage":"",
-        "isSuccessful":true
-    },
-    "result":{
-        "content":{
-            "ticketId":"T1586918360295gJrtI",
-            "serviceId":"GameBaseService",
-            "subject":"This is a new ticket",
-            "categoryId":1567,
-            "categoryName":"bug",
-            "status":"closed",
-            "endUser":{
-                "usercode":"gamebaseuser1",
-                "username":"TestUser",
-                "email":"gamebaseuser1@toast.com",
-                "phone":"13333333333"
-            },
-            "content":"I have a question for you",
-            "createdDt":1586918360000,
-            "updatedDt":1586927309000,
-            "contents":[
-                {
-                    "content":"I solve it",
-                    "createdDt":1586927311000,
-                    "attachments":[
-                        {
-                            "attachmentId":"bb7109b2ebd14780ae5403f17de88246",
-                            "fileName":"jp.gr.java_conf.ussiy.app.propedit_5.3.3 (1).zip",
-                            "contentType":"application/x-zip-compressed",
-                            "disposition":"attachment",
-                            "size":223573,
-                            "createdDt":1586918795000
-                        },
-                        {
-                            "attachmentId":"914cd0fb61934c0698655118158d84d5",
-                            "fileName":"jp.gr.java_conf.ussiy.app.propedit_5.3.3.zip",
-                            "contentType":"application/x-zip-compressed",
-                            "disposition":"attachment",
-                            "size":223573,
-                            "createdDt":1586918801000
-                        }
-                    ]
-                }
-            ],
-            "attachments":[
-                {
-                    "attachmentId":"5a13cbfd3c574f7dae644536d3e4159c",
-                    "fileName":"jp.gr.java_conf.ussiy.app.propedit_5.3.3 (1).zip",
-                    "contentType":"application/x-zip-compressed",
-                    "disposition":"attachment",
-                    "size":223573,
-                    "createdDt":1586918296000
-                },
-                {
-                    "attachmentId":"43f035ea67554ceab7f11535ee7ac5ac",
-                    "fileName":"jp.gr.java_conf.ussiy.app.propedit_5.3.3.zip",
-                    "contentType":"application/x-zip-compressed",
-                    "disposition":"attachment",
-                    "size":223573,
-                    "createdDt":1586918300000
-                }
-            ],
-            "addition":"{'sex':'male','age':20}"
-            "assigneeName":"チケット処理者名"
-        }
-    }
-}
-```
-
-### チケットリスト
-#### インターフェース説明
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/ticket/list.json						
-- URL (開発):	https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/ticket/list.json				
-
-|インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
-|------------|-------|--------|-----|--------|--------------|------------|
-|チケット目録  |HTTPS  |GET    |UTF-8|JSON    |検索条件を通じて条件に合うチケットリストを照会|共通認証 |
-
-#### リクエストパラメータ定義
-|名称|変数|データタイプ|必須|説明|
-|-----|-----|-----------|-----|---|
-|サービスID	|serviceId	|String	|O	|サービスID，URL PATH内に設定した{serviceId}|
-|開始時間	|startDt	|String	|X	|検索範囲の開始時間(チケット作成時間)(形式:yyyyMMddHHmmss）|
-|終了時間	|endDt	|String	|X	|検索範囲の終了時間(チケット作成時間)(形式:yyyyMMddHHmmss）|
-|チケットID	|ticketId	|String	|X	|チケットID|
-|タイトル	|subject	|String	|X	|タイトル|
-|チケット状態	|status	|String	|X	|チケット状態（open:新規チケット; closed:処理完了）|
-|受付タイプ	|categoryId	|Int	|X	|受付タイプID（IDが複数ある場合 , で分離）|
-|ユーザーコード	|usercode	|String	|X	|ユーザーコード（唯一の値）|
-|ユーザー名	|username	|String	|X	|ユーザー名|
-|ユーザーメール	|email	  |String	|X	|ユーザーメール|
-|並び順	|sort	   |String	|X	|並び順(基本値:updatedDt:desc; 形式変数:整列（昇順:asc, 降順:desc))|
-|ページ	|page	    |Int	|X	|基本値:1|
-|ページあたりの露出件数|pageSize	|Int	|X	|基本値:10;max=200|
-
-#### 結果データ
-|名称|変数|データタイプ|必須|説明|
-|-----|-----|-----------|-----|---|
-|result.contents	|ticketId	|String	|O	|チケットID|
-|	                |serviceId	|String	|O	|サービスID|
-|	                |subject	|String	|O	|チケットタイトル|
-|	                |categoryId	|Int	|X	|受付タイプID|
-|	                |categoryName	|String	|X	|受付タイプ名|
-|	                |status	|String	|O	|チケット状態（open:新規チケット; closed:処理完了）|
-|	                |createdDt	|Long	|O	|チケット作成時間|
-|	                |updatedDt	|Long	|O	|チケットアップデート時間|
-|	                |addition	|String	|X	|基本フィールドの他に追加されたフィールド情報|
-|result.total	|total	        |Long	|O	|総件数|
-|result.pages	|pages	        |Int	|O	|総ページ数|
-|result.pageNum	|pageNum	    |Int	|O	|現在ページ|
-|result.pageSize	|pageSize	|Int	|O	|ページあたりの露出件数|
-
-#### Response Body
-```
-{
-    "header":{
-        "resultCode":200,
-        "resultMessage":"",
-        "isSuccessful":true
-    },
-    "result":{
-        "contents":[
-            {
-                "ticketId":"T1586918360295gJrtI",
-                "serviceId":"GameBaseService",
-                "subject":"This is a new ticket",
-                "categoryId":1567,
-                "categoryName":"bug",
-                "status":"closed",
-                "createdDt":1586918360000,
-                "updatedDt":1586927309000,
-                "addition":null
-            },
-            {
-                "ticketId":"T1586915418254WQQM9",
-                "serviceId":"GameBaseService",
-                "subject":"This is a new ticket",
-                "categoryId":1567,
-                "categoryName":"bug",
-                "status":"closed",
-                "createdDt":1586915418000,
-                "updatedDt":1586915505000,
-                "addition":null
-            },
-            {
-                "ticketId":"T1586914789452LJEcI",
-                "serviceId":"GameBaseService",
-                "subject":"This is a new ticket",
-                "categoryId":1567,
-                "categoryName":"bug",
-                "status":"closed",
-                "createdDt":1586914789000,
-                "updatedDt":1586915162000,
-                "addition":null
-            },
-            {
-                "ticketId":"T1586846795949Ij1xA",
-                "serviceId":"GameBaseService",
-                "subject":"This is a new ticket",
-                "categoryId":1567,
-                "categoryName":"bug",
-                "status":"closed",
-                "createdDt":1586846796000,
-                "updatedDt":1586852906000,
-                "addition":null
-            },
-            {
-                "ticketId":"T1586846821052WKmoK",
-                "serviceId":"GameBaseService",
-                "subject":"This is a new ticket",
-                "categoryId":1567,
-                "categoryName":"bug",
-                "status":"closed",
-                "createdDt":1586846821000,
-                "updatedDt":1586852382000,
-                "addition":null
-            },
-            {
-                "ticketId":"T1586849274901SZ94B",
-                "serviceId":"GameBaseService",
-                "subject":"This is a new ticket",
-                "categoryId":1567,
-                "categoryName":"bug",
-                "status":"closed",
-                "createdDt":1586849275000,
-                "updatedDt":1586851357000,
-                "addition":null
-            }
-        ],
-        "total":6,
-        "pages":1,
-        "pageNum":1,
-        "pageSize":10
-    }
-}
-```
-
-### ユーザーチケットリスト
-#### インターフェース説明
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/ticket/{usercode}/list.json							
-- URL (開発):	https://{domain}.alpha-oc.toast.co/{serviceId}/openapi/v1/ticket/{usercode}/list.json	
-
-|インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
-|------------|-------|--------|-----|--------|--------------|------------|
-|ユーザーチケットリスト|HTTPS  |GET    |UTF-8|JSON    |検索条件を通じて条件に合うユーザーのチケットリスト照会|共通認証   |
-
-#### リクエストパラメータ定義
-|名称|変数|データタイプ|必須|説明|
-|-----|-----|-----------|-----|---|
-|サービスID	|serviceId	 |String	|O	|サービスID，URL PATH内に設定した{serviceId}|
-|ユーザーコード|usercode	|String	|O	|ユーザーコード(唯一の値)，URL PATH内に設定した{usercode}|
-|開始時間	|startDt	|String	|X	|検索範囲の開始時間(チケット作成時間)(形式:yyyyMMddHHmmss）|
-|終了時間	|endDt	|String	|X	|検索範囲の終了時間(チケット作成時間)(形式:yyyyMMddHHmmss）|
-|チケットID	|ticketId	  |String	|X	|チケットID|
-|タイトル	|subject	      |String	|X	|タイトル|
-|チケット状態	|status	    |String	|X	|チケット状態（open:新規チケット; closed:処理完了）|
-|受付タイプ	|categoryId	|Int	|X	|受付タイプID（IDが複数ある場合 , で分離）|
-|整列方式	|sort	    |String	|X	|並び順(基本値:updatedDt:desc; 形式変数:整列（昇順:asc, 降順:desc))|
-|ページ	|page	    |Int	|X	|基本値:1|
-|ページあたりの露出件数|pageSize	|Int	|X	|基本値:10;max=200|
-
-#### 結果データ
-|名称|変数|データタイプ|必須|説明|
-|-----|-----|-----------|-----|---|
-|result.contents	|ticketId	|String	|O	|チケットID|
-|	                |serviceId	|String	|O	|サービスID|
-|	                |subject	|String	|O	|チケットタイトル|
-|	                |categoryId	|Int	|X	|受付タイプID|
-|	                |categoryName	|String	|X	|受付タイプ名|
-|	                |status	|String	|O	|チケット状態（open:新規チケット; closed:処理完了）|
-|                   |createdDt	|Long	|O	|チケット作成時間|
-|	                |updatedDt	|Long	|O	|チケットアップデート時間|
-|	                |addition	|String	|X	|基本フィールドの他に追加されたフィールド情報|
-|result.total	|total	        |Long	|O	|総件数|
-|result.pages	|pages	        |Int	|O	|総ページ数|
-|result.pageNum	|pageNum	    |Int	|O	|現在ページ|
-|result.pageSize	|pageSize	|Int	|O	|ページあたりの露出件数|
-
-#### Response Body
-```
-{
-    "header":{
-        "resultCode":200,
-        "resultMessage":"",
-        "isSuccessful":true
-    },
-    "result":{
-        "contents":[
-            {
-                "ticketId":"T1586918360295gJrtI",
-                "serviceId":"GameBaseService",
-                "subject":"This is a new ticket",
-                "categoryId":1567,
-                "categoryName":"bug",
-                "status":"closed",
-                "createdDt":1586918360000,
-                "updatedDt":1586927309000,
-                "addition":null
-            },
-            {
-                "ticketId":"T1586915418254WQQM9",
-                "serviceId":"GameBaseService",
-                "subject":"This is a new ticket",
-                "categoryId":1567,
-                "categoryName":"bug",
-                "status":"closed",
-                "createdDt":1586915418000,
-                "updatedDt":1586915505000,
-                "addition":null
-            },
-            {
-                "ticketId":"T1586914789452LJEcI",
-                "serviceId":"GameBaseService",
-                "subject":"This is a new ticket",
-                "categoryId":1567,
-                "categoryName":"bug",
-                "status":"closed",
-                "createdDt":1586914789000,
-                "updatedDt":1586915162000,
-                "addition":null
-            },
-            {
-                "ticketId":"T1586846795949Ij1xA",
-                "serviceId":"GameBaseService",
-                "subject":"This is a new ticket",
-                "categoryId":1567,
-                "categoryName":"bug",
-                "status":"closed",
-                "createdDt":1586846796000,
-                "updatedDt":1586852906000,
-                "addition":null
-            },
-            {
-                "ticketId":"T1586846821052WKmoK",
-                "serviceId":"GameBaseService",
-                "subject":"This is a new ticket",
-                "categoryId":1567,
-                "categoryName":"bug",
-                "status":"closed",
-                "createdDt":1586846821000,
-                "updatedDt":1586852382000,
-                "addition":null
-            },
-            {
-                "ticketId":"T1586849274901SZ94B",
-                "serviceId":"GameBaseService",
-                "subject":"This is a new ticket",
-                "categoryId":1567,
-                "categoryName":"bug",
-                "status":"closed",
-                "createdDt":1586849275000,
-                "updatedDt":1586851357000,
-                "addition":null
-            }
-        ],
-        "total":6,
-        "pages":1,
-        "pageNum":1,
-        "pageSize":10
-    }
-}
-```
-
-### チケットに添付ファイル添付
-#### インターフェース説明
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/attachments/ticket/upload.json			 			
-- URL (開発):	https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/attachments/ticket/upload.json			
-
-|インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
-|------------|-------|--------|-----|--------|--------------|------------|
-|添付ファイル添付|HTTPS  |GET    |UTF-8|JSON    |サーバーへのファイルアップロード|共通認証 |
-
-#### リクエストパラメータ定義
-|名称|変数|データタイプ|必須|説明|
-|-----|-----|-----------|-----|---|
-|サービスID	|serviceId	|String	|O	|URL PATH内に設定した{serviceId}|
-|添付したファイル	|file	|File	|O	|添付したファイルはform形式で提出|
-
-#### 結果データ
-|名称|変数|データタイプ|必須|説明|
-|-----|-----|-----------|-----|---|
-|result.content	|attachmentId	|String	|O	|添付したファイルのID|
-|	            |fileName	    |String	|O	|ファイル名|
-|	            |contentType	|String	|O	|ファイルのタイプ|
-|	            |disposition	|String	|O	|ファイル処理方式（attachment:添付ファイル）|
-|	            |size	|Long	|O	|ファイルサイズ|
-|               |createdDt	|Long	|O	|ファイル添付時間|
-
-#### Response Body
-```
-{
-    "header":{
-        "resultCode":200,
-        "resultMessage":"",
-        "isSuccessful":true
-    },
-    "result":{
-        "content":{
-            "attachmentId":"e5f0eab5cf694d4fb356c21a9bdaee48",
-            "fileName":"1.jpeg",
-            "contentType":"image/jpeg",
-            "disposition":"attachment",
-            "size":40375,
-            "createdDt":null
-        }
-    }
-}
+{		
+  "header": {		
+    "resultCode": 200,		
+    "resultMessage": "",		
+    "isSuccessful": true		
+  },		
+  "result": {		
+    "content": {		
+      "ticketId": "T1658199661153IXTfw",		
+      "subject": "유형",		
+      "categoryId": 2542,		
+      "categoryName": "유형1-1-1-1-1",		
+      "categoryFullName": "유형1>유형1-1>유형1-1-1>유형1-1-1-1>유형1-1-1-1-1",		
+      "status": "solved",		
+      "statusName": "답변 완료",		
+      "content": "문의내용",		
+      "createdDt": 1658199661000,		
+      "updatedDt": 1658279983000,		
+      "contents": [		
+        {		
+          "content": "<p>solved</p>",		
+          "type": "reply",		
+          "typeName": "답변",		
+          "createdDt": 1658279983000,		
+          "displayDt": "2022.07.20",		
+          "attachments": [		
+            {		
+              "attachmentId": "a9e126cf01654631acc2d1e56e8c694e",		
+              "fileName": "image.png",		
+              "contentType": "image/png",		
+              "disposition": "attachment",		
+              "size": 90576,		
+              "createdDt": 1658279969000		
+            }		
+          ]		
+        },		
+        {		
+          "content": "<p>append commnet</p>",		
+          "type": "enduser",		
+          "typeName": "질문",		
+          "createdDt": 1658279813000,		
+          "displayDt": "2022.07.20",		
+          "attachments": null		
+        },		
+        {		
+          "content": "<p>append comment</p>",		
+          "type": "enduser",		
+          "typeName": "질문",		
+          "createdDt": 1658216460000,		
+          "displayDt": "2022.07.19",		
+          "attachments": null		
+        },		
+        {		
+          "content": "<p>solved</p>",		
+          "type": "reply",		
+          "typeName": "답변",		
+          "createdDt": 1658216406000,		
+          "displayDt": "2022.07.19",		
+          "attachments": null		
+        }		
+      ],		
+      "attachments": null,		
+      "displayDt": "2022.07.19"		
+    }		
+  }		
+}		
 ```
 
 ### チケット添付ファイルを開く/ダウンロード
 #### インターフェース説明
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/attachments/ticket/{id}					 	
-- URL (開発):	https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/attachments/ticket/{id}		
+- URL: https://{domain}.oc.toast.com/{serviceId}/api/v2/ticket/attachments/{id}		
+- URL(開発): https://{domain}.alpha-oc.toast.com/{serviceId}/api/v2/ticket/attachments/{id}									
 
 |インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
-|添付ファイルを開く/ダウンロード  |HTTPS  |GET    |UTF-8|JSON    |サーバーにアップロードされたファイルを開く/ダウンロード|共通認証|
+|チケット添付ファイルを開く/ダウンロード  |HTTPS  |GET    |UTF-8|JSON    |チケット添付ファイルを開く/ダウンロード|必要なし  |
 
 #### リクエストパラメータ定義
-|名称|変数|データタイプ|必須|説明|
-|-----|-----|-----------|-----|---|
-|サービスID	|serviceId	|String	|O	|URL PATH内に設定した{serviceId}|
-|添付したファイルID	|id	|String	|O	|添付したファイルid| 
-|処理方式|type	|String	|X	|デフォルト値はブラウザで開く（download:ダウンロード, open:ブラウザで開く）|
+|名称|変数|データタイプ|変数タイプ|必須|説明|
+|----|----|----------|----------|----|---|
+|サービスID	    |serviceId	|String	|path   |O	|サービスID，URL PATH内に設定した{serviceId}|
+|添付ファイルID	|id	        |String	|path   |O	|添付ファイルID, URL PATH内に設定した{id}| 
+|処理方式	    |type	    |String	|query  |X	|デフォルト値:ブラウザで開く。（download:ダウンロード、open:ブラウザで開く）|
 
 #### 結果データ
-- なし
+File
 
-#### Response Body
-- File
-
-### チケット添付ファイル削除
+### 顧客再問合せ
 #### インターフェース説明
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/attachments/ticket/{id}.json		
-- URL (開発): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/attachments/ticket/{id}.json	
+- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/ticket/enduser/{usercode}/{ticketId}/comment.json
+- URL(開発): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/ticket/enduser/{usercode}/{ticketId}/comment.json
 
 |インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
-|添付ファイル削除|HTTPS  |DELETE    |UTF-8|JSON    |サーバーにアップロードされたファイル削除|共通認証|
+|顧客再問合せ  |HTTPS  |POST    |UTF-8|JSON    |チケットIDを基準に再お問い合わせ|共通認証|
 
 #### リクエストパラメータ定義
-|名称|変数|データタイプ|必須|説明|
-|-----|-----|-----------|-----|---|
-|サービスID	|serviceId	|String	|O	|URL PATH内に設定した{serviceId}|
-|添付したファイルID	 |id	|String	|O	|添付したファイルid|
+|名称|変数|データタイプ|変数タイプ|必須|説明|
+|----|----|----------|----------|----|---|
+|サービスID	|serviceId	|String	|path	|O	|サービスID，URL PATH内に設定した{serviceId}|
+|ID    |usercode	|String	|path	|O	|ID(ユーザー固有ID)、お問い合わせ受付時のusercode|
+|チケットID	|ticketId	|String	|path	|O	|チケットID|
+|内容	    |comment	|String	|body	|O	|再問合せの内容|
+|첨부파일	|attachments	|String	|query	|X	|添付ファイルID。複数のファイル添付時にファイルIDを(,)から分離、maxは5件(ファイルID1,ファイルID2,...、ファイルID5)|
 
 #### 結果データ
-|名称|変数|データタイプ|必須|説明|
-|-----|-----|-----------|-----|---|
-|result.content	|attachmentId	|String	|O	|添付したファイルID| 
-|	            |fileName	|String	|O	|ファイル名|
-|	            |contentType	|String	|O	|ファイルタイプ|
-|	            |size	|Long	|O	|ファイルサイズ|
+|名称|変数|データタイプ|説明|
+|-----|----|-----------|-------|
+|result.content	|content	|String		|再問合せの内容|
+|	            |type	    |String		|固定値: enduser|
+|               |typeName	|String		|タイプ名称|
+|	            |createdDt	|Long		|提出時間|
+|	            |displayDt	|String		|露出時間(yyyy.MM.dd)|
+|	            |attachments	|Array		|添付ファイル|
+|	            |attachments.attachmentId	|String		|添付ファイルID|
+|	            |attachments.fileName	    |String		|添付ファイル名|
+|	            |attachments.contentType	|String		|添付ファイルタイプ|
+|	            |attachments.disposition	|String		|添付ファイル処理方式(attachment:添付ファイル)|
+|	            |attachments.size	        |Long		|添付ファイルサイズ|
+|	            |attachments.createdDt	    |Long		|添付ファイルのアップロード時間|
 
 #### Response Body
 ```
-{
-    "header":{
-        "resultCode":200,
-        "resultMessage":"",
-        "isSuccessful":true
-    },
-    "result":{
-        "content":{
-            "attachmentId":"e5f0eab5cf694d4fb356c21a9bdaee48",
-            "fileName":"1.jpeg",
-            "contentType":"image/jpeg",
-            "disposition":"attachment",
-            "size":40375,
-            "createdDt":1586849962000a
-        }
-    }
-}
+{		
+  "header": {		
+    "resultCode": 200,		
+    "resultMessage": "",		
+    "isSuccessful": true		
+  },		
+  "result": {		
+    "content": {		
+      "content": "<p>append comnment</p>",		
+      "type": "enduser",		
+      "typeName": null,		
+      "createdDt": 1658286589999,		
+      "displayDt": null,		
+      "attachments": [		
+        {		
+          "attachmentId": "a9e126cf01654631acc2d1e56e8c694e",		
+          "fileName": "image.png",		
+          "contentType": "image/png",		
+          "disposition": "attachment",		
+          "size": 90576,		
+          "createdDt": 1658279969000		
+        }		
+      ]		
+    }		
+  }		
+}		
 ```

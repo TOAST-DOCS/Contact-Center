@@ -27,7 +27,6 @@
 |	            |languages.orderNo	|Integer		|언어 노출 순서|
 |	            |multiLanguage	|Boolean		|서비스 다국어 여부, 값(true: 다국어, false: 단일 언어)|
 
-
 #### Response Body
 ```
 {
