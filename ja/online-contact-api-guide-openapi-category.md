@@ -24,7 +24,7 @@
 |	                |parent	    |Integer		|上位受付タイプID|
 |	                |name	    |String		    |受付タイプ名|
 |	                |level	    |Integer		|受付タイプレベル(1, 2, 3, 4, 5)|
-|	                |path	    |String		    |受付タイプ経路(\\で各レベルのカテゴリーIDを接続)|
+|	                |path	    |String		    |受付タイプ経路(\\\\で各レベルのカテゴリーIDを接続)|
 |	                |orderNo	|Integer		|表示手順|
 |	                |languages	|Object		    |カテゴリー多言語名|
 

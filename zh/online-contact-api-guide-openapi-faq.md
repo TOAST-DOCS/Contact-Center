@@ -408,7 +408,7 @@ The format and example of sort parameter is as follows.
 |	              |parentCategoryList.parent	    |Integer		 |Parent category ID|
 |	              |parentCategoryList.name	      |String		   |Category name|
 |	              |parentCategoryList.level	      |Integer		 |Depth of category(0, 1, 2)|
-|	              |parentCategoryList.path	      |String		   |Depth path of category(Associate each depth ID with \\)|
+|	              |parentCategoryList.path	      |String		   |Depth path of category(Associate each depth ID with \\\\)|
 |	              |parentCategoryList.orderNo	    |Integer		 |Category display order|
 |	              |parentCategoryList.languages  	|Object		   |Multilingual category name|
 |	              |category	                      |Object		   |Category information|

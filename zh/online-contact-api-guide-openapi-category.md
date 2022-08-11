@@ -24,7 +24,7 @@
 |	                |parent	    |Integer		|Parent submission type ID|
 |	                |name	    |String		    |Submission type name|
 |	                |level	    |Integer		|Submission type level(1, 2, 3, 4, 5)|
-|	                |path	    |String		    |Submission type path(Associate Category ID for each depth with \\)|
+|	                |path	    |String		    |Submission type path(Associate Category ID for each depth with \\\\)|
 |	                |orderNo	|Integer		|Display order|
 |	                |languages	|Object		    |Multilingual names of categories|
 

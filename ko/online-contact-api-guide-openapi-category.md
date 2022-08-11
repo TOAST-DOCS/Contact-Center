@@ -24,7 +24,7 @@
 |	                |parent	    |Integer		|상위 접수유형 ID|
 |	                |name	    |String		    |접수유형 명|
 |	                |level	    |Integer		|접수유형 레벨(1, 2, 3, 4, 5)|
-|	                |path	    |String		    |접수유형 경로(\\로 각 뎁스 카테고리 ID 연결)|
+|	                |path	    |String		    |접수유형 경로(\\\\로 각 뎁스 카테고리 ID 연결)|
 |	                |orderNo	|Integer		|표시 순서|
 |	                |languages	|Object		    |카테고리 다국어 명|
 

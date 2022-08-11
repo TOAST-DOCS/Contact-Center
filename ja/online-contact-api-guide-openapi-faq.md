@@ -408,7 +408,7 @@ sortパラメータの形式および例は下記のとおりです。
 |	              |parentCategoryList.parent	    |Integer		 |上位カテゴリーID|
 |	              |parentCategoryList.name	      |String		   |カテゴリー名|
 |	              |parentCategoryList.level	      |Integer		 |カテゴリーレベル(0, 1, 2)|
-|	              |parentCategoryList.path	      |String		   |カテゴリーレベル経路(\\で各ID接続)|
+|	              |parentCategoryList.path	      |String		   |カテゴリーレベル経路(\\\\で各ID接続)|
 |	              |parentCategoryList.orderNo	    |Integer		 |カテゴリー表示手順設定|
 |	              |parentCategoryList.languages  	|Object		   |多言語カテゴリー名|
 |	              |category	                      |Object		   |カテゴリー情報|

@@ -408,7 +408,7 @@ sort 파라미터의 형식 및 예시는 하기와 같습니다.
 |	              |parentCategoryList.parent	    |Integer		 |상위 카테고리 ID|
 |	              |parentCategoryList.name	      |String		   |카테고리 명|
 |	              |parentCategoryList.level	      |Integer		 |카테고리 뎁스(0, 1, 2)|
-|	              |parentCategoryList.path	      |String		   |카테고리 뎁스 경로(\\로 각 뎁스ID 연결)|
+|	              |parentCategoryList.path	      |String		   |카테고리 뎁스 경로(\\\\로 각 뎁스ID 연결)|
 |	              |parentCategoryList.orderNo	    |Integer		 |카테고리 표시 순서 설정|
 |	              |parentCategoryList.languages  	|Object		   |다국어 카테고리 명|
 |	              |category	                      |Object		   |카테고리 정보|

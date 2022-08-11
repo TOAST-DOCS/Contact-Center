@@ -22,7 +22,7 @@
 |	                |parent	    |Integer		|上位テーマID(固定値:0)|
 |	                |name	      |String		  |テーマ名|
 |	                |level	    |Integer		|レベル(固定値:1)|
-|	                |path	      |String		  |レベル経路(固定値:"\\")|
+|	                |path	      |String		  |レベル経路(固定値:"\\\\")|
 |	                |orderNo	  |Integer		|整列順序|
 |	                |languages	|Object		  |テーマの多言語名称値（言語コード:対応する言語コードの名称）|
 

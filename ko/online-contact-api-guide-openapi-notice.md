@@ -22,7 +22,7 @@
 |	                |parent	    |Integer		|상위 말머리 ID（고정 값: 0）|
 |	                |name	      |String		  |말머리 명|
 |	                |level	    |Integer		|뎁스（고정 값: 1）|
-|	                |path	      |String		  |뎁스 경로（고정 값: "\\"）|
+|	                |path	      |String		  |뎁스 경로（고정 값: "\\\\"）|
 |	                |orderNo	  |Integer		|정렬 순서|
 |	                |languages	|Object		  |말머리 다국어 명칭, 값(언어 코드: 대응되는 언어 코드 명칭)|
 

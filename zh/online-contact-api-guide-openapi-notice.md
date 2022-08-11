@@ -22,7 +22,7 @@
 |	                |parent	    |Integer		|Parent heading ID（Fixed value: 0）|
 |	                |name	      |String		  |Heading name|
 |	                |level	    |Integer		|Depth（Fixed value: 1）|
-|	                |path	      |String		  |Depth path（Fixed value: "\\"）|
+|	                |path	      |String		  |Depth path（Fixed value: "\\\\"）|
 |	                |orderNo	  |Integer		|Sort order|
 |	                |languages	|Object		  |Multilingual name, value(Language code: Corresponding language code name)|
 
