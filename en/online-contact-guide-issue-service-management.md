@@ -8,12 +8,12 @@ From the Ticket menu, you can **manage categories and fields** which are used wh
 ### Manage Category
 In Issue Management service, ticket categories are used as below :
 
-- Submission Type : Categories which agents of Consultation Management service selects when escalating tickets 
+- Submission Type : Categories which agents of Consultation Management service selects when escalating tickets
 - Processing Type : Categories which agents of Issue Management service selects when processing escalated tickets
 
 #### Submission Type
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(1)-1_im_en.png)
-**①** When adding lower level categories, please click the upper level category first and check whether it is properly selected. Categories will be created below the highlighted category. **Duplicate** category names are not allowed within the same depth. 
+**①** When adding lower level categories, please click the upper level category first and check whether it is properly selected. Categories will be created below the highlighted category. **Duplicate** category names are not allowed within the same depth.
 
 **②** If you click the created category, **delete** button will appear. You can **edit category names** by double clicking the category.
 **③** You could copy **Category ID** through **Copy** button, and **download overall category information** into excel format through **Download** button.
@@ -36,22 +36,27 @@ Click the **① Add Trigger** button, enter all the title, conditions, and resul
 ✔ **\[FAQ]** [Can notification emails be sent under certain conditions?](https://nhn-contact.oc.toast.com/oceng/hc/article/125/)
 
 #### Trigger Condition Types
-![](http://static.toastoven.net/prod_contact_center/2.2.3-(2)a_en.png)
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(2)a_1_im_en.png)
 
 #### Trigger Condition Details
-![](http://static.toastoven.net/prod_contact_center/2.2.3-(2)b_en.png)
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(2)b_1_en.png)
 
 #### Trigger Condition Details
-![](http://static.toastoven.net/prod_contact_center/2.2.3-(2)c_en.png)
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(2)c_1_en.png)
 
 #### Trigger Result Details
 ##### Ticket : Assign
-![](http://static.toastoven.net/prod_contact_center/2.2.3-(2)d_en.png)
-If you select and save the agent group and the ticket distribution method within the group (random allocation, linear allocation, select agent), the assignment will be executed according to the results you selected when the trigger conditions are met. **Random allocation** means that the group’s agents are assigned tickets at **random**, and **linear Allocation** means the ticket would be assigned in the order in which agents are **added to the group.** If you have multiple triggers that specify results with different agents under the same conditions, all triggers, not randomly assigned to one of these agents, will be triggered sequentially, and tickets will continue to be assigned only to the person set for the last trigger, so if you intend to randomly assign tickets within the group, make sure to select ** random allocation**. 
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(2)d_im_en.png)
+Select and save the group of agents, the agents to distribute tickets, and the distribution method(random/linear/select agent), and the tickets will be assigned according to the selected results when the trigger conditions are met.
+
+For **random allocation**, tickets are randomly assigned to selected agents, and for **linear allocation**, tickets are assigned in the order in which agents are added to the group.
+
+If there are multiple triggers with different agents on the same condition, tickets will continue to be assigned only to agent set to the last trigger after all triggers have been triggered sequentially, rather than randomly assigned to one of these agents. Therefore, if you want to set the ticket to be assigned randomly within the group, please select **linear allocation**.
 
 ##### Notification
-![](http://static.toastoven.net/prod_contact_center/2.2.3-(2)e_en.png)
-Notification is the type of result that **notification mail is sent** to the specified recipient when the trigger condition is met. If you select this result type, you can set the subject and content of the notification mail to be sent via the **① Notification Settings** button.
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(2)e_im_en.png)
+Notification is the type of result that **notification mail is sent** to the specified recipient when the trigger condition is met.
+After selecting the person to send the notification mail, you can set the title and content of the notification mail through the **① Notification Settings** button. For notification mail sent through triggers, the mail layout set in the Service Management → Ticket → Email Settings menu **is not applied**, and it is sent **alone as you set it** on the notification settings pop-up.
 
 ##### Forward
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(2)f_en.png)
@@ -84,7 +89,7 @@ You can also **③ add** and **④ remove** the fields you previously added on t
 **①** You can manage fields in **Field Management** tab. Settings of **System Fields** could only be **modified** or **initialized**. **User Fields** could be **added**, **modified**, or **deleted**.
 
 ### Manage Template
-Template managing is a feature that allows you to quickly process tickets by **pre-adding answer templates** for frequently asked questions. 
+Template managing is a feature that allows you to quickly process tickets by **pre-adding answer templates** for frequently asked questions.
 
 #### Template Registration
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(7)_1_im_en.png)
@@ -97,9 +102,9 @@ You could serach templates by title, processing type, search code. In the **③ 
 - Number of Use : The **number of times** which the template was **selected**
 
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(7)_2_im_en.png)
-If you click **① Add Template** button, pop-up screen for setting template will be displayed. 
+If you click **① Add Template** button, pop-up screen for setting template will be displayed.
 
-- **② Template Title** 
+- **② Template Title**
 - **③ Contents** : **Replacement code** could be used when writing contents. **Double-click** adds the code to the contents, and data is inserted into code area of the template when processing tickets, making it more convenient to write replies.
 - **④ Search Code** : **Code** which can be used when searching templates. (English or number combination within 20 characters)
 - **⑤ Template Connection** : You can **select processing types** to connect to the template. **Check** the type you want to move, and press the **arrow** button.
@@ -115,11 +120,13 @@ If you select a processing type from the list, you will see the list of connecte
 ✔ **\[FAQ]** [I registered answer templates, but they are not shown when processing tickets.](https://nhn-contact.oc.toast.com/oceng/hc/article/143/)
 
 ### Email Settings
-![](http://static.toastoven.net/prod_contact_center/2.2.3-(8)_im_en.png)
-You can create a **① representative account address** which domain is provided from Online Contact, or register a service representative account using one’s service domain by enrolling **② External account**.
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(8)_im_1_en.png)
+In the **Email Settings** menu, you can create a **① representative account address** through the domain provided by Online Contact, and if you have a separate **② external account**, you can register to receive inquiries.
+You can set the **③ sender information** to specify the sender name and address of the email sent via Online Contact.
 
-**③** You can save the **sender's name** and **address** of the email sent through Online Contact and can set common **④ Mail Layout** for every mail.
-When setting up the layout, you can set ticket related information to be automatically entered at the selected location through **replacement code** available on the right side of the editor.
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(8)_im_2_en.png)
+**④ Mail layout** settings allow you to set a common layout for mail sent during ticket processing by ticket status and help center language.
+From using **replacement codes**, you can set ticket related information to be automatically entered at the selected location. Among the replacement codes, the answer(#{content}) code must be included in the layout.
 
 ✔ **\[FAQ]** [How can I connect my external email to Online Contact?](https://nhn-contact.oc.toast.com/oceng/hc/article/127/)
 
@@ -136,8 +143,8 @@ In this menu, you can add and edit agents and groups for processing escalated ti
 User must be registered as **IAM Member** to be added as an agent.
 
 #### Register IAM Member
--	Click **① Invite Members** button → Enter name, ID, email
--	NHN Cloud CONSOLE → Manage Member → IAM Member tab → Click Register IAM Member button → Enter ID, name, mail, and mobile phone number 
+- Click **① Invite Members** button → Enter name, ID, email
+- NHN Cloud CONSOLE → Manage Member → IAM Member tab → Click Register IAM Member button → Enter ID, name, mail, and mobile phone number
 
 Select one of the above two methods to register IAM member., and click **② Add Agent** → **View Agent** → search registered IAM Member by entering name/account/email, and add the member as the service agent.
 
@@ -145,8 +152,8 @@ When adding a agent, assigning group is mandatory. Thus, adding groups should be
 
 The **permission** of agents is as follows. Setting organization administrator permission is available from [Global Management → Organization Administrator] menu.
 
--	Administrator: Permission which features related to **service setting** added to the permission of **agents**. 
--	Agent: Permission for **ticket consultation**.
+- Administrator: Permission which features related to **service setting** added to the permission of **agents**.
+- Agent: Permission for **ticket consultation**.
 
 ### Group
 ![](http://static.toastoven.net/prod_contact_center/2.2.4-(2)_im_en.png)
@@ -154,7 +161,7 @@ In Group menu, you can **① add**, **② edit**, **③ delete** groups. When co
 
 #### Add Group
 ![](http://static.toastoven.net/prod_contact_center/2.2.4-(3)_im_en.png)
-Click **Add Group**, enter group name, choose agent to be assigned, and click **①** ‘**>** ‘button to move agent to ‘Assigned Agent’. Conversely, when you unassign a agent, click ‘**<**’ button to move agent to ‘Unassigned Agent’. After assigning agents, press **② Save** button to apply group settings. A group can be added without assigning agents. 
+Click **Add Group**, enter group name, choose agent to be assigned, and click **①** ‘**>** ‘button to move agent to ‘Assigned Agent’. Conversely, when you unassign a agent, click ‘**<**’ button to move agent to ‘Unassigned Agent’. After assigning agents, press **② Save** button to apply group settings. A group can be added without assigning agents.
 
 ## External Channel
 You can communicate with customers by connecting **external channel** with Online Contact. **SMS** is currently supported in Issue Management service.
@@ -162,13 +169,13 @@ You can communicate with customers by connecting **external channel** with Onlin
 ### SMS
 ![](http://static.toastoven.net/prod_contact_center/2.2.6-(6)_im_en.png)
 You could send SMS/MMS through linking **[NHN Cloud Notification → SMS]** service with Online Contact.
-If **SMS** function is **activated** in Global Management → Contract Service Status → Contract Details, SMS menu tab is shown in Service Management → External Channel menu. 
+If **SMS** function is **activated** in Global Management → Contract Service Status → Contract Details, SMS menu tab is shown in Service Management → External Channel menu.
 
-To **① activate** SMS linkage, please **activate [NHN Cloud Notification → SMS] service** first, and **② save** the **APP KEY** which you could find in NHN CLOUD CONSOLE. If you enter and save a valid APP KEY, the SMS function is automatically **activated**, and **sending number** list is displayed. 
+To **① activate** SMS linkage, please **activate [NHN Cloud Notification → SMS] service** first, and **② save** the **APP KEY** which you could find in NHN CLOUD CONSOLE. If you enter and save a valid APP KEY, the SMS function is automatically **activated**, and **sending number** list is displayed.
 
-If you click **③ Add** button, pop-up screen for **selecting sending number** will be shown. The numbers which are registered in NHN Cloud Notification → SMS service are shown in the kist, thus please check if there are registered sending numbers before adding in Online Contact. Check the number you want to add, and click confirm button to add the number to the sending number list. The added numbers could be used as **sending number** when sending SMS/MMS in Online Contact. 
+If you click **③ Add** button, pop-up screen for **selecting sending number** will be shown. The numbers which are registered in NHN Cloud Notification → SMS service are shown in the kist, thus please check if there are registered sending numbers before adding in Online Contact. Check the number you want to add, and click confirm button to add the number to the sending number list. The added numbers could be used as **sending number** when sending SMS/MMS in Online Contact.
 
-After activating SMS service and adding sending number, you could proceed to sending/managing SMS in **Additional Business Management → SMS Send** menu. 
+After activating SMS service and adding sending number, you could proceed to sending/managing SMS in **Additional Business Management → SMS Send** menu.
 
 ## Security Management
 ![](http://static.toastoven.net/prod_contact_center/2.2.6-(5)_en.png)

@@ -39,7 +39,7 @@ In the menu, users can check the information written below, and the same informa
 - **NHN Cloud Organization Domain** : The name set when selecting a service after creating an organization.
 
 #### OC Organization Information
-In the menu, users can check the information written below. OC Organization Key could be changed by **Change API Key** button, and OC URL changes together when changing the NHN Cloud Organization Domain. 
+In the menu, users can check the information written below. OC Organization Key could be changed by **Change API Key** button, and OC URL changes together when changing the NHN Cloud Organization Domain.
 
 - **OC Organization Key** : Key used in the authentication phase when trying to process actions performed for organizational management through API.
 - **OC URL** : The access URL for Online Contact. Created in the following form : https://**Organization Domain**.oc.toast.com
@@ -54,18 +54,18 @@ The user whom you want to grant permission must be registered as an IAM member.
 
 ### Register as an IAM Member
 
--	Click **① Invite Members** button → Enter name, ID, email
--	NHN Cloud CONSOLE → Manage Member → IAM Member tab → Click **Register IAM Member** button → Enter ID, name, mail, and mobile phone number
+- Click **① Invite Members** button → Enter name, ID, email
+- NHN Cloud CONSOLE → Manage Member → IAM Member tab → Click **Register IAM Member** button → Enter ID, name, mail, and mobile phone number
 
 Select one of the above two methods to register IAM member. After registering, click **② Add Organization Administrator** → click **View Agent** → Search registered IAM Member by entering name/account/email, and add IAM Member as organization administrator.
 To newly registered IAM Members, **password change mail** will be sent to the registered email. Logging in Online Contact becomes available after setting password through email.
 
 ## Company Information Management
-![](http://static.toastoven.net/prod_contact_center/2.2.5-(6)_1_im_en.png)
+![](http://static.toastoven.net/prod_contact_center/2.2.5-(6)_2_im_en.png)
 
 In this menu, you can set company information, terms and conditions in the footer area of the PC/mobile help center.
 Press **① Add** button to display setting screen, which allows you to set **② company information**, **③ trademarks and copyrights**, and **④ terms of use**.
-If you press **Save** button after entering the information, the company information configuration you have set will be added to the list. You can select the added configuration from Service Management → Help Center → Default Settings menu, and **⑤ apply** it in the help center.
+If you press **Save** button after entering the information, the configuration you have set will be added to the list. You can select the added configuration from Service Management → Help Center → Default Settings menu, and **⑤ apply** it in the help center.
 
 ## Authority Log Management
 ![](http://static.toastoven.net/prod_contact_center/2.1.4-(1)_im_en.png)
@@ -76,7 +76,7 @@ If you press **Save** button after entering the information, the company informa
 
 If consultation data should be transferred to Online Contact, you could upload data and create tickets through **Data Transfer** menu.
 
-If you click **① Add** button, you can access to the screen for **downloading transfer template**. Select the service you want to transfer consultation data, and click **② Download** to download the transfer template of the service. The field configuration set for the service is reflected in the downloaded template, thus re-download of the template is needed when the field configuration had changes. 
+If you click **① Add** button, you can access to the screen for **downloading transfer template**. Select the service you want to transfer consultation data, and click **② Download** to download the transfer template of the service. The field configuration set for the service is reflected in the downloaded template, thus re-download of the template is needed when the field configuration had changes.
 
 After downloading the template, click **Next** button to access **Register Data** screen.
 You can upload the file you created by clicking **③ Add** button, and after checking the service and file name once more, click **④ Confirm** button to complete data registration.
@@ -92,8 +92,8 @@ Detailed performance classifications for different types of consultations are as
 
 **③ Ticket Achievements**
 
-- New 
-- Open 
+- New
+- Open
 - Solved
 - Closed
 
@@ -120,18 +120,17 @@ Detailed performance classifications for different types of consultations are as
 
 ## Privacy Settings
 ![](http://static.toastoven.net/prod_contact_center/2.1.5-(1)_im_en.png)
-Through clicking **① account name** displayed in the upper right corner of the screen, **② privacy settings** menu is showed. User’s personal settings could be accessed and edited through this menu. 
+Through clicking **① account name** displayed in the upper right corner of the screen, **② privacy settings** menu is showed. User’s personal settings could be accessed and edited through this menu.
 
 ✔ **\[FAQ]** [How can I change or delete my ID, email, and name?](https://nhn-contact.oc.toast.com/oceng/hc/article/106/)
 ✔ **\[FAQ]** [How can I change my password?](https://nhn-contact.oc.toast.com/oceng/hc/article/108/)
 
-
 ### Accessible Information
 
--	Account
--	Name
--	Nickname (Editable) : Displayed when communicating through chat, mail
--	Phone number
--	Email
--	Language (Editable) : Language in your environment, apart from service’s language setting
--	Assign ticket(Editable) : If consulting is not available due to vacation, etc., can set ticket allocation status
+- Account
+- Name
+- Nickname (Editable) : Displayed when communicating through chat, mail
+- Phone number
+- Email
+- Language (Editable) : Language in your environment, apart from service’s language setting
+- Assign ticket(Editable) : If consulting is not available due to vacation, etc., can set ticket allocation status

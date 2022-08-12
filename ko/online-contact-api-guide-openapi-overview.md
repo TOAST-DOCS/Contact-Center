@@ -4,10 +4,9 @@
 #### Open API 설정
 ![](http://static.toastoven.net/prod_contact_center/dev2_1_1.png)
 
-하나의 조직에서 여러 개의 서비스를 생성하실 수 있으며, 생성하신 각 서비스 별로 유일한 Security Key인 **서비스 Key**를 보유하고 있습니다. 서비스 Key를 통해 API로 전송되는 데이터를 암호화 처리할 수 있으며, 서비스 관리와 관련된 Open API를 호출할 수 있습니다. (티켓 관리, FAQ 등) 
+하나의 조직에서 여러 개의 서비스를 생성하실 수 있으며, 생성하신 각 서비스 별로 유일한 Security Key인 **서비스 Key**를 보유하고 있습니다. 서비스 Key를 통해 API로 전송되는 데이터를 암호화 처리할 수 있으며, 서비스 관리와 관련된 Open API를 호출할 수 있습니다. (티켓 관리, FAQ 등)
 
-서비스 관리 → 인증 → OPEN API 탭에서 Open API를 **① 활성화/비활성화** 하실 수 있으며, **② 서비스 Key**를 확인/변경하실 수 있습니다. 
-
+서비스 관리 → 인증 → OPEN API 탭에서 Open API를 **① 활성화/비활성화** 하실 수 있으며, **② 서비스 Key**를 확인/변경하실 수 있습니다.
 
 #### 조직ID
 ![](http://static.toastoven.net/prod_contact_center/dev1_1_2.png)
@@ -23,7 +22,7 @@
 
 #### Authorization 문자열 생성 방법
 HmacSHA256로 암호화하거나, (NHN Cloud 조직ID + request URI + 파라미터 값 + 현재 UTC시간 값）문자열에 대해 암호화하여 Authorization 문자열을 생성하실 수 있습니다.
-(NHN Cloud 조직ID : NHN Cloud Console → 조직 설정 → 조직 기본 설정 탭, Online Contact 전체 관리 → 계약 서비스 현황 → 조직 정보 탭에서 확인 가능) 
+(NHN Cloud 조직ID : NHN Cloud Console → 조직 설정 → 조직 기본 설정 탭, Online Contact 전체 관리 → 계약 서비스 현황 → 조직 정보 탭에서 확인 가능)
 
 #### Java 예제
 ##### 일반 요청 (GET, POST)
@@ -155,9 +154,9 @@ return sb.toString();
 |	     |content     |JSON     |상세 결과 내용
 
 #### 리턴 코드	
-- 200: SUCCESS	
+- 200: SUCCESS
 - 400: Bad Request
-- 403: Access Denied(Forbidden)	
+- 403: Access Denied(Forbidden)
 - 404: Not Data Found
 - 500: Server Error
 - 9007: 관련된 데이터가 이미 존재
@@ -209,7 +208,4 @@ return sb.toString();
 |문의 내역 |고객 티켓 리스트	              |GET	       |/{serviceId}/openapi/v1/ticket/enduser/{usercode}/list.json	             |검색 조건을 통해 조건에 맞는 고객의 티켓 리스트 노출|
 |	      |티켓 상세	                     |GET	      |/{serviceId}/openapi/v1/ticket/enduser/{usercode}/{ticketId}/detail.json	|고객이 접수한 티켓 상세 조회|
 |	      |티켓 첨부파일 열기 및 다운로드	  |GET	    |/{serviceId}/api/v2/ticket/attachments/{id}	                          |티켓 첨부파일 열기/다운로드|
-|	      |고객 재문의	                     |POST	  |{serviceId}/openapi/v1/ticket/enduser/{usercode}/{ticketId}/comment.json	 |티켓 ID 기준으로 고객 재문의| 
-
-
-
+|	      |고객 재문의	                     |POST	  |{serviceId}/openapi/v1/ticket/enduser/{usercode}/{ticketId}/comment.json	 |티켓 ID 기준으로 고객 재문의|
