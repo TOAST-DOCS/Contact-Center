@@ -60,13 +60,6 @@ The user whom you want to grant permission must be registered as an IAM member.
 Select one of the above two methods to register IAM member. After registering, click **② Add Organization Administrator** → click **View Agent** → Search registered IAM Member by entering name/account/email, and add IAM Member as organization administrator.
 To newly registered IAM Members, **password change mail** will be sent to the registered email. Logging in Online Contact becomes available after setting password through email.
 
-## Company Information Management
-![](http://static.toastoven.net/prod_contact_center/2.2.5-(6)_2_im_en.png)
-
-In this menu, you can set company information, terms and conditions in the footer area of the PC/mobile help center.
-Press **① Add** button to display setting screen, which allows you to set **② company information**, **③ trademarks and copyrights**, and **④ terms of use**.
-If you press **Save** button after entering the information, the configuration you have set will be added to the list. You can select the added configuration from Service Management → Help Center → Default Settings menu, and **⑤ apply** it in the help center.
-
 ## Authority Log Management
 ![](http://static.toastoven.net/prod_contact_center/2.1.4-(1)_im_en.png)
 **① Logs are recorded** when you change the permissions of agents inside the organization. This menu manages logs about change of permission by the organization administrator or administrator. You can **② search** by entering some of the information, including the date and time of operation, operated contents, name, IP, service, or ID.

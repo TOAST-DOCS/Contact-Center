@@ -125,7 +125,7 @@ In the **Email Settings** menu, you can create a **① representative account ad
 You can set the **③ sender information** to specify the sender name and address of the email sent via Online Contact.
 
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(8)_im_2_en.png)
-**④ Mail layout** settings allow you to set a common layout for mail sent during ticket processing by ticket status and help center language.
+**④ Mail layout** settings allow you to set a common layout for mail sent during ticket processing by ticket status.
 From using **replacement codes**, you can set ticket related information to be automatically entered at the selected location. Among the replacement codes, the answer(#{content}) code must be included in the layout.
 
 ✔ **\[FAQ]** [How can I connect my external email to Online Contact?](https://nhn-contact.oc.toast.com/oceng/hc/article/127/)
