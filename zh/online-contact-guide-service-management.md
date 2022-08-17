@@ -6,10 +6,10 @@ The configuration or detailed functions of the help center you set up in the men
 
 ### Help Center Access
 
--	**Help Center Link** in the bottom right of Online Contact web page
--	https:// **Domain Name**.oc.toast.com/ **Service ID** /hc
+- **Help Center Link** in the bottom right of Online Contact web page
+- https:// **Domain Name**.oc.toast.com/ **Service ID** /hc
 
-**Domain name** is the information which was created when you added your organization. Modifying is available in NHN Cloud Console → Set Organization → Set Domain. 
+**Domain name** is the information which was created when you added your organization. Modifying is available in NHN Cloud Console → Set Organization → Set Domain.
 **Service ID** is the information which was entered when adding service from [Global Management → Contract Service Status] menu. It cannot be modified after initial creation.
 
 ## Authentication
@@ -18,7 +18,7 @@ In authentication menu, you could enable/disable **Open API**, and manage relate
 ### Open API
 ![](http://static.toastoven.net/prod_contact_center/2.2.1-(2)_en.png)
 In Open API tab, OPEN API could be **① enabled or disabled**, and **② Service Key**, **③ Allowed IP List** could be managed.
-Through **Allowed IP List**, Open API can be called only from the IP which is registered in the list. 
+Through **Allowed IP List**, Open API can be called only from the IP which is registered in the list.
 
 ## Chat
 Functions in this menu are related to chat consultation. Chat consultation could be enabled in [Service Management → Help Center → Default Settings] menu, and could be accessed through **chat icon** which is displayed in the bottom right side after chat consultation is enabled.
@@ -54,8 +54,8 @@ From Ticket menu, you can **manage submission/processing categories**, **set tri
 ### Manage Category
 In Consultation Management service, Ticket Categories are used as follows.
 
--	**Submission Type**: Selected by customer when making inquiries through help center inquiry. (In the case of inquiries via phone or e-mail, categories are received as blank, and the agent can select and save when processing the ticket.)
--	**Processing Type**: Selected by agents when processing tickets
+- **Submission Type**: Selected by customer when making inquiries through help center inquiry. (In the case of inquiries via phone or e-mail, categories are received as blank, and the agent can select and save when processing the ticket.)
+- **Processing Type**: Selected by agents when processing tickets
 
 #### Submission Type
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(1)-1_en.png)
@@ -85,22 +85,28 @@ Click the **① Add Trigger** button, enter all the title, conditions, and resul
 ✔ **\[FAQ]** [Can notification emails be sent under certain conditions?](https://nhn-contact.oc.toast.com/oceng/hc/article/125/)
 
 #### Trigger Condition Types
-![](http://static.toastoven.net/prod_contact_center/2.2.3-(2)a_en.png)
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(2)a_1_en.png)
 
 #### Trigger Condition Details
-![](http://static.toastoven.net/prod_contact_center/2.2.3-(2)b_en.png)
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(2)b_1_en.png)
 
 #### Trigger Condition Details
-![](http://static.toastoven.net/prod_contact_center/2.2.3-(2)c_en.png)
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(2)c_1_en.png)
 
 #### Trigger Result Details
 ##### Ticket : Assign
-![](http://static.toastoven.net/prod_contact_center/2.2.3-(2)d_en.png)
-If you select and save the agent group and the ticket distribution method within the group (random allocation, linear allocation, select agent), the assignment will be executed according to the results you selected when the trigger conditions are met. **Random allocation** means that the group’s agents are assigned tickets at **random**, and **linear Allocation** means the ticket would be assigned in the order in which agents are **added to the group.** If you have multiple triggers that specify results with different agents under the same conditions, all triggers, not randomly assigned to one of these agents, will be triggered sequentially, and tickets will continue to be assigned only to the person set for the last trigger, so if you intend to randomly assign tickets within the group, make sure to select **random allocation**. 
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(2)d_1_en.png)
+Select and save the group of agents, the agents to distribute tickets, and the distribution method(random/linear/select agent), and the tickets will be assigned according to the selected results when the trigger conditions are met.
+
+For **random allocation**, tickets are randomly assigned to selected agents, and for **linear allocation**, tickets are assigned in the order in which agents are added to the group.
+
+If there are multiple triggers with different agents on the same condition, tickets will continue to be assigned only to agent set to the last trigger after all triggers have been triggered sequentially, rather than randomly assigned to one of these agents. Therefore, if you want to set the ticket to be assigned randomly within the group, please select **linear allocation**.
 
 ##### Notification
-![](http://static.toastoven.net/prod_contact_center/2.2.3-(2)e_en.png)
-Notification is the type of result that **notification mail is sent** to the specified recipient when the trigger condition is met. If you select this result type, you can set the subject and content of the notification mail to be sent via the **① Notification Settings** button. When setting up the notification mail, the content editor is displayed in **HTML** or **TEXT** mode according to the editor type setting value in [Global Management → Contract Service Status → Basic Information] menu.
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(2)e_1_en.png)
+Notification is the type of result that **notification mail is sent** to the specified recipient when the trigger condition is met.
+After selecting the person to send the notification mail, you can set the title and content of the notification mail by **language of the help center** through the **① Notification Settings** button. For notification mail sent through triggers, the mail layout set in the Service Management → Ticket → Email Settings menu **is not applied**, and it is sent **alone as you set it** on the notification settings pop-up.
+When setting up the notification mail, the content editor is displayed in **HTML** or **TEXT** mode according to the editor type setting value in [Global Management → Contract Service Status → Basic Information] menu.
 
 ##### Forward
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(2)f_en.png)
@@ -119,8 +125,8 @@ Fields are divided into **① Customer Field** and **① Agent Field**. Please s
 
 In Consultation Management service, customer and agent fields are used as follows:
 
--	**Agent Field**: Fields which agent enters when processing ticket
--	**Customer Field** : Fields shown to the customer in Help Center → Inquiry screen. Implemented on Help Center Inquiry screen as set in field setting menu. (In the case of inquiries via phone or e-mail, there is no separate field entry procedure, thus customer fields are received blankly. Agents can enter information when processing the ticket.)
+- **Agent Field**: Fields which agent enters when processing ticket
+- **Customer Field** : Fields shown to the customer in Help Center → Inquiry screen. Implemented on Help Center Inquiry screen as set in field setting menu. (In the case of inquiries via phone or e-mail, there is no separate field entry procedure, thus customer fields are received blankly. Agents can enter information when processing the ticket.)
 
 #### Field Setting
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(4)_en.png)
@@ -150,19 +156,19 @@ The modification of **② 'Required'**, **'Exposured'** is determined by the kin
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(6)_1_en.png)
 For adding customer fields, items required to be filled are as follows:
 
--	**① Field type** : The **type of field**. If you select the field type, **Detailed Settings** and **Preview** will be displayed at the bottom of Basic Settings. Detailed settings allow you to set the values to be displayed for the field, and you can use preview to see what the field will look like on the customer's screen. 
--	**② Field code** : When developing inquiry feature with Open API, field code is used as a unique value to represent the field.
--	**③ Field Name** : The name of the field, which appears with the field on the Inquiry screen. Can be set for each help center language set on [Global Management → Contract Service Status → Basic Information] menu.
--	**④ Notice** : A guide phrase for the field, which appears with the field on the Inquiry screen. Can be set for each help center language set on [Global Management → Contract Service Status → Basic Information] menu.
--	**⑤ Required** : When set, it is marked with a \*(star) to the right of the field name and must be filled before you move on to the next field. Among the default fields, type, email, title, contents, personal information must be set to ‘required’.
--	**⑥ Personal information (Encrypt or not)**
--	**⑦ Destroy personal information**
+- **① Field type** : The **type of field**. If you select the field type, **Detailed Settings** and **Preview** will be displayed at the bottom of Basic Settings. Detailed settings allow you to set the values to be displayed for the field, and you can use preview to see what the field will look like on the customer's screen.
+- **② Field code** : When developing inquiry feature with Open API, field code is used as a unique value to represent the field.
+- **③ Field Name** : The name of the field, which appears with the field on the Inquiry screen. Can be set for each help center language set on [Global Management → Contract Service Status → Basic Information] menu.
+- **④ Notice** : A guide phrase for the field, which appears with the field on the Inquiry screen. Can be set for each help center language set on [Global Management → Contract Service Status → Basic Information] menu.
+- **⑤ Required** : When set, it is marked with a \*(star) to the right of the field name and must be filled before you move on to the next field. Among the default fields, type, email, title, contents, personal information must be set to ‘required’.
+- **⑥ Personal information (Encrypt or not)**
+- **⑦ Destroy personal information**
 
 For agent fields, **Permission** (Administrator, Agent) item is additionally required to be filled.
 
 ### Manage Template
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(7)_en.png)
-Template managing is a feature that allows you to quickly process tickets by **pre-adding answer templates** for frequently asked questions. 
+Template managing is a feature that allows you to quickly process tickets by **pre-adding answer templates** for frequently asked questions.
 
 #### Template Registration
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(7)_1_en.png)
@@ -175,9 +181,9 @@ You could serach templates by title, processing type, search code. In the **③ 
 - Number of Use : The **number of times** which the template was **selected**
 
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(7)_2_en.png)
-If you click **① Add Template** button, pop-up screen for setting template will be displayed. 
+If you click **① Add Template** button, pop-up screen for setting template will be displayed.
 
-- **② Template Title** 
+- **② Template Title**
 - **③ Contents** : Content editor is displayed in **HTML** or **TEXT** mode according to the editor type setting value in [Global Management → Contract Service Status → Basic Information] menu. **Replacement code** could be used when writing contents. **Double-click** adds the code to the contents, and data is inserted into code area of the template when processing tickets, making it more convenient to write replies.
 - **④ Search Code** : **Code** which can be used when searching templates. (English or number combination within 20 characters)
 - **⑤ Template Connection** : You can **select processing types** to connect to the template. **Check** the type you want to move, and press the **arrow** button.
@@ -193,11 +199,13 @@ If you select a processing type from the list, you will see the list of connecte
 ✔ **\[FAQ]** [I registered answer templates, but they are not shown when processing tickets.](https://nhn-contact.oc.toast.com/oceng/hc/article/143/)
 
 ### Email Settings
-![](http://static.toastoven.net/prod_contact_center/2.2.3-(8)_en.png)
-You can create a **① representative email account address** which domain is provided from Online Contact, or register a service representative account using one’s service domain by enrolling **② External account**.
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(8)_1_en.png)
+In the **Email Settings** menu, you can create a **① representative account address** through the domain provided by Online Contact, and if you have a separate **② external account**, you can register to receive inquiries.
+You can set the **③ sender information** to specify the sender name and address of the email sent via Online Contact.
 
-**③** You can save the **sender's name** and **address** of the email sent through Online Contact and can set common **④ Mail Layout** for every mail.
-When setting up the layout, you can set ticket related information to be automatically entered at the selected location through **replacement code** available on the right side of the editor. The content editor is displayed in **HTML** or **TEXT** mode according to the editor type setting value in [Global Management → Contract Service Status → Basic Information] menu.
+![](http://static.toastoven.net/prod_contact_center/2.2.3-(8)_1_2_en.png)
+**④ Mail layout** settings allow you to set a common layout for mail sent during ticket processing by ticket status and help center language.
+The layout editor is displayed in **HTML** or **TEXT** mode according to the editor type setting value in [Global Management → Contract Service Status → Basic Information] menu. From using **replacement codes**, you can set ticket related information to be automatically entered at the selected location. Among the replacement codes, the answer(#{content}) code must be included in the layout.
 
 ✔ **\[FAQ]** [How can I connect my external email to Online Contact?](https://nhn-contact.oc.toast.com/oceng/hc/article/127/)
 
@@ -207,7 +215,7 @@ You can manage sensitive words to prevent errors or incorrect instructions from 
 If you proceed **ticket preview** or **resolve/pend** tickets while the **① added** sensitive text is included in the content, a **② pop-up** will be displayed indicating that sensitive words are included.
 
 ## Call
-In Call menu, you could register **IVR Route Code, Name** for managing callback, and register **Calling Number** which is displayed to the customer when making a outbound call. This menu is only viewable in services which **Ticket Management →  Include call(using CTI)** function is **activated** in contract details. 
+In Call menu, you could register **IVR Route Code, Name** for managing callback, and register **Calling Number** which is displayed to the customer when making a outbound call. This menu is only viewable in services which **Ticket Management →  Include call(using CTI)** function is **activated** in contract details.
 
 When call function is activated, to call authorized agents **call widget** will be shown, which allows agents to access call consultation related features.
 
@@ -229,7 +237,7 @@ Registered IVR Route data could be only **③ deleted**. If IVR Route data has b
 In this menu, you could manage **calling number** which is displayed to the customer when making a outbound call.
 It can be used by agents who conduct call consultations in multiple services by selecting calling number appropriately for the purpose of the outbound call.
 
-The list of calling numbers is divided into **① Confirmed**, and **② Total**. In **② Total** list, you can check the registered calling numbers in all states. In **① Confirmed** list, only **confirmed** calling numbers are displayed, and the order between the calling numbers can be adjusted. The adjusted order is applied in the calling number list of the CTI widget in real time. 
+The list of calling numbers is divided into **① Confirmed**, and **② Total**. In **② Total** list, you can check the registered calling numbers in all states. In **① Confirmed** list, only **confirmed** calling numbers are displayed, and the order between the calling numbers can be adjusted. The adjusted order is applied in the calling number list of the CTI widget in real time.
 
 By clicking **③ Add** button, page for adding calling number would be shown. After entering name, number, and attaching certificate of use of communication service, click save, and the added calling number would be added to the total list as **New**. **Modifying** is only possible when the state is **new**, and **deleting** is possible regardless of the state.
 
@@ -243,8 +251,8 @@ In this menu, you can add and edit agents and groups for handling customer inqui
 User must be registered as **IAM Member** to be added as an agent.
 
 #### Register IAM Member
--	Click **① Invite Members** button → Enter name, ID, email
--	NHN Cloud CONSOLE → Manage Member → IAM Member tab → Click Register IAM Member button → Enter ID, name, mail, and mobile phone number 
+- Click **① Invite Members** button → Enter name, ID, email
+- NHN Cloud CONSOLE → Manage Member → IAM Member tab → Click Register IAM Member button → Enter ID, name, mail, and mobile phone number
 
 Select one of the above two methods to register IAM member., and click **② Add Agent** → **View Agent** → search registered IAM Member by entering name/account/email, and add the member as the service agent.
 
@@ -252,8 +260,8 @@ When adding a agent, assigning group is mandatory. Thus, adding groups should be
 
 The **permission** of agents is as follows. Setting organization administrator permission is available from [Global Management → Organization Administrator](https://docs.toast.com/en/Contact%20Center/en/online-contact-guide-global-management/#organization-adminstrator) menu.
 
--	Administrator: Permission which features related to **service setting** added to the permission of **agents**. 
--	Agent: Permission for **ticket, call, chat consultation**. 
+- Administrator: Permission which features related to **service setting** added to the permission of **agents**.
+- Agent: Permission for **ticket, call, chat consultation**.
 
 ### Group
 ![](http://static.toastoven.net/prod_contact_center/2.2.4-(2)_en.png)
@@ -261,7 +269,7 @@ In Group menu, you can **① add**, **② edit**, **③ delete** groups. When co
 
 #### Add Group
 ![](http://static.toastoven.net/prod_contact_center/2.2.4-(3)_en.png)
-Click **Add Group**, enter group name, choose agent to be assigned, and click **①** ‘**>** ‘button to move agent to ‘Assigned Agent’. Conversely, when you unassign a agent, click ‘**<**’ button to move agent to ‘Unassigned Agent’. After assigning agents, press **② Save** button to apply group settings. A group can be added without assigning agents. 
+Click **Add Group**, enter group name, choose agent to be assigned, and click **①** ‘**>** ‘button to move agent to ‘Assigned Agent’. Conversely, when you unassign a agent, click ‘**<**’ button to move agent to ‘Unassigned Agent’. After assigning agents, press **② Save** button to apply group settings. A group can be added without assigning agents.
 
 ## Help Center
 ### Template Management
@@ -271,7 +279,7 @@ In this menu, you can **manage design themes** for your Help Center. Using the p
 There are two basic templates available, and you can add new templates with the **① Add Template** button. The template you added can be **② edited** or **deleted**. The template in use cannot be deleted, so please enable another template to delete it.
 
 ![](http://static.toastoven.net/prod_contact_center/2.2.5-(2)_1_en.png)
-When adding or editing templates, you can directly input **① CSS / HTML / JS scripts**, or upload appropriate file (script, font, image, etc.) and enter the path of the resource in the editor to change the configuration of the Help Center. Through **② Insert multilingual code** button, you could view the list of language sets which have been set in [Service Management → Help Center → Multilingual Management] menu. The multilingual code could be inserted into the template through **Choice** button. 
+When adding or editing templates, you can directly input **① CSS / HTML / JS scripts**, or upload appropriate file (script, font, image, etc.) and enter the path of the resource in the editor to change the configuration of the Help Center. Through **② Insert multilingual code** button, you could view the list of language sets which have been set in [Service Management → Help Center → Multilingual Management] menu. The multilingual code could be inserted into the template through **Choice** button.
 
 Through **④ Preview** button you could see the edits being applied, and after **③ saving**, you could apply the template to the help center.  
 
@@ -776,20 +784,20 @@ You can **Enable** functions you use in the Help Center and **Disable** function
 
 Functions you can manage are as follows:
 
--	Notice
--	FAQ
--	1:1 Inquiry & My Inquiries
--	Chat
--	Help center navigation
--	Company Informaton (Can be added/modified in Global Management → Company Information Management menu)
+- Notice
+- FAQ
+- 1:1 Inquiry & My Inquiries
+- Chat
+- Help center navigation
+- Company Informaton (Can be added/modified in Global Management → Company Information Management menu)
 
 ### Member Interlink
 ![](http://static.toastoven.net/prod_contact_center/2.2.5-(5)_1_en.png)
 **Member Interlink** is a function to apply **member certification process** provided by the client to the help center of Online Contact. Through this function, **member inquiries** could be received, and customers could **check** the **sent inquiries**. The login method is provided by two types : **GET**, **POST**. For the linkage, API should be developed and registered according to the API guide provided by Online Contact.
 
-Member Interlink function could be **① activated/deactivated** through the button. If the function is **activated**, you can select whether to activate **② non-member inquiry**, and **③ login method**. If **non-member inquiry** option is activated, inquiries can be received even when the customer is not logged in, and if deactivated, inquiries can only be received while customers are logged-in. 
+Member Interlink function could be **① activated/deactivated** through the button. If the function is **activated**, you can select whether to activate **② non-member inquiry**, and **③ login method**. If **non-member inquiry** option is activated, inquiries can be received even when the customer is not logged in, and if deactivated, inquiries can only be received while customers are logged-in.
 
-API guide for each **login method** is linked below. 
+API guide for each **login method** is linked below.
 
 - [Online Contact > API Guide for Developers > Member Integration (POST)](https://docs.toast.com/en/Contact%20Center/en/online-contact-api-guide-openapi-sso/)
 - [Online Contact > API Guide for Developers > Member Integration (GET)](https://docs.toast.com/en/Contact%20Center/en/online-contact-api-guide-openapi-member-get/)
@@ -799,7 +807,7 @@ For each help center language set in [Global Management → Contract Service Sta
 
 #### Multilingual Code
 ![](http://static.toastoven.net/prod_contact_center/2.2.5-(7)_en.png)
-**① Multilingual Code** tab allows you to manage the multilingual language set you will use in the language-specific help center. 
+**① Multilingual Code** tab allows you to manage the multilingual language set you will use in the language-specific help center.
 In the case of system language sets, only content and tags can be modified, and the value of the code cannot be changed.
 
 From **② Registration** button, you could register **user-defined** language sets. **Input columns for each language** are displayed according to the help center language you set on the contract basic information setting screen, and you can classify language sets by use and type through setting **tags**. Registered sets can be inserted into the script when managing templates, so they can be used to configure **③ help center pages for each language**.
@@ -846,13 +854,13 @@ When KakaoTalk is connected and activated in Online Contact, the existing plus f
 ### SMS
 ![](http://static.toastoven.net/prod_contact_center/2.2.6-(6)_en.png)
 You could send SMS/MMS through linking **[NHN Cloud Notification → SMS]** service with Online Contact.
-If **SMS** function is **activated** in Global Management → Contract Service Status → Contract Details, SMS menu tab is shown in Service Management → External Channel menu. 
+If **SMS** function is **activated** in Global Management → Contract Service Status → Contract Details, SMS menu tab is shown in Service Management → External Channel menu.
 
-To **① activate** SMS linkage, please **activate [NHN Cloud Notification → SMS] service** first, and **② save** the **APP KEY** which you could find in NHN CLOUD CONSOLE. If you enter and save a valid APP KEY, the SMS function is automatically **activated**, and **sending number** list is displayed. 
+To **① activate** SMS linkage, please **activate [NHN Cloud Notification → SMS] service** first, and **② save** the **APP KEY** which you could find in NHN CLOUD CONSOLE. If you enter and save a valid APP KEY, the SMS function is automatically **activated**, and **sending number** list is displayed.
 
-If you click **③ Add** button, pop-up screen for **selecting sending number** will be shown. The numbers which are registered in NHN Cloud Notification → SMS service are shown in the kist, thus please check if there are registered sending numbers before adding in Online Contact. Check the number you want to add, and click confirm button to add the number to the sending number list. The added numbers could be used as **sending number** when sending SMS/MMS in Online Contact. 
+If you click **③ Add** button, pop-up screen for **selecting sending number** will be shown. The numbers which are registered in NHN Cloud Notification → SMS service are shown in the kist, thus please check if there are registered sending numbers before adding in Online Contact. Check the number you want to add, and click confirm button to add the number to the sending number list. The added numbers could be used as **sending number** when sending SMS/MMS in Online Contact.
 
-After activating SMS service and adding sending number, you could proceed to sending/managing SMS in **Additional Business Management → SMS Send** menu. 
+After activating SMS service and adding sending number, you could proceed to sending/managing SMS in **Additional Business Management → SMS Send** menu.
 
 ## Security Management
 ![](http://static.toastoven.net/prod_contact_center/2.2.6-(5)_en.png)

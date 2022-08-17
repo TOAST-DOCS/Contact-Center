@@ -1104,11 +1104,11 @@ Select one of the above two methods to register IAM member. After registering, c
 To newly registered IAM Members, **password change mail** will be sent to the registered email. Logging in Online Contact becomes available after setting password through email.
 
 ## Company Information Management
-![](http://static.toastoven.net/prod_contact_center/2.2.5-(6)_1_en.png)
+![](http://static.toastoven.net/prod_contact_center/2.2.5-(6)_2_en.png)
 
 In this menu, you can set company information, terms and conditions in the footer area of the PC/mobile help center.
 Press **① Add** button to display setting screen, which allows you to set **② company information**, **③ trademarks and copyrights**, and **④ terms of use**.
-If you press **Save** button after entering the information, the company information configuration you have set will be added to the list. You can select the added configuration from Service Management → Help Center → Default Settings menu, and **⑤ apply** it in the help center.
+If you press **Save** button after entering the information, the configuration you have set will be added to the list. You can select the added configuration from Service Management → Help Center → Default Settings menu, and **⑤ apply** it in the help center.
 
 ## CTI Management
 In CTI Management menu, you could set CTI information to connect with Online Contact, and manage CTI ID, CTI NO of each call consultation agent. 
@@ -1127,15 +1127,14 @@ After choosing the version of CTI, please input **tenant ID, service name** whic
 If **④ CTI Log Monitoring** function is enabled, CTI log will be recorded on a daily basis. The recorded log could be downloaded through **CTI Log Download** function which is accessible by clicking the account name at the top right of the screen.
 
 ### CTI Agent Management
-![](http://static.toastoven.net/prod_contact_center/2.1.2-(3)_en.png)
-You can assign CTI information to agents who will be conducting call consultation among the agents registered with your organization.
+![](http://static.toastoven.net/prod_contact_center/2.1.2-(3)_1_en.png)
+You can assign CTI information to agents who will be conducting call consultation among the agents registered in your organization.
 
-If you click **① Search** button without input in the name input box, the list of all agents registered in the organization would be viewed. If you click **① Search** button with input, the list of agents satisfying the search result would be viewed.
+The CTI agent list shows the agents in your organization who are authorized to call from one or more services.
 
-Agent ID, name, email address, CTI ID, CTI NO, service (which the agent is registered) will be shown in the list, and you could input or edit CTI ID, CTI NO through **② Modify** button.
-Please input **CTI ID**, **CTI NO** received from IPCC or Mobile Contact administrator, and then click **③ Save** to save information.
+You can **① search** for an agent by name, email, CTI ID, CTI NO, and service information, and enter or modify CTI ID and CTI NO through **② Modify** button.(CTI ID and CTI NO cannot be duplicated between counselors.) If CTI information has been entered correctly, the agent can proceed with **CTI login** through the call widget.
 
-After CTI information is correctly entered and saved, agent with call authority could proceed **CTI Login** in the CTI widget.
+If it is difficult to obtain CTI information, please contact the Online Contact help center. ([Online Contact Help Center Shortcut](https://nhn-contact.oc.toast.com/oc/hc/))
 
 ## Authority Log Management
 ![](http://static.toastoven.net/prod_contact_center/2.1.4-(1)_en.png)
