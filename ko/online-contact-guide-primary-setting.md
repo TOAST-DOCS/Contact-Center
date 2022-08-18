@@ -1,12 +1,5 @@
 ## Contact Center > Online Contact > 서비스 가이드 > 서비스 가입 및 기본 설정
 
-## 빠른 시작 가이드
-관리자 분들의 Online Contact 초기 사용 시, Online Contact가 제공하고 있는 기능들의 전체적인 체험을 통한 서비스 이해도 향상을 목적으로 관리자용/상담원용 빠른 시작 가이드를 제공하고 있습니다. 각 기능에 대한 보다 구체적인 설명이 필요할 경우, 기능별 서비스 가이드 페이지 및 Online Contact 고객센터 FAQ 페이지를 참고해주세요.
-
-✔[(관리자용) 빠른 시작 가이드](http://static.toastoven.net/prod_contact_center/OC_빠른시작가이드_관리자용_ko.pdf)
-✔[(상담원용) 빠른 시작 가이드](http://static.toastoven.net/prod_contact_center/OC_빠른시작가이드_상담원용_ko.pdf)
-✔[Online Contact 고객센터 FAQ](https://nhn-contact.oc.toast.com/oc/hc/)
-
 ## NHN Cloud 회원가입
 Online Contact는 NHN Cloud 회원가입 후 이용하실 수 있습니다. 
 회원가입 시 결제수단 등록이 필수이므로 신용카드를 준비해주시고, (**체크카드는 등록이 불가합니다.**) 사업자 회원의 경우 **사업자등록증 사본**도 함께 준비해주세요.

@@ -1,5 +1,5 @@
 ## Contact Center > Online Contact > Service Guide (Issue) > Global Management
-Global Management menu in Issue Management service consists of **Contract Service Status**, **Organization Administrator**, **Company Information Management**, **Authority Log Management** and **Data Transfer** menu.
+**Global Management** menu in Issue Management service consists of Contract Service Status, Organization Administrator, Authority Log Management and Data Transfer menu.
 
 ## Contract service status
 ### Contract status
@@ -9,11 +9,11 @@ Through **Contract status** tab, you can **①** add service to organization usi
 ![](http://static.toastoven.net/prod_contact_center/2.1.1-(2)_im_en.png)
 Click **① Add Service** button to view **② Add Service screen** for entering basic information for the service. The following items require input:
 
-- **Type** : Type of service to use (Consultation management, Issue management)
-- **Service Name** : Name of service to be used
-- **Service ID** : ID used to identify the service (becomes included in URL of the service’s Online Contact, and help center). English only
-- **Time zone** : Time zone set in the help center (selected accordingly when help center language becomes selected. Can be modified separately)
-- **Service Banner** : Can attach image. When uploaded, it becomes applied as the image of the service tab in Online Contact GNB and as a profile photo of the agent when chat consulting.
+- **Type**: Type of service to use(Consultation management, Issue management)
+- **Service Name**: Name of service to be used
+- **Service ID**: ID used to identify the service(becomes included in URL of the service’s Online Contact, and help center). English only
+- **Time zone**: Time zone set in the help center(selected accordingly when help center language becomes selected. Can be modified separately)
+- **Service Banner**: Can attach image. When uploaded, it becomes applied as the image of the service tab in Online Contact GNB and as a profile photo of the agent when chat consulting.
 
 After entering all the basic information, press the next button to go to **③ Contract Details**. On the Contract Details screen, you can **activate functions** from the consultation functions provided by Online Contact for your service and calculate **Estimated Cost** that reflect your choice. After completing the contract details, press **Contract** button to complete the contract.
 
@@ -34,15 +34,15 @@ In **Organization Information** tab, **① NHN Cloud Organization Information**,
 #### NHN Cloud Organization Information
 In the menu, users can check the information written below, and the same information could be checked and modified in **NHN Cloud Console → Organization Management → Default Organization Setting** tab.
 
-- **NHN Cloud Organization Name** : The name set when the organization was created.
-- **NHN Cloud Organization ID** : Unique ID given to each organization when the organization was created. Used to create authentication token required when using Open API.
-- **NHN Cloud Organization Domain** : The name set when selecting a service after creating an organization.
+- **NHN Cloud Organization Name**: The name set when the organization was created.
+- **NHN Cloud Organization ID**: Unique ID given to each organization when the organization was created. Used to create authentication token required when using Open API.
+- **NHN Cloud Organization Domain**: The name set when selecting a service after creating an organization.
 
 #### OC Organization Information
-In the menu, users can check the information written below. OC Organization Key could be changed by **Change API Key** button, and OC URL changes together when changing the NHN Cloud Organization Domain. 
+In the menu, users can check the information written below. OC Organization Key could be changed by **Change API Key** button, and OC URL changes together when changing the NHN Cloud Organization Domain.
 
-- **OC Organization Key** : Key used in the authentication phase when trying to process actions performed for organizational management through API.
-- **OC URL** : The access URL for Online Contact. Created in the following form : https://**Organization Domain**.oc.toast.com
+- **OC Organization Key**: Key used in the authentication phase when trying to process actions performed for organizational management through API.
+- **OC URL**: The access URL for Online Contact. Created in the following form: https://**Organization Domain**.oc.toast.com
 
 ## Organization Adminstrator
 ![](http://static.toastoven.net/prod_contact_center/2.1.2-(1)_im_en.png)
@@ -54,18 +54,11 @@ The user whom you want to grant permission must be registered as an IAM member.
 
 ### Register as an IAM Member
 
--	Click **① Invite Members** button → Enter name, ID, email
--	NHN Cloud CONSOLE → Manage Member → IAM Member tab → Click **Register IAM Member** button → Enter ID, name, mail, and mobile phone number
+- Click **① Invite Members** button → Enter name, ID, email
+- NHN Cloud CONSOLE → Manage Member → IAM Member tab → Click **Register IAM Member** button → Enter ID, name, mail, and mobile phone number
 
 Select one of the above two methods to register IAM member. After registering, click **② Add Organization Administrator** → click **View Agent** → Search registered IAM Member by entering name/account/email, and add IAM Member as organization administrator.
 To newly registered IAM Members, **password change mail** will be sent to the registered email. Logging in Online Contact becomes available after setting password through email.
-
-## Company Information Management
-![](http://static.toastoven.net/prod_contact_center/2.2.5-(6)_1_im_en.png)
-
-In this menu, you can set company information, terms and conditions in the footer area of the PC/mobile help center.
-Press **① Add** button to display setting screen, which allows you to set **② company information**, **③ trademarks and copyrights**, and **④ terms of use**.
-If you press **Save** button after entering the information, the company information configuration you have set will be added to the list. You can select the added configuration from Service Management → Help Center → Default Settings menu, and **⑤ apply** it in the help center.
 
 ## Authority Log Management
 ![](http://static.toastoven.net/prod_contact_center/2.1.4-(1)_im_en.png)
@@ -76,7 +69,7 @@ If you press **Save** button after entering the information, the company informa
 
 If consultation data should be transferred to Online Contact, you could upload data and create tickets through **Data Transfer** menu.
 
-If you click **① Add** button, you can access to the screen for **downloading transfer template**. Select the service you want to transfer consultation data, and click **② Download** to download the transfer template of the service. The field configuration set for the service is reflected in the downloaded template, thus re-download of the template is needed when the field configuration had changes. 
+If you click **① Add** button, you can access to the screen for **downloading transfer template**. Select the service you want to transfer consultation data, and click **② Download** to download the transfer template of the service. The field configuration set for the service is reflected in the downloaded template, thus re-download of the template is needed when the field configuration had changes.
 
 After downloading the template, click **Next** button to access **Register Data** screen.
 You can upload the file you created by clicking **③ Add** button, and after checking the service and file name once more, click **④ Confirm** button to complete data registration.
@@ -92,15 +85,15 @@ Detailed performance classifications for different types of consultations are as
 
 **③ Ticket Achievements**
 
-- New 
-- Open 
+- New
+- Open
 - Solved
 - Closed
 
 **④ Call Achievements**
 
-- IB Call (number of calls/minute)
-- OB Call (number of calls/minute)
+- IB Call(number of calls/minute)
+- OB Call(number of calls/minute)
 - Ready
 - Transfer
 - Ticket Treatment
@@ -120,18 +113,17 @@ Detailed performance classifications for different types of consultations are as
 
 ## Privacy Settings
 ![](http://static.toastoven.net/prod_contact_center/2.1.5-(1)_im_en.png)
-Through clicking **① account name** displayed in the upper right corner of the screen, **② privacy settings** menu is showed. User’s personal settings could be accessed and edited through this menu. 
+Through clicking **① account name** displayed in the upper right corner of the screen, **② privacy settings** menu is showed. User’s personal settings could be accessed and edited through this menu.
 
 ✔ **\[FAQ]** [How can I change or delete my ID, email, and name?](https://nhn-contact.oc.toast.com/oceng/hc/article/106/)
 ✔ **\[FAQ]** [How can I change my password?](https://nhn-contact.oc.toast.com/oceng/hc/article/108/)
 
-
 ### Accessible Information
 
--	Account
--	Name
--	Nickname (Editable) : Displayed when communicating through chat, mail
--	Phone number
--	Email
--	Language (Editable) : Language in your environment, apart from service’s language setting
--	Assign ticket(Editable) : If consulting is not available due to vacation, etc., can set ticket allocation status
+- Account
+- Name
+- Nickname(Editable): Displayed when communicating through chat, mail
+- Phone number
+- Email
+- Language(Editable): Language in your environment, apart from service’s language setting
+- Assign ticket(Editable): If consulting is not available due to vacation, etc., can set ticket allocation status
