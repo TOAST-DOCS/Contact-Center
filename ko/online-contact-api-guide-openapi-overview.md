@@ -4,7 +4,7 @@
 #### Open API 설정
 ![](http://static.toastoven.net/prod_contact_center/dev2_1_1.png)
 
-하나의 조직에서 여러 개의 서비스를 생성하실 수 있으며, 생성하신 각 서비스 별로 유일한 Security Key인 **서비스 Key**를 보유하고 있습니다. 서비스 Key를 통해 API로 전송되는 데이터를 암호화 처리할 수 있으며, 서비스 관리와 관련된 Open API를 호출할 수 있습니다. (티켓 관리, FAQ 등)
+하나의 조직에서 여러 개의 서비스를 생성하실 수 있으며, 생성하신 각 서비스 별로 유일한 Security Key인 **서비스 Key**를 보유하고 있습니다. 서비스 Key를 통해 API로 전송되는 데이터를 암호화 처리할 수 있으며, 서비스 관리와 관련된 Open API를 호출할 수 있습니다.(티켓 관리, FAQ 등)
 
 서비스 관리 → 인증 → OPEN API 탭에서 Open API를 **① 활성화/비활성화** 하실 수 있으며, **② 서비스 Key**를 확인/변경하실 수 있습니다.
 
@@ -16,16 +16,17 @@
 #### 인증 Header
 각 Request Header에 아래의 값들을 반드시 설정해야 합니다.
 
-- Authorization：Security Key를 통해 생성된 인증 문자열
-- X-TC-Timestamp：현재 UTC 시간 값{new Date().getTime()}
-- OUCODE：유저 code（필수 아님，설정하지 않을 경우 기본 값은 Owner）
+- Authorization: Security Key를 통해 생성된 인증 문자열
+- X-TC-Timestamp: 현재 UTC 시간 값{new Date().getTime()}
+- OUCODE: 유저 code(필수 아님，설정하지 않을 경우 기본 값은 Owner)
 
 #### Authorization 문자열 생성 방법
-HmacSHA256로 암호화하거나, (NHN Cloud 조직ID + request URI + 파라미터 값 + 현재 UTC시간 값）문자열에 대해 암호화하여 Authorization 문자열을 생성하실 수 있습니다.
+HmacSHA256로 암호화하거나, (NHN Cloud 조직ID + request URI + 파라미터 값 + 현재 UTC시간 값)문자열에 대해 암호화하여 Authorization 문자열을 생성하실 수 있습니다.
 (NHN Cloud 조직ID : NHN Cloud Console → 조직 설정 → 조직 기본 설정 탭, Online Contact 전체 관리 → 계약 서비스 현황 → 조직 정보 탭에서 확인 가능)
 
 #### Java 예제
-##### 일반 요청 (GET, POST)
+##### 일반 요청(GET, POST)
+
 ```
 String URL = "http://nhn-cs.alpha-oc.toast.com/APISimple/openapi/v1/ticket/enduser/usercode/list.json?categoryId=1&language=ko";
 String organizationId = "WopqM8euoYw89B7i"; // NHN Cloud 조직ID
@@ -45,6 +46,7 @@ String authorization = new String(Base64.encodeBase64(rawHmac));
 ```
 
 ##### 파일 업로드
+
 ```
 String URL = "http://nhn-cs.alpha-oc.toast.com/APISimple/openapi/v1/ticket/attachments/upload.json";
 String organizationId = "WopqM8euoYw89B7i"; // NHN Cloud 조직ID
@@ -63,6 +65,7 @@ String authorization = new String(Base64.encodeBase64(rawHmac));
 ```
 
 ##### OC 측 인증 방법
+
 ```
 // Generate authorization string sample with request
 StringBuilder sb = new StringBuilder();
@@ -107,7 +110,7 @@ return sb.toString();
 #### 리턴 결과 예제
 
 ```
-//성공 : 상세
+//성공: 상세
 {
     "header": {
         "resultCode": 200,
@@ -120,7 +123,7 @@ return sb.toString();
     }
 }
 
-//성공 : 리스트
+//성공: 리스트
 {
     "header": {
         "resultCode": 200,
@@ -145,13 +148,13 @@ return sb.toString();
 ```
 
 #### 리턴 결과 설명
-|명칭	|변수|	데이터 타입	|      설명|
+|명칭|변수|데이터 타입|      설명|
 |-------|---|-------------- |----------|
-|Header	|resultCode	  |Integer	|리턴 결과 Code , 정상은 200|
-|	    |resultMessage|String   |리턴 오류 메시지|
-|	    |isSuccessful |Boolean  |실행 결과(성공：true ，실패：false)|
+|Header|resultCode  |Integer|리턴 결과 Code, 정상은 200|
+|    |resultMessage|String   |리턴 오류 메시지|
+|    |isSuccessful |Boolean  |실행 결과(성공: true, 실패: false)|
 |Result |contents     |JSON     |목록 결과 내용|
-|	     |content     |JSON     |상세 결과 내용
+|       |content      |JSON     |상세 결과 내용|
 
 #### 리턴 코드	
 - 200: SUCCESS
@@ -166,7 +169,7 @@ return sb.toString();
 ##### 400
 1. Authorization is blank
 2. X-TC-Timestamp is not numeric
-3. X-TC-Timestamp is expired（5분 내 유효）
+3. X-TC-Timestamp is expired(5분 내 유효)
 4. Multipart request but file is null
 5. Authorization is incorrect
 6. Invalid paramter
@@ -177,35 +180,35 @@ return sb.toString();
 
 ### API 목록
 #### 개발 환경 URL
-|환경|	BaseUrl|	
+|환경|BaseUrl|
 |---|------------|
-|알파|	https://{domain}.alpha-oc.toast.com|	
-|리얼|	https://{domain}.oc.toast.com	|
+|알파|https://{domain}.alpha-oc.toast.com|
+|리얼|https://{domain}.oc.toast.com	|
 
 #### Security Key URL
-|Security Key|	URL|	
+|Security Key|URL|
 |------------|-----|
-|서비스의 Security Key  |/{serviceId}/openapi/v1/*|	
-|인증 없이 직접 사용 가능|/{serviceId}/api/v2/*|	
+|서비스의 Security Key  |/{serviceId}/openapi/v1/*|
+|인증 없이 직접 사용 가능|/{serviceId}/api/v2/*|
 
 #### API 목록
-|그룹	   |명칭	    |유형     |URL|설명|
+|그룹   |명칭    |유형     |URL|설명|
 |---------|------------|---------|---|----|
-|서비스    |서비스 상세	                     |GET	       |/{serviceId}/api/v2/service.json                                         |서비스 ID를 통해 서비스 정보 조회|
-|공지사항  |말머리 리스트                    |GET	       |/{serviceId}/api/v2/notice/categories.json                               |공지사항 말머리 리스트 취득      |
-|	      |태그 리스트	                    |GET	      |/{serviceId}/api/v2/notice/tags.json	                                    |공지사항 태그 리스트 취득        |
-|	      |공지사항 리스트                   |GET	      |/{serviceId}/api/v2/notice/list.json   	                                 |헬프센터 공지사항 리스트          |
-|	      |공지사항 상세                     |GET	      |/{serviceId}/api/v2/notice/detail/{id}.json                               |공지사항 ID를 통해 공지사항 내용 취득|
-|	      |공지사항 첨부파일 열기 및 다운로드 |GET	      |/{serviceId}/api/v2/notice/attachments/{id}	                             |공지사항 첨부파일 열기/다운로드|
-|FAQ	  |카테고리 리스트	                 |GET	      |/{serviceId}/api/v2/helpdoc/categories.json	                             |FAQ 카테고리 리스트 취득|
-|	      |FAQ 리스트	                    |GET	     |/{serviceId}/api/v2/helpdoc/list.json	                                    |헬프센터 FAQ 리스트|
-|	      |FAQ 상세	                        |GET	     |/{serviceId}/api/v2/helpdoc/detail/{id}.json	                           |FAQ ID를 통해 FAQ 내용 취득|
-|	      |FAQ 첨부파일 열기 및 다운로드      |GET	       |/{serviceId}/api/v2/helpdoc/attachments/{id}	                         |FAQ 첨부파일 열기 및 다운로드|
-|문의 접수 |접수유형 리스트	                  |GET	       |/{serviceId}/api/v2/ticket/categories.json	                            |서비스 내 접수유형 리스트 조회|
-|	      |접수유형 필드 리스트	              |GET	       |/{serviceId}/api/v2/ticket/field/user/{categoryId}.json	                |접수유형을 통하여 대응되는 필드 리스트 확인|
-|	      |티켓 첨부파일 업로드	              |POST	       |/{serviceId}/openapi/v1/ticket/attachments/upload.json	                |서버에 파일 업로드|
-|	      |티켓 생성	                     |POST	      |/{serviceId}/openapi/v1/ticket.json	                                   |신규 티켓 생성|
-|문의 내역 |고객 티켓 리스트	              |GET	       |/{serviceId}/openapi/v1/ticket/enduser/{usercode}/list.json	             |검색 조건을 통해 조건에 맞는 고객의 티켓 리스트 노출|
-|	      |티켓 상세	                     |GET	      |/{serviceId}/openapi/v1/ticket/enduser/{usercode}/{ticketId}/detail.json	|고객이 접수한 티켓 상세 조회|
-|	      |티켓 첨부파일 열기 및 다운로드	  |GET	    |/{serviceId}/api/v2/ticket/attachments/{id}	                          |티켓 첨부파일 열기/다운로드|
-|	      |고객 재문의	                     |POST	  |{serviceId}/openapi/v1/ticket/enduser/{usercode}/{ticketId}/comment.json	 |티켓 ID 기준으로 고객 재문의|
+|서비스    |서비스 상세                     |GET       |/{serviceId}/api/v2/service.json                                         |서비스 ID를 통해 서비스 정보 조회|
+|공지사항  |말머리 리스트                    |GET       |/{serviceId}/api/v2/notice/categories.json                               |공지사항 말머리 리스트 취득      |
+|      |태그 리스트                    |GET      |/{serviceId}/api/v2/notice/tags.json                                    |공지사항 태그 리스트 취득        |
+|      |공지사항 리스트                   |GET      |/{serviceId}/api/v2/notice/list.json                                    |헬프센터 공지사항 리스트          |
+|     |공지사항 상세                     |GET      |/{serviceId}/api/v2/notice/detail/{id}.json                               |공지사항 ID를 통해 공지사항 내용 취득|
+|      |공지사항 첨부파일 열기 및 다운로드 |GET     |/{serviceId}/api/v2/notice/attachments/{id}                             |공지사항 첨부파일 열기/다운로드|
+|FAQ  |카테고리 리스트                 |GET      |/{serviceId}/api/v2/helpdoc/categories.json                             |FAQ 카테고리 리스트 취득|
+|      |FAQ 리스트                    |GET     |/{serviceId}/api/v2/helpdoc/list.json                                    |헬프센터 FAQ 리스트|
+|      |FAQ 상세                        |GET     |/{serviceId}/api/v2/helpdoc/detail/{id}.json                           |FAQ ID를 통해 FAQ 내용 취득|
+|      |FAQ 첨부파일 열기 및 다운로드      |GET      |/{serviceId}/api/v2/helpdoc/attachments/{id}                         |FAQ 첨부파일 열기 및 다운로드|
+|문의 접수 |접수유형 리스트                  |GET       |/{serviceId}/api/v2/ticket/categories.json                            |서비스 내 접수유형 리스트 조회|
+|      |접수유형 필드 리스트              |GET       |/{serviceId}/api/v2/ticket/field/user/{categoryId}.json                |접수유형을 통하여 대응되는 필드 리스트 확인|
+|      |티켓 첨부파일 업로드              |POST       |/{serviceId}/openapi/v1/ticket/attachments/upload.json                |서버에 파일 업로드|
+|      |티켓 생성                     |POST      |/{serviceId}/openapi/v1/ticket.json                                   |신규 티켓 생성|
+|문의 내역 |고객 티켓 리스트              |GET       |/{serviceId}/openapi/v1/ticket/enduser/{usercode}/list.json             |검색 조건을 통해 조건에 맞는 고객의 티켓 리스트 노출|
+|      |티켓 상세                     |GET      |/{serviceId}/openapi/v1/ticket/enduser/{usercode}/{ticketId}/detail.json|고객이 접수한 티켓 상세 조회|
+|      |티켓 첨부파일 열기 및 다운로드  |GET    |/{serviceId}/api/v2/ticket/attachments/{id}                          |티켓 첨부파일 열기/다운로드|
+|      |고객 재문의                     |POST  |{serviceId}/openapi/v1/ticket/enduser/{usercode}/{ticketId}/comment.json	|티켓 ID 기준으로 고객 재문의|

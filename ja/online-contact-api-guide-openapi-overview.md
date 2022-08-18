@@ -16,10 +16,10 @@
 
 - Authorization: Security Keyで生成された認証文字列
 - X-TC-Timestamp: 現在のUTC時間値{newDate().getTime()}
-- OUCODE: ユーザcode（必須ではない. 設定しない場合、基本値はOwner）
+- OUCODE: ユーザcode(必須ではない. 設定しない場合、基本値はOwner)
 
 #### Authorization文字列の生成方法
-HmacSHA256で暗号化するか、(NHN Cloud 組織ID + request URI + パラメータ値 + 現在のUTC時間値)　文字列に対して暗号化してAuthorization文字列を生成することができます。
+HmacSHA256で暗号化するか、(NHN Cloud 組織ID + request URI + パラメータ値 + 現在のUTC時間値)文字列に対して暗号化してAuthorization文字列を生成することができます。
 
 ##### Java例題
 ##### 一般リクエスト(GET,POST)
@@ -142,28 +142,28 @@ return sb.toString();
 ```
 
 #### リターン結果説明
-|名称	|変数|	データタイプ	|説明|
+|名称|変数|データタイプ|説明|
 |-----|---|--------------|--------|
-|Header	|resultCode	  |Integer	    |リターン結果コード、頂上は２００|
-|	    |resultMessage|String       |リターン エラーメッセージ|
-|	    |isSuccessful |	Boolean	    |実行結果(成功:true、失敗:false)|
-|Result |	contents  |	JSON	    |目録結果内容|
-|	    |content      |	JSON	    |詳細結果内容|
+|Header|resultCode  |Integer    |リターン結果コード、頂上は２００|
+|    |resultMessage|String       |リターン エラーメッセージ|
+|    |isSuccessful |Boolean    |実行結果(成功: true、失敗: false)|
+|Result |contents  |JSON    |目録結果内容|
+|    |content      |JSON    |詳細結果内容|
 
 #### リターンコード情報
-- 200: SUCCESS	
-- 400: Bad Request	
+- 200: SUCCESS
+- 400: Bad Request
 - 403: Access Denied(Forbidden)
-- 404: Not Data Found	
-- 500: Server Error	
-- 9007: 関連データが既に存在	
+- 404: Not Data Found
+- 500: Server Error
+- 9007: 関連データが既に存在
 - 9005: 関連データなし
 
 #### リターンコード(失敗)詳細
 ##### 400
 1. Authorization is blank
 2. X-TC-Timestamp is not numeric
-3. X-TC-Timestamp is expired（5分以内有効）
+3. X-TC-Timestamp is expired(5分以内有効)
 4. Multipart request but file is null
 5. Authorization is incorrect
 6. Invalid paramter
@@ -174,35 +174,35 @@ return sb.toString();
 
 ### API目録
 #### 開発環境URL
-|環境|	BaseUrl|	
+|環境|BaseUrl|
 |---|------------|
-|alpha|	https://{domain}.alpha-oc.toast.com|	
+|alpha|	https://{domain}.alpha-oc.toast.com|
 |real|	https://{domain}.oc.toast.com	|
 
 #### Security Key URL
-|Security Key|	URL|	
+|Security Key|URL|
 |------------|-----|
-|サービスのSecurity Key  |/{serviceId}/openapi/v1/*|	
-|認証なしで直接使用可能|/{serviceId}/api/v2/*|	
+|サービスのSecurity Key  |/{serviceId}/openapi/v1/*|
+|認証なしで直接使用可能|/{serviceId}/api/v2/*|
 
 #### API目録
-|グループ	   |名称	    |類型    |URL|説明|
+|グループ   |名称    |類型    |URL|説明|
 |---------|------------|---------|---|----|
-|サービス    |サービス詳細	                     |GET	       |/{serviceId}/api/v2/service.json                                         |サービスIDでサービス情報照会|
-|お知らせ |テーマリスト                   |GET	       |/{serviceId}/api/v2/notice/categories.json                               |お知らせテーマリスト取得  |
-|	      |タグリスト	                    |GET	      |/{serviceId}/api/v2/notice/tags.json	                                    |お知らせタグリスト取得|
-|	      |お知らせリスト                   |GET	      |/{serviceId}/api/v2/notice/list.json   	                                 |ヘルプセンターお知らせリスト          |
-|	      |お知らせ詳細                     |GET	      |/{serviceId}/api/v2/notice/detail/{id}.json                               |お知らせIDでお知らせ内容を取得|
-|	      |お知らせ添付ファイルを開く/ダウンロード|GET	      |/{serviceId}/api/v2/notice/attachments/{id}	                             |お知らせ添付ファイルを開く/ダウンロード|
-|FAQ	  |カテゴリーリスト	                 |GET	      |/{serviceId}/api/v2/helpdoc/categories.json	                             |FAQカテゴリーリスト取得|
-|	      |FAQリスト	                    |GET	     |/{serviceId}/api/v2/helpdoc/list.json	                                    |ヘルプセンターFAQリスト|
-|	      |FAQ詳細	                        |GET	     |/{serviceId}/api/v2/helpdoc/detail/{id}.json	                           |FAQ IDによりFAQ内容を取得|
-|	      |FAQ添付ファイルを開く/ダウンロード      |GET	       |/{serviceId}/api/v2/helpdoc/attachments/{id}	                         |FAQ添付ファイルを開く/ダウンロード|
-|お問合せ |受付タイプリスト	                  |GET	       |/{serviceId}/api/v2/ticket/categories.json	                            |サービス内の受付タイプリスト照会|
-|	      |受付タイプフィールドリスト	              |GET	       |/{serviceId}/api/v2/ticket/field/user/{categoryId}.json	                |受付タイプで対応するフィールドリストを確認|
-|	      |チケット添付ファイルアップロード              |POST	       |/{serviceId}/openapi/v1/ticket/attachments/upload.json	                |サーバーにファイルアップロード|
-|	      |チケット作成	                     |POST	      |/{serviceId}/openapi/v1/ticket.json	                                   |新規チケットの作成|
-|お問合せ履歴 |顧客チケットリスト	              |GET	       |/{serviceId}/openapi/v1/ticket/enduser/{usercode}/list.json	             |検索条件により、条件に合った顧客のチケットリストを露出|
-|	      |チケット詳細	                     |GET	      |/{serviceId}/openapi/v1/ticket/enduser/{usercode}/{ticketId}/detail.json	|顧客が受け付けたチケット詳細照会|
-|	      |チケット添付ファイルを開く/ダウンロード	  |GET	    |/{serviceId}/api/v2/ticket/attachments/{id}	                          |チケット添付ファイルを開く/ダウンロード|
-|	      |顧客再問合せ	                     |POST	  |{serviceId}/openapi/v1/ticket/enduser/{usercode}/{ticketId}/comment.json	 |チケットIDを基準に再お問い合わせ| 
+|サービス    |サービス詳細                     |GET       |/{serviceId}/api/v2/service.json                                         |サービスIDでサービス情報照会|
+|お知らせ |テーマリスト                   |GET       |/{serviceId}/api/v2/notice/categories.json                               |お知らせテーマリスト取得  |
+|      |タグリスト                    |GET      |/{serviceId}/api/v2/notice/tags.json                                    |お知らせタグリスト取得|
+|      |お知らせリスト                   |GET      |/{serviceId}/api/v2/notice/list.json                                    |ヘルプセンターお知らせリスト          |
+|      |お知らせ詳細                     |GET      |/{serviceId}/api/v2/notice/detail/{id}.json                               |お知らせIDでお知らせ内容を取得|
+|      |お知らせ添付ファイルを開く/ダウンロード|GET      |/{serviceId}/api/v2/notice/attachments/{id}                             |お知らせ添付ファイルを開く/ダウンロード|
+|FAQ  |カテゴリーリスト                 |GET      |/{serviceId}/api/v2/helpdoc/categories.json                             |FAQカテゴリーリスト取得|
+|      |FAQリスト                    |GET     |/{serviceId}/api/v2/helpdoc/list.json	                                  |ヘルプセンターFAQリスト|
+|      |FAQ詳細                        |GET     |/{serviceId}/api/v2/helpdoc/detail/{id}.json                           |FAQ IDによりFAQ内容を取得|
+|      |FAQ添付ファイルを開く/ダウンロード      |GET       |/{serviceId}/api/v2/helpdoc/attachments/{id}                         |FAQ添付ファイルを開く/ダウンロード|
+|お問合せ |受付タイプリスト                  |GET       |/{serviceId}/api/v2/ticket/categories.json                            |サービス内の受付タイプリスト照会|
+|      |受付タイプフィールドリスト              |GET       |/{serviceId}/api/v2/ticket/field/user/{categoryId}.json                |受付タイプで対応するフィールドリストを確認|
+|      |チケット添付ファイルアップロード              |POST       |/{serviceId}/openapi/v1/ticket/attachments/upload.json                |サーバーにファイルアップロード|
+|      |チケット作成                     |POST      |/{serviceId}/openapi/v1/ticket.json	                                   |新規チケットの作成|
+|お問合せ履歴 |顧客チケットリスト              |GET       |/{serviceId}/openapi/v1/ticket/enduser/{usercode}/list.json             |検索条件により、条件に合った顧客のチケットリストを露出|
+|      |チケット詳細                     |GET      |/{serviceId}/openapi/v1/ticket/enduser/{usercode}/{ticketId}/detail.json	|顧客が受け付けたチケット詳細照会|
+|      |チケット添付ファイルを開く/ダウンロード  |GET    |/{serviceId}/api/v2/ticket/attachments/{id}                          |チケット添付ファイルを開く/ダウンロード|
+|      |顧客再問合せ                     |POST  |{serviceId}/openapi/v1/ticket/enduser/{usercode}/{ticketId}/comment.json |チケットIDを基準に再お問い合わせ|

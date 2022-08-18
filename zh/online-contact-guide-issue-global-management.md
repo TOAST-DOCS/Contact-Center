@@ -1,5 +1,5 @@
 ## Contact Center > Online Contact > Service Guide (Issue) > Global Management
-Global Management menu in Issue Management service consists of **Contract Service Status**, **Organization Administrator**, **Company Information Management**, **Authority Log Management** and **Data Transfer** menu.
+**Global Management** menu in Issue Management service consists of Contract Service Status, Organization Administrator, Authority Log Management and Data Transfer menu.
 
 ## Contract service status
 ### Contract status
@@ -9,11 +9,11 @@ Through **Contract status** tab, you can **①** add service to organization usi
 ![](http://static.toastoven.net/prod_contact_center/2.1.1-(2)_im_en.png)
 Click **① Add Service** button to view **② Add Service screen** for entering basic information for the service. The following items require input:
 
-- **Type** : Type of service to use (Consultation management, Issue management)
-- **Service Name** : Name of service to be used
-- **Service ID** : ID used to identify the service (becomes included in URL of the service’s Online Contact, and help center). English only
-- **Time zone** : Time zone set in the help center (selected accordingly when help center language becomes selected. Can be modified separately)
-- **Service Banner** : Can attach image. When uploaded, it becomes applied as the image of the service tab in Online Contact GNB and as a profile photo of the agent when chat consulting.
+- **Type**: Type of service to use(Consultation management, Issue management)
+- **Service Name**: Name of service to be used
+- **Service ID**: ID used to identify the service(becomes included in URL of the service’s Online Contact, and help center). English only
+- **Time zone**: Time zone set in the help center(selected accordingly when help center language becomes selected. Can be modified separately)
+- **Service Banner**: Can attach image. When uploaded, it becomes applied as the image of the service tab in Online Contact GNB and as a profile photo of the agent when chat consulting.
 
 After entering all the basic information, press the next button to go to **③ Contract Details**. On the Contract Details screen, you can **activate functions** from the consultation functions provided by Online Contact for your service and calculate **Estimated Cost** that reflect your choice. After completing the contract details, press **Contract** button to complete the contract.
 
@@ -34,15 +34,15 @@ In **Organization Information** tab, **① NHN Cloud Organization Information**,
 #### NHN Cloud Organization Information
 In the menu, users can check the information written below, and the same information could be checked and modified in **NHN Cloud Console → Organization Management → Default Organization Setting** tab.
 
-- **NHN Cloud Organization Name** : The name set when the organization was created.
-- **NHN Cloud Organization ID** : Unique ID given to each organization when the organization was created. Used to create authentication token required when using Open API.
-- **NHN Cloud Organization Domain** : The name set when selecting a service after creating an organization.
+- **NHN Cloud Organization Name**: The name set when the organization was created.
+- **NHN Cloud Organization ID**: Unique ID given to each organization when the organization was created. Used to create authentication token required when using Open API.
+- **NHN Cloud Organization Domain**: The name set when selecting a service after creating an organization.
 
 #### OC Organization Information
 In the menu, users can check the information written below. OC Organization Key could be changed by **Change API Key** button, and OC URL changes together when changing the NHN Cloud Organization Domain.
 
-- **OC Organization Key** : Key used in the authentication phase when trying to process actions performed for organizational management through API.
-- **OC URL** : The access URL for Online Contact. Created in the following form : https://**Organization Domain**.oc.toast.com
+- **OC Organization Key**: Key used in the authentication phase when trying to process actions performed for organizational management through API.
+- **OC URL**: The access URL for Online Contact. Created in the following form: https://**Organization Domain**.oc.toast.com
 
 ## Organization Adminstrator
 ![](http://static.toastoven.net/prod_contact_center/2.1.2-(1)_im_en.png)
@@ -92,8 +92,8 @@ Detailed performance classifications for different types of consultations are as
 
 **④ Call Achievements**
 
-- IB Call (number of calls/minute)
-- OB Call (number of calls/minute)
+- IB Call(number of calls/minute)
+- OB Call(number of calls/minute)
 - Ready
 - Transfer
 - Ticket Treatment
@@ -122,8 +122,8 @@ Through clicking **① account name** displayed in the upper right corner of the
 
 - Account
 - Name
-- Nickname (Editable) : Displayed when communicating through chat, mail
+- Nickname(Editable): Displayed when communicating through chat, mail
 - Phone number
 - Email
-- Language (Editable) : Language in your environment, apart from service’s language setting
-- Assign ticket(Editable) : If consulting is not available due to vacation, etc., can set ticket allocation status
+- Language(Editable): Language in your environment, apart from service’s language setting
+- Assign ticket(Editable): If consulting is not available due to vacation, etc., can set ticket allocation status
