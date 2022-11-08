@@ -6,17 +6,15 @@
 회원 연동은 GET 방식과 POST 방식의 두 가지 타입으로 제공하고 있으며, 연동을 위해서는 Online Contact에서 제공하는 개발 명세서에 따라 API를 개발하여 회원연동 메뉴에 등록해 주셔야 합니다.
 
 #### POST 방식
-
 - 연동하려는 서비스가 PC, MOBILE 플랫폼에서 모두 WEB 기반으로 제공될 경우에 적합합니다.
 - 서비스의 로그인 화면이 WEB URL 형태로 제공되어야 사용 가능합니다.
 - 개발 명세에서 세부적으로 2가지 타입을 제공합니다.(CLIENT-SIDE, SERVICER-SIDE)
 
 #### GET 방식
-
 - WEB 기반의 로그인 화면이 없는 서비스의 경우 적합합니다.
 - WEB 기반이 아닌 Native APP 서비스의 경우 적합한 연동 방식입니다.
 
-### 프로세스 (POST 방식)
+### 프로세스(POST 방식)
 ① 고객이 헬프센터 '문의하기' 또는 '문의내역' 페이지 접속
 ② 헬프센터 페이지에서 로그인 상태 URL을 호출하여 로그인 상태 확인('로그인 상태 URL'은 고객사에서 아래 제공된 명세서에 따라 개발 후, Online Contact 회원연동 메뉴에 등록 필요)
 ③ 로그인 상태 확인 후 결과에 따라
@@ -113,6 +111,7 @@ public static void main(String[] args) throws Exception {
 |리턴 화면 URL|returnUrl|Varchar|X|설정 및 로그인 성공 시 해당 주소로 이동|
 
 #### 결과 데이터
+
 returnUrl 파라미터 존재 시 지정된 returnUrl로 이동, returnUrl 파라미터가 없을 경우 문자열(SUCCESS) 반환
 
 ### POST 원격 로그인 API(From server side)
@@ -241,7 +240,6 @@ response.addHeader("Access-Control-Allow-Credentials", "true");
 - Method: loginStatus
 
 #### 요청 파라미터 정의
-
 - 없음
 
 #### 결과 데이터

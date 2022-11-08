@@ -6,29 +6,28 @@
 회원 연동은 GET 방식과 POST 방식의 두 가지 타입으로 제공하고 있으며, 연동을 위해서는 Online Contact에서 제공하는 개발 명세서에 따라 API를 개발하여 회원연동 메뉴에 등록해 주셔야 합니다.
 
 #### POST 방식
-
 - 연동하려는 서비스가 PC, MOBILE 플랫폼에서 모두 WEB 기반으로 제공될 경우에 적합합니다.
 - 서비스의 로그인 화면이 WEB URL 형태로 제공되어야 사용 가능합니다.
 - 개발 명세에서 세부적으로 2가지 타입을 제공합니다.(CLIENT-SIDE, SERVICER-SIDE)
 
 #### GET 방식
-
 - WEB 기반의 로그인 화면이 없는 서비스의 경우 적합합니다.
 - WEB 기반이 아닌 Native APP 서비스의 경우 적합한 연동 방식입니다.
 
-### 프로세스 (GET 방식)
+### 프로세스(GET 방식)
 ① 고객이 APP 내에서 헬프센터에 접속합니다.
 ② 고객사의 APP은 헬프센터 호출 시 아래 URL 형식으로 호출합니다.
 - https://**{org}**.oc.toast.com/**{service}**/hc/?usercode=**{유저_아이디}**&username=**{유저_이름}**&email=**{유저_이메일}**&phone=**{유저_전화번호}**&token=**{인증토큰_값}**
 ③ 헬프센터에서 'Token 검증 URL'을 호출합니다.('Token 검증 URL'은 고객사에서 아래 제공된 명세서에 따라 개발 후 Online Contact 회원연동 메뉴에 등록 필요)
-④ 토큰 검증 후 정상일 경우 ‘문의하기’ 또는 ‘문의내역’ 페이지에 접속합니다. 이 때 검증에 실패 할 경우 ‘문의하기’는 비회원으로 접수됩니다.
+④ 토큰 검증 후 정상일 경우 ‘문의하기’ 또는 ‘문의내역’ 페이지에 접속합니다. 이때 검증에 실패할 경우 ‘문의하기’는 비회원으로 접수됩니다.
 
 ### 회원 연동 방법
 ![](http://static.toastoven.net/prod_contact_center/dev_post_(2)_2.png)
 ① 서비스 관리 > 헬프센터 > 회원 연동 접속
-② 회원 연동 활성화 항목에서 ‘활성화’ 버튼 클릭
-③ 서비스 성격에 맞는 ‘로그인 타입’ 선택
-④ 각 타입에 따라 필요한 API 개발 및 URL 설정
+② 회원 연동 '활성화' 버튼 클릭
+③ '비회원 문의 접수' 활성화 여부 선택(활성화 시 로그아웃 상태에서도 문의 접수 가능, 비활성화 시 로그인 상태에서만 문의 접수 가능)
+④ 서비스 성격에 맞는 '로그인 타입' 선택
+⑤ 각 타입에 따라 필요한 API 개발 및 URL 설정
 
 ## 개발 명세서
 ### 인증토큰 생성
@@ -91,7 +90,7 @@ URL
 - https://{org}.oc.toast.com/{service}/hc/ticket/?usercode=aaaabbb&username=yzg&email=yzgname@163.com&phone=12345678901&time=12345678&token=8NPaBegAfbSvh1Lna9M0I1wBqjnoRyKO2r2izhuEAng%3d
 - https://{org}.oc.toast.com/{service}/hc/ticket/list/?usercode=aaaabbb&username=yzg&email=yzgname@163.com&phone=12345678901&time=12345678&token=8NPaBegAfbSvh1Lna9M0I1wBqjnoRyKO2r2izhuEAng%3d
 
-URL (개발)
+URL(개발)
 
 - https://{domain}.alpha-oc.toast.com/{service}/hc/?usercode=aaaabbb&username=yzg&email=yzgname@163.com&phone=12345678901&time=12345678&token=8NPaBegAfbSvh1Lna9M0I1wBqjnoRyKO2r2izhuEAng%3d
 - https://{domain}.alpha-oc.toast.com/{service}/hc/ticket/?usercode=aaaabbb&username=yzg&email=yzgname@163.com&phone=12345678901&time=12345678&token=8NPaBegAfbSvh1Lna9M0I1wBqjnoRyKO2r2izhuEAng%3d
@@ -118,7 +117,6 @@ URL (개발)
 2. 생성된 Token을 URL 파라미터로 사용 시, encodeURIComponent()로 인코딩 필요
 
 #### 결과 데이터
-
 - Token 인증 성공: 회원으로 접속하는 주소로 이동
 - Token 인증 실패: 비회원으로 접속하는 주소로 이동
 - Token 인증 실패 상태에서 문의내역으로 접속 시, 문의하기 화면으로 이동
@@ -141,14 +139,14 @@ URL (개발)
 
 #### Response Body
 ```
-로그인：
+로그인:
 {
 "login": "true",
 "usercode":"usercodeXXX"
 }
 
 
-로그아웃：
+로그아웃:
 {
 "login": "false",
 "usercode": null
