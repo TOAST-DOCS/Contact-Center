@@ -22,7 +22,7 @@
 
 #### Authorization 문자열 생성 방법
 HmacSHA256로 암호화하거나, (NHN Cloud 조직ID + request URI + 파라미터 값 + 현재 UTC시간 값)문자열에 대해 암호화하여 Authorization 문자열을 생성하실 수 있습니다.
-(NHN Cloud 조직ID : NHN Cloud Console → 조직 설정 → 조직 기본 설정 탭, Online Contact 전체 관리 → 계약 서비스 현황 → 조직 정보 탭에서 확인 가능)
+(NHN Cloud 조직ID: NHN Cloud Console → 조직 설정 → 조직 기본 설정 탭, Online Contact 전체 관리 → 계약 서비스 현황 → 조직 정보 탭에서 확인 가능)
 
 #### Java 예제
 ##### 일반 요청(GET, POST)
@@ -156,7 +156,8 @@ return sb.toString();
 |Result |contents     |JSON     |목록 결과 내용|
 |       |content      |JSON     |상세 결과 내용|
 
-#### 리턴 코드	
+#### 리턴 코드
+
 - 200: SUCCESS
 - 400: Bad Request
 - 403: Access Denied(Forbidden)
@@ -167,6 +168,7 @@ return sb.toString();
 
 #### 리턴 코드(실패) 상세
 ##### 400
+
 1. Authorization is blank
 2. X-TC-Timestamp is not numeric
 3. X-TC-Timestamp is expired(5분 내 유효)
@@ -175,6 +177,7 @@ return sb.toString();
 6. Invalid paramter
 
 ##### 403
+
 1. securityKey is null
 2. clientIp is not allowed
 

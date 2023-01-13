@@ -6,11 +6,13 @@
 회원 연동은 GET 방식과 POST 방식의 두 가지 타입으로 제공하고 있으며, 연동을 위해서는 Online Contact에서 제공하는 개발 명세서에 따라 API를 개발하여 회원연동 메뉴에 등록해 주셔야 합니다.
 
 #### POST 방식
+
 - 연동하려는 서비스가 PC, MOBILE 플랫폼에서 모두 WEB 기반으로 제공될 경우에 적합합니다.
 - 서비스의 로그인 화면이 WEB URL 형태로 제공되어야 사용 가능합니다.
 - 개발 명세에서 세부적으로 2가지 타입을 제공합니다.(CLIENT-SIDE, SERVICER-SIDE)
 
 #### GET 방식
+
 - WEB 기반의 로그인 화면이 없는 서비스의 경우 적합합니다.
 - WEB 기반이 아닌 Native APP 서비스의 경우 적합한 연동 방식입니다.
 
@@ -215,7 +217,7 @@ returnUrl 파라미터 존재 시 지정된 returnUrl로 이동, returnUrl 파�
 - ① 사용자 정보와 API Key 기준으로 로그인 token 생성
 - ② 서버에서 POST 원격 로그인 API(From server side) 호출
 - ③ API 호출 파라미터(usercode, time)를 returnUrl 뒤에 추가
-  - 예시) https://nhn-cs.alpha-oc.toast.com/multilanguage/hc/ticket/list/?usercode=xxxxxx@163.com&time=1566531359635
+      - 예시) https://nhn-cs.alpha-oc.toast.com/multilanguage/hc/ticket/list/?usercode=xxxxxx@163.com&time=1566531359635
 - ④ {returnUrl}로 이동
 
 ### POST 로그인 상태 URL(사용자)
@@ -240,6 +242,7 @@ response.addHeader("Access-Control-Allow-Credentials", "true");
 - Method: loginStatus
 
 #### 요청 파라미터 정의
+
 - 없음
 
 #### 결과 데이터

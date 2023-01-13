@@ -6,7 +6,7 @@
 API 암호화 여부를 '예'로 선택하셨을 경우, [고객정보관리 → 고객정보연동 → API 설정] 탭에서 조회하실 수 있는 API 상세설정 화면에서 **암호화 키**를 취득하실 수 있습니다.
 
 #### Authorization 문자열 생성 방법
-HmacSHA256로 암호화하거나, (request URI + 파라미터 값(json) + 현재 UTC시간 값）문자열에 대해 암호화하여 Authorization 문자열을 생성하실 수 있습니다.
+HmacSHA256로 암호화하거나, (request URI + 파라미터 값(json) + 현재 UTC시간 값)문자열에 대해 암호화하여 Authorization 문자열을 생성하실 수 있습니다.
 
 ##### Java 예시
 ```

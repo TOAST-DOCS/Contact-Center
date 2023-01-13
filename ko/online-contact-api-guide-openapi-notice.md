@@ -2,6 +2,7 @@
 
 ### 말머리 리스트
 #### 인터페이스 설명
+
 - URL: https://{domain}.oc.toast.com/{serviceId}/api/v2/notice/categories.json
 - URL(개발): https://{domain}.alpha-oc.toast.com/{serviceId}/api/v2/notice/categories.json
 
@@ -88,6 +89,7 @@
 
 ### 태그 리스트
 #### 인터페이스 설명
+
 - URL: https://{domain}.oc.toast.com/{serviceId}/api/v2/notice/tags.json
 - URL(개발): https://{domain}.alpha-oc.toast.com/{serviceId}/api/v2/notice/tags.json
 
@@ -147,6 +149,7 @@
 
 ### 공지사항 리스트
 #### 인터페이스 설명
+
 - URL: https://{domain}.oc.toast.com/{serviceId}/api/v2/notice/list.json
 - URL(개발): https://{domain}.alpha-oc.toast.com/{serviceId}/api/v2/notice/list.json
 
@@ -330,9 +333,10 @@ sort 파라미터의 형식 및 예시는 하기와 같습니다.
 
 ### 공지사항 상세
 #### 인터페이스 설명
+
 - URL: https://{domain}.oc.toast.com/{serviceId}/api/v2/notice/detail/{id}.json
 - URL(개발): https://{domain}.alpha-oc.toast.com/{serviceId}/api/v2/notice/detail/{id}.json
-		
+
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
 |------------|-------|--------|-----|--------|--------------|------------|
 |공지사항 상세|HTTPS  |GET    |UTF-8|JSON    |공지사항 ID를 통해 공지사항 내용 취득|필요 없음|
@@ -413,6 +417,7 @@ sort 파라미터의 형식 및 예시는 하기와 같습니다.
 
 ### 공지사항 첨부파일 열기 및 다운로드
 #### 인터페이스 설명
+
 - URL: https://{domain}.oc.toast.com/{serviceId}/api/v2/notice/attachments/{id}	
 - URL(개발): https://{domain}.alpha-oc.toast.com/{serviceId}/api/v2/notice/attachments/{id}		
 

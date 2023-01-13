@@ -6,11 +6,13 @@
 회원 연동은 GET 방식과 POST 방식의 두 가지 타입으로 제공하고 있으며, 연동을 위해서는 Online Contact에서 제공하는 개발 명세서에 따라 API를 개발하여 회원연동 메뉴에 등록해 주셔야 합니다.
 
 #### POST 방식
+
 - 연동하려는 서비스가 PC, MOBILE 플랫폼에서 모두 WEB 기반으로 제공될 경우에 적합합니다.
 - 서비스의 로그인 화면이 WEB URL 형태로 제공되어야 사용 가능합니다.
 - 개발 명세에서 세부적으로 2가지 타입을 제공합니다.(CLIENT-SIDE, SERVICER-SIDE)
 
 #### GET 방식
+
 - WEB 기반의 로그인 화면이 없는 서비스의 경우 적합합니다.
 - WEB 기반이 아닌 Native APP 서비스의 경우 적합한 연동 방식입니다.
 
@@ -113,10 +115,12 @@ URL(개발)
 |인증 Token|token  |VARCHAR     |O|다음 파라미터 값과 조직 Key로 계산(SHA256). (선택사항 값이 null 혹은 없을 경우, token 생성에서 제외. 주의사항: 문자열에서 각 값의 순서는 다음과 동일해야 함) SHA256Digest(service + usercode + username + email + phone + memberno + returnUrl + time)|
 
 ##### 인증 Token 생성 시 주의사항
+
 1. Token 생성 시, 한글이 있을 경우 한글로 직접 생성. 인코딩 필요 없음
 2. 생성된 Token을 URL 파라미터로 사용 시, encodeURIComponent()로 인코딩 필요
 
 #### 결과 데이터
+
 - Token 인증 성공: 회원으로 접속하는 주소로 이동
 - Token 인증 실패: 비회원으로 접속하는 주소로 이동
 - Token 인증 실패 상태에서 문의내역으로 접속 시, 문의하기 화면으로 이동

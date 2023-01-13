@@ -2,6 +2,7 @@
 
 ### 서비스 상세
 #### 인터페이스 설명
+
 - URL: https://{domain}.oc.toast.com/{serviceId}/api/v2/service.json
 - URL(개발): https://{domain}.alpha-oc.toast.com/{serviceId}/api/v2/service.json
 
