@@ -164,7 +164,7 @@
 상담원을 할당하시지 않고도 그룹을 추가하실 수 있으므로, 그룹의 최초 추가 시에는 그룹 명만 입력하신 다음 **저장** 버튼을 눌러 주시면 상담원 추가를 진행하실 수 있습니다.
 
 ## 외부채널
-**외부 채널**을 Online Contact와 연결하여 고객과 소통할 수 있습니다. 이슈관리 서비스에서는 **SMS** 서비스를 연동하여 사용하실 수 있습니다.
+**외부 채널**을 Online Contact와 연결하여 고객과 소통할 수 있습니다. 이슈관리 서비스에서는 **SMS**, **Dooray!** 서비스를 연동하여 사용하실 수 있습니다.
 
 ### SMS
 ![](http://static.toastoven.net/prod_contact_center/2.2.6-(6)_im.png)
@@ -176,6 +176,57 @@
 **③** **추가** 버튼을 누르시면 **발신번호 선택 팝업**이 표시됩니다. NHN Cloud Notification → SMS 서비스에 발신번호로 등록된 번호가 목록에 표시되므로, 발신번호 추가 전 **SMS 서비스에 발신번호가 등록**되어 있는지 확인해주세요. 표시된 목록에서 발신번호로 추가하고자 하시는 번호를 체크하신 후, 확인 버튼을 누르시면 발신번호 목록에 번호가 추가되며, Online Contact에서 SMS/MMS 발송 시 **발신번호로 활용**하실 수 있습니다.
 
 SMS 연동 활성화 및 발신번호 추가 이후에, **부가업무 → SMS발송** 메뉴에서 SMS 템플릿 관리 및 SMS 발송을 진행하실 수 있습니다.
+
+### Dooray!
+**Dooray!** 서비스를 Online Contact과 연동하여 티켓 이관 및 처리에 활용하실 수 있습니다.
+
+![](http://static.toastoven.net/prod_contact_center/2.2.6-(7)_2_im.png)
+Dooray! 서비스를 Online Contact과 연동하시기 위해서는 먼저 이관 설정을 **① 활성화** 상태로 변경하신 후, **② Dooray! 조직 ACL 설정** 및 **③ 프로젝트 웹 훅 설정**이 필요합니다.
+
+#### ACL 설정
+**IP 정보 받기** 텍스트를 클릭하신 후, 표시되는 팝업에 Online Contact의 IP 정보를 수신하실 메일 주소를 입력해주세요.
+하기 가이드를 참고하셔서, 입력해주신 메일 주소로 발송된 Online Contact 서버 IP를 연동하실 Dooray! 조직의 ACL에 등록해주시면 ACL 설정이 완료됩니다.
+
+([Dooray! 가이드 > FAQ > Admin(관리자) > 특정 IP 또는 구성원의 서비스 접속을 제한하기](https://helpdesk.dooray.com/share/pages/9wWo-xwiR66BO5LGshgVTg/2915473175823656612))
+
+#### Web Hook 설정
+Dooray! 조직의 ACL 설정을 완료하신 후, Online Contact과 연동하실 Dooray! 프로젝트의 웹 훅 추가가 필요합니다.
+[Dooray! 웹 훅 설정 가이드](https://helpdesk.dooray.com/share/pages/9wWo-xwiR66BO5LGshgVTg/2896333156253886641)를 참고하셔서, 하기와 같이 정보를 입력해주세요.
+
+- 웹 훅 URL: https://{조직 도메인}.oc.toast.com/{서비스ID}/api/v2/dooray/hook
+- 발송 메시지 포맷: Dooray!
+- 알림 항목: 업무 상태 변경, 업무 댓글 등록
+- 사용 여부: 사용함
+
+#### 일시 중지
+![](http://static.toastoven.net/prod_contact_center/2.2.6-(7)_3_im.png)
+**일시 중지** 설정을 통해 Dooray! 연동 관련 데이터는 보존한 상태에서 Dooray! 이관 기능 사용을 일시적으로 중지하실 수 있습니다.
+일시 중지 설정을 **① 활성화**하실 경우, 티켓 상세 내역에서 **② Dooray! 이관** 버튼이 숨김 처리됩니다.
+
+#### 조직/프로젝트 등록
+![](http://static.toastoven.net/prod_contact_center/2.2.6-(7)_4_im.png)
+Dooray! **① 조직 등록** 시, 하기와 같은 정보 입력이 필요합니다.
+등록하신 조직ID가 유효하지 않을 경우, 조직 추가가 불가하오니 정확한 조직ID를 입력해주세요.
+
+- 조직명
+- 조직 ID
+- 테넌트 토큰(이메일을 통한 고객 문의로 수동 발급 필요. 문의처: dooray@nhn.com)
+
+![](http://static.toastoven.net/prod_contact_center/2.2.6-(7)_5_im.png)
+Dooray! 조직을 등록하신 후, 조직 하위에 **① 프로젝트를 등록**하실 수 있습니다.
+하기와 같은 정보 입력이 필요하며, 등록하신 프로젝트 ID, IAM ID가 유효하지 않을 경우 프로젝트 등록이 불가합니다.
+프로젝트 주소, 프로젝트 ID는 프로젝트 URL에서 확인하실 수 있습니다. (프로젝트 URL: https://{조직 도메인}.dooray.com/project/{프로젝트 아이디})
+
+- 프로젝트명
+- 프로젝트 주소: https://{조직 도메인}.dooray.com/ 의 형식으로 입력해주세요.
+- 프로젝트 아이디
+- 대표 등록자 IAM ID: Dooray! 이관 또는 코멘트 추가 시 상담원이 해당 Dooray! 프로젝트의 멤버로 추가되어 있지 않을 경우, 입력하신 대표 등록자의 이름으로 업무/코멘트가 생성됩니다.
+
+#### 상담원 관리
+![](http://static.toastoven.net/prod_contact_center/2.2.6-(7)_6_im.png)
+Online Contact에서 Dooray! 이관을 통해, 대표 등록자가 아닌 개별 상담원의 이름으로 Dooray! 업무를 생성하기 위해서는 Dooray! 유저키 정보가 필요합니다.
+**① Dooray! 유저키**는 Dooray! 조직 추가 시 해당 Dooray! 조직에 추가된 상담원에게 일괄적으로 발급되며, [서비스 관리 → 상담원] 메뉴의 '상담원' 탭에서 '수정' 버튼 클릭 시 확인하실 수 있는 개별 상담원 정보 수정 페이지에서 확인하실 수 있습니다. (단, 각 조직에 등록된 IAM 회원 정보의 이메일 주소가 동일해야 함)
+Dooray! 조직 추가 이후에 상담원이 신규 추가될 경우, **생성** 버튼을 통해 최초 1회 유저키 수동 발급이 필요합니다.
 
 ## 보안서비스
 ![](http://static.toastoven.net/prod_contact_center/2.2.6-(5)_im.png)

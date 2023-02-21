@@ -818,7 +818,7 @@ IVR Route 관리 메뉴에서는 **IVR Route** 관련 정보를 등록 및 관�
 태그 명 입력 후 **② 추가** 버튼을 누르시면 사용자 정의 태그가 추가되며, 언어 세트 관리 및 검색 시 **태그 목록**에서 **시스템 태그와 함께** 조회하실 수 있습니다.
 
 ## 외부채널
-**외부 채널**을 Online Contact와 연결하여 고객과 소통할 수 있습니다. 상담관리 서비스에서는 현재 **트위터**, **카카오 상담톡**, **SMS**, **Dooray!** 서비스를 연동하여 사용하실 수 있습니다.
+**외부 채널**을 Online Contact와 연결하여 고객과 소통할 수 있습니다. 상담관리 서비스에서는 **트위터**, **카카오 상담톡**, **SMS**, **Dooray!** 서비스를 연동하여 사용하실 수 있습니다.
 
 ### 트위터
 ![](http://static.toastoven.net/prod_contact_center/2.2.6-(1).png)
@@ -862,7 +862,7 @@ IVR Route 관리 메뉴에서는 **IVR Route** 관련 정보를 등록 및 관�
 
 SMS 연동 활성화 및 발신번호 추가 이후에, **부가업무 → SMS발송** 메뉴에서 SMS 템플릿 관리 및 SMS 발송을 진행하실 수 있습니다.
 
-### Dooray
+### Dooray!
 **Dooray!** 서비스를 Online Contact과 연동하여 티켓 이관 및 처리에 활용하실 수 있습니다.
 
 ![](http://static.toastoven.net/prod_contact_center/2.2.6-(7)_2.png)
@@ -872,7 +872,7 @@ Dooray! 서비스를 Online Contact과 연동하시기 위해서는 먼저 이�
 **IP 정보 받기** 텍스트를 클릭하신 후, 표시되는 팝업에 Online Contact의 IP 정보를 수신하실 메일 주소를 입력해주세요.
 하기 가이드를 참고하셔서, 입력해주신 메일 주소로 발송된 Online Contact 서버 IP를 연동하실 Dooray! 조직의 ACL에 등록해주시면 ACL 설정이 완료됩니다.
 
-([Dooray 가이드 > FAQ > Admin(관리자) > 특정 IP 또는 구성원의 서비스 접속을 제한하기](https://helpdesk.dooray.com/share/pages/9wWo-xwiR66BO5LGshgVTg/2915473175823656612))
+([Dooray! 가이드 > FAQ > Admin(관리자) > 특정 IP 또는 구성원의 서비스 접속을 제한하기](https://helpdesk.dooray.com/share/pages/9wWo-xwiR66BO5LGshgVTg/2915473175823656612))
 
 #### Web Hook 설정
 Dooray! 조직의 ACL 설정을 완료하신 후, Online Contact과 연동하실 Dooray! 프로젝트의 웹 훅 추가가 필요합니다.
@@ -886,7 +886,7 @@ Dooray! 조직의 ACL 설정을 완료하신 후, Online Contact과 연동하실
 #### 일시 중지
 ![](http://static.toastoven.net/prod_contact_center/2.2.6-(7)_3.png)
 **일시 중지** 설정을 통해 Dooray! 연동 관련 데이터는 보존한 상태에서 Dooray! 이관 기능 사용을 일시적으로 중지하실 수 있습니다.
-일시 중지 설정을 **① 활성화**하실 경우, 티켓 상세 내역에서 **② Dooray 이관** 버튼이 숨김 처리됩니다.
+일시 중지 설정을 **① 활성화**하실 경우, 티켓 상세 내역에서 **② Dooray! 이관** 버튼이 숨김 처리됩니다.
 
 #### 조직/프로젝트 등록
 ![](http://static.toastoven.net/prod_contact_center/2.2.6-(7)_4.png)
@@ -909,11 +909,13 @@ Dooray! 조직을 등록하신 후, 조직 하위에 **① 프로젝트를 등�
 
 #### 상담원 관리
 ![](http://static.toastoven.net/prod_contact_center/2.2.6-(7)_6.png)
-연동된 Dooray! 프로젝트의 멤버로 등록된 상담원에게는 서비스 관리 → 상담원 메뉴의 개별 상담원 수정 페이지에서 **① Dooray! 유저키** 항목이 표시됩니다. Dooray! 유저키는 연동된 Dooray! 조직 단위로 관리됩니다.
+Online Contact에서 Dooray! 이관을 통해, 대표 등록자가 아닌 개별 상담원의 이름으로 Dooray! 업무를 생성하기 위해서는 Dooray! 유저키 정보가 필요합니다.
+**① Dooray! 유저키**는 Dooray! 조직 추가 시 해당 Dooray! 조직에 추가된 상담원에게 일괄적으로 발급되며, [서비스 관리 → 상담원] 메뉴의 '상담원' 탭에서 '수정' 버튼 클릭 시 확인하실 수 있는 개별 상담원 정보 수정 페이지에서 확인하실 수 있습니다. (단, 각 조직에 등록된 IAM 회원 정보의 이메일 주소가 동일해야 함)
+Dooray! 조직 추가 이후에 상담원이 신규 추가될 경우, **생성** 버튼을 통해 최초 1회 유저키 수동 발급이 필요합니다.
 
 ## 보안서비스
 ![](http://static.toastoven.net/prod_contact_center/2.2.6-(5).png)
-Online Contact 관리자와의 사전 협의를 통해 계약 정보에서 서비스 관리 → 보안 서비스 기능을 사용 설정하신 경우, 
+Online Contact 관리자와의 사전 협의를 통해 계약 정보에서 서비스 관리 → 보안 서비스 기능을 사용 설정하신 경우,
 **로그 연동** 기능과, 채팅 및 티켓 상담 시 상담 진행을 위해 전달되는 고객의 개인정보를 암호화하여 관리할 수 있는 **개인정보 마스킹** 기능을 사용하실 수 있습니다.
 
 **개인정보 마스킹** 기능은 **보안 서비스** 기능이 **사용** 설정 되어있을 경우 별도의 설정 없이 티켓 관리, 채팅 화면, 채팅 기록 메뉴에서 바로 사용하실 수 있으며,
