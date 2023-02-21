@@ -2,6 +2,7 @@
 
 ### 고객 티켓 리스트
 #### 인터페이스 설명
+
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/ticket/enduser/{usercode}/list.json
 - URL(개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/ticket/enduser/{usercode}/list.json
 
@@ -211,6 +212,7 @@
 
 ### 티켓 상세
 #### 인터페이스 설명
+
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/ticket/enduser/{usercode}/{ticketId}/detail.json
 - URL(개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/ticket/enduser/{usercode}/{ticketId}/detail.json
 
@@ -337,6 +339,7 @@
 
 ### 티켓 첨부파일 열기 및 다운로드
 #### 인터페이스 설명
+
 - URL: https://{domain}.oc.toast.com/{serviceId}/api/v2/ticket/attachments/{id}			 							
 - URL(개발): https://{domain}.alpha-oc.toast.com/{serviceId}/api/v2/ticket/attachments/{id}									
 
@@ -356,6 +359,7 @@ File
 
 ### 고객 재문의
 #### 인터페이스 설명
+
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/ticket/enduser/{usercode}/{ticketId}/comment.json
 - URL(개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/ticket/enduser/{usercode}/{ticketId}/comment.json
 
