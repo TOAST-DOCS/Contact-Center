@@ -1,8 +1,9 @@
 ## Contact Center > Online Contact > API 가이드 > 이메일 설정
 ### 대표계정 생성
 #### 인터페이스 설명
+
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/mail/create.json			
-- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail/create.json				
+- URL(개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail/create.json				
 
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -15,6 +16,7 @@
 |이메일 정보	|mail	|String	|O	|이메일 정보(예:mail@oc.toast.com의 mail 부분)|
 
 #### Query String
+
 - mail=mail
 
 #### 결과 데이터
@@ -50,8 +52,9 @@
 
 ### 이메일 정보 조회
 #### 인터페이스 설명
+
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/mail.json			
-- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail.json			
+- URL(개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail.json			
 
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -95,8 +98,9 @@
 
 ### 외부계정 유효성 체크
 #### 인터페이스 설명
+
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/mail/external/verify.json					
-- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail/external/verify.json			
+- URL(개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail/external/verify.json			
 
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -153,8 +157,9 @@
 
 ### 외부계정 등록
 #### 인터페이스 설명
+
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/mail/external.json			
-- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail/external.json			
+- URL(개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail/external.json			
 
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -229,8 +234,9 @@
 
 ### 외부계정 수정
 #### 인터페이스 설명
+
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/mail/external/{id}.json					
-- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail/external/{id}.json			
+- URL(개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail/external/{id}.json			
 
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -307,8 +313,9 @@
 
 ### 외부계정 활성화
 #### 인터페이스 설명
+
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/mail/external/{id}/enable.json			
-- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail/external/{id}/enable.json			
+- URL(개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail/external/{id}/enable.json			
 
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -361,8 +368,9 @@
 
 ### 외부계정 비활성화
 #### 인터페이스 설명
+
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/mail/external/{id}/disable.json			
-- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail/external/{id}/disable.json				
+- URL(개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail/external/{id}/disable.json				
 
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -416,7 +424,7 @@
 ### 외부계정 삭제
 #### 인터페이스 설명
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/mail/external/{id}.json			
-- URL (개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail/external/{id}.json				
+- URL(개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail/external/{id}.json				
 
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -450,7 +458,7 @@
 ### 이메일 정보 저장
 #### 인터페이스 설명
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/mail.json			
-- URL (개발):	https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail.json			
+- URL(개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail.json			
 
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -463,7 +471,7 @@
 |이메일 설정 정보	 |request body	|String	 |O	 |이메일 설정 정보(JSON)|
 |	                 |name	        |String	 |X	 |발신자 이름(길이:min = 0, max = 45)|
 |	                 |displayMail	  |String	 |X	 |발신자 주소(예：noreply@oc.toast.com)|
-|	                 |template	    |String	 |X	 |이메일 레이아웃. 예) \<p\>\#\{content\}\<\/p\> 해당 이메일 레이아웃은 모든 이메일에 적용됩니다. #{content} 태그는 반드시 추가해야합니다.|
+|	                 |template	    |String	 |X	 |이메일 레이아웃. 예) \<p\>\#\{content\}\<\/p\> 해당 이메일 레이아웃은 모든 이메일에 적용됩니다. #{content} 태그는 반드시 추가해야 합니다.|
 
 #### Request Body
 ```

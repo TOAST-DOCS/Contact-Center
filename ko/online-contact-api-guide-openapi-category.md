@@ -2,6 +2,7 @@
 
 ### 접수유형 리스트
 #### 인터페이스 설명
+
 - URL: https://{domain}.oc.toast.com/{serviceId}/api/v2/ticket/categories.json
 - URL(개발): https://{domain}.alpha-oc.toast.com/{serviceId}/api/v2/ticket/categories.json
 
@@ -150,6 +151,7 @@
 
 ### 접수유형 필드 리스트
 #### 인터페이스 설명
+
 - URL: https://{domain}.oc.toast.com/{serviceId}/api/v2/ticket/field/user/{categoryId}.json
 - URL(개발): https://{domain}.alpha-oc.toast.com/{serviceId}/api/v2/ticket/field/user/{categoryId}.json
 
