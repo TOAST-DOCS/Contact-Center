@@ -1,7 +1,7 @@
 ## Contact Center > Online Contact > Service Guide (Issue) > Ticket Management
 
 ## Ticket
-Escalated tickets could be assigned to groups or agents by trigger conditions (Can set in Service Management → Ticket → Trigger menu), or could be manually assigned.
+Escalated tickets could be assigned to groups or agents by trigger conditions(Can set in Service Management → Ticket → Trigger menu), or could be manually assigned.
 Tickets can be **escalated** from consultation management service, or **created** by the agent of issue management service. 
 Colors given to each inflow channel can be used to classify tickets.
 
@@ -11,15 +11,15 @@ From **① All Tickets** Menu, you could check the **overall situation of ticket
 
 Information which you could check by each **detailed menu** is as follows:
 
--	**③ All Tickets in Group**: You can view the **entire ticket within the group** you belong to.
--	**④ My Tickets in Progress**: When a ticket is assigned to an agent, the status changes to **processing**. In this menu, you can view tickets assigned to you.
--	**⑤ My Tickets in Pending**: If a ticket needs to be additionally checked, the agent can set the ticket status to **pending**. In this menu, you can view tickets which you processed as ‘pending’.
--	**⑥ My Resolved Tickets**: If an agent process a ticket as ‘**resolved**’, the status of the ticket changes to ‘resolved’ and could be viewed at this menu. If the customer resubmits inquiries to the answer mail, the ticket could be processed again.
--	**⑦ My Completed Tickets**: A ticket becomes ‘**completed**’ if the administrator processes the ticket to be ‘**completed**’, or if **two weeks has been past** after the ticket was resolved. Completed tickets cannot be processed.
+- **③ All Tickets in Group**: You can view the **entire ticket within the group** you belong to.
+- **④ My Tickets in Progress**: When a ticket is assigned to an agent, the status changes to **processing**. In this menu, you can view tickets assigned to you.
+- **⑤ My Tickets in Pending**: If a ticket needs to be additionally checked, the agent can set the ticket status to **pending**. In this menu, you can view tickets which you processed as ‘pending’.
+- **⑥ My Resolved Tickets**: If an agent process a ticket as ‘**resolved**’, the status of the ticket changes to ‘resolved’ and could be viewed at this menu. If the customer resubmits inquiries to the answer mail, the ticket could be processed again.
+- **⑦ My Completed Tickets**: A ticket becomes ‘**completed**’ if the administrator processes the ticket to be ‘**completed**’, or if **two weeks has been past** after the ticket was resolved. Completed tickets cannot be processed.
 
 ### Keep Tickets
 ![](http://static.toastoven.net/prod_contact_center/4.1.2-(1)_im_en.png)
-Agents could assign **unassigned** tickets to oneself through ‘**keep**’ button. Click **① Keep** button, and select agent group if you belong to more than one group. 
+Agents could assign **unassigned** tickets to oneself through ‘**keep**’ button. Click **① Keep** button, and select agent group if you belong to more than one group.
 
 If ticket assign is set through trigger, tickets could be assigned according to the trigger conditions. In this case, to change automatically assigned agents, **administrator** of the service could **forward** the ticket to another agent. Click **② Forward** button, and select agent/group.
 
@@ -68,10 +68,10 @@ Tickets could be **② processed** as follows. When a ticket is **resolved** or 
 You could create new tickets through **① Create Ticket** button. Tickets could be created when additional tickets are needed in the process of handling customer inquiries.
 The following items are required to enter when creating a ticket:
 
--	**②** Group
--	**③** Agent
--	**④** Submission Type
--	**⑤** Title, **⑥** Contents
+- **②** Group
+- **③** Agent
+- **④** Submission Type
+- **⑤** Title, **⑥** Contents
 
 ### Personal Data Masking
 If **Security Service** function is **activated** in the contract details, **Masking Personal Information** button is showed in the ticket management page.
@@ -89,16 +89,16 @@ Click **confirm** to remove data masking on the page and database.
 ![](http://static.toastoven.net/prod_contact_center/4.1.3-(1)_1_im_en.png)
 If you click the **① Search Ticket** button in top of the ticket list, conditions of searching tickets will be displayed. The conditions are as follows.
 
--	**Created Time**
--	**Priority**
--	**Ticket ID**
--	**Title**
--	**Group/Agent**
--	**Status** 
--	**Channel** 
--	**Submission Type**
--	**Processing Type**
--	**Name**
--	**ID**
--	**Email**
--	**Phone**
+- **Created Time**
+- **Priority**
+- **Ticket ID**
+- **Title**
+- **Group/Agent**
+- **Status**
+- **Channel**
+- **Submission Type**
+- **Processing Type**
+- **Name**
+- **ID**
+- **Email**
+- **Phone**

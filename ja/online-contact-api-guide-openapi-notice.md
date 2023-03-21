@@ -332,7 +332,7 @@ sortパラメータの形式および例は下記のとおりです。
 #### インターフェース説明
 - URL: https://{domain}.oc.toast.com/{serviceId}/api/v2/notice/detail/{id}.json
 - URL(開発): https://{domain}.alpha-oc.toast.com/{serviceId}/api/v2/notice/detail/{id}.json
-		
+
 |インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
 |お知らせ詳細|HTTPS  |GET    |UTF-8|JSON    |お知らせIDでお知らせ内容を取得|必要なし|

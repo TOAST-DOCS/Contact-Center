@@ -1,15 +1,14 @@
 ## Contact Center > Online Contact > Service Guide (Consultation) > Chat
 
-
 ## Default Settings
-Chat consultation is available by **enabling** chat function in help center, or by adding **chat widget** to web page through chat screen insertion code. 
+Chat consultation is available by **enabling** chat function in help center, or by adding **chat widget** to web page through chat screen insertion code.
 
 You could enable chat function in [Service Management → Help Center → Default Settings] menu, and if chat function is enabled you could set following functions in [Service Management → Chat] menu.
 
--	Default Settings: Set **Greeting message** which is sent at the start of the chat, and **Satisfaction guide message** which is sent when the agent sends evaluation request to the customer.
--	Agent Assignment Settings: Enable or disable **assign chat priority** to agent with recent chat history with the corresponding customer. 
--	Chat Screen Insertion Code: If you want to insert chat widget to your service web page to provide Online Contact’s chat consultation service to customers, check **insertion code** in this menu. 
--	Manage Category: Can set **processing type** which agents enter about the relevant chat consultation by 1 to 3 depth.
+- Default Settings: Set **Greeting message** which is sent at the start of the chat, and **Satisfaction guide message** which is sent when the agent sends evaluation request to the customer.
+- Agent Assignment Settings: Enable or disable **assign chat priority** to agent with recent chat history with the corresponding customer.
+- Chat Screen Insertion Code: If you want to insert chat widget to your service web page to provide Online Contact’s chat consultation service to customers, check **insertion code** in this menu.
+- Manage Category: Can set **processing type** which agents enter about the relevant chat consultation by 1 to 3 depth.
 
 ✔ **\[FAQ]** [Can I access to the chat screen only from the service which I have chat permission?](https://nhn-contact.oc.toast.com/oceng/hc/article/151/)
 ✔ **\[FAQ]** [Can I set chat function so that only logged-in users can participate?](https://nhn-contact.oc.toast.com/oceng/hc/article/136/)
@@ -39,16 +38,16 @@ The following items can be checked and entered in customer information and consu
 
 **③ Customer Information**
 
--	Name
--	Email
--	Remarks
--	IP address
--	Device
+- Name
+- Email
+- Remarks
+- IP address
+- Device
 
 **④ Consultation Information**
 
--	Channel: **The accessed path** when the customer requested chat consultation 
--	Process type: **Process type** which agent enters about chat consultation with the relevant customer. Can set in [Service Management → Chat → Manage Category] menu
+- Channel: **The accessed path** when the customer requested chat consultation 
+- Process type: **Process type** which agent enters about chat consultation with the relevant customer. Can set in [Service Management → Chat → Manage Category] menu
 
 If there is anything that needs to be processed in addition to chat consultation, you could create tickets through **⑤ Create Ticket** button. The **channel** of the created ticket will be displayed as ‘**chatting**’, and ‘**Chat History**’ menu will be displayed when the ticket is clicked. Through the menu, you can refer to chat history when processing tickets.
 
@@ -69,5 +68,5 @@ You could **② search** logs and extract chat records that meet your criteria i
 
 **③ Status values** which you can view in chat logs are divided as follows:
 
--	Processed: The case which the agent clicked the customer’s chat request, and **have replied** to the customer.
--	Unprocessed: The case which the agent did not click the customer’s chat request, or did not replied to the customer. (Same with **Give up** in [Report] menu)
+- Processed: The case which the agent clicked the customer’s chat request, and **have replied** to the customer.
+- Unprocessed: The case which the agent did not click the customer’s chat request, or did not replied to the customer. (Same with **Give up** in [Report] menu)

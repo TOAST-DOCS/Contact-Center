@@ -117,7 +117,7 @@ Callback url is the type of result that the **entered callback address is called
 
 ##### Dooray Notification
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(2)g_en.png)
-If the trigger conditions are met, information of the ticket is sent via Dooray notification based on the template set by the **① Template Settings** button. For the link URL, see [Dooray Messenger Service Guide](https://docs.toast.com/en/Dooray/Messenger/en/service-guide/#receive-web-hookproject-notification) for instructions.
+If the trigger conditions are met, information of the ticket is sent via Dooray notification based on the template set by the **① Template Settings** button. For the link URL, see [Dooray Messenger Service Guide](https://helpdesk.dooray.com/share/pages/4Ws8UzbnT7KbP9R5fAQBjg/2956645181839458938) for instructions.
 
 ### Field
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(3)_en.png)
@@ -146,8 +146,8 @@ In the case of **system fields**, it is possible to modify **'Field Name'**, **'
 
 The modification of **② 'Required'**, **'Exposured'** is determined by the kind of field.
 
-- System Fields required for Help Center (Type, Email, Title, Contents, Personal Information) : 'Required'/'Exposured' default value 'Yes', cannot change value.
-- System Fields related to Call (Consultation Time, IN/OUT, Call Reservation, Call Reservation Time, Call Reservation Phone Number) : 'Exposured' default value 'No', cannot change value.
+- System Fields required for Help Center (Type, Email, Title, Contents, Personal Information): 'Required'/'Exposured' default value 'Yes', cannot change value.
+- System Fields related to Call (Consultation Time, IN/OUT, Call Reservation, Call Reservation Time, Call Reservation Phone Number): 'Exposured' default value 'No', cannot change value.
 
 #### Field Management (User Field)
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(5)_3_en.png)
@@ -156,15 +156,15 @@ The modification of **② 'Required'**, **'Exposured'** is determined by the kin
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(6)_1_en.png)
 For adding customer fields, items required to be filled are as follows:
 
-- **① Field type** : The **type of field**. If you select the field type, **Detailed Settings** and **Preview** will be displayed at the bottom of Basic Settings. Detailed settings allow you to set the values to be displayed for the field, and you can use preview to see what the field will look like on the customer's screen.
-- **② Field code** : When developing inquiry feature with Open API, field code is used as a unique value to represent the field.
-- **③ Field Name** : The name of the field, which appears with the field on the Inquiry screen. Can be set for each help center language set on [Global Management → Contract Service Status → Basic Information] menu.
-- **④ Notice** : A guide phrase for the field, which appears with the field on the Inquiry screen. Can be set for each help center language set on [Global Management → Contract Service Status → Basic Information] menu.
-- **⑤ Required** : When set, it is marked with a \*(star) to the right of the field name and must be filled before you move on to the next field. Among the default fields, type, email, title, contents, personal information must be set to ‘required’.
-- **⑥ Personal information (Encrypt or not)**
+- **① Field type**: The **type of field**. If you select the field type, **Detailed Settings** and **Preview** will be displayed at the bottom of Basic Settings. Detailed settings allow you to set the values to be displayed for the field, and you can use preview to see what the field will look like on the customer's screen.
+- **② Field code**: When developing inquiry feature with Open API, field code is used as a unique value to represent the field.
+- **③ Field Name**: The name of the field, which appears with the field on the Inquiry screen. Can be set for each help center language set on [Global Management → Contract Service Status → Basic Information] menu.
+- **④ Notice**: A guide phrase for the field, which appears with the field on the Inquiry screen. Can be set for each help center language set on [Global Management → Contract Service Status → Basic Information] menu.
+- **⑤ Required**: When set, it is marked with a \*(star) to the right of the field name and must be filled before you move on to the next field. Among the default fields, type, email, title, contents, personal information must be set to ‘required’.
+- **⑥ Personal information(Encrypt or not)**
 - **⑦ Destroy personal information**
 
-For agent fields, **Permission** (Administrator, Agent) item is additionally required to be filled.
+For agent fields, **Permission**(Administrator, Agent) item is additionally required to be filled.
 
 ### Manage Template
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(7)_en.png)
@@ -176,17 +176,17 @@ At **Template Registration** tab, you could **add** templates, **② search** te
 You could serach templates by title, processing type, search code. In the **③ template list**, information are displayed as follows :
 
 - Title
-- Processing Type : Type **connected** to the template
-- Search Code : **Code** which can be used when searching templates
-- Number of Use : The **number of times** which the template was **selected**
+- Processing Type: Type **connected** to the template
+- Search Code: **Code** which can be used when searching templates
+- Number of Use: The **number of times** which the template was **selected**
 
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(7)_2_en.png)
 If you click **① Add Template** button, pop-up screen for setting template will be displayed.
 
 - **② Template Title**
-- **③ Contents** : Content editor is displayed in **HTML** or **TEXT** mode according to the editor type setting value in [Global Management → Contract Service Status → Basic Information] menu. **Replacement code** could be used when writing contents. **Double-click** adds the code to the contents, and data is inserted into code area of the template when processing tickets, making it more convenient to write replies.
-- **④ Search Code** : **Code** which can be used when searching templates. (English or number combination within 20 characters)
-- **⑤ Template Connection** : You can **select processing types** to connect to the template. **Check** the type you want to move, and press the **arrow** button.
+- **③ Contents**: Content editor is displayed in **HTML** or **TEXT** mode according to the editor type setting value in [Global Management → Contract Service Status → Basic Information] menu. **Replacement code** could be used when writing contents. **Double-click** adds the code to the contents, and data is inserted into code area of the template when processing tickets, making it more convenient to write replies.
+- **④ Search Code**: **Code** which can be used when searching templates. (English or number combination within 20 characters)
+- **⑤ Template Connection**: You can **select processing types** to connect to the template. **Check** the type you want to move, and press the **arrow** button.
 
 You can insert **links**, **images**, and **tables** into the body when you right-click on the body of the content, and when inserting images, you can use the path of the uploaded image from the Service Management → Help Center → Manage File Uploads menu or by attaching the image directly.
 
@@ -258,7 +258,7 @@ Select one of the above two methods to register IAM member., and click **② Add
 
 When adding a agent, assigning group is mandatory. Thus, adding groups should be proceeded before adding agents.
 
-The **permission** of agents is as follows. Setting organization administrator permission is available from [Global Management → Organization Administrator](https://docs.toast.com/en/Contact%20Center/en/online-contact-guide-global-management/#organization-adminstrator) menu.
+The **permission** of agents is as follows. Setting organization administrator permission is available from [Global Management → Organization Administrator](https://docs.nhncloud.com/en/Contact%20Center/en/online-contact-guide-global-management/#organization-adminstrator) menu.
 
 - Administrator: Permission which features related to **service setting** added to the permission of **agents**.
 - Agent: Permission for **ticket, call, chat consultation**.
@@ -789,7 +789,7 @@ Functions you can manage are as follows:
 - 1:1 Inquiry & My Inquiries
 - Chat
 - Help center navigation
-- Company Informaton (Can be added/modified in Global Management → Company Information Management menu)
+- Company Informaton(Can be added/modified in Global Management → Company Information Management menu)
 
 ### Member Interlink
 ![](http://static.toastoven.net/prod_contact_center/2.2.5-(5)_1_en.png)
@@ -799,8 +799,8 @@ Member Interlink function could be **① activated/deactivated** through the but
 
 API guide for each **login method** is linked below.
 
-- [Online Contact > API Guide for Developers > Member Integration (POST)](https://docs.toast.com/en/Contact%20Center/en/online-contact-api-guide-openapi-sso/)
-- [Online Contact > API Guide for Developers > Member Integration (GET)](https://docs.toast.com/en/Contact%20Center/en/online-contact-api-guide-openapi-member-get/)
+- [Online Contact > API Guide for Developers > Member Integration (POST)](https://docs.nhncloud.com/en/Contact%20Center/en/online-contact-api-guide-openapi-sso/)
+- [Online Contact > API Guide for Developers > Member Integration (GET)](https://docs.nhncloud.com/en/Contact%20Center/en/online-contact-api-guide-openapi-member-get/)
 
 ### Multilingual Management
 For each help center language set in [Global Management → Contract Service Status → Basic Information] menu, you can manage multilingual codes and tags to use in language-specific help centers.

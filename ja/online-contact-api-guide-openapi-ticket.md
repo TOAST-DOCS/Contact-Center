@@ -337,8 +337,8 @@
 
 ### チケット添付ファイルを開く/ダウンロード
 #### インターフェース説明
-- URL: https://{domain}.oc.toast.com/{serviceId}/api/v2/ticket/attachments/{id}		
-- URL(開発): https://{domain}.alpha-oc.toast.com/{serviceId}/api/v2/ticket/attachments/{id}									
+- URL: https://{domain}.oc.toast.com/{serviceId}/api/v2/ticket/attachments/{id}
+- URL(開発): https://{domain}.alpha-oc.toast.com/{serviceId}/api/v2/ticket/attachments/{id}
 
 |インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|

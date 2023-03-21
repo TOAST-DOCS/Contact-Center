@@ -1,6 +1,6 @@
 ## Contact Center > Online Contact > API Guide for Developers > Customer Data Connection
 
-This function is provided for obtaining **customer information according to the media number from client company through API** when **call inquiry** has been requested. 
+This function is provided for obtaining **customer information according to the media number from client company through API** when **call inquiry** has been requested.
 
 Request URL: API URL of client company
 Response Type: JSON

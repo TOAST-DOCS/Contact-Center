@@ -1,7 +1,7 @@
 ## Contact Center > Online Contact > Service Guide (Consultation) > Guide
 
 ## Internal Notice
-In this menu, administrators could register **notice** which should be shared within the organization. Registered notice documents are viewed in the **relevant menu**, and **main page of Online Contact**. 
+In this menu, administrators could register **notice** which should be shared within the organization. Registered notice documents are viewed in the **relevant menu**, and **main page of Online Contact**.
 
 ### Manage Heading
 ![](http://static.toastoven.net/prod_contact_center/7.1-(2)_en.png)
@@ -9,8 +9,8 @@ Before registering notice documents, you could add **headings** which documents 
 
 Headings of internal notice are divided as follows:
 
--	**①** Private: Heading which is used **only in the relevant service**
--	**②** Common: Heading which is used in **the entire service in the organization**. When registered, it is registered commonly to all services inside the organization.
+- **①** Private: Heading which is used **only in the relevant service**
+- **②** Common: Heading which is used in **the entire service in the organization**. When registered, it is registered commonly to all services inside the organization.
 
 You can register headings by selecting heading classification, entering name and pressing the registration button, and you can edit and delete headings.
 
@@ -22,13 +22,13 @@ From distribute document menu, you could view or search information related to n
 
 Viewable information is as follows:
 
--	Number
--	Status (In Progress/Reserved/Done)
--	Heading
--	Title
--	Tag
--	Registrant
--	Registered Time
+- Number
+- Status(In Progress/Reserved/Done)
+- Heading
+- Title
+- Tag
+- Registrant
+- Registered Time
 
 ### Manage Template
 ![](http://static.toastoven.net/prod_contact_center/7.1-(4)_en.png)
@@ -50,8 +50,8 @@ Items which need to be filled are as follows:
 
 Tags are divided as follows:
 
--	**①** Private: Tags which is used **only in the relevant service**
--	**②** Common: Tags which is used in **the entire service in the organization**. When registered, it is registered commonly to all services inside the organization.
+- **①** Private: Tags which is used **only in the relevant service**
+- **②** Common: Tags which is used in **the entire service in the organization**. When registered, it is registered commonly to all services inside the organization.
 
 You can register tags by selecting classification, entering name and pressing the **③ registration** button.
 Please note that tag names cannot be duplicated, regardless of whether they are private or common.
@@ -82,8 +82,8 @@ Before registering knowledge documents, you could add **headings** which documen
 
 Headings of internal notice are divided as follows:
 
--	**①** Private: Heading which is used **only in the relevant service**
--	**②** Common: Heading which is used in **the entire service in the organization**. When registered, it is registered commonly to all services inside the organization.
+- **①** Private: Heading which is used **only in the relevant service**
+- **②** Common: Heading which is used in **the entire service in the organization**. When registered, it is registered commonly to all services inside the organization.
 
 You can register headings by selecting heading classification, entering name and pressing the **registration** button, and you can edit and delete headings.
 
@@ -95,13 +95,13 @@ From consultation knowledge menu, you could view, or search information related 
 
 Viewable information is as follows:
 
--	Number
--	Status (In Progress/Reserved/Done)
--	Heading
--	Title
--	Tag
--	Registrant
--	Registered Time
+- Number
+- Status(In Progress/Reserved/Done)
+- Heading
+- Title
+- Tag
+- Registrant
+- Registered Time
 
 ### Manage Template
 ![](http://static.toastoven.net/prod_contact_center/7.2-(4)_en.png)
@@ -123,8 +123,8 @@ Items which need to be filled are as follows:
 
 Tags are divided as follows:
 
--	**①** Private: Tags which is used **only in the relevant service**
--	**②** Common: Tags which is used in **the entire service in the organization**. When registered, it is registered commonly to all services inside the organization.
+- **①** Private: Tags which is used **only in the relevant service**
+- **②** Common: Tags which is used in **the entire service in the organization**. When registered, it is registered commonly to all services inside the organization.
 
 You can register tags by selecting classification, entering name and pressing the **③ registration** button.
 Please note that tag names **cannot be duplicated**, regardless of whether they are private or common.

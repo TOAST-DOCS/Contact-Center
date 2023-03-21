@@ -3,7 +3,7 @@
 ### Create representative account
 #### Interface Description
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/mail/create.json			
-- URL (Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail/create.json				
+- URL(Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail/create.json				
 
 |Interface name | Protocol | Call direction | Encoding | Result format | Interface description | Access restricted|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -52,7 +52,7 @@
 ### Query email information
 #### Interface Description
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/mail.json			
-- URL (Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail.json			
+- URL(Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail.json			
 
 |Interface name | Protocol | Call direction | Encoding | Result format | Interface description | Access restricted|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -97,7 +97,7 @@
 ### Check Validation of External Account
 #### Interface Description
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/mail/external/verify.json					
-- URL (Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail/external/verify.json			
+- URL(Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail/external/verify.json			
 
 |Interface name | Protocol | Call direction | Encoding | Result format | Interface description | Access restricted|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -155,7 +155,7 @@
 ### Register External Account
 #### Interface Description
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/mail/external.json			
-- URL (Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail/external.json			
+- URL(Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail/external.json			
 
 |Interface name | Protocol | Call direction | Encoding | Result format | Interface description | Access restricted|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -231,7 +231,7 @@
 ### Edit External Account
 #### Interface Description
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/mail/external/{id}.json					
-- URL (Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail/external/{id}.json			
+- URL(Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail/external/{id}.json			
 
 |Interface name | Protocol | Call direction | Encoding | Result format | Interface description | Access restricted|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -309,7 +309,7 @@
 ### Enable External Account
 #### Interface Description
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/mail/external/{id}/enable.json			
-- URL (Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail/external/{id}/enable.json			
+- URL(Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail/external/{id}/enable.json			
 
 |Interface name | Protocol | Call direction | Encoding | Result format | Interface description | Access restricted|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -363,7 +363,7 @@
 ### Disable External Account
 #### Interface Description
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/mail/external/{id}/disable.json			
-- URL (Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail/external/{id}/disable.json				
+- URL(Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail/external/{id}/disable.json				
 
 |Interface name | Protocol | Call direction | Encoding | Result format | Interface description | Access restricted|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -417,7 +417,7 @@
 ### Delete External Account
 #### Interface Description
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/mail/external/{id}.json			
-- URL (Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail/external/{id}.json				
+- URL(Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail/external/{id}.json				
 
 |Interface name | Protocol | Call direction | Encoding | Result format | Interface description | Access restricted|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -451,7 +451,7 @@
 ### Save email information
 #### Interface Description
 - URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/mail.json			
-- URL (Dev):	https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail.json			
+- URL(Dev):	https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail.json			
 
 |Interface name | Protocol | Call direction | Encoding | Result format | Interface description | Access restricted|
 |------------|-------|--------|-----|--------|--------------|------------|

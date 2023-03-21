@@ -10,7 +10,7 @@ In this menu, you could view callback list through search conditions. **Administ
 Search conditions are as follows, and searching is available through clicking  **① Search** button.
 
 - Query Time
-- IVR Route : IVR route added in Service Management → Call → IVR Route Management menu
+- IVR Route: IVR route added in Service Management → Call → IVR Route Management menu
 - Status
 - Phone
 - Assign
@@ -31,8 +31,8 @@ You can select a callback request from the left callback list screen, and then s
 
 Methods of assignment are as follows:
 
-- **③ Average Assign** : If you select multiple agents and select average assign, selected callback request will be assigned to one of the selected agents.
-- **④ Manual Assign** : Callback request will be assigned to the selected agent.
+- **③ Average Assign**: If you select multiple agents and select average assign, selected callback request will be assigned to one of the selected agents.
+- **④ Manual Assign**: Callback request will be assigned to the selected agent.
 
 If **⑤ CTI** is checked, only agents who are currently logged in to CTI are listed.
 
