@@ -4,7 +4,7 @@
 #### インターフェース説明
 - URL: https://{domain}.oc.toast.com/{serviceId}/api/v2/helpdoc/categories.json
 - URL(開発): https://{domain}.alpha-oc.toast.com/{serviceId}/api/v2/helpdoc/categories.json
-			
+
 |インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
 |カテゴリーリスト|HTTPS  |GET    |UTF-8|JSON    |FAQカテゴリーリスト取得|必要なし|
@@ -135,7 +135,7 @@
 #### インターフェース説明
 - URL: https://{domain}.oc.toast.com/{serviceId}/api/v2/helpdoc/list.json
 - URL(開発): https://{domain}.alpha-oc.toast.com/{serviceId}/api/v2/helpdoc/list.json
-	
+
 |インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
 |FAQリスト|HTTPS  |GET    |UTF-8|JSON    |ヘルプセンターFAQリスト| 必要なし   |

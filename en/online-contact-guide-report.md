@@ -9,19 +9,19 @@ You could **① search** on a daily/weekly/monthly received date/processed date 
 
 **Pending**, **Resolved**, **Complete** on ticket are divided as follows:
 
--	Pending: Type of ticket processing to choose when creating an **interim response** before delivering final mail to the customer 
--	Resolved: Type of ticket processing to choose when **delivering final mail** to the customer.
--	Complete: Tickets that have been processed **completed** by the administrator or tickets that have been **two weeks** since they were resolved.
+- Pending: Type of ticket processing to choose when creating an **interim response** before delivering final mail to the customer 
+- Resolved: Type of ticket processing to choose when **delivering final mail** to the customer.
+- Complete: Tickets that have been processed **completed** by the administrator or tickets that have been **two weeks** since they were resolved.
 
 **Received Date**, **Processed Date** are divided as follows:
 
--	Received Date: Statistic of the number of inquiries **received and processed** during the period
--	Processed Date: Statistic of the number of inquiries **processed** during the period
+- Received Date: Statistic of the number of inquiries **received and processed** during the period
+- Processed Date: Statistic of the number of inquiries **processed** during the period
 
 **Give up**, **Processing** in chat are divided as follows:
 
--	Give up: The case which the agent **did not click the customer’s chat request**, or **did not replied** to the customer
--	Processing: The case which the agent clicked the customer’s chat request, and **have replied** to the customer
+- Give up: The case which the agent **did not click the customer’s chat request**, or **did not replied** to the customer
+- Processing: The case which the agent clicked the customer’s chat request, and **have replied** to the customer
 
 You could download tabular data based on the conditions applied to Excel, by **② Download** button.
 
@@ -34,19 +34,19 @@ You could **① search** based on the total/average, processing type/submission 
 
 **Pending**, **Resolved**, **Complete** on ticket are divided as follows:
 
--	Pending: Type of ticket processing to choose when creating an **interim response** before delivering final mail to the customer 
--	Resolved: Type of ticket processing to choose when **delivering final mail** to the customer.
--	Complete: Tickets that have been processed **completed** by the administrator or tickets that have been **two weeks** since they were resolved.
+- Pending: Type of ticket processing to choose when creating an **interim response** before delivering final mail to the customer
+- Resolved: Type of ticket processing to choose when **delivering final mail** to the customer.
+- Complete: Tickets that have been processed **completed** by the administrator or tickets that have been **two weeks** since they were resolved.
 
 **Received Date**, **Processed Date** are divided as follows:
 
--	Received Date: Statistic of the number of inquiries **received and processed** during the period
--	Processed Date: Statistic of the number of inquiries **processed** during the period
+- Received Date: Statistic of the number of inquiries **received and processed** during the period
+- Processed Date: Statistic of the number of inquiries **processed** during the period
 
 **Give up**, **Processing** in chat are divided as follows:
 
--	Give up: The case which the agent **did not click the customer’s chat request**, or **did not replied** to the customer
--	Processing: The case which the agent clicked the customer’s chat request, and **have replied** to the customer
+- Give up: The case which the agent **did not click the customer’s chat request**, or **did not replied** to the customer
+- Processing: The case which the agent clicked the customer’s chat request, and **have replied** to the customer
 
 You could download tabular data based on the conditions applied to Excel, by **② Download** button.
 
@@ -61,19 +61,19 @@ You could **① search** based on the total/average, agent group, and received d
 
 **Pending**, **Resolved**, **Complete** on ticket are divided as follows:
 
--	Pending: Type of ticket processing to choose when creating an **interim response** before delivering final mail to the customer 
--	Resolved: Type of ticket processing to choose when **delivering final mail** to the customer.
--	Complete: Tickets that have been processed **completed** by the administrator or tickets that have been **two weeks** since they were resolved.
+- Pending: Type of ticket processing to choose when creating an **interim response** before delivering final mail to the customer
+- Resolved: Type of ticket processing to choose when **delivering final mail** to the customer.
+- Complete: Tickets that have been processed **completed** by the administrator or tickets that have been **two weeks** since they were resolved.
 
 **Received Date**, **Processed Date** are divided as follows:
 
--	Received Date: Statistic of the number of inquiries **received and processed** during the period
--	Processed Date: Statistic of the number of inquiries **processed** during the period
+- Received Date: Statistic of the number of inquiries **received and processed** during the period
+- Processed Date: Statistic of the number of inquiries **processed** during the period
 
 **Give up**, **Processing** in chat are divided as follows:
 
--	Give up: The case which the agent **did not click the customer’s chat request**, or **did not replied** to the customer
--	Processing: The case which the agent clicked the customer’s chat request, and **have replied** to the customer
+- Give up: The case which the agent **did not click the customer’s chat request**, or **did not replied** to the customer
+- Processing: The case which the agent clicked the customer’s chat request, and **have replied** to the customer
 
 You could download tabular data based on the conditions applied to Excel, by **② Download** button.
 
@@ -81,6 +81,6 @@ You could download tabular data based on the conditions applied to Excel, by **�
 
 ### Satisfaction Statistics
 ![](http://static.toastoven.net/prod_contact_center/6.4-(1)_en.png)
-Statistics in this menu shows **satisfaction status ** for chats. You could **① search** the graph of satisfaction & dissatisfaction cases, satisfaction of counseling, and the table of chat satisfaction details depending on a daily/week/monthly basis.
+Statistics in this menu shows **satisfaction status** for chats. You could **① search** the graph of satisfaction & dissatisfaction cases, satisfaction of counseling, and the table of chat satisfaction details depending on a daily/week/monthly basis.
 
 You could download tabular data based on the conditions applied to Excel, by **② Download** button.

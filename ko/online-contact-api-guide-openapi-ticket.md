@@ -340,8 +340,8 @@
 ### 티켓 첨부파일 열기 및 다운로드
 #### 인터페이스 설명
 
-- URL: https://{domain}.oc.toast.com/{serviceId}/api/v2/ticket/attachments/{id}			 							
-- URL(개발): https://{domain}.alpha-oc.toast.com/{serviceId}/api/v2/ticket/attachments/{id}									
+- URL: https://{domain}.oc.toast.com/{serviceId}/api/v2/ticket/attachments/{id}
+- URL(개발): https://{domain}.alpha-oc.toast.com/{serviceId}/api/v2/ticket/attachments/{id}
 
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
 |------------|-------|--------|-----|--------|--------------|------------|

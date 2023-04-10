@@ -332,7 +332,7 @@ The format and example of sort parameter is as follows.
 #### Interface Description
 - URL: https://{domain}.oc.toast.com/{serviceId}/api/v2/notice/detail/{id}.json
 - URL(Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/api/v2/notice/detail/{id}.json
-		
+
 |Interface name | Protocol | Call direction | Encoding | Result format | Interface description | Access restriction|
 |------------|-------|--------|-----|--------|--------------|------------|
 |Notice Details|HTTPS  |GET    |UTF-8|JSON    |Obtain the contents of notice through notice ID|No need|
@@ -347,68 +347,68 @@ The format and example of sort parameter is as follows.
 #### Result Data
 |Name |Variable |Data type |Description|
 |-----|----|-----------|------|
-|result.content	|noticeId	                |Integer	|Notice ID|
-|	              |categoryId	              |Integer	|Heading ID|
-|	              |isTop	                  |Boolean	|Top fixed marking|
-|	              |title	                  |String		|Notice title|
-|	              |content	                |String		|Notice contents|
-|	              |displayDt	              |String		|Displayed time(yyyyMMddHHmmss)|
-|	              |attachmentYn	            |Boolean	|Whether attachments are included，value(true: included; false: not included)|
-|	              |readCnt	                |Integer	|Number of views|
-|	              |updatedDt	              |Long		  |Updated time|
-|	              |attachments	            |Array		|Notice attachments|
-|	              |attachments.attachmentId	|String		|Attachment ID|
-|	              |attachments.fileName	    |String		|Attachment Name|
-|	              |attachments.contentType	|String		|Attachment type|
-|	              |attachments.size	        |Long		  |Attachment size|
-|	              |tags	                    |Array		|Notice tags|
-|	              |tags.tagId	              |Integer	|Tag ID|
-|	              |tags.tag	                |String		|Tag name|
-|               |categoryName	            |String		|Heading name|
-|	              |isNew	                  |String		|Whether the notice is new or not. true: Displayed time(displayDt) value is today, false: Displayed time(displayDt) value is not today|
+|result.content	|noticeId	                |Integer|Notice ID|
+|	              |categoryId	              |Integer|Heading ID|
+|	              |isTop	                  |Boolean|Top fixed marking|
+|	              |title	                  |String|Notice title|
+|	              |content	                |String|Notice contents|
+|	              |displayDt	              |String|Displayed time(yyyyMMddHHmmss)|
+|	              |attachmentYn	            |Boolean|Whether attachments are included，value(true: included; false: not included)|
+|	              |readCnt	                |Integer|Number of views|
+|	              |updatedDt	              |Long  |Updated time|
+|	              |attachments	            |Array|Notice attachments|
+|	              |attachments.attachmentId	|String|Attachment ID|
+|	              |attachments.fileName	    |String|Attachment Name|
+|	              |attachments.contentType	|String|Attachment type|
+|	              |attachments.size	        |Long  |Attachment size|
+|	              |tags	                    |Array|Notice tags|
+|	              |tags.tagId	              |Integer|Tag ID|
+|	              |tags.tag	                |String|Tag name|
+|               |categoryName	            |String|Heading name|
+|	              |isNew	                  |String|Whether the notice is new or not. true: Displayed time(displayDt) value is today, false: Displayed time(displayDt) value is not today|
 
 #### Response Body
 ```
-{	
-    "header": {	
-        "resultCode": 200,	
-        "resultMessage": "",	
-        "isSuccessful": true	
-    },	
-    "result": {	
-        "content": {	
-            "noticeId": 1240,	
-            "categoryId": 2543,	
-            "isTop": true,	
-            "title": "공지제목6",	
-            "content": "<p>공지내용6</p>",	
-            "displayDt": "2022.07.08",	
-            "attachmentYn": "Y",	
-            "readCnt": 5,	
-            "updatedDt": 1658114209000,	
-            "attachments": [	
-                {	
-                    "attachmentId": "42fb4c8801ed4c278475f70f531b8c92",	
-                    "fileName": "logo_footer.png",	
-                    "contentType": "image/png",	
-                    "size": 1412	
-                }	
-            ],	
-            "tags": [	
-                {	
-                    "tagId": 391,	
-                    "tag": "태그1"	
-                },	
-                {	
-                    "tagId": 392,	
-                    "tag": "태그2"	
-                }	
-            ],	
-            "categoryName": "유형1",	
-            "isNew": false	
-        }	
-    }	
-}	
+{
+    "header": {
+        "resultCode": 200,
+        "resultMessage": "",
+        "isSuccessful": true
+    },
+    "result": {
+        "content": {
+            "noticeId": 1240,
+            "categoryId": 2543,
+            "isTop": true,
+            "title": "공지제목6",
+            "content": "<p>공지내용6</p>",
+            "displayDt": "2022.07.08",
+            "attachmentYn": "Y",
+            "readCnt": 5,
+            "updatedDt": 1658114209000,
+            "attachments": [
+                {
+                    "attachmentId": "42fb4c8801ed4c278475f70f531b8c92",
+                    "fileName": "logo_footer.png",
+                    "contentType": "image/png",
+                    "size": 1412
+                }
+            ],
+            "tags": [
+                {
+                    "tagId": 391,
+                    "tag": "태그1"
+                },
+                {
+                    "tagId": 392,
+                    "tag": "태그2"
+                }
+            ],
+            "categoryName": "유형1",
+            "isNew": false
+        }
+    }
+}
 ```
 
 ### Open and Download Notice Attachments

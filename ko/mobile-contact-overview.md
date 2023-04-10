@@ -6,6 +6,3 @@
 
 ![](http://static.toastoven.net/prod_contact_center/img_summary_mc_202203_mod.png)
 ![](http://static.toastoven.net/prod_contact_center/img_summary_mc_202203_4.png)
-
-
-

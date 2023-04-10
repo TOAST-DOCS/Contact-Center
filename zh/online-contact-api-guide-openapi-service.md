@@ -12,7 +12,7 @@
 #### Request Parameters
 |Name |Variable |Data type |Variable type|Required | Description|
 |-----|---------|----------|-------------|---------|------------|
-|Service ID	|serviceId	|String	|path    |O	       |Service ID，{serviceId} which is set in URL path|
+|Service ID|serviceId|String|path    |O       |Service ID，{serviceId} which is set in URL path|
 
 #### Result Data
 |Name |Variable |Data type |Description|

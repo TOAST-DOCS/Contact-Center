@@ -337,8 +337,8 @@
 
 ### Open and Download Ticket Attachments
 #### Interface Description
-- URL: https://{domain}.oc.toast.com/{serviceId}/api/v2/ticket/attachments/{id}			 							
-- URL(Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/api/v2/ticket/attachments/{id}									
+- URL: https://{domain}.oc.toast.com/{serviceId}/api/v2/ticket/attachments/{id}
+- URL(Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/api/v2/ticket/attachments/{id}
 
 |Interface name | Protocol | Call direction | Encoding | Result format | Interface description | Access restriction|
 |------------|-------|--------|-----|--------|--------------|------------|

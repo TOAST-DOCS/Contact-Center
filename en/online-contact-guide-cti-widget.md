@@ -8,9 +8,9 @@ When call function is activated, **call icon** is displayed to the call authoriz
 Agent which CTI information is registered in Global Management → CTI Management → CTI Agent Management menu could login to the CTI through **① Login** button. After login is completed, the CTI screen is changed to **② default screen**, and the following functions are able to use.
 
 - Logout
-- Rest : Set agent status to rest, call request not allocated in this status.
-- Ready : Set Agent status to ready, call request allocated when inbound call exists.
-- Business : Can choose between Education, Report, Meeting, Ticket, Chat, Monitor. Call request not allocated in this status.
+- Rest: Set agent status to rest, call request not allocated in this status.
+- Ready: Set Agent status to ready, call request allocated when inbound call exists.
+- Business: Can choose between Education, Report, Meeting, Ticket, Chat, Monitor. Call request not allocated in this status.
 - Dial up: Can make outbound call after setting customer number, calling number. (Can set in Service Management → Call → Send No Management menu)
 
 ✔ **\[FAQ]** [I have problems with CTI login.](https://nhn-contact.oc.toast.com/oceng/hc/article/152/)
@@ -31,7 +31,7 @@ When calling is proceeded, the agent status would be changed to **Dialing**, and
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(13)_en.png)
 In **Talking** status, you can use the following functions through the CTI screen.
 
-- Transfer : You can **transfer** the currently connected call to other agent. After entering agent number or searching agent, you can discuss with the other agent through **transfer try** button, and can transfer the call through **transfer connect** button. 
+- Transfer: You can **transfer** the currently connected call to other agent. After entering agent number or searching agent, you can discuss with the other agent through **transfer try** button, and can transfer the call through **transfer connect** button. 
 - Disconnect: In the case of a situation where **normal consultation is difficult to take place due to the customer's strong attitude**, click disconnect to finish call with an ARS announcement.
 - Hold: If you need a moment of confirmation or inquiry while consulting, select Hold. **Music will be transmissed** to the customer, and agent status will be changed to **holding**. Click **retrieve** to reconnect call.
 - Hang up: Call will be finished.

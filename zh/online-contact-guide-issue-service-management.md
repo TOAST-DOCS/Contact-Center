@@ -8,8 +8,8 @@ From the Ticket menu, you can **manage categories and fields** which are used wh
 ### Manage Category
 In Issue Management service, ticket categories are used as below :
 
-- Submission Type : Categories which agents of Consultation Management service selects when escalating tickets
-- Processing Type : Categories which agents of Issue Management service selects when processing escalated tickets
+- Submission Type: Categories which agents of Consultation Management service selects when escalating tickets
+- Processing Type: Categories which agents of Issue Management service selects when processing escalated tickets
 
 #### Submission Type
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(1)-1_im_en.png)
@@ -67,7 +67,7 @@ Callback url is the type of result that the **entered callback address is called
 
 ##### Dooray Notification
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(2)g_en.png)
-If the trigger conditions are met, information of the ticket is sent via Dooray notification based on the template set by the **① Template Settings** button. For the link URL, see [Dooray Messenger Service Guide](https://docs.toast.com/en/Dooray/Messenger/en/service-guide/#receive-web-hookproject-notification) for instructions.
+If the trigger conditions are met, information of the ticket is sent via Dooray notification based on the template set by the **① Template Settings** button. For the link URL, see [Dooray Messenger Service Guide](https://helpdesk.dooray.com/share/pages/4Ws8UzbnT7KbP9R5fAQBjg/2956645181839458938) for instructions.
 
 ### Field
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(3)_im_en.png)
@@ -75,8 +75,8 @@ Fields are divided into **① Customer Field** and **① Agent Field**. Please s
 
 In Issue Management service, customer and agent fields are used as follows:
 
-- **Agent Field** : Fields which agents of Issue Management service enters when processing escalated tickets
-- **Customer Field** : Fields which are entered according to the designated category when a ticket is escalated
+- **Agent Field**: Fields which agents of Issue Management service enters when processing escalated tickets
+- **Customer Field**: Fields which are entered according to the designated category when a ticket is escalated
 
 #### Field Setting
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(4)_im_en.png)
@@ -94,20 +94,20 @@ Template managing is a feature that allows you to quickly process tickets by **p
 #### Template Registration
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(7)_1_im_en.png)
 At **Template Registration** tab, you could **add** templates, **② search** templates by setting **① search criteria**, **modify** or **delete** templates.
-You could serach templates by title, processing type, search code. In the **③ template list**, information are displayed as follows :
+You could serach templates by title, processing type, search code. In the **③ template list**, information are displayed as follows:
 
 - Title
-- Processing Type : Type **connected** to the template
-- Search Code : **Code** which can be used when searching templates
-- Number of Use : The **number of times** which the template was **selected**
+- Processing Type: Type **connected** to the template
+- Search Code: **Code** which can be used when searching templates
+- Number of Use: The **number of times** which the template was **selected**
 
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(7)_2_im_en.png)
 If you click **① Add Template** button, pop-up screen for setting template will be displayed.
 
 - **② Template Title**
-- **③ Contents** : **Replacement code** could be used when writing contents. **Double-click** adds the code to the contents, and data is inserted into code area of the template when processing tickets, making it more convenient to write replies.
-- **④ Search Code** : **Code** which can be used when searching templates. (English or number combination within 20 characters)
-- **⑤ Template Connection** : You can **select processing types** to connect to the template. **Check** the type you want to move, and press the **arrow** button.
+- **③ Contents**: **Replacement code** could be used when writing contents. **Double-click** adds the code to the contents, and data is inserted into code area of the template when processing tickets, making it more convenient to write replies.
+- **④ Search Code**: **Code** which can be used when searching templates. (English or number combination within 20 characters)
+- **⑤ Template Connection**: You can **select processing types** to connect to the template. **Check** the type you want to move, and press the **arrow** button.
 
 You can insert **links**, **images**, and **tables** into the body when you right-click on the body of the content, and when inserting images, you can use the path of the uploaded image from the Service Management → Help Center → Manage File Uploads menu or by attaching the image directly.
 
