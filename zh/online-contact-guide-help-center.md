@@ -1,7 +1,7 @@
 ## Contact Center > Online Contact > Service Guide (Consultation) > Help Center
 
 ## FAQ
-If you have enabled **FAQ** among the help center configuration items, (Can enable at [Service Management → Help Center → Default Settings] menu), FAQ menu allows you to manage FAQ (frequently asked questions) documents. 
+If you have enabled **FAQ** among the help center configuration items, (Can enable at [Service Management → Help Center → Default Settings] menu), FAQ menu allows you to manage FAQ (frequently asked questions) documents.
 
 ### Manage Category
 ![](http://static.toastoven.net/prod_contact_center/3.1-(1)_2_en.png)
@@ -20,20 +20,20 @@ FAQ documents are divided as follows:
 
 From Distribute/Draft Document menu, you could view following information about **Distribute Documents** and **Draft Documents**.
 
--	Number
--	Title
--	Fix Main Screen
--	Fix by Category
--	Category
--	Registrant
--	Views
--	Registered Time
--	Modified Time
+- Number
+- Title
+- Fix Main Screen
+- Fix by Category
+- Category
+- Registrant
+- Views
+- Registered Time
+- Modified Time
 
 Authorities for **① registering**, **② editing, deleting** FAQ documents are divided into:
 
 ![](http://static.toastoven.net/prod_contact_center/3.1-(2).a_en.png)
-**Administrators** could register/edit/delete all documents, and **agents** could register and edit draft documents. 
+**Administrators** could register/edit/delete all documents, and **agents** could register and edit draft documents.
 If documents are newly saved, the registrant changes to the person who saved the document lately. Agents cannot **delete documents**, so if registered documents should be deleted, please ask to the service’s administrator.
 
 ### Register FAQ
@@ -44,7 +44,7 @@ Items which need to be filled are as follows:
 
 - **Category**: Please select the appropriate category which you added in [Help Center → FAQ → Manage Category] menu. The document would be placed under the selected category.
 - **Fix Main Screen**: If checked, the document would be fixed in the top of ‘All’ group which all FAQ documents are displayed.
-- **Fix by Category**: If checked, the document would be fixed in the top of the **relevant category** group. 
+- **Fix by Category**: If checked, the document would be fixed in the top of the **relevant category** group.
 - **Title**
 - **Contents**
 
@@ -68,27 +68,27 @@ Notice documents are divided as follows :
 
 From Distribute/Draft Document menu, you could check following information about **Distribute Documents** and **Draft Documents**.
 
--	Number
--	Status (In Progress / Done / Reserved)
--	Heading
--	Title
--	Tag
--	Registrant
--	Views
--	Registered Time
+- Number
+- Status(In Progress / Done / Reserved)
+- Heading
+- Title
+- Tag
+- Registrant
+- Views
+- Registered Time
 
 Authorities for **① registering**, **② editing, deleting** notice documents are divided into:
 
 ![](http://static.toastoven.net/prod_contact_center/3.1-(2).a_en.png)
-**Administrators** could register/edit/delete all documents, and **agents** could register and edit draft documents. 
+**Administrators** could register/edit/delete all documents, and **agents** could register and edit draft documents.
 If documents are newly saved, the registrant changes to the person who saved the document lately. Agents cannot **delete documents**, so if registered documents should be deleted, please ask to the service’s administrator.
 
 ### Manage Template
 ![](http://static.toastoven.net/prod_contact_center/3.2-(3)_1_en.png)
-For frequently used notice forms, you could add templates to shorten the time for creating documents. You could **① Register**, **② Edit**, **Delete** templates, and view information of the template through **clicking each template**. 
+For frequently used notice forms, you could add templates to shorten the time for creating documents. You could **① Register**, **② Edit**, **Delete** templates, and view information of the template through **clicking each template**.
 
 ![](http://static.toastoven.net/prod_contact_center/3.2-(4)_1_en.png)
-Through **Registration Template** button, templates could be created. You can set the **title** and **contents** by the **① help center language** you set on [Global Management → Contract Service Status → Basic Information] menu. Items which need to be filled are as follows :
+Through **Registration Template** button, templates could be created. You can set the **title** and **contents** by the **① help center language** you set on [Global Management → Contract Service Status → Basic Information] menu. Items which need to be filled are as follows:
 
 - **Template Title**
 - **Template Description**
@@ -100,7 +100,7 @@ Through **Registration Template** button, templates could be created. You can se
 
 ### Manage Tag
 ![](http://static.toastoven.net/prod_contact_center/3.2-(5)_1_en.png)
-**Tags** could be utilized when searching notice documents. If you click the **① Register** button, the screen for adding tags will be displayed. You can set the name of the tags by the help center language you set on [Global Management → Contract Service Status → Basic Information] menu. Starting with the most recently registered tag, tags will be viewed in the select box when registering notice documents. Added tags could be **② edited** and **deleted**.    
+**Tags** could be utilized when searching notice documents. If you click the **① Register** button, the screen for adding tags will be displayed. You can set the name of the tags by the help center language you set on [Global Management → Contract Service Status → Basic Information] menu. Starting with the most recently registered tag, tags will be viewed in the select box when registering notice documents. Added tags could be **② edited** and **deleted**.
 
 ### Register Notice
 ![](http://static.toastoven.net/prod_contact_center/3.2-(6)_1_en.png)

@@ -9,13 +9,13 @@ Through **Contract status** tab, you can **①** add service to organization usi
 ![](http://static.toastoven.net/prod_contact_center/2.1.1-(2)_3_en.png)
 Click **① Add Service** button to view **② Add Service screen** for entering basic information for the service. The following items require input:
 
-- **Type** : Type of service to use (Consultation management, Issue management)
-- **Service Name** : Name of service to be used
-- **Service ID** : ID used to identify the service (becomes included in URL of the service’s Online Contact, and help center). English only
-- **Help Center Language** : Help Center language setting (Language code : ISO international standard code entry required, refer to the **ISO code list** below.)
-- **Time zone** : Time zone set in the help center
-- **Service Banner** : Can attach image. When uploaded, it becomes applied as the image of the service tab in Online Contact GNB and as a profile photo of the agent when chat consulting.
-- **Editor type** : The type of editor to be used in the service. Can be selected from **HTML/TEXT**. Applied in common to text editors provided in Online Contact, such as ticket template, mail layout, etc.  
+- **Type**: Type of service to use (Consultation management, Issue management)
+- **Service Name**: Name of service to be used
+- **Service ID**: ID used to identify the service (becomes included in URL of the service’s Online Contact, and help center). English only
+- **Help Center Language**: Help Center language setting(Language code: ISO international standard code entry required, refer to the **ISO code list** below.)
+- **Time zone**: Time zone set in the help center
+- **Service Banner**: Can attach image. When uploaded, it becomes applied as the image of the service tab in Online Contact GNB and as a profile photo of the agent when chat consulting.
+- **Editor type**: The type of editor to be used in the service. Can be selected from **HTML/TEXT**. Applied in common to text editors provided in Online Contact, such as ticket template, mail layout, etc.  
 
 ![](http://static.toastoven.net/prod_contact_center/2.1.1-(2)_2_en.png)
 If more than two **① help center languauges** are added to the service, **② language select box** becomes added to the help center.
@@ -1077,15 +1077,15 @@ In **Organization Information** tab, **① NHN Cloud Organization Information**,
 #### NHN Cloud Organization Information
 In the menu, users can check the information written below, and the same information could be checked and modified in **NHN Cloud Console → Organization Management → Default Organization Setting** tab.
 
-- **NHN Cloud Organization Name** : The name set when the organization was created.
-- **NHN Cloud Organization ID** : Unique ID given to each organization when the organization was created. Used to create authentication token required when using Open API.
-- **NHN Cloud Organization Domain** : The name set when selecting a service after creating an organization.
+- **NHN Cloud Organization Name**: The name set when the organization was created.
+- **NHN Cloud Organization ID**: Unique ID given to each organization when the organization was created. Used to create authentication token required when using Open API.
+- **NHN Cloud Organization Domain**: The name set when selecting a service after creating an organization.
 
 #### OC Organization Information
 In the menu, users can check the information written below. OC Organization Key could be changed by **Change API Key** button, and OC URL changes together when changing the NHN Cloud Organization Domain. 
 
-- **OC Organization Key** : Key used in the authentication phase when trying to process actions performed for organizational management through API.
-- **OC URL** : The access URL for Online Contact. Created in the following form : https://**Organization Domain**.oc.toast.com
+- **OC Organization Key**: Key used in the authentication phase when trying to process actions performed for organizational management through API.
+- **OC URL**: The access URL for Online Contact. Created in the following form : https://**Organization Domain**.oc.toast.com
 
 ## Organization Adminstrator
 ![](http://static.toastoven.net/prod_contact_center/2.1.2-(1)_en.png)
@@ -1199,8 +1199,8 @@ Through clicking **① account name** displayed in the upper right corner of the
 
 -	Account
 -	Name
--	Nickname (Editable) : Displayed when communicating through chat, mail
+-	Nickname(Editable): Displayed when communicating through chat, mail
 -	Phone number
 -	Email
--	Language (Editable) : Language in your environment, apart from service’s language setting
--	Assign ticket(Editable) : If consulting is not available due to vacation, etc., can set ticket allocation status
+-	Language(Editable): Language in your environment, apart from service’s language setting
+-	Assign ticket(Editable): If consulting is not available due to vacation, etc., can set ticket allocation status

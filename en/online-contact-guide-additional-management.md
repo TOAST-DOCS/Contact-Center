@@ -10,7 +10,7 @@ In this menu, you could view callback list through search conditions. **Administ
 Search conditions are as follows, and searching is available through clicking  **① Search** button.
 
 - Query Time
-- IVR Route : IVR route added in Service Management → Call → IVR Route Management menu
+- IVR Route: IVR route added in Service Management → Call → IVR Route Management menu
 - Status
 - Phone
 - Assign

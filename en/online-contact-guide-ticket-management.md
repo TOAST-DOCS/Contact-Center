@@ -9,16 +9,16 @@ From **① All Tickets** Menu, you could check overall current situation of tick
 
 Information which you could check by each **detailed menu** is as follows:
 
--	**③ All Tickets in Group**: You can view the **entire ticket within the group** you belong to.
--	**④ My Tickets in Progress**: When a ticket is assigned to an agent, the status changes to **processing**. In this menu, you can view tickets assigned to you.
--	**⑤ My Tickets in Pending**: If a ticket needs to be additionally checked, the agent can set the ticket status to **pending**. In this menu, you can view tickets which you processed as ‘pending’.
--	**⑥ My Resolved Tickets**: If an agent process a ticket as ‘**resolved**’, the status of the ticket changes to ‘resolved’ and could be viewed at this menu. If the customer resubmits inquiries to the answer mail, the ticket could be processed again.
--	**⑦ My Completed Tickets**: A ticket becomes ‘**completed**’ if the administrator processes the ticket to be ‘**completed**’, or if **two weeks has been past** after the ticket was resolved. Completed tickets cannot be processed.
--	**⑧ Spam Box**: Tickets are moved to spam box if processed as **'Resolve Internally → Spam’.** Spam tickets could be restored or deleted. They could not be answered or forwarded before restoration.
+- **③ All Tickets in Group**: You can view the **entire ticket within the group** you belong to.
+- **④ My Tickets in Progress**: When a ticket is assigned to an agent, the status changes to **processing**. In this menu, you can view tickets assigned to you.
+- **⑤ My Tickets in Pending**: If a ticket needs to be additionally checked, the agent can set the ticket status to **pending**. In this menu, you can view tickets which you processed as ‘pending’.
+- **⑥ My Resolved Tickets**: If an agent process a ticket as ‘**resolved**’, the status of the ticket changes to ‘resolved’ and could be viewed at this menu. If the customer resubmits inquiries to the answer mail, the ticket could be processed again.
+- **⑦ My Completed Tickets**: A ticket becomes ‘**completed**’ if the administrator processes the ticket to be ‘**completed**’, or if **two weeks has been past** after the ticket was resolved. Completed tickets cannot be processed.
+- **⑧ Spam Box**: Tickets are moved to spam box if processed as **'Resolve Internally → Spam’.** Spam tickets could be restored or deleted. They could not be answered or forwarded before restoration.
 
 ### Keep Tickets
 ![](http://static.toastoven.net/prod_contact_center/4.1.2-(1)_en.png)
-Agents could assign **unassigned** tickets to oneself through ‘**keep**’ button. Click **① Keep** button, and select agent group if you belong to more than one group. 
+Agents could assign **unassigned** tickets to oneself through ‘**keep**’ button. Click **① Keep** button, and select agent group if you belong to more than one group.
 
 If ticket assign is set through trigger, tickets could be assigned according to the trigger conditions. In this case, to change automatically assigned agents, **administrator** of the service could **forward** the ticket to another agent. Click **② Forward** button, and select agent.
 
@@ -39,11 +39,11 @@ If a ticket is assigned, the status of the ticket changes to ‘**processing**�
 
 ![](http://static.toastoven.net/prod_contact_center/4.1.2-(3)_en.png)
 
--	**① Ticket History**: History of the customer's previous inquiries
+- **① Ticket History**: History of the customer's previous inquiries
 
 ![](http://static.toastoven.net/prod_contact_center/4.1.2-(4)_en.png)
 
--	**① Event**: Occurred events of the ticket (Ticket assign, Change of agent, etc.)
+- **① Event**: Occurred events of the ticket (Ticket assign, Change of agent, etc.)
 
 ![](http://static.toastoven.net/prod_contact_center/4.1.2-(5)_1_en.png)
 After filling in the contents, you can pre-check whether the banned word is included, and the final reply mail including the mail layout through **① ticket preview**.
@@ -71,10 +71,10 @@ Tickets could be **② processed** as follows:
 You could create new tickets through **① Create Ticket** button. Tickets could be created when additional tickets are needed in the process of handling customer inquiries.
 The following items are required to enter when creating a ticket:
 
--	**②** Group
--	**③** Agent
--	**④** Submission Type
--	**⑤** Title, **⑥** Contents
+- **②** Group
+- **③** Agent
+- **④** Submission Type
+- **⑤** Title, **⑥** Contents
 
 ### Escalate Tickets
 Inquiries which are **difficult to resolve** could be escalated to **issue management** type service.
@@ -82,7 +82,7 @@ Inquiries which are **difficult to resolve** could be escalated to **issue manag
 ![](http://static.toastoven.net/prod_contact_center/4.1.2-(7)_en.png)
 ![](http://static.toastoven.net/prod_contact_center/4.1.2-(8)_en.png)
 
-If you click **① Escalation** button, screen which you could select service to escalate would be displayed. Only issue management type services will be displayed in the drop box. After **② selecting the service to escalate**, click **confirm**. Escalation screen would be displayed in the bottom of the ticket. 
+If you click **① Escalation** button, screen which you could select service to escalate would be displayed. Only issue management type services will be displayed in the drop box. After **② selecting the service to escalate**, click **confirm**. Escalation screen would be displayed in the bottom of the ticket.
 
 If you select the submission type, **③ Customer Fields** which were set in [Service Management → Ticket → Field] menu of issue management service would be displayed according to the selected submission type. Fill in the customer fields, title, contents, and click **④ Escalation** button to process ticket escalation.
 
@@ -97,25 +97,25 @@ The areas where you can mask personal information when managing tickets are **cu
 **Drag** to select the area which needs masking, and click **Masking Personal Information** button. The personal information inside the page will be substituted with asterisks (\*). The masked data is stored in the masked state on the database.
 
 ![](http://static.toastoven.net/prod_contact_center/masking_2.gif)
-To **remove** data masking, **click the substituted area**. A pop-up page asking whether to remove data masking will be showed. 
+To **remove** data masking, **click the substituted area**. A pop-up page asking whether to remove data masking will be showed.
 Click **confirm** to remove data masking on the page and database.
 
 ## Search Tickets
 ![](http://static.toastoven.net/prod_contact_center/4.1.3-(1)_3_en.png)
 If you click the **① Search Ticket** button in top of the ticket list, conditions of searching tickets will be displayed. The conditions are as follows.
 
--	**Created Time**
--	**Priority**
--	**Ticket ID**
--	**Title**
--	**Group/Agent**
--	**Status** 
--	**Channel** 
--	**Submission Type**
--	**Processing Type**
--	**Customer Unique Number**
--	**Name**
--	**ID**
--	**Email**
--	**Phone**
--	**Language**
+- **Created Time**
+- **Priority**
+- **Ticket ID**
+- **Title**
+- **Group/Agent**
+- **Status**
+- **Channel**
+- **Submission Type**
+- **Processing Type**
+- **Customer Unique Number**
+- **Name**
+- **ID**
+- **Email**
+- **Phone**
+- **Language**

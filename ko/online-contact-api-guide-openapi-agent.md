@@ -53,8 +53,8 @@
 ### 상담원 정보 취득
 #### 인터페이스 설명
 
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/users/{id}.json			
-- URL(개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/users/{id}.json			
+- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/users/{id}.json
+- URL(개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/users/{id}.json
 
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|
 |------------|-------|--------|-----|--------|--------------|
@@ -99,8 +99,8 @@
 ### 상담원 추가
 #### 인터페이스 설명
 
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/adduser.json				
-- URL(개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/adduser.json					
+- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/adduser.json
+- URL(개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/adduser.json
 
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|
 |------------|-------|--------|-----|--------|--------------|
@@ -145,8 +145,8 @@
 ### 상담원 권한 변경
 #### 인터페이스 설명
 
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/users/{id}.json						
-- URL(개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/users/{id}.json			
+- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/users/{id}.json
+- URL(개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/users/{id}.json
 
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|
 |------------|-------|--------|-----|--------|--------------|
@@ -191,8 +191,8 @@
 ### 상담원 삭제
 #### 인터페이스 설명
 
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/users/{id}.json						
-- URL(개발): https://{domain}.alpha-oc.toast.com /{serviceId}/openapi/v1/users/{id}.json			
+- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/users/{id}.json
+- URL(개발): https://{domain}.alpha-oc.toast.com /{serviceId}/openapi/v1/users/{id}.json
 
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|
 |------------|-------|--------|-----|--------|--------------|
