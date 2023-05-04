@@ -2,31 +2,31 @@
 
 ### 2023.05.09
 
-1. **티켓관리 Main 화면 변경**
+1. **Changes on ticket management main screen**
 
-- 목록/티켓정보/티켓상세 및 처리/문의, 지식관리 영역 frame 구분
-- 각 frame에 대한 개인별 영역 설정 가능(frame 줄이기/와이드 스크린/펼침 고정 등)
-- 전체 인입 현황 및 전화 인입 현황 미니 전광판 제공
-- My 현황(처리중, 보류중, 약속콜, 이관중)을 통한 quick 검색
-- '중요' 티켓 설정 후 모아보기 가능
-- 티켓 처리 진행 시, 처리 상세 내용에 처리값이 함께 표시되도록 개선
+- Separation of ticket list/ticket information/ticket details and processing/ticket history, knowledge management area frame
+- Individual settings for each frame(frame width adjustment/wide screen setting/expansion, folding setting, etc.)
+- Mini display board that displays the overall inflow status and call status in real-time
+- Quick search by My Status(Processing, Pending, Reservation Call, Transfer)
+- Set important tickets and view them once
+- Improved processing of tickets so that processing details show processing values together
 
-2. **티켓관리 메뉴 정렬기준 변경 및 메뉴 추가/변경**
+2. **Changes on ticket management menu**
 
-- 개인화 영역/전체 영역에 대한 분리
-- 그룹 내 전체 티켓: 하위 그룹별 티켓 확인 가능
-- 전체 이관한 티켓: 이관(이슈 이관, Dooray! 이관)별 티켓 확인 가능
+- Separation of personalized menus and menus for the entire service
+- All tickets in group: Look up tickets by subgroup
+- All transferred tickets: look up transferred tickets(issue transfer, Dooray! transfer)
 
-3. **전화 부문**
+3. **Changes on call function**
 
-- 서비스 관리 > 전화 > IVR Route 경로에 맞춰서 접수유형 자동 지정 가능
-- 전화 티켓 통화시간 표시 기능 추가
-- 호전환 시 메모 기능 추가
-- 통화 예약 시(약속콜) 알림 기능 추가
-- O/B 실행 시, 티켓 즉시 생성 기능 보완
-- 상담 이력 저장 후 대기 상태 전환 기능 보완
-- 통화중 상태에서, CTI 팝업에 전화 티켓이 생성된 서비스명 표시되도록 개선
+- Reception type of call tickets can be set automatically according to the IVR Route
+- Call time displayed on call tickets
+- Memo function added when transferring calls
+- Notification added when scheduling a call(Reservation call)
+- Improvement to enable setting whether tickets are created immediately when making outgoing calls
+- Improvement to enable setting whether to switch status in batches after a call ends
+- Service name where the phone ticket was created is displayed in the CTI pop-up
 
-4. **Online Contact Main 대시보드 개선**
+4. **Changes on main dashboard**
 
-- 금일 개인/채널별 티켓 현황 추가, 최근 24시간 티켓 현황 그래프에 '채널' 조건 추가되어 채널별로 데이터 조회 가능
+- Ticket status by individual/channel on the day of inquiry is added, and the status of tickets for the last 24 hours can be inquired by channel
