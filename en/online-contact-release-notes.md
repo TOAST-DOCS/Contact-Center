@@ -1,24 +1,28 @@
 ## Contact Center > Online Contact > Release Notes
 
-### 2018.10.23
+### 2023.05.09
 
-신규 상품 출시
-  * Online Contact Beta 출시
-    * 헬프센터, 실시간 채팅 및 온라인 1:1 문의 처리 기능을 제공하는 상담 시스템
+#### Changes on ticket management main screen
+- Separation of ticket list/ticket information/ticket details and processing/ticket history, knowledge management area frame
+- Individual settings for each frame(frame width adjustment/wide screen setting/expansion, folding setting, etc.)
+- Mini display board that displays the overall inflow status and call status in real-time
+- Quick search by My Status(Processing, Pending, Reservation Call, Transfer)
+- Set important tickets and view them once
+- Improved processing of tickets so that processing details show processing values together
 
-  [티켓관리]
-  * 1:1문의, 대표 메일 계정을 통해 접수된 문의를 처리하는 기능 제공
-  * 서비스별 상담원 지정가능
-  * 상담원/그룹 생성 관리
-  * 다양한 업무처리 유형 제공
-  
-  
-  [헬프센터]
-  * 공지사항, 자주 묻는 질문 관리(FAQ) 및 1:1문의하기 기능 제공
-  * API 로 제공 서비스에 맞춰 구성 가능
-    
-  [통계]
-  * 기간별 실적 현황
-  * 접수유형별 실적 현황
-  * 처리유형별 실적 현황
-  * 상담원별 실적 현황
+#### Changes on ticket management menu
+- Separation of personalized menus and menus for the entire service
+- All tickets in group: Look up tickets by subgroup
+- All transferred tickets: look up transferred tickets(issue transfer, Dooray! transfer)
+
+#### Changes on call function
+- Reception type of call tickets can be set automatically according to the IVR Route
+- Call time displayed on call tickets
+- Memo function added when transferring calls
+- Notification added when scheduling a call(Reservation call)
+- Improvement to enable setting whether tickets are created immediately when making outgoing calls
+- Improvement to enable setting whether to switch status in batches after a call ends
+- Service name where the phone ticket was created is displayed in the CTI pop-up
+
+#### Changes on main dashboard
+- Ticket status by individual/channel on the day of inquiry is added, and the status of tickets for the last 24 hours can be inquired by channel
