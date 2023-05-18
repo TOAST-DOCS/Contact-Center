@@ -1,11 +1,12 @@
 ## Contact Center > Online Contact > 서비스 가이드 (상담관리) > 전체 관리
 
-상담관리 서비스에서의 **전체 관리** 메뉴는 계약 서비스 현황, 조직관리자, 회사정보 관리, CTI 관리, 권한 변경 로그 관리, 데이터 이관 메뉴로 구성되어 있습니다.
+**전체 관리**는 서비스 계약/해지, 조직, CTI설정 등 컨택센터 솔루션을 이용하는 조직의 전반적인 설정 기능을 포함합니다.
+서비스 현황, 조직관리자, 회사정보 관리, CTI 관리, 권한 변경 로그 관리, 데이터 이관 메뉴로 구성되어 있습니다.
 
 ## 계약 서비스 현황
 ### 계약 현황
 
-![](http://static.toastoven.net/prod_contact_center/2.1.1-(1).png)
+![](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-global-management_img0010.png)
 **계약 현황** 탭을 통해 Online Contact를 사용하고 계신 조직에 **①** 서비스를 추가, **②** 서비스 기본정보/계약내용 수정, **③** 서비스 사용여부 설정, **④** 서비스 해지와 같은 기능들을 이용하실 수 있습니다.
 
 ![](http://static.toastoven.net/prod_contact_center/2.1.1-(2)_3.png)
