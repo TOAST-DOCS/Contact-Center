@@ -21,14 +21,14 @@
 - 서비스 명: 사용할 서비스의 이름
 - 서비스 ID: 서비스 식별에 사용되는 ID(URL에 포함됨). 영문만 가능
 - 헬프센터 언어: 헬프센터 구성 시 사용할 언어 세트 설정
-  > <img src="http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-global-management_img0030.png" width="50%" height="50%"/>
+  > <div style="text-align:left">
+  > <img src="http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-global-management_img0030.png" style="width:50%; height=50%;">
+  > </div>
   >
   > ※ 언어가 2개 이상 추가되었을 경우, 헬프센터 페이지에 언어 선택 드롭박스가 추가되어 **언어별 헬프센터**를 제공할 수 있습니다.
-  >
   > ※ 언어 코드는 ISO 국제 표준 코드로 입력해야 합니다.
-  > <!-- 국가 코드 목록 html -->
-  > <details markdown="1">
-  > <summary> 언어 코드 목록 보기 </summary>
+  > <details markdown="1"> <!-- 국가 코드 목록 html -->
+  > <summary>언어 코드 목록 보기</summary>
   > <table>
   > <thead>
   > <tr>
@@ -1063,7 +1063,7 @@
 **③ 계약 상세 내역** 화면에서는 Online Contact에서 제공하는 상담 기능들에 대한 **사용 여부**를 선택할 수 있습니다. 기능별 사용여부를 설정하고 우측의 사용자 수, 처리 건 수 등을 입력하면 **예상 비용**이 산출됩니다. 계약 상세 내역 입력을 완료한 후 **계약** 버튼을 클릭하면 서비스 계약이 완료됩니다.
 
 #### 서비스 수정/해지
-![](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-global-management_img0040.png)
+![계약서비스현황_서비스수정해지](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-global-management_img0041.png)
 
 **① 서비스 추가 대화상자에서 입력 단계를 모두 진행하지 않고 이탈**하면 계약상태는 **작성중**으로 표시됩니다. **계약 열의 등록** 버튼을 클릭하여 내용을 이어서 작성할 수 있습니다.
 
@@ -1088,14 +1088,16 @@
 
 **조직 정보** 탭에서는 Online Contact 서비스를 이용하고 있는 **① NHN Cloud 조직 정보**와, Online Contact 내부의 계약 서비스들을 관리하는 **② Online Contact 조직 정보**를 확인할 수 있습니다.
 
-#### NHN Cloud 조직 정보
+**① NHN Cloud 조직 정보**
+
 NHN Cloud 조직 정보에서 확인할 수 있는 내용은 아래와 같습니다. 아래 정보는 모두 **NHN Cloud Console → 조직 설정 → 조직 기본 설정** 탭에서도 확인할 수 있으며, 조직 이름, 도메인은 해당 탭에서 수정할 수 있습니다.
  
 - NHN Cloud 조직 이름: 조직 생성 시 설정한 이름
 - NHN Cloud 조직 ID: 조직 생성 시 각 조직마다 부여되는 고유한 ID. Online Contact Open API 사용 시 필요한 인증 토큰 생성에 사용 
 - NHN Cloud 조직 도메인: 조직 생성 후 서비스 선택 시 설정한 도메인 이름
 
-#### OC(Online Contact) 조직 정보
+**② OC(Online Contact) 조직 정보**
+
 OC 조직 정보에서 확인할 수 있는 내용은 아래와 같습니다. **조직 Key**의 경우 API Key 변경 버튼을 통해 변경 가능하며, **Online Contact URL**은 NHN Cloud 조직 도메인을 이용하여 생성되므로 조직 도메인 변경 시 함께 변경됩니다.
 
 - OC 조직 Key: 서비스 등록/수정/삭제 등 조직 관리 차원에서 수행되는 행위를 Online Contact 외부에서 API를 통해 처리하고자 할 때 인증 단계에서 사용되는 Key
@@ -1108,13 +1110,13 @@ OC 조직 정보에서 확인할 수 있는 내용은 아래와 같습니다. **
 조직관리자 권한만으로는 상담 기능과 서비스 관리 기능을 이용할 수 없으므로 상담 권한이 필요하거나 서비스를 초기에 구성할 경우 **서비스 관리 → 상담원** 메뉴에서 관리자 또는 상담원 권한을 추가해야 합니다. 조직관리자 및 상담원을 등록하려면 IAM 회원으로 등록되어 있어야 합니다.
 > ✔ **\[FAQ 바로가기]** [권한의 종류와 차이점을 알고 싶습니다.](https://nhn-contact.oc.toast.com/oc/hc/article/36/)
 
-### 회원 초대
-- **① 회원 초대** 버튼을 클릭합니다.
+**① 회원 초대**
+- **회원 초대** 버튼을 클릭합니다.
 - 초대할 회원의 이름, ID, 이메일을 입력한 후 확인 버튼을 클릭합니다.
 - 입력된 이메일로 초대 메일이 발송되며, 해당 이메일을 통해 비밀번호를 설정한 후 로그인합니다.
   > IAM 회원 초대 기능은 NHN Cloud CONSOLE → 멤버 관리 → IAM 회원 탭에서도 사용할 수 있습니다.
 
-### 조직관리자 추가
+**② 조직관리자 추가**
 - **② 조직관리자 추가** 버튼을 클릭합니다.
 - 조직관리자 추가 페이지에서 **상담원 검색** 버튼을 클릭합니다.
 - 조직관리자로 추가할 IAM 회원을 검색한 후 선택합니다. 검색 시 이름, 계정, 이메일 중 하나를 입력하여 검색해야 합니다.
@@ -1127,20 +1129,22 @@ PC, 모바일 헬프센터의 푸터 영역에 회사 정보 및 이용약관을
 **① 추가** 버튼을 누르면 회사 정보를 입력하는 페이지로 이동되어, **② 회사 정보**, **③ 상표 및 저작권**, **④ 이용 약관** 정보를 설정할 수 있습니다. 정보 입력 후 **저장** 버튼을 누르면 설정한 회사 정보가 목록에 추가되며, 상담관리 서비스의 **서비스 관리 → 헬프센터 → 구성관리** 메뉴에서 헬프센터 페이지 푸터에 **⑤ 반영**할 수 있습니다.
 
 ## CTI 관리
-CTI 관리 메뉴에서는 Online Contact과 연결할 CTI 정보를 설정하고, 전화 상담을 진행할 각 상담원의 CTI ID와 CTI 번호를 입력 및 수정하실 수 있습니다.
-해당 메뉴는 계약 정보에서 **티켓 관리 → 전화 CTI 사용** 기능을 **사용**으로 설정하신 서비스에서만 조회 가능합니다.
+CTI 관리 메뉴에서는 Online Contact과 연결할 CTI 정보를 설정하고, 전화 상담을 진행할 상담원의 CTI ID와 CTI 번호를 설정할 수 있습니다.
+해당 메뉴는 계약 정보에서 **티켓 관리 → 전화 CTI 사용** 기능을 **사용**으로 설정한 서비스에서만 사용 가능합니다.
 
 ### CTI 설정
-![](http://static.toastoven.net/prod_contact_center/2.1.2-(2)_1.png)
-CTI 설정 메뉴를 통해 Online Contact의 전화 기능과 연결할 CTI를 설정하실 수 있습니다.
+![계약서비스현황_CTI설정](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-global-management_img0090.png)
+Online Contact의 전화 상담 기능과 연결할 CTI 정보를 설정할 수 있습니다.
 
-선택하실 수 있는 **① CTI 버전**은 다음과 같습니다.
+**① CTI 버전**: 사용할 CTI 버전을 선택합니다.
+- IPCC(Private): Private 서비스로, 이용이 필요하다면 Online Contact 고객센터를 통해 **사전 협의**가 필요합니다. ([Online Contact 고객센터 바로가기](https://nhn-contact.oc.toast.com/oc/hc/))
+- 모바일 컨택(Mobile Contact): NHN Cloud Console에서 **Mobile Contact 서비스를 활성화**한 후 선택할 수 있습니다.
 
-- IPCC(Private): Private 서비스로, 이용을 원하실 시 Online Contact 고객센터를 통해 **사전 협의** 부탁드립니다. ([Online Contact 고객센터 바로가기](https://nhn-contact.oc.toast.com/oc/hc/))
-- 모바일 컨택(Mobile Contact): NHN Cloud Console에서 **Mobile Contact 서비스를 활성화**하신 후 선택하실 수 있습니다.
+**② 테넌트 ID**: IPCC 또는 Mobile Contact 관리 담당자로부터 전달받은 **테넌트ID**를 입력합니다.
 
-CTI 버전을 선택하신 후, IPCC 또는 Mobile Contact 관리 담당자로부터 전달 받으신 **테넌트ID**, **서비스명**을 **② 테넌트 ID**, **③ 테넌트 명칭** 란에 입력해주세요.
-**④ CTI Log 모니터링** 기능을 활성화하실 경우 하루 단위로 CTI 로그가 기록되며, 기록된 로그는 화면 우측 상단의 계정 이름 클릭 시 이용하실 수 있는 **CTI Log 다운로드** 기능을 통해서 엑셀 파일 형태로 다운로드 받으실 수 있습니다. 
+**③ 테넌트 명칭**: IPCC 또는 Mobile Contact 관리 담당자로부터 전달받은 **서비스명**을 입력합니다.
+
+**④ CTI Log 모니터링**: 기능을 활성화하면 하루 단위로 CTI 로그가 기록되며, 기록된 로그는 화면 우측 상단의 계정 이름을 클릭하면 나타나는 **CTI Log 다운로드**를 통해 엑셀 파일로 다운받을 수 있습니다. 
 
 ### CTI 상담원 관리
 ![](http://static.toastoven.net/prod_contact_center/2.1.2-(3)_1.png)
