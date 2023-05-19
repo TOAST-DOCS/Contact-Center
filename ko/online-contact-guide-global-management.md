@@ -6,19 +6,22 @@
 ## 계약 서비스 현황
 
 ### 계약 현황
-![계약현황-메인]](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-global-management_img0010.png)
+![계약서비스현황_메인](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-global-management_img0010.png)
+
 **계약 현황** 탭은 Online Contact를 사용하는 조직에 **①** 서비스를 추가하거나, **②** 서비스 기본정보 및 계약내용 수정, **③** 서비스 사용여부 설정, **④** 서비스 해지 기능을 사용할 수 있습니다.
 
 #### 서비스 추가
-![계약현황-서비스추가](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-global-management_img0020.png)
+![계약서비스현황_서비스추가](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-global-management_img0020.png)
+
 **① 서비스 추가** 버튼을 클릭합니다.
-**② 서비스 추가 대화상자**가 나타나며 추가할 서비스의 기본 정보를 입력합니다. 입력이 필요한 항목은 다음과 같습니다.
+
+**② 서비스 추가 대화상자**가 나타나며 추가할 서비스의 기본 정보를 입력한 후 다음 버튼을 클릭합니다. 입력이 필요한 항목은 아래와 같습니다.
 
 - 유형: 추가할 서비스의 유형(상담 관리, 이슈 관리)
 - 서비스 명: 사용할 서비스의 이름
 - 서비스 ID: 서비스 식별에 사용되는 ID(URL에 포함됨). 영문만 가능
 - 헬프센터 언어: 헬프센터 구성 시 사용할 언어 세트 설정
-  >  ![img-0030](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-global-management_img0030.png)
+  >  ![계약서비스현황_언어설정예시](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-global-management_img0030.png)
   > ※ 언어가 2개 이상 추가되었을 경우, 헬프센터 페이지에 언어 선택 드롭박스가 추가되어 **언어별 헬프센터**를 제공할 수 있습니다.
   > ※ 언어 코드는 ISO 국제 표준 코드로 입력해야 합니다.
   > <!-- 국가 코드 목록 html -->
@@ -1050,45 +1053,54 @@
   > </tr>
   > </tbody>
   > </table>
-  > 
   > </details>
-
 - 타임 존: 헬프센터에 설정되는 시간대
 - 서비스 배너: Online Contact GNB에서의 서비스 탭 이미지, 채팅 시 상담원의 프로필 사진으로 적용
 - 에디터 타입: 해당 서비스에서 사용할 에디터 타입으로, **HTML/TEXT** 중에서 선택 가능. 티켓 템플릿/답변 작성, 메일 레이아웃 설정 등 Online Contact 내부에서 제공되는 텍스트 에디터에 공통으로 적용
 
-기본정보를 모두 입력하신 후 다음 버튼을 누르시면 **③ 계약 상세 내역**으로 넘어갑니다. 계약 상세 내역 화면에서는 Online Contact에서 제공하는 상담 기능들에 대해 해당 서비스에서의 **사용 여부**를 선택하실 수 있으며, 해당 선택 여부가 반영된 **예상 비용**을 산출해 보실 수 있습니다. 계약 상세 내역 입력을 완료하신 후 **계약 버튼**을 누르시면 계약이 완료됩니다.
+**③ 계약 상세 내역** 화면에서는 Online Contact에서 제공하는 상담 기능들에 대한 **사용 여부**를 선택할 수 있습니다. 기능별 사용여부를 설정하고 우측의 사용자 수, 처리 건 수 등을 입력하면 **예상 비용**이 산출됩니다. 계약 상세 내역 입력을 완료한 후 **계약** 버튼을 클릭하면 서비스 계약이 완료됩니다.
 
-![](http://static.toastoven.net/prod_contact_center/2.1.1-(3).png)
-서비스 추가 시 진행되는 서비스 기본정보 입력, 계약 상세 내역 입력 단계를 모두 진행하지 않고 이탈하시게 되면 서비스 사용 상태는 **미사용** 상태로, 진행하시지 않은 단계는 **등록** 버튼으로 표시되게 됩니다. 서비스 추가 단계를 모두 진행하신 서비스의 경우 **① 수정** 버튼을 통해 기본정보와 계약정보를 수정하실 수 있으며, **② 상태** 버튼을 통해 서비스 사용여부 선택을, **③ 해지** 버튼을 통해 서비스 해지를 진행하실 수 있습니다. 서비스 해지의 경우 상태가 **이용정지**로 설정되어 있어야 해지 버튼이 활성화되므로 참고해주세요. 
+#### 서비스 수정/해지
+![](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-global-management_img0040.png)
 
-계약정보는 **하루에 1번만 수정 가능**합니다.
+**① 서비스 추가 대화상자에서 입력 단계를 모두 진행하지 않고 이탈**하면 계약상태는 **작성중**으로 표시됩니다. **③계약 열의 등록** 버튼을 클릭하여 내용을 이어서 작성할 수 있습니다.
+
+**② 기본정보** 열의 **수정** 버튼을 클릭하여 등록된 서비스의 기본정보를 수정할 수 있습니다.
+
+**③ 계약** 열에서는 계약이 완료되지 않은 서비스는 **등록** 버튼으로, 계약이 완료된 서비스는 **수정**으로 표시됩니다. 해당 버튼을 클릭하면 계약 상세 내용을 이어서 입력하거나 수정할 수 있습니다. 계약정보는 **하루에 1번만 수정 가능**합니다.
+
+**④ 상태** 열의 토글 버튼으로 서비스 사용여부를 변경할 수 있습니다.
+
+**⑤ 해지** 열의 삭제 버튼으로 서비스를 해지할 수 있습니다. 서비스를 해지하려면 먼저 **④ 상태** 토글 버튼을 OFF로 변경해야 합니다. 
 
 ### 요금 현황
-![](http://static.toastoven.net/prod_contact_center/2.1.1-(4).png)
-**요금 현황** 탭에서는 전체, 서비스 유형별, 개별 서비스별 월별 청구 요금을 **①** 검색하여 조회하실 수 있습니다. 개별 서비스를 기준으로 조회하셨을 경우 **②** 서비스 상태가 함께 표시됩니다. 
+![계약서비스현황_요금현황](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-global-management_img0050.png)
 
-✔ **\[FAQ 바로가기]** [과금 기준은 어떻게 되나요?](https://nhn-contact.oc.toast.com/oc/hc/article/99/)
-✔ **\[FAQ 바로가기]** [요금은 언제 어떻게 결제되나요?](https://nhn-contact.oc.toast.com/oc/hc/article/67/)
+**요금 현황** 탭에서는 전체, 서비스 유형별, 개별 서비스별 월별 청구 요금을 **①** 검색하여 조회할 수 있습니다. 개별 서비스를 선택하여 조회하면 **②** 서비스 상태가 함께 표시됩니다.
+
+> ✔ **\[FAQ 바로가기]** [과금 기준은 어떻게 되나요?](https://nhn-contact.oc.toast.com/oc/hc/article/99/)
+> 
+> ✔ **\[FAQ 바로가기]** [요금은 언제 어떻게 결제되나요?](https://nhn-contact.oc.toast.com/oc/hc/article/67/)
 
 ### 조직 정보
-![](http://static.toastoven.net/prod_contact_center/2.1.1-(5).png)
-**조직 정보** 탭에서는 Online Contact 서비스를 이용하고 있는 **① NHN Cloud 조직 정보**와, Online Contact 내부의 계약 서비스들을 관리하는 **② Online Contact 조직 정보**를 확인하실 수 있습니다.
+![계약서비스현황_조직정보](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-global-management_img0060.png)
+
+**조직 정보** 탭에서는 Online Contact 서비스를 이용하고 있는 **① NHN Cloud 조직 정보**와, Online Contact 내부의 계약 서비스들을 관리하는 **② Online Contact 조직 정보**를 확인할 수 있습니다.
 
 #### NHN Cloud 조직 정보
-NHN Cloud 조직 정보에서 확인하실 수 있는 내용은 아래와 같습니다.
-하기 정보는 모두 **NHN Cloud Console → 조직 설정 → 조직 기본 설정** 탭에서도 확인하실 수 있으며, 조직 이름, 도메인은 해당 탭에서 수정하실 수 있습니다.
+NHN Cloud 조직 정보에서 확인할 수 있는 내용은 아래와 같습니다.
+아래 정보는 모두 **NHN Cloud Console → 조직 설정 → 조직 기본 설정** 탭에서도 확인할 수 있으며, 조직 이름, 도메인은 해당 탭에서 수정할 수 있습니다.
  
 - NHN Cloud 조직 이름: 조직 생성 시 설정한 이름
 - NHN Cloud 조직 ID: 조직 생성 시 각 조직마다 부여되는 고유한 ID. Online Contact Open API 사용 시 필요한 인증 토큰 생성에 사용 
 - NHN Cloud 조직 도메인: 조직 생성 후 서비스 선택 시 설정한 도메인 이름
 
-#### Online Contact 조직 정보
-Online Contact 조직 정보에서 확인하실 수 있는 내용은 아래와 같습니다.
-**조직 Key**의 경우 API Key 변경 버튼을 통해 변경 가능하며, **Online Contact URL**은 NHN Cloud 조직 도메인을 이용해 생성되므로 조직 도메인 변경 시 함께 변경됩니다.
+#### OC(Online Contact) 조직 정보
+OC 조직 정보에서 확인할 수 있는 내용은 아래와 같습니다.
+**조직 Key**의 경우 API Key 변경 버튼을 통해 변경 가능하며, **Online Contact URL**은 NHN Cloud 조직 도메인을 이용하여 생성되므로 조직 도메인 변경 시 함께 변경됩니다.
 
-- Online Contact 조직 Key: 서비스 등록/수정/삭제 등 조직 관리 차원에서 수행되는 행위를 Online Contact 외부에서 API를 통해 처리하고자 할 때 인증 단계에서 사용되는 Key
-- Online Contact URL: Online Contact 접속 URL. https://**조직 도메인**.oc.toast.com 형식으로 생성됨
+- OC 조직 Key: 서비스 등록/수정/삭제 등 조직 관리 차원에서 수행되는 행위를 Online Contact 외부에서 API를 통해 처리하고자 할 때 인증 단계에서 사용되는 Key
+- OC URL: Online Contact 접속 URL. https://**조직 도메인**.oc.toast.com 형식으로 생성됨
 
 ## 조직관리자
 ![](http://static.toastoven.net/prod_contact_center/2.1.2-(1).png)
