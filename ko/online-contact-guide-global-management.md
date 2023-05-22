@@ -11,7 +11,6 @@
 
 **계약 현황** 탭은 Online Contact를 사용하는 조직에 **①** 서비스를 추가하거나, **②** 서비스 기본정보 및 계약내용 수정, **③** 서비스 사용여부 설정, **④** 서비스 해지 기능을 사용할 수 있습니다.
 
-
 #### 서비스 추가
 ![계약서비스현황_서비스추가](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-global-management_img0020.png)
 
@@ -22,10 +21,18 @@
 - 서비스 명: 사용할 서비스의 이름
 - 서비스 ID: 서비스 식별에 사용되는 ID(URL에 포함됨). 영문만 가능
 - 헬프센터 언어: 헬프센터 구성 시 사용할 언어 세트 설정
-  > ※ 언어가 2개 이상 추가되었을 경우, 헬프센터 페이지에 언어 선택 드롭박스가 추가되어 **언어별 헬프센터**를 제공할 수 있습니다.
-  > ※ 언어 코드는 ISO 국제 표준 코드로 입력해야 합니다.
+  
+  > <details markdown="1">
+  > <summary>언어가 2개 이상 추가되었을 경우, 헬프센터 페이지에 언어 선택 드롭박스가 추가되어 **언어별 헬프센터**를 제공할 수 있습니다. (<u>예시 보기</u>)</summary>
+  >
+  > <div style="text-align:left">
+  > <img src="http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-global-management_img0030.png" style="width:40%; height=40%;">
+  > </div>
+  > </details>
+  >
   > <details markdown="1"> <!-- 국가 코드 목록 html -->
-  > <summary>언어 코드 목록 보기</summary>
+  > <summary>언어 코드는 ISO 국제 표준 코드로 입력해야 합니다. (<u>언어코드 목록 보기</u>)</summary>
+  > 
   > <table>
   > <thead>
   > <tr>
@@ -1053,12 +1060,12 @@
   > </tbody>
   > </table>
   > </details>
+
 - 타임 존: 헬프센터에 설정되는 시간대
 - 서비스 배너: Online Contact GNB에서의 서비스 탭 이미지, 채팅 시 상담원의 프로필 사진으로 적용
 - 에디터 타입: 해당 서비스에서 사용할 에디터 타입으로, **HTML/TEXT** 중에서 선택 가능. 티켓 템플릿/답변 작성, 메일 레이아웃 설정 등 Online Contact 내부에서 제공되는 텍스트 에디터에 공통으로 적용
 
 **③ 계약 상세 내역** 화면에서는 Online Contact에서 제공하는 상담 기능들에 대한 **사용 여부**를 선택할 수 있습니다. 기능별 사용여부를 설정하고 우측의 사용자 수, 처리 건 수 등을 입력하면 **예상 비용**이 산출됩니다. 계약 상세 내역 입력을 완료한 후 **계약** 버튼을 클릭하면 서비스 계약이 완료됩니다.
-
 
 #### 서비스 수정/해지
 ![계약서비스현황_서비스수정해지](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-global-management_img0041.png)
@@ -1073,14 +1080,12 @@
 
 **⑤ 해지** 열의 삭제 버튼으로 서비스를 해지할 수 있습니다. 서비스를 해지하려면 먼저 **상태** 토글 버튼을 OFF로 변경해야 합니다. 
 
-
 ### 요금 현황
 ![계약서비스현황_요금현황](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-global-management_img0051.png)
 
 **요금 현황** 탭에서는 전체, 서비스 유형별, 개별 서비스별 월별 청구 요금을 **①** 검색하여 조회할 수 있습니다. 개별 서비스를 선택하여 조회하면 **②** 서비스 상태가 함께 표시됩니다.
 > ✔ **\[FAQ 바로가기]** [과금 기준은 어떻게 되나요?](https://nhn-contact.oc.toast.com/oc/hc/article/99/)
 > ✔ **\[FAQ 바로가기]** [요금은 언제 어떻게 결제되나요?](https://nhn-contact.oc.toast.com/oc/hc/article/67/)
-
 
 ### 조직 정보
 ![계약서비스현황_조직정보](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-global-management_img0060.png)
@@ -1101,6 +1106,7 @@ OC 조직 정보에서 확인할 수 있는 내용은 아래와 같습니다. **
 
 ## 조직관리자
 ![계약서비스현황_조직관리자](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-global-management_img0070.png)
+
 **조직관리자**는 Online Contact의 전체관리 메뉴 권한 및 상담원 추가/삭제 권한을 가집니다. 조직관리자 메뉴에서는 IAM 회원으로 등록되지 않은 상담원을 초대하거나 상담원 중 조직관리자를 추가할 수 있습니다. 조직관리자 권한만으로는 상담 기능과 서비스 관리 기능을 이용할 수 없으므로 상담 권한이 필요하거나 서비스를 초기에 구성할 경우 **서비스 관리 → 상담원** 메뉴에서 관리자 또는 상담원 권한을 추가해야 합니다. 조직관리자 및 상담원을 등록하려면 IAM 회원으로 등록되어 있어야 합니다.
 > ✔ **\[FAQ 바로가기]** [권한의 종류와 차이점을 알고 싶습니다.](https://nhn-contact.oc.toast.com/oc/hc/article/36/)
 
@@ -1132,9 +1138,9 @@ PC, 모바일 헬프센터의 푸터 영역에 회사 정보 및 이용약관을
 CTI 관리 메뉴에서는 Online Contact과 연결할 CTI 정보를 설정하고, 전화 상담을 진행할 상담원의 CTI ID와 CTI 번호를 설정할 수 있습니다.
 해당 메뉴는 계약 정보에서 **티켓 관리 → 전화 CTI 사용** 기능을 **사용**으로 설정한 서비스에서만 사용 가능합니다.
 
-
 ### CTI 설정
 ![계약서비스현황_CTI설정](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-global-management_img0090.png)
+
 Online Contact의 전화 상담 기능과 연결할 CTI 정보를 설정할 수 있습니다.
 
 **① CTI 버전**: 사용할 CTI 버전을 선택합니다.
@@ -1150,6 +1156,7 @@ Online Contact의 전화 상담 기능과 연결할 CTI 정보를 설정할 수 
 
 ### CTI 상담원 관리
 ![계약서비스현황_CTI상담원관리](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-global-management_img0100.png)
+
 전화 상담을 사용할 상담원에게 CTI ID 및 CTI 번호를 등록하는 메뉴입니다.
 
 **① 조회** 버튼을 클릭하여 CTI 정보를 입력할 상담원을 검색합니다. **서비스관리 → 상담원** 메뉴에서 등록된 상담원 중 하나 이상의 서비스에서 전화 권한이 부여되어 있어야 합니다.
@@ -1160,41 +1167,53 @@ Online Contact의 전화 상담 기능과 연결할 CTI 정보를 설정할 수 
 
 **④ CTI 정보를 정상적으로 입력**하였다면, **전화 위젯**을 통해 CTI에 로그인할 수 있습니다.
 
-> CTI 정보 취득이 어려우실 경우 Online Contact 고객센터를 통해 문의 부탁드립니다. 
+> ※ CTI 정보 취득이 어렵다면 Online Contact 고객센터를 통해 문의 부탁드립니다. 
 > ([Online Contact 고객센터 바로가기](https://nhn-contact.oc.toast.com/oc/hc/))
 
+
 ## 권한 변경 로그 관리
-![](http://static.toastoven.net/prod_contact_center/2.1.5-(1).png)
-**①** 조직 내부 상담원들의 권한을 변경할 시 로그가 저장됩니다. 조직관리자 또는 관리자가 권한 변경을 진행한 로그를 관리하는 메뉴로, **②** 조작일시, 조작내용, 이름, IP, 서비스, ID 중 일부 정보 입력을 통해 검색할 수 있습니다.
+![계약서비스현황_권한변경로그관리](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-global-management_img0110.png)
+
+조직 내부 상담원들의 권한을 수정하면 변경된 이력이 저장되며, 해당 내역을 확인할 수 있는 메뉴입니다.
+
+**① 조회** 버튼을 클릭합니다. 조작일시, 조작내용, 이름 등으로 상세하게 검색할 수 있습니다.
+
+**② 서비스, 조작일시, 변경전 권한, 변경후 권한** 등의 정보가 조회됩니다.
+
 
 ## 데이터 이관
-![](http://static.toastoven.net/prod_contact_center/2.1.6-(2).png)
+![계약서비스현황_데이터이관](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-global-management_img0120.png)
 
-Online Contact으로의 상담 데이터 이관이 필요하실 경우, **데이터 이관** 메뉴를 통해 엑셀 파일 형식으로 정리된 데이터를 업로드하여 Online Contact 내에 티켓으로 생성하실 수 있습니다.
+Online Contact으로의 상담 데이터 이관이 필요할 경우, **데이터 이관** 메뉴를 통해 엑셀 파일 형식으로 정리된 데이터를 업로드하여 Online Contact 내에 티켓으로 생성할 수 있습니다.
 
-**① 추가** 버튼을 클릭하시면 **템플릿 다운로드** 화면이 표시됩니다. 상담 데이터를 이관하고자 하시는 서비스를 선택하신 후, **② 다운로드** 버튼을 클릭하시면 해당 서비스의 이관 템플릿을 다운로드하실 수 있습니다. 데이터 이관 템플릿의 경우 다운로드 당시 해당 서비스에 설정된 필드 구성이 반영되므로, 필드 구성이 변경되었을 경우 템플릿을 새로 다운받아 작성을 진행해주세요.  
+**① 추가** 버튼을 클릭합니다.
 
-템플릿 다운로드 화면에서 **다음** 버튼을 클릭하시면 **데이터 등록** 화면이 표시됩니다. 
-**③ 추가** 버튼을 클릭하시면 작성하신 파일을 업로드 하실 수 있으며, 데이터를 이관하고자 하시는 서비스와 파일 명을 한번 더 확인하신 후에 **④ 확인** 버튼을 클릭하시면 데이터 등록이 완료됩니다.
+**② 템플릿 다운로드** 대화상자가 나타나며, 상담 데이터를 이관할 서비스를 선택한 후, **다운로드** 버튼을 클릭합니다. 템플릿은 선택한 서비스의 현 시점 필드 구성이 반영되며, **서비스관리 → 티켓 → 필드 → 필드관리 탭**에서 설정할 수 있습니다.
+다운받은 파일을 작성한 후 **다음** 버튼을 클릭합니다.
 
-이관 처리 전까지 이관 예약 내역의 **삭제**가 가능하며, 데이터 이관이 완료되었을 경우 삭제 버튼은 비활성화 처리됩니다.
+**③ 데이터 등록** 대화상자가 표시되며, **추가** 버튼을 클릭하여 작성한 파일을 선택한 후 **저장** 버튼을 클릭합니다.
+
+**④ 주의사항**을 확인한 후 최종적으로 **확인** 버튼을 클릭하면 업로드한 엑셀 파일 기준으로 티켓 데이터가 순차적으로 생성됩니다.
+
+**⑤** 업로드한 데이터는 예약 상태가 되며, 다음날 오전 1시에 일괄적으로 반영됩니다. 예약 상태의 데이터는 **삭제** 버튼을 클릭하여 삭제 가능하나, 이관이 완료되었을 경우 버튼이 비활성화되어 삭제가 불가합니다.
+
 
 ## My 실적
-![](http://static.toastoven.net/prod_contact_center/2.1.4-(2).png)
-Online Contact 화면 우측 상단에 표시된 **①** 현재 접속되어 있는 **계정 이름**을 클릭하시면 **② My 실적** 메뉴로 접속하실 수 있습니다. 
-해당 메뉴에서 **현재 접속 중인 서비스**에서의 티켓, 전화, 채팅 상담에 대한 세부적인 **실시간 누적 데이터**를 조회하실 수 있습니다. 
+![계약서비스현황_My실적](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-global-management_img0130.png)
+
+Online Contact 화면 우측 상단에 표시된 **① 계정 이름**을 클릭한 후 **② My 실적**을 선택하면 **③ My 실적 대화상자**가 나타납니다.
+
+해당 화면에서는 **현재 접속 중인 서비스**에서의 티켓, 전화, 채팅 상담에 대한 세부적인 **실시간 누적 데이터**를 확인할 수 있습니다.
 
 상담 유형에 따라 표시되는 세부적인 실적 구분은 다음과 같습니다.
 
-**③ 티켓실적**
-
+**티켓실적**
 - 미할당 
 - 처리중 
 - 해결
 - 완료
 
-**④ 전화실적**
-
+**전화실적**
 - IB통화(건수/시간)
 - OB통화(건수/시간)
 - 대기
@@ -1208,25 +1227,27 @@ Online Contact 화면 우측 상단에 표시된 **①** 현재 접속되어 있
 - 회의
 - 코칭
 
-**⑤ 채팅실적**
-
+**채팅실적**
 - 대기
 - 온라인
 - 휴식
 
+
 ## 사용자 설정
-![](http://static.toastoven.net/prod_contact_center/2.1.5-(1).png)
-Online Contact 화면 우측 상단에 표시된 **①** 현재 접속되어 있는 **계정 이름**을 클릭하시면 **②** 개인정보설정 메뉴로 접속하실 수 있습니다. 
-해당 메뉴에서 Online Contact에 접속하는 사용자의 개인정보 설정을 열람하고 변경할 수 있습니다. 
+![계약서비스현황_사용자설정](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-global-management_img0140.png)
 
-✔ **\[FAQ 바로가기]** [아이디, 이메일, 이름을 변경하거나 삭제하고 싶습니다.](https://nhn-contact.oc.toast.com/oc/hc/article/33/)
-✔ **\[FAQ 바로가기]** [비밀번호를 변경하고 싶습니다.](https://nhn-contact.oc.toast.com/oc/hc/article/35/)
+Online Contact 화면 우측 상단에 표시된 **① 계정 이름**을 클릭한 후 **② 개인정보설정**을 선택하면 **③ 개인정보설정 대화상자**가 나타납니다.
 
-### 열람 가능한 정보
+해당 화면에서 Online Contact에 접속하는 사용자의 개인정보설정을 확인하고 변경할 수 있습니다. 
+
+> ✔ **\[FAQ 바로가기]** [아이디, 이메일, 이름을 변경하거나 삭제하고 싶습니다.](https://nhn-contact.oc.toast.com/oc/hc/article/33/)
+> ✔ **\[FAQ 바로가기]** [비밀번호를 변경하고 싶습니다.](https://nhn-contact.oc.toast.com/oc/hc/article/35/)
+
+**열람 가능한 정보**
 - 계정 
 - 이름
 - 닉네임(변경 가능): 채팅 또는 메일 처리 시 보여지는 항목
 - 전화번호
 - 이메일
-- 언어선택(변경 가능): 서비스 언어 선택과는 별개의 사용자 환경에서의 언어 선택
-- 티켓할당(변경 가능): 휴가 등으로 티켓 배분을 받지 못하는 경우 티켓 할당여부 설정 가능
+- 언어선택(변경 가능): 서비스 언어 선택과는 별개로 사용자 환경에서의 언어 선택
+- 티켓할당(변경 가능): 휴가 등으로 티켓 배분을 받지 못하는 경우, 티켓 할당여부 설정 가능
