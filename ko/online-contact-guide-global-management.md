@@ -1070,7 +1070,7 @@
 **③ 계약 상세 내역** 화면에서는 Online Contact에서 제공하는 상담 기능들에 대한 **사용 여부**를 선택할 수 있습니다. 기능별 사용여부를 설정하고 우측의 사용자 수, 처리 건 수 등을 입력하면 **예상 비용**이 산출됩니다. 계약 상세 내역 입력을 완료한 후 **계약** 버튼을 클릭하면 서비스 계약이 완료됩니다.
 
 #### 서비스 수정/해지
-![계약서비스현황_서비스수정해지](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-global-management_img0041.png) 
+![계약서비스현황_서비스수정해지](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-global-management_img0041.png)
 
 **① 서비스 추가 대화상자에서 입력 단계를 모두 진행하지 않고 이탈**하면 계약상태는 **작성중**으로 표시됩니다. **계약 열의 등록** 버튼을 클릭하여 내용을 이어서 작성할 수 있습니다.
 
