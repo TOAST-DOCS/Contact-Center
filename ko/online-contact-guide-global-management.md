@@ -3,6 +3,7 @@
 **전체 관리**는 서비스계약/해지, 조직관리, CTI설정 등 NHN CLOUD Contact Center를 이용하는 조직의 전반적인 설정 기능을 포함합니다.
 서비스 현황, 조직관리자, 회사정보 관리, CTI 관리, 권한 변경 로그 관리, 데이터 이관 메뉴로 구성되어 있습니다.
 
+
 ## 계약 서비스 현황
 
 ### 계약 현황
@@ -10,21 +11,17 @@
 
 **계약 현황** 탭은 Online Contact를 사용하는 조직에 **①** 서비스를 추가하거나, **②** 서비스 기본정보 및 계약내용 수정, **③** 서비스 사용여부 설정, **④** 서비스 해지 기능을 사용할 수 있습니다.
 
+
 #### 서비스 추가
 ![계약서비스현황_서비스추가](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-global-management_img0020.png)
 
 **① 서비스 추가** 버튼을 클릭합니다.
 
 **② 서비스 추가 대화상자**가 나타나며 추가할 서비스의 기본 정보를 입력한 후 다음 버튼을 클릭합니다. 입력이 필요한 항목은 아래와 같습니다.
-
 - 유형: 추가할 서비스의 유형(상담 관리, 이슈 관리)
 - 서비스 명: 사용할 서비스의 이름
 - 서비스 ID: 서비스 식별에 사용되는 ID(URL에 포함됨). 영문만 가능
 - 헬프센터 언어: 헬프센터 구성 시 사용할 언어 세트 설정
-  > <div style="text-align:left">
-  > <img src="http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-global-management_img0030.png" style="width:50%; height=50%;">
-  > </div>
-  >
   > ※ 언어가 2개 이상 추가되었을 경우, 헬프센터 페이지에 언어 선택 드롭박스가 추가되어 **언어별 헬프센터**를 제공할 수 있습니다.
   > ※ 언어 코드는 ISO 국제 표준 코드로 입력해야 합니다.
   > <details markdown="1"> <!-- 국가 코드 목록 html -->
@@ -1062,6 +1059,7 @@
 
 **③ 계약 상세 내역** 화면에서는 Online Contact에서 제공하는 상담 기능들에 대한 **사용 여부**를 선택할 수 있습니다. 기능별 사용여부를 설정하고 우측의 사용자 수, 처리 건 수 등을 입력하면 **예상 비용**이 산출됩니다. 계약 상세 내역 입력을 완료한 후 **계약** 버튼을 클릭하면 서비스 계약이 완료됩니다.
 
+
 #### 서비스 수정/해지
 ![계약서비스현황_서비스수정해지](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-global-management_img0041.png)
 
@@ -1075,13 +1073,14 @@
 
 **⑤ 해지** 열의 삭제 버튼으로 서비스를 해지할 수 있습니다. 서비스를 해지하려면 먼저 **상태** 토글 버튼을 OFF로 변경해야 합니다. 
 
+
 ### 요금 현황
-![계약서비스현황_요금현황](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-global-management_img0050.png)
+![계약서비스현황_요금현황](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-global-management_img0051.png)
 
 **요금 현황** 탭에서는 전체, 서비스 유형별, 개별 서비스별 월별 청구 요금을 **①** 검색하여 조회할 수 있습니다. 개별 서비스를 선택하여 조회하면 **②** 서비스 상태가 함께 표시됩니다.
 > ✔ **\[FAQ 바로가기]** [과금 기준은 어떻게 되나요?](https://nhn-contact.oc.toast.com/oc/hc/article/99/)
-> 
 > ✔ **\[FAQ 바로가기]** [요금은 언제 어떻게 결제되나요?](https://nhn-contact.oc.toast.com/oc/hc/article/67/)
+
 
 ### 조직 정보
 ![계약서비스현황_조직정보](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-global-management_img0060.png)
@@ -1089,32 +1088,26 @@
 **조직 정보** 탭에서는 Online Contact 서비스를 이용하고 있는 **① NHN Cloud 조직 정보**와, Online Contact 내부의 계약 서비스들을 관리하는 **② Online Contact 조직 정보**를 확인할 수 있습니다.
 
 **① NHN Cloud 조직 정보**
-
 NHN Cloud 조직 정보에서 확인할 수 있는 내용은 아래와 같습니다. 아래 정보는 모두 **NHN Cloud Console → 조직 설정 → 조직 기본 설정** 탭에서도 확인할 수 있으며, 조직 이름, 도메인은 해당 탭에서 수정할 수 있습니다.
- 
 - NHN Cloud 조직 이름: 조직 생성 시 설정한 이름
 - NHN Cloud 조직 ID: 조직 생성 시 각 조직마다 부여되는 고유한 ID. Online Contact Open API 사용 시 필요한 인증 토큰 생성에 사용 
 - NHN Cloud 조직 도메인: 조직 생성 후 서비스 선택 시 설정한 도메인 이름
 
 **② OC(Online Contact) 조직 정보**
-
 OC 조직 정보에서 확인할 수 있는 내용은 아래와 같습니다. **조직 Key**의 경우 API Key 변경 버튼을 통해 변경 가능하며, **Online Contact URL**은 NHN Cloud 조직 도메인을 이용하여 생성되므로 조직 도메인 변경 시 함께 변경됩니다.
-
 - OC 조직 Key: 서비스 등록/수정/삭제 등 조직 관리 차원에서 수행되는 행위를 Online Contact 외부에서 API를 통해 처리하고자 할 때 인증 단계에서 사용되는 Key
 - OC URL: Online Contact 접속 URL. https://**조직 도메인**.oc.toast.com 형식으로 생성됨
 
+
 ## 조직관리자
 ![계약서비스현황_조직관리자](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-global-management_img0070.png)
-**조직관리자**는 Online Contact의 전체관리 메뉴 권한 및 상담원 추가/삭제 권한을 가집니다. 조직관리자 메뉴에서는 IAM 회원으로 등록되지 않은 상담원을 초대하거나 상담원 중 조직관리자를 추가할 수 있습니다.
-
-조직관리자 권한만으로는 상담 기능과 서비스 관리 기능을 이용할 수 없으므로 상담 권한이 필요하거나 서비스를 초기에 구성할 경우 **서비스 관리 → 상담원** 메뉴에서 관리자 또는 상담원 권한을 추가해야 합니다. 조직관리자 및 상담원을 등록하려면 IAM 회원으로 등록되어 있어야 합니다.
+**조직관리자**는 Online Contact의 전체관리 메뉴 권한 및 상담원 추가/삭제 권한을 가집니다. 조직관리자 메뉴에서는 IAM 회원으로 등록되지 않은 상담원을 초대하거나 상담원 중 조직관리자를 추가할 수 있습니다. 조직관리자 권한만으로는 상담 기능과 서비스 관리 기능을 이용할 수 없으므로 상담 권한이 필요하거나 서비스를 초기에 구성할 경우 **서비스 관리 → 상담원** 메뉴에서 관리자 또는 상담원 권한을 추가해야 합니다. 조직관리자 및 상담원을 등록하려면 IAM 회원으로 등록되어 있어야 합니다.
 > ✔ **\[FAQ 바로가기]** [권한의 종류와 차이점을 알고 싶습니다.](https://nhn-contact.oc.toast.com/oc/hc/article/36/)
 
 **① 회원 초대**
 - **회원 초대** 버튼을 클릭합니다.
 - 초대할 회원의 이름, ID, 이메일을 입력한 후 확인 버튼을 클릭합니다.
-- 입력된 이메일로 초대 메일이 발송되며, 해당 이메일을 통해 비밀번호를 설정한 후 로그인합니다.
-  > IAM 회원 초대 기능은 NHN Cloud CONSOLE → 멤버 관리 → IAM 회원 탭에서도 사용할 수 있습니다.
+- 입력된 이메일로 초대 메일이 발송되며, 해당 이메일을 통해 비밀번호를 설정한 후 로그인합니다. IAM 회원 초대 기능은 NHN Cloud CONSOLE → 멤버 관리 → IAM 회원 탭에서도 사용할 수 있습니다.
 
 **② 조직관리자 추가**
 - **② 조직관리자 추가** 버튼을 클릭합니다.
@@ -1122,15 +1115,23 @@ OC 조직 정보에서 확인할 수 있는 내용은 아래와 같습니다. **
 - 조직관리자로 추가할 IAM 회원을 검색한 후 선택합니다. 검색 시 이름, 계정, 이메일 중 하나를 입력하여 검색해야 합니다.
 - 저장 버튼을 클릭합니다.
 
+
 ## 회사정보 관리
-![계약서비스현황_회사정보관리](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-global-management_img0080.png)
+![계약서비스현황_회사정보관리](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-global-management_img0081.png)
 
 PC, 모바일 헬프센터의 푸터 영역에 회사 정보 및 이용약관을 표시하기 위한 정보를 입력하는 메뉴입니다.
-**① 추가** 버튼을 누르면 회사 정보를 입력하는 페이지로 이동되어, **② 회사 정보**, **③ 상표 및 저작권**, **④ 이용 약관** 정보를 설정할 수 있습니다. 정보 입력 후 **저장** 버튼을 누르면 설정한 회사 정보가 목록에 추가되며, 상담관리 서비스의 **서비스 관리 → 헬프센터 → 구성관리** 메뉴에서 헬프센터 페이지 푸터에 **⑤ 반영**할 수 있습니다.
+
+**① 추가** 버튼을 클릭합니다.
+
+**② 회사 정보, 상표 및 저작권, 이용 약관** 정보를 입력한 후 **저장** 버튼을 클릭합니다.
+
+**③ 저장한 회사정보는 서비스 관리 → 헬프센터 → 구성관리** 메뉴에서 헬프센터 페이지 푸터에 **반영**할 수 있습니다.
+
 
 ## CTI 관리
 CTI 관리 메뉴에서는 Online Contact과 연결할 CTI 정보를 설정하고, 전화 상담을 진행할 상담원의 CTI ID와 CTI 번호를 설정할 수 있습니다.
 해당 메뉴는 계약 정보에서 **티켓 관리 → 전화 CTI 사용** 기능을 **사용**으로 설정한 서비스에서만 사용 가능합니다.
+
 
 ### CTI 설정
 ![계약서비스현황_CTI설정](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-global-management_img0090.png)
@@ -1146,15 +1147,21 @@ Online Contact의 전화 상담 기능과 연결할 CTI 정보를 설정할 수 
 
 **④ CTI Log 모니터링**: 기능을 활성화하면 하루 단위로 CTI 로그가 기록되며, 기록된 로그는 화면 우측 상단의 계정 이름을 클릭하면 나타나는 **CTI Log 다운로드**를 통해 엑셀 파일로 다운받을 수 있습니다. 
 
+
 ### CTI 상담원 관리
-![](http://static.toastoven.net/prod_contact_center/2.1.2-(3)_1.png)
-해당 조직에 등록된 상담원 중 전화 상담을 진행할 상담원에게 CTI 정보를 등록할 수 있습니다.
+![계약서비스현황_CTI상담원관리](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-global-management_img0100.png)
+전화 상담을 사용할 상담원에게 CTI ID 및 CTI 번호를 등록하는 메뉴입니다.
 
-메뉴 접속 시, 목록에는 해당 조직에 등록된 상담원 중 하나 이상의 서비스에서 전화 권한이 부여된 상담원이 표시됩니다.
-이름, 이메일, CTI ID, CTI NO, 서비스 정보를 통해 상담원을 **① 검색**하실 수 있으며, **② 수정** 버튼을 통해 CTI ID와 CTI NO를 입력 또는 수정하실 수 있습니다. (CTI ID, CTI NO 상담원 간 중복 불가) 상담원에게 CTI 정보가 정상적으로 입력되었을 경우, 전화 위젯을 통해 **CTI 로그인**을 진행하실 수 있습니다.
+**① 조회** 버튼을 클릭하여 CTI 정보를 입력할 상담원을 검색합니다. **서비스관리 → 상담원** 메뉴에서 등록된 상담원 중 하나 이상의 서비스에서 전화 권한이 부여되어 있어야 합니다.
 
-CTI 정보의 취득이 어려우실 경우 Online Contact 고객센터를 통해 문의 부탁드립니다. 
-([Online Contact 고객센터 바로가기](https://nhn-contact.oc.toast.com/oc/hc/))
+**② 수정** 버튼을 클릭합니다.
+
+**③ CTI ID, CTI NO**를 입력할 수 있으며, 저장 버튼을 클릭하여 반영합니다. CTI ID, CTI NO는 상담원 간 중복 입력이 불가합니다.
+
+**④ CTI 정보를 정상적으로 입력**하였다면, **전화 위젯**을 통해 CTI에 로그인할 수 있습니다.
+
+> CTI 정보 취득이 어려우실 경우 Online Contact 고객센터를 통해 문의 부탁드립니다. 
+> ([Online Contact 고객센터 바로가기](https://nhn-contact.oc.toast.com/oc/hc/))
 
 ## 권한 변경 로그 관리
 ![](http://static.toastoven.net/prod_contact_center/2.1.5-(1).png)
