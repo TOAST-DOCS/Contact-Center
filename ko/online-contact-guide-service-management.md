@@ -690,9 +690,9 @@ Online Contact에서 제공하는 채팅 서비스를 기존 사용중인 타 �
 
 #### 1. 템플릿 관리 화면
 
-![서비스관리_상담원그룹](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0290.png)
+![서비스관리_헬프센터_템플릿관리](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0290.png)
 
-템플릿 관리는 헬프센터의 **디자인 테마**를 관리하는 메뉴입니다. 서비스별로 PC, 모바일 버전 각각 메인 화면 디자인을 수정할 수 있는 편집 기능을 제공합니다.
+**템플릿 관리**는 헬프센터의 **디자인 테마**를 관리하는 메뉴입니다. 서비스별로 PC, 모바일 버전 각각 메인 화면 디자인을 수정할 수 있는 편집 기능을 제공합니다.
 
 **① 템플릿 등록**
 
@@ -713,547 +713,642 @@ Online Contact에서 제공하는 채팅 서비스를 기존 사용중인 타 �
 - 활성화되지 않은 템플릿은 **수정, 삭제** 버튼을 통해 선택한 템플릿의 내용을 수정하거나 삭제할 수 있습니다.
 
 #### 2. 템플릿 등록
-![](http://static.toastoven.net/prod_contact_center/2.2.5-(2)_1.png)
+![서비스관리_헬프센터_템플릿등록](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0300.png)
 
-템플릿 추가 및 수정 시 **① CSS / HTML / JS 스크립트**를 주어진 편집기에 직접 작성하시거나 [서비스 관리 → 헬프센터 → 파일업로드 관리] 메뉴에서 필요하신 파일(스크립트, 폰트, 이미지 등)을 업로드하신 후 리소스 경로 입력을 통해 헬프센터의 구성을 변경하실 수 있습니다. **② 다국어 코드 삽입** 버튼을 누르시면 [서비스 관리 → 헬프센터 → 다국어 코드 관리] 메뉴에서 설정하신 언어 세트 목록이 표시되며, **선택** 버튼을 통해 템플릿 내에 다국어 코드를 삽입하실 수 있습니다.
+**① 템플릿 제목/ 템플릿 설명**
 
-편집 후 **④ 미리보기** 버튼을 통하여 편집 내용이 헬프센터에 적용된 모습을 사전에 열람하실 수 있으며, **③ 저장**하신 후 적용이 가능합니다.
+- 등록할 템플릿의 제목과 설명을 입력합니다.
+
+**② 템플릿 유형**
+
+- 기본 템플릿 양식을 선택합니다.
+- Online Contact에서 제공하는 기본 템플릿을 선택하여 스크립트를 불러옵니다.
+
+**③ 스크립트**
+
+- 선택한 템플릿 유형에 따라 적용된 **CSS / HTML / Java Script** 소스코드를 직접 수정할 수 있습니다.
+- [서비스 관리 → 헬프센터 → 파일업로드 관리] 메뉴에서 필요한 파일(스크립트, 폰트, 이미지 등)을 업로드한 후 리소스 경로를 입력하여 적용할 수 있습니다.
+  
+ **④ 코드 삽입**
+ 
+ - 코드 삽입 버튼을 클릭하면 [서비스 관리 → 헬프센터 → 다국어 코드 관리] 메뉴에서 설정한 언어 세트 목록이 조회됩니다.
+ - **선택** 버튼을 클릭하여 에디터에 다국어 코드를 삽입할 수 있습니다.
+ - 등록된 다국어코드는 헬프센터 내 언어 설정에 따라 해당하는 언어로 출력됩니다. 
+
+**⑤ 미리보기**
+
+- 편집 후 **미리보기** 버튼을 통해 헬프센터에 적용될 모습을 사전에 확인할 수 있습니다.
 
 ✔ **\[FAQ 바로가기]** [헬프센터 PC/모바일 템플릿 관리 기능의 구체적인 예시가 궁금해요.](https://nhn-contact.oc.toast.com/oc/hc/article/60/)
 
 ✔ **\[FAQ 바로가기]** [헬프센터 텍스트의 폰트를 바꾸거나, 굵게/밑줄 등의 효과를 적용할 수 있나요?](https://nhn-contact.oc.toast.com/oc/hc/article/64/)
 
-**CSS 수정 시** 활용하실 수 있는 주요한 요소들은 다음과 같습니다.
-
-<!-- css 요소 목록 html -->
-
-<details markdown="1">
-<summary> main.css </summary>
-
-<table>
-<thead>
-<tr>
-<th>요소 이름</th>
-<th>설명</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>.main_banner</td>
-<td>메인 상단 배너 영역</td>
-</tr>
-<tr>
-<td>.main_banner img</td>
-<td>메인 상단 배너 영역 이미지</td>
-</tr>
-<tr>
-<td>.carousel-caption .title_txt</td>
-<td>메인 상단 배너 영역 제목</td>
-</tr>
-<tr>
-<td>.carousel-caption .sub_txt</td>
-<td>메인 상단 배너 영역 소제목</td>
-</tr>
-<tr>
-<td>.search-box</td>
-<td>메인 상단 배너 영역 검색상자</td>
-</tr>
-<tr>
-<td>.search-box .icon-ic-search</td>
-<td>메인 상단 배너 영역 검색아이콘</td>
-</tr>
-<tr>
-<td>#supports .container-con</td>
-<td>메인 고객센터 구성요소 영역</td>
-</tr>
-<tr>
-<td>#supports .support__item:nth-child(1):before</td>
-<td>메인 공지사항 아이콘</td>
-</tr>
-<tr>
-<td>#supports .support__item:nth-child(2):before</td>
-<td>메인 FAQ 아이콘</td>
-</tr>
-<tr>
-<td>#supports .support__item:nth-child(3):before</td>
-<td>메인 문의하기 아이콘</td>
-</tr>
-<tr>
-<td>#supports .support__item:nth-child(4):before</td>
-<td>메인 문의내역 아이콘</td>
-</tr>
-<tr>
-<td>#supports .support__item .card-title .btn</td>
-<td>메인 구성요소 제목</td>
-</tr>
-<tr>
-<td>#supports .support__item .card-title .btn:hover</td>
-<td>메인 구성요소 제목 호버 시 색 변경</td>
-</tr>
-<tr>
-<td>#supports .support__item .card-title .btn:after</td>
-<td>메인 구성요소 텍스트 우측 화살표 아이콘</td>
-</tr>
-<tr>
-<td>#supports .support__item .card-text</td>
-<td>메인 구성요소 설명 텍스트</td>
-</tr>
-<tr>
-<td>#sec_contact-news .textArea</td>
-<td>메인 하단 배너 영역</td>
-</tr>
-<tr>
-<td>#sec_contact-news .textArea .text-item h3</td>
-<td>메인 하단 배너 영역 제목</td>
-</tr>
-<tr>
-<td>#sec_contact-news .textArea .text-item .icon-more::after</td>
-<td>메인 하단 배너 영역 더보기 아이콘</td>
-</tr>
-<tr>
-<td>#sec_contact-news .textArea .text-item li</td>
-<td>메인 하단 배너 영역 게시글 리스트</td>
-</tr>
-<tr>
-<td>#chat-offline</td>
-<td>상담원 부재중 박스</td>
-</tr>
-<tr>
-<td>#chat-offline .title</td>
-<td>상담원 부재중 박스 제목</td>
-</tr>
-<tr>
-<td>#chat-offline .text</td>
-<td>상담원 부재중 박스 텍스트</td>
-</tr>
-<tr>
-<td>#chat-offline .close</td>
-<td>상담원 부재중 박스 닫기 아이콘</td>
-</tr>
-<tr>
-<td>#chat-offline .btn</td>
-<td>상담원 부재중 박스 문의하기 아이콘</td>
-</tr>
-</tbody>
-</table>
- 
-</details>
-
-<details markdown="1">
-<summary> faq.css </summary>
-
-<table>
-<thead>
-<tr>
-<th>요소 이름</th>
-<th>설명</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>.lnb--fixed .lnb--fixed__nav</td>
-<td>세부 페이지 좌측 LNB</td>
-</tr>
-<tr>
-<td>.help-center-title</td>
-<td>세부 페이지 좌측 LNB 제목</td>
-</tr>
-<tr>
-<td>.lnb__nav</td>
-<td>세부 페이지 좌측 LNB 리스트</td>
-</tr>
-<tr>
-<td>.lnb__nav li a</td>
-<td>세부 페이지 좌측 LNB 리스트 개별</td>
-</tr>
-<tr>
-<td>.lnb__nav li.on a</td>
-<td>세부 페이지 좌측 LNB 리스트 선택</td>
-</tr>
-<tr>
-<td>.lnb--fixed__side-divider</td>
-<td>세부 페이지 LNB/contents 구분선</td>
-</tr>
-<tr>
-<td>.lnb--fixed__content</td>
-<td>세부 페이지 콘텐츠 영역</td>
-</tr>
-<tr>
-<td>.tit_txt</td>
-<td>세부 페이지 콘텐츠 영역 제목</td>
-</tr>
-<tr>
-<td>.data_info-box</td>
-<td>세부 페이지 콘텐츠 영역 박스</td>
-</tr>
-<tr>
-<td>.tab_category</td>
-<td>세부 페이지 콘텐츠 영역 카테고리 탭</td>
-</tr>
-<tr>
-<td>.tab_category&gt;li.on</td>
-<td>세부 페이지 콘텐츠 영역 카테고리 선택</td>
-</tr>
-<tr>
-<td>.tab_category&gt;li</td>
-<td>세부 페이지 콘텐츠 영역 카테고리 개별</td>
-</tr>
-<tr>
-<td>.tbl_wrap</td>
-<td>세부 페이지 콘텐츠 영역 리스트</td>
-</tr>
-<tr>
-<td>.faqData th:nth-child(1)</td>
-<td>FAQ 테이블 카테고리</td>
-</tr>
-<tr>
-<td>.faqData th:nth-child(2)</td>
-<td>FAQ 테이블 제목</td>
-</tr>
-<tr>
-<td>.faqData th:nth-child(3)</td>
-<td>FAQ 테이블 등록일</td>
-</tr>
-<tr>
-<td>.faqData tr.hot-text td</td>
-<td>FAQ 테이블 개별 상단고정 카테고리</td>
-</tr>
-<tr>
-<td>.faqData tr.hot-text td .title-info a</td>
-<td>FAQ 테이블 개별 상단고정 제목</td>
-</tr>
-<tr>
-<td>.faqData td .title-info sup</td>
-<td>FAQ 테이블 개별 상단고정 HOT</td>
-</tr>
-<tr>
-<td>.gocont .search</td>
-<td>FAQ 검색</td>
-</tr>
-<tr>
-<td>.sel</td>
-<td>FAQ 검색 카테고리</td>
-</tr>
-<tr>
-<td>.search .inp</td>
-<td>FAQ 검색어 입력</td>
-</tr>
-<tr>
-<td>.search .btnArea</td>
-<td>FAQ 검색 버튼</td>
-</tr>
-<tr>
-<td>.faqData_info-con</td>
-<td>FAQ 세부 문서 콘텐츠</td>
-</tr>
-<tr>
-<td>.faqData_info-con .dataTit</td>
-<td>FAQ 세부 문서 제목</td>
-</tr>
-<tr>
-<td>.faqData_info-con .dataTime</td>
-<td>FAQ 세부 문서 등록일</td>
-</tr>
-<tr>
-<td>.faqData_info-con .dataTextBox</td>
-<td>FAQ 세부 문서 내용 텍스트</td>
-</tr>
-</tbody>
-</table>
-
-</details>
-
-<details markdown="1">
-<summary> notice.css </summary>
-
-<table>
-<thead>
-<tr>
-<th>요소 이름</th>
-<th>설명</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>.el-breadcrumb</td>
-<td>세부 페이지 우측 상단 텍스트 영역</td>
-</tr>
-<tr>
-<td>.el-breadcrumb li</td>
-<td>세부 페이지 우측 상단 텍스트 영역 개별</td>
-</tr>
-<tr>
-<td>.noticeData</td>
-<td>공지사항 테이블</td>
-</tr>
-<tr>
-<td>.noticeData th:nth-child(1)</td>
-<td>공지사항 테이블 번호</td>
-</tr>
-<tr>
-<td>.noticeData th:nth-child(2)</td>
-<td>공지사항 테이블 제목</td>
-</tr>
-<tr>
-<td>.noticeData th:nth-child(3)</td>
-<td>공지사항 테이블 말머리</td>
-</tr>
-<tr>
-<td>.noticeData th:nth-child(4)</td>
-<td>공지사항 테이블 등록일</td>
-</tr>
-<tr>
-<td>.noticeData tr.hot-text</td>
-<td>공지사항 테이블 개별 상단고정</td>
-</tr>
-<tr>
-<td>.noticeData tr.hot-text td</td>
-<td>공지사항 테이블 개별 상단고정 번호</td>
-</tr>
-<tr>
-<td>.noticeData tr.hot-text td .title-info a</td>
-<td>공지사항 테이블 개별 상단고정 제목</td>
-</tr>
-<tr>
-<td>.noticeData td .title-info sup</td>
-<td>공지사항 테이블 개별 상단고정 HOT</td>
-</tr>
-<tr>
-<td>.icon-leavel-1</td>
-<td>공지사항 테이블 개별 상단고정 말머리</td>
-</tr>
-<tr>
-<td>.noticeData tr</td>
-<td>공지사항 테이블 개별</td>
-</tr>
-<tr>
-<td>.noticeData td .title-info a</td>
-<td>공지사항 테이블 개별 제목</td>
-</tr>
-<tr>
-<td>.upload-text-memo</td>
-<td>문의하기 첨부파일 필드 텍스트</td>
-</tr>
-<tr>
-<td>.faqData_info-con .dataTime .noticeType</td>
-<td>공지사항 세부 문서 말머리</td>
-</tr>
-<tr>
-<td>.faqData_info-con .dataTime .noticeType .icon-leavel-1</td>
-<td>공지사항 세부 문서 말머리 아이콘</td>
-</tr>
-</tbody>
-</table>
-
-</details>
-
-<details markdown="1">
-<summary> search.css </summary>
-
-<table>
-<thead>
-<tr>
-<th>요소 이름</th>
-<th>설명</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>.paginate</td>
-<td>페이지네이션 영역</td>
-</tr>
-<tr>
-<td>.paginate li</td>
-<td>페이지네이션 개별</td>
-</tr>
-<tr>
-<td>.paginate li.firstPage a</td>
-<td>페이지네이션 &lt;&lt; 키</td>
-</tr>
-<tr>
-<td>.paginate li.firstPage a.img</td>
-<td>페이지네이션 &lt;&lt; 키 이미지</td>
-</tr>
-<tr>
-<td>.paginate li.prev a.</td>
-<td>페이지네이션 &lt; 키</td>
-</tr>
-<tr>
-<td>.paginate li.prev a img</td>
-<td>페이지네이션 &lt; 키 이미지</td>
-</tr>
-<tr>
-<td>.paginate li a</td>
-<td>페이지네이션 개별 페이지</td>
-</tr>
-<tr>
-<td>.paginate li.number.active a</td>
-<td>페이지네이션 현재 페이지</td>
-</tr>
-<tr>
-<td>.paginate li.next a.</td>
-<td>페이지네이션 &gt; 키</td>
-</tr>
-<tr>
-<td>.paginate li.next a img</td>
-<td>페이지네이션 &gt; 키 이미지</td>
-</tr>
-<tr>
-<td>.paginate li.lastPage a</td>
-<td>페이지네이션 &gt;&gt; 키</td>
-</tr>
-<tr>
-<td>.paginate li.lastPage a.img</td>
-<td>페이지네이션 &gt;&gt; 키 이미지</td>
-</tr>
-<tr>
-<td>.search-title</td>
-<td>검색결과 제목</td>
-</tr>
-<tr>
-<td>.search-title strong</td>
-<td>검색결과 제목 검색어 강조</td>
-</tr>
-<tr>
-<td>.search-text</td>
-<td>검색결과</td>
-</tr>
-<tr>
-<td>.search-text .search-title_sub</td>
-<td>검색결과 하위분류</td>
-</tr>
-<tr>
-<td>.search-text .search-text_lit</td>
-<td>검색결과 개별</td>
-</tr>
-<tr>
-<td>.search-text .search-text_lit dt a</td>
-<td>검색결과 개별 제목</td>
-</tr>
-<tr>
-<td>.search-text .search-text_lit dd .search-text_con</td>
-<td>검색결과 개별 내용 미리보기</td>
-</tr>
-<tr>
-<td>.search-text .search-text_lit dd .search-text_time</td>
-<td>검색결과 개별 작성일</td>
-</tr>
-</tbody>
-</table>
-
-</details>
-
-<details markdown="1">
-<summary> inquiry.css </summary>
-
-<table>
-<thead>
-<tr>
-<th>요소 이름</th>
-<th>설명</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>.selectStyle</td>
-<td>검색 내부 옵션</td>
-</tr>
-<tr>
-<td>.inquiry-con</td>
-<td>문의하기 콘텐츠 영역</td>
-</tr>
-<tr>
-<td>.inquiry-con_table</td>
-<td>문의하기 테이블</td>
-</tr>
-<tr>
-<td>.inquiry-con_table th</td>
-<td>문의하기 테이블 필드</td>
-</tr>
-<tr>
-<td>.bl_ess</td>
-<td>문의하기 테이블 필드 필수 *</td>
-</tr>
-<tr>
-<td>.inquiry-con_table td</td>
-<td>문의하기 테이블 입력</td>
-</tr>
-<tr>
-<td>.error_txt</td>
-<td>문의하기 테이블 입력 에러 텍스트</td>
-</tr>
-<tr>
-<td>.inquiry-btn</td>
-<td>문의하기 접수 버튼</td>
-</tr>
-<tr>
-<td>.layui-icon</td>
-<td>화살표 버튼</td>
-</tr>
-<tr>
-<td>.layui-icon-right</td>
-<td>&gt; (좌측 방향) 화살표 버튼</td>
-</tr>
-<tr>
-<td>.layui-icon-up</td>
-<td>V (아래 방향) 화살표 버튼</td>
-</tr>
-<tr>
-<td>.check_area_wrap .td-radio .layui-form-checkbox[lay-skin="primary"] span</td>
-<td>체크박스 텍스트</td>
-</tr>
-<tr>
-<td>.error_txt</td>
-<td>에러 텍스트</td>
-</tr>
-</tbody>
-</table>
-
-</details>
+> **※ 참고사항**
+> 
+> 기본 템플릿에 적용된 HTML 클래스(class)와 아이디(id) 요소들은 다음과 같습니다.
+> <!-- css 요소 목록 html -->
+> <details markdown="1">
+> <summary> main.css </summary>
+> 
+> <table>
+> <thead>
+> <tr>
+> <th>요소 이름</th>
+> <th>설명</th>
+> </tr>
+> </thead>
+> <tbody>
+> <tr>
+> <td>.main_banner</td>
+> <td>메인 상단 배너 영역</td>
+> </tr>
+> <tr>
+> <td>.main_banner img</td>
+> <td>메인 상단 배너 영역 이미지</td>
+> </tr>
+> <tr>
+> <td>.carousel-caption .title_txt</td>
+> <td>메인 상단 배너 영역 제목</td>
+> </tr>
+> <tr>
+> <td>.carousel-caption .sub_txt</td>
+> <td>메인 상단 배너 영역 소제목</td>
+> </tr>
+> <tr>
+> <td>.search-box</td>
+> <td>메인 상단 배너 영역 검색상자</td>
+> </tr>
+> <tr>
+> <td>.search-box .icon-ic-search</td>
+> <td>메인 상단 배너 영역 검색아이콘</td>
+> </tr>
+> <tr>
+> <td>#supports .container-con</td>
+> <td>메인 고객센터 구성요소 영역</td>
+> </tr>
+> <tr>
+> <td>#supports .support__item:nth-child(1):before</td>
+> <td>메인 공지사항 아이콘</td>
+> </tr>
+> <tr>
+> <td>#supports .support__item:nth-child(2):before</td>
+> <td>메인 FAQ 아이콘</td>
+> </tr>
+> <tr>
+> <td>#supports .support__item:nth-child(3):before</td>
+> <td>메인 문의하기 아이콘</td>
+> </tr>
+> <tr>
+> <td>#supports .support__item:nth-child(4):before</td>
+> <td>메인 문의내역 아이콘</td>
+> </tr>
+> <tr>
+> <td>#supports .support__item .card-title .btn</td>
+> <td>메인 구성요소 제목</td>
+> </tr>
+> <tr>
+> <td>#supports .support__item .card-title .btn:hover</td>
+> <td>메인 구성요소 제목 호버 시 색 변경</td>
+> </tr>
+> <tr>
+> <td>#supports .support__item .card-title .btn:after</td>
+> <td>메인 구성요소 텍스트 우측 화살표 아이콘</td>
+> </tr>
+> <tr>
+> <td>#supports .support__item .card-text</td>
+> <td>메인 구성요소 설명 텍스트</td>
+> </tr>
+> <tr>
+> <td>#sec_contact-news .textArea</td>
+> <td>메인 하단 배너 영역</td>
+> </tr>
+> <tr>
+> <td>#sec_contact-news .textArea .text-item h3</td>
+> <td>메인 하단 배너 영역 제목</td>
+> </tr>
+> <tr>
+> <td>#sec_contact-news .textArea .text-item .icon-more::after</td>
+> <td>메인 하단 배너 영역 더보기 아이콘</td>
+> </tr>
+> <tr>
+> <td>#sec_contact-news .textArea .text-item li</td>
+> <td>메인 하단 배너 영역 게시글 리스트</td>
+> </tr>
+> <tr>
+> <td>#chat-offline</td>
+> <td>상담원 부재중 박스</td>
+> </tr>
+> <tr>
+> <td>#chat-offline .title</td>
+> <td>상담원 부재중 박스 제목</td>
+> </tr>
+> <tr>
+> <td>#chat-offline .text</td>
+> <td>상담원 부재중 박스 텍스트</td>
+> </tr>
+> <tr>
+> <td>#chat-offline .close</td>
+> <td>상담원 부재중 박스 닫기 아이콘</td>
+> </tr>
+> <tr>
+> <td>#chat-offline .btn</td>
+> <td>상담원 부재중 박스 문의하기 아이콘</td>
+> </tr>
+> </tbody>
+> </table>
+>  
+> </details>
+> 
+> <details markdown="1">
+> <summary> faq.css </summary>
+> 
+> <table>
+> <thead>
+> <tr>
+> <th>요소 이름</th>
+> <th>설명</th>
+> </tr>
+> </thead>
+> <tbody>
+> <tr>
+> <td>.lnb--fixed .lnb--fixed__nav</td>
+> <td>세부 페이지 좌측 LNB</td>
+> </tr>
+> <tr>
+> <td>.help-center-title</td>
+> <td>세부 페이지 좌측 LNB 제목</td>
+> </tr>
+> <tr>
+> <td>.lnb__nav</td>
+> <td>세부 페이지 좌측 LNB 리스트</td>
+> </tr>
+> <tr>
+> <td>.lnb__nav li a</td>
+> <td>세부 페이지 좌측 LNB 리스트 개별</td>
+> </tr>
+> <tr>
+> <td>.lnb__nav li.on a</td>
+> <td>세부 페이지 좌측 LNB 리스트 선택</td>
+> </tr>
+> <tr>
+> <td>.lnb--fixed__side-divider</td>
+> <td>세부 페이지 LNB/contents 구분선</td>
+> </tr>
+> <tr>
+> <td>.lnb--fixed__content</td>
+> <td>세부 페이지 콘텐츠 영역</td>
+> </tr>
+> <tr>
+> <td>.tit_txt</td>
+> <td>세부 페이지 콘텐츠 영역 제목</td>
+> </tr>
+> <tr>
+> <td>.data_info-box</td>
+> <td>세부 페이지 콘텐츠 영역 박스</td>
+> </tr>
+> <tr>
+> <td>.tab_category</td>
+> <td>세부 페이지 콘텐츠 영역 카테고리 탭</td>
+> </tr>
+> <tr>
+> <td>.tab_category&gt;li.on</td>
+> <td>세부 페이지 콘텐츠 영역 카테고리 선택</td>
+> </tr>
+> <tr>
+> <td>.tab_category&gt;li</td>
+> <td>세부 페이지 콘텐츠 영역 카테고리 개별</td>
+> </tr>
+> <tr>
+> <td>.tbl_wrap</td>
+> <td>세부 페이지 콘텐츠 영역 리스트</td>
+> </tr>
+> <tr>
+> <td>.faqData th:nth-child(1)</td>
+> <td>FAQ 테이블 카테고리</td>
+> </tr>
+> <tr>
+> <td>.faqData th:nth-child(2)</td>
+> <td>FAQ 테이블 제목</td>
+> </tr>
+> <tr>
+> <td>.faqData th:nth-child(3)</td>
+> <td>FAQ 테이블 등록일</td>
+> </tr>
+> <tr>
+> <td>.faqData tr.hot-text td</td>
+> <td>FAQ 테이블 개별 상단고정 카테고리</td>
+> </tr>
+> <tr>
+> <td>.faqData tr.hot-text td .title-info a</td>
+> <td>FAQ 테이블 개별 상단고정 제목</td>
+> </tr>
+> <tr>
+> <td>.faqData td .title-info sup</td>
+> <td>FAQ 테이블 개별 상단고정 HOT</td>
+> </tr>
+> <tr>
+> <td>.gocont .search</td>
+> <td>FAQ 검색</td>
+> </tr>
+> <tr>
+> <td>.sel</td>
+> <td>FAQ 검색 카테고리</td>
+> </tr>
+> <tr>
+> <td>.search .inp</td>
+> <td>FAQ 검색어 입력</td>
+> </tr>
+> <tr>
+> <td>.search .btnArea</td>
+> <td>FAQ 검색 버튼</td>
+> </tr>
+> <tr>
+> <td>.faqData_info-con</td>
+> <td>FAQ 세부 문서 콘텐츠</td>
+> </tr>
+> <tr>
+> <td>.faqData_info-con .dataTit</td>
+> <td>FAQ 세부 문서 제목</td>
+> </tr>
+> <tr>
+> <td>.faqData_info-con .dataTime</td>
+> <td>FAQ 세부 문서 등록일</td>
+> </tr>
+> <tr>
+> <td>.faqData_info-con .dataTextBox</td>
+> <td>FAQ 세부 문서 내용 텍스트</td>
+> </tr>
+> </tbody>
+> </table>
+> 
+> </details>
+> 
+> <details markdown="1">
+> <summary> notice.css </summary>
+> 
+> <table>
+> <thead>
+> <tr>
+> <th>요소 이름</th>
+> <th>설명</th>
+> </tr>
+> </thead>
+> <tbody>
+> <tr>
+> <td>.el-breadcrumb</td>
+> <td>세부 페이지 우측 상단 텍스트 영역</td>
+> </tr>
+> <tr>
+> <td>.el-breadcrumb li</td>
+> <td>세부 페이지 우측 상단 텍스트 영역 개별</td>
+> </tr>
+> <tr>
+> <td>.noticeData</td>
+> <td>공지사항 테이블</td>
+> </tr>
+> <tr>
+> <td>.noticeData th:nth-child(1)</td>
+> <td>공지사항 테이블 번호</td>
+> </tr>
+> <tr>
+> <td>.noticeData th:nth-child(2)</td>
+> <td>공지사항 테이블 제목</td>
+> </tr>
+> <tr>
+> <td>.noticeData th:nth-child(3)</td>
+> <td>공지사항 테이블 말머리</td>
+> </tr>
+> <tr>
+> <td>.noticeData th:nth-child(4)</td>
+> <td>공지사항 테이블 등록일</td>
+> </tr>
+> <tr>
+> <td>.noticeData tr.hot-text</td>
+> <td>공지사항 테이블 개별 상단고정</td>
+> </tr>
+> <tr>
+> <td>.noticeData tr.hot-text td</td>
+> <td>공지사항 테이블 개별 상단고정 번호</td>
+> </tr>
+> <tr>
+> <td>.noticeData tr.hot-text td .title-info a</td>
+> <td>공지사항 테이블 개별 상단고정 제목</td>
+> </tr>
+> <tr>
+> <td>.noticeData td .title-info sup</td>
+> <td>공지사항 테이블 개별 상단고정 HOT</td>
+> </tr>
+> <tr>
+> <td>.icon-leavel-1</td>
+> <td>공지사항 테이블 개별 상단고정 말머리</td>
+> </tr>
+> <tr>
+> <td>.noticeData tr</td>
+> <td>공지사항 테이블 개별</td>
+> </tr>
+> <tr>
+> <td>.noticeData td .title-info a</td>
+> <td>공지사항 테이블 개별 제목</td>
+> </tr>
+> <tr>
+> <td>.upload-text-memo</td>
+> <td>문의하기 첨부파일 필드 텍스트</td>
+> </tr>
+> <tr>
+> <td>.faqData_info-con .dataTime .noticeType</td>
+> <td>공지사항 세부 문서 말머리</td>
+> </tr>
+> <tr>
+> <td>.faqData_info-con .dataTime .noticeType .icon-leavel-1</td>
+> <td>공지사항 세부 문서 말머리 아이콘</td>
+> </tr>
+> </tbody>
+> </table>
+> 
+> </details>
+> 
+> <details markdown="1">
+> <summary> search.css </summary>
+> 
+> <table>
+> <thead>
+> <tr>
+> <th>요소 이름</th>
+> <th>설명</th>
+> </tr>
+> </thead>
+> <tbody>
+> <tr>
+> <td>.paginate</td>
+> <td>페이지네이션 영역</td>
+> </tr>
+> <tr>
+> <td>.paginate li</td>
+> <td>페이지네이션 개별</td>
+> </tr>
+> <tr>
+> <td>.paginate li.firstPage a</td>
+> <td>페이지네이션 &lt;&lt; 키</td>
+> </tr>
+> <tr>
+> <td>.paginate li.firstPage a.img</td>
+> <td>페이지네이션 &lt;&lt; 키 이미지</td>
+> </tr>
+> <tr>
+> <td>.paginate li.prev a.</td>
+> <td>페이지네이션 &lt; 키</td>
+> </tr>
+> <tr>
+> <td>.paginate li.prev a img</td>
+> <td>페이지네이션 &lt; 키 이미지</td>
+> </tr>
+> <tr>
+> <td>.paginate li a</td>
+> <td>페이지네이션 개별 페이지</td>
+> </tr>
+> <tr>
+> <td>.paginate li.number.active a</td>
+> <td>페이지네이션 현재 페이지</td>
+> </tr>
+> <tr>
+> <td>.paginate li.next a.</td>
+> <td>페이지네이션 &gt; 키</td>
+> </tr>
+> <tr>
+> <td>.paginate li.next a img</td>
+> <td>페이지네이션 &gt; 키 이미지</td>
+> </tr>
+> <tr>
+> <td>.paginate li.lastPage a</td>
+> <td>페이지네이션 &gt;&gt; 키</td>
+> </tr>
+> <tr>
+> <td>.paginate li.lastPage a.img</td>
+> <td>페이지네이션 &gt;&gt; 키 이미지</td>
+> </tr>
+> <tr>
+> <td>.search-title</td>
+> <td>검색결과 제목</td>
+> </tr>
+> <tr>
+> <td>.search-title strong</td>
+> <td>검색결과 제목 검색어 강조</td>
+> </tr>
+> <tr>
+> <td>.search-text</td>
+> <td>검색결과</td>
+> </tr>
+> <tr>
+> <td>.search-text .search-title_sub</td>
+> <td>검색결과 하위분류</td>
+> </tr>
+> <tr>
+> <td>.search-text .search-text_lit</td>
+> <td>검색결과 개별</td>
+> </tr>
+> <tr>
+> <td>.search-text .search-text_lit dt a</td>
+> <td>검색결과 개별 제목</td>
+> </tr>
+> <tr>
+> <td>.search-text .search-text_lit dd .search-text_con</td>
+> <td>검색결과 개별 내용 미리보기</td>
+> </tr>
+> <tr>
+> <td>.search-text .search-text_lit dd .search-text_time</td>
+> <td>검색결과 개별 작성일</td>
+> </tr>
+> </tbody>
+> </table>
+> 
+> </details>
+> 
+> <details markdown="1">
+> <summary> inquiry.css </summary>
+> 
+> <table>
+> <thead>
+> <tr>
+> <th>요소 이름</th>
+> <th>설명</th>
+> </tr>
+> </thead>
+> <tbody>
+> <tr>
+> <td>.selectStyle</td>
+> <td>검색 내부 옵션</td>
+> </tr>
+> <tr>
+> <td>.inquiry-con</td>
+> <td>문의하기 콘텐츠 영역</td>
+> </tr>
+> <tr>
+> <td>.inquiry-con_table</td>
+> <td>문의하기 테이블</td>
+> </tr>
+> <tr>
+> <td>.inquiry-con_table th</td>
+> <td>문의하기 테이블 필드</td>
+> </tr>
+> <tr>
+> <td>.bl_ess</td>
+> <td>문의하기 테이블 필드 필수 *</td>
+> </tr>
+> <tr>
+> <td>.inquiry-con_table td</td>
+> <td>문의하기 테이블 입력</td>
+> </tr>
+> <tr>
+> <td>.error_txt</td>
+> <td>문의하기 테이블 입력 에러 텍스트</td>
+> </tr>
+> <tr>
+> <td>.inquiry-btn</td>
+> <td>문의하기 접수 버튼</td>
+> </tr>
+> <tr>
+> <td>.layui-icon</td>
+> <td>화살표 버튼</td>
+> </tr>
+> <tr>
+> <td>.layui-icon-right</td>
+> <td>&gt; (좌측 방향) 화살표 버튼</td>
+> </tr>
+> <tr>
+> <td>.layui-icon-up</td>
+> <td>V (아래 방향) 화살표 버튼</td>
+> </tr>
+> <tr>
+> <td>.check_area_wrap .td-radio .layui-form-checkbox[lay-skin="primary"] span</td>
+> <td>체크박스 텍스트</td>
+> </tr>
+> <tr>
+> <td>.error_txt</td>
+> <td>에러 텍스트</td>
+> </tr>
+> </tbody>
+> </table>
+> 
+> </details>
 
 ### 파일업로드 관리
-![](http://static.toastoven.net/prod_contact_center/2.2.5-(3).png)
-답변 템플릿 및 레이아웃 작성에 사용될 파일을 관리하는 도구로, **① 파일 업로드** 버튼을 통해 사용할 파일을 직접 업로드하시면 매번 필요한 파일을 새롭게 업로드할 필요 없이 제공되는 해당 리소스의 **② 파일 경로**를 통해 사용하실 수 있습니다.
+![서비스관리_헬프센터_파일업로드관리](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0310.png)
 
-기존에 동일 파일명으로 업로드된 내역이 있을 경우 업로드가 불가하니, 파일명이 중복되지 않도록 유의해주세요.
+**파일업로드 관리**는 헬프센터 템플릿, 티켓처리 템플릿, 메일 레이아웃 작성 등 Online Contact에서 사용되는 파일을 관리할 수 있습니다.
+
+**① 파일 업로드**
+
+- 파일 업로드 버튼을 통해 사용자 PC에 저장된 파일을 업로드할 수 있습니다.
+- 업로드 시 동일한 이름을 가진 파일이 이미 존재할 경우 업로드가 불가하며, 파일명을 변경하여 업로드해야 합니다.
+
+**② 파일경로**
+
+- 업로드된 파일의 경로를 확인할 수 있습니다.
+- 필요한 파일을 매번 업로드할 필요 없이 템플릿, 레이아웃 등에 해당 경로를 붙여넣어 사용할 수 있습니다.
+
+**③ 삭제**
+
+- 업로드한 파일을 선택한 후 **삭제** 버튼을 클릭하면 파일을 삭제할 수 있습니다.
 
 ### 구성관리
-![](http://static.toastoven.net/prod_contact_center/2.2.5-(4)_2.png)
-헬프센터의 구성 항목 중 사용하는 기능은 **활성화**, 사용하지 않는 기능은 **비활성화** 처리하실 수 있습니다.
+![서비스관리_헬프센터_구성관리](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0320.png)
+
+**구성관리**는 헬프센터에서 기본적으로 제공하는 기능을 **활성화/비활성화** 처리하는 메뉴입니다.
+비활성화 시 헬프센터 페이지에서 해당 메뉴가 보이지 않게 됩니다.
 관리 가능한 기능은 다음과 같습니다.
 
 - 공지사항
 - FAQ(자주 묻는 질문)
-- 문의하기 & 문의내역
+- 1:1문의 & 문의내역
 - 채팅
 - 헬프센터 위젯
 - 회사 정보(전체 관리 → 회사정보 관리 메뉴에서 추가 및 수정 가능)
 
 ### 회원 연동
-![](http://static.toastoven.net/prod_contact_center/2.2.5-(5)_1.png)
-**회원 연동** 기능은 고객사에서 제공하는 서비스의 회원 인증을 Online Contact 헬프센터에서도 적용하여, **회원 문의를 접수**하고 **접수한 문의 내역을 다시 확인**할 수 있도록 하기 위한 기능입니다. **GET 방식**과 **POST 방식**의 두 가지 타입으로 제공하고 있으며, 연동을 위해서는 Online Contact에서 제공하는 개발 명세서에 따라 API를 개발하여 회원연동 관리 화면에 등록해 주셔야 합니다.
+![서비스관리_헬프센터_회원연동](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0330.png)
 
-**① 활성화/비활성화** 버튼을 통해 회원 연동을 활성화 및 비활성화하실 수 있습니다. 회원연동을 **활성화**하시면 **② 비회원 문의 접수** 활성화 여부와, **③ 로그인 타입**을 선택하실 수 있습니다. **비회원 문의 접수**를 활성화하실 경우, 고객이 로그인하지 않은 상태에서도 문의 접수가 가능하며, 비활성화하실 경우, 로그인 상태에서만 문의 접수가 가능하도록 설정됩니다.
+**회원 연동** 기능은 자체 운영중인 서비스의 회원 인증을 Online Contact 헬프센터와 연동하는 기능입니다. 로그인 연동을 통해 자사 서비스의 로그인 정보로 **회원 문의 접수** 및 **문의 내역을 확인**할 수 있습니다.
 
-각 **로그인 타입**에 따른 API 가이드는 하단 링크에서 확인하실 수 있습니다.
+**① 회원 연동 활성화**
 
-- [Online Contact > API 가이드 > 회원연동(POST)](https://docs.nhncloud.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-sso/)
-- [Online Contact > API 가이드 > 회원연동(GET)](https://docs.nhncloud.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-member-get/)
+- 회원 연동을 사용하려면 **활성화**로 설정합니다.
+
+**② 비회원 문의 접수**
+
+- 활성화 시 고객이 로그인하지 않은 상태에서도 문의 접수가 가능해집니다.
+- 비활성화할 경우, 로그인 상태에서만 문의 접수가 가능하도록 통제됩니다.
+
+**③ 로그인 타입**
+
+- 로그인 연동 방식을 선택합니다.
+- **GET 방식**과 **POST 방식**의 두 가지 타입으로 제공되며, 연동을 위해서는 Online Contact에서 제공하는 개발 명세서에 따라 API를 개발하여 회원연동 관리 화면에 등록해야 합니다.
+- **로그인 타입**에 따른 API 가이드는 아래 가이드 문서를 참고하십시오.
+    > **※ 회원연동 API 가이드**
+    >
+    > [Online Contact > API 가이드 > 회원연동(POST)](https://docs.nhncloud.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-sso/)
+    >
+    > [Online Contact > API 가이드 > 회원연동(GET)](https://docs.nhncloud.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-member-get/)
 
 ### 다국어 코드 관리
-[전체 관리 → 계약 서비스 현황 → 계약 현황 → 계약 기본정보 설정] 화면에서 설정하신 헬프센터 언어에 따라, 언어별 헬프센터에서 사용하실 다국어 코드 및 태그를 관리하실 수 있습니다.
 
-#### 다국어 코드
-![](http://static.toastoven.net/prod_contact_center/2.2.5-(7).png)
-**① 다국어 코드** 탭에서 언어별 헬프센터에서 사용하실 다국어 언어 세트를 관리하실 수 있습니다.
-기본적으로 등록되어 있는 시스템 언어 세트의 경우 내용 및 태그의 수정만 가능하며, 코드의 값은 변경이 불가합니다.
+헬프센터에 적용할 다국어 코드 및 태그를 관리하는 메뉴입니다. 언어 설정에 따라 헬프센터 웹 페이지에서 노출되는 각종 명칭, 안내 문구 등을 코드로 관리할 수 있습니다.
 
-**② 세트 등록** 버튼 클릭 시 **사용자 정의** 언어 세트를 등록하실 수 있습니다. 계약 기본정보 설정 화면에서 설정하신 헬프센터 언어에 따라 **언어별 입력 칸**이 표시되며, **태그** 설정을 통해 언어 세트를 사용처 및 종류별로 분류하실 수 있습니다. 등록된 세트는 템플릿 관리 시 스크립트 내에 삽입이 가능하여, **③ 언어별 헬프센터** 페이지를 구성하는 데에 활용될 수 있습니다.
+#### 1. 다국어 코드
+![서비스관리_헬프센터_다국어코드](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0340.png)
 
-#### 태그
-![](http://static.toastoven.net/prod_contact_center/2.2.5-(7)-1.png)
-**① 태그** 탭에서 언어 세트에 매핑하여 분류에 활용하실 수 있는 **사용자 정의 태그**를 관리하실 수 있습니다.
-태그 명 입력 후 **② 추가** 버튼을 누르시면 사용자 정의 태그가 추가되며, 언어 세트 관리 및 검색 시 **태그 목록**에서 **시스템 태그와 함께** 조회하실 수 있습니다.
+**다국어 코드** 탭에서는 헬프센터에서 사용할 다국어 언어 세트를 관리할 수 있습니다. 기본 등록되어 있는 **시스템 언어 세트**는 내용 및 태그 수정만 가능하며, 코드 값은 변경이 불가합니다.
+
+**① 세트 등록**
+
+- 다국어 세트를 추가하려면 **세트 등록** 버튼을 클릭합니다.
+- **언어 세트 등록** 팝업창이 실행되며 직접 다국어 언어 세트를 등록할 수 있습니다.
+- [전체 관리 → 계약 서비스 현황 → 계약 현황 → 계약 기본정보 설정] 화면에서 등록한 헬프센터 언어에 따라 **언어별 입력 칸**이 표시됩니다.
+- 각 언어별로 헬프센터에 표기될 명칭을 등록합니다.
+- **태그** 설정을 통해 언어 세트를 사용처 및 종류별로 분류할 수 있습니다.
+- 등록된 세트는 PC/모바일 템플릿 관리 탭에서 스크립트 내에 삽입하여, **언어별 헬프센터** 페이지를 구성하는 데에 활용할 수 있습니다.
+
+**② 수정/삭제**
+
+- **수정** 및 **삭제** 버튼으로 등록된 언어세트를 수정하거나 삭제할 수 있습니다.
+
+#### 2. 태그
+![서비스관리_헬프센터_태그](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0350.png)
+
+**태그** 탭에서는 언어 세트를 보다 쉽게 분류할 수 있도록 **사용자 정의 태그**를 관리할 수 있습니다.
+
+**① 추가**
+
+- 텍스트 박스에 태그 명칭을 입력한 후 **추가** 버튼을 클릭하면 사용자 정의 태그가 추가됩니다.
+- 추가된 태그는 **다국어 코드** 탭에서 언어 세트에 연결하여 활용할 수 있습니다.
+
+**② 수정/삭제**
+
+- **수정** 및 **삭제** 버튼으로 등록된 태그를 수정하거나 삭제할 수 있습니다.
+
+### 외부 메뉴 관리
+
+![서비스관리_헬프센터_태그](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0360.png)
+
+**외부 메뉴 관리**는 헬프센터 페이지에 다른 외부 메뉴를 추가하고 싶을 경우 사용합니다.
+
+**① 추가**
+
+- 외부 메뉴를 추가하고 싶을 경우 **추가** 버튼을 클릭합니다.
+
+**② 외부 메뉴 추가**
+
+- 메뉴 추가 페이지로 이동되며 추가할 메뉴의 정보를 입력합니다.
+- 입력 항목은 아래와 같습니다.
+    - 메뉴명: 헬프센터 페이지에 표시되는 메뉴 명칭입니다. **언어별 헬프센터** 설정에 따라 각 언어별로 작성할 수 있습니다.
+    - 노출 여부: 헬프센터에 접속한 단말기가 PC인지, 모바일인지에 따라 외부 메뉴의 노출 여부를 설정합니다.
+    - 기본 URL: 호출할 외부 메뉴의 기본 URL을 입력합니다.
+    - 파라미터 설정: URL 호출 시 파라미터가 필요할 경우 API, 고정, 조합 등 필요에 따라 파라미터를 구성할 수 있습니다.
+- 추가한 외부 메뉴는 헬프센터 내비게이션 영역에 표시됩니다.
+
+**③ 수정/삭제**
+
+- **수정** 및 **삭제** 버튼으로 등록된 외부 메뉴를 수정하거나 삭제할 수 있습니다.
+
 
 ## 외부채널
 **외부 채널**을 Online Contact와 연결하여 고객과 소통할 수 있습니다. 상담관리 서비스에서는 **트위터**, **카카오 상담톡**, **SMS**, **Dooray!** 서비스를 연동하여 사용하실 수 있습니다.
