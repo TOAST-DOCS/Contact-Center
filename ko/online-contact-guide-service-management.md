@@ -3,15 +3,6 @@
 **서비스 관리**는 인증, 채팅, 티켓, 전화, 상담원 등 **문의 접수와 처리를 위한 서비스별 설정 기능**이 포함되어 있습니다.
 **[전체관리 → 계약 서비스 현황]**에서 설정된 계약 내역에 따라 해당 서비스에서 사용중인 기능별 설정을 관리할 수 있습니다.
 
-<!-- 헬프센터 카테고리로 이동
-### 헬프센터 접속
-
-- Online Contact 우측 맨 하단 **헬프센터 바로가기**
-- https:// **도메인명** .oc.toast.com/ **서비스ID** /hc
-
-도메인명은 Online Contact 조직 생성 시 작성하신 정보로, NHN Cloud CONSOLE → 조직 설정 → 도메인 설정에서 수정하실 수 있습니다. 서비스ID는 [전체 관리 → 계약 서비스 현황] 메뉴에서 서비스 추가 시 입력하셨던 정보로, 최초 생성 이후 수정이 불가합니다.
--->
-
 ## 인증
 Online Contact에서 제공하는 **OPEN API** 기능에 대한 활성화/비활성화 및 관련 기능을 설정하는 메뉴입니다.
 
@@ -188,9 +179,9 @@ Online Contact에서 제공하는 채팅 서비스를 기존 사용중인 타 �
 
 트리거는 반복적인 업무를 **자동화**하여 업무 효율성을 높이기 위한 기능입니다. 특정 조건이 충족되었을 때 설정된 결과 행위를 자동으로 실행할 수 있습니다.
 
-✔ **\[FAQ 바로가기]** [접수된 문의를 자동으로 외부 포워딩 하고 싶습니다.](https://nhn-contact.oc.toast.com/oc/hc/article/43/)
+✔ **\[FAQ 바로가기]** [접수된 문의를 자동으로 외부 포워딩 하고 싶습니다.](https://nhn-contact.oc.nhncloud.com/oc/hc/article/43/)
 
-✔ **\[FAQ 바로가기]** [특정 조건에서 알림 메일을 보내고 싶습니다.](https://nhn-contact.oc.toast.com/oc/hc/article/42/)
+✔ **\[FAQ 바로가기]** [특정 조건에서 알림 메일을 보내고 싶습니다.](https://nhn-contact.oc.nhncloud.com/oc/hc/article/42/)
 
 #### 1. 트리거 설정 화면
 
@@ -506,9 +497,9 @@ Online Contact에서 제공하는 채팅 서비스를 기존 사용중인 타 �
 - 수정 버튼을 클릭하면 해당 템플릿의 양식을 수정할 수 있는 대화상자가 실행됩니다.
 - 기능은 템플릿 등록의 템플릿 추가 대화상자와 동일합니다.
 
-✔ **\[FAQ 바로가기]** [답변 템플릿은 어떻게 사용하나요?](https://nhn-contact.oc.toast.com/oc/hc/article/39/)
+✔ **\[FAQ 바로가기]** [답변 템플릿은 어떻게 사용하나요?](https://nhn-contact.oc.nhncloud.com/oc/hc/article/39/)
 
-✔ **\[FAQ 바로가기]** [티켓 답변 템플릿을 등록했는데, 답변 작성 시 조회되지 않아요.](https://nhn-contact.oc.toast.com/oc/hc/article/62/)
+✔ **\[FAQ 바로가기]** [티켓 답변 템플릿을 등록했는데, 답변 작성 시 조회되지 않아요.](https://nhn-contact.oc.nhncloud.com/oc/hc/article/62/)
 
 ### 이메일 설정
 ![서비스관리_이메일설정](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0230.png)
@@ -536,7 +527,7 @@ Online Contact에서 제공하는 채팅 서비스를 기존 사용중인 타 �
 - **치환코드**를 선택하면 에디터에 예약어가 입력되며, 메일 전송 시 해당 티켓의 정보로 치환되어 전송됩니다.
 - 치환 코드 중 답변 내용(`#{content}`) 코드는 필수로 입력해야 합니다.
 
-✔ **\[FAQ 바로가기]** [현재 사용하고 있는 외부 이메일을 연결하여 문의를 접수 받고 싶습니다.](https://nhn-contact.oc.toast.com/oc/hc/article/44/)
+✔ **\[FAQ 바로가기]** [현재 사용하고 있는 외부 이메일을 연결하여 문의를 접수 받고 싶습니다.](https://nhn-contact.oc.nhncloud.com/oc/hc/article/44/)
 
 ### 금칙어
 ![서비스관리_금칙어](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0240.png)
@@ -565,9 +556,9 @@ Online Contact에서 제공하는 채팅 서비스를 기존 사용중인 타 �
 
 본 문단에서는 전화 관련 설정 방법을 안내하고 있으므로 사용법이 궁금하다면 [티켓관리(전화) 가이드](https://docs.nhncloud.com/ko/Contact%20Center/ko/online-contact-guide-cti-widget/)를 참고하십시오.
 
-✔ **\[FAQ 바로가기]** [상담원에게 전화 아이콘이 표시되지 않아요.](https://nhn-contact.oc.toast.com/oc/hc/article/104/)
+✔ **\[FAQ 바로가기]** [상담원에게 전화 아이콘이 표시되지 않아요.](https://nhn-contact.oc.nhncloud.com/oc/hc/article/104/)
 
-✔ **\[FAQ 바로가기]** [CTI 화면은 전화 권한이 있는 서비스에서만 접속할 수 있나요?](https://nhn-contact.oc.toast.com/oc/hc/article/101/)
+✔ **\[FAQ 바로가기]** [CTI 화면은 전화 권한이 있는 서비스에서만 접속할 수 있나요?](https://nhn-contact.oc.nhncloud.com/oc/hc/article/101/)
 
 ### IVR Route 관리
 ![서비스관리_IVR관리](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0250.png)
@@ -740,9 +731,9 @@ Online Contact에서 제공하는 채팅 서비스를 기존 사용중인 타 �
 
 - 편집 후 **미리보기** 버튼을 통해 헬프센터에 적용될 모습을 사전에 확인할 수 있습니다.
 
-✔ **\[FAQ 바로가기]** [헬프센터 PC/모바일 템플릿 관리 기능의 구체적인 예시가 궁금해요.](https://nhn-contact.oc.toast.com/oc/hc/article/60/)
+✔ **\[FAQ 바로가기]** [헬프센터 PC/모바일 템플릿 관리 기능의 구체적인 예시가 궁금해요.](https://nhn-contact.oc.nhncloud.com/oc/hc/article/60/)
 
-✔ **\[FAQ 바로가기]** [헬프센터 텍스트의 폰트를 바꾸거나, 굵게/밑줄 등의 효과를 적용할 수 있나요?](https://nhn-contact.oc.toast.com/oc/hc/article/64/)
+✔ **\[FAQ 바로가기]** [헬프센터 텍스트의 폰트를 바꾸거나, 굵게/밑줄 등의 효과를 적용할 수 있나요?](https://nhn-contact.oc.nhncloud.com/oc/hc/article/64/)
 
 > **※ 참고사항**
 > 
@@ -1355,7 +1346,7 @@ Online Contact에서 제공하는 채팅 서비스를 기존 사용중인 타 �
 
 **외부 서비스**를 Online Contact에 연결하여 고객과 소통할 수 있습니다. 상담관리 서비스에서는 **트위터**, **카카오 상담톡**, **SMS**, **Dooray!** 서비스를 연동하여 사용할 수 있습니다.
 
-✔ **\[FAQ 바로가기]** [외부채널 (트위터/카카오 상담톡) 연결을 활성화했을 때 문의의 인입/답변 과정은 어떻게 되나요?](https://nhn-contact.oc.toast.com/oc/hc/article/61/)
+✔ **\[FAQ 바로가기]** [외부채널 (트위터/카카오 상담톡) 연결을 활성화했을 때 문의의 인입/답변 과정은 어떻게 되나요?](https://nhn-contact.oc.nhncloud.com/oc/hc/article/61/)
 
 ### 트위터
 ![서비스관리_외부채널_트위터](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0370.png)
@@ -1433,7 +1424,7 @@ SMS 기능을 이용하려면 먼저 **[NHN Cloud Notification → SMS] 서비�
 - 이후 SMS/MMS 발송 시 추가된 발신번호를 선택하여 전송할 수 있습니다.
 
 ### Dooray!
-![서비스관리_외부채널_두레이](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0390.png)
+![서비스관리_외부채널_두레이](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0400.png)
 
 **Dooray!** 서비스를 Online Contact과 연동하여 티켓 이관 및 처리에 활용할 수 있습니다.
 
@@ -1449,12 +1440,12 @@ SMS 기능을 이용하려면 먼저 **[NHN Cloud Notification → SMS] 서비�
 - IP 접근 허용을 완료하였다면, [Dooray! 웹 훅 설정 가이드](https://helpdesk.dooray.com/share/pages/9wWo-xwiR66BO5LGshgVTg/2896333156253886641)를 참고하여 아래의 정보를 입력합니다.
     | 입력항목 | 입력 값 |
     | ------- | ------- |
-    | 웹 훅 URL | https://{조직 도메인}.oc.toast.com/{서비스ID}/api/v2/dooray/hook |
+    | 웹 훅 URL | https://{조직 도메인}.oc.nhncloud.com/{서비스ID}/api/v2/dooray/hook |
     | 발송 메시지 포맷 | Dooray! |
     | 알림 항목 | 업무 상태 변경, 업무 댓글 등록 |
     | 사용 여부 | 사용함 |
 
-**③ 조직 등록**
+**③ Dooray! 조직 등록**
 
 - **조직 등록** 버튼을 클릭하여 Dooray!의 조직명, 조직ID, 테넌트 토큰을 입력합니다.
 - 테넌트 토큰은 이메일을 통해 발급을 요청해야 합니다. (문의처: dooray@nhn.com)
@@ -1465,28 +1456,24 @@ SMS 기능을 이용하려면 먼저 **[NHN Cloud Notification → SMS] 서비�
 - 프로젝트 명, 프로젝트 주소, 프로젝트 아이디, 대표 등록자 IAM ID를 입력합니다.
     - 프로젝트 주소와 프로젝트 ID는 해당 프로젝트의 URL에서 확인할 수 있습니다. (프로젝트 URL: https://{조직 도메인}.dooray.com/project/{프로젝트 아이디})
     - 대표 등록자 IAM ID는 Dooray! 이관 또는 코멘트 추가 시 상담원이 해당 Dooray! 프로젝트의 멤버로 추가되어 있지 않을 경우, 입력한 대표 등록자의 이름으로 업무/코멘트가 생성됩니다.
+> **※ 참고사항**
+> 
+> ![서비스관리_외부채널_두레이상담원](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0410.png)
+>
+> - 대표 등록자가 아닌 개별 상담원의 이름으로 Dooray! 업무를 생성하기 위해서는 Dooray! 유저키 정보가 필요합니다.
+> - **① Dooray! 유저키**는 Dooray! 조직 등록 시 상담원의 IAM 이메일 주소와 Dooray! 조직에 동일한 이메일 주소가 있다면 해당 상담원에게 일괄적으로 자동 발급되며 [서비스 관리 → 상담원] 메뉴에서 상담원 수정을 통해 확인할 수 있습니다.
+> - Dooray! 조직 추가 이후에 상담원이 신규 추가되었을 경우, **생성** 버튼을 클릭하여 수동 발급이 필요합니다.
 
-#### 상담원 관리
-![](http://static.toastoven.net/prod_contact_center/2.2.6-(7)_6.png)
-Online Contact에서 Dooray! 이관을 통해, 대표 등록자가 아닌 개별 상담원의 이름으로 Dooray! 업무를 생성하기 위해서는 Dooray! 유저키 정보가 필요합니다.
-**① Dooray! 유저키**는 Dooray! 조직 추가 시 해당 Dooray! 조직에 추가된 상담원에게 일괄적으로 발급되며, [서비스 관리 → 상담원] 메뉴의 '상담원' 탭에서 '수정' 버튼 클릭 시 확인하실 수 있는 개별 상담원 정보 수정 페이지에서 확인하실 수 있습니다. (단, 각 조직에 등록된 IAM 회원 정보의 이메일 주소가 동일해야 함)
-Dooray! 조직 추가 이후에 상담원이 신규 추가될 경우, **생성** 버튼을 통해 최초 1회 유저키 수동 발급이 필요합니다.
+**⑤ 일시 중지**
 
-#### 일시 중지
-![](http://static.toastoven.net/prod_contact_center/2.2.6-(7)_3.png)
-**일시 중지** 설정을 통해 Dooray! 연동 관련 데이터는 보존한 상태에서 Dooray! 이관 기능 사용을 일시적으로 중지하실 수 있습니다.
-일시 중지 설정을 **① 활성화**하실 경우, 티켓 상세 내역에서 **② Dooray! 이관** 버튼이 숨김 처리됩니다.
-
-
-
-
+- **일시 중지 활성화** 버튼을 클릭하면 Dooray! 연동 데이터는 보존한 상태에서 Dooray! 이관 기능 사용을 일시적으로 중지합니다.
+- 활성화 시 티켓 상세 내역에서 **Dooray! 이관** 버튼이 숨김 처리되어 이관이 불가능하게 됩니다.
 
 ## 보안서비스
-![](http://static.toastoven.net/prod_contact_center/2.2.6-(5).png)
-Online Contact 관리자와의 사전 협의를 통해 계약 정보에서 서비스 관리 → 보안 서비스 기능을 사용 설정하신 경우,
-**로그 연동** 기능과, 채팅 및 티켓 상담 시 상담 진행을 위해 전달되는 고객의 개인정보를 암호화하여 관리할 수 있는 **개인정보 마스킹** 기능을 사용하실 수 있습니다.
+![서비스관리_외부채널_보안서비스](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0420.png)
 
-**개인정보 마스킹** 기능은 **보안 서비스** 기능이 **사용** 설정 되어있을 경우 별도의 설정 없이 티켓 관리, 채팅 화면, 채팅 기록 메뉴에서 바로 사용하실 수 있으며,
-**로그 연동** 기능은 보안서비스 메뉴 → 로그 연동 탭에서 연동 여부를 설정하신 후 사용하실 수 있습니다.
+Online Contact에서는 보안서비스로 **로그 연동** 기능과 상담 진행을 위해 전달되는 고객 개인정보를 암호화하여 관리할 수 있는 **개인정보 마스킹** 기능을 제공합니다.
 
-연동 서비스의 활성화/비활성화에 대해서는 **Online Contact 고객센터**를 통해 관리자에게 문의 부탁드립니다. ([Online Contact 고객센터 바로가기](https://nhn-contact.oc.toast.com/oc/hc/))
+**개인정보 마스킹** 기능은 **보안 서비스** 기능이 활성화 되어있을 경우 별도의 설정 없이 티켓 관리, 채팅 화면, 채팅 기록 메뉴에서 바로 사용할 수 있습니다.
+
+보안 서비스를 사용하기 위해서는 사전 협의가 필요합니다. **Online Contact 고객센터**를 통해 문의바랍니다. ([Online Contact 고객센터 바로가기](https://nhn-contact.oc.nhncloud.com/oc/hc/))
