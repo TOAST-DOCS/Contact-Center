@@ -1104,9 +1104,9 @@
 **요금 현황** 탭에서는 전체, 서비스 유형별, 개별 서비스별 월별 청구 요금을 **①** 검색하여 조회할 수 있습니다.
 개별 서비스를 선택하여 조회하면 **②** 서비스 상태가 함께 표시됩니다.
 
-✔ **\[FAQ 바로가기]** [과금 기준은 어떻게 되나요?](https://nhn-contact.oc.toast.com/oc/hc/article/99/)
+✔ **\[FAQ 바로가기]** [과금 기준은 어떻게 되나요?](https://nhn-contact.oc.nhncloud.com/oc/hc/article/99/)
 
-✔ **\[FAQ 바로가기]** [요금은 언제 어떻게 결제되나요?](https://nhn-contact.oc.toast.com/oc/hc/article/67/)
+✔ **\[FAQ 바로가기]** [요금은 언제 어떻게 결제되나요?](https://nhn-contact.oc.nhncloud.com/oc/hc/article/67/)
 
 ### 조직 정보
 ![계약서비스현황_조직정보](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-global-management_img0060.png)
@@ -1126,7 +1126,7 @@ OC 조직 정보에서 확인할 수 있는 내용은 아래와 같습니다.
 **조직 Key**의 경우 API Key 변경 버튼을 통해 변경 가능하며, **Online Contact URL**은 NHN Cloud 조직 도메인을 이용하여 생성되므로 조직 도메인 변경 시 함께 변경됩니다.
 
 - OC 조직 Key: 서비스 등록/수정/삭제 등 조직 관리 차원에서 수행되는 행위를 Online Contact 외부에서 API를 통해 처리하고자 할 때 인증 단계에서 사용되는 Key
-- OC URL: Online Contact 접속 URL. https://**조직 도메인**.oc.toast.com 형식으로 생성됨
+- OC URL: Online Contact 접속 URL. https://**조직 도메인**.oc.nhncloud.com 형식으로 생성됨
 
 
 ## 조직관리자
@@ -1138,7 +1138,7 @@ OC 조직 정보에서 확인할 수 있는 내용은 아래와 같습니다.
 
 조직관리자 및 상담원을 등록하려면 IAM 회원으로 등록되어 있어야 합니다.
 
-✔ **\[FAQ 바로가기]** [권한의 종류와 차이점을 알고 싶습니다.](https://nhn-contact.oc.toast.com/oc/hc/article/36/)
+✔ **\[FAQ 바로가기]** [권한의 종류와 차이점을 알고 싶습니다.](https://nhn-contact.oc.nhncloud.com/oc/hc/article/36/)
 
 **① 회원 초대**
 
@@ -1180,7 +1180,7 @@ Online Contact의 전화 상담 기능과 연결할 CTI 정보를 설정할 수 
 **① CTI 버전**
 
 - 사용할 CTI 버전을 선택합니다.
-- IPCC(Private)는 Private 서비스로, 이용이 필요하다면 Online Contact 고객센터를 통해 **사전 협의**가 필요합니다. ([Online Contact 고객센터 바로가기](https://nhn-contact.oc.toast.com/oc/hc/))
+- IPCC(Private)는 Private 서비스로, 이용이 필요하다면 Online Contact 고객센터를 통해 **사전 협의**가 필요합니다. ([Online Contact 고객센터 바로가기](https://nhn-contact.oc.nhncloud.com/oc/hc/))
 - 모바일 컨택(Mobile Contact)은 NHN Cloud Console에서 **Mobile Contact 서비스를 활성화**한 후 선택할 수 있습니다.
 
 **② 테넌트 ID**
@@ -1222,7 +1222,7 @@ Online Contact의 전화 상담 기능과 연결할 CTI 정보를 설정할 수 
 - CTI 정보를 정상적으로 입력*하였다면, 우측 하단의 **전화 위젯**을 통해 CTI에 로그인할 수 있습니다.
 
 > ※ CTI 정보 취득이 어렵다면 Online Contact 고객센터를 통해 문의 부탁드립니다. 
-> ([Online Contact 고객센터 바로가기](https://nhn-contact.oc.toast.com/oc/hc/))
+> ([Online Contact 고객센터 바로가기](https://nhn-contact.oc.nhncloud.com/oc/hc/))
 
 
 ## 권한 변경 로그 관리
@@ -1310,9 +1310,9 @@ Online Contact 화면 우측 상단에 표시된 **① 계정 이름**을 클릭
 
 해당 화면에서 Online Contact에 접속하는 사용자의 개인정보설정을 확인하고 변경할 수 있습니다. 
 
-✔ **\[FAQ 바로가기]** [아이디, 이메일, 이름을 변경하거나 삭제하고 싶습니다.](https://nhn-contact.oc.toast.com/oc/hc/article/33/)
+✔ **\[FAQ 바로가기]** [아이디, 이메일, 이름을 변경하거나 삭제하고 싶습니다.](https://nhn-contact.oc.nhncloud.com/oc/hc/article/33/)
 
-✔ **\[FAQ 바로가기]** [비밀번호를 변경하고 싶습니다.](https://nhn-contact.oc.toast.com/oc/hc/article/35/) 
+✔ **\[FAQ 바로가기]** [비밀번호를 변경하고 싶습니다.](https://nhn-contact.oc.nhncloud.com/oc/hc/article/35/) 
 
 **열람 가능한 정보**
 
