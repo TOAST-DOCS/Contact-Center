@@ -1444,6 +1444,8 @@ SMS 기능을 이용하려면 먼저 **[NHN Cloud Notification → SMS] 서비�
 - Online Contact에서 사용할 발신번호를 체크하여 확인 버튼을 누르면 번호가 추가됩니다.
 - 이후 SMS/MMS 발송 시 추가된 발신번호를 선택하여 전송할 수 있습니다.
 
+<div id="dooray_link"></div>
+
 ### Dooray!
 ![서비스관리_외부채널_두레이](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0400.png)
 
