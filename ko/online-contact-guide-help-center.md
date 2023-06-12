@@ -8,14 +8,14 @@
 
 ## FAQ
 
-![헬프센터_FAQ예시](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-help-center_img0005.png)
+![헬프센터_FAQ예시](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-help-center_img0005.png)
 
 FAQ는 고객이 자주 문의하는 사항을 정리하여 헬프센터를 통해 고객에게 제공하는 기능입니다.
 
 접속중인 서비스의 **계약 상세 내역**에서 FAQ 기능을 **사용**중이여야 하고, **[서비스 관리 → 헬프센터 → 구성관리]** 메뉴에서 FAQ를 **활성화**해야 기능을 이용할 수 있습니다.
 
 ### 카테고리 관리
-![헬프센터_FAQ_카테고리관리](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-help-center_img0010.png)
+![헬프센터_FAQ_카테고리관리](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-help-center_img0010.png)
 
 FAQ를 등록하려면 먼저 카테고리를 등록해야 합니다. 카테고리는 1~3뎁스까지 3단계로 구성할 수 있으며, 헬프센터 페이지에서 카테고리 별로 FAQ 문서가 분류되어 고객이 보다 쉽게 확인할 수 있습니다.
 
@@ -35,7 +35,7 @@ FAQ를 등록하려면 먼저 카테고리를 등록해야 합니다. 카테고�
 ✔ **\[FAQ 바로가기]** [기존에 존재하는 카테고리/말머리/태그를 삭제하면 어떻게 되나요?](https://nhn-contact.oc.nhncloud.com/oc/hc/article/63/)
 
 ### 배포문서/초안문서
-![헬프센터_FAQ_배포문서/초안문서](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-help-center_img0020.png)
+![헬프센터_FAQ_배포문서/초안문서](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-help-center_img0020.png)
 
 **① FAQ 문서 분류**
 
@@ -67,7 +67,7 @@ FAQ를 등록하려면 먼저 카테고리를 등록해야 합니다. 카테고�
 <div id="faq_link"></div>
 
 ### FAQ 등록
-![헬프센터_FAQ등록](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-help-center_img0030.png)
+![헬프센터_FAQ등록](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-help-center_img0030.png)
 
 배포문서 또는 초안문서 탭에서 **FAQ 등록** 버튼을 클릭하면 FAQ에 등록할 문서를 작성할 수 있습니다.
 
@@ -100,14 +100,14 @@ FAQ를 등록하려면 먼저 카테고리를 등록해야 합니다. 카테고�
 - 상담원 권한을 가진 사용자는 등록 버튼이 표시되지 않으며, 초안저장만 가능합니다.
 
 ## 공지사항
-![헬프센터_공지사항_예시](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-help-center_img0050.png)
+![헬프센터_공지사항_예시](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-help-center_img0050.png)
 
 **공지사항**은 헬프센터를 통해 고객에게 알릴 주요 사항을 관리할 수 있는 기능입니다. 
 
 공지사항은 **[서비스 관리 → 헬프센터 → 구성관리]** 메뉴에서 활성화할 수 있습니다.
 
 ### 말머리 관리
-![헬프센터_공지사항_말머리관리](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-help-center_img0040.png)
+![헬프센터_공지사항_말머리관리](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-help-center_img0040.png)
 
 공지사항을 등록하려면 먼저 **말머리**를 등록해야 합니다. 등록된 말머리는 헬프센터 공지사항 메뉴에 탭 형태로 표시되며 공지사항을 분류할 수 있습니다.
 
@@ -124,12 +124,12 @@ FAQ를 등록하려면 먼저 카테고리를 등록해야 합니다. 카테고�
 - 마우스로 순서변경 아이콘을 끌어 말머리 간 순서를 조정할 수 있습니다.
 - 설정된 순서는 공지사항 등록 화면 및 헬프센터 공지사항 메뉴에 반영됩니다.
 
-✔ **\[FAQ 바로가기]** [공지사항은 카테고리 분류 기능이 없나요?](https://nhn-contact.oc.toast.com/oc/hc/article/47/)
+✔ **\[FAQ 바로가기]** [공지사항은 카테고리 분류 기능이 없나요?](https://nhn-contact.oc.nhncloud.com/oc/hc/article/47/)
 
-✔ **\[FAQ 바로가기]** [기존에 존재하는 카테고리/말머리/태그를 삭제하면 어떻게 되나요?](https://nhn-contact.oc.toast.com/oc/hc/article/63/)
+✔ **\[FAQ 바로가기]** [기존에 존재하는 카테고리/말머리/태그를 삭제하면 어떻게 되나요?](https://nhn-contact.oc.nhncloud.com/oc/hc/article/63/)
 
 ### 배포문서/초안문서
-![헬프센터_공지사항_배포문서/초안문서](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-help-center_img0060.png)
+![헬프센터_공지사항_배포문서/초안문서](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-help-center_img0060.png)
 
 **① 공지사항 문서 분류**
 
@@ -163,7 +163,7 @@ FAQ를 등록하려면 먼저 카테고리를 등록해야 합니다. 카테고�
 > - **상담원**: 초안문서의 등록, 수정만 가능
 
 ### 템플릿 관리
-![헬프센터_공지사항_템플릿관리](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-help-center_img0080.png)
+![헬프센터_공지사항_템플릿관리](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-help-center_img0080.png)
 
 공지사항에 자주 사용되는 작성 양식을 **템플릿**으로 등록하는 화면입니다. 공지 작성 시 템플릿을 활용하여 문서 작성 시간을 단축할 수 있습니다.
 
@@ -179,7 +179,7 @@ FAQ를 등록하려면 먼저 카테고리를 등록해야 합니다. 카테고�
 - **수정** 및 **삭제** 버튼을 클릭하여 템플릿을 수정하거나 삭제할 수 있습니다.
 
 ### 태그 관리
-![헬프센터_공지사항_템플릿관리](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-help-center_img0090.png)
+![헬프센터_공지사항_템플릿관리](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-help-center_img0090.png)
 
 공지사항 분류, 검색을 용이하게 해주는 태그를 등록하는 화면입니다. 공지의 주제, 주요 내용 등을 **태그**로 등록해 둔 다음, 공지사항 작성 시 알맞은 태그를 선택하여 등록하면, 공지 검색 시 활용할 수 있습니다.
 
@@ -193,12 +193,12 @@ FAQ를 등록하려면 먼저 카테고리를 등록해야 합니다. 카테고�
 
 - **수정** 및 **삭제** 버튼을 클릭하여 템플릿을 수정하거나 삭제할 수 있습니다.
 
-✔ **\[FAQ 바로가기]** [기존에 존재하는 카테고리/말머리/태그를 삭제하면 어떻게 되나요?](https://nhn-contact.oc.toast.com/oc/hc/article/63/)
+✔ **\[FAQ 바로가기]** [기존에 존재하는 카테고리/말머리/태그를 삭제하면 어떻게 되나요?](https://nhn-contact.oc.nhncloud.com/oc/hc/article/63/)
 
 <div id="notice_link"></div>
 
 ### 공지사항 등록
-![헬프센터_공지사항등록](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-help-center_img0070.png)
+![헬프센터_공지사항등록](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-help-center_img0070.png)
 
 배포문서 또는 초안문서 탭에서 **공지사항 등록** 버튼을 클릭하여 공지 문서를 작성할 수 있습니다.
 
@@ -230,7 +230,7 @@ FAQ를 등록하려면 먼저 카테고리를 등록해야 합니다. 카테고�
 - 출력일은 **헬프센터 공지사항에 표시되는 등록일**을 의미합니다.
 - 실제 등록된 날짜와 고객에게 노출되는 등록일을 다르게 표시해야할 경우 활용할 수 있습니다.
 
-✔ **\[FAQ 바로가기]** [공지사항 출력일은 어떤 기능을 하나요?](https://nhn-contact.oc.toast.com/oc/hc/article/46/)
+✔ **\[FAQ 바로가기]** [공지사항 출력일은 어떤 기능을 하나요?](https://nhn-contact.oc.nhncloud.com/oc/hc/article/46/)
 
 **⑥ 내용 작성**
 

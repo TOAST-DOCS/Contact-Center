@@ -11,7 +11,7 @@
 ### 계약 현황
 
 #### 1. 계약 현황 화면
-![계약서비스현황_계약현황](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-global-management_img0010.png)
+![계약서비스현황_계약현황](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-global-management_img0010.png)
 
 **계약 현황** 탭은 서비스를 추가하거나 내용 수정, 해지 등 서비스 계약 관련 기능을 사용할 수 있습니다.
 
@@ -42,7 +42,7 @@
   - 이후 해지 버튼을 클릭하여 서비스를 해지할 수 있습니다.
 
 #### 2. 서비스 추가
-![계약서비스현황_서비스추가](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-global-management_img0020.png)
+![계약서비스현황_서비스추가](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-global-management_img0020.png)
 
 새로운 서비스를 추가하려면 아래의 순서로 처리합니다.
 
@@ -1099,7 +1099,7 @@
 - 설정 후 **계약** 버튼을 클릭하면 서비스 계약이 완료됩니다.
 
 ### 요금 현황
-![계약서비스현황_요금현황](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-global-management_img0051.png)
+![계약서비스현황_요금현황](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-global-management_img0051.png)
 
 **요금 현황** 탭에서는 전체, 서비스 유형별, 개별 서비스별 월별 청구 요금을 **①** 검색하여 조회할 수 있습니다.
 개별 서비스를 선택하여 조회하면 **②** 서비스 상태가 함께 표시됩니다.
@@ -1109,7 +1109,7 @@
 ✔ **\[FAQ 바로가기]** [요금은 언제 어떻게 결제되나요?](https://nhn-contact.oc.nhncloud.com/oc/hc/article/67/)
 
 ### 조직 정보
-![계약서비스현황_조직정보](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-global-management_img0060.png)
+![계약서비스현황_조직정보](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-global-management_img0060.png)
 
 **조직 정보** 탭에서는 Online Contact 서비스를 이용하고 있는 **① NHN Cloud 조직 정보**와, Online Contact 내부의 계약 서비스들을 관리하는 **② Online Contact 조직 정보**를 확인할 수 있습니다.
 
@@ -1130,7 +1130,7 @@ OC 조직 정보에서 확인할 수 있는 내용은 아래와 같습니다.
 
 
 ## 조직관리자
-![계약서비스현황_조직관리자](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-global-management_img0070.png)
+![계약서비스현황_조직관리자](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-global-management_img0070.png)
 
 **조직관리자**는 Online Contact의 전체관리 메뉴 권한 및 상담원 추가/삭제 권한을 가집니다.
 
@@ -1155,7 +1155,7 @@ OC 조직 정보에서 확인할 수 있는 내용은 아래와 같습니다.
 - 이후 저장 버튼을 클릭하면 해당 상담원이 조직관리자로 등록됩니다.
 
 ## 회사정보 관리
-![계약서비스현황_회사정보관리](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-global-management_img0081.png)
+![계약서비스현황_회사정보관리](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-global-management_img0081.png)
 
 PC, 모바일 헬프센터의 푸터 영역에 회사 정보 및 이용약관을 표시하기 위한 정보를 입력하는 메뉴입니다.
 
@@ -1173,7 +1173,7 @@ CTI 관리 메뉴에서는 Online Contact과 연결할 CTI 정보를 설정하�
 해당 메뉴는 계약 정보에서 **티켓 관리 → 전화 CTI 사용** 기능을 **사용**으로 설정한 서비스에서만 사용 가능합니다.
 
 ### CTI 설정
-![계약서비스현황_CTI설정](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-global-management_img0090.png)
+![계약서비스현황_CTI설정](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-global-management_img0090.png)
 
 Online Contact의 전화 상담 기능과 연결할 CTI 정보를 설정할 수 있습니다.
 
@@ -1198,7 +1198,7 @@ Online Contact의 전화 상담 기능과 연결할 CTI 정보를 설정할 수 
 
 
 ### CTI 상담원 관리
-![계약서비스현황_CTI상담원관리](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-global-management_img0100.png)
+![계약서비스현황_CTI상담원관리](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-global-management_img0100.png)
 
 전화 상담을 사용할 상담원에게 CTI ID 및 CTI 번호를 등록하는 메뉴입니다.
 
@@ -1226,7 +1226,7 @@ Online Contact의 전화 상담 기능과 연결할 CTI 정보를 설정할 수 
 
 
 ## 권한 변경 로그 관리
-![계약서비스현황_권한변경로그관리](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-global-management_img0110.png)
+![계약서비스현황_권한변경로그관리](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-global-management_img0110.png)
 
 조직 내부 상담원들의 권한을 수정하면 변경된 이력이 저장되며, 해당 내역을 확인할 수 있는 메뉴입니다.
 
@@ -1238,7 +1238,7 @@ Online Contact의 전화 상담 기능과 연결할 CTI 정보를 설정할 수 
 
 
 ## 데이터 이관
-![계약서비스현황_데이터이관](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-global-management_img0120.png)
+![계약서비스현황_데이터이관](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-global-management_img0120.png)
 
 Online Contact으로의 상담 데이터 이관이 필요할 경우, **데이터 이관** 메뉴를 통해 엑셀 파일로 업로드하여 티켓을 일괄로 생성할 수 있습니다.
 
@@ -1266,7 +1266,7 @@ Online Contact으로의 상담 데이터 이관이 필요할 경우, **데이터
 
 
 ## My 실적
-![계약서비스현황_My실적](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-global-management_img0130.png)
+![계약서비스현황_My실적](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-global-management_img0130.png)
 
 Online Contact 화면 우측 상단에 표시된 **① 계정 이름**을 클릭한 후 **② My 실적**을 선택하면 **③ My 실적 대화상자**가 나타납니다.
 
@@ -1304,7 +1304,7 @@ Online Contact 화면 우측 상단에 표시된 **① 계정 이름**을 클릭
 
 
 ## 사용자 설정
-![계약서비스현황_사용자설정](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-global-management_img0140.png)
+![계약서비스현황_사용자설정](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-global-management_img0140.png)
 
 Online Contact 화면 우측 상단에 표시된 **① 계정 이름**을 클릭한 후 **② 개인정보설정**을 선택하면 **③ 개인정보설정 대화상자**가 나타납니다.
 

@@ -7,7 +7,7 @@
 Online Contact에서 제공하는 **OPEN API** 기능에 대한 활성화/비활성화 및 관련 기능을 설정하는 메뉴입니다.
 
 ### OPEN API
-![서비스관리_인증](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0010.png)
+![서비스관리_인증](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0010.png)
 
 **① OPEN API 활성화**
 
@@ -32,7 +32,7 @@ OPEN API에 대한 자세한 정보는 [OPEN API 가이드](https://docs.nhnclou
 본 문단에서는 채팅 기능 설정 방법을 안내하고 있으므로 사용법이 궁금하다면 [채팅 가이드](https://docs.nhncloud.com/ko/Contact%20Center/ko/online-contact-guide-chat/)를 참고하십시오.
 
 ### 채팅 기능 활성화
-![서비스관리_채팅기능활성화](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0020.png)
+![서비스관리_채팅기능활성화](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0020.png)
 
 채팅 기능을 이용하려면 먼저 아래와 같이 설정해야 합니다.
 
@@ -43,12 +43,12 @@ OPEN API에 대한 자세한 정보는 [OPEN API 가이드](https://docs.nhnclou
 채팅 기능을 활성화하면 우측 하단에 **채팅 아이콘**이 나타나며, 클릭 시 채팅 위젯을 실행할 수 있습니다.
 
 <!-- 채팅 가이드로 이동
-![](http://static.toastoven.net/prod_contact_center/2.2.2-(1).png)
+![](https://static.toastoven.net/prod_contact_center/2.2.2-(1).png)
 **채팅 아이콘**을 통해 접속한 후 **①** 좌측 상단 **상태 값**을 클릭하시면 (초기 기본값 ‘오프라인’) 온라인/휴식/오프라인 중 하나로 상태를 설정하실 수 있으며, 온라인 상태일 경우에만 고객의 채팅 요청에 답변할 수 있습니다.
 -->
 
 ### 기본 설정
-![서비스관리_채팅기본설정](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0030.png)
+![서비스관리_채팅기본설정](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0030.png)
 
 채팅 시작 또는 평가 요청 시 전송할 기본 메시지를 설정할 수 있습니다.
 
@@ -64,14 +64,14 @@ OPEN API에 대한 자세한 정보는 [OPEN API 가이드](https://docs.nhnclou
 인사말, 만족도 안내 메시지 모두 **[전체 관리 → 계약 서비스 현황 → 계약 현황 탭 → 기본정보]**에서 설정한 **헬프센터 언어별**로 메시지를 등록할 수 있습니다.
 
 ### 상담원 할당 설정
-![서비스관리_채팅상담원할당설정](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0040.png)
+![서비스관리_채팅상담원할당설정](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0040.png)
 
 **① 채팅할당**
 
 - 채팅 상담이 접수되었을 때, 요청한 고객과 최근 채팅 기록이 있는 상담원에게 **우선 할당**할 것인지, 또는 **임의로 배분**할 것인지 선택할 수 있습니다.
 
 ### 채팅화면 삽입 코드
-![서비스관리_채팅화면삽입코드](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0050.png)
+![서비스관리_채팅화면삽입코드](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0050.png)
 
 Online Contact에서 제공하는 채팅 서비스를 기존 사용중인 타 서비스에 적용하고 싶을 경우 사용하는 코드입니다.
 
@@ -85,7 +85,7 @@ Online Contact에서 제공하는 채팅 서비스를 기존 사용중인 타 �
 - 필요에 따라 각 언어별 스크립트를 적용하여 채팅 기능을 적용할 수 있습니다.
 
 ### 카테고리 관리
-![서비스관리_채팅카테고리관리](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0060.png)
+![서비스관리_채팅카테고리관리](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0060.png)
 
 채팅 상담 시 상담원이 직접 입력하는 상담정보 중 **처리유형의 카테고리**를 관리할 수 있는 메뉴입니다. 처리유형을 1~3 뎁스까지 3단계로 설정할 수 있습니다.
 
@@ -113,7 +113,7 @@ Online Contact에서 제공하는 채팅 서비스를 기존 사용중인 타 �
 티켓에 대한 분류를 설정하는 메뉴입니다. 카테고리는 **접수유형과 처리유형**으로 나뉘며 각각 카테고리를 설정할 수 있습니다.
 
 #### 1. 접수유형
-![서비스관리_티켓카테고리관리_접수유형](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0070.png)
+![서비스관리_티켓카테고리관리_접수유형](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0070.png)
 
 **접수유형 카테고리**는 고객이 **헬프센터의 문의하기**를 통해 문의 내용을 작성할 경우, **고객이 직접 선택하는 카테고리**로, 1~5뎁스까지 5단계로 설정할 수 있습니다.
 헬프센터 외 문의는 상담원이 티켓 처리 시 선택하여 저장할 수 있습니다.
@@ -153,7 +153,7 @@ Online Contact에서 제공하는 채팅 서비스를 기존 사용중인 타 �
 - 접수유형 전체 카테고리 정보를 **엑셀 파일로 추출**할 수 있습니다.
 
 #### 2. 처리유형
-![서비스관리_티켓카테고리관리_처리유형](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0080.png)
+![서비스관리_티켓카테고리관리_처리유형](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0080.png)
 
 **처리유형 카테고리**는 티켓 처리 시 **상담원이 선택하는 카테고리**로, 접수유형과 동일하게 5단계로 설정할 수 있습니다.
 
@@ -193,7 +193,7 @@ Online Contact에서 제공하는 채팅 서비스를 기존 사용중인 타 �
 
 #### 1. 트리거 설정 화면
 
-![서비스관리_트리거메인](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0090.png)
+![서비스관리_트리거메인](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0090.png)
 
 **① 트리거 추가**
 
@@ -224,7 +224,7 @@ Online Contact에서 제공하는 채팅 서비스를 기존 사용중인 타 �
 
 #### 2. 트리거 추가
 
-![서비스관리_트리거추가](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0100.png)
+![서비스관리_트리거추가](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0100.png)
 
 **① 트리거 제목**
 
@@ -244,11 +244,11 @@ Online Contact에서 제공하는 채팅 서비스를 기존 사용중인 타 �
     >
     > <p>
     > **선택 가능 조건**
-    > <img src="http://static.toastoven.net/prod_contact_center/2.2.3-(2)a_1.png">
+    > <img src="https://static.toastoven.net/prod_contact_center/2.2.3-(2)a_1.png">
     > </p>
     > <p>
     > **조건 상세설명**
-    > <img src="http://static.toastoven.net/prod_contact_center/2.2.3-(2)b_1.png">
+    > <img src="https://static.toastoven.net/prod_contact_center/2.2.3-(2)b_1.png">
     > </p>
     > </details>
 
@@ -264,14 +264,14 @@ Online Contact에서 제공하는 채팅 서비스를 기존 사용중인 타 �
     >
     > <p>
     > **선택 가능 유형**
-    > <img src="http://static.toastoven.net/prod_contact_center/2.2.3-(2)c_1.png">
+    > <img src="https://static.toastoven.net/prod_contact_center/2.2.3-(2)c_1.png">
     > </p>
     > <p>
     > **유형별 상세설명**
     >
     > **1. 할당**
     >
-    > ![서비스관리_트리거추가_할당](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0110.png)
+    > ![서비스관리_트리거추가_할당](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0110.png)
     >
     > 트리거 조건이 충족되면 **선택한 상담원에게 티켓을 자동으로 할당**하는 기능입니다.
     >
@@ -289,7 +289,7 @@ Online Contact에서 제공하는 채팅 서비스를 기존 사용중인 타 �
     > <p>
     > **2. 알림**
     >
-    > ![서비스관리_트리거추가_알림](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0120.png)
+    > ![서비스관리_트리거추가_알림](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0120.png)
     >
     > 트리거 조건이 충족되면 지정된 수신인에게 **알림 메일을 발송**하는 기능입니다. 트리거를 통해 발송되는 알림 메일은 **[서비스 관리 → 티켓 →이메일 설정]** 메뉴의 **메일 레이아웃 설정이 적용되지 않으며**, 트리거의 알림메일 설정에서 작성한 내용으로 **단독 발송**됩니다. 
     >
@@ -302,7 +302,7 @@ Online Contact에서 제공하는 채팅 서비스를 기존 사용중인 타 �
     > <p>
     > **3. 전달**
     >
-    > ![서비스관리_트리거추가_전달](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0130.png)
+    > ![서비스관리_트리거추가_전달](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0130.png)
     >
     > 트리거 조건이 충족되면 지정된 수신인에게 **티켓 정보를 메일로 전달**하는 기능입니다.
     >
@@ -313,7 +313,7 @@ Online Contact에서 제공하는 채팅 서비스를 기존 사용중인 타 �
     > <p>
     > **4. 콜백 주소**
     >
-    > ![서비스관리_트리거추가_콜백주소](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0140.png)
+    > ![서비스관리_트리거추가_콜백주소](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0140.png)
     >
     > 트리거 조건이 충족되면 입력된 **API 주소를 호출**하는 기능입니다.
     > 
@@ -324,7 +324,7 @@ Online Contact에서 제공하는 채팅 서비스를 기존 사용중인 타 �
     > <p>
     > **5. Dooray 알림**
     >
-    > ![서비스관리_트리거추가_Dooray알림](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0150.png)
+    > ![서비스관리_트리거추가_Dooray알림](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0150.png)
     >
     > 트리거 조건이 충족되면 설정한 템플릿에 따라 **티켓 정보를 Dooray! 알림으로 전송**하는 기능입니다.
     >
@@ -344,7 +344,7 @@ Online Contact에서 제공하는 채팅 서비스를 기존 사용중인 타 �
 #### 1. 필드 설정
 
 ##### 1-1. 고객 필드
-![서비스관리_고객필드](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0170.png)
+![서비스관리_고객필드](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0170.png)
 
 **고객 필드**는 헬프센터 내 문의하기 시 **고객이 입력하는 항목**을 의미합니다.
 접수유형 카테고리별로 필드를 다르게 설정할 수 있으며, 설정한 내용은 헬프센터 문의하기 화면에 반영됩니다.
@@ -375,7 +375,7 @@ Online Contact에서 제공하는 채팅 서비스를 기존 사용중인 타 �
 > 시스템 필드 중 **전화 관련 필드**(상담일시, IN/OUT, 전화예약, 예약시간, 전화예약번호)는 헬프센터에 노출되지 않고 **전화를 통해 접수된 티켓에만 적용**됩니다. 하나의 접수유형을 헬프센터, 전화, 메일 등 여러 채널에서 같이 적용할 경우 활용할 수 있습니다.
 
 ##### 1-2. 상담원 필드
-![서비스관리_고객필드](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0180.png)
+![서비스관리_고객필드](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0180.png)
 
 **상담원 필드**는 티켓 처리 시 **상담원이 직접 입력하는 항목**으로 티켓 처리화면 하단에 표시됩니다.
 
@@ -396,7 +396,7 @@ Online Contact에서 제공하는 채팅 서비스를 기존 사용중인 타 �
 - 단, 처리유형, 우선순위는 상단에 고정되어 순서 변경이 불가합니다.
 
 #### 2. 필드 관리
-![서비스관리_필드관리](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0190.png)
+![서비스관리_필드관리](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0190.png)
 
 **필드 관리 탭**에서는 상담 업무에 필요한 필드를 정의하거나 변경할 수 있습니다.
 
@@ -410,7 +410,7 @@ Online Contact에서 제공하는 채팅 서비스를 기존 사용중인 타 �
 - **추가** 버튼을 클릭하여 필드를 추가할 수 있습니다.
 > <details markdown="1">
 > <summary><u>필드 추가 방법 상세보기</u></summary>
-> <img src="http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0200.png">
+> <img src="https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0200.png">
 > 
 > **① 항목 유형**
 > 
@@ -469,7 +469,7 @@ Online Contact에서 제공하는 채팅 서비스를 기존 사용중인 타 �
 템플릿은 자주 사용되는 **티켓 처리 양식을 미리 추가**하여 티켓 처리 내용을 신속하게 입력할 수 있는 기능입니다.
 
 #### 1. 템플릿 등록
-![서비스관리_템플릿등록](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0210.png)
+![서비스관리_템플릿등록](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0210.png)
 
 템플릿 등록 탭에서는 템플릿을 새로 추가하거나 등록된 템플릿을 수정, 삭제할 수 있습니다.
 
@@ -492,7 +492,7 @@ Online Contact에서 제공하는 채팅 서비스를 기존 사용중인 타 �
 - 수정 및 삭제 버튼을 클릭하여 등록된 템플릿을 수정하거나 삭제할 수 있습니다.
 
 #### 2. 템플릿 연결
-![서비스관리_템플릿연결](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0220.png)
+![서비스관리_템플릿연결](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0220.png)
 
 템플릿 연결 탭에서는 처리유형별로 **연결된 템플릿들을 조회**하고 선택한 처리유형에 템플릿을 새로 **추가**하거나 **삭제**할 수 있습니다.
 
@@ -520,7 +520,7 @@ Online Contact에서 제공하는 채팅 서비스를 기존 사용중인 타 �
 ✔ **\[FAQ 바로가기]** [티켓 답변 템플릿을 등록했는데, 답변 작성 시 조회되지 않아요.](https://nhn-contact.oc.nhncloud.com/oc/hc/article/62/)
 
 ### 이메일 설정
-![서비스관리_이메일설정](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0230.png)
+![서비스관리_이메일설정](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0230.png)
 
 **이메일 설정**에서는 Online Contact에서 사용되는 메일 계정과 티켓 처리 시 전송되는 메일 레이아웃을 설정할 수 있습니다.
 
@@ -548,7 +548,7 @@ Online Contact에서 제공하는 채팅 서비스를 기존 사용중인 타 �
 ✔ **\[FAQ 바로가기]** [현재 사용하고 있는 외부 이메일을 연결하여 문의를 접수 받고 싶습니다.](https://nhn-contact.oc.nhncloud.com/oc/hc/article/44/)
 
 ### 금칙어
-![서비스관리_금칙어](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0240.png)
+![서비스관리_금칙어](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0240.png)
 
 **금칙어**는 고객 문의에 대한 티켓 처리 시 오탈자 또는 잘못된 안내사항이 내용에 포함되는 것을 방지하는 기능입니다.
 
@@ -581,7 +581,7 @@ Online Contact에서 제공하는 채팅 서비스를 기존 사용중인 타 �
 ✔ **\[FAQ 바로가기]** [CTI 화면은 전화 권한이 있는 서비스에서만 접속할 수 있나요?](https://nhn-contact.oc.nhncloud.com/oc/hc/article/101/)
 
 ### IVR Route 관리
-![서비스관리_IVR관리](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0250.png)
+![서비스관리_IVR관리](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0250.png)
 
 **IVR Route 관리**는 CTI에 설정된 IVR 시나리오 중 상담원과 직접 연결되는 경로를 추가하여 Online Contact 전화 기능과 연결하는 메뉴입니다.
 
@@ -598,7 +598,7 @@ Online Contact에서 제공하는 채팅 서비스를 기존 사용중인 타 �
 - 설정 시 해당 경로로 전화가 접수되어 티켓이 생성되면 설정된 접수유형으로 자동 생성됩니다.
 
 ### 발신번호 관리
-![서비스관리_발신번호관리](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0260.png)
+![서비스관리_발신번호관리](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0260.png)
 
 **발신번호 관리**는 전화 발신 시 고객에게 표시되는 **발신번호**를 등록 및 관리하는 메뉴입니다. 한 조직 내에서 한 명의 상담원이 복수의 서비스로 전화 상담을 진행할 경우, 아웃바운드 통화 목적에 맞게 발신번호를 선택하는 기능으로 활용할 수 있습니다.
 
@@ -626,7 +626,7 @@ Online Contact에서 제공하는 채팅 서비스를 기존 사용중인 타 �
 채팅, 전화, 메일 등 다양한 경로로 유입된 고객 문의를 처리하기 위한 상담원과 상담 그룹을 등록하는 메뉴입니다.
 
 ### 상담원
-![서비스관리_상담원](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0270.png)
+![서비스관리_상담원](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0270.png)
 
 **상담원 탭**에서는 Online Contact을 사용하는 상담원의 정보를 등록하고 권한을 부여할 수 있습니다. 상담원으로 추가할 사용자는 IAM 회원으로 등록되어 있어야하며, 등록되어 있지 않다면 **회원 초대** 기능을 통해 초대할 수 있습니다. 
 
@@ -669,7 +669,7 @@ Online Contact에서 제공하는 채팅 서비스를 기존 사용중인 타 �
 - 개인정보설정은 Online Contact 화면 우측 상단의 계정 이름을 선택하여 실행할 수 있습니다.
 
 ### 그룹
-![서비스관리_상담원그룹](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0280.png)
+![서비스관리_상담원그룹](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0280.png)
 
 **그룹 탭**에서는 상담원이 소속되는 그룹을 등록하거나 수정, 삭제할 수 있습니다. [서비스관리 → 티켓 → 트리거] 설정을 통해 접수유형에 따라 그룹별로 티켓을 할당하거나, 알림 메일을 전송하는 등의 용도로 사용됩니다.
 
@@ -690,7 +690,7 @@ Online Contact에서 제공하는 채팅 서비스를 기존 사용중인 타 �
 고객 서비스 향상을 위해 공지사항, FAQ, 1:1문의, 채팅 등의 기능을 지원하는 헬프센터 페이지를 직접 설정하는 화면입니다.
 
 ### 헬프센터 접속
-![서비스관리_헬프센터_접속](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0285.png)
+![서비스관리_헬프센터_접속](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0285.png)
 
 헬프센터 페이지는 아래의 방법으로 접속할 수 있습니다.
 
@@ -705,7 +705,7 @@ Online Contact에서 제공하는 채팅 서비스를 기존 사용중인 타 �
 
 #### 1. 템플릿 관리 화면
 
-![서비스관리_헬프센터_템플릿관리](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0290.png)
+![서비스관리_헬프센터_템플릿관리](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0290.png)
 
 **템플릿 관리**는 헬프센터의 **디자인 테마**를 관리하는 메뉴입니다. 서비스별로 PC, 모바일 버전 각각 메인 화면 디자인을 수정할 수 있는 편집 기능을 제공합니다.
 
@@ -730,7 +730,7 @@ Online Contact에서 제공하는 채팅 서비스를 기존 사용중인 타 �
 <div id="help_template_add_link"></div>
 
 #### 2. 템플릿 등록
-![서비스관리_헬프센터_템플릿등록](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0300.png)
+![서비스관리_헬프센터_템플릿등록](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0300.png)
 
 **① 템플릿 제목/ 템플릿 설명**
 
@@ -1249,7 +1249,7 @@ Online Contact에서 제공하는 채팅 서비스를 기존 사용중인 타 �
 > </details>
 
 ### 파일업로드 관리
-![서비스관리_헬프센터_파일업로드관리](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0310.png)
+![서비스관리_헬프센터_파일업로드관리](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0310.png)
 
 **파일업로드 관리**는 헬프센터 템플릿, 티켓처리 템플릿, 메일 레이아웃 작성 등 Online Contact에서 사용할 파일을 관리할 수 있습니다.
 공통적으로 사용되는 파일을 매번 첨부할 필요 없이 서버에 업로드하고 필요한 메뉴에서 파일경로를 붙여넣어 불러올 수 있습니다.
@@ -1269,7 +1269,7 @@ Online Contact에서 제공하는 채팅 서비스를 기존 사용중인 타 �
 - 업로드한 파일을 선택한 후 **삭제** 버튼을 클릭하면 파일을 삭제할 수 있습니다.
 
 ### 구성관리
-![서비스관리_헬프센터_구성관리](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0320.png)
+![서비스관리_헬프센터_구성관리](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0320.png)
 
 **구성관리**는 헬프센터에서 기본적으로 제공하는 기능을 **활성화/비활성화** 처리하는 메뉴입니다.
 비활성화 시 헬프센터 페이지에서 해당 메뉴가 보이지 않게 됩니다.
@@ -1283,7 +1283,7 @@ Online Contact에서 제공하는 채팅 서비스를 기존 사용중인 타 �
 - 회사 정보(전체 관리 → 회사정보 관리 메뉴에서 추가 및 수정 가능)
 
 ### 회원 연동
-![서비스관리_헬프센터_회원연동](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0330.png)
+![서비스관리_헬프센터_회원연동](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0330.png)
 
 **회원 연동** 기능은 자체 운영중인 서비스의 회원 인증을 Online Contact 헬프센터와 연동하는 기능입니다. 로그인 연동을 통해 자사 서비스의 로그인 정보로 **회원 문의 접수** 및 **문의 내역을 확인**할 수 있습니다.
 
@@ -1312,7 +1312,7 @@ Online Contact에서 제공하는 채팅 서비스를 기존 사용중인 타 �
 헬프센터에 적용할 다국어 코드 및 태그를 관리하는 메뉴입니다. 언어 설정에 따라 헬프센터 웹 페이지에서 노출되는 각종 명칭, 안내 문구 등을 코드로 관리할 수 있습니다.
 
 #### 1. 다국어 코드
-![서비스관리_헬프센터_다국어코드](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0340.png)
+![서비스관리_헬프센터_다국어코드](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0340.png)
 
 **다국어 코드** 탭에서는 헬프센터에서 사용할 다국어 언어 세트를 관리할 수 있습니다. 기본 등록되어 있는 **시스템 언어 세트**는 내용 및 태그 수정만 가능하며, 코드 값은 변경이 불가합니다.
 
@@ -1330,7 +1330,7 @@ Online Contact에서 제공하는 채팅 서비스를 기존 사용중인 타 �
 - **수정** 및 **삭제** 버튼으로 등록된 언어세트를 수정하거나 삭제할 수 있습니다.
 
 #### 2. 태그
-![서비스관리_헬프센터_태그](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0350.png)
+![서비스관리_헬프센터_태그](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0350.png)
 
 **태그** 탭에서는 언어 세트를 보다 쉽게 분류할 수 있도록 **사용자 정의 태그**를 관리할 수 있습니다.
 
@@ -1345,7 +1345,7 @@ Online Contact에서 제공하는 채팅 서비스를 기존 사용중인 타 �
 
 ### 외부 메뉴 관리
 
-![서비스관리_헬프센터_태그](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0360.png)
+![서비스관리_헬프센터_태그](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0360.png)
 
 **외부 메뉴 관리**는 헬프센터 페이지에 다른 외부 메뉴를 추가하고 싶을 경우 사용합니다.
 
@@ -1374,7 +1374,7 @@ Online Contact에서 제공하는 채팅 서비스를 기존 사용중인 타 �
 ✔ **\[FAQ 바로가기]** [외부채널 (트위터/카카오 상담톡) 연결을 활성화했을 때 문의의 인입/답변 과정은 어떻게 되나요?](https://nhn-contact.oc.nhncloud.com/oc/hc/article/61/)
 
 ### 트위터
-![서비스관리_외부채널_트위터](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0370.png)
+![서비스관리_외부채널_트위터](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0370.png)
 
 트위터 채널을 연동하여 해당 계정이 멘션된 트윗이나 메시지를 티켓으로 생성할 수 있습니다.
 
@@ -1396,7 +1396,7 @@ Online Contact에서 제공하는 채팅 서비스를 기존 사용중인 타 �
 > 메시지를 티켓으로 전환하고 싶을 경우 **[트위터 계정 접속 → 더보기 → 설정 및 개인정보 → 개인정보 및 보안 → 쪽지(Direct Messages) → 쪽지 요청 받기]** 항목이 체크되어 있어야 합니다.
 
 ### 카카오 상담톡
-![서비스관리_외부채널_카카오상담톡](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0380.png)
+![서비스관리_외부채널_카카오상담톡](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0380.png)
 
 카카오에서 제공하는 상담톡 서비스를 Online Contact에 적용할 수 있습니다.
 
@@ -1428,7 +1428,7 @@ Online Contact에서 제공하는 채팅 서비스를 기존 사용중인 타 �
 > - 카카오톡을 통해 접수되는 문의는 Online Contact에서 제공하는 채팅 기능에 유입 채널 ‘**카카오**’로 표시되어 접수됩니다.
 
 ### SMS
-![서비스관리_외부채널_SMS](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0390.png)
+![서비스관리_외부채널_SMS](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0390.png)
 
 NHN Cloud에서 제공하는 SMS 서비스를 Online Contact과 연동하여 문자메시지를 발송할 수 있습니다.
 
@@ -1449,7 +1449,7 @@ SMS 기능을 이용하려면 먼저 **[NHN Cloud Notification → SMS] 서비�
 <div id="dooray_link"></div>
 
 ### Dooray!
-![서비스관리_외부채널_두레이](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0400.png)
+![서비스관리_외부채널_두레이](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0400.png)
 
 **Dooray!** 서비스를 Online Contact과 연동하여 티켓 이관 및 처리에 활용할 수 있습니다.
 
@@ -1484,7 +1484,7 @@ SMS 기능을 이용하려면 먼저 **[NHN Cloud Notification → SMS] 서비�
     - 대표 등록자 IAM ID는 Dooray! 이관 또는 코멘트 추가 시 상담원이 해당 Dooray! 프로젝트의 멤버로 추가되어 있지 않을 경우, 입력한 대표 등록자의 이름으로 업무/코멘트가 생성됩니다.
 > **※ 참고사항**
 > 
-> ![서비스관리_외부채널_두레이상담원](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0410.png)
+> ![서비스관리_외부채널_두레이상담원](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0410.png)
 >
 > - 대표 등록자가 아닌 개별 상담원의 이름으로 Dooray! 업무를 생성하기 위해서는 Dooray! 유저키 정보가 필요합니다.
 > - **① Dooray! 유저키**는 Dooray! 조직 등록 시 상담원의 IAM 이메일 주소와 Dooray! 조직에 동일한 이메일 주소가 있다면 해당 상담원에게 일괄적으로 자동 발급되며 [서비스 관리 → 상담원] 메뉴에서 상담원 수정을 통해 확인할 수 있습니다.
@@ -1496,7 +1496,7 @@ SMS 기능을 이용하려면 먼저 **[NHN Cloud Notification → SMS] 서비�
 - 활성화 시 티켓 상세 내역에서 **Dooray! 이관** 버튼이 숨김 처리되어 이관이 불가능하게 됩니다.
 
 ## 보안서비스
-![서비스관리_외부채널_보안서비스](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0420.png)
+![서비스관리_외부채널_보안서비스](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-service-management_img0420.png)
 
 Online Contact에서는 **로그 연동** 기능과 상담 진행을 위해 전달되는 고객 개인정보를 암호화하는 **개인정보 마스킹** 기능을 제공합니다.
 

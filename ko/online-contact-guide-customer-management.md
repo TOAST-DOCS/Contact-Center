@@ -7,7 +7,7 @@
 ## 고객관리
 
 ### 고객관리
-![고객관리](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-customer-management_img0010.png)
+![고객관리](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-customer-management_img0010.png)
 
 고객관리 메뉴는 생성된 고객 정보 내역을 확인하는 메뉴입니다.
 
@@ -24,7 +24,7 @@
 - 이름, 전화번호 등의 고객 정보와 해당 고객의 상담 이력을 함께 조회할 수 있습니다.
 
 ### 고객 정보 변경
-![고객관리_고객정보변경](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-customer-management_img0020.png)
+![고객관리_고객정보변경](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-customer-management_img0020.png)
 
 고객 정보를 변경하려면 티켓관리 메뉴에서 해당 티켓의 정보를 수정해야 합니다.
 
@@ -39,7 +39,7 @@
 - 새로운 고객 정보를 입력하였을 경우, 해당 고객 정보도 함께 저장되며 고객관리 메뉴에서 확인할 수 있습니다.
 
 ### 고객 정보 통합
-![고객관리_고객정보통합](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-customer-management_img0030.png)
+![고객관리_고객정보통합](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-customer-management_img0030.png)
 
 별개로 생성된 고객 정보가 다른 고객 정보와 동일한 고객일 경우 **통합** 기능을 사용할 수 있습니다.
 
@@ -60,7 +60,7 @@
 ## 고객정보연동
 
 ### API 설정
-![고객관리_API설정](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-customer-management_img0040.png)
+![고객관리_API설정](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-customer-management_img0040.png)
 
 Online Contact 외 사용중인 자체 서비스가 있다면 **API**를 통해 해당 서비스의 데이터를 조회할 수 있습니다.
 
@@ -91,7 +91,7 @@ Online Contact 외 사용중인 자체 서비스가 있다면 **API**를 통해 
 >     - **데이터 명칭**: 리턴 받은 결과 데이터에서 값을 식별하기 위한 key를 입력합니다.
 
 ### 고객정보 조회
-![고객관리_고객정보조회](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-customer-management_img0050.png)
+![고객관리_고객정보조회](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-customer-management_img0050.png)
 
 **API 설정**에서 추가한 API는 **티켓관리 메뉴에서 사용**할 수 있습니다.
 

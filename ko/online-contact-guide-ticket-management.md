@@ -1,6 +1,6 @@
 ## Contact Center > Online Contact > 서비스 가이드 (상담관리) > 티켓 관리
 
-![티켓관리_개요](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-ticket-management_img0010.png)
+![티켓관리_개요](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-ticket-management_img0010.png)
 
 **티켓**은 고객의 문의사항이나 요청사항을 추적 관리하기 위해 생성된 데이터를 의미합니다. 문의가 접수되고 처리되기까지 고객과 상담원, 내부 직원 간 **모든 커뮤니케이션 과정을 기록하고 추적**하여 고객 서비스 향상을 위한 기반 데이터로 활용됩니다.
 
@@ -13,7 +13,7 @@ Online Contact에서의 티켓은 **티켓생성 → 티켓할당 → 티켓처�
 **티켓관리** 메뉴는 **생성된 티켓을 조회**하고 **담당자를 할당**하거나 **티켓을 처리**하는 화면입니다.
 
 ## 화면 구성
-![티켓관리_화면구성1](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-ticket-management_img0020.png)
+![티켓관리_화면구성1](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-ticket-management_img0020.png)
 
 **① 메뉴 목록**
 
@@ -73,7 +73,7 @@ CTI 관련 정보가 실시간으로 조회되는 미니 전광판입니다.
 - 약속콜: **전화예약**이 활성화되어 있는 티켓의 수
 - 이관중: **이슈 이관** 및 **Dooray! 이관** 처리된 티켓 중 해결되지 않은 티켓의 수
 
-![티켓관리_화면구성2](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-ticket-management_img0030.png)
+![티켓관리_화면구성2](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-ticket-management_img0030.png)
 
 **⑤ 버튼**
 
@@ -139,7 +139,7 @@ CTI 관련 정보가 실시간으로 조회되는 미니 전광판입니다.
 -->
 
 ## 티켓 검색
-![티켓관리_티켓검색](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-ticket-management_img0040.png)
+![티켓관리_티켓검색](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-ticket-management_img0040.png)
 
 티켓 검색 기능을 활용하여 원하는 티켓을 검색할 수 있습니다.
 
@@ -159,7 +159,7 @@ CTI 관련 정보가 실시간으로 조회되는 미니 전광판입니다.
 - 검색 버튼을 클릭하면 조회조건에 입력된 값에 따라 해당하는 티켓이 조회됩니다.
 
 ## 티켓 생성
-![티켓관리_티켓생성](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-ticket-management_img0050.png)
+![티켓관리_티켓생성](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-ticket-management_img0050.png)
 
 티켓은 해당 서비스의 계약 내역에 따라 전화, 이메일, 채팅 등의 채널을 통해 **문의사항이 접수되면 자동으로 생성**됩니다.
 
@@ -180,14 +180,14 @@ CTI 관련 정보가 실시간으로 조회되는 미니 전광판입니다.
 티켓이 생성되면 담당자가 할당되지 않은 **미할당** 상태로 생성됩니다. 미할당 티켓은 아래의 방법으로 담당자에게 할당할 수 있습니다.
 
 ### 가져오기
-![티켓관리_가져오기](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-ticket-management_img0060.png)
+![티켓관리_가져오기](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-ticket-management_img0060.png)
 
 - 미할당 상태인 티켓에는 **가져오기** 버튼이 표시됩니다.
 - 버튼 클릭 시 본인에게 티켓이 할당되며 티켓의 상태가 **처리중**으로 변경됩니다.
 - 가져오기 시 소속된 상담원 그룹이 복수일 경우 하나의 그룹을 선택해야 합니다.
 
 ### 전달
-![티켓관리_전달](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-ticket-management_img0070.png)
+![티켓관리_전달](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-ticket-management_img0070.png)
 
 - 티켓 상세 영역 하단의 **전달** 기능을 통해 담당자를 할당하거나 변경할 수 있습니다.
 - 버튼 클릭 시 **티켓 전달** 대화상자가 나타나며, 전달할 그룹과 담당자를 선택합니다.
@@ -195,7 +195,7 @@ CTI 관련 정보가 실시간으로 조회되는 미니 전광판입니다.
 - 티켓 전달은 **서비스관리 → 상담원** 메뉴에서 **티켓 전달 권한**이 부여된 상담원만 사용할 수 있습니다. 
 
 ### 트리거
-![티켓관리_트리거](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-ticket-management_img0080.png)
+![티켓관리_트리거](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-ticket-management_img0080.png)
 
 - **서비스관리 → 티켓 → 트리거** 기능을 활용하여 티켓을 자동으로 할당할 수 있습니다.
 - 조건을 다양하게 구성할 수 있으며 조건을 만족하면 지정한 담당자에게 할당하거나 랜덤, 순차 배분 등의 설정이 가능합니다.
@@ -203,7 +203,7 @@ CTI 관련 정보가 실시간으로 조회되는 미니 전광판입니다.
 
 ## 티켓 처리
 
-![티켓관리_티켓처리](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-ticket-management_img0090.png)
+![티켓관리_티켓처리](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-ticket-management_img0090.png)
 
 선택한 티켓에 대해 상담 정보를 수정하거나 보류, 전달, 해결 등의 처리를 할 수 있습니다.
 
@@ -220,7 +220,7 @@ CTI 관련 정보가 실시간으로 조회되는 미니 전광판입니다.
 - 티켓 템플릿이 등록되어 있다면 우측의 **템플릿 관리** 탭에서 양식을 불러올 수 있습니다.
 - 티켓 템플릿은 **서비스관리 → 티켓 → 템플릿 관리**에서 변경 가능하며 자세한 설정 방법은 [서비스관리 > 티켓 > 템플릿 가이드](https://docs.nhncloud.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#tickect_template_link) 문서를 참고하십시오.
 
-✔ **\[FAQ 바로가기]** [답변 템플릿은 어떻게 사용하나요?](https://nhn-contact.oc.toast.com/oc/hc/article/39/)
+✔ **\[FAQ 바로가기]** [답변 템플릿은 어떻게 사용하나요?](https://nhn-contact.oc.nhncloud.com/oc/hc/article/39/)
 
 **③ 처리 유형**
 
@@ -243,7 +243,7 @@ CTI 관련 정보가 실시간으로 조회되는 미니 전광판입니다.
     - **내부해결**: 스팸, 욕설, 테스트, 전화해결 등 내부적으로 문의를 해결하였을 경우 선택합니다. 처리하기 시 **내부해결 사유** 대화상자가 나타나 사유를 선택할 수 있습니다. **스팸**으로 처리하면 티켓이 **스팸함으로 이동**되며, 스팸함에서 해당 티켓을 삭제할 수 있습니다.
     - 해결, 보류 처리 시 전송되는 메일 양식은 **서비스관리 → 티켓 → 이메일 설정**에서 등록할 수 있습니다.
 
-✔ **\[FAQ 바로가기]** [동일한 문의 내용을 한번에 일괄처리 할 수 있나요?](https://nhn-contact.oc.toast.com/oc/hc/article/38/)
+✔ **\[FAQ 바로가기]** [동일한 문의 내용을 한번에 일괄처리 할 수 있나요?](https://nhn-contact.oc.nhncloud.com/oc/hc/article/38/)
 
 **⑥ 전달**
 
@@ -258,7 +258,7 @@ CTI 관련 정보가 실시간으로 조회되는 미니 전광판입니다.
 ## 개인정보 마스킹
 서비스의 계약 정보에서 **보안 서비스** 기능이 **사용** 설정된 경우, 티켓 관리 화면에 **개인정보 마스킹** 아이콘이 표시되며 고객의 개인정보를 암호화할 수 있습니다.  
 
-![티켓관리_개인정보마스킹](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-ticket-management_img0100.gif)
+![티켓관리_개인정보마스킹](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-ticket-management_img0100.gif)
 
 티켓 관리에서 개인정보를 마스킹할 수 있는 영역은 **상담 처리 내역** 영역입니다.
 
@@ -266,7 +266,7 @@ CTI 관련 정보가 실시간으로 조회되는 미니 전광판입니다.
 
  마스킹할 텍스트를 **드래그**하여 선택한 후 **개인정보 마스킹** 아이콘 버튼을 클릭하면 선택한 텍스트가 별표(\*)로 치환되어 표시되며, 마스킹 처리된 데이터는 데이터베이스 상에도 마스킹된 상태로 저장되어 보관됩니다.
 
-![티켓관리_개인정보마스킹취소](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-ticket-management_img0110.gif)
+![티켓관리_개인정보마스킹취소](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-ticket-management_img0110.gif)
 
 개인정보 마스킹을 **해제**하려면 **별표(\*)로 치환된 영역을 클릭**합니다.
 클릭 시 마스킹 해제 여부를 묻는 대화상자가 표시되며, **확인** 버튼을 누르면 화면과 데이터베이스에서 개인정보 마스킹이 해제됩니다.
@@ -275,7 +275,7 @@ CTI 관련 정보가 실시간으로 조회되는 미니 전광판입니다.
 티켓의 해결을 위해 다른 조직원의 도움이 필요할 경우 **이슈 관리** 서비스 또는 **Dooray!** 프로젝트로 티켓을 **이관**할 수 있습니다.
 
 ### 이슈관리 이관
-![티켓관리_이슈이관](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-ticket-management_img0120.png)
+![티켓관리_이슈이관](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-ticket-management_img0120.png)
 
 **① 티켓 이관**
 
@@ -293,7 +293,7 @@ CTI 관련 정보가 실시간으로 조회되는 미니 전광판입니다.
 - 이슈관리 서비스에 생성된 티켓이 **해결, 보류, 내부해결** 처리되면, **이관 답변완료** 상태로 변경되어 후속 처리를 진행할 수 있게 됩니다.
 
 ### Dooray! 이관
-![티켓관리_Dooray이관](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-ticket-management_img0130.png)
+![티켓관리_Dooray이관](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-ticket-management_img0130.png)
 
 **① 티켓 이관**
 

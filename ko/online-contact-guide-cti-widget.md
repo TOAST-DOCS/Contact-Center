@@ -5,7 +5,7 @@ Online Contact은 CTI와 연동하여 전화받기, 전화걸기, 호전환 등�
 본 문서에서는 전화 기능의 사용 방법을 안내하고 있으므로, CTI 관련 설정 방법이 궁금하다면 [전체관리 > CTI 관리 가이드](https://docs.nhncloud.com/ko/Contact%20Center/ko/online-contact-guide-global-management/#ctimanagement_link) 및 [서비스관리 > 전화 가이드](https://docs.nhncloud.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#cti_link) 문서를 참고하십시오.
 
 ## CTI 로그인 및 상태 변경
-![전화_CTI로그인](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-cti-widget_img0010.gif)
+![전화_CTI로그인](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-cti-widget_img0010.gif)
 
 - 된 상담원은 우측 하단의 **전화 위젯**이 표시됩니다.
 - 위젯을 클릭하면 CTI 기능을 사용할 수 있는 대화상자가 나타나며, **CTI로그인** 버튼을 클릭하여 CTI에 연결할 수 있습니다.
@@ -21,7 +21,7 @@ Online Contact은 CTI와 연동하여 전화받기, 전화걸기, 호전환 등�
 > ② **[서비스관리 → 상담원]** 메뉴에서 **전화 권한** 부여
 
 ## 전화 인입
-![전화_전화수신](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-cti-widget_img0020.gif)
+![전화_전화수신](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-cti-widget_img0020.gif)
 
 CTI 로그인 및 대기 상태에서는 인입된 전화를 할당 받아 상담을 진행할 수 있습니다.
 
@@ -30,7 +30,7 @@ CTI 로그인 및 대기 상태에서는 인입된 전화를 할당 받아 상�
 - 전화 인입 후 호회수 시간(Mobile Contact CTI 기본 설정값 30초) 내에 전화를 받지 않으면 할당된 호는 시나리오 단계로 **회수**되어 다시 대기 상담원을 찾아 할당하게 됩니다.
 
 ## 전화 걸기
-![전화_전화걸기](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-cti-widget_img0030.png)
+![전화_전화걸기](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-cti-widget_img0030.png)
 
 고객에게 직접 전화를 걸어야 할 경우, 전화 위젯을 통해 발신 기능을 사용할 수 있습니다.
 
@@ -44,7 +44,7 @@ CTI 로그인 및 대기 상태에서는 인입된 전화를 할당 받아 상�
 **통화 중** 상태에서는 다음과 같은 기능들을 이용할 수 있습니다.
 
 ### 호전환
-![전화_호전환](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-cti-widget_img0040.png)
+![전화_호전환](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-cti-widget_img0040.png)
 
 고객과의 통화 중 **호전환**을 통해 다른 상담원에게 전화를 전달할 수 있습니다.
 
@@ -68,7 +68,7 @@ CTI 로그인 및 대기 상태에서는 인입된 전화를 할당 받아 상�
 - 이후 **보류중** 상태에서 **해제** 버튼을 클릭하면 통화중이던 고객과 다시 연결됩니다.
 
 ### 강성종료
-![전화_강성종료](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-cti-widget_img0050.png)
+![전화_강성종료](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-cti-widget_img0050.png)
 
 고객과의 통화 중 욕설, 위협 등의 사유로 통화 종료가 필요할 경우 **강성종료** 기능을 사용할 수 있습니다.
 
@@ -82,7 +82,7 @@ CTI 로그인 및 대기 상태에서는 인입된 전화를 할당 받아 상�
 - **확인** 버튼 클릭 시 대화상자에 표시된 안내 멘트가 고객에게 송출된 후 통화가 종료됩니다.
 
 ### 보류
-![전화_강성종료](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-cti-widget_img0060.png)
+![전화_강성종료](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-cti-widget_img0060.png)
 
 **보류** 기능을 통해 고객과의 통화를 잠시 중단할 수 있습니다.
 
@@ -96,7 +96,7 @@ CTI 로그인 및 대기 상태에서는 인입된 전화를 할당 받아 상�
 - 업무를 처리한 후 **해제** 버튼을 클릭하면 보류 상태가 해제되어 고객과의 통화를 지속할 수 있습니다.
 
 ## 전화 종료
-![전화_강성종료](http://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-cti-widget_img0070.png)
+![전화_강성종료](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-cti-widget_img0070.png)
 
 - 상담원 또는 고객에 의해 통화가 종료되면 상담원의 상태는 **업무(티켓처리)**로 변경됩니다.
 - 해당 상태에서는 전화 할당이 되지 않으며, 티켓 처리 등의 업무를 수행할 수 있습니다.
