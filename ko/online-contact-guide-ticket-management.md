@@ -83,7 +83,7 @@ CTI 관련 정보가 실시간으로 조회되는 미니 전광판입니다.
 - 티켓 일괄 처리: 티켓 목록에서 체크한 티켓에 대해 **일괄로 코멘트, 해결, 보류 등의 처리**를 할 수 있습니다.
 - 선택취소: 티켓 목록에서 체크된 티켓을 **모두 체크 해제**합니다.
 - 티켓검색: 클릭 시 상세 검색조건 영역이 나타나며 입력한 조건에 따라 티켓을 검색할 수 있습니다.
-- 정보검색: **고객정보관리 → 고객정보연동**에서 설정한 API를 호출 및 조회하는 기능입니다. 자세한 내용은 [고객정보관리 가이드](https://docs.alpha-nhncloud.com/ko/Contact%20Center/ko/online-contact-guide-customer-management/) 문서를 참고하십시오.
+- 정보검색: **고객정보관리 → 고객정보연동**에서 설정한 API를 호출 및 조회하는 기능입니다. 자세한 내용은 [고객정보관리 가이드](https://docs.nhncloud.com/ko/Contact%20Center/ko/online-contact-guide-customer-management/) 문서를 참고하십시오.
 
 **⑥ 티켓 목록**
 
