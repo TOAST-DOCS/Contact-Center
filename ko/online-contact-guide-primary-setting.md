@@ -1,31 +1,45 @@
 ## Contact Center > Online Contact > 서비스 가이드 > 서비스 가입 및 기본 설정
 
-## NHN Cloud 회원가입
-Online Contact는 NHN Cloud 회원가입 후 이용하실 수 있습니다.
-회원가입 시 결제수단 등록이 필수이므로 신용카드를 준비해주시고,(**체크카드는 등록이 불가합니다.**) 사업자 회원의 경우 **사업자등록증 사본**도 함께 준비해주세요.
+## 회원 가입
+### NHN Cloud 회원가입
+![서비스가입_회원가입](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-primary-setting_img0010.png)
 
-![](http://static.toastoven.net/prod_contact_center/1.3.1-(1).png)
-**①** 회원가입 절차: 약관 동의 → 회원 정보 입력 → 가입 완료
-**②** 회원가입을 마치신 후, 마이페이지 → 결제수단으로 이동하셔서 결제수단 등록을 진행해주세요.
+Online Contact는 NHN Cloud 회원가입 후 이용할 수 있습니다.
+
+NHN Cloud 홈페이지 우측 상단의 **회원가입** 버튼을 클릭하여 회원 가입을 진행할 수 있으며, 사업자 회원의 경우 **사업자등록증**을 첨부해야 하므로 미리 준비해주십시오.
 
 ### 결제수단 등록
-![](http://static.toastoven.net/prod_contact_center/1.3.1-(2).png)
-![](http://static.toastoven.net/prod_contact_center/1.3.1-(3).png)
+![서비스가입_결제수단등록](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-primary-setting_img0020.png)
 
-**①** 결제수단으로는 PAYCO에 등록되어 있는 신용카드 또는 소지하고 계신 신용카드를 **본인인증 → 카드 등록**의 과정으로 등록하실 수 있습니다.
-체크카드는 등록이 불가하니 유의해주세요.
+NHN Cloud 서비스를 이용하기 위해서는 결제수단을 반드시 등록해야 합니다.
 
-## 서비스 선택, 조직 및 도메인 이름 설정
-![](http://static.toastoven.net/prod_contact_center/1.3.2-(1).png)
-**①** 결제수단 등록 이후 NHN Cloud 홈페이지 상단 **CONSOLE** 버튼을 누르시면 NHN Cloud CONSOLE로 이동합니다.
+- 회원가입을 완료하면 로그인 시 **마이페이지 → 결제수단** 화면으로 이동됩니다.
+- 페이지를 벗어났다면 **① 우측 상단 이메일 계정 클릭** → **② 결제수단**으로 접근할 수 있습니다.
+- 해당 화면에서 **③ 결제 수단 추가** 버튼을 클릭하여 요금을 결제할 카드를 등록합니다.
+- 결제 수단은 PAYCO에 등록된 신용카드 또는 소지중인 신용카드를 등록할 수 있으며 체크카드는 등록이 불가합니다.
+
+## 조직 생성 및 서비스 선택
+
+### 콘솔 실행
+![서비스가입_콘솔실행](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-primary-setting_img0030.png)
+
+결제수단 등록 후 NHN Cloud 홈페이지 상단 **CONSOLE** 버튼을 클릭하여 NHN Cloud CONSOLE로 이동합니다.
 
 ### 조직 생성
-![](http://static.toastoven.net/prod_contact_center/1.3.2-(2).png)
-**①** 상단의 **조직을 생성해 주세요.** 버튼을 클릭하셔서 서비스 사용을 위한 최초 조직을 생성하신 후, **②** **서비스 선택** 버튼을 누르시면 NHN Cloud에서 제공하고 있는 여러 서비스를 열람하실 수 있습니다.
-기존에 생성하신 조직이 있는 경우 바로 서비스 선택으로 이동해주세요.
+![서비스가입_조직생성](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-primary-setting_img0040.png)
+
+NHN CLOUD의 서비스 사용을 위해서는 조직을 먼저 생성해야합니다.
+기존 생성된 조직이 있을 경우 Online Contact을 사용할 조직을 선택한 후 다음 단계로 이동하십시오.
+
+- 조직을 생성하려면 좌측 상단의 **조직을 생성해 주세요.** 영역을 클릭합니다.
+- **조직 생성 대화상자**가 실행되며, 생성할 조직의 이름을 입력합니다.
+- **확인** 버튼을 클릭하면 조직이 생성됩니다.
+
+<!-- 여기까지-->
 
 ### 서비스 선택
 ![](http://static.toastoven.net/prod_contact_center/1.3.2-(3).png)
+
 **①** Contact Center 분류 아래의 **Online Contact**를 클릭해주세요. 바로 조직/도메인 이름 설정 단계로 넘어갑니다.
 
 ### 조직/도메인 이름 설정
