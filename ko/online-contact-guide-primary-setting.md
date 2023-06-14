@@ -88,4 +88,4 @@ Online Contact 서비스를 활성화하려면 아래와 같이 설정합니다.
 - 최초로 접속한 경우 Online Contact 내에서 계약, 조직 등을 설정해야하므로 **OWNER ID**로 로그인한 후 설정을 진행합니다.
 - 로그인 시 비밀번호를 잊었다면 **비밀번호 찾기**를 클릭합니다. IAM 회원 등록 시 기재한 이메일로 비밀번호 재설정 메일이 전송되며 해당 메일을 통해 비밀번호를 변경할 수 있습니다.
 
-✔ **\[FAQ 바로가기]** [비밀번호를 변경하고 싶습니다.](https://nhn-contact.oc.toast.com/oc/hc/article/35/)
+✔ **\[FAQ 바로가기]** [비밀번호를 변경하고 싶습니다.](https://nhn-contact.oc.nhncloud.com/oc/hc/article/35/)
