@@ -18,62 +18,74 @@ NHN Cloud 서비스를 이용하기 위해서는 결제수단을 반드시 등�
 - 해당 화면에서 **③ 결제 수단 추가** 버튼을 클릭하여 요금을 결제할 카드를 등록합니다.
 - 결제 수단은 PAYCO에 등록된 신용카드 또는 소지중인 신용카드를 등록할 수 있으며 체크카드는 등록이 불가합니다.
 
-## 조직 생성 및 서비스 선택
-
 ### 콘솔 실행
 ![서비스가입_콘솔실행](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-primary-setting_img0030.png)
 
 결제수단 등록 후 NHN Cloud 홈페이지 상단 **CONSOLE** 버튼을 클릭하여 NHN Cloud CONSOLE로 이동합니다.
 
+NHN Cloud CONSOLE에서는 Online Contact를 비롯한 다양한 서비스 및 조직, 멤버 등을 관리할 수 있습니다.
+
+## 서비스 활성화
+
 ### 조직 생성
 ![서비스가입_조직생성](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-primary-setting_img0040.png)
 
 NHN CLOUD의 서비스 사용을 위해서는 조직을 먼저 생성해야합니다.
-기존 생성된 조직이 있을 경우 Online Contact을 사용할 조직을 선택한 후 다음 단계로 이동하십시오.
+기존 생성된 조직이 있을 경우 Online Contact을 사용할 조직을 선택한 후 다음 단계로 이동합니다.
 
-- 조직을 생성하려면 좌측 상단의 **조직을 생성해 주세요.** 영역을 클릭합니다.
+- 조직을 생성하려면 CONSOLE 화면 좌측 상단의 **"조직을 생성해 주세요"** 영역을 클릭합니다.
 - **조직 생성 대화상자**가 실행되며, 생성할 조직의 이름을 입력합니다.
 - **확인** 버튼을 클릭하면 조직이 생성됩니다.
 
-<!-- 여기까지-->
+### 서비스 선택 및 설정
+![서비스가입_서비스선택](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-primary-setting_img0050.png)
 
-### 서비스 선택
-![](http://static.toastoven.net/prod_contact_center/1.3.2-(3).png)
+Online Contact 서비스를 활성화하려면 아래와 같이 설정합니다.
 
-**①** Contact Center 분류 아래의 **Online Contact**를 클릭해주세요. 바로 조직/도메인 이름 설정 단계로 넘어갑니다.
+**① 서비스 선택**
 
-### 조직/도메인 이름 설정
-![](http://static.toastoven.net/prod_contact_center/1.3.2-(4).png)
-**①** 조직 이름: 기존 조직 이름을 사용하거나 의미 있는 조직 이름으로 수정 또는 추가해주세요.
-**②** 도메인: 영문, 숫자, 하이픈 사용(첫 글자 영문, 숫자만 가능/3~40자 이내)
+- 조직 생성 후 화면 상단의 **서비스 선택**을 클릭합니다.
+- NHN Cloud에서 제공하는 서비스 목록이 나타나며, 목록 중 **Online Contact**을 클릭합니다.
 
-`https://example.OC.toast.com/` 의 형식으로 도메인이 생성되며, 도메인은 Online Contact을 접속하는 **URL 주소**로 사용됩니다.
-조직, 도메인 모두 중복 이름이 존재할 경우 사용이 불가하므로 수정해주세요. 작성 완료 후 우측 **저장** 버튼을 눌러주세요.
+**② 조직/도메인 설정**
 
-## IAM 회원
-![](http://static.toastoven.net/prod_contact_center/1.3.3-(1).png)
-**①** 조직 이름과 도메인 이름을 설정한 이후 IAM 회원을 등록합니다. **IAM 회원 등록** 버튼을 누르시면 회원 정보를 입력하실 수 있는 창이 표시됩니다.
-Online Contact의 회원 구분은 두 가지입니다.
+- Online Contact를 사용할 조직과 도메인을 설정합니다.
+- **조직이름**은 CONSOLE에서 선택한 조직이 기본 입력되어 있으며, 다른 조직으로 변경하거나 추가할 수 있습니다.
+- **도메인**은 Online Contact 접속 시 사용되는 URL로, `https://{도메인이름}.oc.nhncloud.com/` 형태로 제공됩니다.
+- 도메인 이름을 작성한 후 **저장**을 클릭하면 중복체크 후 도메인이 생성됩니다.
 
-- NHN Cloud 회원: NHN Cloud 사이트에 가입되어 있는 회원으로 **조직을 관리하는 멤버**입니다.
-- IAM 회원: 조직 내부 회원으로 **조직 내에서만 유효한 멤버입**니다. NHN Cloud 인증을 하지 않은 아이디로 생성되며, NHN Cloud CONSOLE 내부 멤버 관리 → IAM 회원 탭에서 추가 등록 가능합니다.
+**③ IAM 멤버 등록**
 
-### IAM 회원 등록
-![](http://static.toastoven.net/prod_contact_center/1.3.3-(2).png)
-**①** ID와 이름, 메일주소를 입력하신 후 등록하실 수 있으며, 여러 명의 멤버를 등록하실 수 있습니다. 등록하신 후 OWNER 계정으로 사용하실 IAM 회원을 **OWNER로 체크**해주세요.
+- Online Contact를 이용할 멤버를 등록합니다.
+- **IAM 멤버 등록** 버튼을 클릭한 후 ID, 이름, 이메일 주소를 입력하여 계정을 등록하며 여러 명의 멤버를 등록할 수 있습니다.
+- 등록한 메일 주소로 비밀번호 설정 메일이 발송되며, 해당 메일을 통해 각각 비밀번호 설정 후 서비스를 이용할 수 있게 됩니다.
+- 등록한 IAM 멤버 중 **OWNER** 계정으로 사용할 ID를 체크한 후 **다음** 버튼을 클릭하면 서비스 생성이 완료됩니다.
 
-## 가입 완료 후 최초 접속
-![](http://static.toastoven.net/prod_contact_center/1.3.4-(1).png)
-Online Contact 서비스 가입이 완료되었습니다. 표시되는 가입완료 페이지에서
-**① Online Contact 접속 URL**과, IAM 회원 중 **OWNER로 설정한 ID**를 확인해주세요. 추후 해당 정보를 사용해서 접속하실 수 있습니다.
-**②** 로그인 보안 설정의 경우 [로그인 보안 설정 가이드](https://docs.nhncloud.com/ko/TOAST/ko/console-guide/#iam)를 참고해주세요.
+> **※ 참고사항**
+>
+> NHN Cloud의 계정은 아래와 같이 두 가지로 구분됩니다.
+> 
+> - **NHN Cloud 회원**: NHN Cloud에 가입된 회원으로 **NHN Cloud 전체 서비스 및 조직을 관리하는 회원**입니다.
+> - **IAM 멤버**: 조직 내부 회원으로 **조직 내에서만 유효한 멤버**입니다. NHN Cloud 인증을 하지 않은 아이디로 생성되며, NHN Cloud CONSOLE의 **멤버 관리 → IAM 멤버** 탭에서 추가할 수 있습니다.
 
-가입완료 페이지에서 확인하신 URL에 접속하시거나, 또는 NHN Cloud CONSOLE 페이지 내부 조직 서비스 이용 현황 → Online Contact를 눌러서 접속하시면 로그인 페이지가 표시됩니다. 
-마찬가지로 가입완료 페이지에서 확인하신 OWNER ID로 로그인해주세요. ID에 비밀번호가 설정되어 있지 않은 상태이므로 **비밀번호 찾기**를 먼저 진행해주신 후 로그인이 가능합니다.
+**④ 완료**
 
-### OWNER ID로 로그인
-![](http://static.toastoven.net/prod_contact_center/1.3.4-(2).png)
-**①** 비밀번호 찾기 시 인증 메일은 IAM 회원 등록 시 기재하신 이메일 계정으로 전송됩니다. 해당 메일을 통해 비밀번호를 새롭게 설정해주세요.
-비밀번호는 영문, 숫자, 특수문자 조합의 8~15자리로 구성해주세요.
+- 서비스 준비 완료 안내와 함께 **Online Contact URL**과 **OWNER** 권한을 가진 계정이 표시되며, 해당 링크를 통해 Online Contact 서비스에 접속할 수 있습니다.
+- **로그인 보안 설정**을 클릭하면 2차 인증, 로그인 실패 시 처리, 세션 등을 관리할 수 있습니다. 자세한 내용은 [로그인 보안 설정 가이드](https://docs.nhncloud.com/ko/nhncloud/ko/console-guide/#iam)를 참고하십시오.
+
+## 접속 및 로그인
+![서비스가입_서비스선택](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-primary-setting_img0050.png)
+
+서비스가 활성화되면 Online Contact 페이지에 접속하여 서비스를 이용할 수 있습니다.
+
+**① Online Contact 접속**
+
+- 서비스 준비 완료 안내 화면에서 확인한 URL로 접속하거나, NHN Cloud CONSOLE에서 **조직 서비스 이용 현황의 Online Contact**를 클릭하여 접속할 수 있습니다.
+
+**② IAM 멤버 로그인**
+
+- Online Contact 접속 시 로그인 화면이 나타나며, 등록했던 **IAM 멤버로 로그인**합니다.
+- 최초로 접속한 경우 Online Contact 내에서 계약, 조직 등을 설정해야하므로 **OWNER ID**로 로그인한 후 설정을 진행합니다.
+- 로그인 시 비밀번호를 잊었다면 **비밀번호 찾기**를 클릭합니다. IAM 회원 등록 시 기재한 이메일로 비밀번호 재설정 메일이 전송되며 해당 메일을 통해 비밀번호를 변경할 수 있습니다.
 
 ✔ **\[FAQ 바로가기]** [비밀번호를 변경하고 싶습니다.](https://nhn-contact.oc.toast.com/oc/hc/article/35/)
