@@ -74,7 +74,7 @@ Online Contact 서비스를 활성화하려면 아래와 같이 설정합니다.
 - **로그인 보안 설정**을 클릭하면 2차 인증, 로그인 실패 시 처리, 세션 등을 관리할 수 있습니다. 자세한 내용은 [로그인 보안 설정 가이드](https://docs.nhncloud.com/ko/nhncloud/ko/console-guide/#iam)를 참고하십시오.
 
 ## 접속 및 로그인
-![서비스가입_서비스선택](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-primary-setting_img0050.png)
+![서비스가입_서비스선택](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-primary-setting_img0060.png)
 
 서비스가 활성화되면 Online Contact 페이지에 접속하여 서비스를 이용할 수 있습니다.
 
