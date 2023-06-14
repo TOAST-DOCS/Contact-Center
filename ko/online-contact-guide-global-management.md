@@ -1111,7 +1111,7 @@
 ### 조직 정보
 ![계약서비스현황_조직정보](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-global-management_img0060.png)
 
-**조직 정보** 탭에서는 Online Contact 서비스를 이용하고 있는 **① NHN Cloud 조직 정보**와, Online Contact 내부의 계약 서비스들을 관리하는 **② Online Contact 조직 정보**를 확인할 수 있습니다.
+**조직 정보** 탭에서는 Online Contact 서비스를 이용하고 있는 **NHN Cloud 조직 정보**와, Online Contact 내부의 계약 서비스들을 관리하는 **Online Contact 조직 정보**를 확인할 수 있습니다.
 
 **① NHN Cloud 조직 정보**
 NHN Cloud 조직 정보에서 확인할 수 있는 내용은 아래와 같습니다.
@@ -1126,7 +1126,7 @@ OC 조직 정보에서 확인할 수 있는 내용은 아래와 같습니다.
 **조직 Key**의 경우 API Key 변경 버튼을 통해 변경 가능하며, **Online Contact URL**은 NHN Cloud 조직 도메인을 이용하여 생성되므로 조직 도메인 변경 시 함께 변경됩니다.
 
 - OC 조직 Key: 서비스 등록/수정/삭제 등 조직 관리 차원에서 수행되는 행위를 Online Contact 외부에서 API를 통해 처리하고자 할 때 인증 단계에서 사용되는 Key
-- OC URL: Online Contact 접속 URL. https://**조직 도메인**.oc.nhncloud.com 형식으로 생성됨
+- OC URL: Online Contact 접속 URL로, https://**{조직 도메인}**.oc.nhncloud.com 형식으로 생성됨
 
 
 ## 조직관리자
@@ -1224,7 +1224,6 @@ Online Contact의 전화 상담 기능과 연결할 CTI 정보를 설정할 수 
 > ※ CTI 정보 취득이 어렵다면 Online Contact 고객센터를 통해 문의 부탁드립니다. 
 > ([Online Contact 고객센터 바로가기](https://nhn-contact.oc.nhncloud.com/oc/hc/))
 
-
 ## 권한 변경 로그 관리
 ![계약서비스현황_권한변경로그관리](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-global-management_img0110.png)
 
@@ -1235,7 +1234,6 @@ Online Contact의 전화 상담 기능과 연결할 CTI 정보를 설정할 수 
 - 권한 변경 로그 내역을 조회합니다. 
 - 조작일시, 조작내용, 이름 등으로 상세하게 검색할 수 있습니다.
 - 조회조건에 따라 **서비스, 조작일시, 변경전 권한, 변경후 권한** 등의 정보가 조회됩니다.
-
 
 ## 데이터 이관
 ![계약서비스현황_데이터이관](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-global-management_img0120.png)
@@ -1263,7 +1261,6 @@ Online Contact으로의 상담 데이터 이관이 필요할 경우, **데이터
 
 - 예약 상태의 데이터는 **삭제** 버튼을 클릭하여 삭제가 가능합니다.
 - 단, 이관이 완료된 데이터는 버튼이 비활성화되어 삭제가 불가합니다.
-
 
 ## My 실적
 ![계약서비스현황_My실적](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-global-management_img0130.png)
@@ -1302,9 +1299,8 @@ Online Contact 화면 우측 상단에 표시된 **① 계정 이름**을 클릭
 - 온라인
 - 휴식
 
-
-## 사용자 설정
-![계약서비스현황_사용자설정](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-global-management_img0140.png)
+## 개인정보설정
+![계약서비스현황_개인정보설정](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-global-management_img0140.png)
 
 Online Contact 화면 우측 상단에 표시된 **① 계정 이름**을 클릭한 후 **② 개인정보설정**을 선택하면 **③ 개인정보설정 대화상자**가 나타납니다.
 
