@@ -26,7 +26,7 @@
 
 - 등록된 말머리의 **수정** 및 **삭제** 버튼으로 말머리 명칭을 수정하거나 삭제할 수 있습니다.
 
-✔ **\[FAQ 바로가기]** [기존에 존재하는 카테고리/말머리/태그를 삭제하면 어떻게 되나요?](https://nhn-contact.oc.toast.com/oc/hc/article/63/)
+✔ **\[FAQ 바로가기]** [기존에 존재하는 카테고리/말머리/태그를 삭제하면 어떻게 되나요?](https://nhn-contact.oc.nhncloud.com/oc/hc/article/63/)
 
 ### 배포문서
 ![가이드_내부공지_배포문서](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-guide_img0020.png)
@@ -79,7 +79,7 @@
 
 - **수정** 및 **삭제** 버튼을 클릭하여 태그를 수정하거나 삭제할 수 있습니다.
   
-✔ **\[FAQ 바로가기]** [기존에 존재하는 카테고리/말머리/태그를 삭제하면 어떻게 되나요?](https://nhn-contact.oc.toast.com/oc/hc/article/63/)
+✔ **\[FAQ 바로가기]** [기존에 존재하는 카테고리/말머리/태그를 삭제하면 어떻게 되나요?](https://nhn-contact.oc.nhncloud.com/oc/hc/article/63/)
 
 <div id="notice_link"></div>
 
@@ -144,7 +144,7 @@
 
 - 등록된 말머리의 **수정** 및 **삭제** 버튼으로 말머리 명칭을 수정하거나 삭제할 수 있습니다.
 
-✔ **\[FAQ 바로가기]** [기존에 존재하는 카테고리/말머리/태그를 삭제하면 어떻게 되나요?](https://nhn-contact.oc.toast.com/oc/hc/article/63/)
+✔ **\[FAQ 바로가기]** [기존에 존재하는 카테고리/말머리/태그를 삭제하면 어떻게 되나요?](https://nhn-contact.oc.nhncloud.com/oc/hc/article/63/)
 
 ### 상담지식
 ![가이드_지식관리_상담지식](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-guide_img0070.png)
@@ -197,7 +197,7 @@
 
 - **수정** 및 **삭제** 버튼을 클릭하여 태그를 수정하거나 삭제할 수 있습니다.
 
-✔ **\[FAQ 바로가기]** [기존에 존재하는 카테고리/말머리/태그를 삭제하면 어떻게 되나요?](https://nhn-contact.oc.toast.com/oc/hc/article/63/)
+✔ **\[FAQ 바로가기]** [기존에 존재하는 카테고리/말머리/태그를 삭제하면 어떻게 되나요?](https://nhn-contact.oc.nhncloud.com/oc/hc/article/63/)
 
 <div id="knowlodge_link"></div>
 
