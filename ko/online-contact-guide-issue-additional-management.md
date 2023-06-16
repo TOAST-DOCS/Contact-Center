@@ -11,7 +11,7 @@ SMS 발송은 NHN Cloud Notification과 연동되어 고객에게 문자 메시�
 자세한 설정 방법은 [서비스관리 > 외부채널 > SMS 가이드](https://docs.nhncloud.com/ko/Contact%20Center/ko/online-contact-guide-issue-service-management/#sms_link) 문서를 참고하십시오.
 
 ### 템플릿 관리
-![부가업무_SMS템플릿관리](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-issue-additional-management_img0060.png)
+![부가업무_SMS템플릿관리](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-issue-additional-management_img0010.png)
 
 **템플릿 관리** 탭에서는 SMS 발송 시 사용할 템플릿의 분류와 각 분류에 맞는 SMS/MMS용 템플릿을 관리할 수 있습니다.
 
@@ -40,7 +40,7 @@ SMS 발송은 NHN Cloud Notification과 연동되어 고객에게 문자 메시�
 - 분류를 삭제할 경우 해당 분류의 하위 분류 및 템플릿도 함께 삭제됩니다.
 
 ### SMS 발송
-![부가업무_SMS발송](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-issue-additional-management_img0070.png)
+![부가업무_SMS발송](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-issue-additional-management_img0020.png)
 
 **SMS 및 MMS를 발송**하는 화면입니다.
 
@@ -72,7 +72,7 @@ SMS 발송은 NHN Cloud Notification과 연동되어 고객에게 문자 메시�
 - 예약시간은 **현재 시간 30분 후**부터 **1일 이내**로만 설정 가능합니다.
 
 ### 발송 내역
-![부가업무_SMS발송내역](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-issue-additional-management_img0080.png)
+![부가업무_SMS발송내역](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-issue-additional-management_img0030.png)
 
 SMS 발송 내역을 조회할 수 있는 화면입니다.
 
