@@ -7,7 +7,7 @@ Open API를 활용하여 외부 시스템에서 Online Contact의 상담 정보�
 ### API 인증방법
 
 #### Open API 설정
-![헬프센터_FAQ예시](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-openapi-overview_img0010.png)
+![OpenAPI_설정](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-openapi-overview_img0010.png)
 
 Online Contact에서 제공하는 Open API를 사용하려면 [서비스관리 → 인증] 메뉴에서 기능을 활성화해야 합니다.
  

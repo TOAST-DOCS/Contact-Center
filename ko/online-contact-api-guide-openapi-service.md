@@ -3,8 +3,8 @@
 ### 서비스 상세
 #### 인터페이스 설명
 
-- URL: https://{domain}.oc.toast.com/{serviceId}/api/v2/service.json
-- URL(개발): https://{domain}.alpha-oc.toast.com/{serviceId}/api/v2/service.json
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/api/v2/service.json
+- URL(개발): https://{domain}.alpha-oc.nhncloud.com/{serviceId}/api/v2/service.json
 
 |인터페이스 명|프로토콜|호출방식|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -41,7 +41,7 @@
             "serviceId": "APISample",
             "name": "APISample",
             "profile": {
-                "fileUrl": "https://api-storage.cloud.toast.com/v1/AUTH_226f908c769e48b0bad7d32f9a91717f/service_alpha/WopqM8euoYw89B7i/27316eba2a8a4089b72a9cf18a83e144.png"
+                "fileUrl": "https://api-storage.cloud.nhncloud.com/v1/AUTH_226f908c769e48b0bad7d32f9a91717f/service_alpha/WopqM8euoYw89B7i/27316eba2a8a4089b72a9cf18a83e144.png"
             },
             "language": "ko",
             "languages": [

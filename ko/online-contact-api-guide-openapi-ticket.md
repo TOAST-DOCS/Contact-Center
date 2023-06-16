@@ -3,8 +3,8 @@
 ### 고객 티켓 리스트
 #### 인터페이스 설명
 
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/ticket/enduser/{usercode}/list.json
-- URL(개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/ticket/enduser/{usercode}/list.json
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/openapi/v1/ticket/enduser/{usercode}/list.json
+- URL(개발): https://{domain}.alpha-oc.nhncloud.com/{serviceId}/openapi/v1/ticket/enduser/{usercode}/list.json
 
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -213,8 +213,8 @@
 ### 티켓 상세
 #### 인터페이스 설명
 
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/ticket/enduser/{usercode}/{ticketId}/detail.json
-- URL(개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/ticket/enduser/{usercode}/{ticketId}/detail.json
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/openapi/v1/ticket/enduser/{usercode}/{ticketId}/detail.json
+- URL(개발): https://{domain}.alpha-oc.nhncloud.com/{serviceId}/openapi/v1/ticket/enduser/{usercode}/{ticketId}/detail.json
 
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -340,8 +340,8 @@
 ### 티켓 첨부파일 열기 및 다운로드
 #### 인터페이스 설명
 
-- URL: https://{domain}.oc.toast.com/{serviceId}/api/v2/ticket/attachments/{id}
-- URL(개발): https://{domain}.alpha-oc.toast.com/{serviceId}/api/v2/ticket/attachments/{id}
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/api/v2/ticket/attachments/{id}
+- URL(개발): https://{domain}.alpha-oc.nhncloud.com/{serviceId}/api/v2/ticket/attachments/{id}
 
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -360,8 +360,8 @@ File
 ### 고객 재문의
 #### 인터페이스 설명
 
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/ticket/enduser/{usercode}/{ticketId}/comment.json
-- URL(개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/ticket/enduser/{usercode}/{ticketId}/comment.json
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/openapi/v1/ticket/enduser/{usercode}/{ticketId}/comment.json
+- URL(개발): https://{domain}.alpha-oc.nhncloud.com/{serviceId}/openapi/v1/ticket/enduser/{usercode}/{ticketId}/comment.json
 
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
 |------------|-------|--------|-----|--------|--------------|------------|
