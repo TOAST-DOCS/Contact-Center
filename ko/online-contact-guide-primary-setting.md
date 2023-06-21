@@ -31,7 +31,7 @@ NHN Cloud CONSOLE에서는 Online Contact를 비롯한 다양한 서비스 및 �
 ![서비스가입_조직생성](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-primary-setting_img0040.png)
 
 NHN CLOUD의 서비스 사용을 위해서는 조직을 먼저 생성해야합니다.
-기존 생성된 조직이 있을 경우 Online Contact을 사용할 조직을 선택한 후 다음 단계로 이동합니다.
+기존 생성된 조직이 있을 경우 Online Contact를 사용할 조직을 선택한 후 다음 단계로 이동합니다.
 
 - 조직을 생성하려면 CONSOLE 화면 좌측 상단의 **"조직을 생성해 주세요"** 영역을 클릭합니다.
 - **조직 생성 대화상자**가 실행되며, 생성할 조직의 이름을 입력합니다.
@@ -78,14 +78,19 @@ Online Contact 서비스를 활성화하려면 아래와 같이 설정합니다.
 
 서비스가 활성화되면 Online Contact 페이지에 접속하여 서비스를 이용할 수 있습니다.
 
-**① Online Contact 접속**
+**① URL을 통한 접속**
 
-- 서비스 준비 완료 안내 화면에서 확인한 URL로 접속하거나, NHN Cloud CONSOLE에서 **조직 서비스 이용 현황의 Online Contact**를 클릭하여 접속할 수 있습니다.
+- Online Contact는 아래와 같이 서비스 활성화 단계에서 입력했던 **도메인 이름**을 통해 접속할 수 있습니다.
+- `https://{도메인이름}.oc.nhncloud.com/`
 
-**② IAM 멤버 로그인**
+**② CONSOLE을 통한 접속**
+
+- NHN Cloud 회원이라면, **CONSOLE 내 조직 서비스 이용 현황**에서 Online Contact를 클릭하여 접속할 수 있습니다.
+
+**③ IAM 멤버 로그인**
 
 - Online Contact 접속 시 로그인 화면이 나타나며, 등록했던 **IAM 멤버로 로그인**합니다.
-- 최초로 접속한 경우 Online Contact 내에서 계약, 조직 등을 설정해야하므로 **OWNER ID**로 로그인한 후 설정을 진행합니다.
+- 최초로 접속한 경우 Online Contact 내에서 계약 정보, 조직 관리자 등을 설정해야하므로 **OWNER ID**로 로그인한 후 설정을 진행합니다.
 - 로그인 시 비밀번호를 잊었다면 **비밀번호 찾기**를 클릭합니다. IAM 회원 등록 시 기재한 이메일로 비밀번호 재설정 메일이 전송되며 해당 메일을 통해 비밀번호를 변경할 수 있습니다.
 
 ✔ **\[FAQ 바로가기]** [비밀번호를 변경하고 싶습니다.](https://nhn-contact.oc.nhncloud.com/oc/hc/article/35/)
