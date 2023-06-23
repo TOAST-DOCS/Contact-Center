@@ -1,6 +1,6 @@
 ## Contact Center > Online Contact > 개요
 
-Online Contact은 다양한 채널의 고객문의를 통합관리하고 업무 효율성을 높이기 위한 이슈 관리 및 협업도구 연동을 통해 최상의 고객서비스를 제공할 수 있도록 하는 **통합 상담 솔루션**입니다.
+Online Contact은 다양한 채널의 고객문의를 티켓으로 생성/처리가 가능하며 업무 효율성을 높이기 위한 이슈 관리 및 협업도구 연동을 통해 최상의 고객서비스를 제공할 수 있도록 하는 **통합 상담 솔루션**입니다.
 
 ## 특징
 ![OnlineContact_개요](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-overview_img0010.png)
