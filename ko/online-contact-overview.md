@@ -1,18 +1,15 @@
 ## Contact Center > Online Contact > 개요
 
-## 서비스 소개
-
 Online Contact은 다양한 채널의 고객문의를 통합관리하고 업무 효율성을 높이기 위한 이슈 관리 및 협업도구 연동을 통해 최상의 고객서비스를 제공할 수 있도록 하는 **통합 상담 솔루션**입니다.
 
 ## 특징
-![](http://static.toastoven.net/prod_contact_center/OC_overview_1_modified_3.png)
+![OnlineContact_개요](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-overview_img0010.png)
 
 - 1:1 문의, 헬프센터, 채팅, 전화, SNS 등 원하는 채널의 문의가 티켓으로 관리되므로 고객 문의에 대한 통합 관리가 가능합니다.
 - 담당자의 추가 확인이 필요한 사항이 발생하면 이슈관리를 통한 티켓 이관을 통해 정확하고 신속하게 문의 처리가 가능합니다.
 - 고객의 비즈니스 상황에 따라 STT(음성인식), TTS(음성합성), 챗봇 등 다양한 AI 기술을 결합하여 서비스 품질을 더욱 높이고 효율성을 향상시킬 수 있습니다.
 
 ## 주요 기능
-![](http://static.toastoven.net/prod_contact_center/OC_overview_2_modified.png)
 
 Online Contact은 다양한 채널로 접수된 고객 문의를 직접 확인하고 처리하는 **상담관리** 기능과 문의 해결을 위해 다른 조직으로 티켓을 이관하여 협업할 수 있는 **이슈관리**로 구성되어 있습니다.
 
@@ -20,8 +17,8 @@ Online Contact은 다양한 채널로 접수된 고객 문의를 직접 확인�
 
 <table>
     <tr>
-        <td>주요 기능</td>
-        <td>내용</td>
+        <td><strong>주요 기능</strong></td>
+        <td><strong>내용</strong></td>
     </tr>
     <tr>
         <td rowspan="4"><strong>티켓</strong></td>
@@ -72,8 +69,8 @@ Online Contact은 다양한 채널로 접수된 고객 문의를 직접 확인�
 
 <table>
     <tr>
-        <td>주요 기능</td>
-        <td>내용</td>
+        <td><strong>주요 기능</strong></td>
+        <td><strong>내용</strong></td>
     </tr>
     <tr>
         <td rowspan="3"><strong>티켓</strong></td>
