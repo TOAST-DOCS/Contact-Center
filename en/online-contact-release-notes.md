@@ -1,5 +1,20 @@
 ## Contact Center > Online Contact > Release Notes
 
+### 2023. 05. 31.
+
+#### Feature Updates
+
+- Added migration status (Y/N) when extracting tickets
+- When writing a guide, the maximum text length is limited to 30,000 bytes
+
+### 2023. 05. 23.
+
+#### Feature Updates
+
+- Added reservation function of the announcement by minutes
+- Modified the sorting criteria on the ticket detail screen
+- Improved body-height of the knowledge management detail page
+
 ### 2023.05.09
 
 #### Changes on ticket management main screen

@@ -23,7 +23,7 @@ Mobile Contact App은 스마트폰 또는 PC에서 설치할 수 있습니다.
 #### PC
 
 1. PC에서 브라우저(Internet Explorer, Chrome)를 실행하세요.
-2. 검색창에 ‘[https://mobile-contact.toast.com/download](https://mobile-contact.toast.com/download)’ 입력하세요.
+2. 검색창에 ‘[https://mobile-contact.nhncloud.com/download](https://mobile-contact.nhncloud.com/download)’ 입력하세요.
 3. 다운로드된 파일을 선택하고 설치하세요.
 
 ## App 권한 설정

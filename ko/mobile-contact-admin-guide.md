@@ -1,7 +1,7 @@
 ## Contact Center > Mobile Contact > 서비스 가이드 > Admin
 
 ## Admin 이용방법
-Mobile Contact 사이트([https://mobile-contact.toast.com](https://mobile-contact.toast.com)) 로그인 후 ADMIN 클릭을 통해 통계/라이선스 및 요금 변경/ARS 및 상담사 설정 등의 메뉴를 편리하게 이용할 수 있습니다.  
+Mobile Contact 사이트([https://mobile-contact.nhncloud.com](https://mobile-contact.nhncloud.com)) 로그인 후 ADMIN 클릭을 통해 통계/라이선스 및 요금 변경/ARS 및 상담사 설정 등의 메뉴를 편리하게 이용할 수 있습니다.  
 대표페이지는 회원가입한 NHN Cloud ID로 로그인 가능합니다.
 
 ## 모니터링

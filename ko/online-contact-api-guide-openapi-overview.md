@@ -1,19 +1,34 @@
 ## Contact Center > Online Contact > API 가이드 > Open API 개요
 
+Online Contact에서는 헬프센터 공지사항, FAQ, 티켓 정보, 티켓 생성 등 다양한 상담 정보를 **Open API**로 제공합니다.
+
+Open API를 활용하여 외부 시스템에서 Online Contact의 상담 정보를 쉽게 확인할 수 있습니다.
+
 ### API 인증방법
+
 #### Open API 설정
-![](http://static.toastoven.net/prod_contact_center/dev2_1_1.png)
+![OpenAPI_설정](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-openapi-overview_img0010.png)
 
-하나의 조직에서 여러 개의 서비스를 생성하실 수 있으며, 생성하신 각 서비스 별로 유일한 Security Key인 **서비스 Key**를 보유하고 있습니다. 서비스 Key를 통해 API로 전송되는 데이터를 암호화 처리할 수 있으며, 서비스 관리와 관련된 Open API를 호출할 수 있습니다.(티켓 관리, FAQ 등)
+Online Contact에서 제공하는 Open API를 사용하려면 [서비스관리 → 인증] 메뉴에서 기능을 활성화해야 합니다.
+ 
+**① OPEN API 활성화**
 
-서비스 관리 → 인증 → OPEN API 탭에서 Open API를 **① 활성화/비활성화** 하실 수 있으며, **② 서비스 Key**를 확인/변경하실 수 있습니다.
+- Open API 기능을 사용하려면 **활성화** 버튼을 클릭합니다.
+- 활성화 시 서비스 Key가 자동 생성됩니다.
 
+**② 서비스 Key**
+
+- API를 호출하고, 전송되는 데이터를 암호화하는데 사용되는 인증 키입니다.
+- Open API 활성화 시 자동 생성되며, **API Key 변경**을 클릭하면 Key 값을 변경할 수 있습니다.
+
+<!--
 #### 조직ID
 ![](http://static.toastoven.net/prod_contact_center/dev1_1_2.png)
 
 전체 관리 → 계약 서비스 현황 → 조직 정보 탭에서 **① NHN Cloud 조직ID**를 확인하실 수 있습니다.
-
+-->
 #### 인증 Header
+
 각 Request Header에 아래의 값들을 반드시 설정해야 합니다.
 
 - Authorization: Security Key를 통해 생성된 인증 문자열
@@ -21,14 +36,19 @@
 - OUCODE: 유저 code(필수 아님，설정하지 않을 경우 기본 값은 Owner)
 
 #### Authorization 문자열 생성 방법
+
 HmacSHA256로 암호화하거나, (NHN Cloud 조직ID + request URI + 파라미터 값 + 현재 UTC시간 값)문자열에 대해 암호화하여 Authorization 문자열을 생성하실 수 있습니다.
-(NHN Cloud 조직ID: NHN Cloud Console → 조직 설정 → 조직 기본 설정 탭, Online Contact 전체 관리 → 계약 서비스 현황 → 조직 정보 탭에서 확인 가능)
+
+> **※ 참고사항**
+>
+> NHN Cloud 조직ID는 **[전체관리 → 계약 서비스 현황 → 조직 정보]** 에서 확인할 수 있습니다.
 
 #### Java 예제
+
 ##### 일반 요청(GET, POST)
 
 ```
-String URL = "http://nhn-cs.alpha-oc.toast.com/APISimple/openapi/v1/ticket/enduser/usercode/list.json?categoryId=1&language=ko";
+String URL = "http://nhn-cs.oc.nhncloud.com/APISimple/openapi/v1/ticket/enduser/usercode/list.json?categoryId=1&language=ko";
 String organizationId = "WopqM8euoYw89B7i"; // NHN Cloud 조직ID
 String securityKey = "431402c0eaaf46d889f243db9e7492e2"; // 서비스 Key
 String uri = "/APISimple/openapi/v1/ticket/enduser/usercode/list.json"; // request uri
@@ -48,7 +68,7 @@ String authorization = new String(Base64.encodeBase64(rawHmac));
 ##### 파일 업로드
 
 ```
-String URL = "http://nhn-cs.alpha-oc.toast.com/APISimple/openapi/v1/ticket/attachments/upload.json";
+String URL = "http://nhn-cs.oc.nhncloud.com/APISimple/openapi/v1/ticket/attachments/upload.json";
 String organizationId = "WopqM8euoYw89B7i"; // NHN Cloud 조직ID
 String securityKey = "431402c0eaaf46d889f243db9e7492e2"; // 서비스 Key
 String uri = "/APISimple/openapi/v1/ticket/attachments/upload.json"; // request uri
@@ -185,8 +205,8 @@ return sb.toString();
 #### 개발 환경 URL
 |환경|BaseUrl|
 |---|------------|
-|알파|https://{domain}.alpha-oc.toast.com|
-|리얼|https://{domain}.oc.toast.com	|
+|알파|https://{domain}.oc.nhncloud.com|
+|리얼|https://{domain}.oc.nhncloud.com	|
 
 #### Security Key URL
 |Security Key|URL|
