@@ -3,8 +3,8 @@
 ### 카테고리 리스트
 #### 인터페이스 설명
 
-- URL: https://{domain}.oc.toast.com/{serviceId}/api/v2/helpdoc/categories.json
-- URL(개발): https://{domain}.alpha-oc.toast.com/{serviceId}/api/v2/helpdoc/categories.json
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/api/v2/helpdoc/categories.json
+- URL(개발): https://{domain}.alpha-oc.nhncloud.com/{serviceId}/api/v2/helpdoc/categories.json
 
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -135,8 +135,8 @@
 ### FAQ 리스트
 #### 인터페이스 설명
 
-- URL: https://{domain}.oc.toast.com/{serviceId}/api/v2/helpdoc/list.json
-- URL(개발): https://{domain}.alpha-oc.toast.com/{serviceId}/api/v2/helpdoc/list.json
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/api/v2/helpdoc/list.json
+- URL(개발): https://{domain}.alpha-oc.nhncloud.com/{serviceId}/api/v2/helpdoc/list.json
 
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -380,8 +380,8 @@ sort 파라미터의 형식 및 예시는 하기와 같습니다.
 ### FAQ 상세
 #### 인터페이스 설명
 
-- URL: https://{domain}.oc.toast.com/{serviceId}/api/v2/helpdoc/detail/{id}.json
-- URL(개발): https://{domain}.alpha-oc.toast.com/{serviceId}/api/v2/helpdoc/detail/{id}.json
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/api/v2/helpdoc/detail/{id}.json
+- URL(개발): https://{domain}.alpha-oc.nhncloud.com/{serviceId}/api/v2/helpdoc/detail/{id}.json
 
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -534,8 +534,8 @@ sort 파라미터의 형식 및 예시는 하기와 같습니다.
 
 ### FAQ 첨부파일 열기 및 다운로드
 #### 인터페이스 설명
-- URL: https://{domain}.oc.toast.com/{serviceId}/api/v2/helpdoc/attachments/{id}
-- URL(개발): https://{domain}.alpha-oc.toast.com/{serviceId}/api/v2/helpdoc/attachments/{id}	
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/api/v2/helpdoc/attachments/{id}
+- URL(개발): https://{domain}.alpha-oc.nhncloud.com/{serviceId}/api/v2/helpdoc/attachments/{id}	
 									
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
 |------------|-------|--------|-----|--------|--------------|------------|

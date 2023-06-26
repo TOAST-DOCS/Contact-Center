@@ -1,5 +1,35 @@
 ## Contact Center > Online Contact > Release Notes
 
+### 2023. 06. 27.
+
+#### Feature Updates
+
+- Added the search engine for Help Center's notice
+- Improved 'Add group' pop-up UI in Agent menu
+- Added attachment icons by extention
+
+### 2023. 06. 13.
+
+#### Feature Updates
+
+- Images on the editor is not converted to attachment
+- Improved UI in Ticket Management, Service Management and Help Center
+
+### 2023. 05. 31.
+
+#### Feature Updates
+
+- Added migration status (Y/N) when extracting tickets
+- When writing a guide, the maximum text length is limited to 30,000 bytes
+
+### 2023. 05. 23.
+
+#### Feature Updates
+
+- Added reservation function of the announcement by minutes
+- Modified the sorting criteria on the ticket detail screen
+- Improved body-height of the knowledge management detail page
+
 ### 2023.05.09
 
 #### Changes on ticket management main screen

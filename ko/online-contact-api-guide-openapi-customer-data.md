@@ -1,14 +1,22 @@
 ## Contact Center > Online Contact > API 가이드 > 고객정보 연동
 
+고객정보 연동은 Online Contact이 아닌 자체 사용중인 외부 서비스의 정보를 API 설정을 통해 티켓관리 화면에서 조회할 수 있는 기능입니다. 
+
 ### API 인증 방법
+
 #### Security Key
-![](http://static.toastoven.net/prod_contact_center/dev_cust_2.png)
-API 암호화 여부를 '예'로 선택하셨을 경우, [고객정보관리 → 고객정보연동 → API 설정] 탭에서 조회하실 수 있는 API 상세설정 화면에서 **암호화 키**를 취득하실 수 있습니다.
+![OpenAPI_SecurityKey](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-openapi-customer-data_img0010.png)
+
+[고객정보관리 → 고객정보연동 → API 설정]에서 **API 암호화 여부**를 '예'로 설정하면, **암호화 키**가 생성됩니다.
+
+생성된 키로 API 인증에 활용할 수 있습니다.
 
 #### Authorization 문자열 생성 방법
-HmacSHA256로 암호화하거나, (request URI + 파라미터 값(json) + 현재 UTC시간 값)문자열에 대해 암호화하여 Authorization 문자열을 생성하실 수 있습니다.
+
+HmacSHA256로 암호화하거나, (request URI + 파라미터 값(json) + 현재 UTC시간 값)문자열에 대해 암호화하여 Authorization 문자열을 생성할 수 있습니다.
 
 ##### Java 예시
+
 ```
 String token= request.getHeader("Authorization");
 String time = request.getHeader("X-TC-Timestamp");
@@ -42,18 +50,22 @@ if (StringUtils.equals(token, localAuthorization)) {
 ```
 
 ### 고객정보연동 API
+
 #### 인터페이스 설명
+
 |인터페이스 명|프로토콜|호출방향|인코딩|요청 파라미터 형식|URL|접근제한 여부|
 |------------|-------|--------|-----|--------|--------------|---------|
 |고객정보연동 API|HTTPS  |POST    |UTF-8|JSON|기본 URL|공통 인증|
 
 #### 요청 파라미터 정의
+
 |명칭|변수|데이터 타입|필수|설명|
 |----|----|----|---------|----|
 |설정한 조회 항목  |callNum|String  |O ||
 |                |nation |String  |  ||
 
 #### Request Body
+
 ```
 { 
   "callNum":"1",
@@ -62,12 +74,14 @@ if (StringUtils.equals(token, localAuthorization)) {
 ```
 
 #### 결과 데이터
+
 |명칭|변수|데이터 타입|필수|설명|
 |----|---|-----------|---|----|
 |설정한 결과 항목   |userName|String| | |
 |                |id |String| | |
 
 #### Response Body
+
 ```
 {
   "data": {
@@ -78,7 +92,9 @@ if (StringUtils.equals(token, localAuthorization)) {
 ```
 
 ### 리턴 결과
+
 #### 파라미터 정의
+
 |명칭|변수|데이터 타입|필수|설명|
 |----|----|----------|---|----|
 |성공 시 리턴 결과  |data|JSON   |O   | |
@@ -92,6 +108,7 @@ if (StringUtils.equals(token, localAuthorization)) {
 |              | detail  | String | O | |
 
 #### HTTP 상태 코드
+
 |리턴 코드 정보 | Online Contact 표시 메시지 |
 |--------------|------------|
 |200 : SUCCESS | 조회 성공           |
@@ -101,6 +118,7 @@ if (StringUtils.equals(token, localAuthorization)) {
 |500 : Server Error   | 오류가 발생하였습니다. |
 
 #### 리턴 결과 예시
+
 ```
 200 : OK
 {
