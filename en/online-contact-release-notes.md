@@ -1,5 +1,20 @@
 ## Contact Center > Online Contact > Release Notes
 
+### 2023. 06. 27.
+
+#### 기능 개선
+
+- Added the search engine for Help Center's notice 
+- Improved 'Add group' pop-up UI in Agent menu
+- Added attachment icons by extention
+
+### 2023. 06. 13.
+
+#### Feature Updates
+
+- Images on the editor is not converted to attachment
+- Improved UI in Ticket Management, Service Management and Help Center
+
 ### 2023. 05. 31.
 
 #### Feature Updates
