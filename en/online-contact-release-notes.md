@@ -2,9 +2,9 @@
 
 ### 2023. 06. 27.
 
-#### 기능 개선
+#### Feature Updates
 
-- Added the search engine for Help Center's notice 
+- Added the search engine for Help Center's notice
 - Improved 'Add group' pop-up UI in Agent menu
 - Added attachment icons by extention
 
