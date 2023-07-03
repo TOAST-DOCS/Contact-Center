@@ -1,5 +1,8 @@
 ## Contact Center > Online Contact > Service Guide (Consultation) > Customer Management
 
+> You can check the new Online Contact Guide by changing the language to Korean.
+> We will also provide the English version as soon as possible.
+
 ## Customer Info Contact
 ### Set Customer System API Information
 ![](http://static.toastoven.net/prod_contact_center/2.2.7-(1)_en.png)

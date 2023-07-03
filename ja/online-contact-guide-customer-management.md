@@ -1,5 +1,8 @@
 ## Contact Center > Online Contact > サービスガイド（お問合わせ管理） >　顧客情報管理
 
+> Online Contactの新しいバージョンに関するガイドは、言語を韓国語に変更するとご確認いただけます。
+> なるべく早く日本語バージョンも提供する予定ですので、ご参考にしてください。
+
 ## 顧客情報連動
 ### API情報設定
 ![](http://static.toastoven.net/prod_contact_center/ja/2.2.7-(1)_ja.png)

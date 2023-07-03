@@ -1,5 +1,8 @@
 ## Contact Center > Online Contact > Service Guide (Consultation) > Ticket Management (Call)
 
+> You can check the new Online Contact Guide by changing the language to Korean.
+> We will also provide the English version as soon as possible.
+
 ### Call Consultation
 When call function is activated, **call icon** is displayed to the call authorized agent. CTI screen will be displayed in the upper right side of Online Contact if call icon is clicked.
 

@@ -4,6 +4,9 @@ Service Management menu in Consultation Management service includes **detailed s
 
 The configuration or detailed functions of the help center you set up in the menu can be checked immediately after application at the help center for each service, which can be accessed through the following route.
 
+> You can check the new Online Contact Guide by changing the language to Korean.
+> We will also provide the English version as soon as possible.
+
 ### Help Center Access
 
 - **Help Center Link** in the bottom right of Online Contact web page

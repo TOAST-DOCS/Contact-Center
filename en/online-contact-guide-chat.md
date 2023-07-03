@@ -1,5 +1,8 @@
 ## Contact Center > Online Contact > Service Guide (Consultation) > Chat
 
+> You can check the new Online Contact Guide by changing the language to Korean.
+> We will also provide the English version as soon as possible.
+
 ## Default Settings
 Chat consultation is available by **enabling** chat function in help center, or by adding **chat widget** to web page through chat screen insertion code.
 
