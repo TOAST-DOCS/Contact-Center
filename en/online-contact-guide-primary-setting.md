@@ -1,5 +1,8 @@
 ## Contact Center > Online Contact > Service Guide > Joining and Primary Settings
 
+> You can check the new Online Contact Guide by changing the language to Korean.
+> We will also provide the English version as soon as possible.
+
 ## Joining NHN Cloud 
 To access Online Contact, **joining NHN Cloud** is needed.  
 Please prepare your credit card since it is **mandatory to register payment methods** when joining. Business members(NHN Cloud Korea) are also required to prepare a copy of Business Registration Certificate.  

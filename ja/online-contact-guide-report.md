@@ -1,5 +1,8 @@
 ## Contact Center > Online Contact > サービスガイド（お問合わせ管理） > 統計
 
+> Online Contactの新しいバージョンに関するガイドは、言語を韓国語に変更するとご確認いただけます。
+> なるべく早く日本語バージョンも提供する予定ですので、ご参考にしてください。
+
 ## 期間統計
 ![](http://static.toastoven.net/prod_contact_center/ja/6.1-(1)_ja.png)
 ![](http://static.toastoven.net/prod_contact_center/ja/6.1-(2)_ja.png)

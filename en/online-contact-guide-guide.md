@@ -1,5 +1,8 @@
 ## Contact Center > Online Contact > Service Guide (Consultation) > Guide
 
+> You can check the new Online Contact Guide by changing the language to Korean.
+> We will also provide the English version as soon as possible.
+
 ## Internal Notice
 In this menu, administrators could register **notice** which should be shared within the organization. Registered notice documents are viewed in the **relevant menu**, and **main page of Online Contact**.
 

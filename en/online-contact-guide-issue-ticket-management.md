@@ -1,5 +1,8 @@
 ## Contact Center > Online Contact > Service Guide (Issue) > Ticket Management
 
+> You can check the new Online Contact Guide by changing the language to Korean.
+> We will also provide the English version as soon as possible.
+
 ## Ticket
 Escalated tickets could be assigned to groups or agents by trigger conditions(Can set in Service Management → Ticket → Trigger menu), or could be manually assigned.
 Tickets can be **escalated** from consultation management service, or **created** by the agent of issue management service. 

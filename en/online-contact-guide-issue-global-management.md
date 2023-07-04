@@ -1,6 +1,9 @@
 ## Contact Center > Online Contact > Service Guide (Issue) > Global Management
 **Global Management** menu in Issue Management service consists of Contract Service Status, Organization Administrator, Authority Log Management and Data Transfer menu.
 
+> You can check the new Online Contact Guide by changing the language to Korean.
+> We will also provide the English version as soon as possible.
+
 ## Contract service status
 ### Contract status
 ![](http://static.toastoven.net/prod_contact_center/2.1.1-(1)_im_en.png)

@@ -1,5 +1,8 @@
 ## Contact Center > Online Contact > Service Guide (Consultation) > Additional Business Management
 
+> You can check the new Online Contact Guide by changing the language to Korean.
+> We will also provide the English version as soon as possible.
+
 ## Callback Management
 From **Callback Management** menu, you could view and process **callback requests**, **assign or unassign callback to agents**, and view **processing status** of callbacks.
 

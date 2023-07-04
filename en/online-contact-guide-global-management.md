@@ -1,6 +1,9 @@
 ## Contact Center > Online Contact > Service Guide (Consultation) > Global Management
 Global Management menu in Consultation Management service consists of **Contract Service Status**, **Organization Administrator**, **Company Information Management**, **CTI Management**, **Authority Log Management** and **Data Transfer** menu.
 
+> You can check the new Online Contact Guide by changing the language to Korean.
+> We will also provide the English version as soon as possible.
+
 ## Contract service status
 ### Contract status
 ![](http://static.toastoven.net/prod_contact_center/2.1.1-(1)_en.png)
