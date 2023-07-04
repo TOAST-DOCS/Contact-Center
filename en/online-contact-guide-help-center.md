@@ -1,5 +1,8 @@
 ## Contact Center > Online Contact > Service Guide (Consultation) > Help Center
 
+> You can check the new Online Contact Guide by changing the language to Korean.
+> We will also provide the English version as soon as possible.
+
 ## FAQ
 If you have enabled **FAQ** among the help center configuration items, (Can enable at [Service Management → Help Center → Default Settings] menu), FAQ menu allows you to manage FAQ (frequently asked questions) documents.
 

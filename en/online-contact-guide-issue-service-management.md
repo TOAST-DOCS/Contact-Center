@@ -2,6 +2,9 @@
 
 Service Management menu in Issue Management service includes **detailed setting functions for accepting and processing escalated inquiries** including ticket, agent, external channel.
 
+> You can check the new Online Contact Guide by changing the language to Korean.
+> We will also provide the English version as soon as possible.
+
 ## Ticket
 From the Ticket menu, you can **manage categories and fields** which are used when processing inquiries, **use trigger features** that can improve business efficiency, **manage templates**, and **set up email**.
 

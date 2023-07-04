@@ -12,7 +12,7 @@
 
 - 연동하려는 서비스가 PC, Mobile 플랫폼에서 WEB 기반으로 제공될 경우 적합합니다.
 - 서비스의 로그인 화면이 WEB URL 형태로 제공되어야 사용 가능합니다.
-- 개발 명세에서 세부적으로 2가지 타입을 제공합니다.(CLIENT-SIDE, SERVICER-SIDE)
+- 개발 명세에서 세부적으로 2가지 타입을 제공합니다.(Client-side, Sever-side)
 
 **2. GET 방식**
 
@@ -32,7 +32,7 @@ GET 방식 가이드가 필요하다면, [API 가이드 > 회원 연동(GET)](ht
 4. '문의하기' 또는 '문의내역' 페이지 접속
 
 ### 회원 연동 방법
-![OpenAPI_POST회원연동](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-openapi-sso_img0010.png)
+![OpenAPI_POST회원연동](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-openapi-sso_img0011.png)
 
 개발 명세서에 따라 API를 개발한 후 **[서비스 관리 > 헬프센터 > 회원 연동]** 메뉴에 접속하여 아래와 같이 설정합니다.
 
@@ -51,7 +51,15 @@ GET 방식 가이드가 필요하다면, [API 가이드 > 회원 연동(GET)](ht
 
 **④ URL 설정**
 
-- 아래 개발 명세서에 따라 개발한 API 호출 URL을 설정한 후 **저장** 버튼을 클릭합니다.
+- **로그인 URL**: 로그인 상태 URL을 호출했을 때, 유저가 로그인 상태가 아니라면 이동되는 로그인 화면 URL을 입력합니다.
+- **로그인 상태 URL**: 헬프센터 접속 및 페이지 이동 시 유저가 로그인 상태인지 체크하는 URL을 입력합니다.
+- URL은 하단의 개발 명세서를 참고하여 자체 운영중인 서비스에서 제공해야 합니다.
+
+**④ 파라미터 설정**
+
+- 필요에 따라 원격 로그인을 통해 Online Contact로 전달된 고객 정보를 **로그인 상태 URL 호출 시** 파라미터로 다시 전송할 수 있습니다.
+- **추가** 버튼을 눌러 파라미터를 추가할 수 있으며, 요청 헤더 또는 쿼리에 포함하여 전송할 수 있습니다.
+- 파라미터명은 **POST 원격 로그인 API**를 통해 Online Contact로 전달한 파라미터 명칭과 동일해야 합니다.
 
 ## 개발 명세서
 
