@@ -1,5 +1,24 @@
 ## Contact Center > Online Contact > Release Notes
 
+
+### 2023. 07. 25.
+
+#### Feature Updates
+
+- Mini-screen at the top of the Ticket Management is applied according to the channel in use
+- Moved the lower frame of the Ticket Management to the right and added order adjustment and fold functionality
+- Added a function to change the order of the service list
+- Changed the e-mail and phone number masking method on the inquiry of the Help Center
+
+### 2023. 07. 11.
+
+#### Feature Updates
+
+- Changed the location and color of the Toast
+- Displayed the service name at the ticket information transferred to Issue Management
+- Added optional functionality to POST method for member authentication in Help Center
+- Deleted the tooltips and new window icon at the ticket list
+
 ### 2023. 06. 27.
 
 #### Feature Updates
