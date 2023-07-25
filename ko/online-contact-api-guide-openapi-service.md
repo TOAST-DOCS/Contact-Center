@@ -4,7 +4,7 @@
 #### 인터페이스 설명
 
 - URL: https://{domain}.oc.nhncloud.com/{serviceId}/api/v2/service.json
-- URL(개발): https://{domain}.alpha-oc.nhncloud.com/{serviceId}/api/v2/service.json
+- URL(개발): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/api/v2/service.json
 
 |인터페이스 명|프로토콜|호출방식|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
 |------------|-------|--------|-----|--------|--------------|------------|

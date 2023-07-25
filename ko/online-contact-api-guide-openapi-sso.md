@@ -122,8 +122,8 @@ public static void main(String[] args) throws Exception {
 
 #### 인터페이스 설명
 
-- URL: https://{domain}.oc.toast.com/v2/enduser/remote.json
-- URL(개발): https://{domain}.alpha-oc.toast.com/v2/enduser/remote.json
+- URL: https://{domain}.oc.nhncloud.com/v2/enduser/remote.json
+- URL(개발): https://{domain}.oc.alpha-nhncloud.com/v2/enduser/remote.json
 
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|
 |------------|-------|--------|-----|--------|--------------|
@@ -154,8 +154,8 @@ returnUrl 파라미터 존재 시 지정된 returnUrl로 이동, returnUrl 파�
 ### POST 원격 로그인 API(From server side)
 #### 인터페이스 설명
 
-- URL: https://{domain}.oc.toast.com/api/v2/enduser/remote.json
-- URL(개발): https://{domain}.alpha-oc.toast.com/api/v2/enduser/remote.json
+- URL: https://{domain}.oc.nhncloud.com/api/v2/enduser/remote.json
+- URL(개발): https://{domain}.oc.alpha-nhncloud.com/api/v2/enduser/remote.json
 
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|
 |------------|-------|--------|-----|--------|--------------|
@@ -194,7 +194,7 @@ returnUrl 파라미터 존재 시 지정된 returnUrl로 이동, returnUrl 파�
 
 헬프센터 호출 시, 리턴된 content 값을 헬프센터 URL 파라미터 - accessToken 값으로 지정하여 Online Contact에 전달.
 
-예시: https://nhn-cs.alpha-oc.toast.com/hangame/hc/?accessToken=xxxxxxaccessTokenxxxxxxx
+예시: https://nhn-cs.oc.alpha-nhncloud.com/hangame/hc/?accessToken=xxxxxxaccessTokenxxxxxxx
 
 ### POST 로그인 URL(사용자)
 
@@ -254,7 +254,7 @@ returnUrl 파라미터 존재 시 지정된 returnUrl로 이동, returnUrl 파�
 - ① 사용자 정보와 API Key 기준으로 로그인 token 생성
 - ② 서버에서 POST 원격 로그인 API(From server side) 호출
 - ③ API 호출 파라미터(usercode, time)를 returnUrl 뒤에 추가
-      - 예시) https://nhn-cs.alpha-oc.toast.com/multilanguage/hc/ticket/list/?usercode=xxxxxx@163.com&time=1566531359635
+      - 예시) https://nhn-cs.oc.alpha-nhncloud.com/multilanguage/hc/ticket/list/?usercode=xxxxxx@163.com&time=1566531359635
 - ④ {returnUrl}로 이동
 
 ### POST 로그인 상태 URL(사용자)
