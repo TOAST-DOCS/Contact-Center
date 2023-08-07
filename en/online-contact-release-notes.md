@@ -1,7 +1,14 @@
 ## Contact Center > Online Contact > Release Notes
 
+### August 08, 2023
 
-### 2023. 07. 25.
+#### Feature Updates
+
+- Increased the length of text for field type 'Textarea'
+- Improved alignment of the Agent Fields in the Ticket Management
+- Updated the system such as Push and API to provide OC Mobile
+
+### July 25, 2023
 
 #### Feature Updates
 
@@ -10,7 +17,7 @@
 - Added a function to change the order of the service list
 - Changed the e-mail and phone number masking method on the inquiry of the Help Center
 
-### 2023. 07. 11.
+### July 11, 2023
 
 #### Feature Updates
 
@@ -19,7 +26,7 @@
 - Added optional functionality to POST method for member authentication in Help Center
 - Deleted the tooltips and new window icon at the ticket list
 
-### 2023. 06. 27.
+### June 27, 2023
 
 #### Feature Updates
 
@@ -27,21 +34,21 @@
 - Improved 'Add group' pop-up UI in Agent menu
 - Added attachment icons by extention
 
-### 2023. 06. 13.
+### June 13, 2023
 
 #### Feature Updates
 
 - Images on the editor is not converted to attachment
 - Improved UI in Ticket Management, Service Management and Help Center
 
-### 2023. 05. 31.
+### May 31, 2023
 
 #### Feature Updates
 
 - Added migration status (Y/N) when extracting tickets
 - When writing a guide, the maximum text length is limited to 30,000 bytes
 
-### 2023. 05. 23.
+### May 05, 2023
 
 #### Feature Updates
 
@@ -49,7 +56,7 @@
 - Modified the sorting criteria on the ticket detail screen
 - Improved body-height of the knowledge management detail page
 
-### 2023.05.09
+### May 09, 2023
 
 #### Changes on ticket management main screen
 - Separation of ticket list/ticket information/ticket details and processing/ticket history, knowledge management area frame
