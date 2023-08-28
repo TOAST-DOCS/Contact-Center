@@ -1,5 +1,22 @@
 ## Contact Center > Online Contact > Release Notes
 
+### August 29, 2023
+
+#### Feature Updates
+
+- Changed default of the search period to 6 months
+- Extended maximum search period in the Ticket Management to 6 months
+- Improved ticket management template management
+- Added the search function of Ticket History in the Ticket Management
+- Added the replacement code for email notification and Dooray notification in the Trigger of Service Management
+- Improved real-time collection of incoming inquiries to an external mail account
+
+### August 29, 2023
+
+#### Feature Updates
+
+- Enhanced overall search capabilities
+
 ### August 08, 2023
 
 #### Feature Updates
