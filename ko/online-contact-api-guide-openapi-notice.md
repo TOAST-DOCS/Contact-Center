@@ -4,7 +4,7 @@
 #### 인터페이스 설명
 
 - URL: https://{domain}.oc.nhncloud.com/{serviceId}/api/v2/notice/categories.json
-- URL(개발): https://{domain}.alpha-oc.nhncloud.com/{serviceId}/api/v2/notice/categories.json
+- URL(개발): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/api/v2/notice/categories.json
 
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -91,7 +91,7 @@
 #### 인터페이스 설명
 
 - URL: https://{domain}.oc.nhncloud.com/{serviceId}/api/v2/notice/tags.json
-- URL(개발): https://{domain}.alpha-oc.nhncloud.com/{serviceId}/api/v2/notice/tags.json
+- URL(개발): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/api/v2/notice/tags.json
 
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -151,7 +151,7 @@
 #### 인터페이스 설명
 
 - URL: https://{domain}.oc.nhncloud.com/{serviceId}/api/v2/notice/list.json
-- URL(개발): https://{domain}.alpha-oc.nhncloud.com/{serviceId}/api/v2/notice/list.json
+- URL(개발): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/api/v2/notice/list.json
 
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -335,7 +335,7 @@ sort 파라미터의 형식 및 예시는 하기와 같습니다.
 #### 인터페이스 설명
 
 - URL: https://{domain}.oc.nhncloud.com/{serviceId}/api/v2/notice/detail/{id}.json
-- URL(개발): https://{domain}.alpha-oc.nhncloud.com/{serviceId}/api/v2/notice/detail/{id}.json
+- URL(개발): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/api/v2/notice/detail/{id}.json
 
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -419,7 +419,7 @@ sort 파라미터의 형식 및 예시는 하기와 같습니다.
 #### 인터페이스 설명
 
 - URL: https://{domain}.oc.nhncloud.com/{serviceId}/api/v2/notice/attachments/{id}	
-- URL(개발): https://{domain}.alpha-oc.nhncloud.com/{serviceId}/api/v2/notice/attachments/{id}		
+- URL(개발): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/api/v2/notice/attachments/{id}		
 
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
 |------------|-------|--------|-----|--------|--------------|--------|

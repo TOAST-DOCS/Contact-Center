@@ -4,7 +4,7 @@
 #### 인터페이스 설명
 
 - URL: https://{domain}.oc.nhncloud.com/{serviceId}/openapi/v1/ticket/enduser/{usercode}/list.json
-- URL(개발): https://{domain}.alpha-oc.nhncloud.com/{serviceId}/openapi/v1/ticket/enduser/{usercode}/list.json
+- URL(개발): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/openapi/v1/ticket/enduser/{usercode}/list.json
 
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -214,7 +214,7 @@
 #### 인터페이스 설명
 
 - URL: https://{domain}.oc.nhncloud.com/{serviceId}/openapi/v1/ticket/enduser/{usercode}/{ticketId}/detail.json
-- URL(개발): https://{domain}.alpha-oc.nhncloud.com/{serviceId}/openapi/v1/ticket/enduser/{usercode}/{ticketId}/detail.json
+- URL(개발): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/openapi/v1/ticket/enduser/{usercode}/{ticketId}/detail.json
 
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -341,7 +341,7 @@
 #### 인터페이스 설명
 
 - URL: https://{domain}.oc.nhncloud.com/{serviceId}/api/v2/ticket/attachments/{id}
-- URL(개발): https://{domain}.alpha-oc.nhncloud.com/{serviceId}/api/v2/ticket/attachments/{id}
+- URL(개발): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/api/v2/ticket/attachments/{id}
 
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -361,7 +361,7 @@ File
 #### 인터페이스 설명
 
 - URL: https://{domain}.oc.nhncloud.com/{serviceId}/openapi/v1/ticket/enduser/{usercode}/{ticketId}/comment.json
-- URL(개발): https://{domain}.alpha-oc.nhncloud.com/{serviceId}/openapi/v1/ticket/enduser/{usercode}/{ticketId}/comment.json
+- URL(개발): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/openapi/v1/ticket/enduser/{usercode}/{ticketId}/comment.json
 
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
 |------------|-------|--------|-----|--------|--------------|------------|

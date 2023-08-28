@@ -26,13 +26,12 @@ POST 방식 가이드가 필요하다면, [API 가이드 > 회원 연동(POST)](
 
 1. 자체 서비스를 이용하는 고객이 APP 내에서 헬프센터에 접속합니다.
 2. APP에서 헬프센터 호출 시 아래 URL 형식으로 호출합니다.
-    - https://**{org}**.oc.toast.com/**{service}**/hc/?usercode=**{유저_아이디}**&username=**{유저_이름}**&email=**{유저_이메일}**&phone=**{유저_전화번호}**&token=**{인증토큰_값}**
+    - https://**{org}**.oc.nhncloud.com/**{service}**/hc/?usercode=**{유저_아이디}**&username=**{유저_이름}**&email=**{유저_이메일}**&phone=**{유저_전화번호}**&token=**{인증토큰_값}**
 3. 헬프센터에서 **'Token 검증 URL'**을 호출합니다.('Token 검증 URL'은 고객사에서 아래 제공된 명세서에 따라 개발 후 Online Contact 회원연동 메뉴에 등록 필요)
 4. 토큰 검증 후 정상일 경우 ‘문의하기’ 또는 ‘문의내역’ 페이지에 접속됩니다. 이때 검증에 실패할 경우 ‘문의하기’는 비회원으로 접수됩니다.
 
 ### 회원 연동 방법
-![OpenAPI_GET회원연동](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-openapi-member-get_img0010
-.png)
+![OpenAPI_GET회원연동](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-openapi-member-get_img0010.png)
 
 개발 명세서에 따라 API를 개발한 후 **[서비스 관리 > 헬프센터 > 회원 연동]** 메뉴에 접속하여 아래와 같이 설정합니다.
 
@@ -119,15 +118,15 @@ public static void main(String[] args) throws Exception {
 
 URL
 
-- https://{org}.oc.toast.com/{service}/hc/?usercode=aaaabbb&username=yzg&email=yzgname@163.com&phone=12345678901&time=12345678&token=8NPaBegAfbSvh1Lna9M0I1wBqjnoRyKO2r2izhuEAng%3d
-- https://{org}.oc.toast.com/{service}/hc/ticket/?usercode=aaaabbb&username=yzg&email=yzgname@163.com&phone=12345678901&time=12345678&token=8NPaBegAfbSvh1Lna9M0I1wBqjnoRyKO2r2izhuEAng%3d
-- https://{org}.oc.toast.com/{service}/hc/ticket/list/?usercode=aaaabbb&username=yzg&email=yzgname@163.com&phone=12345678901&time=12345678&token=8NPaBegAfbSvh1Lna9M0I1wBqjnoRyKO2r2izhuEAng%3d
+- https://{org}.oc.nhncloud.com/{service}/hc/?usercode=aaaabbb&username=yzg&email=yzgname@163.com&phone=12345678901&time=12345678&token=8NPaBegAfbSvh1Lna9M0I1wBqjnoRyKO2r2izhuEAng%3d
+- https://{org}.oc.nhncloud.com/{service}/hc/ticket/?usercode=aaaabbb&username=yzg&email=yzgname@163.com&phone=12345678901&time=12345678&token=8NPaBegAfbSvh1Lna9M0I1wBqjnoRyKO2r2izhuEAng%3d
+- https://{org}.oc.nhncloud.com/{service}/hc/ticket/list/?usercode=aaaabbb&username=yzg&email=yzgname@163.com&phone=12345678901&time=12345678&token=8NPaBegAfbSvh1Lna9M0I1wBqjnoRyKO2r2izhuEAng%3d
 
 URL(개발)
 
-- https://{domain}.alpha-oc.toast.com/{service}/hc/?usercode=aaaabbb&username=yzg&email=yzgname@163.com&phone=12345678901&time=12345678&token=8NPaBegAfbSvh1Lna9M0I1wBqjnoRyKO2r2izhuEAng%3d
-- https://{domain}.alpha-oc.toast.com/{service}/hc/ticket/?usercode=aaaabbb&username=yzg&email=yzgname@163.com&phone=12345678901&time=12345678&token=8NPaBegAfbSvh1Lna9M0I1wBqjnoRyKO2r2izhuEAng%3d
-- https://{domain}.alpha-oc.toast.com/{service}/hc/ticket/list/?usercode=aaaabbb&username=yzg&email=yzgname@163.com&phone=12345678901&time=12345678&token=8NPaBegAfbSvh1Lna9M0I1wBqjnoRyKO2r2izhuEAng%3d
+- https://{domain}.oc.alpha-nhncloud.com/{service}/hc/?usercode=aaaabbb&username=yzg&email=yzgname@163.com&phone=12345678901&time=12345678&token=8NPaBegAfbSvh1Lna9M0I1wBqjnoRyKO2r2izhuEAng%3d
+- https://{domain}.oc.alpha-nhncloud.com/{service}/hc/ticket/?usercode=aaaabbb&username=yzg&email=yzgname@163.com&phone=12345678901&time=12345678&token=8NPaBegAfbSvh1Lna9M0I1wBqjnoRyKO2r2izhuEAng%3d
+- https://{domain}.oc.alpha-nhncloud.com/{service}/hc/ticket/list/?usercode=aaaabbb&username=yzg&email=yzgname@163.com&phone=12345678901&time=12345678&token=8NPaBegAfbSvh1Lna9M0I1wBqjnoRyKO2r2izhuEAng%3d
   
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|
 |------------|-------|--------|-----|--------|--------------|
