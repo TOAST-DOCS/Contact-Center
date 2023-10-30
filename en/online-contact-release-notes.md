@@ -1,5 +1,28 @@
 ## Contact Center > Online Contact > Release Notes
 
+### October 17, 2023
+
+#### Feature Updates
+
+- Added trigger functionality to forward a tickets to the Agent Group
+- Added the functionality to specify a template when creating a new ticket
+- Improved search performance to tickets
+
+### September 26, 2023
+
+#### Feature Updates
+
+- Added trigger functionality to automatically assign the Submission Type
+- Added exposure options for all fields
+- Added search functionality to 'Group/Agent' component
+
+### September 12, 2023
+
+#### Feature Updates
+
+- Changed to remove 'Email' field in Issue Management service
+- Changed to refresh the page when you click on the menu you're accessing
+  
 ### August 29, 2023
 
 #### Feature Updates
