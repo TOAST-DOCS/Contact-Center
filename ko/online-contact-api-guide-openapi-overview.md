@@ -10,7 +10,7 @@ Open API를 활용하여 외부 시스템에서 Online Contact의 상담 정보�
 ![OpenAPI_설정](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-openapi-overview_img0010.png)
 
 Online Contact에서 제공하는 Open API를 사용하려면 [서비스관리 → 인증] 메뉴에서 기능을 활성화해야 합니다.
- 
+
 **① OPEN API 활성화**
 
 - Open API 기능을 사용하려면 **활성화** 버튼을 클릭합니다.
@@ -54,8 +54,8 @@ HmacSHA256로 암호화하거나, (NHN Cloud 조직ID + request URI + 파라미�
 ```
 // 유저 티켓 리스트
 String URL = "http://nhn-cs.oc.nhncloud.com/APISimple/openapi/v1/ticket/enduser/usercode/list.json?categoryId=1&language=ko";
-String organizationId = "WopqM8euoYw89B7i"; // 4에서 획득한 조직ID
-String securityKey = "431402c0eaaf46d889f243db9e7492e2"; // 3에서 설정한 서비스 API키
+String organizationId = "WopqM8euoYw89B7i"; // 조직ID
+String securityKey = "431402c0eaaf46d889f243db9e7492e2"; // 서비스 Key
 String uri = "/APISimple/openapi/v1/ticket/enduser/usercode/list.json"; // request uri
 long timestamp = new Date().getTime();
 StringBuilder sb = new StringBuilder();
@@ -78,13 +78,14 @@ Request request = new Request.Builder().url(URL).get()
 Call call = client.newCall(request);
 Response response = call.execute();
 ```
+
 ##### 일반 요청(POST)
 
 ```
 // 티켓 생성
 String URL = "http://nhn-cs.oc.nhncloud.com/APISimple/openapi/v1/ticket.json?language=ko";
-String organizationId = "WopqM8euoYw89B7i"; // 4에서 획득한 조직ID
-String securityKey = "431402c0eaaf46d889f243db9e7492e2"; // 3에서 설정한 서비스 API키
+String organizationId = "WopqM8euoYw89B7i"; // 조직ID
+String securityKey = "431402c0eaaf46d889f243db9e7492e2"; // 서비스 Key
 String uri = "/APISimple/openapi/v1/ticket.json"; // request uri
 long timestamp = new Date().getTime();
 StringBuilder sb = new StringBuilder();
@@ -119,9 +120,9 @@ Response response = call.execute();
 ##### 파일 업로드
 
 ```
-String URL = "http://nhn-cs.alpha-oc.toast.com/APISimple/openapi/v1/ticket/attachments/upload.json";
-String organizationId = "WopqM8euoYw89B7i"; // 4에서 획득한 조직ID
-String securityKey = "431402c0eaaf46d889f243db9e7492e2"; // 3에서 설정한 서비스API키
+String URL = "http://nhn-cs.oc.nhncloud.com/APISimple/openapi/v1/ticket/attachments/upload.json";
+String organizationId = "WopqM8euoYw89B7i"; // 조직ID
+String securityKey = "431402c0eaaf46d889f243db9e7492e2"; // 서비스 Key
 String uri = "/APISimple/openapi/v1/ticket/attachments/upload.json"; // request uri
 long timestamp = new Date().getTime();
 StringBuilder sb = new StringBuilder();
@@ -268,7 +269,7 @@ return sb.toString();
 #### 개발 환경 URL
 |환경|BaseUrl|
 |---|------------|
-|알파|https://{domain}.oc.nhncloud.com|
+|알파|https://{domain}.oc.alpha-nhncloud.com|
 |리얼|https://{domain}.oc.nhncloud.com|
 
 #### Security Key URL

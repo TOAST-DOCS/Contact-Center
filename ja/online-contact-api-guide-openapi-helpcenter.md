@@ -1,8 +1,8 @@
 ## Contact Center > Online Contact > プログラマーのためのAPIガイド > ヘルプセンター
 ### ヘルプセンター指定データ追加
 #### インターフェース説明
-- URL:	https://{domain}.oc.toast.com/{serviceId}/hc/openapi/v1/addition.json
-- URL (開発):	https://{domain}.alpha-oc.toast.com/{serviceId}/hc/openapi/v1/addition.json
+- URL:	https://{domain}.oc.nhncloud.com/{serviceId}/hc/openapi/v1/addition.json
+- URL (開発):	https://{domain}.oc.alpha-nhncloud.com/{serviceId}/hc/openapi/v1/addition.json
 
 |インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|
 |------------|-------|--------|-----|--------|--------------|
@@ -35,4 +35,4 @@
 ```
 
 #### お問い合わせページURLの例
-https://nhn-cs.alpha-oc.toast.com/hangame/hc/ticket/?additionId=ef1bd9560xxxxx
+https://nhn-cs.oc.alpha-nhncloud.com/hangame/hc/ticket/?additionId=ef1bd9560xxxxx

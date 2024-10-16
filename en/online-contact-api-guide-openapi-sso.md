@@ -89,8 +89,8 @@ public static void main(String[] args) throws Exception {
 ### POST Remote Login API(From client side)
 #### Interface Description
 
-- URL: https://{domain}.oc.toast.com/v2/enduser/remote.json
-- URL(Dev): https://{domain}.alpha-oc.toast.com/v2/enduser/remote.json
+- URL: https://{domain}.oc.nhncloud.com/v2/enduser/remote.json
+- URL(Dev): https://{domain}.oc.alpha-nhncloud.com/v2/enduser/remote.json
 
 |Interface name | Protocol | Call direction | Encoding | Result format | Interface description |
 |------------|-------|--------|-----|--------|--------------|
@@ -122,8 +122,8 @@ If returnUrl parameter does not exist, return 'SUCCESS' string.
 ### POST Remote Login API(From server side)
 #### Interface Description
 
-- URL: https://{domain}.oc.toast.com/api/v2/enduser/remote.json
-- URL(Dev): https://{domain}.alpha-oc.toast.com/api/v2/enduser/remote.json
+- URL: https://{domain}.oc.nhncloud.com/api/v2/enduser/remote.json
+- URL(Dev): https://{domain}.oc.alpha-nhncloud.com/api/v2/enduser/remote.json
 
 |Interface name | Protocol | Call direction | Encoding | Result format | Interface description |
 |------------|-------|--------|-----|--------|--------------|

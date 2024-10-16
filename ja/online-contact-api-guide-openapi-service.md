@@ -2,8 +2,8 @@
 
 ### サービス詳細
 #### インターフェース説明
-- URL: https://{domain}.oc.toast.com/{serviceId}/api/v2/service.json
-- URL(開発): https://{domain}.alpha-oc.toast.com/{serviceId}/api/v2/service.json
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/api/v2/service.json
+- URL(開発): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/api/v2/service.json
 
 |インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|

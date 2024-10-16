@@ -2,8 +2,8 @@
 
 ### カテゴリーリスト
 #### インターフェース説明
-- URL: https://{domain}.oc.toast.com/{serviceId}/api/v2/helpdoc/categories.json
-- URL(開発): https://{domain}.alpha-oc.toast.com/{serviceId}/api/v2/helpdoc/categories.json
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/api/v2/helpdoc/categories.json
+- URL(開発): https://{domain}.alpha-oc.nhncloud.com/{serviceId}/api/v2/helpdoc/categories.json
 
 |インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -133,8 +133,8 @@
 
 ### FAQリスト
 #### インターフェース説明
-- URL: https://{domain}.oc.toast.com/{serviceId}/api/v2/helpdoc/list.json
-- URL(開発): https://{domain}.alpha-oc.toast.com/{serviceId}/api/v2/helpdoc/list.json
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/api/v2/helpdoc/list.json
+- URL(開発): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/api/v2/helpdoc/list.json
 
 |インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -377,8 +377,8 @@ sortパラメータの形式および例は下記のとおりです。
 
 ### FAQ詳細
 #### インターフェース説明
-- URL: https://{domain}.oc.toast.com/{serviceId}/api/v2/helpdoc/detail/{id}.json
-- URL(開発): https://{domain}.alpha-oc.toast.com/{serviceId}/api/v2/helpdoc/detail/{id}.json
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/api/v2/helpdoc/detail/{id}.json
+- URL(開発): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/api/v2/helpdoc/detail/{id}.json
 
 |インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -531,8 +531,8 @@ sortパラメータの形式および例は下記のとおりです。
 
 ### FAQ添付ファイルを開く/ダウンロード
 #### インターフェース説明
-- URL: https://{domain}.oc.toast.com/{serviceId}/api/v2/helpdoc/attachments/{id}
-- URL(開発): https://{domain}.alpha-oc.toast.com/{serviceId}/api/v2/helpdoc/attachments/{id}	
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/api/v2/helpdoc/attachments/{id}
+- URL(開発): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/api/v2/helpdoc/attachments/{id}	
 									
 |インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|

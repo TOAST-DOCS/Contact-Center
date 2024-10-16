@@ -13,15 +13,15 @@
 #### 요청 파라미터 정의
 |명칭	|변수	|데이터 타입	|변수 유형|필수	|설명|
 |-------|------|---------------|--------|-----|----|
-|서비스 ID	       |serviceId	|String	    |path	|O	|서비스 ID，URL PATH 내에 설정한 {serviceId}|
-|유저 코드	       |usercode	|String	    |path	|O	|유저 코드(유일한 값)，URL PATH 내에 설정한{usercode}|
-|카테고리 ID	   |categoryId	|Integer	|query	|X	|카테고리(접수유형) ID|
-|티켓 상태	       |status	    |String  	|query	|X	|티켓 상태. new: 미할당, open: 처리중, reply: 보류, solved: 해결, closed: 완료|
-|언어 코드	       |language	|String	    |query	|X	|서비스 헬프센터 기본 언어 코드|
-|채널	           |source  	|String 	|query	|X	|문의 채널(web: PC웹, spweb: 모바일 웹, api: API. 복수의 채널 조회 시 콤마로 구분하여 사용(예: web,spweb,api). 기본 값은 web,spweb,api|
-|정렬방식	       |sort	     |String	|query	|X	|정렬 순서(기본값: updatedDt:desc; 정렬 형식: 오름차순:asc, 내림차순:desc)|
-|페이지	           |page	     |Integer	|query	|X	|기본 값: 1|
-|1페이지 노출 건수	|pageSize	  |Integer	 |query	 |X	 |기본 값: 10; max=200|
+|서비스 ID       |serviceId|String    |path|O|서비스 ID，URL PATH 내에 설정한 {serviceId}|
+|유저 코드       |usercode|String    |path|O|유저 코드(유일한 값)，URL PATH 내에 설정한{usercode}|
+|카테고리 ID   |categoryId|Integer|query|X|카테고리(접수유형) ID|
+|티켓 상태       |status    |String  |query|X|티켓 상태. new: 미할당, open: 처리중, reply: 보류, solved: 해결, closed: 완료|
+|언어 코드       |language|String    |query|X|서비스 헬프센터 기본 언어 코드|
+|채널           |source  |String |query|X|문의 채널(web: PC웹, spweb: 모바일 웹, api: API. 복수의 채널 조회 시 콤마로 구분하여 사용(예: web,spweb,api). 기본 값은 web,spweb,api|
+|정렬방식       |sort     |String|query|X|정렬 순서(기본값: updatedDt:desc; 정렬 형식: 오름차순:asc, 내림차순:desc)|
+|페이지          |page     |Integer|query|X|기본 값: 1|
+|1페이지 노출 건수|pageSize  |Integer |query |X |기본 값: 10; max=200|
 
 #### 결과 데이터
 |명칭	|변수	|데이터 타입	|설명|

@@ -2,8 +2,8 @@
 
 ### 顧客チケットリスト
 #### インターフェース説明
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/ticket/enduser/{usercode}/list.json
-- URL(開発): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/ticket/enduser/{usercode}/list.json
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/openapi/v1/ticket/enduser/{usercode}/list.json
+- URL(開発): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/openapi/v1/ticket/enduser/{usercode}/list.json
 
 |インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -211,8 +211,8 @@
 
 ### チケット詳細
 #### インターフェース説明
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/ticket/enduser/{usercode}/{ticketId}/detail.json
-- URL(開発): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/ticket/enduser/{usercode}/{ticketId}/detail.json
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/openapi/v1/ticket/enduser/{usercode}/{ticketId}/detail.json
+- URL(開発): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/openapi/v1/ticket/enduser/{usercode}/{ticketId}/detail.json
 
 |インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -337,8 +337,8 @@
 
 ### チケット添付ファイルを開く/ダウンロード
 #### インターフェース説明
-- URL: https://{domain}.oc.toast.com/{serviceId}/api/v2/ticket/attachments/{id}
-- URL(開発): https://{domain}.alpha-oc.toast.com/{serviceId}/api/v2/ticket/attachments/{id}
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/api/v2/ticket/attachments/{id}
+- URL(開発): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/api/v2/ticket/attachments/{id}
 
 |インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -356,8 +356,8 @@ File
 
 ### 顧客再問合せ
 #### インターフェース説明
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/ticket/enduser/{usercode}/{ticketId}/comment.json
-- URL(開発): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/ticket/enduser/{usercode}/{ticketId}/comment.json
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/openapi/v1/ticket/enduser/{usercode}/{ticketId}/comment.json
+- URL(開発): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/openapi/v1/ticket/enduser/{usercode}/{ticketId}/comment.json
 
 |インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|

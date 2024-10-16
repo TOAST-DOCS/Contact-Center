@@ -2,8 +2,8 @@
 
 ### テーマリスト
 #### インターフェース説明
-- URL: https://{domain}.oc.toast.com/{serviceId}/api/v2/notice/categories.json
-- URL(開発): https://{domain}.alpha-oc.toast.com/{serviceId}/api/v2/notice/categories.json
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/api/v2/notice/categories.json
+- URL(開発): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/api/v2/notice/categories.json
 
 |インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -88,8 +88,8 @@
 
 ### タグリスト
 #### インターフェース説明
-- URL: https://{domain}.oc.toast.com/{serviceId}/api/v2/notice/tags.json
-- URL(開発): https://{domain}.alpha-oc.toast.com/{serviceId}/api/v2/notice/tags.json
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/api/v2/notice/tags.json
+- URL(開発): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/api/v2/notice/tags.json
 
 |インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -147,8 +147,8 @@
 
 ### お知らせリスト
 #### インターフェース説明
-- URL: https://{domain}.oc.toast.com/{serviceId}/api/v2/notice/list.json
-- URL(開発): https://{domain}.alpha-oc.toast.com/{serviceId}/api/v2/notice/list.json
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/api/v2/notice/list.json
+- URL(開発): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/api/v2/notice/list.json
 
 |インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -330,8 +330,8 @@ sortパラメータの形式および例は下記のとおりです。
 
 ### お知らせ詳細
 #### インターフェース説明
-- URL: https://{domain}.oc.toast.com/{serviceId}/api/v2/notice/detail/{id}.json
-- URL(開発): https://{domain}.alpha-oc.toast.com/{serviceId}/api/v2/notice/detail/{id}.json
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/api/v2/notice/detail/{id}.json
+- URL(開発): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/api/v2/notice/detail/{id}.json
 
 |インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -413,8 +413,8 @@ sortパラメータの形式および例は下記のとおりです。
 
 ### お知らせ添付ファイルを開く/ダウンロード
 #### インターフェース説明
-- URL: https://{domain}.oc.toast.com/{serviceId}/api/v2/notice/attachments/{id}
-- URL(開発): https://{domain}.alpha-oc.toast.com/{serviceId}/api/v2/notice/attachments/{id}		
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/api/v2/notice/attachments/{id}
+- URL(開発): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/api/v2/notice/attachments/{id}		
 
 |インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
