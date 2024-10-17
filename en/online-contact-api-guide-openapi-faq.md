@@ -532,7 +532,7 @@ The format and example of sort parameter is as follows.
 ### Open and Download FAQ Attachments
 #### Interface Description
 - URL: https://{domain}.oc.nhncloud.com/{serviceId}/api/v2/helpdoc/attachments/{id}
-- URL(Dev): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/api/v2/helpdoc/attachments/{id}	
+- URL(Dev): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/api/v2/helpdoc/attachments/{id}
 
 |Interface name | Protocol | Call direction | Encoding | Result format | Interface description | Access restriction|
 |------------|-------|--------|-----|--------|--------------|------------|

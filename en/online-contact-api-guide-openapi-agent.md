@@ -68,11 +68,11 @@
 #### Result Data
 |Name |Variable |Data type |Required | Description|
 |-----|-----|----------|-----|----|
-|result.contents	|userId	|Int	|O	|User ID|
-|	                |usercode	|String	|O	|User Code|
-|	                |uuid	|String	|O	|IAM user ID|
-|	                |username	|String	|O	|User name|
-|	                |role	|String	|O	|User authority. ROLE_FRONT_ADMIN : Administrator, ROLE_FRONT_AGENT : Agent|
+|result.contents|userId|Int|O|User ID|
+|                |usercode|String|O|User Code|
+|                |uuid|String|O|IAM user ID|
+|                |username|String|O|User name|
+|                |role|String|O|User authority. ROLE_FRONT_ADMIN : Administrator, ROLE_FRONT_AGENT : Agent|
 
 #### Response Body
 ```
@@ -107,18 +107,18 @@
 #### Request Parameters
 |Name |Variable |Data type |Required | Description|
 |-----|-----|----------|-----|----|
-|Service ID	|serviceId	|String	|O	|{serviceId} set in URL path|
-|	         |id	       |String	|O	|IAM user UUID|
-|	         |role	     |String	|O	|User authority. ROLE_FRONT_ADMIN : Administrator, ROLE_FRONT_AGENT：Agent|
+|Service ID|serviceId|String|O|{serviceId} set in URL path|
+|         |id       |String|O|IAM user UUID|
+|         |role     |String|O|User authority. ROLE_FRONT_ADMIN : Administrator, ROLE_FRONT_AGENT：Agent|
 
 #### Result Data
 |Name |Variable |Data type |Required | Description|
 |-----|-----|-----------|------|---|
-|result.contents	|userId	|Int	|O	|User ID|
-|	                |usercode	|String	|O	|User Code|
-|	                |uuid	|String	|O	|IAM user ID|
-|	                |username	|String	|O	|User name|
-|	                |role	|String	|O	|User authority. ROLE_FRONT_ADMIN : Administrator, ROLE_FRONT_AGENT : Agent|
+|result.contents|userId|Int|O|User ID|
+|               |usercode|String|O|User Code|
+|                |uuid|String|O|IAM user ID|
+|                |username|String|O|User name|
+|                |role|String|O|User authority. ROLE_FRONT_ADMIN : Administrator, ROLE_FRONT_AGENT : Agent|
 
 #### Response Body
 ```
@@ -197,8 +197,8 @@
 #### Request Parameters
 |Name |Variable |Data type |Required | Description|
 |-----|-----|----------|-----|----|
-|Service ID	|serviceId	|String	|O	|{serviceId} set in URL path|
-|User ID	|id	|Int	|O	|{id} set in URL path|
+|Service ID|serviceId|String|O|{serviceId} set in URL path|
+|User ID|id|Int|O|{id} set in URL path|
 
 #### Result Data
 - None

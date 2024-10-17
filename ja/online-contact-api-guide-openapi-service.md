@@ -40,7 +40,7 @@
             "serviceId": "APISample",
             "name": "APISample",
             "profile": {
-                "fileUrl": "https://api-storage.cloud.toast.com/v1/AUTH_226f908c769e48b0bad7d32f9a91717f/service_alpha/WopqM8euoYw89B7i/27316eba2a8a4089b72a9cf18a83e144.png"
+                "fileUrl": "https://api-storage.cloud.nhncloud.com/v1/AUTH_226f908c769e48b0bad7d32f9a91717f/service_alpha/WopqM8euoYw89B7i/27316eba2a8a4089b72a9cf18a83e144.png"
             },
             "language": "ko",
             "languages": [

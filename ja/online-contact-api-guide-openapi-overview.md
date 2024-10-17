@@ -37,7 +37,7 @@ Online Contactが提供するOpen APIを使用するには、[サービス管理
 「セキュリティサービス」機能を使用しているサービスの場合、[サービス管理 → セキュリティ管理 → スパム管理]メニューで顧客のIPを基準にスパムポリシーを有効化できます。
 Open APIを通じてチケットを作成する際、リクエストヘッダーにOC-Client-IP値を設定すると、該当IPを基準にスパムかどうかが判断されます。
 
-OC-Client-IP: 顧客のIPアドレス
+- OC-Client-IP: 顧客のIPアドレス
 
 #### Authorization文字列の生成方法
 HmacSHA256で暗号化するか、(NHN Cloud 組織ID + request URI + パラメータ値 + 現在のUTC時間値)文字列に対して暗号化してAuthorization文字列を生成することができます。

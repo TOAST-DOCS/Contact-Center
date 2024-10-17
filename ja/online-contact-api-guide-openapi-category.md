@@ -602,121 +602,121 @@ userFields.value パラメータのフィールドタイプ別形式は下記の
 #### Request Body
 ```
 {	
-    "categoryId": "2542", 	
-    "subject": "유형", 	
-    "content": "문의내용", 	
-    "endUser": {	
-        "usercode": "st18888", 	
-        "email": "enduser_simple@nhn-st.com", 	
-        "username": "이름", 	
-        "phone": "13333333333"	
-    }, 	
-    "attachments": [	
-        {	
-            "attachmentId": "8f0dc5854d2446b6aa2e6e41a0a2f55c"	
-        }	
-    ], 	
-    "typeOne": "구분1", 	
-    "typeTwo": "구분2", 	
-    "language": "ko", 	
-    "source": "web", 	
-    "userFields": [	
-        {	
-            "code": "textbox", 	
-            "value": "텍스트 박스 이름"	
-        }, 	
-        {	
-            "code": "checkbox", 	
-            "value": [	
-                "옵션1", 	
-                "옵션2"	
-            ]	
-        }, 	
-        {	
-            "code": "dropdown", 	
-            "value": "옵션1"	
-        }, 	
-        {	
-            "code": "radiobutton", 	
-            "value": "옵션1"	
-        }, 	
-        {	
-            "code": "date", 	
-            "value": "2022-07-11"	
-        }, 	
-        {	
-            "code": "datetime", 	
-            "value": "2022-07-11 00:00"	
-        }, 	
-        {	
-            "code": "dateperiod", 	
-            "value": "2022-07-01 ~ 2022-07-31"	
-        }, 	
-        {	
-            "code": "datetimeperiod", 	
-            "value": "2022-07-01 00:00 ~ 2022-07-31 23:59"	
-        }, 	
-        {	
-            "code": "agreetotheterms", 	
-            "value": "true"	
-        }	
-    ]	
-}	
+    "categoryId": "2542", 
+    "subject": "유형", 
+    "content": "문의내용", 
+    "endUser": {
+        "usercode": "st18888", 
+        "email": "enduser_simple@nhn-st.com", 
+        "username": "이름", 
+        "phone": "13333333333"
+    }, 
+    "attachments": [
+        {
+            "attachmentId": "8f0dc5854d2446b6aa2e6e41a0a2f55c"
+        }
+    ], 
+    "typeOne": "구분1", 
+    "typeTwo": "구분2", 
+    "language": "ko", 
+    "source": "web", 
+    "userFields": [
+        {
+            "code": "textbox", 
+            "value": "텍스트 박스 이름"
+        }, 
+        {
+            "code": "checkbox", 
+            "value": [
+                "옵션1", 
+                "옵션2"
+            ]
+        }, 
+        {
+            "code": "dropdown", 
+            "value": "옵션1"
+        }, 
+        {
+            "code": "radiobutton", 
+            "value": "옵션1"
+        }, 
+        {
+            "code": "date", 
+            "value": "2022-07-11"
+        }, 
+        {
+            "code": "datetime", 
+            "value": "2022-07-11 00:00"
+        }, 
+        {
+            "code": "dateperiod", 
+            "value": "2022-07-01 ~ 2022-07-31"
+        }, 
+        {
+            "code": "datetimeperiod", 
+            "value": "2022-07-01 00:00 ~ 2022-07-31 23:59"
+        }, 
+        {
+            "code": "agreetotheterms", 
+            "value": "true"
+        }
+    ]
+}
 ```
 
 #### 結果データ(成功)
 |名称|変数|データタイプ|説明|
 |-----|----|-----------|-------|
-|result.content	|ticketId	    |String		|チケットID|
-|	            |categoryId	    |int		|受付タイプID|
-|	            |subject	    |String		|チケットのタイトル|
-|	            |content	    |String		|チケット内容|
-|	            |status	        |String		|チケットの状態(固定値: new(アサイン待ち); open(処理中); closed(処理完了)|
-|	            |createdDt	    |Long		|チケット作成時間|
-|	            |updatedDt	    |Long		|チケットアップデート時間|
-|	            |attachments	|Array		|添付ファイル|
-|	            |attachments.attachmentId	|String		|添付ファイルID|
-|	            |attachments.fileName	    |String		|添付ファイル名|
-|	            |attachments.contentType	|String		|添付ファイルタイプ|
-|               |attachments.disposition	|String		|ファイル処理方式(attachment:添付ファイル)|
-|	            |attachments.size	        |String		|添付ファイルサイズ(byt)|
-|	            |attachments.createdDt	    |String		|チケットアップデート時間|
+|result.content|ticketId    |String|チケットID|
+|            |categoryId    |int|受付タイプID|
+|            |subject    |String|チケットのタイトル|
+|            |content    |String|チケット内容|
+|            |status        |String|チケットの状態(固定値: new(アサイン待ち); open(処理中); closed(処理完了)|
+|            |createdDt    |Long|チケット作成時間|
+|            |updatedDt    |Long|チケットアップデート時間|
+|            |attachments|Array|添付ファイル|
+|            |attachments.attachmentId|String|添付ファイルID|
+|            |attachments.fileName    |String|添付ファイル名|
+|            |attachments.contentType|String|添付ファイルタイプ|
+|               |attachments.disposition|String|ファイル処理方式(attachment:添付ファイル)|
+|            |attachments.size        |String|添付ファイルサイズ(byt)|
+|            |attachments.createdDt    |String|チケットアップデート時間|
 
 #### Response Body(成功)
 ```
-{	
-  "header": {	
-    "resultCode": 200,	
-    "resultMessage": "",	
-    "isSuccessful": true	
-  },	
-  "result": {	
-    "content": {	
-      "ticketId": "T1658199661153IXTfw",	
-      "subject": "유형",	
-      "categoryId": 2542,	
-      "categoryName": null,	
-      "categoryFullName": null,	
-      "status": "new",	
-      "statusName": null,	
-      "content": "문의내용",	
-      "createdDt": 1658199661151,	
-      "updatedDt": 1658199661151,	
-      "contents": null,	
-      "attachments": [	
-        {	
-          "attachmentId": "8f0dc5854d2446b6aa2e6e41a0a2f55c",	
-          "fileName": "image.png",	
-          "contentType": "image/png",	
-          "disposition": "attachment",	
-          "size": 90576,	
-          "createdDt": 1658192910000	
-        }	
-      ],	
-      "displayDt": null	
-    }	
-  }	
-}	
+{
+  "header": {
+    "resultCode": 200,
+    "resultMessage": "",
+    "isSuccessful": true
+  },
+  "result": {
+    "content": {
+      "ticketId": "T1658199661153IXTfw",
+      "subject": "유형",
+      "categoryId": 2542,
+      "categoryName": null,
+      "categoryFullName": null,
+      "status": "new",
+      "statusName": null,
+      "content": "문의내용",
+      "createdDt": 1658199661151,
+      "updatedDt": 1658199661151,
+      "contents": null,
+      "attachments": [
+        {
+          "attachmentId": "8f0dc5854d2446b6aa2e6e41a0a2f55c",
+          "fileName": "image.png",
+          "contentType": "image/png",
+          "disposition": "attachment",
+          "size": 90576,
+          "createdDt": 1658192910000
+        }
+      ],
+      "displayDt": null
+    }
+  }
+}
 ```
 
 #### 結果データ(失敗)

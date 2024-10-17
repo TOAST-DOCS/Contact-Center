@@ -12,65 +12,65 @@
 #### リクエストパラメータ定義
 |名称|変数|データタイプ|変数タイプ|必須|説明|
 |----|----|----------|----------|----|---|
-|サービスID	|serviceId	|String	|path	  |O	|URL PATH内に設定した{serviceId}|
-|言語コード	|language	  |String	|query	|X	|サービスヘルプセンターの基本言語コード|
+|サービスID|serviceId|String|path  |O|URL PATH内に設定した{serviceId}|
+|言語コード|language  |String|query|X|サービスヘルプセンターの基本言語コード|
 
 #### 結果データ
 |名称|変数|データタイプ|説明|
 |-----|----|-----------|-------|
-|result.contents	|categoryId	|Integer		|テーマID|
-|	                |parent	    |Integer		|上位テーマID(固定値:0)|
-|	                |name	      |String		  |テーマ名|
-|	                |level	    |Integer		|レベル(固定値:1)|
-|	                |path	      |String		  |レベル経路(固定値:"\\\\")|
-|	                |orderNo	  |Integer		|整列順序|
-|	                |languages	|Object		  |テーマの多言語名称値（言語コード:対応する言語コードの名称）|
+|result.contents|categoryId|Integer|テーマID|
+|                |parent    |Integer|上位テーマID(固定値:0)|
+|                |name      |String |テーマ名|
+|                |level    |Integer|レベル(固定値:1)|
+|                |path      |String  |レベル経路(固定値:"\\\\")|
+|                |orderNo  |Integer|整列順序|
+|                |languages|Object  |テーマの多言語名称値（言語コード:対応する言語コードの名称）|
 
 #### Response Body
 ```
-{	
-    "header": {	
-        "resultCode": 200,	
-        "resultMessage": "",	
-        "isSuccessful": true	
-    },	
-    "result": {	
-        "contents": [	
-            {	
-                "categoryId": 2543,	
-                "parent": 0,	
-                "name": "유형1",	
-                "level": 1,	
-                "path": "\\",	
-                "orderNo": 0,	
-                "languages": {	
-                    "ko": "유형1",	
-                    "th": "พิมพ์1",	
-                    "ja": "タイプ1",	
-                    "en": "Type1",	
-                    "zh": "类型1"	
-                }	
-            },	
-            {	
-                "categoryId": 2544,	
-                "parent": 0,	
-                "name": "유형2",	
-                "level": 1,	
-                "path": "\\",	
-                "orderNo": 1,	
-                "languages": {	
-                    "ko": "유형2",	
-                    "th": "พิมพ์2",	
-                    "ja": "タイプ2",	
-                    "en": "Type2",	
-                    "zh": "类型2"	
-                }	
-            },	
-            {	
-                "categoryId": 2545,	
-                "parent": 0,	
-                "name": "유형3",	
-                "level": 1,	
+{
+    "header": {
+        "resultCode": 200,
+        "resultMessage": "",
+        "isSuccessful": true
+    },
+    "result": {
+        "contents": [
+            {
+                "categoryId": 2543,
+                "parent": 0,
+                "name": "유형1",
+                "level": 1,
+                "path": "\\",
+                "orderNo": 0,
+                "languages": {
+                    "ko": "유형1",
+                    "th": "พิมพ์1",
+                    "ja": "タイプ1",
+                    "en": "Type1",
+                    "zh": "类型1"
+                }
+            },
+            {
+                "categoryId": 2544,
+                "parent": 0,
+                "name": "유형2",
+                "level": 1,
+                "path": "\\",
+                "orderNo": 1,
+                "languages": {
+                    "ko": "유형2",
+                    "th": "พิมพ์2",
+                    "ja": "タイプ2",
+                    "en": "Type2",
+                    "zh": "类型2"
+                }
+            },
+            {
+                "categoryId": 2545,
+                "parent": 0,
+                "name": "유형3",
+                "level": 1,
                 "path": "\\",	
                 "orderNo": 2,	
                 "languages": {	
