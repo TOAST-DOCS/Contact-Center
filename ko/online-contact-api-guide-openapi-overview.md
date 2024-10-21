@@ -10,7 +10,7 @@ Open API를 활용하여 외부 시스템에서 Online Contact의 상담 정보�
 ![OpenAPI_설정](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-guide-openapi-overview_img0010.png)
 
 Online Contact에서 제공하는 Open API를 사용하려면 [서비스관리 → 인증] 메뉴에서 기능을 활성화해야 합니다.
- 
+
 **① OPEN API 활성화**
 
 - Open API 기능을 사용하려면 **활성화** 버튼을 클릭합니다.
@@ -33,7 +33,11 @@ Online Contact에서 제공하는 Open API를 사용하려면 [서비스관리 �
 
 - Authorization: Security Key를 통해 생성된 인증 문자열
 - X-TC-Timestamp: 현재 UTC 시간 값{new Date().getTime()}
-- OUCODE: 유저 code(필수 아님，설정하지 않을 경우 기본 값은 Owner)
+
+'보안 서비스' 기능을 사용하는 서비스의 경우, '서비스 관리 → 보안서비스 → 스팸 관리' 메뉴에서 고객의 IP를 통한 스팸 정책을 활성화할 수 있습니다.
+Open API를 통해 티켓 생성 시, OC-Client-IP 값을 Request Header에 설정하시면 해당 IP를 기준으로 스팸 여부를 판단합니다.
+
+- OC-Client-IP: 고객 IP 주소
 
 #### Authorization 문자열 생성 방법
 
@@ -45,43 +49,103 @@ HmacSHA256로 암호화하거나, (NHN Cloud 조직ID + request URI + 파라미�
 
 #### Java 예제
 
-##### 일반 요청(GET, POST)
+##### 일반 요청(GET)
 
 ```
+// 유저 티켓 리스트
 String URL = "http://nhn-cs.oc.nhncloud.com/APISimple/openapi/v1/ticket/enduser/usercode/list.json?categoryId=1&language=ko";
-String organizationId = "WopqM8euoYw89B7i"; // NHN Cloud 조직ID
+String organizationId = "WopqM8euoYw89B7i"; // 조직ID
 String securityKey = "431402c0eaaf46d889f243db9e7492e2"; // 서비스 Key
 String uri = "/APISimple/openapi/v1/ticket/enduser/usercode/list.json"; // request uri
+long timestamp = new Date().getTime();
 StringBuilder sb = new StringBuilder();
 sb.append(organizationId);
 sb.append(uri);
-sb.append("1").append("&").append("ko"); // 매개변수 순서에 따라(categoryId=1&language=ko)매개변수 사용(1&ko)
-sb.append(body);// request body가 있을 경우 ，파라미터 뒤에 body 문자열 추가
-sb.append(new Date().getTime());// X-TC-Timestamp값과 동일
+sb.append("1").append("&").append("ko"); // 매개변수 이름의 알파벳 순서에 따라(categoryId=1&language=ko)& 기호로 매개변수 값을 연결해 주세요 (1&ko)
+sb.append(timestamp);// X-TC-Timestamp값과 동일
+
 SecretKeySpec signingKey = new SecretKeySpec(securityKey.getBytes("UTF-8"), "HmacSHA256");
 Mac mac = Mac.getInstance(signingKey.getAlgorithm());
 mac.init(signingKey);
 byte[] rawHmac = mac.doFinal(sb.toString().getBytes("UTF-8"));
 String authorization = new String(Base64.encodeBase64(rawHmac));
+
+Request request = new Request.Builder().url(URL).get()
+.header("Content-Type", "application/json")
+.header("Authorization", authorization)
+.header("X-TC-Timestamp", Long.toString(timestamp))
+.build();
+Call call = client.newCall(request);
+Response response = call.execute();
+```
+
+##### 일반 요청(POST)
+
+```
+// 티켓 생성
+String URL = "http://nhn-cs.oc.nhncloud.com/APISimple/openapi/v1/ticket.json?language=ko";
+String organizationId = "WopqM8euoYw89B7i"; // 조직ID
+String securityKey = "431402c0eaaf46d889f243db9e7492e2"; // 서비스 Key
+String uri = "/APISimple/openapi/v1/ticket.json"; // request uri
+long timestamp = new Date().getTime();
+StringBuilder sb = new StringBuilder();
+
+String body = mapper.writeValueAsString(bodyContentObject);
+
+sb.append(organizationId);
+sb.append(uri);
+sb.append("ko").append("&"); // 매개변수 이름의 알파벳 순서에 따라 & 기호로 매개변수 값을 연결해 주세요.
+sb.append(body);// 매개변수 뒤에 body의 문자열 내용을 추가해 주세요.
+sb.append(timestamp);// X-TC-Timestamp값과 동일
+
+SecretKeySpec signingKey = new SecretKeySpec(securityKey.getBytes("UTF-8"), "HmacSHA256");
+Mac mac = Mac.getInstance(signingKey.getAlgorithm());
+mac.init(signingKey);
+byte[] rawHmac = mac.doFinal(sb.toString().getBytes("UTF-8"));
+String authorization = new String(Base64.encodeBase64(rawHmac));
+
+RequestBody body = RequestBody.create(MediaType.parse("application/json; charset=utf-8"), body);
+
+Request request = new Request.Builder().url(URL).post(body)
+.header("Content-Type", "application/json")
+.header("Authorization", authorization)
+.header("X-TC-Timestamp", Long.toString(timestamp))
+.header("OC-Client-IP", ip)
+.build();
+
+Call call = client.newCall(request);
+Response response = call.execute();
 ```
 
 ##### 파일 업로드
 
 ```
 String URL = "http://nhn-cs.oc.nhncloud.com/APISimple/openapi/v1/ticket/attachments/upload.json";
-String organizationId = "WopqM8euoYw89B7i"; // NHN Cloud 조직ID
+String organizationId = "WopqM8euoYw89B7i"; // 조직ID
 String securityKey = "431402c0eaaf46d889f243db9e7492e2"; // 서비스 Key
 String uri = "/APISimple/openapi/v1/ticket/attachments/upload.json"; // request uri
+long timestamp = new Date().getTime();
 StringBuilder sb = new StringBuilder();
 sb.append(organizationId);
 sb.append(uri);
 DigestUtils.appendMd5DigestAsHex(file.getInputStream(), sb);// 파일 첨부 시 , 파일의 MD5는 파라미터 값으로 인증 문자열에 추가
-sb.append(new Date().getTime());// X-TC-Timestamp값과 동일
+sb.append(timestamp);// X-TC-Timestamp값과 동일
+
 SecretKeySpec signingKey = new SecretKeySpec(securityKey.getBytes("UTF-8"), "HmacSHA256");
 Mac mac = Mac.getInstance(signingKey.getAlgorithm());
 mac.init(signingKey);
 byte[] rawHmac = mac.doFinal(sb.toString().getBytes("UTF-8"));
 String authorization = new String(Base64.encodeBase64(rawHmac));
+
+RequestBody body = new MultipartBody.Builder().setType(MultipartBody.FORM).addFormDataPart("file", file.getOriginalFilename(),
+RequestBody.create(MediaType.parse(file.getContentType()), file.getBytes())).build();
+Request request = new Request.Builder().url(ticketUploadUrl).post(body)
+.header("Content-Type", "application/json")
+.header("Authorization", signString)
+.header("X-TC-Timestamp", Long.toString(timestamp))
+.build();
+Call call = client.newCall(request);
+Response response = call.execute();
 ```
 
 ##### OC 측 인증 방법
@@ -106,7 +170,7 @@ if (request instanceof MultipartHttpServletRequest) {
 			sb.append(entry.getValue()[0]).append("&");
 		}
 		sb.deleteCharAt(sb.length() - 1); // Delete '&' character
-	}	
+	}
 	if (request instanceof BodyReaderHttpServletRequestWrapper) {
 		BodyReaderHttpServletRequestWrapper requestWrapper = (BodyReaderHttpServletRequestWrapper) request;
 		if (requestWrapper.hasBody()) {
@@ -185,6 +249,7 @@ return sb.toString();
 - 500: Server Error
 - 9007: 관련된 데이터가 이미 존재
 - 9005: 관련된 데이터가 없음
+- 1001, 1002: 문의 횟수 상한 초과 ('스팸 관리 → 반복 문의 차단' 기능 사용 시)
 
 #### 리턴 코드(실패) 상세
 ##### 400
@@ -194,7 +259,6 @@ return sb.toString();
 3. X-TC-Timestamp is expired(5분 내 유효)
 4. Multipart request but file is null
 5. Authorization is incorrect
-6. Invalid paramter
 
 ##### 403
 
@@ -205,8 +269,8 @@ return sb.toString();
 #### 개발 환경 URL
 |환경|BaseUrl|
 |---|------------|
-|알파|https://{domain}.oc.nhncloud.com|
-|리얼|https://{domain}.oc.nhncloud.com	|
+|알파|https://{domain}.oc.alpha-nhncloud.com|
+|리얼|https://{domain}.oc.nhncloud.com|
 
 #### Security Key URL
 |Security Key|URL|

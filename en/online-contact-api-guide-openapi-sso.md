@@ -89,8 +89,8 @@ public static void main(String[] args) throws Exception {
 ### POST Remote Login API(From client side)
 #### Interface Description
 
-- URL: https://{domain}.oc.toast.com/v2/enduser/remote.json
-- URL(Dev): https://{domain}.alpha-oc.toast.com/v2/enduser/remote.json
+- URL: https://{domain}.oc.nhncloud.com/v2/enduser/remote.json
+- URL(Dev): https://{domain}.oc.alpha-nhncloud.com/v2/enduser/remote.json
 
 |Interface name | Protocol | Call direction | Encoding | Result format | Interface description |
 |------------|-------|--------|-----|--------|--------------|
@@ -122,8 +122,8 @@ If returnUrl parameter does not exist, return 'SUCCESS' string.
 ### POST Remote Login API(From server side)
 #### Interface Description
 
-- URL: https://{domain}.oc.toast.com/api/v2/enduser/remote.json
-- URL(Dev): https://{domain}.alpha-oc.toast.com/api/v2/enduser/remote.json
+- URL: https://{domain}.oc.nhncloud.com/api/v2/enduser/remote.json
+- URL(Dev): https://{domain}.oc.alpha-nhncloud.com/api/v2/enduser/remote.json
 
 |Interface name | Protocol | Call direction | Encoding | Result format | Interface description |
 |------------|-------|--------|-----|--------|--------------|
@@ -162,7 +162,7 @@ Please refer to the following class in the sample project for the **how to call 
 ```
 
 When help center is called, the returned content value is delivered to Online Contact by the Help Center URL as 'accessToken' parameter.
-Example: https://nhn-cs.alpha-oc.toast.com/hangame/hc/?accessToken=xxxxxxaccessTokenxxxxxxx
+Example: https://nhn-cs.oc.alpha-nhncloud.com/hangame/hc/?accessToken=xxxxxxaccessTokenxxxxxxx
 
 ### POST Login URL(User)
 #### Interface Description
@@ -218,7 +218,7 @@ Login URL of the service side should provide the following functions.
 - ① Create login token based on user information, API Key
 - ② Call POST Remote Login API(From server side) in server
 - ③ Append API call parameters(usercode, time) in the end of returnUrl
-  - Example) https://nhn-cs.alpha-oc.toast.com/multilanguage/hc/ticket/list/?usercode=xxxxxx@163.com&time=1566531359635
+  - Example) https://nhn-cs.oc.alpha-nhncloud.com/multilanguage/hc/ticket/list/?usercode=xxxxxx@163.com&time=1566531359635
 - ④ Move to {returnUrl}
 
 ### POST Login Status API(User)

@@ -14,21 +14,21 @@
 #### 요청 파라미터 정의
 |명칭	|변수	|데이터 타입	|변수 유형|필수 |설명|
 |-------|-------|--------------|--------|-----|----|
-|서비스 ID	       |serviceId	|String	   |path	|O	|서비스 ID，URL PATH 중{serviceId}에 설정|
-|상위 카테고리 ID	|parent	     |Integer	|query	 |X	 |상위 카테고리에 소속된 하위 카테고리 리스트|
-|하위 카테고리 ID	|child	     |Integer	|query	 |X	 |하위 카테고리에 소속된 상위 카테고리 리스트|
-|언어 코드	        |language	 |String	|query	 |X	 |서비스 헬프센터 기본 언어 코드|
+|서비스 ID       |serviceId|String   |path|O|서비스 ID，URL PATH 중{serviceId}에 설정|
+|상위 카테고리 ID|parent     |Integer|query |X |상위 카테고리에 소속된 하위 카테고리 리스트|
+|하위 카테고리 ID|child     |Integer|query |X |하위 카테고리에 소속된 상위 카테고리 리스트|
+|언어 코드        |language |String|query |X |서비스 헬프센터 기본 언어 코드|
 
 #### 결과 데이터
 |명칭	|변수	|데이터 타입	|설명|
 |-----|-----|----------|---------|
-|result.contents	|categoryId	|Integer		|접수유형 ID|
-|	                |parent	    |Integer		|상위 접수유형 ID|
-|	                |name	    |String		    |접수유형 명|
-|	                |level	    |Integer		|접수유형 레벨(1, 2, 3, 4, 5)|
-|	                |path	    |String		    |접수유형 경로(\\\\로 각 뎁스 카테고리 ID 연결)|
-|	                |orderNo	|Integer		|표시 순서|
-|	                |languages	|Object		    |카테고리 다국어 명|
+|result.contents|categoryId|Integer|접수유형 ID|
+|                |parent    |Integer|상위 접수유형 ID|
+|                |name    |String    |접수유형 명|
+|                |level    |Integer|접수유형 레벨(1, 2, 3, 4, 5)|
+|                |path    |String    |접수유형 경로(\\\\로 각 뎁스 카테고리 ID 연결)|
+|                |orderNo|Integer|표시 순서|
+|                |languages|Object    |카테고리 다국어 명|
 
 #### Response Body
 ```
@@ -163,25 +163,25 @@
 #### 요청 파라미터 정의
 |명칭	|변수	|데이터 타입	|변수 유형|필수 |설명|
 |-------|-------|--------------|-----|-------|----|
-|서비스 ID	    |serviceId	|String	   |path	 |O	|서비스 ID, URL PATH 내에 설정한 {serviceId}|
-|접수유형 ID	|categoryId	|Integer   |path 	 |O	|접수유형 ID, URL PATH 내에 설정한 {categoryId}|
-|언어 코드	    |language	|String	   |query	 |X	|서비스 헬프센터 기본 언어 코드|
+|서비스 ID    |serviceId|String   |path |O|서비스 ID, URL PATH 내에 설정한 {serviceId}|
+|접수유형 ID|categoryId|Integer   |path |O|접수유형 ID, URL PATH 내에 설정한 {categoryId}|
+|언어 코드    |language|String   |query |X|서비스 헬프센터 기본 언어 코드|
 
 #### 결과 데이터
 |명칭	|변수	|데이터 타입	|설명|
 |-----|-----|----------|---------|
-|result.contents	|fieldId	    |Integer		|고객 필드 ID|	
-|                   |code	        |String  		|항목 코드|
-|	                |type	        |String		    |항목 유형|
-|	                |title	        |String		    |항목 명|
-|	                |description	|String		    |안내 문구|
-|	                |placeholder	|String		    |제시어|
-|	                |length	        |Integer		|최대 길이(0: 길이 제한 없음)|
-|	                |required	    |Boolean		|필수 항목 여부(true: yes, false: no)|
-|	                |encrypt	    |Boolean	 	|저장 시 암호화 여부(true: yes, false: no)|
-|	                |holdingText	|Boolean		|클릭 시 삭제 여부(true: yes, false: no)|
-|	                |options	    |Array   		|텍스트 박스, 체크박스, 드롭박스, 예:[구분1,구분2,...]|
-|	                |value	        |String		    |사용자 입력 값|
+|result.contents|fieldId    |Integer|고객 필드 ID|
+|                   |code        |String|항목 코드|
+|                |type        |String    |항목 유형|
+|                |title        |String    |항목 명|
+|                |description|String    |안내 문구|
+|                |placeholder|String    |제시어|
+|                |length        |Integer|최대 길이(0: 길이 제한 없음)|
+|                |required    |Boolean|필수 항목 여부(true: yes, false: no)|
+|                |encrypt    |Boolean|저장 시 암호화 여부(true: yes, false: no)|
+|                |holdingText|Boolean|클릭 시 삭제 여부(true: yes, false: no)|
+|                |options    |Array|텍스트 박스, 체크박스, 드롭박스, 예:[구분1,구분2,...]|
+|                |value        |String    |사용자 입력 값|
 
 #### Response Body
 ```
@@ -502,18 +502,18 @@
 #### 요청 파라미터 정의
 |명칭	|변수	|데이터 타입	|변수 유형|필수 |설명|
 |-------|-------|--------------|-----|-------|----|
-|서비스 ID	    |serviceId	|String	|path	    |O	|URL PATH 내에 설정한 {serviceId}|
-|업로드 파일	|file	    |File	|formData	|O	|파일을 form로 제출. 파일 지원 형식: jpg, png, gif, bmp, jpeg, tif, tiff, pdf, txt, hwp, xls, xlsx, doc, docx, ppt, pptx, mp3, wav, zip. 파일 사이즈<10M, 파일명 길이<100|
+|서비스 ID    |serviceId|String|path    |O|URL PATH 내에 설정한 {serviceId}|
+|업로드 파일|file    |File|formData|O|파일을 form로 제출. 파일 지원 형식: jpg, png, gif, bmp, jpeg, tif, tiff, pdf, txt, hwp, xls, xlsx, doc, docx, ppt, pptx, mp3, wav, zip. 파일 사이즈<10M, 파일명 길이<100|
 
 #### 결과 데이터(성공)
 |명칭	|변수	|데이터 타입	|설명|
 |-----|-----|----------|---------|
-|result.content	|attachmentId	|String		|첨부파일 ID|
-|	            |fileName	    |String		|첨부파일 명|
-|	            |contentType	|String		|첨부파일 유형|
-|	            |disposition	|String		|파일 처리 방식(attachment: 첨부파일)|
-|	            |size	        |Long		|첨부파일 사이즈(byte)|
-|               |createdDt	    |Long		|파일 첨부 시간|
+|result.content|attachmentId|String|첨부파일 ID|
+|            |fileName    |String|첨부파일 명|
+|            |contentType|String|첨부파일 유형|
+|            |disposition|String|파일 처리 방식(attachment: 첨부파일)|
+|            |size        |Long|첨부파일 사이즈(byte)|
+|               |createdDt    |Long|파일 첨부 시간|
 
 #### Response Body(성공)
 ```
@@ -538,8 +538,8 @@
 #### 결과 데이터(실패)
 |명칭	|변수	|데이터 타입	|설명|
 |-----|-----|----------|---------|
-|result.content	|exception	|String		|고정 값：OcException|
-|	            |message	|String		|오류 메시지 (10MB 이하의 파일만 첨부할수 있습니다. / 파일명 최대 길이 초과.(100) / 해당 파일 격식은 첨부할수 없습니다.|
+|result.content|exception|String|고정 값：OcException|
+|            |message|String|오류 메시지 (10MB 이하의 파일만 첨부할수 있습니다. / 파일명 최대 길이 초과.(100) / 해당 파일 격식은 첨부할수 없습니다.|
 
 #### Response Body(실패)
 ```
@@ -784,4 +784,16 @@ userFields.value 파라미터의 필드 유형별 형식은 하기와 같습니�
     ]		
   }		
 }		
+```
+
+#### Response Body(스팸 정책 적용으로 인한 생성 실패)
+```
+{
+    "header": {
+        "resultCode": 1002,
+        "resultMessage": "문의 횟수가 상한을 초과했습니다. 잠시 후 문의하십시오.",
+        "isSuccessful": false
+    },
+    "result": {…...}
+}
 ```

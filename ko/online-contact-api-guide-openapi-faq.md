@@ -13,19 +13,19 @@
 #### 요청 파라미터 정의
 |명칭	|변수	|데이터 타입	|변수 유형|필수	|설명|
 |----|------|-----------|--------|-----|----|
-|서비스 ID	|serviceId	|String	|path	|O	|URL PATH 내에 설정한{serviceId}|
-|언어 코드	|language	  |String	|query |X	|서비스 헬프센터 기본 언어 코드|
+|서비스 ID|serviceId|String|path|O|URL PATH 내에 설정한{serviceId}|
+|언어 코드|language  |String|query |X|서비스 헬프센터 기본 언어 코드|
 
 #### 결과 데이터
 |명칭	|변수	|데이터 타입	|설명|
 |-----|-----|-----------|----|
-|result.contents	|categoryId	|Integer		|카테고리 ID|
-|	                |parent	    |Integer		|상위 카테고리 ID|
-|	                |name	      |String		  |카테고리 명|
-|	                |level	    |Integer		|뎁스(1, 2, 3)|
-|	                |path	      |String		  |뎁스 경로(\level1\level2\)|
-|	                |orderNo	  |Integer		|정렬 순서(기본 값: 0)|
-|	                |languages	|Object		  |다국어|
+|result.contents|categoryId|Integer|카테고리 ID|
+|                |parent    |Integer|상위 카테고리 ID|
+|                |name      |String  |카테고리 명|
+|                |level    |Integer|뎁스(1, 2, 3)|
+|                |path      |String  |뎁스 경로(\level1\level2\)|
+|                |orderNo  |Integer|정렬 순서(기본 값: 0)|
+|                |languages|Object  |다국어|
 
 #### Response Body
 ```
@@ -145,13 +145,13 @@
 #### 요청 파라미터 정의
 |명칭	|변수	|데이터 타입	|변수 유형|필수	|설명|
 |-----|----|-----------|-----|----|----|
-|서비스 ID	    |serviceId	|String	  |path	  |O	|서비스 ID, URL PATH 내에 설정한{serviceId}|
-|언어 코드	    |language	  |String	  |query	|X	|헬프센터 언어 코드(기본 값 : 기본 언어 코드)|
-|카테고리 ID	  |categoryId	|Integer	|query	|X	|FAQ 카테고리 ID|
-|키워드	        |query	    |String	  |query	|X	|검색 키워드(조회 범위: FAQ 제목, 내용)|
-|정렬 필드  	  |sort	      |String	  |query	|X	|isTop, isRecommend, createdDt, updatedDt 필드로 정렬 가능하며, 여러 필드 정렬시 [,]로 분리. asc:오름차순; desc:내림차순|
-|페이지	        |page	      |Integer	|query	|X  |페이지 번호(기본 값: 1)|
-|페이지 당 건수	|pageSize	  |Integer	|query	|X	|페이지 당 데이터 건수(기본 값: 10건, MAX: 200)|
+|서비스 ID    |serviceId|String  |path  |O|서비스 ID, URL PATH 내에 설정한{serviceId}|
+|언어 코드    |language  |String |query|X|헬프센터 언어 코드(기본 값 : 기본 언어 코드)|
+|카테고리 ID  |categoryId|Integer|query|X|FAQ 카테고리 ID|
+|키워드        |query    |String  |query|X|검색 키워드(조회 범위: FAQ 제목, 내용)|
+|정렬 필드    |sort     |String  |query|X|isTop, isRecommend, createdDt, updatedDt 필드로 정렬 가능하며, 여러 필드 정렬시 [,]로 분리. asc:오름차순; desc:내림차순|
+|페이지        |page      |Integer|query|X  |페이지 번호(기본 값: 1)|
+|페이지 당 건수|pageSize  |Integer|query|X|페이지 당 데이터 건수(기본 값: 10건, MAX: 200)|
 
 sort 파라미터의 형식 및 예시는 하기와 같습니다.
 
@@ -163,7 +163,7 @@ sort 파라미터의 형식 및 예시는 하기와 같습니다.
 #### 결과 데이터
 |명칭	|변수	|데이터 타입	|설명|
 |-----|----|-----------|------|
-|result.contents	|helpDocId	  |Integer		|FAQ ID|
+|result.contents|helpDocId  |Integer|FAQ ID|
 |	                |title	      |String		  |FAQ 제목|
 |	                |content	    |String		  |FAQ 내용|
 |	                |isRecommend	|Boolean		|카테고리 별 고정 여부(true: 고정; false: 고정 아님)|

@@ -2,8 +2,8 @@
 
 ### View Agent List
 #### Interface Descripiton
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/users.json
-- URL(Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/users.json
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/openapi/v1/users.json
+- URL(Dev): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/openapi/v1/users.json
 
 |Interface name | Protocol | Call direction | Encoding | Result format | Interface description |
 |------------|-------|--------|-----|--------|--------------|
@@ -22,10 +22,10 @@
 |Name |Variable |Data type |Required | Description|
 |-----|-----|-----------|----|----|
 |result.contents|userId|I|O|User ID|
-|                |usercode	|String	|O	|User Code|
-|                |uuid	|String	|O	|IAM |User ID|
-|                |username	|String	|O	|User name|
-|                |role	|String	|O	|User authority. ROLE_FRONT_ADMIN : Administrator, ROLE_FRONT_AGENT : Agent|
+|                |usercode|String	|O	|User Code|
+|                |uuid|String	|O	|IAM |User ID|
+|                |username|String	|O	|User name|
+|                |role|String	|O	|User authority. ROLE_FRONT_ADMIN : Administrator, ROLE_FRONT_AGENT : Agent|
 
 #### Response Body
 ```
@@ -52,10 +52,10 @@
 
 ### Obtain Agent Information
 #### Interface Description
-- URL:	https://{domain}.oc.toast.com/{serviceId}/openapi/v1/users/{id}.json			
-- URL(Dev):	https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/users/{id}.json			
+- URL:	https://{domain}.oc.nhncloud.com/{serviceId}/openapi/v1/users/{id}.json
+- URL(Dev):	https://{domain}.oc.alpha-nhncloud.com/{serviceId}/openapi/v1/users/{id}.json
 
-|Interface name | Protocol | Call direction | Encoding | Result format | Interface description | 
+|Interface name | Protocol | Call direction | Encoding | Result format | Interface description |
 |------------|-------|--------|-----|--------|--------------|
 |Detailed query of agents|HTTPS  |GET    |UTF-8|JSON    |Obtain detailed agent information through agent ID|
 
@@ -68,11 +68,11 @@
 #### Result Data
 |Name |Variable |Data type |Required | Description|
 |-----|-----|----------|-----|----|
-|result.contents	|userId	|Int	|O	|User ID|
-|	                |usercode	|String	|O	|User Code|
-|	                |uuid	|String	|O	|IAM user ID|
-|	                |username	|String	|O	|User name|
-|	                |role	|String	|O	|User authority. ROLE_FRONT_ADMIN : Administrator, ROLE_FRONT_AGENT : Agent|
+|result.contents|userId|Int|O|User ID|
+|                |usercode|String|O|User Code|
+|                |uuid|String|O|IAM user ID|
+|                |username|String|O|User name|
+|                |role|String|O|User authority. ROLE_FRONT_ADMIN : Administrator, ROLE_FRONT_AGENT : Agent|
 
 #### Response Body
 ```
@@ -97,28 +97,28 @@
 
 ### Add Agent
 #### Interface Description
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/adduser.json				
-- URL(Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/adduser.json					
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/openapi/v1/adduser.json
+- URL(Dev): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/openapi/v1/adduser.json
 
-|Interface name | Protocol | Call direction | Encoding | Result format | Interface description | 
+|Interface name | Protocol | Call direction | Encoding | Result format | Interface description |
 |------------|-------|--------|-----|--------|--------------|
 |Add agent|HTTPS  |POST    |UTF-8|JSON    |Add and give authority to agent in selected service|
 
 #### Request Parameters
 |Name |Variable |Data type |Required | Description|
 |-----|-----|----------|-----|----|
-|Service ID	|serviceId	|String	|O	|{serviceId} set in URL path|
-|	         |id	       |String	|O	|IAM user UUID|
-|	         |role	     |String	|O	|User authority. ROLE_FRONT_ADMIN : Administrator, ROLE_FRONT_AGENT：Agent|
+|Service ID|serviceId|String|O|{serviceId} set in URL path|
+|         |id       |String|O|IAM user UUID|
+|         |role     |String|O|User authority. ROLE_FRONT_ADMIN : Administrator, ROLE_FRONT_AGENT：Agent|
 
 #### Result Data
 |Name |Variable |Data type |Required | Description|
 |-----|-----|-----------|------|---|
-|result.contents	|userId	|Int	|O	|User ID|
-|	                |usercode	|String	|O	|User Code|
-|	                |uuid	|String	|O	|IAM user ID|
-|	                |username	|String	|O	|User name|
-|	                |role	|String	|O	|User authority. ROLE_FRONT_ADMIN : Administrator, ROLE_FRONT_AGENT : Agent|
+|result.contents|userId|Int|O|User ID|
+|               |usercode|String|O|User Code|
+|                |uuid|String|O|IAM user ID|
+|                |username|String|O|User name|
+|                |role|String|O|User authority. ROLE_FRONT_ADMIN : Administrator, ROLE_FRONT_AGENT : Agent|
 
 #### Response Body
 ```
@@ -142,10 +142,10 @@
 
 ### Change Agent Authority
 #### Interface Description
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/users/{id}.json						
-- URL(Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/users/{id}.json			
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/openapi/v1/users/{id}.json
+- URL(Dev): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/openapi/v1/users/{id}.json
 
-|Interface name | Protocol | Call direction | Encoding | Result format | Interface description | 
+|Interface name | Protocol | Call direction | Encoding | Result format | Interface description |
 |------------|-------|--------|-----|--------|--------------|
 |Change agent authority|HTTPS  |PUT    |UTF-8|JSON    |Change agent authority in service|
 
@@ -187,18 +187,18 @@
 
 ### Delete Agent
 #### Interface Description
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/users/{id}.json						
-- URL(Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/users/{id}.json			
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/openapi/v1/users/{id}.json
+- URL(Dev): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/openapi/v1/users/{id}.json
 
-|Interface name | Protocol | Call direction | Encoding | Result format | Interface description | 
+|Interface name | Protocol | Call direction | Encoding | Result format | Interface description |
 |------------|-------|--------|-----|--------|--------------|
 |Delete agent|HTTPS/80  |IN(DELETE)    |UTF-8|JSON    |Delete agent in selected service|
 
 #### Request Parameters
 |Name |Variable |Data type |Required | Description|
 |-----|-----|----------|-----|----|
-|Service ID	|serviceId	|String	|O	|{serviceId} set in URL path|
-|User ID	|id	|Int	|O	|{id} set in URL path|
+|Service ID|serviceId|String|O|{serviceId} set in URL path|
+|User ID|id|Int|O|{id} set in URL path|
 
 #### Result Data
 - None

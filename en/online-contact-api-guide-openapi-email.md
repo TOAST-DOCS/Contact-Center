@@ -2,18 +2,18 @@
 
 ### Create representative account
 #### Interface Description
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/mail/create.json			
-- URL(Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail/create.json				
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/openapi/v1/mail/create.json
+- URL(Dev): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/openapi/v1/mail/create.json
 
 |Interface name | Protocol | Call direction | Encoding | Result format | Interface description | Access restricted|
 |------------|-------|--------|-----|--------|--------------|------------|
-|Create representative account|HTTPS  |POST    |UTF-8|JSON    |Create service representative account. (Cannot be modified after creation) Format: \*\*@oc.toast.com|Common authentication|
+|Create representative account|HTTPS  |POST    |UTF-8|JSON    |Create service representative account. (Cannot be modified after creation) Format: \*\*@oc.nhncloud.com|Common authentication|
 
 #### Request Parameters
 |Name |Variable |Data type |Required | Description|
 |-----|-----|----------|-----|----|
 |Service ID	|serviceId	|String	|O	|Service ID，{serviceId} which is set in URL path|
-|Email information	|mail	|String	|O	|Email information(Example:'mail' part of mail@oc.toast.com)|
+|Email information	|mail	|String	|O	|Email information(Example:'mail' part of mail@oc.nhncloud.com)|
 
 #### Query String
 - mail=mail
@@ -23,7 +23,7 @@
 |-----|-----|----------|-----|----|
 |result.content	|displayMail	|String	|	  |Sender address|
 |	              |external	    |String	|	  |List of external accounts|
-|	              |mail	        |String	|O	|Address of representative account : mail@oc.toast.com|
+|	              |mail	        |String	|O	|Address of representative account : mail@oc.nhncloud.com|
 |	              |name	        |String	|	  |Sender name|
 |	              |template	    |String	|	  |Email format|
 |	              |updatedDt	  |Long	  |	  |Updated time|
@@ -38,9 +38,9 @@
     },
     "result":{
         "content":{
-            "displayMail":"noreply@toast.com",
+            "displayMail":"noreply@nhncloud.com",
             "external":{},
-            "mail":"mail@oc.toast.com",
+            "mail":"mail@oc.nhncloud.com",
             "name":"noreply",
             "template":"<p>#{content}</p>",
             "updatedDt":1597369998000
@@ -51,8 +51,8 @@
 
 ### Query email information
 #### Interface Description
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/mail.json			
-- URL(Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail.json			
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/openapi/v1/mail.json
+- URL(Dev): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/openapi/v1/mail.json
 
 |Interface name | Protocol | Call direction | Encoding | Result format | Interface description | Access restricted|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -68,7 +68,7 @@
 |----|-----|-----------|-----|----|
 |result.content	|displayMail	|String	|	  |Sender address|
 |	              |external	    |String	|	  |List of external accounts|
-|	              |mail	        |String	|O	|Address of representative account : mail@oc.toast.com|
+|	              |mail	        |String	|O	|Address of representative account : mail@oc.nhncloud.com|
 |	              |name	        |String	|	  |Sender name|
 |	              |template	    |String	|	  |Email format|
 |	              |updatedDt	  |Long	  |	  |Updated time|
@@ -83,9 +83,9 @@
     },
     "result":{
         "content":{
-            "displayMail":"noreply@toast.com",
+            "displayMail":"noreply@nhncloud.com",
             "external":{},
-            "mail":"mail@oc.toast.com",
+            "mail":"mail@oc.nhncloud.com",
             "name":"noreply",
             "template":"<p>#{content}</p>",
             "updatedDt":1597371255000
@@ -96,8 +96,8 @@
 
 ### Check Validation of External Account
 #### Interface Description
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/mail/external/verify.json					
-- URL(Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail/external/verify.json			
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/openapi/v1/mail/external/verify.json
+- URL(Dev): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/openapi/v1/mail/external/verify.json
 
 |Interface name | Protocol | Call direction | Encoding | Result format | Interface description | Access restricted|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -154,8 +154,8 @@
 
 ### Register External Account
 #### Interface Description
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/mail/external.json			
-- URL(Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail/external.json			
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/openapi/v1/mail/external.json
+- URL(Dev): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/openapi/v1/mail/external.json
 
 |Interface name | Protocol | Call direction | Encoding | Result format | Interface description | Access restricted|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -230,8 +230,8 @@
 
 ### Edit External Account
 #### Interface Description
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/mail/external/{id}.json					
-- URL(Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail/external/{id}.json			
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/openapi/v1/mail/external/{id}.json
+- URL(Dev): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/openapi/v1/mail/external/{id}.json
 
 |Interface name | Protocol | Call direction | Encoding | Result format | Interface description | Access restricted|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -308,8 +308,8 @@
 
 ### Enable External Account
 #### Interface Description
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/mail/external/{id}/enable.json			
-- URL(Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail/external/{id}/enable.json			
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/openapi/v1/mail/external/{id}/enable.json
+- URL(Dev): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/openapi/v1/mail/external/{id}/enable.json
 
 |Interface name | Protocol | Call direction | Encoding | Result format | Interface description | Access restricted|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -362,8 +362,8 @@
 
 ### Disable External Account
 #### Interface Description
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/mail/external/{id}/disable.json			
-- URL(Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail/external/{id}/disable.json				
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/openapi/v1/mail/external/{id}/disable.json
+- URL(Dev): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/openapi/v1/mail/external/{id}/disable.json
 
 |Interface name | Protocol | Call direction | Encoding | Result format | Interface description | Access restricted|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -416,8 +416,8 @@
 
 ### Delete External Account
 #### Interface Description
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/mail/external/{id}.json			
-- URL(Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail/external/{id}.json				
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/openapi/v1/mail/external/{id}.json
+- URL(Dev): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/openapi/v1/mail/external/{id}.json
 
 |Interface name | Protocol | Call direction | Encoding | Result format | Interface description | Access restricted|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -450,8 +450,8 @@
 
 ### Save email information
 #### Interface Description
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/mail.json			
-- URL(Dev):	https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail.json			
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/openapi/v1/mail.json			
+- URL(Dev):	https://{domain}.oc.alpha-nhncloud.com/{serviceId}/openapi/v1/mail.json			
 
 |Interface name | Protocol | Call direction | Encoding | Result format | Interface description | Access restricted|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -463,14 +463,14 @@
 |Service ID	        |serviceId	   |String	|O	|Service ID|
 |Email Setting Information	 |request body	|String	 |O	 |Email Setting Information(JSON)|
 |	                 |name	        |String	 |	 |Sender name(Length:min = 0, max = 45)|
-|	                 |displayMail	  |String	 |	 |Sender address(Example：noreply@oc.toast.com)|
+|	                 |displayMail	  |String	 |	 |Sender address(Example：noreply@oc.nhncloud.com)|
 |	                 |template	    |String	 |	 |Email layout. Example) \<p\>\#\{content\}\<\/p\> This mail layout is applied in all sent mail. #{content} tag must be included.|
 
 #### Request Body
 ```
 {
     "name":"noreply",
-    "displayMail":"noreply@oc.toast.com",
+    "displayMail":"noreply@oc.nhncloud.com",
     "template":"<p>#{content}</p>"
 }
 ```

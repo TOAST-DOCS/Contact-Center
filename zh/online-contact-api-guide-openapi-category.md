@@ -1,15 +1,18 @@
 ## Contact Center > Online Contact > API Guide for Developers > Inquiry
 
 ### Submission Type List
+
 #### Interface Description
-- URL: https://{domain}.oc.toast.com/{serviceId}/api/v2/ticket/categories.json
-- URL(Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/api/v2/ticket/categories.json
+
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/api/v2/ticket/categories.json
+- URL(Dev): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/api/v2/ticket/categories.json
 
 |Interface name | Protocol | Call direction | Encoding | Result format | Interface description | Access restriction|
 |------------|-------|--------|-----|--------|--------------|------------|
 |Submission Type List |HTTPS  |GET    |UTF-8|JSON    |Inquire list of in-service submission types|No need   |
 
 #### Request Parameters
+
 |Name |Variable |Data type |Variable type|Required | Description|
 |-----|---------|----------|-------------|---------|------------|
 |Service ID       |serviceId|String   |path|O|{serviceId} which is set in URL path|
@@ -18,6 +21,7 @@
 |Language Code        |language |String|query |X |Service help center default language code|
 
 #### Result Data
+
 |Name |Variable |Data type |Description|
 |-----|----|-----------|------|
 |result.contents|categoryId|Integer|Submission type ID|
@@ -29,6 +33,7 @@
 |                |languages|Object    |Multilingual names of categories|
 
 #### Response Body
+
 ```
 {
     "header": {
@@ -149,15 +154,18 @@
 ```
 
 ### List of Submission Type fields
+
 #### Interface Description
-- URL: https://{domain}.oc.toast.com/{serviceId}/api/v2/ticket/field/user/{categoryId}.json
-- URL(Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/api/v2/ticket/field/user/{categoryId}.json
+
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/api/v2/ticket/field/user/{categoryId}.json
+- URL(Dev): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/api/v2/ticket/field/user/{categoryId}.json
 
 |Interface name | Protocol | Call direction | Encoding | Result format | Interface description | Access restriction|
 |------------|-------|--------|-----|--------|--------------|------------|
 |List of Submission Type fields |HTTPS  |GET    |UTF-8|JSON    |Check the list of corresponding fields through the submission type|Common authentication   |
 
 #### Request Parameters
+
 |Name |Variable |Data type |Variable type|Required | Description|
 |-----|---------|----------|-------------|---------|------------|
 |Service ID   |serviceId|String  |path |O|{serviceId} which is set in URL path|
@@ -165,6 +173,7 @@
 |Language Code    |language|String   |query |X|Service help center default language code|
 
 #### Result Data
+
 |Name |Variable |Data type |Description|
 |-----|----|-----------|------|
 |result.contents|fieldId    |Integer|Customer field ID|
@@ -181,6 +190,7 @@
 |                |value        |String    |User input value|
 
 #### Response Body
+
 ```
 {
     "header": {
@@ -488,21 +498,25 @@
 ```
 
 ### Upload Ticket Attachments
+
 #### Interface Description
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/ticket/attachments/upload.json
-- URL(Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/ticket/attachments/upload.json
+
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/openapi/v1/ticket/attachments/upload.json
+- URL(Dev): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/openapi/v1/ticket/attachments/upload.json
 
 |Interface name | Protocol | Call direction | Encoding | Result format | Interface description | Access restriction|
 |------------|-------|--------|-----|--------|--------------|------------|
 |Upload Ticket Attachments |HTTPS  |POST    |UTF-8|JSON    |Upload a file to the server|Common Authentication   |
 
 #### Request Parameters
+
 |Name |Variable |Data type |Variable type|Required | Description|
 |-----|---------|----------|-------------|---------|------------|
 |Service ID    |serviceId|String|path    |O|{serviceId} which is set in URL path|
 |File|file    |File|formData|O|Submit file through form. Supported file types: jpg, png, gif, bmp, jpeg, tif, tiff, pdf, txt, hwp, xls, xlsx, doc, docx, ppt, pptx, mp3, wav, zip. Size<10M, File name length<100|
 
 #### Result Data(Success)
+
 |Name |Variable |Data type |Description|
 |-----|----|-----------|------|
 |result.content|attachmentId|String|Attachment ID|
@@ -513,6 +527,7 @@
 |            |createdDt    |Long|Attached time|
 
 #### Response Body(Success)
+
 ```
   "header": {
     "resultCode": 200,
@@ -533,12 +548,14 @@
 ```
 
 #### Result Data(Failure)
+
 |Name |Variable |Data type |Description|
 |-----|----|-----------|------|
 |result.content|exception|String|Fixed value：OcException|
 |            |message|String|Error message(You can only attach files up to 10MB. / File name maximum length exceeded.(100) / This file format cannot be attached.|
 
 #### Response Body(Failure)
+
 ```
 {
   "header": {
@@ -556,15 +573,18 @@
 ```
 
 ### Create Ticket
+
 #### Interface Description
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/ticket.json
-- URL(Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/ticket.json
+
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/openapi/v1/ticket.json
+- URL(Dev): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/openapi/v1/ticket.json
 
 |Interface name | Protocol | Call direction | Encoding | Result format | Interface description | Access restriction|
 |------------|-------|--------|-----|--------|--------------|------------|
 |Create Ticket |HTTPS  |POST    |UTF-8|JSON    |Create new ticket|Common authentication   |
 
 #### Request Parameters
+
 |Name |Variable |Data type |Variable type|Required | Description|
 |-----|---------|----------|-------------|---------|------------|
 |Service ID|serviceId        |String |path|O|{serviceId} which is set in URL path|
@@ -600,6 +620,7 @@ The format of the userFields.value parameter by field type is as follows.
 - agree(Agree to the terms): true, false
 
 #### Request Body
+
 ```
 {
     "categoryId": "2542", 
@@ -665,6 +686,7 @@ The format of the userFields.value parameter by field type is as follows.
 ```
 
 #### Result Data(Success)
+
 |Name |Variable |Data type |Description|
 |-----|----|-----------|------|
 |result.content|ticketId    |String|Ticket ID|
@@ -683,6 +705,7 @@ The format of the userFields.value parameter by field type is as follows.
 |            |attachments.createdDt   |String|Updated time|
 
 #### Response Body(Success)
+
 ```
 {
   "header": {
@@ -720,6 +743,7 @@ The format of the userFields.value parameter by field type is as follows.
 ```
 
 #### Result Data(Failure)
+
 |Name |Variable |Data type |Description|
 |-----|----|-----------|------|
 |result.contents|objectName|String|User field: field code|
@@ -729,6 +753,7 @@ The format of the userFields.value parameter by field type is as follows.
 |               |message|String|"validate.ticket." + objectName + "." + validate|
 
 #### Response Body(Failure)
+
 ```
 {
   "header": {
@@ -780,5 +805,17 @@ The format of the userFields.value parameter by field type is as follows.
       }
     ]
   }
+}
+```
+
+#### Response Body(Creation failed due to the application of spam policy)
+```
+{
+    "header": {
+        "resultCode": 1002,
+        "resultMessage": "The number of inquiries has exceeded the limit. Please try again later.",
+        "isSuccessful": false
+    },
+    "result": {…...}
 }
 ```

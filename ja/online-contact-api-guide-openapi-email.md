@@ -2,18 +2,18 @@
 
 ### 代表アカウント作成
 #### インターフェース説明
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/mail/create.json
-- URL(開発): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail/create.json
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/openapi/v1/mail/create.json
+- URL(開発): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/openapi/v1/mail/create.json
 
 |インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
-|代表アカウント作成|HTTPS  |POST    |UTF-8|JSON    |サービス代表アカウント作成. (作成後は修正不可) 形式: \*\*@oc.toast.com|共通認証|
+|代表アカウント作成|HTTPS  |POST    |UTF-8|JSON    |サービス代表アカウント作成. (作成後は修正不可) 形式: \*\*@oc.nhncloud.com|共通認証|
 
 #### リクエストパラメータ定義
 |名称|変数|データタイプ|必須|説明|
 |-----|-----|----------|-----|----|
 |サービスID	|serviceId	|String	|O	|サービスID，URL PATH内に設定した{serviceId}|
-|メール情報	|mail	|String	|O	|メール情報(例:mail@oc.toast.comのmail部分)|
+|メール情報	|mail	|String	|O	|メール情報(例:mail@oc.nhncloud.comのmail部分)|
 
 #### Query String
 - mail=mail
@@ -23,7 +23,7 @@
 |-----|-----|----------|-----|----|
 |result.content	|displayMail	|String	|	  |発信者アドレス|
 |	              |external	    |String	|	  |外部アカウントリスト|
-|	              |mail	        |String	|O	|代表アカウントアドレス : mail@oc.toast.com|
+|	              |mail	        |String	|O	|代表アカウントアドレス : mail@oc.nhncloud.com|
 |	              |name	        |String	|	  |発信者名|
 |	              |template	    |String	|	  |メール形式|
 |	              |updatedDt	  |Long	  |	  |アップデート時間|
@@ -38,9 +38,9 @@
     },
     "result":{
         "content":{
-            "displayMail":"noreply@toast.com",
+            "displayMail":"noreply@nhncloud.com",
             "external":{},
-            "mail":"mail@oc.toast.com",
+            "mail":"mail@oc.nhncloud.com",
             "name":"noreply",
             "template":"<p>#{content}</p>",
             "updatedDt":1597369998000
@@ -51,8 +51,8 @@
 
 ### メール情報照会
 #### インターフェース説明
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/mail.json
-- URL(開発): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail.json
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/openapi/v1/mail.json
+- URL(開発): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/openapi/v1/mail.json
 
 |インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -68,7 +68,7 @@
 |----|-----|-----------|-----|----|
 |result.content	|displayMail	|String	|	  |発信者アドレス|
 |	              |external	    |String	|	  |外部アカウントリスト|
-|	              |mail	        |String	|O	|代表アカウントアドレス : mail@oc.toast.com|
+|	              |mail	        |String	|O	|代表アカウントアドレス : mail@oc.nhncloud.com|
 |	              |name	        |String	|	  |発信者名|
 |	              |template	    |String	|	  |メール形式|
 |	              |updatedDt	  |Long	  |	  |アップデート時間|
@@ -83,9 +83,9 @@
     },
     "result":{
         "content":{
-            "displayMail":"noreply@toast.com",
+            "displayMail":"noreply@nhncloud.com",
             "external":{},
-            "mail":"mail@oc.toast.com",
+            "mail":"mail@oc.nhncloud.com",
             "name":"noreply",
             "template":"<p>#{content}</p>",
             "updatedDt":1597371255000
@@ -96,8 +96,8 @@
 
 ### 外部アカウント有効性チェック
 #### インターフェース説明
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/mail/external/verify.json
-- URL(開発): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail/external/verify.json
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/openapi/v1/mail/external/verify.json
+- URL(開発): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/openapi/v1/mail/external/verify.json
 
 |インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -154,8 +154,8 @@
 
 ### 外部アカウント登録
 #### インターフェース説明
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/mail/external.json
-- URL(開発): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail/external.json
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/openapi/v1/mail/external.json
+- URL(開発): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/openapi/v1/mail/external.json
 
 |インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -230,8 +230,8 @@
 
 ### 外部アカウント修正
 #### インターフェース説明
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/mail/external/{id}.json
-- URL(開発): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail/external/{id}.json
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/openapi/v1/mail/external/{id}.json
+- URL(開発): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/openapi/v1/mail/external/{id}.json
 
 |インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -308,8 +308,8 @@
 
 ### 外部アカウント有効化
 #### インターフェース説明
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/mail/external/{id}/enable.json
-- URL(開発): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail/external/{id}/enable.json
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/openapi/v1/mail/external/{id}/enable.json
+- URL(開発): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/openapi/v1/mail/external/{id}/enable.json
 
 |インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -362,8 +362,8 @@
 
 ### 外部アカウント無効化
 #### インターフェース説明
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/mail/external/{id}/disable.json
-- URL(開発): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail/external/{id}/disable.json
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/openapi/v1/mail/external/{id}/disable.json
+- URL(開発): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/openapi/v1/mail/external/{id}/disable.json
 
 |インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -417,8 +417,8 @@
 
 ### 外部アカウント削除
 #### インターフェース説明
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/mail/external/{id}.json
-- URL(開発): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail/external/{id}.json
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/openapi/v1/mail/external/{id}.json
+- URL(開発): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/openapi/v1/mail/external/{id}.json
 
 |インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -451,8 +451,8 @@
 
 ### メール情報保存
 #### インターフェース説明
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/mail.json
-- URL(開発): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail.json	
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/openapi/v1/mail.json
+- URL(開発): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/openapi/v1/mail.json	
 
 |インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -464,14 +464,14 @@
 |サービスID	        |serviceId	   |String	|O	|サービスID|
 |メール設定情報	 |request body	|String	 |O	 |メール設定情報(JSON)|
 |	                 |name	        |String	 |	 |発信者名(길이:min = 0, max = 45)|
-|	                 |displayMail	  |String	 |	 |発信者アドレス(例：noreply@oc.toast.com)|
+|	                 |displayMail	  |String	 |	 |発信者アドレス(例：noreply@oc.nhncloud.com)|
 |	                 |template	    |String	 |	 |メールレイアウト. 例) \<p\>\#\{content\}\<\/p\> このメールレイアウトは、すべてのメールに適用されます。 #{content}タグは必ず追加してください。|
 
 #### Request Body
 ```
 {
     "name":"noreply",
-    "displayMail":"noreply@oc.toast.com",
+    "displayMail":"noreply@oc.nhncloud.com",
     "template":"<p>#{content}</p>"
 }
 ```

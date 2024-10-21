@@ -2,8 +2,8 @@
 
 ### オペレーター一覧
 #### インターフェース説明
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/users.json
-- URL(開発):	https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/users.json
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/openapi/v1/users.json
+- URL(開発): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/openapi/v1/users.json
 
 |インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|
 |------------|-------|--------|-----|--------|--------------|
@@ -51,8 +51,8 @@
 
 ### オペレーター情報取得
 #### インターフェース説明
-- URL:	https://{domain}.oc.toast.com/{serviceId}/openapi/v1/users/{id}.json			
-- URL(開発):	https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/users/{id}.json			
+- URL:	https://{domain}.oc.nhncloud.com/{serviceId}/openapi/v1/users/{id}.json
+- URL(開発): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/openapi/v1/users/{id}.json
 
 |インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|
 |------------|-------|--------|-----|--------|--------------|
@@ -96,8 +96,8 @@
 
 ### オペレーター追加
 #### インターフェース説明
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/adduser.json
-- URL(開発): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/adduser.json
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/openapi/v1/adduser.json
+- URL(開発): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/openapi/v1/adduser.json
 
 |インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|
 |------------|-------|--------|-----|--------|--------------|
@@ -141,8 +141,8 @@
 
 ### オペレーター権限変更
 #### インターフェース説明
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/users/{id}.json
-- URL(開発): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/users/{id}.json
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/openapi/v1/users/{id}.json
+- URL(開発): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/openapi/v1/users/{id}.json
 
 |インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|
 |------------|-------|--------|-----|--------|--------------|
@@ -186,8 +186,8 @@
 
 ### オペレーター削除
 #### インターフェース説明
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/users/{id}.json
-- URL(開発): https://{domain}.alpha-oc.toast.com /{serviceId}/openapi/v1/users/{id}.json
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/openapi/v1/users/{id}.json
+- URL(開発): https://{domain}.oc.alpha-nhncloud.com /{serviceId}/openapi/v1/users/{id}.json
 
 |インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|
 |------------|-------|--------|-----|--------|--------------|
@@ -196,8 +196,8 @@
 #### リクエストパラメータ定義
 |名称|変数|データタイプ|必須|説明|
 |-----|-----|----------|-----|----|
-|サービスID	|serviceId	|String	|O	|URL PATH内に設定した{serviceId}|
-|ユーザーID	|id	|Int	|O	|URL PATH内に設定した{id}|
+|サービスID|serviceId|String|O|URL PATH内に設定した{serviceId}|
+|ユーザーID|id|Int|O|URL PATH内に設定した{id}|
 
 #### 結果データ
 - なし

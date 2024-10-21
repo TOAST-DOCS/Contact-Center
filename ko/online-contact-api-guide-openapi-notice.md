@@ -13,8 +13,8 @@
 #### 요청 파라미터 정의
 |명칭	|변수	|데이터 타입	|변수 유형	|필수 |설명|
 |----|-----|------------|-----------|-----|---|
-|서비스 ID	|serviceId	|String	|path	  |O	|URL PATH 내에 설정한{serviceId}|
-|언어코드	|language	  |String	|query	|X	|서비스 헬프센터 기본 언어 코드|
+|서비스 ID|serviceId|String|path  |O|URL PATH 내에 설정한{serviceId}|
+|언어코드|language  |String|query|X|서비스 헬프센터 기본 언어 코드|
 
 #### 결과 데이터
 |명칭	|변수	|데이터 타입	|설명|

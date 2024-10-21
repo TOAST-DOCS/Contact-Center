@@ -17,7 +17,7 @@
 ### 全体的なプロセス(GET方式)
 ① USERがAPP内でヘルプセンターに接続します。
 ② 顧客会社のAPPは、ヘルプセンター呼び出し時に以下のURL形式で呼び出します。
-- https://**{org}**.oc.toast.com/**{service}**/hc/?usercode=**{ユーザーID}**&username=**{ユーザー名前}**&email=**{ユーザーメールアドレス}**&phone=**{ユーザー電話番号}**&token=**{認証トークン}**
+- https://**{org}**.oc.nhncloud.com/**{service}**/hc/?usercode=**{ユーザーID}**&username=**{ユーザー名前}**&email=**{ユーザーメールアドレス}**&phone=**{ユーザー電話番号}**&token=**{認証トークン}**
 ③ ヘルプセンターから「Token検証URL」を呼び出します。（ここで、「Token検証URL」は顧客会社が下記の明細書を参考に開発後、Online Contactの会員認証画面に登録してください。）
 ④ トークン検証後、正常である場合は「お問い合わせ」または「お問い合わせ履歴」ページにアクセスします。この際、検証に失敗した場合、お問い合わせは非会員として受け付けられます。
 
@@ -85,15 +85,15 @@ public static void main(String[] args) throws Exception {
 #### インターフェース説明
 URL
 
-- https://{org}.oc.toast.com/{service}/hc/?usercode=aaaabbb&username=yzg&email=yzgname@163.com&phone=12345678901&time=12345678&token=8NPaBegAfbSvh1Lna9M0I1wBqjnoRyKO2r2izhuEAng%3d
-- https://{org}.oc.toast.com/{service}/hc/ticket/?usercode=aaaabbb&username=yzg&email=yzgname@163.com&phone=12345678901&time=12345678&token=8NPaBegAfbSvh1Lna9M0I1wBqjnoRyKO2r2izhuEAng%3d
-- https://{org}.oc.toast.com/{service}/hc/ticket/list/?usercode=aaaabbb&username=yzg&email=yzgname@163.com&phone=12345678901&time=12345678&token=8NPaBegAfbSvh1Lna9M0I1wBqjnoRyKO2r2izhuEAng%3d
+- https://{org}.oc.nhncloud.com/{service}/hc/?usercode=aaaabbb&username=yzg&email=yzgname@163.com&phone=12345678901&time=12345678&token=8NPaBegAfbSvh1Lna9M0I1wBqjnoRyKO2r2izhuEAng%3d
+- https://{org}.oc.nhncloud.com/{service}/hc/ticket/?usercode=aaaabbb&username=yzg&email=yzgname@163.com&phone=12345678901&time=12345678&token=8NPaBegAfbSvh1Lna9M0I1wBqjnoRyKO2r2izhuEAng%3d
+- https://{org}.oc.nhncloud.com/{service}/hc/ticket/list/?usercode=aaaabbb&username=yzg&email=yzgname@163.com&phone=12345678901&time=12345678&token=8NPaBegAfbSvh1Lna9M0I1wBqjnoRyKO2r2izhuEAng%3d
 
 URL(開発)
 
-- https://{domain}.alpha-oc.toast.com/{service}/hc/?usercode=aaaabbb&username=yzg&email=yzgname@163.com&phone=12345678901&time=12345678&token=8NPaBegAfbSvh1Lna9M0I1wBqjnoRyKO2r2izhuEAng%3d
-- https://{domain}.alpha-oc.toast.com/{service}/hc/ticket/?usercode=aaaabbb&username=yzg&email=yzgname@163.com&phone=12345678901&time=12345678&token=8NPaBegAfbSvh1Lna9M0I1wBqjnoRyKO2r2izhuEAng%3d
-- https://{domain}.alpha-oc.toast.com/{service}/hc/ticket/list/?usercode=aaaabbb&username=yzg&email=yzgname@163.com&phone=12345678901&time=12345678&token=8NPaBegAfbSvh1Lna9M0I1wBqjnoRyKO2r2izhuEAng%3d
+- https://{domain}.oc.alpha-nhncloud.com/{service}/hc/?usercode=aaaabbb&username=yzg&email=yzgname@163.com&phone=12345678901&time=12345678&token=8NPaBegAfbSvh1Lna9M0I1wBqjnoRyKO2r2izhuEAng%3d
+- https://{domain}.oc.alpha-nhncloud.com/{service}/hc/ticket/?usercode=aaaabbb&username=yzg&email=yzgname@163.com&phone=12345678901&time=12345678&token=8NPaBegAfbSvh1Lna9M0I1wBqjnoRyKO2r2izhuEAng%3d
+- https://{domain}.oc.alpha-nhncloud.com/{service}/hc/ticket/list/?usercode=aaaabbb&username=yzg&email=yzgname@163.com&phone=12345678901&time=12345678&token=8NPaBegAfbSvh1Lna9M0I1wBqjnoRyKO2r2izhuEAng%3d
 
 |インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|
 |------------|-------|--------|-----|--------|--------------|

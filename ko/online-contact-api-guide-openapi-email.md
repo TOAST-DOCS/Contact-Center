@@ -2,18 +2,18 @@
 ### 대표계정 생성
 #### 인터페이스 설명
 
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/mail/create.json
-- URL(개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail/create.json
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/openapi/v1/mail/create.json
+- URL(개발): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/openapi/v1/mail/create.json
 
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
 |------------|-------|--------|-----|--------|--------------|------------|
-|대표계정 생성|HTTPS  |POST    |UTF-8|JSON    |서비스 대표계정 생성. (생성 후 수정 불가) 형식: **@oc.toast.com|공통 인증|
+|대표계정 생성|HTTPS  |POST    |UTF-8|JSON    |서비스 대표계정 생성. (생성 후 수정 불가) 형식: **@oc.nhncloud.com|공통 인증|
 
 #### 요청 파라미터 정의
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |-----|-----|----------|-----|----|
-|서비스 ID	|serviceId	|String	|O	|서비스 ID，URL PATH 내에 설정한{serviceId}|
-|이메일 정보	|mail	|String	|O	|이메일 정보(예:mail@oc.toast.com의 mail 부분)|
+|서비스 ID|serviceId|String|O|서비스 ID，URL PATH 내에 설정한{serviceId}|
+|이메일 정보|mail|String|O|이메일 정보(예:mail@oc.nhncloud.com의 mail 부분)|
 
 #### Query String
 
@@ -24,7 +24,7 @@
 |-----|-----|----------|-----|----|
 |result.content	|displayMail	|String	|X	  |발신자 주소|
 |	              |external	    |String	|X	  |외부계정 목록|
-|	              |mail	        |String	|O	|대표계정 주소 : mail@oc.toast.com|
+|	              |mail	        |String	|O	|대표계정 주소 : mail@oc.nhncloud.com|
 |	              |name	        |String	|X	  |발신자 이름|
 |	              |template	    |String	|X	  |이메일 형식|
 |	              |updatedDt	  |Long	  |X	  |업데이트 시간|
@@ -39,9 +39,9 @@
     },
     "result":{
         "content":{
-            "displayMail":"noreply@toast.com",
+            "displayMail":"noreply@nhncloud.com",
             "external":{},
-            "mail":"mail@oc.toast.com",
+            "mail":"mail@oc.nhncloud.com",
             "name":"noreply",
             "template":"<p>#{content}</p>",
             "updatedDt":1597369998000
@@ -53,8 +53,8 @@
 ### 이메일 정보 조회
 #### 인터페이스 설명
 
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/mail.json
-- URL(개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail.json
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/openapi/v1/mail.json
+- URL(개발): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/openapi/v1/mail.json
 
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -63,14 +63,14 @@
 #### 요청 파라미터 정의
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |-----|-----|----------|-----|----|
-|서비스 ID	|serviceId	|String	|O	|서비스 ID，URL PATH 내에 설정한{serviceId}|
+|서비스 ID|serviceId|String|O|서비스 ID，URL PATH 내에 설정한{serviceId}|
 
 #### 결과 데이터
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |----|-----|-----------|-----|----|
 |result.content	|displayMail	|String	 |X	|발신자 주소|
 |	              |external	    |String	 |X	|외부계정 목록|
-|       	      |mail	        |String	 |O	|대표계정 주소 : mail@oc.toast.com|
+|       	      |mail	        |String	 |O	|대표계정 주소 : mail@oc.nhncloud.com|
 |	              |name	        |String	 |X	|발신자 이름|
 |	              |template	    |String	 |X	|이메일 레이아웃|
 |	              |updatedDt	  |Long		 |X  |업데이트 시간|
@@ -85,9 +85,9 @@
     },
     "result":{
         "content":{
-            "displayMail":"noreply@toast.com",
+            "displayMail":"noreply@nhncloud.com",
             "external":{},
-            "mail":"mail@oc.toast.com",
+            "mail":"mail@oc.nhncloud.com",
             "name":"noreply",
             "template":"<p>#{content}</p>",
             "updatedDt":1597371255000
@@ -99,8 +99,8 @@
 ### 외부계정 유효성 체크
 #### 인터페이스 설명
 
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/mail/external/verify.json
-- URL(개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail/external/verify.json
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/openapi/v1/mail/external/verify.json
+- URL(개발): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/openapi/v1/mail/external/verify.json
 
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -109,7 +109,7 @@
 #### 요청 파라미터 정의
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |-----|-----|----------|-----|----|
-|서비스 ID	     |serviceId	   |String	|O	|서비스 ID，URL PATH 내에 설정한{serviceId}|
+|서비스 ID     |serviceId   |String|O|서비스 ID，URL PATH 내에 설정한{serviceId}|
 |외부 계정 정보	|request body	|String	  |O	|외부계정 정보(JSON)|
 |	             |id	         |Integer	 |X   |외부계정 ID (신규 생성시에는 필요 없고 수정 시에만 필요)|
 |	             |name	       |String	 |O	 |외부계정 구분 명칭(길이:min=1, max=20)|
@@ -139,7 +139,7 @@
 #### 결과 데이터
 |명칭	   |변수	   |데이터 타입	|필수	|설명|
 |-------|--------|-------------|-----|---|
-|result	|content	|String    	 |O	   |SUCCESS(성공)|
+|result|content|String     |O   |SUCCESS(성공)|
 
 #### Response Body
 ```
@@ -158,8 +158,8 @@
 ### 외부계정 등록
 #### 인터페이스 설명
 
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/mail/external.json
-- URL(개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail/external.json
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/openapi/v1/mail/external.json
+- URL(개발): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/openapi/v1/mail/external.json
 
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -168,7 +168,7 @@
 #### 요청 파라미터 정의
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |-----|-----|----------|-----|---|
-|서비스 ID	     |serviceId	    |String	  |O	  |서비스 ID，URL PATH 내에 설정한{serviceId}|
+|서비스 ID     |serviceId    |String  |O  |서비스 ID，URL PATH 내에 설정한{serviceId}|
 |외부 계정 정보	 |request body	|Stirng 	|O	  |외부계정 정보(JSON)|
 |	              |name	         |String	 |O	   |외부계정 구분 명칭(길이:min=1, max=20)|
 |	              |host	         |Stirng	 |O	   |메일 서버|
@@ -194,7 +194,7 @@
 #### 결과 데이터
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |-----|----|-----------|-----|----|
-|result.content	|id	      |Integer	|X	  |외부계정 ID|
+|result.content|id      |Integer|X  |외부계정 ID|
 |               |name	    |String	  |O	|외부계정 구분 명칭|
 |	              |active	  |Boolean	|O	|외부계정 상태(고정 값:true)|
 |	              |host	    |String	  |O	|메일 서버|
@@ -235,8 +235,8 @@
 ### 외부계정 수정
 #### 인터페이스 설명
 
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/mail/external/{id}.json
-- URL(개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail/external/{id}.json
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/openapi/v1/mail/external/{id}.json
+- URL(개발): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/openapi/v1/mail/external/{id}.json
 
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -245,7 +245,7 @@
 #### 요청 파라미터 정의
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |-----|-----|----------|-----|---|
-|서비스 ID	     |serviceId	    |String	  |O	  |서비스 ID，URL PATH 내에 설정한{serviceId}|
+|서비스 ID     |serviceId    |String  |O  |서비스 ID，URL PATH 내에 설정한{serviceId}|
 |외부계정 ID	   |id	         |Integer   |O	 |외부계정 ID,URL PATH내에 설정된 {id}|
 |외부계정 정보	 |request body	|String	  |O	  |외부계정 정보(JSON)|
 |	              |name	         |String	 |O	   |외부계정 구분 명칭(길이:min=1, max=20)|
@@ -273,7 +273,7 @@
 #### 결과 데이터
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |----|-----|------------|----|----|
-|result.content	|id	    |Integer	|X	  |외부계정 ID|
+|result.content|id    |Integer|X  |외부계정 ID|
 |               |name	  |String	  |O	|외부계정 구분 명칭|
 |	              |active	|Boolean	|O	|외부계정 상태(true:활성화,false:비활성화)|
 |	              |host	  |String	  |O	|메일 서버|
@@ -314,8 +314,8 @@
 ### 외부계정 활성화
 #### 인터페이스 설명
 
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/mail/external/{id}/enable.json
-- URL(개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail/external/{id}/enable.json
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/openapi/v1/mail/external/{id}/enable.json
+- URL(개발): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/openapi/v1/mail/external/{id}/enable.json
 
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -324,13 +324,13 @@
 #### 요청 파라미터 정의
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |-----|-----|----------|-----|---|
-|서비스 ID	   |serviceId	|String	 |O	 |서비스 ID，URL PATH 내에 설정한{serviceId}|
-|외부계정 ID	|id	       |Integer	|O	|외부계정 ID,URL PATH내에 설정된 {id}|
+|서비스 ID   |serviceId|String |O |서비스 ID，URL PATH 내에 설정한{serviceId}|
+|외부계정 ID|id       |Integer|O|외부계정 ID,URL PATH내에 설정된 {id}|
 
 #### 결과 데이터
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |-----|-----|----------|-----|----|
-|result.content	|id	        |Integer  |X		  |외부계정 ID|
+|result.content|id        |Integer  |X  |외부계정 ID|
 |	              |name	      |String	  |O	  |외부계정 구분 명칭|
 |	              |active	    |Boolean	|O	  |외부계정 상태(고정 값 : true)|
 |               |host	      |String	  |O	  |메일 서버|
@@ -369,8 +369,8 @@
 ### 외부계정 비활성화
 #### 인터페이스 설명
 
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/mail/external/{id}/disable.json
-- URL(개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail/external/{id}/disable.json
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/openapi/v1/mail/external/{id}/disable.json
+- URL(개발): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/openapi/v1/mail/external/{id}/disable.json
 
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -379,13 +379,13 @@
 #### 요청 파라미터 정의
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |-----|-----|----------|-----|---|
-|서비스 ID	   |serviceId	|String	 |O	 |서비스 ID，URL PATH 내에 설정한{serviceId}|
-|외부계정 ID	|id	       |Integer	|O	|외부계정 ID,URL PATH내에 설정된 {id}|
+|서비스 ID   |serviceId|String |O |서비스 ID，URL PATH 내에 설정한{serviceId}|
+|외부계정 ID|id       |Integer|O|외부계정 ID,URL PATH내에 설정된 {id}|
 
 #### 결과 데이터
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |-----|----|-----------|-----|----|
-|result.content	|id	        |Integer	|X	  |외부계정 ID|
+|result.content|id        |Integer|X  |외부계정 ID|
 |	              |name	      |String	  |O	|외부계정 구분 명칭|
 |	              |active	    |Boolean	|O	|외부계정 상태(고정 값 : false)|
 |	              |host	      |String 	|O	|메일 서버|
@@ -423,8 +423,8 @@
 
 ### 외부계정 삭제
 #### 인터페이스 설명
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/mail/external/{id}.json
-- URL(개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail/external/{id}.json
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/openapi/v1/mail/external/{id}.json
+- URL(개발): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/openapi/v1/mail/external/{id}.json
 
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -433,8 +433,8 @@
 #### 요청 파라미터 정의
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |-----|-----|----------|-----|---|
-|서비스 ID	   |serviceId	|String	 |O	 |서비스 ID，URL PATH 내에 설정한{serviceId}|
-|외부계정 ID	|id	       |Integer	|O	|외부계정 ID,URL PATH내에 설정된 {id}|
+|서비스 ID   |serviceId|String |O |서비스 ID，URL PATH 내에 설정한{serviceId}|
+|외부계정 ID|id       |Integer|O|외부계정 ID,URL PATH내에 설정된 {id}|
 
 #### 결과 데이터
 |명칭	|변수	|데이터 타입	|필수	|설명|
@@ -457,8 +457,8 @@
 
 ### 이메일 정보 저장
 #### 인터페이스 설명
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/mail.json
-- URL(개발): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/mail.json
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/openapi/v1/mail.json
+- URL(개발): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/openapi/v1/mail.json
 
 |인터페이스 명|프로토콜|호출방향|인코딩|결과 형식|인터페이스 설명|접근제한 여부|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -467,17 +467,17 @@
 #### 요청 파라미터 정의
 |명칭	|변수	|데이터 타입	|필수	|설명|
 |-----|-----|----------|-----|---|
-|서비스 ID	        |serviceId	   |String	|O	|서비스 ID|
-|이메일 설정 정보	 |request body	|String	 |O	 |이메일 설정 정보(JSON)|
-|	                 |name	        |String	 |X	 |발신자 이름(길이:min = 0, max = 45)|
-|	                 |displayMail	  |String	 |X	 |발신자 주소(예：noreply@oc.toast.com)|
-|	                 |template	    |String	 |X	 |이메일 레이아웃. 예) \<p\>\#\{content\}\<\/p\> 해당 이메일 레이아웃은 모든 이메일에 적용됩니다. #{content} 태그는 반드시 추가해야 합니다.|
+|서비스 ID        |serviceId   |String|O|서비스 ID|
+|이메일 설정 정보 |request body|String |O |이메일 설정 정보(JSON)|
+|                 |name        |String |X |발신자 이름(길이:min = 0, max = 45)|
+|                |displayMail  |String |X |발신자 주소(예：noreply@oc.nhncloud.com)|
+|                 |template    |String |X |이메일 레이아웃. 예) \<p\>\#\{content\}\<\/p\> 해당 이메일 레이아웃은 모든 이메일에 적용됩니다. #{content} 태그는 반드시 추가해야 합니다.|
 
 #### Request Body
 ```
 {
     "name":"noreply",
-    "displayMail":"noreply@oc.toast.com",
+    "displayMail":"noreply@oc.nhncloud.com",
     "template":"<p>#{content}</p>"
 }
 ```

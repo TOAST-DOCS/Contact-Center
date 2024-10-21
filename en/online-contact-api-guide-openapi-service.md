@@ -2,8 +2,8 @@
 
 ### Service Details
 #### Interface Description
-- URL: https://{domain}.oc.toast.com/{serviceId}/api/v2/service.json
-- URL(Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/api/v2/service.json
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/api/v2/service.json
+- URL(Dev): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/api/v2/service.json
 
 |Interface name | Protocol | Call direction | Encoding | Result format | Interface description | Access restriction|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -17,15 +17,15 @@
 #### Result Data
 |Name |Variable |Data type |Description|
 |-----|----|-----------|------|
-|result.content	|serviceId	    |String		|Service ID|
-|	            |name	        |String		|Service name|
-|	            |profile	    |String		|Service background image|
-|	            |language	    |String		|Service default language code|
-|	            |languages	    |Array		|Service language list|
-|	            |languages.code	|String		|Language code|
-|	            |languages.name	|String		|Language name|
-|	            |languages.orderNo	|Integer		|Language order|
-|	            |multiLanguage	|Boolean		|Whether the service is multilingual(true: multilingual, false: monolingual)|
+|result.content|serviceId    |String|Service ID|
+|            |name        |String|Service name|
+|            |profile    |String|Service background image|
+|            |language    |String|Service default language code|
+|            |languages    |Array|Service language list|
+|            |languages.code|String|Language code|
+|            |languages.name|String|Language name|
+|            |languages.orderNo|Integer|Language order|
+|            |multiLanguage|Boolean|Whether the service is multilingual(true: multilingual, false: monolingual)|
 
 #### Response Body
 ```
@@ -40,7 +40,7 @@
             "serviceId": "APISample",
             "name": "APISample",
             "profile": {
-                "fileUrl": "https://api-storage.cloud.toast.com/v1/AUTH_226f908c769e48b0bad7d32f9a91717f/service_alpha/WopqM8euoYw89B7i/27316eba2a8a4089b72a9cf18a83e144.png"
+                "fileUrl": "https://api-storage.cloud.nhncloud.com/v1/AUTH_226f908c769e48b0bad7d32f9a91717f/service_alpha/WopqM8euoYw89B7i/27316eba2a8a4089b72a9cf18a83e144.png"
             },
             "language": "ko",
             "languages": [
