@@ -2,8 +2,8 @@
 
 ### Heading List
 #### Interface Description
-- URL: https://{domain}.oc.toast.com/{serviceId}/api/v2/notice/categories.json
-- URL(Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/api/v2/notice/categories.json
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/api/v2/notice/categories.json
+- URL(Dev): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/api/v2/notice/categories.json
 
 |Interface name | Protocol | Call direction | Encoding | Result format | Interface description | Access restriction|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -88,8 +88,8 @@
 
 ### Tag List
 #### Interface Description
-- URL: https://{domain}.oc.toast.com/{serviceId}/api/v2/notice/tags.json
-- URL(Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/api/v2/notice/tags.json
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/api/v2/notice/tags.json
+- URL(Dev): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/api/v2/notice/tags.json
 
 |Interface name | Protocol | Call direction | Encoding | Result format | Interface description | Access restriction|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -147,8 +147,8 @@
 
 ### Notice List
 #### Interface Description
-- URL: https://{domain}.oc.toast.com/{serviceId}/api/v2/notice/list.json
-- URL(Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/api/v2/notice/list.json
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/api/v2/notice/list.json
+- URL(Dev): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/api/v2/notice/list.json
 
 |Interface name | Protocol | Call direction | Encoding | Result format | Interface description | Access restriction|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -330,8 +330,8 @@ The format and example of sort parameter is as follows.
 
 ### Notice Details
 #### Interface Description
-- URL: https://{domain}.oc.toast.com/{serviceId}/api/v2/notice/detail/{id}.json
-- URL(Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/api/v2/notice/detail/{id}.json
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/api/v2/notice/detail/{id}.json
+- URL(Dev): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/api/v2/notice/detail/{id}.json
 
 |Interface name | Protocol | Call direction | Encoding | Result format | Interface description | Access restriction|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -413,8 +413,8 @@ The format and example of sort parameter is as follows.
 
 ### Open and Download Notice Attachments
 #### Interface Description
-- URL: https://{domain}.oc.toast.com/{serviceId}/api/v2/notice/attachments/{id}
-- URL(Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/api/v2/notice/attachments/{id}		
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/api/v2/notice/attachments/{id}
+- URL(Dev): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/api/v2/notice/attachments/{id}
 
 |Interface name | Protocol | Call direction | Encoding | Result format | Interface description | Access restriction|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -423,9 +423,9 @@ The format and example of sort parameter is as follows.
 #### Request Parameters
 |Name |Variable |Data type |Variable type|Required | Description|
 |-----|---------|----------|-------------|---------|------------|
-|Service ID	    |serviceId	|String	  |path	 |O	|{serviceId} which is set in URL path|
-|File ID	|id	         |String	|path	  |O	|Uploaded file ID|
-|Method of Reading	    |type	       |String	|query	|X	|Default value: Open(download: download, open: open)|
+|Service ID    |serviceId|String  |path |O|{serviceId} which is set in URL path|
+|File ID|id         |String|path  |O|Uploaded file ID|
+|Method of Reading    |type       |String|query|X|Default value: Open(download: download, open: open)|
 
 #### Result Data
 File

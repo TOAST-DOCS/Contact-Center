@@ -2,8 +2,8 @@
 
 ### 受付タイプリスト
 #### インターフェース説明
-- URL: https://{domain}.oc.toast.com/{serviceId}/api/v2/ticket/categories.json
-- URL(開発): https://{domain}.alpha-oc.toast.com/{serviceId}/api/v2/ticket/categories.json
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/api/v2/ticket/categories.json
+- URL(開発): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/api/v2/ticket/categories.json
 
 |インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -12,21 +12,21 @@
 #### リクエストパラメータ定義
 |名称|変数|データタイプ|変数タイプ|必須|説明|
 |----|----|----------|----------|----|---|
-|サービスID	       |serviceId	|String	   |path	|O	|サービスID，URL PATH内に設定した{serviceId}|
-|上位カテゴリーID	|parent	     |Integer	|query	 |X	 |上位カテゴリーに所属する下位カテゴリーリスト|
-|下位カテゴリーID	|child	     |Integer	|query	 |X	 |下位カテゴリーに所属する上位カテゴリーリスト|
-|言語コード	        |language	 |String	|query	 |X	 |サービスヘルプセンターの基本言語コード|
+|サービスID       |serviceId|String   |path|O|サービスID，URL PATH内に設定した{serviceId}|
+|上位カテゴリーID|parent    |Integer|query |X |上位カテゴリーに所属する下位カテゴリーリスト|
+|下位カテゴリーID|child     |Integer|query |X |下位カテゴリーに所属する上位カテゴリーリスト|
+|言語コード        |language |String|query |X |サービスヘルプセンターの基本言語コード|
 
 #### 結果データ
 |名称|変数|データタイプ|説明|
 |-----|----|-----------|-------|
-|result.contents	|categoryId	|Integer		|受付タイプID|
-|	                |parent	    |Integer		|上位受付タイプID|
-|	                |name	    |String		    |受付タイプ名|
-|	                |level	    |Integer		|受付タイプレベル(1, 2, 3, 4, 5)|
-|	                |path	    |String		    |受付タイプ経路(\\\\で各レベルのカテゴリーIDを接続)|
-|	                |orderNo	|Integer		|表示手順|
-|	                |languages	|Object		    |カテゴリー多言語名|
+|result.contents|categoryId|Integer|受付タイプID|
+|                |parent    |Integer|上位受付タイプID|
+|                |name    |String    |受付タイプ名|
+|                |level    |Integer|受付タイプレベル(1, 2, 3, 4, 5)|
+|                |path    |String    |受付タイプ経路(\\\\で各レベルのカテゴリーIDを接続)|
+|                |orderNo|Integer|表示手順|
+|                |languages|Object    |カテゴリー多言語名|
 
 #### Response Body
 ```
@@ -150,8 +150,8 @@
 
 ### 受付タイプフィールドリスト
 #### インターフェース説明
-- URL: https://{domain}.oc.toast.com/{serviceId}/api/v2/ticket/field/user/{categoryId}.json
-- URL(開発): https://{domain}.alpha-oc.toast.com/{serviceId}/api/v2/ticket/field/user/{categoryId}.json
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/api/v2/ticket/field/user/{categoryId}.json
+- URL(開発): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/api/v2/ticket/field/user/{categoryId}.json
 
 |インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -160,25 +160,25 @@
 #### リクエストパラメータ定義
 |名称|変数|データタイプ|変数タイプ|必須|説明|
 |----|----|----------|----------|----|---|
-|サービスID	    |serviceId	|String	   |path	 |O	|サービスID，URL PATH内に設定した{serviceId}|
-|受付タイプID	|categoryId	|Integer   |path 	 |O	|受付タイプID, URL PATH内に設定した{categoryId}|
-|言語コード	    |language	|String	   |query	 |X	|サービスヘルプセンターの基本言語コード|
+|サービスID    |serviceId|String   |path |O|サービスID，URL PATH内に設定した{serviceId}|
+|受付タイプID|categoryId|Integer   |path |O|受付タイプID, URL PATH内に設定した{categoryId}|
+|言語コード    |language|String   |query |X|サービスヘルプセンターの基本言語コード|
 
 #### 結果データ
 |名称|変数|データタイプ|説明|
 |-----|----|-----------|-------|
-|result.contents	|fieldId	    |Integer		|顧客フィールドID|	
-|                   |code	        |String  		|項目コード|
-|	                |type	        |String		    |項目タイプ|
-|	                |title	        |String		    |項目名|
-|	                |description	|String		    |案内文句|
-|	                |placeholder	|String		    |題語|
-|	                |length	        |Integer		|最大長さ(0:長さ制限なし)|
-|	                |required	    |Boolean		|必須項目かどうか(true: yes, false: no)|
-|	                |encrypt	    |Boolean	 	|保存時に暗号化されているかどうか(true: yes, false: no)|
-|	                |holdingText	|Boolean		|クリック時に削除するかどうか(true: yes, false: no)|
-|	                |options	    |Array   		|テキストボックス, チェックボックス, ドロップボックス, 例:[区分1、区分2、...]|
-|	                |value	        |String		    |ユーザー入力値|
+|result.contents|fieldId    |Integer|顧客フィールドID|
+|                   |code        |String  |項目コード|
+|                |type        |String    |項目タイプ|
+|                |title       |String    |項目名|
+|                |description|String    |案内文句|
+|                |placeholder|String    |題語|
+|                |length        |Integer|最大長さ(0:長さ制限なし)|
+|                |required    |Boolean|必須項目かどうか(true: yes, false: no)|
+|                |encrypt    |Boolean|保存時に暗号化されているかどうか(true: yes, false: no)|
+|                |holdingText|Boolean|クリック時に削除するかどうか(true: yes, false: no)|
+|                |options    |Array   |テキストボックス, チェックボックス, ドロップボックス, 例:[区分1、区分2、...]|
+|                |value        |String    |ユーザー入力値|
 
 #### Response Body
 ```
@@ -489,8 +489,8 @@
 
 ### チケット添付ファイルアップロード
 #### インターフェース説明
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/ticket/attachments/upload.json
-- URL(開発): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/ticket/attachments/upload.json
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/openapi/v1/ticket/attachments/upload.json
+- URL(開発): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/openapi/v1/ticket/attachments/upload.json
 
 |インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -499,18 +499,18 @@
 #### リクエストパラメータ定義
 |名称|変数|データタイプ|変数タイプ|必須|説明|
 |----|----|----------|----------|----|---|
-|サービスID   |serviceId	|String	|path	    |O	|URL PATH内に設定した{serviceId}|
-|アップロードファイル	|file	    |File	|formData	|O	|ファイルをformに提出。サポートするファイル形式: jpg, png, gif, bmp, jpeg, tif, tiff, pdf, txt, hwp, xls, xlsx, doc, docx, ppt, pptx, mp3, wav, zip. ファイルサイズ<10M、ファイル名長さ<100|
+|サービスID   |serviceId|String|path    |O|URL PATH内に設定した{serviceId}|
+|アップロードファイル|file    |File|formData|O|ファイルをformに提出。サポートするファイル形式: jpg, png, gif, bmp, jpeg, tif, tiff, pdf, txt, hwp, xls, xlsx, doc, docx, ppt, pptx, mp3, wav, zip. ファイルサイズ<10M、ファイル名長さ<100|
 
 #### 結果データ(成功)
 |名称|変数|データタイプ|説明|
 |-----|----|-----------|-------|
-|result.content	|attachmentId	|String		|添付ファイルID|
-|	            |fileName	    |String		|添付ファイル名|
-|	            |contentType	|String		|添付ファイルタイプ|
-|	            |disposition	|String		|ファイル処理方式(attachment: 添付ファイル)|
-|	            |size	        |Long		|添付ファイルサイズ(byte)|
-|               |createdDt	    |Long		|ファイル添付時間|
+|result.content|attachmentId|String|添付ファイルID|
+|            |fileName    |String|添付ファイル名|
+|            |contentType|String|添付ファイルタイプ|
+|            |disposition|String|ファイル処理方式(attachment: 添付ファイル)|
+|            |size        |Long|添付ファイルサイズ(byte)|
+|               |createdDt    |Long|ファイル添付時間|
 
 #### Response Body(成功)
 ```
@@ -535,8 +535,8 @@
 #### 結果データ(失敗)
 |名称|変数|データタイプ|説明|
 |-----|----|-----------|-------|
-|result.content	|exception	|String		|固定値：OcException|
-|	            |message	|String		|エラーメッセージ(10MB以下のファイルのみ添付できます。 / ファイル名最大長超過。(100)/このファイル形式は添付できません。|
+|result.content|exception|String|固定値：OcException|
+|            |message|String|エラーメッセージ(10MB以下のファイルのみ添付できます。 / ファイル名最大長超過。(100)/このファイル形式は添付できません。|
 
 #### Response Body(失敗)
 ```
@@ -557,8 +557,8 @@
 
 ### チケット作成
 #### インターフェース説明
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/ticket.json
-- URL(開発): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/ticket.json
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/openapi/v1/ticket.json
+- URL(開発): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/openapi/v1/ticket.json
 
 |インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|アクセス制限可否|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -567,25 +567,25 @@
 #### リクエストパラメータ定義
 |名称|変数|データタイプ|変数タイプ|必須|説明|
 |----|----|----------|----------|----|---|
-|サービスID	|serviceId	        |String	 |path	|O	|URL PATH内に設定した{serviceId}|
-|チケット情報	|request body	    |Object	 |body	|O	|チケット情報(JSON)|
-|カテゴリー	|categoryId	        |Integer |		|O	|カテゴリー(受付タイプ) ID|
-|タイトル	    |subject	        |String	 |	    |O	|タイトル(max=255)|
-|説明	    |content	        |String	 |	    |O	|原則として単純テキストのみ許容。Base64内容で提出する場合、チケット確認時の内容が多く問題になることがある。 画像は添付ファイル形式でアップロードするか、ファイルアップロード後htmlの img src=""/{serviceId}/api/v2/ticket/attachments/{attachmentId}""/ と呼んで使用|
-|顧客情報	|endUser	        |Object	  |	     |O	 |顧客情報|
-|ID	    |endUser.usercode	|String	  |	     |X	 |ID（会員固有ID）。 会員連動機能を使用する場合、プラットフォーム側のユーザー固有IDをusercodeとして使用することができ、該当usercodeを通じて会員の問い合わせ内訳を照会することができる。 非会員問い合わせの場合、値を転送する必要はない。|
-|メール	    |endUser.email	    |String	  |	     |O	 |メール(サービス 管理 → チケット → メール設定メニューからメール情報を設定した場合、チケット処理時にそのメールアドレスから顧客にメール送信)|
-|名前	    |endUser.username	        |String	  |	     |O	 |名前（メールパラメータ入力時、入力が必要。 入力しない場合はメール送信不可)|
-|電話  	    |endUser.phone	            |String	  |	     |X  |電話|
-|添付ファイル	|attachments	            |Array	  |      |X	 |添付ファイル(max 5件)|
-|添付ファイルID|attachments.attachmentId	|String   |	 	 |O	 |添付ファイルID|
-|区分1	    |typeOne	                |String	  |	     |X	 |区分1(拡張システムフィールド1)|
-|区分2	    |typeTwo	                |String   |		 |X	 |区分2(拡張システムフィールド2)|
-|言語	    |language	                |String	  |	     |X	 |言語|
-|チャンネル	    |source	                    |String   |		 |X	 |チケットのチャンネル(web: ウェブ, spweb: モバイルウェブ, api: API, 基本値: web)|
-|ユーザーフィールド	|userFields	            |Array	   |	  |X  |ユーザーフィールド|
-|項目コード	    |userFields.code	    |String	   |	  |O  |ユーザーフィールド, 項目コード|
-|ユーザー入力値	|userFields.value	    |String	   |      |O  |ユーザーフィールドのユーザー入力値|
+|サービスID|serviceId        |String |path|O|URL PATH内に設定した{serviceId}|
+|チケット情報|request body    |Object |body|O|チケット情報(JSON)|
+|カテゴリー|categoryId        |Integer|   |O|カテゴリー(受付タイプ) ID|
+|タイトル    |subject        |String |    |O|タイトル(max=255)|
+|説明    |content        |String |    |O|原則として単純テキストのみ許容。Base64内容で提出する場合、チケット確認時の内容が多く問題になることがある。 画像は添付ファイル形式でアップロードするか、ファイルアップロード後htmlの img src=""/{serviceId}/api/v2/ticket/attachments/{attachmentId}""/ と呼んで使用|
+|顧客情報|endUser        |Object  |     |O |顧客情報|
+|ID    |endUser.usercode|String  |     |X |ID（会員固有ID）。 会員連動機能を使用する場合、プラットフォーム側のユーザー固有IDをusercodeとして使用することができ、該当usercodeを通じて会員の問い合わせ内訳を照会することができる。 非会員問い合わせの場合、値を転送する必要はない。|
+|メール    |endUser.email    |String  |     |O |メール(サービス 管理 → チケット → メール設定メニューからメール情報を設定した場合、チケット処理時にそのメールアドレスから顧客にメール送信)|
+|名前    |endUser.username        |String  |     |O |名前（メールパラメータ入力時、入力が必要。 入力しない場合はメール送信不可)|
+|電話     |endUser.phone            |String  |     |X  |電話|
+|添付ファイル|attachments            |Array  |      |X |添付ファイル(max 5件)|
+|添付ファイルID|attachments.attachmentId|String   | |O |添付ファイルID|
+|区分1    |typeOne                |String  |     |X |区分1(拡張システムフィールド1)|
+|区分2    |typeTwo                |String   | |X |区分2(拡張システムフィールド2)|
+|言語    |language                |String  |    |X |言語|
+|チャンネル    |source                    |String   | |X|チケットのチャンネル(web: ウェブ, spweb: モバイルウェブ, api: API, 基本値: web)|
+|ユーザーフィールド|userFields            |Array   |  |X  |ユーザーフィールド|
+|項目コード    |userFields.code    |String   |  |O  |ユーザーフィールド, 項目コード|
+|ユーザー入力値|userFields.value    |String   | |O  |ユーザーフィールドのユーザー入力値|
 
 userFields.value パラメータのフィールドタイプ別形式は下記のとおりです。
 
@@ -602,121 +602,121 @@ userFields.value パラメータのフィールドタイプ別形式は下記の
 #### Request Body
 ```
 {	
-    "categoryId": "2542", 	
-    "subject": "유형", 	
-    "content": "문의내용", 	
-    "endUser": {	
-        "usercode": "st18888", 	
-        "email": "enduser_simple@nhn-st.com", 	
-        "username": "이름", 	
-        "phone": "13333333333"	
-    }, 	
-    "attachments": [	
-        {	
-            "attachmentId": "8f0dc5854d2446b6aa2e6e41a0a2f55c"	
-        }	
-    ], 	
-    "typeOne": "구분1", 	
-    "typeTwo": "구분2", 	
-    "language": "ko", 	
-    "source": "web", 	
-    "userFields": [	
-        {	
-            "code": "textbox", 	
-            "value": "텍스트 박스 이름"	
-        }, 	
-        {	
-            "code": "checkbox", 	
-            "value": [	
-                "옵션1", 	
-                "옵션2"	
-            ]	
-        }, 	
-        {	
-            "code": "dropdown", 	
-            "value": "옵션1"	
-        }, 	
-        {	
-            "code": "radiobutton", 	
-            "value": "옵션1"	
-        }, 	
-        {	
-            "code": "date", 	
-            "value": "2022-07-11"	
-        }, 	
-        {	
-            "code": "datetime", 	
-            "value": "2022-07-11 00:00"	
-        }, 	
-        {	
-            "code": "dateperiod", 	
-            "value": "2022-07-01 ~ 2022-07-31"	
-        }, 	
-        {	
-            "code": "datetimeperiod", 	
-            "value": "2022-07-01 00:00 ~ 2022-07-31 23:59"	
-        }, 	
-        {	
-            "code": "agreetotheterms", 	
-            "value": "true"	
-        }	
-    ]	
-}	
+    "categoryId": "2542", 
+    "subject": "유형", 
+    "content": "문의내용", 
+    "endUser": {
+        "usercode": "st18888", 
+        "email": "enduser_simple@nhn-st.com", 
+        "username": "이름", 
+        "phone": "13333333333"
+    }, 
+    "attachments": [
+        {
+            "attachmentId": "8f0dc5854d2446b6aa2e6e41a0a2f55c"
+        }
+    ], 
+    "typeOne": "구분1", 
+    "typeTwo": "구분2", 
+    "language": "ko", 
+    "source": "web", 
+    "userFields": [
+        {
+            "code": "textbox", 
+            "value": "텍스트 박스 이름"
+        }, 
+        {
+            "code": "checkbox", 
+            "value": [
+                "옵션1", 
+                "옵션2"
+            ]
+        }, 
+        {
+            "code": "dropdown", 
+            "value": "옵션1"
+        }, 
+        {
+            "code": "radiobutton", 
+            "value": "옵션1"
+        }, 
+        {
+            "code": "date", 
+            "value": "2022-07-11"
+        }, 
+        {
+            "code": "datetime", 
+            "value": "2022-07-11 00:00"
+        }, 
+        {
+            "code": "dateperiod", 
+            "value": "2022-07-01 ~ 2022-07-31"
+        }, 
+        {
+            "code": "datetimeperiod", 
+            "value": "2022-07-01 00:00 ~ 2022-07-31 23:59"
+        }, 
+        {
+            "code": "agreetotheterms", 
+            "value": "true"
+        }
+    ]
+}
 ```
 
 #### 結果データ(成功)
 |名称|変数|データタイプ|説明|
 |-----|----|-----------|-------|
-|result.content	|ticketId	    |String		|チケットID|
-|	            |categoryId	    |int		|受付タイプID|
-|	            |subject	    |String		|チケットのタイトル|
-|	            |content	    |String		|チケット内容|
-|	            |status	        |String		|チケットの状態(固定値: new(アサイン待ち); open(処理中); closed(処理完了)|
-|	            |createdDt	    |Long		|チケット作成時間|
-|	            |updatedDt	    |Long		|チケットアップデート時間|
-|	            |attachments	|Array		|添付ファイル|
-|	            |attachments.attachmentId	|String		|添付ファイルID|
-|	            |attachments.fileName	    |String		|添付ファイル名|
-|	            |attachments.contentType	|String		|添付ファイルタイプ|
-|               |attachments.disposition	|String		|ファイル処理方式(attachment:添付ファイル)|
-|	            |attachments.size	        |String		|添付ファイルサイズ(byt)|
-|	            |attachments.createdDt	    |String		|チケットアップデート時間|
+|result.content|ticketId    |String|チケットID|
+|            |categoryId    |int|受付タイプID|
+|            |subject    |String|チケットのタイトル|
+|            |content    |String|チケット内容|
+|            |status        |String|チケットの状態(固定値: new(アサイン待ち); open(処理中); closed(処理完了)|
+|            |createdDt    |Long|チケット作成時間|
+|            |updatedDt    |Long|チケットアップデート時間|
+|            |attachments|Array|添付ファイル|
+|            |attachments.attachmentId|String|添付ファイルID|
+|            |attachments.fileName    |String|添付ファイル名|
+|            |attachments.contentType|String|添付ファイルタイプ|
+|               |attachments.disposition|String|ファイル処理方式(attachment:添付ファイル)|
+|            |attachments.size        |String|添付ファイルサイズ(byt)|
+|            |attachments.createdDt    |String|チケットアップデート時間|
 
 #### Response Body(成功)
 ```
-{	
-  "header": {	
-    "resultCode": 200,	
-    "resultMessage": "",	
-    "isSuccessful": true	
-  },	
-  "result": {	
-    "content": {	
-      "ticketId": "T1658199661153IXTfw",	
-      "subject": "유형",	
-      "categoryId": 2542,	
-      "categoryName": null,	
-      "categoryFullName": null,	
-      "status": "new",	
-      "statusName": null,	
-      "content": "문의내용",	
-      "createdDt": 1658199661151,	
-      "updatedDt": 1658199661151,	
-      "contents": null,	
-      "attachments": [	
-        {	
-          "attachmentId": "8f0dc5854d2446b6aa2e6e41a0a2f55c",	
-          "fileName": "image.png",	
-          "contentType": "image/png",	
-          "disposition": "attachment",	
-          "size": 90576,	
-          "createdDt": 1658192910000	
-        }	
-      ],	
-      "displayDt": null	
-    }	
-  }	
-}	
+{
+  "header": {
+    "resultCode": 200,
+    "resultMessage": "",
+    "isSuccessful": true
+  },
+  "result": {
+    "content": {
+      "ticketId": "T1658199661153IXTfw",
+      "subject": "유형",
+      "categoryId": 2542,
+      "categoryName": null,
+      "categoryFullName": null,
+      "status": "new",
+      "statusName": null,
+      "content": "문의내용",
+      "createdDt": 1658199661151,
+      "updatedDt": 1658199661151,
+      "contents": null,
+      "attachments": [
+        {
+          "attachmentId": "8f0dc5854d2446b6aa2e6e41a0a2f55c",
+          "fileName": "image.png",
+          "contentType": "image/png",
+          "disposition": "attachment",
+          "size": 90576,
+          "createdDt": 1658192910000
+        }
+      ],
+      "displayDt": null
+    }
+  }
+}
 ```
 
 #### 結果データ(失敗)
@@ -781,4 +781,16 @@ userFields.value パラメータのフィールドタイプ別形式は下記の
     ]		
   }		
 }		
+```
+
+#### Response Body(スパムポリシー適用による作成失敗)
+```
+{
+    "header": {
+        "resultCode": 1002,
+        "resultMessage": "お問い合わせ回数が上限を超えました。暫く経ってからお問い合わせください。",
+        "isSuccessful": false
+    },
+    "result": {…...}
+}
 ```

@@ -2,8 +2,8 @@
 
 ### Customer Ticket List
 #### Interface Description
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/ticket/enduser/{usercode}/list.json
-- URL(Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/ticket/enduser/{usercode}/list.json
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/openapi/v1/ticket/enduser/{usercode}/list.json
+- URL(Dev): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/openapi/v1/ticket/enduser/{usercode}/list.json
 
 |Interface name | Protocol | Call direction | Encoding | Result format | Interface description | Access restriction|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -211,8 +211,8 @@
 
 ### Ticket Details
 #### Interface Description
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/ticket/enduser/{usercode}/{ticketId}/detail.json
-- URL(Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/ticket/enduser/{usercode}/{ticketId}/detail.json
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/openapi/v1/ticket/enduser/{usercode}/{ticketId}/detail.json
+- URL(Dev): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/openapi/v1/ticket/enduser/{usercode}/{ticketId}/detail.json
 
 |Interface name | Protocol | Call direction | Encoding | Result format | Interface description | Access restriction|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -337,8 +337,8 @@
 
 ### Open and Download Ticket Attachments
 #### Interface Description
-- URL: https://{domain}.oc.toast.com/{serviceId}/api/v2/ticket/attachments/{id}			 							
-- URL(Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/api/v2/ticket/attachments/{id}									
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/api/v2/ticket/attachments/{id}
+- URL(Dev): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/api/v2/ticket/attachments/{id}
 
 |Interface name | Protocol | Call direction | Encoding | Result format | Interface description | Access restriction|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -356,8 +356,8 @@ File
 
 ### Customer Re-Inquiry
 #### Interface Description
-- URL: https://{domain}.oc.toast.com/{serviceId}/openapi/v1/ticket/enduser/{usercode}/{ticketId}/comment.json
-- URL(Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/openapi/v1/ticket/enduser/{usercode}/{ticketId}/comment.json
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/openapi/v1/ticket/enduser/{usercode}/{ticketId}/comment.json
+- URL(Dev): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/openapi/v1/ticket/enduser/{usercode}/{ticketId}/comment.json
 
 |Interface name | Protocol | Call direction | Encoding | Result format | Interface description | Access restriction|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -366,11 +366,11 @@ File
 #### Request Parameters
 |Name |Variable |Data type |Variable type|Required | Description|
 |-----|---------|----------|-------------|---------|------------|
-|Service ID	|serviceId	|String	|path	|O	|{serviceId} which is set in URL path|
-|ID	    |usercode	|String	|path	|O	|ID(User unique ID), Usercode at the time of receipt of the inquiry|
-|Ticket ID	|ticketId	|String	|path	|O	|Ticket ID|
-|Contents	    |comment	|String	|body	|O	|the contents of re-inquiry|
-|Attachments	|attachments	|String	|query	|X	|Attachment ID. Separate file IDs with (,) when attaching multiple files, max = 5 cases(FileID1,FileID2,…,FileID5)|
+|Service ID|serviceId|String|path|O|{serviceId} which is set in URL path|
+|ID    |usercode|String|path|O|ID(User unique ID), Usercode at the time of receipt of the inquiry|
+|Ticket ID|ticketId|String|path|O|Ticket ID|
+|Contents    |comment|String|body|O|the contents of re-inquiry|
+|Attachments|attachments|String|query|X|Attachment ID. Separate file IDs with (,) when attaching multiple files, max = 5 cases(FileID1,FileID2,…,FileID5)|
 
 #### Result Data
 |Name |Variable |Data type |Description|

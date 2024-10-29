@@ -2,8 +2,8 @@
 
 ### Add Specified Data to Help Center
 #### Interface Description
-- URL:	https://{domain}.oc.toast.com /{serviceId}/hc/openapi/v1/addition.json
-- URL(Dev):	https://{domain}.alpha-oc.toast.com /{serviceId}/hc/openapi/v1/addition.json
+- URL:	https://{domain}.oc.nhncloud.com /{serviceId}/hc/openapi/v1/addition.json
+- URL(Dev):	https://{domain}.oc.alpha-nhncloud.com /{serviceId}/hc/openapi/v1/addition.json
 
 |Interface name | Protocol | Call direction | Encoding | Result format | Interface description |
 |------------|-------|--------|-----|--------|--------------|
@@ -36,4 +36,4 @@
 ```
 
 ### Inquiry Page URL Example
-https://nhn-cs.alpha-oc.toast.com/hangame/hc/ticket/?additionId=ef1bd9560xxxxx
+https://nhn-cs.oc.alpha-nhncloud.com/hangame/hc/ticket/?additionId=ef1bd9560xxxxx

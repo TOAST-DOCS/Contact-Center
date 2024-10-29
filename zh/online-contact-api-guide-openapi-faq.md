@@ -2,8 +2,8 @@
 
 ### Category List
 #### Interface Description
-- URL: https://{domain}.oc.toast.com/{serviceId}/api/v2/helpdoc/categories.json
-- URL(Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/api/v2/helpdoc/categories.json
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/api/v2/helpdoc/categories.json
+- URL(Dev): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/api/v2/helpdoc/categories.json
 
 |Interface name | Protocol | Call direction | Encoding | Result format | Interface description | Access restriction|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -133,8 +133,8 @@
 
 ### FAQ List
 #### Interface Description
-- URL: https://{domain}.oc.toast.com/{serviceId}/api/v2/helpdoc/list.json
-- URL(Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/api/v2/helpdoc/list.json
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/api/v2/helpdoc/list.json
+- URL(Dev): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/api/v2/helpdoc/list.json
 
 |Interface name | Protocol | Call direction | Encoding | Result format | Interface description | Access restriction|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -377,8 +377,8 @@ The format and example of sort parameter is as follows.
 
 ### FAQ Details
 #### Interface Description
-- URL: https://{domain}.oc.toast.com/{serviceId}/api/v2/helpdoc/detail/{id}.json
-- URL(Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/api/v2/helpdoc/detail/{id}.json
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/api/v2/helpdoc/detail/{id}.json
+- URL(Dev): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/api/v2/helpdoc/detail/{id}.json
 
 |Interface name | Protocol | Call direction | Encoding | Result format | Interface description | Access restriction|
 |------------|-------|--------|-----|--------|--------------|------------|
@@ -531,8 +531,8 @@ The format and example of sort parameter is as follows.
 
 ### Open and Download FAQ Attachments
 #### Interface Description
-- URL: https://{domain}.oc.toast.com/{serviceId}/api/v2/helpdoc/attachments/{id}
-- URL(Dev): https://{domain}.alpha-oc.toast.com/{serviceId}/api/v2/helpdoc/attachments/{id}
+- URL: https://{domain}.oc.nhncloud.com/{serviceId}/api/v2/helpdoc/attachments/{id}
+- URL(Dev): https://{domain}.oc.alpha-nhncloud.com/{serviceId}/api/v2/helpdoc/attachments/{id}
 
 |Interface name | Protocol | Call direction | Encoding | Result format | Interface description | Access restriction|
 |------------|-------|--------|-----|--------|--------------|------------|

@@ -84,8 +84,8 @@ public static void main(String[] args) throws Exception {
 
 ### POST遠隔ログインAPI(From client side)
 #### インターフェース説明
-- URL: https://{domain}.oc.toast.com/v2/enduser/remote.json
-- URL(開発): https://{domain}.alpha-oc.toast.com/v2/enduser/remote.json
+- URL: https://{domain}.oc.nhncloud.com/v2/enduser/remote.json
+- URL(開発): https://{domain}.oc.alpha-nhncloud.com/v2/enduser/remote.json
 
 |インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|
 |------------|-------|--------|-----|--------|--------------|
@@ -114,8 +114,8 @@ returnUrlパラメータが存在する場合、指定されたreturnUrlに移�
 
 ### POST遠隔ログインAPI(From server side)
 #### インターフェース説明
-- URL: https://{domain}.oc.toast.com/api/v2/enduser/remote.json
-- URL(開発): https://{domain}.alpha-oc.toast.com/api/v2/enduser/remote.json
+- URL: https://{domain}.oc.nhncloud.com/api/v2/enduser/remote.json
+- URL(開発): https://{domain}.oc.alpha-nhncloud.com/api/v2/enduser/remote.json
 
 |インターフェース名|プロトコル|呼び出し方向|エンコード|結果形式|インターフェース説明|
 |------------|-------|--------|-----|--------|--------------|
@@ -140,20 +140,20 @@ returnUrlパラメータが存在する場合、指定されたreturnUrlに移�
 
 #### Response Data
 ```
-{	
-  "header": {	
-    "resultCode": 200,	
-    "resultMessage": "",	
-    "isSuccessful": true	
-  },	
-  "result": {	
-    "content": "xxxxxxaccessTokenxxxxxxx"	
-  }	
-}	
+{
+  "header": {
+    "resultCode": 200,
+    "resultMessage": "",
+    "isSuccessful": true
+  },
+  "result": {
+    "content": "xxxxxxaccessTokenxxxxxxx"
+  }
+}
 ```
 
 リターンされたcontent値はヘルプセンター呼び出し時、ヘルプセンターURLパラメータ - accessToken値に指定してOCに伝達。
-例: https://nhn-cs.alpha-oc.toast.com/hangame/hc/?accessToken=xxxxxxaccessTokenxxxxxxx
+例: https://nhn-cs.oc.alpha-nhncloud.com/hangame/hc/?accessToken=xxxxxxaccessTokenxxxxxxx
 
 ### POSTログインURL(ユーザー)
 #### インターフェース説明
@@ -209,7 +209,7 @@ returnUrlパラメータが存在する場合、指定されたreturnUrlに移�
 - ① ユーザー情報とAPI Key基準でログインtoken作成
 - ② サーバーからPOST遠隔ログインAPI(From server side)呼び出し
 - ③ API呼び出しパラメータ(usercodeとtime)をreturnUrlの後に追加
-  - 例示) https://nhn-cs.alpha-oc.toast.com/multilanguage/hc/ticket/list/?usercode=xxxxxx@163.com&time=1566531359635
+  - 例示) https://nhn-cs.oc.alpha-nhncloud.com/multilanguage/hc/ticket/list/?usercode=xxxxxx@163.com&time=1566531359635
 - ④ {returnUrl}に移動
 
 ### POSTログインステータスURL(ユーザー)
