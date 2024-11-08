@@ -1,6 +1,6 @@
 ## Contact Center > Online Contact > Overview
 
-※ The service name of Online Contact has been changed to Contiple.
+※ The service name of Online Contact has been changed to **Contiple**.
 For the latest, updated user guides, please refer to the [Contiple homepage](https://www.contiple.com).
 
 Online Contact is an **integrated consultation solution** that can generate and process customer inquiries from various channels as tickets and helps provide the best customer service through issue management and collaboration tools to increase work efficiency.
