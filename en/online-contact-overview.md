@@ -3,7 +3,7 @@
 Contiple is a powerful All-In-One integrated contact center solution that supports excellent customer experience management and improved work productivity.
 As a fast and reliable cloud-based AI contact center solution, Contiple integrates customer experiences occurring across various channels and touchpoints into a single platform and improves the efficiency of contact center operations.
 
-For detailed information on using the service, see [Contiple's official website](https:/contiple.com) > [User Guide](https://docs.contiple.com/eng).
+For detailed information on using the service, see [Contiple's official website](https://contiple.com) > [User Guide](https://docs.contiple.com/eng).
 
 
 ## Service Features
