@@ -1,19 +1,14 @@
-## Contact Center > Online Contact > 概要
+## Contact Center > Contiple > 概要
 
-※ Online Contact のサービス名は、新しい名前である **Contiple(コンティプル)** に変更されました。
-今後、最新のアップデートされた使用ガイドは[Contipleのホームページ](https://www.contiple.com)でご確認ください。
+Contiple(以下、コンティプル)は、卓越した顧客体験管理と業務生産性向上を支援する強力なAll-In-One統合サポートソリューションです。
+コンティプルはクラウドベースの迅速で安定したAIコンタクトセンターソリューションとして、
+多様なチャネルや接点で生じる顧客体験を単一プラットフォームに統合し、サポート運用の効率性を高めます。
 
-Online Contactは、最適なプロセスでお客様のお問い合わせを処理できるように構築された、カスタマーサポート向け統合ソリューションです。 お問い合わせフォーム、ヘルプセンター（サポートページ）、電話、チャット、SNSなどさまざまな窓口を通じてお問い合わせを受け付けた後は、迅速に担当に割り当て、管理することができます。（電話に関連する機能は韓国のみ提供しています）
+サービス利用に関する詳細な案内は、
+[Contiple公式Webサイト](https://contiple.com/ko) > [使用ガイド](https://docs.contiple.com/jp)で確認してください。
 
-> Online Contactの新しいバージョンに関するガイドは、言語を韓国語に変更するとご確認いただけます。
-> なるべく早く日本語バージョンも提供する予定ですので、ご参考にしてください。
-
-## サービス紹介
-![](http://static.toastoven.net/prod_contact_center/ja/OC_overview_1_modified_3_ja.png)
 
 ## 主要機能
-![](http://static.toastoven.net/prod_contact_center/ja/OC_overview_2_modified_ja.png)
-
 ### お問合せ管理
 ![](http://static.toastoven.net/prod_contact_center/ja/OC_overview_3_modified_2_ja.png)
 
