@@ -8,7 +8,7 @@
 - Online Contact 우측 맨 하단 **헬프센터 바로가기**
 - https:// **도메인명** .oc.toast.com/ **서비스ID** /hc
 
-도메인명은 Online Contact 조직 생성 시 작성하신 정보로, NHN Cloud CONSOLE → 조직 설정 → 도메인 설정에서 수정하실 수 있습니다. 서비스ID는 [전체 관리 → 계약 서비스 현황](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-global-management/#_1) 메뉴에서 서비스 추가 시 입력하셨던 정보로, 최초 생성 이후 수정이 불가합니다.
+도메인명은 Online Contact 조직 생성 시 작성하신 정보로, NHN Cloud CONSOLE → 조직 설정 → 도메인 설정에서 수정하실 수 있습니다. 서비스ID는 [전체 관리 → 계약 서비스 현황](https://docs.nhncloud.com/ko/Contact%20Center/ko/online-contact-guide-global-management/#_1) 메뉴에서 서비스 추가 시 입력하셨던 정보로, 최초 생성 이후 수정이 불가합니다.
 
 
 ## 인증
@@ -21,7 +21,7 @@
 **③ 접속 IP 설정** 화면을 통해 접속 IP를 설정하실 경우, 설정한 IP에서만 OPEN API를 호출하실 수 있습니다.
 
 ## 채팅
-채팅 기능에 관련된 항목들입니다. 채팅 기능은 [전체관리 → 계약 서비스 현황 → 계약 현황](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-global-management/#_2) 탭에서 수정하실 수 있는 계약 상세 내역에서 채팅 기능을 사용 설정하신 후 [서비스 관리 → 헬프센터 → 구성관리](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_32)에서 활성화하실 수 있으며, 활성화된 이후에 노출되는 우측 하단 **채팅 아이콘**으로 접속 가능합니다. 
+채팅 기능에 관련된 항목들입니다. 채팅 기능은 [전체관리 → 계약 서비스 현황 → 계약 현황](https://docs.nhncloud.com/ko/Contact%20Center/ko/online-contact-guide-global-management/#_2) 탭에서 수정하실 수 있는 계약 상세 내역에서 채팅 기능을 사용 설정하신 후 [서비스 관리 → 헬프센터 → 구성관리](https://docs.nhncloud.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_32)에서 활성화하실 수 있으며, 활성화된 이후에 노출되는 우측 하단 **채팅 아이콘**으로 접속 가능합니다. 
 
 ✔ **\[FAQ 바로가기]** [채팅 화면은 채팅 권한이 있는 서비스에서만 접속할 수 있나요?](https://nhn-contact.oc.toast.com/oc/hc/article/102/)
 
@@ -121,7 +121,7 @@
 
 ##### Dooray 알림
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(2)g.png)
-트리거 조건이 충족되었을 경우 **① 템플릿 설정** 버튼을 통해 설정한 템플릿에 따라 티켓의 정보가 Dooray 알림으로 전송됩니다. 연동 URL은 [Dooray Messanger 서비스 가이드](https://docs.toast.com/ko/Dooray/Messenger/ko/service-guide/#_19)를 통해 확인 방법을 참고하실 수 있습니다. 
+트리거 조건이 충족되었을 경우 **① 템플릿 설정** 버튼을 통해 설정한 템플릿에 따라 티켓의 정보가 Dooray 알림으로 전송됩니다. 연동 URL은 [Dooray Messanger 서비스 가이드](https://docs.nhncloud.com/ko/Dooray/Messenger/ko/service-guide/#_19)를 통해 확인 방법을 참고하실 수 있습니다. 
 
 ### 필드
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(3).png)
@@ -138,7 +138,7 @@
 
 #### 필드 설정
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(4).png)
-**①** 앞서 [티켓 → 카테고리 관리](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_9)에서 등록해두신 접수유형에 따라 문의내역에 필요한 필드를 다르게 설정하실 수 있습니다. **접수유형**을 클릭하시면 설정해두신 필드를 열람하실 수 있으며, 개인정보수집 항목을 제외한 필드들의 **②** 순서를 변경하실 수 있습니다. (개인정보수집 항목의 경우 항상 맨 아래 노출되도록 고정됨) 또한 필드 관리 탭에서 추가해두신 필드를 **③** 새롭게 **추가**하시거나, 이미 추가하신 필드를 **④ 제거**하실 수 있습니다.
+**①** 앞서 [티켓 → 카테고리 관리](https://docs.nhncloud.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_9)에서 등록해두신 접수유형에 따라 문의내역에 필요한 필드를 다르게 설정하실 수 있습니다. **접수유형**을 클릭하시면 설정해두신 필드를 열람하실 수 있으며, 개인정보수집 항목을 제외한 필드들의 **②** 순서를 변경하실 수 있습니다. (개인정보수집 항목의 경우 항상 맨 아래 노출되도록 고정됨) 또한 필드 관리 탭에서 추가해두신 필드를 **③** 새롭게 **추가**하시거나, 이미 추가하신 필드를 **④ 제거**하실 수 있습니다.
 
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(4)-1.png)
 기본 필드 중 **전화 관련 필드** (상담일시, IN/OUT, 전화예약, 예약시간, 전화예약번호)의 경우 활성화되어 있는 접수유형에 추가하시더라도 **헬프센터 및 전화 외 채널로 접수된 티켓**에서 **조회되지 않아**, 하나의 접수유형을 헬프센터, 전화, 메일 등 여러 채널에서 같이 이용하고자 하실 경우에 활용될 수 있습니다.  
@@ -181,7 +181,7 @@
 - **④** 검색 코드 : **템플릿에 저장**하실 수 있는 20자 이내의 영문 또는 숫자 조합의 **코드**로, 고객 답변 시 템플릿 **검색에 활용**하실 수 있습니다.
 - **⑤** 템플릿 연결 : 템플릿에 연결하실 **처리유형을 선택**하실 수 있습니다. 이동하고자 하시는 처리유형의 **체크박스를 체크**하신 후 **화살표** 버튼을 누르시면 처리유형이 이동됩니다.
 
-템플릿 추가 시 선택하시는 처리유형은 앞서 [서비스 관리 → 티켓 → 카테고리 관리](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_9)에서 등록해두신 처리유형입니다. 내용 본문 부분에서 마우스 우 클릭 시 링크, 이미지, 테이블을 본문 내에 삽입하실 수 있으며, 이미지를 삽입하실 경우 [서비스 관리 → 헬프센터 → 파일 업로드 관리](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_42) 메뉴에서 업로드한 이미지의 경로를 사용하시거나, 이미지를 직접 첨부하셔서 등록하실 수 있습니다.
+템플릿 추가 시 선택하시는 처리유형은 앞서 [서비스 관리 → 티켓 → 카테고리 관리](https://docs.nhncloud.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_9)에서 등록해두신 처리유형입니다. 내용 본문 부분에서 마우스 우 클릭 시 링크, 이미지, 테이블을 본문 내에 삽입하실 수 있으며, 이미지를 삽입하실 경우 [서비스 관리 → 헬프센터 → 파일 업로드 관리](https://docs.nhncloud.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_42) 메뉴에서 업로드한 이미지의 경로를 사용하시거나, 이미지를 직접 첨부하셔서 등록하실 수 있습니다.
 
 #### 템플릿 연결
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(7)_3.png)
@@ -241,7 +241,7 @@ IVR 경로 코드, 경로명의 확인이 어려우실 경우 Online Contact 고
 
 상담원을 추가하실 때에는 반드시 그룹을 배정해야 하므로, 추가된 그룹이 없을 경우 **그룹을 먼저 추가**하신 후 상담원 추가를 진행해주세요.
 
-상담원 추가 시 설정할 수 있는 **권한**은 다음과 같으며, 조직 관리자 설정은 [전체 관리 → 조직관리자](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-global-management/#_4) 메뉴에서 가능합니다.
+상담원 추가 시 설정할 수 있는 **권한**은 다음과 같으며, 조직 관리자 설정은 [전체 관리 → 조직관리자](https://docs.nhncloud.com/ko/Contact%20Center/ko/online-contact-guide-global-management/#_4) 메뉴에서 가능합니다.
 -	관리자: **상담원** 권한에 **서비스 설정 메뉴 기능**이 추가된 권한 (티켓, 채팅 권한 개별 부여 가능, 전화 선택 시 티켓 자동 선택)
 -	상담원: **티켓, 전화 및 채팅 상담**을 위한 권한 (티켓, 채팅 권한 개별 부여 가능, 전화 선택 시 티켓 자동 선택, 콜백 기능 사용 시 콜백 할당 권한 선택 가능 )
 
@@ -263,7 +263,7 @@ IVR 경로 코드, 경로명의 확인이 어려우실 경우 Online Contact 고
 기본으로 두 가지의 템플릿이 제공되며, **① 템플릿 등록** 버튼을 통해 새로운 템플릿을 추가하실 수 있습니다. 추가하신 템플릿은 **② 수정** 또는 **삭제**하실 수 있으며, 활성화 중인 템플릿은 삭제가 불가하므로 다른 템플릿을 활성화하신 다음 삭제해주세요.
 
 ![](http://static.toastoven.net/prod_contact_center/2.2.5-(2).png)
-템플릿 추가 및 수정 시 **① CSS / HTML / JS 스크립트**를 주어진 편집기에 직접 작성하시거나 [서비스 관리 → 헬프센터 → 파일업로드 관리](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_31) 메뉴에서 필요하신 파일(스크립트, 폰트, 이미지 등)을 업로드하신 후 리소스의 경로를 입력하심을 통해 헬프센터의 구성을 변경하실 수 있습니다. 편집 후 **미리보기** 버튼을 통하여 편집 내용이 헬프센터에 적용된 모습을 바로 보실 수 있으며, **저장**하신 후 적용이 가능합니다.
+템플릿 추가 및 수정 시 **① CSS / HTML / JS 스크립트**를 주어진 편집기에 직접 작성하시거나 [서비스 관리 → 헬프센터 → 파일업로드 관리](https://docs.nhncloud.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_31) 메뉴에서 필요하신 파일(스크립트, 폰트, 이미지 등)을 업로드하신 후 리소스의 경로를 입력하심을 통해 헬프센터의 구성을 변경하실 수 있습니다. 편집 후 **미리보기** 버튼을 통하여 편집 내용이 헬프센터에 적용된 모습을 바로 보실 수 있으며, **저장**하신 후 적용이 가능합니다.
 
 ✔ **\[FAQ 바로가기]** [헬프센터 PC/모바일 템플릿 관리 기능의 구체적인 예시가 궁금해요.](https://nhn-contact.oc.toast.com/oc/hc/article/60/)
 ✔ **\[FAQ 바로가기]** [헬프센터 텍스트의 폰트를 바꾸거나, 굵게/밑줄 등의 효과를 적용할 수 있나요?](https://nhn-contact.oc.toast.com/oc/hc/article/64/)
@@ -419,8 +419,8 @@ IVR 경로 코드, 경로명의 확인이 어려우실 경우 Online Contact 고
 
 **①** **활성화/비활성화** 버튼을 통해 회원 연동을 활성화 및 비활성화하실 수 있습니다. 회원연동을 **활성화**하시면 **로그인 타입**을 선택하실 수 있으며, 각 로그인 타입에 따른 API 가이드는 하단 링크에서 확인하실 수 있습니다.
 
-- [Online Contact > API 가이드 > 회원연동(POST)](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-sso/)
-- [Online Contact > API 가이드 > 회원연동(GET)](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-member-get/)
+- [Online Contact > API 가이드 > 회원연동(POST)](https://docs.nhncloud.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-sso/)
+- [Online Contact > API 가이드 > 회원연동(GET)](https://docs.nhncloud.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-member-get/)
 
 ## 외부채널
 **외부 채널**을 Online Contact와 연결하여 고객과 소통할 수 있습니다. 현재 **트위터**, **카카오 상담톡**, **SMS**를 지원하고 있습니다.
@@ -462,7 +462,7 @@ IVR 경로 코드, 경로명의 확인이 어려우실 경우 Online Contact 고
 
 **①** SMS 연동 활성화를 위해서는, 먼저 **[NHN Cloud Notification → SMS](https://www.toast.com/kr/service/notification/sms) 서비스를 활성화**하신 후, CONSOLE에서 확인하실 수 있는 **APP KEY**를 입력하여 **②** 저장해주세요. 유효한 APP KEY를 입력하신 경우 자동으로 **SMS 기능이 활성화**되며, APP KEY 입력란 하단에 **발신번호 목록이 표시**됩니다.
 
-**③** **추가** 버튼을 누르시면 **발신번호 선택 팝업**이 표시됩니다. NHN Cloud Notification → SMS 서비스에 발신번호로 등록된 번호가 목록에 표시되므로, 발신번호 추가 전 **SMS 서비스에 발신번호가 등록**되어 있는지 확인해주세요. ([SMS > 콘솔 사용 가이드 > 발신번호 관리](https://docs.toast.com/ko/Notification/SMS/ko/console-guide/#_15)) 표시된 목록에서 발신번호로 추가하고자 하시는 번호를 체크하신 후, 확인 버튼을 누르시면 발신번호 목록에 번호가 추가되며, Online Contact에서 SMS/MMS 발송 시 **발신번호로 활용**하실 수 있습니다.
+**③** **추가** 버튼을 누르시면 **발신번호 선택 팝업**이 표시됩니다. NHN Cloud Notification → SMS 서비스에 발신번호로 등록된 번호가 목록에 표시되므로, 발신번호 추가 전 **SMS 서비스에 발신번호가 등록**되어 있는지 확인해주세요. ([SMS > 콘솔 사용 가이드 > 발신번호 관리](https://docs.nhncloud.com/ko/Notification/SMS/ko/console-guide/#_15)) 표시된 목록에서 발신번호로 추가하고자 하시는 번호를 체크하신 후, 확인 버튼을 누르시면 발신번호 목록에 번호가 추가되며, Online Contact에서 SMS/MMS 발송 시 **발신번호로 활용**하실 수 있습니다.
 
 SMS 연동 활성화 및 발신번호 추가 이후에, **부가업무 → SMS발송** 메뉴에서 SMS 템플릿 관리 및 SMS 발송을 진행하실 수 있습니다.
 

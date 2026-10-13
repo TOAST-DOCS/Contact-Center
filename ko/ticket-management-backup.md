@@ -8,38 +8,38 @@
 ### 헬프센터 (PC, Mobile)
 ![](http://static.toastoven.net/prod_contact_center/4.1.1-(2).png)
 Online Contact 이용 시 기본으로 제공되는 **헬프센터**를 통해 문의를 접수 받아 티켓으로 처리하실 수 있습니다.
-[서비스 관리 → 티켓 → 카테고리 관리](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_9), [서비스 관리 → 티켓 → 필드](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_22) 메뉴에서 설정하신 접수유형 및 필드에 따라 작성된 문의를 티켓 상세화면에서 조회하실 수 있습니다.
+[서비스 관리 → 티켓 → 카테고리 관리](https://docs.nhncloud.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_9), [서비스 관리 → 티켓 → 필드](https://docs.nhncloud.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_22) 메뉴에서 설정하신 접수유형 및 필드에 따라 작성된 문의를 티켓 상세화면에서 조회하실 수 있습니다.
 
 ### 이메일
 ![](http://static.toastoven.net/prod_contact_center/4.1.1-(3).png)
-[서비스 관리 → 티켓 → 이메일 설정](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_28) 메뉴에서 생성하신 **대표 계정**, 또는 연결하신 **외부 계정**을 통해 이메일을 통한 문의를 접수 받아 티켓으로 처리하실 수 있습니다. 
+[서비스 관리 → 티켓 → 이메일 설정](https://docs.nhncloud.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_28) 메뉴에서 생성하신 **대표 계정**, 또는 연결하신 **외부 계정**을 통해 이메일을 통한 문의를 접수 받아 티켓으로 처리하실 수 있습니다. 
 
 ### API
 **Open API**를 통해 티켓을 생성 또는 처리하실 수 있으며, 구체적인 API 가이드는 하단 링크에서 확인하실 수 있습니다.
-- [API 가이드 > 티켓 관리](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-ticket/)
+- [API 가이드 > 티켓 관리](https://docs.nhncloud.com/ko/Contact%20Center/ko/online-contact-api-guide-openapi-ticket/)
 
 ### 채팅
 ![](http://static.toastoven.net/prod_contact_center/4.1.1-(4).png)
-채팅 상담 중, 또는 채팅 종료 이후에도 **채팅 위젯** 및 **[채팅 → 채팅 기록](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-chat/#_6)** 메뉴를 통해 티켓을 생성하실 수 있습니다. 생성된 티켓의 채널은 **①**‘채팅’으로 표시되며, 티켓 클릭 시 티켓 정보 상단에 **②**‘채팅내역’ 탭이 표시되어 티켓 처리 시 채팅 내역을 참고하실 수 있습니다.
+채팅 상담 중, 또는 채팅 종료 이후에도 **채팅 위젯** 및 **[채팅 → 채팅 기록](https://docs.nhncloud.com/ko/Contact%20Center/ko/online-contact-guide-chat/#_6)** 메뉴를 통해 티켓을 생성하실 수 있습니다. 생성된 티켓의 채널은 **①**‘채팅’으로 표시되며, 티켓 클릭 시 티켓 정보 상단에 **②**‘채팅내역’ 탭이 표시되어 티켓 처리 시 채팅 내역을 참고하실 수 있습니다.
 
-채팅 기능은 [전체 관리 → 계약 서비스 현황 → 계약 현황](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-global-management/#_2) 메뉴에서 채팅 기능을 '사용' 설정하신 후, [서비스 관리 → 헬프센터 → 구성관리](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_43) 메뉴에서 활성화하여 사용하실 수 있습니다.
+채팅 기능은 [전체 관리 → 계약 서비스 현황 → 계약 현황](https://docs.nhncloud.com/ko/Contact%20Center/ko/online-contact-guide-global-management/#_2) 메뉴에서 채팅 기능을 '사용' 설정하신 후, [서비스 관리 → 헬프센터 → 구성관리](https://docs.nhncloud.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_43) 메뉴에서 활성화하여 사용하실 수 있습니다.
 
 ### 트위터(멘션, 메시지)
 ![](http://static.toastoven.net/prod_contact_center/4.1.1-(5).png)
-[서비스 관리 → 외부채널 → 트위터](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_45) 메뉴에서 트위터 기능을 활성화하셨을 경우, 등록한 계정으로 수신된 멘션 또는 메시지를 티켓으로 처리하실 수 있습니다. 답변 내용을 입력하신 후, 해결 처리를 통해 최종답변을 전송하시면 트윗(멘션)으로 인입된 티켓의 경우 답변 또한 트윗(멘션)으로, 메시지로 인입된 티켓의 경우 답변 또한 메시지로 발송됩니다.
+[서비스 관리 → 외부채널 → 트위터](https://docs.nhncloud.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_45) 메뉴에서 트위터 기능을 활성화하셨을 경우, 등록한 계정으로 수신된 멘션 또는 메시지를 티켓으로 처리하실 수 있습니다. 답변 내용을 입력하신 후, 해결 처리를 통해 최종답변을 전송하시면 트윗(멘션)으로 인입된 티켓의 경우 답변 또한 트윗(멘션)으로, 메시지로 인입된 티켓의 경우 답변 또한 메시지로 발송됩니다.
 
 ### 전화
-[전체 관리 → 계약 서비스 현황 → 계약 현황](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-global-management/#_2) 메뉴에서 전화 기능이 '사용' 설정되어 있는 상태에서 전화 권한이 부여된 상담원에게는 **전화 아이콘**이 표시되며, 해당 아이콘을 클릭하시면 CTI 화면이 Online Contact 화면 우측 상단에 표시됩니다.
+[전체 관리 → 계약 서비스 현황 → 계약 현황](https://docs.nhncloud.com/ko/Contact%20Center/ko/online-contact-guide-global-management/#_2) 메뉴에서 전화 기능이 '사용' 설정되어 있는 상태에서 전화 권한이 부여된 상담원에게는 **전화 아이콘**이 표시되며, 해당 아이콘을 클릭하시면 CTI 화면이 Online Contact 화면 우측 상단에 표시됩니다.
 
 #### CTI 로그인, 기본 상태
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(10).png)
-[전체관리 → CTI 관리 → CTI 상담원 관리](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-global-management/#cti_2) 메뉴에서 CTI 정보가 등록된 상담원이 **① CTI 로그인** 버튼을 클릭하여 로그인이 완료되면 **② 기본 화면**으로 이동되어 다음과 같은 기능들을 이용하실 수 있습니다.
+[전체관리 → CTI 관리 → CTI 상담원 관리](https://docs.nhncloud.com/ko/Contact%20Center/ko/online-contact-guide-global-management/#cti_2) 메뉴에서 CTI 정보가 등록된 상담원이 **① CTI 로그인** 버튼을 클릭하여 로그인이 완료되면 **② 기본 화면**으로 이동되어 다음과 같은 기능들을 이용하실 수 있습니다.
 
 - CTI 로그아웃
 - 휴식: 휴식 상태로 설정되어 콜이 할당되지 않습니다.
 - 대기: 대기 상태로 설정되어 콜이 인입될 경우 할당됩니다.
 - 업무: 교육, 취합/보고, 회의, 티켓처리, 채팅처리, 코칭(모니터링) 중 업무 상태를 선택하실 수 있으며, 콜이 할당되지 않습니다.
-- 걸기: 고객번호와 발신번호 ([서비스 관리 → 전화 → 발신번호 관리](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_30) 메뉴에서 설정) 설정 후 전화를 거실 수 있습니다.
+- 걸기: 고객번호와 발신번호 ([서비스 관리 → 전화 → 발신번호 관리](https://docs.nhncloud.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_30) 메뉴에서 설정) 설정 후 전화를 거실 수 있습니다.
 
 ✔ **\[FAQ 바로가기]** [CTI 로그인이 진행되지 않아요.](https://nhn-contact.oc.toast.com/oc/hc/article/103/)
 
@@ -51,7 +51,7 @@ Online Contact 이용 시 기본으로 제공되는 **헬프센터**를 통해 �
 #### 전화 걸기
 ![](http://static.toastoven.net/prod_contact_center/2.2.3-(12).png)
 CTI 로그인된 상태에서 CTI 화면 → **① 걸기** 버튼을 누르시면 **② 전화걸기** 화면이 표시됩니다.
-**고객번호**를 입력, **발신번호**를 기본 또는 [서비스 관리 → 전화 → 발신번호 관리](https://docs.toast.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_30) 메뉴에서 등록하신 번호로 선택하신 후 **③ 확인** 버튼을 누르시면 전화가 발신됩니다.
+**고객번호**를 입력, **발신번호**를 기본 또는 [서비스 관리 → 전화 → 발신번호 관리](https://docs.nhncloud.com/ko/Contact%20Center/ko/online-contact-guide-service-management/#_30) 메뉴에서 등록하신 번호로 선택하신 후 **③ 확인** 버튼을 누르시면 전화가 발신됩니다.
 전화 걸기가 진행되면 상태는 **발신중**으로 변경되며, 통화가 연결되면 현재 상담원이 접속해있는 서비스에 **티켓이 자동으로 생성**되어 티켓 처리 창으로 화면이 이동됩니다.
 
 #### 전화 처리
