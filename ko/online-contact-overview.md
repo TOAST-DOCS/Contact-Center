@@ -1,9 +1,9 @@
-## Contact Center > Online Contact > 개요
+## Contact Center > Contiple > 개요
 
 ※ Online Contact 서비스명이 새로운 이름인 **Contiple(콘티플)** 로 변경되었습니다.
 앞으로 최신 업데이트된 사용 가이드는 [Contiple 홈페이지](https://www.contiple.com)에서 확인해 주세요.
 
-Online Contact은 다양한 채널의 고객문의를 티켓으로 생성/처리가 가능하며 업무 효율성을 높이기 위한 이슈 관리 및 협업도구 연동을 통해 최상의 고객서비스를 제공할 수 있도록 하는 **통합 상담 솔루션**입니다.
+Contiple은 다양한 채널의 고객문의를 티켓으로 생성/처리가 가능하며 업무 효율성을 높이기 위한 이슈 관리 및 협업도구 연동을 통해 최상의 고객서비스를 제공할 수 있도록 하는 **통합 상담 솔루션**입니다.
 
 ## 특징
 ![OnlineContact_개요](https://static.toastoven.net/prod_contact_center/OC3.0/kr/online-contact-overview_img0010.png)
@@ -14,7 +14,7 @@ Online Contact은 다양한 채널의 고객문의를 티켓으로 생성/처리
 
 ## 주요 기능
 
-Online Contact은 다양한 채널로 접수된 고객 문의를 직접 확인하고 처리하는 **상담관리** 기능과 문의 해결을 위해 다른 조직으로 티켓을 이관하여 협업할 수 있는 **이슈관리**로 구성되어 있습니다.
+Contiple은 다양한 채널로 접수된 고객 문의를 직접 확인하고 처리하는 **상담관리** 기능과 문의 해결을 위해 다른 조직으로 티켓을 이관하여 협업할 수 있는 **이슈관리**로 구성되어 있습니다.
 
 ### 상담 관리
 
