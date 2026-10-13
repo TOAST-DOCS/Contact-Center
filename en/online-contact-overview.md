@@ -68,4 +68,26 @@ Contiple consists of a **consultation management** function that directly checks
 </table>
 
 ### Issue Management
-![](http://static.toastoven.net/prod_contact_center/OC_overview_en_4.png)
+<table>
+    <tr>
+        <td><strong>Key Features</strong></td>
+        <td><strong>Description</strong></td>
+    </tr>
+    <tr>
+        <td rowspan="3"><strong>Ticket Consultation</strong></td>
+        <td>Secondary handling of customer inquiries delivered through consultation management 'Escalation' function</td>
+    </tr>
+    <tr>
+        <td>Assign agent groups according to specific conditions to distribute and process inquiries</td>
+    </tr>
+    <tr>
+        <td>Specialized statistics function</td>
+    </tr>
+    <tr>
+        <td rowspan="2"><strong>Guide</strong></td>
+        <td>Write and share manual and guide for consulting</td>
+    </tr>
+    <tr>
+        <td>Manage issues by situation by categorizing announcements/manuals</td>
+    </tr>
+</table>
