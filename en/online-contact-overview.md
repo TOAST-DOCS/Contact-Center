@@ -1,12 +1,10 @@
-## Contact Center > Online Contact > Overview
+## Contact Center > Contiple > Overview
 
-※ The service name of Online Contact has been changed to **Contiple**.
-For the latest, updated user guides, please refer to the [Contiple homepage](https://www.contiple.com).
+Contiple is a powerful All-In-One integrated contact center solution that supports excellent customer experience management and improved work productivity.
+As a fast and reliable cloud-based AI contact center solution, Contiple integrates customer experiences occurring across various channels and touchpoints into a single platform and improves the efficiency of contact center operations.
 
-Online Contact is an **integrated consultation solution** that can generate and process customer inquiries from various channels as tickets and helps provide the best customer service through issue management and collaboration tools to increase work efficiency.
+For detailed information on using the service, see [Contiple's official website](https:/contiple.com) > [User Guide](https://docs.contiple.com/eng).
 
-> You can check the new Online Contact Guide by changing the language to Korean.
-> We will also provide the English version as soon as possible.
 
 ## Service Features
 ![](http://static.toastoven.net/prod_contact_center/OC_overview_en_1.png)
@@ -16,7 +14,7 @@ Online Contact is an **integrated consultation solution** that can generate and 
 - Depending on the customer's business situation, various AI technologies such as STT(Speech to Text), TTS(Text to Speech), and chatbot can be combined to further improve service quality and efficiency.
 
 ## Key Features
-Online Contact consists of a **consultation management** function that directly checks and processes customer inquiries received through various channels, and an **issue management** function that allows you to collaborate by transferring tickets to other organizations to resolve inquiries.
+Contiple consists of a **consultation management** function that directly checks and processes customer inquiries received through various channels, and an **issue management** function that allows you to collaborate by transferring tickets to other organizations to resolve inquiries.
 
 ### Consultation Management
 <table>
@@ -32,40 +30,40 @@ Online Contact consists of a **consultation management** function that directly 
         <td>Specify agent groups to distribute and process inquiries based on specific conditions</td>
     </tr>
     <tr>
-        <td>유형별 필드 구성에 따른 VOC 분석 및 비즈니스 활용 가능</td>
+        <td>VOC analysis and business utilization based on field configuration by type</td>
     </tr>
     <tr>
-        <td>고객사별 서비스 정책에 따른 다양한 기능 제공(보안정책, 템플릿, 공지 기능 등)</td>
+        <td>Various features provided according to each customer’s service policy (security policy, templates, notices, etc.)</td>
     </tr>
     <tr>
-        <td rowspan="3"><strong>헬프센터</strong></td>
-        <td>서비스 고객센터 페이지 제공</td>
+        <td rowspan="3"><strong>Help Center</strong></td>
+        <td>Provides a customer center page for your service</td>
     </tr>
     <tr>
-        <td>클릭 한 번으로 1:1 문의 접수 및 공지사항, FAQ 페이지 구성</td>
+        <td>Set up 1:1 inquiry submission, notices, and FAQ pages with a single click</td>
     </tr>
     <tr>
-        <td>서비스 UI에 맞춘 페이지 설계 또는 API를 통한 기능 연동 가능</td>
+        <td>Design pages to match your service UI or integrate features via API</td>
     </tr>
     <tr>
-        <td rowspan="3"><strong>전화</strong></td>
-        <td>고객 정보 API 연동 시 상담에 필요한 고객 정보 조회 가능</td>
+        <td rowspan="3"><strong>Call</strong></td>
+        <td>Design pages to match your service UI or integrate features via API</td>
     </tr>
     <tr>
-        <td>녹취 데이터를 활용한 상담 품질 향상 / Assist 지원</td>
+        <td>Improve consultation quality using call recording data / Assist support</td>
     </tr>
     <tr>
-        <td>다양한 통계 및 모니터링 서비스</td>
+        <td>Various statistics and monitoring services</td>
     </tr>
     <tr>
-        <td rowspan="3"><strong>채팅</strong></td>
-        <td>웹 / 앱에 위젯을 추가하여 실시간 채팅 상담 서비스 제공</td>
+        <td rowspan="3"><strong>Chat</strong></td>
+        <td>Provide real-time chat consultation by adding a widget to your website or app</td>
     </tr>
     <tr>
-        <td>채팅 후 티켓으로 전환 가능하며 이슈관리 등 고객 관리 확장 가능</td>
+        <td>Convert chats into tickets and extend customer management with issue management and more</td>
     </tr>
     <tr>
-        <td>상담톡 연동 및 만족도 평가 제공</td>
+        <td>	KakaoTalk Consultation Talk integration and satisfaction evaluation</td>
     </tr>
 </table>
 
